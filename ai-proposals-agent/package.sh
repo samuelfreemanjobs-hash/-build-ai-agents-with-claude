@@ -11,14 +11,29 @@ PKG="ai-proposals-agent-${STAMP}"
 # Required files manifest
 REQUIRED=(
   README.md
+  docs/complete-system-design.md
   docs/system-design.md
   docs/prompt-architecture.md
+  docs/knowledge-base.md
+  docs/ui-ux-flows.md
+  docs/gtm-and-monetization.md
+  docs/implementation-roadmap.md
   docs/brand-system.md
   docs/runbook.md
   schemas/run-log.schema.json
   schemas/pricing-output.schema.json
   schemas/compliance-report.schema.json
+  schemas/rfp-intake.schema.json
   prompts/master-system.md
+  prompts/orchestrator.md
+  prompts/sub/rfp-analysis.md
+  prompts/sub/past-proposal-mining.md
+  prompts/sub/executive-summary.md
+  prompts/sub/technical-capability.md
+  prompts/sub/case-study-selector.md
+  prompts/sub/compliance-injector.md
+  prompts/sub/pricing-narrative.md
+  prompts/sub/quality-assurance.md
   ui/operator-console/index.html
   package.sh
 )
@@ -47,7 +62,7 @@ echo "==> Prompt frontmatter validation"
 ROOT="$ROOT" python3 -c "
 import re, sys, pathlib, os
 root = pathlib.Path(os.environ['ROOT'])
-for p in (root / 'prompts').glob('*.md'):
+for p in list((root / 'prompts').glob('*.md')) + list((root / 'prompts' / 'sub').glob('*.md')):
     text = p.read_text()
     if not text.startswith('---'):
         print(f'FAIL: {p} missing frontmatter'); sys.exit(1)

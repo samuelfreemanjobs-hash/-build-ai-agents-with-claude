@@ -17,14 +17,18 @@ Built for the same Metro Detroit logistics corridor as [Freeman Intel](../freema
 
 | Path | Description |
 |------|-------------|
-| [`docs/system-design.md`](docs/system-design.md) | Architecture, pipeline, KB, QA layers |
-| [`docs/prompt-architecture.md`](docs/prompt-architecture.md) | Master + 6 sub-prompts |
-| [`docs/brand-system.md`](docs/brand-system.md) | Mark, wordmark, color semantics |
-| [`docs/runbook.md`](docs/runbook.md) | Operator procedures, halt causes, overrides |
-| [`schemas/`](schemas/) | JSON Schema contracts |
-| [`prompts/`](prompts/) | System and sub-prompt templates |
+| [`docs/complete-system-design.md`](docs/complete-system-design.md) | **Full spec** — all 15 sections, v2.1 merged |
+| [`docs/system-design.md`](docs/system-design.md) | v2 architecture guarantees |
+| [`docs/prompt-architecture.md`](docs/prompt-architecture.md) | Master + sub-prompt index |
+| [`docs/knowledge-base.md`](docs/knowledge-base.md) | SQL schema + population guide |
+| [`docs/ui-ux-flows.md`](docs/ui-ux-flows.md) | SaaS 7-step + operator console |
+| [`docs/gtm-and-monetization.md`](docs/gtm-and-monetization.md) | Pricing tiers, positioning, retainers |
+| [`docs/implementation-roadmap.md`](docs/implementation-roadmap.md) | 90-day launch plan |
+| [`docs/brand-system.md`](docs/brand-system.md) | Mark, color semantics |
+| [`docs/runbook.md`](docs/runbook.md) | Operator procedures |
+| [`schemas/`](schemas/) | run-log, pricing, compliance, rfp-intake |
+| [`prompts/`](prompts/) | Master, orchestrator, 8 sub-prompts |
 | [`ui/operator-console/`](ui/operator-console/) | Operator console (single-run view) |
-| [`package.sh`](package.sh) | Manifest check + validation + tarball |
 
 ## Operator console
 
