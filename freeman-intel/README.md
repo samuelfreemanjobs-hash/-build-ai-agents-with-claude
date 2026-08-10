@@ -23,6 +23,7 @@ Freeman Intel turns supplier ASN emails, carrier updates, and expected inbound s
 | Path | Description |
 |------|-------------|
 | [`docs/plan.md`](docs/plan.md) | Master product & GTM plan |
+| [`docs/portfolio.md`](docs/portfolio.md) | Freeman Intel product portfolio (inbound + proposals) |
 | [`docs/agent-menu.md`](docs/agent-menu.md) | Full agent roster and launch tiers |
 | [`docs/icp-and-gtm.md`](docs/icp-and-gtm.md) | ICP, buyer personas, local GTM playbook |
 | [`marketing/landing-page.md`](marketing/landing-page.md) | Landing page copy and structure |

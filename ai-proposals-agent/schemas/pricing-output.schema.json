@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://freeman-intel.local/schemas/pricing-output.schema.json",
+  "title": "PricingOutput",
+  "description": "Engine pricing output. All monetary values are decimal strings — never JSON numbers.",
+  "type": "object",
+  "required": ["engine_version", "pricing_hash", "scenarios", "assumptions"],
+  "properties": {
+    "engine_version": { "type": "string" },
+    "pricing_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "currency": { "type": "string", "const": "USD" },
+    "scenarios": {
+      "type": "object",
+      "required": ["competitive", "balanced", "premium"],
+      "properties": {
+        "competitive": { "$ref": "#/$defs/scenario" },
+        "balanced": { "$ref": "#/$defs/scenario" },
+        "premium": { "$ref": "#/$defs/scenario" }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "money": {
+      "type": "string",
+      "pattern": "^-?[0-9]+(\\.[0-9]{1,4})?$",
+      "description": "Decimal string. Reject JSON numbers at boundary to prevent float rounding."
+    },
+    "scenario": {
+      "type": "object",
+      "required": ["label", "line_items", "subtotal", "margin_pct", "total", "value_narrative_refs"],
+      "properties": {
+        "label": { "type": "string" },
+        "line_items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["description", "quantity", "unit", "unit_cost", "extended", "cost_row_ref"],
+            "properties": {
+              "description": { "type": "string" },
+              "quantity": { "type": "string", "pattern": "^[0-9]+(\\.[0-9]+)?$" },
+              "unit": { "type": "string" },
+              "unit_cost": { "$ref": "#/$defs/money" },
+              "extended": { "$ref": "#/$defs/money" },
+              "cost_row_ref": { "type": "string" }
+            }
+          }
+        },
+        "subtotal": { "$ref": "#/$defs/money" },
+        "margin_pct": { "type": "string", "pattern": "^[0-9]+(\\.[0-9]{1,2})?$" },
+        "total": { "$ref": "#/$defs/money" },
+        "value_narrative_refs": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

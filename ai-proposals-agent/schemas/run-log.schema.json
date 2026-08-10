@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://freeman-intel.local/schemas/run-log.schema.json",
+  "title": "RunLog",
+  "description": "AI Proposals Agent run log. COMPLETED requires full traceability.",
+  "type": "object",
+  "required": [
+    "run_id",
+    "outcome",
+    "human_review_required",
+    "traceability",
+    "created_at"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "pattern": "^run_[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{3}$"
+    },
+    "outcome": {
+      "type": "string",
+      "enum": ["INTAKE_REVIEW", "PRICING_REVIEW", "DRAFT_REVIEW", "COMPLETED", "HALTED", "FAILED"]
+    },
+    "human_review_required": {
+      "type": "boolean",
+      "const": true
+    },
+    "halt_cause": {
+      "type": "string",
+      "enum": [
+        "MISSING_COST_ROW",
+        "VOLUME_OUT_OF_BAND",
+        "CREDENTIAL_EXPIRED",
+        "RFP_AMBIGUOUS_SCOPE",
+        "UNTRACEABLE_NUMERIC"
+      ]
+    },
+    "traceability": {
+      "type": "object",
+      "required": ["untraceable_count", "bindings"],
+      "properties": {
+        "untraceable_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bindings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/trace_binding"
+          }
+        }
+      }
+    },
+    "pricing_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "qa_scores": {
+      "$ref": "#/$defs/qa_scores"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "outcome": { "const": "COMPLETED" } }
+      },
+      "then": {
+        "properties": {
+          "traceability": {
+            "properties": {
+              "untraceable_count": { "const": 0 }
+            }
+          }
+        },
+        "required": ["pricing_hash", "qa_scores"]
+      }
+    },
+    {
+      "if": {
+        "properties": { "outcome": { "const": "HALTED" } }
+      },
+      "then": {
+        "required": ["halt_cause"]
+      }
+    }
+  ],
+  "$defs": {
+    "trace_binding": {
+      "type": "object",
+      "required": ["field_path", "display_value", "source_ref", "chain"],
+      "properties": {
+        "field_path": { "type": "string" },
+        "display_value": { "type": "string" },
+        "source_ref": { "type": "string" },
+        "chain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["layer", "ref", "label"],
+            "properties": {
+              "layer": { "type": "string" },
+              "ref": { "type": "string" },
+              "label": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "qa_scores": {
+      "type": "object",
+      "required": ["dimensions", "overall"],
+      "properties": {
+        "dimensions": {
+          "type": "object",
+          "required": [
+            "requirement_coverage",
+            "traceability",
+            "compliance_coverage",
+            "pricing_integrity",
+            "tone_evidence",
+            "format_compliance"
+          ],
+          "properties": {
+            "requirement_coverage": { "type": "integer", "minimum": 1, "maximum": 10 },
+            "traceability": { "type": "integer", "minimum": 1, "maximum": 10 },
+            "compliance_coverage": { "type": "integer", "minimum": 1, "maximum": 10 },
+            "pricing_integrity": { "type": "integer", "minimum": 1, "maximum": 10 },
+            "tone_evidence": { "type": "integer", "minimum": 1, "maximum": 10 },
+            "format_compliance": { "type": "integer", "minimum": 1, "maximum": 10 }
+          }
+        },
+        "overall": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "dragging_dimension": { "type": "string" }
+      }
+    }
+  }
+}
