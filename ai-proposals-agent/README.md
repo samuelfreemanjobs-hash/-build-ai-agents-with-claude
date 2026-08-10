@@ -30,6 +30,21 @@ Built for the same Metro Detroit logistics corridor as [Freeman Intel](../freema
 | [`prompts/`](prompts/) | Master, orchestrator, 8 sub-prompts |
 | [`ui/operator-console/`](ui/operator-console/) | Operator console (single-run view) |
 
+## Backend (Python)
+
+Production-ready v2.1 backend in [`backend/`](backend/):
+
+```bash
+cd backend
+pip install -e ".[dev]"
+python3 -m pytest tests/ -v          # 14 tests
+python3 -m ai_proposals_agent.cli --demo --automotive
+export ANTHROPIC_API_KEY=...         # live LLM
+python3 -m ai_proposals_agent.cli --rfp path/to/rfp.txt
+```
+
+**Key modules:** `PricingEngine` (Decimal, no LLM), `ComplianceChecker`, `RunLogBuilder`, `ProposalAgent`, `NON_OVERRIDABLE` halts (G07).
+
 ## Operator console
 
 Open locally:

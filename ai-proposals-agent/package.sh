@@ -35,6 +35,11 @@ REQUIRED=(
   prompts/sub/pricing-narrative.md
   prompts/sub/quality-assurance.md
   ui/operator-console/index.html
+  backend/pyproject.toml
+  backend/ai_proposals_agent/agent.py
+  backend/ai_proposals_agent/pricing_engine.py
+  backend/ai_proposals_agent/halts.py
+  backend/tests/test_pricing_engine.py
   package.sh
 )
 
@@ -73,32 +78,14 @@ print('  OK')
 "
 
 echo "==> Self-tests"
-# Pricing schema rejects JSON numbers for money
 ROOT="$ROOT" python3 << 'PY'
-import json, subprocess, tempfile, os, sys
+import os, subprocess, sys
 root = os.environ["ROOT"]
-# Valid decimal string passes structural check
-sample = {
-  "engine_version": "1.4.0",
-  "pricing_hash": "sha256:" + "a"*64,
-  "currency": "USD",
-  "scenarios": {
-    "competitive": {"label":"C","line_items":[],"subtotal":"0","margin_pct":"10","total":"0","value_narrative_refs":[]},
-    "balanced": {"label":"B","line_items":[],"subtotal":"0","margin_pct":"10","total":"0","value_narrative_refs":[]},
-    "premium": {"label":"P","line_items":[],"subtotal":"0","margin_pct":"10","total":"0","value_narrative_refs":[]}
-  },
-  "assumptions": []
-}
-# Run-log: COMPLETED requires untraceable_count == 0
-log_ok = {"run_id":"run_2026-08-10_001","outcome":"COMPLETED","human_review_required":True,
-  "traceability":{"untraceable_count":0,"bindings":[]},
-  "pricing_hash":"sha256:"+"b"*64,
-  "qa_scores":{"dimensions":{"requirement_coverage":9,"traceability":10,"compliance_coverage":4,
-    "pricing_integrity":10,"tone_evidence":9,"format_compliance":10},"overall":4,"dragging_dimension":"compliance_coverage"},
-  "created_at":"2026-08-10T08:00:00Z"}
-log_bad = dict(log_ok)
-log_bad["traceability"] = {"untraceable_count": 1, "bindings": []}
-print("  run-log structural samples OK")
+backend = os.path.join(root, "backend")
+rc = subprocess.call([sys.executable, "-m", "pytest", "tests/", "-q"], cwd=backend, env={**os.environ, "PYTHONPATH": backend})
+if rc != 0:
+    sys.exit(rc)
+print("  pytest OK")
 PY
 
 echo "==> Packaging"
@@ -109,7 +96,10 @@ mkdir -p "$TMP"
 tar cf - -C "$ROOT" \
   --exclude='dist' \
   --exclude='.git' \
-  README.md docs schemas prompts ui package.sh 2>/dev/null | tar xf - -C "$TMP"
+  --exclude='proposal_PROP-*.json' \
+  --exclude='backend/.pytest_cache' \
+  --exclude='backend/*.egg-info' \
+  README.md docs schemas prompts ui backend package.sh 2>/dev/null | tar xf - -C "$TMP"
 ARCHIVE="$DIST/${PKG}.tar.gz"
 tar -czf "$ARCHIVE" -C "$DIST" "$PKG"
 sha256sum "$ARCHIVE" > "${ARCHIVE}.sha256"
