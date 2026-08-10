@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://freeman-intel.local/schemas/compliance-matrix.schema.json",
+  "title": "ComplianceMatrix",
+  "description": "S1 output from compliance_validator.py — fail-closed compliance status.",
+  "type": "object",
+  "required": [
+    "validator_version",
+    "submission_date",
+    "rows",
+    "n_compliant",
+    "n_gap",
+    "n_mandatory_gap",
+    "coverage_pct"
+  ],
+  "properties": {
+    "validator_version": { "type": "string" },
+    "submission_date": { "type": "string", "format": "date" },
+    "contract_start_date": { "type": ["string", "null"], "format": "date" },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["requirement", "requirement_source_ref", "mandatory", "status"],
+        "properties": {
+          "requirement": { "type": "string" },
+          "requirement_source_ref": { "type": "string" },
+          "mandatory": { "type": "boolean" },
+          "status": { "type": "string", "enum": ["COMPLIANT", "GAP"] },
+          "reason": { "type": ["string", "null"] },
+          "certificate_number": { "type": ["string", "null"] },
+          "expiry_date": { "type": ["string", "null"] },
+          "record_source_ref": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "n_compliant": { "type": "integer", "minimum": 0 },
+    "n_gap": { "type": "integer", "minimum": 0 },
+    "n_mandatory_gap": { "type": "integer", "minimum": 0 },
+    "coverage_pct": { "type": "number", "minimum": 0, "maximum": 100 }
+  }
+}

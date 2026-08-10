@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://freeman-intel.local/schemas/rfp-requirements.schema.json",
+  "title": "RfpRequirements",
+  "description": "S0 intake output — extracted RFP requirements and tier assignment.",
+  "type": "object",
+  "required": [
+    "submission_date",
+    "tier",
+    "client",
+    "scope",
+    "requirements",
+    "intake_answers"
+  ],
+  "properties": {
+    "submission_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "contract_start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["T0", "T1", "T2", "T3"]
+    },
+    "tier_triggers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "rush": {
+      "type": "boolean",
+      "default": false
+    },
+    "client": {
+      "type": "object",
+      "required": ["company_name", "industry"],
+      "properties": {
+        "company_name": { "type": "string" },
+        "industry": { "type": "string" },
+        "pain_points": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "required": ["service_lines"],
+      "properties": {
+        "service_lines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["service_code"],
+            "properties": {
+              "service_code": { "type": "string" },
+              "description": { "type": "string" },
+              "volume": { "type": ["string", "null"] },
+              "volume_unit": { "type": "string" },
+              "source_ref": { "type": "string" }
+            }
+          }
+        },
+        "geography": { "type": "array", "items": { "type": "string" } },
+        "page_limit": { "type": "integer" },
+        "word_limit": { "type": "integer" }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "mandatory", "source_ref"],
+        "properties": {
+          "name": { "type": "string" },
+          "category": { "type": "string" },
+          "mandatory": { "type": "boolean" },
+          "source_ref": { "type": "string" }
+        }
+      }
+    },
+    "evaluation_criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["criterion", "weight"],
+        "properties": {
+          "criterion": { "type": "string" },
+          "weight": { "type": "number" },
+          "source_ref": { "type": "string" }
+        }
+      }
+    },
+    "weights_unnormalized": {
+      "type": "boolean",
+      "default": false
+    },
+    "intake_answers": {
+      "type": "object",
+      "required": ["q1_submission_date_ok", "q2_cost_coverage_ok", "q3_gaps_surfaced"],
+      "properties": {
+        "q1_submission_date_ok": { "type": "boolean" },
+        "q2_cost_coverage_ok": { "type": "boolean" },
+        "q3_gaps_surfaced": { "type": "boolean" }
+      }
+    },
+    "gap_preview": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["requirement", "reason"],
+        "properties": {
+          "requirement": { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

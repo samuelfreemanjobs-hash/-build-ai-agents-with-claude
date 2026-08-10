@@ -1,23 +1,28 @@
 # Known gaps & build order
 
-Quick reference — see [`deployment-guide.md`](deployment-guide.md) for full detail.
+Quick reference — see [`deployment-guide.md`](deployment-guide.md) and
+[`../README.md`](../README.md) for full detail.
 
 ## Fixed in v2.1 ✅
 
-- **LLM pricing arithmetic** → `PricingEngine` (Decimal, string JSON, halts)
-- **Traceability** → run-log schema, operator console
-- **Compliance gaps loud** → `ComplianceChecker`, not silent omission
-- **NON_OVERRIDABLE halts** → `halts.py` frozenset (G07)
+- **LLM pricing arithmetic** → `scripts/pricing_engine.py` + `backend/` PricingEngine
+- **Traceability** → run-log schema, observability contract, operator console
+- **Compliance gaps loud** → `compliance_validator.py`, not silent omission
+- **NON_OVERRIDABLE halts** → deterministic gates in scripts + `halts.py`
+- **Architecture rationale** → ADR-001, token economics gate, escalation triggers
 
 ## Still open ❌
 
-1. **G1** — PDF/DOCX RFP parsing (Textract / unstructured.io)
-2. **G2** — Branded DOCX/PDF export (python-docx)
-3. **Auth** — JWT / API keys / tenant isolation
-4. **Job queue** — Redis; in-memory jobs today
-5. **KB persistence** — Postgres schema ready, app not wired
-6. **Structured LLM output** — tool-use instead of `json.loads`
-7. **Analytics UI** — API stub only
+| ID | Gap |
+|---|---|
+| G1 | PDF/DOCX RFP parsing (Textract / unstructured.io) |
+| G2 | Branded DOCX/PDF export (python-docx) |
+| G3 | KB unpopulated — requires customer ingest |
+| G4 | Auth — JWT / API keys / tenant isolation |
+| G5 | Job queue — Redis; in-memory jobs in API today |
+| G6 | Structured LLM output — tool-use instead of `json.loads` |
+| G7 | Golden fixtures manifested in `run_golden_tests.py`, not populated |
+| G8 | NDA retention TTLs in config, not enforced |
 
 ## Recommended sequence
 
@@ -30,7 +35,16 @@ Month 3+: Auth, Redis, Postgres, SaaS scale (after ~10 DFY clients)
 
 ## Do not ship without
 
-- [ ] DOCX export for customer delivery
-- [ ] PDF ingest OR manual paste workflow documented
-- [ ] Auth before public multi-tenant deploy
-- [ ] DPA/TOS for NDA RFP content
+- [ ] DOCX export for customer delivery (G2)
+- [ ] PDF ingest OR manual paste workflow documented (G1)
+- [ ] Auth before public multi-tenant deploy (G4)
+- [ ] DPA/TOS for NDA RFP content (G8)
+- [ ] `python3 scripts/run_golden_tests.py` GREEN
+
+## Verify before deploy
+
+```bash
+python3 scripts/run_golden_tests.py
+python3 scripts/token_economics.py
+cd backend && python3 -m pytest tests/ -v
+```

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # AI Proposals Agent™ — packaging script
-# Validates manifest, JSON schemas, prompt frontmatter; produces tarball + sha256.
+# Validates manifest, JSON schemas, skills; runs golden + pytest; produces tarball.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
@@ -8,32 +8,37 @@ STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 DIST="$ROOT/dist"
 PKG="ai-proposals-agent-${STAMP}"
 
-# Required files manifest
 REQUIRED=(
   README.md
+  agent/SOUL.md
+  agent/DUTIES.md
+  agent/system-prompt.md
+  agent/core-config.xml
+  docs/ADR-001-architecture-selection.md
+  docs/observability-contract.md
+  docs/runbook.md
+  docs/fallback-playbook.md
   docs/complete-system-design.md
   docs/system-design.md
-  docs/prompt-architecture.md
-  docs/knowledge-base.md
-  docs/ui-ux-flows.md
-  docs/gtm-and-monetization.md
-  docs/implementation-roadmap.md
-  docs/brand-system.md
-  docs/runbook.md
+  docs/deployment-guide.md
+  docs/known-gaps.md
+  scripts/pricing_engine.py
+  scripts/compliance_validator.py
+  scripts/case_study_scorer.py
+  scripts/token_economics.py
+  scripts/run_golden_tests.py
+  skills/rfp-requirement-extraction/SKILL.md
+  skills/compliance-matrix-mapping/SKILL.md
+  skills/case-study-selection/SKILL.md
+  skills/pricing-narrative/SKILL.md
+  skills/proposal-qa-evaluator/SKILL.md
   schemas/run-log.schema.json
   schemas/pricing-output.schema.json
+  schemas/compliance-matrix.schema.json
+  schemas/rfp-requirements.schema.json
   schemas/compliance-report.schema.json
   schemas/rfp-intake.schema.json
-  prompts/master-system.md
-  prompts/orchestrator.md
-  prompts/sub/rfp-analysis.md
-  prompts/sub/past-proposal-mining.md
-  prompts/sub/executive-summary.md
-  prompts/sub/technical-capability.md
-  prompts/sub/case-study-selector.md
-  prompts/sub/compliance-injector.md
-  prompts/sub/pricing-narrative.md
-  prompts/sub/quality-assurance.md
+  tests/golden/README.md
   ui/operator-console/index.html
   backend/pyproject.toml
   backend/ai_proposals_agent/agent.py
@@ -44,8 +49,6 @@ REQUIRED=(
   deploy/Dockerfile
   deploy/.env.example
   deploy/sql/init.sql
-  docs/deployment-guide.md
-  docs/known-gaps.md
   frontend/package.json
   frontend/src/App.jsx
   package.sh
@@ -71,21 +74,24 @@ for j in "$ROOT"/schemas/*.json; do
 done
 echo "  OK"
 
-echo "==> Prompt frontmatter validation"
+echo "==> Skill frontmatter validation"
 ROOT="$ROOT" python3 -c "
 import re, sys, pathlib, os
 root = pathlib.Path(os.environ['ROOT'])
-for p in list((root / 'prompts').glob('*.md')) + list((root / 'prompts' / 'sub').glob('*.md')):
+for p in (root / 'skills').rglob('SKILL.md'):
     text = p.read_text()
     if not text.startswith('---'):
         print(f'FAIL: {p} missing frontmatter'); sys.exit(1)
     m = re.match(r'---\n(.*?)\n---', text, re.DOTALL)
-    if not m or 'id:' not in m.group(1) or 'version:' not in m.group(1):
-        print(f'FAIL: {p} frontmatter requires id + version'); sys.exit(1)
+    if not m or 'name:' not in m.group(1) or 'description:' not in m.group(1):
+        print(f'FAIL: {p} frontmatter requires name + description'); sys.exit(1)
 print('  OK')
 "
 
-echo "==> Self-tests"
+echo "==> Golden component self-tests"
+python3 "$ROOT/scripts/run_golden_tests.py" || exit 1
+
+echo "==> Backend pytest"
 ROOT="$ROOT" python3 << 'PY'
 import os, subprocess, sys
 root = os.environ["ROOT"]
@@ -107,7 +113,9 @@ tar cf - -C "$ROOT" \
   --exclude='proposal_PROP-*.json' \
   --exclude='backend/.pytest_cache' \
   --exclude='backend/*.egg-info' \
-  README.md docs schemas prompts ui backend package.sh 2>/dev/null | tar xf - -C "$TMP"
+  --exclude='frontend/node_modules' \
+  --exclude='frontend/dist' \
+  README.md agent skills scripts schemas tests docs prompts ui backend deploy kb package.sh .ai 2>/dev/null | tar xf - -C "$TMP"
 ARCHIVE="$DIST/${PKG}.tar.gz"
 tar -czf "$ARCHIVE" -C "$DIST" "$PKG"
 sha256sum "$ARCHIVE" > "${ARCHIVE}.sha256"
