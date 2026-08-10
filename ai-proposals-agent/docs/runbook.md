@@ -1,122 +1,113 @@
-# AI Proposals Agent™ — Operator Runbook
+# Operator Runbook
 
-**Version:** 2.0.0 — aligned with S0–S6 sequential pipeline and T0–T3 tiering
+## SLOs
 
-## Pre-run checklist
-
-1. Confirm `kb/certifications.json` refreshed (ISO, CTPAT, insurance)
-2. Confirm cost rows exist in `kb/cost-tables/` for every scoped service line
-3. Upload RFP via intake (G1) or paste text for demo runs
-4. Answer three intake questions (Q1–Q3 in `agent/DUTIES.md`)
-
-## Tier reference
-
-| Tier | Evaluator | Human gate |
+| Metric | Target | Breach action |
 |---|---|---|
-| T0 | none | none (pricing approval still recommended) |
-| T1 | advisory, 1 pass | pricing approval |
-| T2 | advisory, 1 pass | pricing + compliance review |
-| T3 | up to 2 narrative regen cycles | full document review, mandatory |
+| Wall clock, T0–T1 | p95 ≤ 6 min | Profile stage timings; check S0 document size |
+| Wall clock, T2–T3 | p95 ≤ 20 min | Check evaluator cycle count |
+| Halt rate | ≤ 25% of runs | Above this, KB is underpopulated — see §KB Maintenance |
+| Mandatory-gap rate | tracked, not targeted | This is a business signal, not a defect rate |
+| Untraceable numerics | 0, always | Any nonzero is a P0 |
+| Component self-tests | 4/4 green | Nothing ships red |
 
-Commands: `*tier` restates current tier and active gates.
+Halt rate has no aggressive target on purpose. A halt is the system
+refusing to guess. Driving it to zero by loosening gates is the single
+worst change anyone could make to this repo.
 
-## Run states
+---
 
-| State | Operator action |
-|---|---|
-| `INTAKE_REVIEW` | Confirm scope, tier, gap preview from Q3 |
-| `PRICING_REVIEW` | Select Competitive / Balanced / Premium scenario |
-| `DRAFT_REVIEW` | Read compliance gaps; edit narrative only (not numbers) |
-| `COMPLETED` | Export (G2 DOCX pending) |
-| `HALTED` | See halt cause; fix KB or intake; re-run from failed stage |
-| `FAILED` | Check run log; untraceable numerics or schema violation |
+## Standard run
 
-## Stage pipeline
+1. `python3 scripts/run_golden_tests.py` — must be green.
+2. Place the RFP source in `./in/`. Confirm text is extractable.
+3. Start the run. Answer the three intake questions.
+4. **Review the S0 gap preview before drafting.** This is the decision
+   point. A bid with four mandatory gaps may be a no-bid, and finding that
+   out now costs nothing.
+5. Approve tier and pricing scenario.
+6. Review the deliverable. The header tells you what to check first.
+7. Record outcome via feedback when the bid resolves. Win/loss data is the
+   only thing that makes case study scoring better over time.
 
-```
-S0 Intake → S1 Compliance → S2 Case studies → S3 Pricing →
-S4 Assembly → S5 Evaluator → S6 Emit
-```
+---
 
-Each stage must emit schema-valid output before the next begins. See
-`agent/system-prompt.md` for halt conditions per stage.
+## Handling a HALT
 
-## Halt causes & fix paths
-
-### NON_OVERRIDABLE (deterministic gates)
-
-| Cause | Stage | Fix |
-|---|---|---|
-| Missing cost row | S3 | Add row to `kb/cost-tables/` |
-| Volume out of band | S3 | Add validated cost row for volume band |
-| Untraceable numeric | S4/S5 | Remove figure or add source binding |
-| Schema violation (2nd fail) | Any | Fix input records, rerun stage |
-| Run log write failure | S6 | Fix filesystem permissions / path |
-
-### Overridable (with documented justification)
+A halt names a stage, a cause, and a record. Fix the record; do not
+override.
 
 | Cause | Fix |
 |---|---|
-| Zero eligible case studies | Expand KB or proceed without case section |
-| Credential expiring mid-term | Renew cert OR document gap with remediation date |
+| `MISSING_COST_ROW` | Add the validated row to `kb/cost-tables/`. Requires a real cost, not an estimate. |
+| `VOLUME_OUT_OF_BAND` | Add a cost row covering that volume band. Do not widen an existing band to make the error go away — the band exists because unit economics change at scale. |
+| `KB_COVERAGE_GAP` | Populate capability records for the uncovered service line. |
+| `MALFORMED_CERT_RECORD` | Fix `kb/certifications.json`. Check date format is `YYYY-MM-DD`. |
+| `NO_ELIGIBLE_CASE_STUDY` | Either proceed without a case study section, or add a relevant case. Do not lower `min_relevance_score` for one bid. |
+| `UNPARSEABLE_INPUT` | Scanned PDF with no text layer. Currently a known gap (README G1) — OCR externally and resubmit. |
+| `CRITICAL_DEFECT_UNRESOLVED` | Read the defect list. Usually a page limit or an unflagged mandatory gap. |
 
-## Changing a price
+### Override path
 
-**Never edit price fields in the console or prose.**
+Overrides exist for genuine edge cases and are deliberately awkward.
 
-1. Change engine input (volume, service line, margin tier)
-2. Re-run `scripts/pricing_engine.py` or S3 stage
-3. Human-approve new scenario
-4. Regenerate pricing narrative + downstream sections only
-
-## Audit commands
-
-| Command | Purpose |
-|---|---|
-| `*trace <field>` | Resolve any deliverable value to source record |
-| `*gaps` | Current compliance gap list with mitigations |
-| `*halt` | Operator-initiated stop with reason logged |
-
-## QA interpretation
-
-- **Overall score = minimum** of six dimensions
-- Low compliance + high writing → **KB gap**, not bad prose
-- CRITICAL defects on Tier 3: max 2 narrative regeneration cycles, then HALT
-- Evaluator never regenerates pricing or compliance — fix records, rerun stage
-
-## SLO targets (pre-production)
-
-| Metric | Target |
-|---|---|
-| p95 wall-clock (T1 RFQ) | < 15 minutes |
-| p95 wall-clock (T3 RFP) | < 45 minutes |
-| Component self-test pass | 100% before any deploy |
-
-Breaches attributed to sequential dependency (not model latency) are an
-ADR-001 escalation trigger — see §5.
-
-## Post-run
-
-1. Verify run log entry in `.ai/data/proposal-runs.jsonl`
-2. Archive deliverable with output header intact
-3. Attach final approved DOCX when G2 live
-4. Feed win/loss outcome back to KB for case study updates
-
-## Quick verify
-
-```bash
-python3 scripts/run_golden_tests.py
-python3 scripts/token_economics.py
-cd backend && python3 -m pytest tests/ -v
+```
+*override <halt_cause> --justification "<min 20 chars>" --operator <name>
 ```
 
-## Remaining blockers
+Writes to `overrides[]` in the run log with a timestamp. There is no silent
+override and no config flag that disables halts globally.
 
-| ID | Blocker |
-|---|---|
-| G1 | PDF/DOCX RFP ingest |
-| G2 | Branded DOCX export |
-| G7 | Golden fixture population |
-| G8 | NDA retention enforcement |
+Never override `MISSING_COST_ROW` or `VOLUME_OUT_OF_BAND`. Those produce a
+price with no cost basis, which is the failure this system was built to
+prevent.
 
-See [`known-gaps.md`](known-gaps.md) and [`fallback-playbook.md`](fallback-playbook.md).
+---
+
+## KB maintenance
+
+| Asset | Cadence | Owner |
+|---|---|---|
+| Cost tables | Monthly, or on any carrier rate change | Pricing |
+| Certifications | On issue/renewal + quarterly expiry sweep | Compliance |
+| Case studies | Quarterly; add every closed engagement | BD |
+| Capability records | On service line change | Ops |
+| Win/loss outcomes | Within 5 days of bid resolution | BD |
+
+**Quarterly expiry sweep is not optional.** A certification expiring in
+90 days will start producing `EXPIRES_MID_TERM` gaps on any bid with a
+contract start beyond that date. Better to see it in a sweep than in a
+proposal.
+
+---
+
+## Monthly review
+
+1. Halt causes ranked (query in observability-contract.md §Reading the log).
+2. Token drift vs. `token_economics.py` constants. Update and re-run gate.
+3. Mandatory-gap rate trend — rising means either the KB is stale or the
+   firm is bidding outside its capability envelope. Both are worth knowing.
+4. Check ADR-001 §5 escalation triggers. If none fire, the architecture
+   decision stands and does not get revisited.
+5. Re-verify `RATE_CARD` in `token_economics.py`; update `LAST_VERIFIED`.
+
+---
+
+## Incident: a wrong number shipped
+
+P0. Work in this order.
+
+1. Pull the run log entry by `run_id`.
+2. `*trace` the field. Determine whether the value came from a script or
+   from model narrative.
+3. **Script origin** → the source record was wrong. Fix the record. Query
+   the log for every run sharing that `kb_snapshot_hash` and notify on all
+   affected bids.
+4. **Narrative origin** → the model emitted a binding numeric outside a
+   script. This is a containment failure in the hard constraints. Add a
+   golden case reproducing it before fixing anything. The test comes first.
+5. Log the incident. If narrative origin, treat the constraint set in
+   `system-prompt.md` as compromised until the golden case passes.
+
+Case 4 is the one that matters. It means the core safety property leaked,
+and a fix without a regression test is not a fix.

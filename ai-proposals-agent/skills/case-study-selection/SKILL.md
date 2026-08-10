@@ -1,46 +1,76 @@
 ---
 name: case-study-selection
-description: Writes narrative for case studies ranked by case_study_scorer.py. Use at S2 after deterministic ranking. Do not use to select which case studies to include — the scorer selects; you write. Do not use to invent metrics, client names, or results not in source records.
+description: Writes proposal narrative for case studies already ranked and selected by case_study_scorer.py. Use when assembling the past performance or references section of a logistics proposal. Do not use to choose which case studies to include — selection is deterministic and produced by the scorer. Do not use to compute, convert, round, or restate any metric from a case record.
 ---
 
-# Case Study Selection (Narrative)
+# Case Study Selection Narrative
 
 ## Hard rules
 
-1. You do not choose case studies. `case_study_scorer.py` ranks and returns
-   top-N. You write narrative for the returned IDs only.
-2. Metrics are transcribed exactly from source records. You may reorder
-   which metric leads. You may not round, convert units, or compute derived
-   figures.
-3. Client names appear only when `release_flag: true` on the source record.
-   Otherwise use the scorer's `display_name` (anonymized variant).
-4. If scorer returns `halt: true` (zero eligible cases), do not invent case
-   studies. Omit the section or note "No qualifying case studies in KB" per
-   operator instruction.
+1. You do not select. The scorer selects. You write for what it returns.
+2. Metrics are transcribed exactly. No unit conversion, no rounding, no
+   derived figures.
+3. `release_flag: false` → use `display_name` from the scorer output. Never
+   the real client name, never a hint that identifies them (specific city,
+   distinctive volume, named product line).
+4. Relevance framing must connect to a requirement that actually appears in
+   the extracted RFP requirements, cited by `source_ref`.
 
-## Narrative structure (per case)
+## The transcription rule, concretely
 
-1. **Challenge** — prospect's problem in their language, tied to RFP source
-2. **Approach** — services deployed, geography, timeline (from record)
-3. **Results** — quantified outcomes transcribed verbatim from `results[]`
+Record says: `"35% reduction in transit time"`
 
-Three paragraphs maximum per case. No marketing adjectives.
-
-## Metric transcription examples
-
-| Source record | Allowed | Forbidden |
+| Allowed | Forbidden | Why |
 |---|---|---|
-| "35% reduction in transit time" | "cut transit time by 35%" | "over a third," "roughly 40%" |
-| "99.4% OTIF" | "99.4% OTIF" | "nearly perfect OTIF," "~99%" |
-| "41,200 shipments" | "41,200 shipments" | "over 40,000 shipments" |
+| cut transit time by 35% | over a third | transformation of a binding claim |
+| a 35% transit time reduction | roughly 40% | fabricated precision |
+| transit time fell 35% | 35% faster | not equivalent; different denominator |
 
-## Alignment check
+That last row is the one people get wrong. A 35% reduction in transit time
+is not a 35% speed increase. If you find yourself reasoning about which is
+correct, you are computing, which you may not do. Transcribe.
 
-Each case narrative must map to at least one mandatory requirement or
-evaluation criterion from S0 extraction. Misalignment is a MAJOR defect
-in S5 evaluation.
+## Structure
 
-## Output
+```
+**{display_name} — {industry}**
 
-One subsection per selected case ID, in scorer rank order. Include case_id
-in metadata for traceability. Do not reorder by narrative preference.
+Challenge: 2–3 sentences. Written so the prospect recognizes their own
+situation. Lead with the operational symptom, not the diagnosis.
+
+Solution: 3–4 sentences. Emphasize the parts of the approach that map
+to this prospect's scope. Omit parts that do not, even if impressive.
+
+Results:
+- metric, transcribed exactly
+- metric, transcribed exactly
+- metric, transcribed exactly
+
+Relevance: one sentence tying this to a specific RFP requirement,
+cited.
+```
+
+150–200 words. Three cases maximum.
+
+## What makes a case study land
+
+Evaluators are comparing four to eight proposals that all claim excellence.
+The differentiator is whether your challenge paragraph describes their
+problem accurately enough that they stop skimming.
+
+Write the challenge from the prospect's side of the table. "Peak season
+volume exceeded fixed warehouse capacity, forcing overflow into third-party
+space at spot rates" is recognizable. "The client faced significant
+logistics challenges" is not, and it is the sentence that gets your
+proposal ranked fourth.
+
+## When the scorer returns fewer than three
+
+Write what you have. Do not pad with weaker cases, do not reuse a case with
+a different framing, and do not write a generic capability paragraph
+dressed as a case study. A two-case section is fine. A fabricated third is
+not.
+
+If the scorer halts with zero eligible cases, the section is omitted and the
+operator is told why, so they can decide whether to add a case record or
+proceed without.

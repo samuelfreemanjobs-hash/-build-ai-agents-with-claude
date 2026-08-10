@@ -1,91 +1,64 @@
 # Fallback Playbook
 
-**Version:** 2.0.0  
-**Trigger:** Primary model unavailable, rate limited, or quality degradation detected
+Every fallback degrades toward less output, never toward unverified output.
 
----
+## Model unavailable / API error
 
-## Model fallback chain
+Retry twice with backoff. Then switch to `models.fallback` in core-config.
+Log `agent_version` with the fallback model ID so output quality can be
+attributed later.
 
-Defined in `agent/core-config.xml`:
+If both unavailable: HALT. There is no local generation path. Deterministic
+scripts still run — pricing and the compliance matrix can be produced
+without any model, and for a T0 rate quote that is most of the deliverable.
 
-| Role | Model | Trigger |
-|---|---|---|
-| Primary | `claude-opus-4-5` | Default for narrative, extraction, evaluation |
-| Fallback | `claude-sonnet-4-5` | `primary_unavailable` |
+## Deterministic script fails its self-test
 
-**VERIFY_BEFORE_USE:** Confirm model IDs against current Anthropic API listing
-before production deploy.
+Nothing ships. `run_golden_tests.py` returns 1 and the pipeline refuses to
+start. This is not configurable.
 
----
+If pricing is needed urgently and the engine is red, price manually from the
+cost tables and mark the run `OPERATOR_ABORTED` with the manual price
+recorded outside this system. Do not let the model fill in.
 
-## When to fallback
+## Schema validation fails on model output
 
-| Condition | Action |
+One retry with the schema restated. On second failure, HALT with
+`SCHEMA_VIOLATION` and the offending payload attached. Do not hand-repair
+the JSON — a malformed extraction usually means the source document was
+misread, and repairing the shape hides the real problem.
+
+## Evaluator cycle cap reached with CRITICAL defect open
+
+HALT. Emit the partial document clearly marked `INCOMPLETE — CRITICAL
+DEFECTS OPEN` with the defect list at the top, not buried. The operator may
+finish manually; they may not receive a document that looks finished.
+
+## KB partially unavailable
+
+| Missing | Behavior |
 |---|---|
-| Primary returns 503/529 | Retry once after 30s, then fallback |
-| Primary rate limited (429) | Exponential backoff (max 3 retries), then fallback |
-| Primary timeout (>120s on single stage) | Log, retry once, then fallback |
-| Operator explicitly requests fallback | Switch for remainder of run |
+| Cost tables | HALT at S3. Never estimate. |
+| Certifications | S1 proceeds, everything resolves GAP. Output is honest but likely uncompetitive — tell the operator why. |
+| Case studies | S2 halts with `NO_ELIGIBLE_CASE_STUDY`. Proposal may proceed without the section. |
+| Capability records | HALT at S0 Q2. |
 
----
+Only the case study path degrades gracefully, because a proposal without
+case studies is weaker but still correct. A proposal without cost basis is
+not.
 
-## What fallback does NOT change
+## Run log write fails
 
-Fallback model switch affects **narrative stages only** in terms of quality
-expectations. These are unchanged regardless of model:
+The run has failed. Say so plainly and do not deliver the document.
 
-- `scripts/pricing_engine.py` — deterministic
-- `scripts/compliance_validator.py` — deterministic
-- `scripts/case_study_scorer.py` — deterministic
-- HALT rules, tier gates, schema validation
-- Human review requirement on every deliverable
+This looks pedantic and is not. Unlogged output is untraceable output, and
+untraceable output is exactly the artifact this system exists to prevent.
+Fix the write path, rerun. The run is cheap; an unattributable proposal in
+a customer's hands is not.
 
-**Never** ask the fallback model to compute prices or determine compliance.
+## Rush mode (inside 24h to submission)
 
----
-
-## Quality degradation detection
-
-If fallback produces:
-- Schema validation failure on first attempt → retry once with structured output prompt
-- Second schema failure → HALT (R8 in DUTIES.md)
-- QA score below tier minimum after evaluator → HALT or operator review
-
-Log `model_used` and `fallback_triggered: true` in run log.
-
----
-
-## Manual fallback (DFY tier)
-
-When the automated pipeline is unavailable:
-
-1. Run deterministic scripts locally:
-   ```bash
-   python3 scripts/pricing_engine.py --scope scope.json --costs costs.json
-   python3 scripts/compliance_validator.py --selftest  # verify validator OK
-   ```
-2. Use Claude in chat with `agent/system-prompt.md` + relevant skill
-3. Transcribe script outputs verbatim — do not recompute
-4. Write run log entry manually to `.ai/data/proposal-runs.jsonl`
-5. Mark deliverable with human review header
-
-This path requires none of the Docker/AWS infrastructure.
-
----
-
-## Recovery
-
-After fallback run completes:
-1. Archive run log with `fallback: true` flag
-2. If primary recovers mid-run, do not switch models mid-stage — finish stage on current model
-3. Post-incident: update `LAST_VERIFIED` in `token_economics.py` if rate card changed during outage
-
----
-
-## Escalation
-
-If both primary and fallback fail:
-- HALT with cause `MODEL_UNAVAILABLE`
-- Operator completes manually (DFY workflow)
-- Do not deliver unlogged output
+Reduces evaluator scope by one tier. Does **not** reduce human review gates,
+does not disable halts, does not loosen compliance. Marked `rush: true` in
+the log so that if a rushed bid is later disputed, the reduced evaluation
+is on record.

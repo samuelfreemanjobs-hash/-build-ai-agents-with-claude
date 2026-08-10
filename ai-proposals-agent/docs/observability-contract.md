@@ -1,136 +1,84 @@
 # Observability Contract
 
-**Version:** 2.0.0  
-**Applies to:** All proposal runs (S0–S6)
+Three surfaces. All three are mandatory; a run missing any of them is a
+failed run regardless of output quality.
 
-Every run must be auditable by an operator who was not present during
-generation. This document defines what is logged, where, and how `*trace`
-resolves.
+## 1. Run log — `.ai/data/proposal-runs.jsonl`
 
----
+One line per run, conforming to `schemas/run-log.schema.json`. Append-only.
 
-## Run log (canonical)
+Two invariants enforced by the schema itself:
 
-**Path:** `.ai/data/proposal-runs.jsonl` (see `agent/core-config.xml`)
+- `human_review_required` is `const: true`. There is no serialization of a
+  run that claims submission-readiness.
+- `outcome: COMPLETED` requires `traceability.untraceable_count == 0`. A run
+  that emitted a number it cannot resolve to a source cannot be logged as
+  completed. It logs as `FAILED`.
 
-One JSON object per line. Append-only. Conforms to `schemas/run-log.schema.json`.
+The second one is the point of the whole system. It is enforced at the
+schema layer specifically so it cannot be waived by prompt drift.
 
-### Required fields (every run)
+## 2. Output header
 
-| Field | Description |
-|---|---|
-| `run_id` | Unique identifier, format `run_YYYY-MM-DD_NNN` |
-| `outcome` | `INTAKE_REVIEW`, `PRICING_REVIEW`, `DRAFT_REVIEW`, `COMPLETED`, `HALTED`, `FAILED` |
-| `human_review_required` | Always `true` |
-| `tier` | T0–T3 from intake |
-| `created_at` | ISO 8601 UTC |
-| `stage_timings_ms` | Per-stage wall clock when `emit_stage_timings` enabled |
-| `skills_loaded` | Skill names loaded during run |
-| `token_counts` | Input/output tokens per stage when enabled |
+Rendered at the top of every deliverable, every tier. Fields defined in
+DUTIES.md. The header exists so that a document detached from this system —
+forwarded, printed, pasted into email — still carries its provenance and
+its review requirement.
 
-### Traceability block
+## 3. `*trace <field>` — the audit primitive
 
-```json
-"traceability": {
-  "untraceable_count": 0,
-  "bindings": [
-    {
-      "field": "pricing.balanced.total_price",
-      "value": "396000.00",
-      "source_type": "script",
-      "source_ref": "scripts/pricing_engine.py#balanced.total_price",
-      "stage": "S3"
-    }
-  ]
-}
-```
-
-**COMPLETED** requires `untraceable_count == 0`.
-
-### HALT runs
-
-Must include:
-- `halt_cause` — named cause from deterministic gate or schema validation
-- `halt_stage` — S0–S6 where halt occurred
-- `operator_action` — specific record or field needed to proceed
-
----
-
-## Output header (deliverable)
-
-Every deliverable opens with the header block defined in `agent/DUTIES.md`.
-The header is the human-readable summary of the run log. Fields must match
-log values — mismatches are CRITICAL defects.
-
----
-
-## Stage observability
-
-When `emit_stage_timings` is true:
-
-| Stage | Logged events |
-|---|---|
-| S0 | Extraction complete, tier assigned, gap preview emitted |
-| S1 | Validator version, n_compliant, n_gap, n_mandatory_gap |
-| S2 | Scorer version, selected case IDs, halt if zero eligible |
-| S3 | Engine version, recommended scenario, pricing hash |
-| S4 | Sections assembled, word/page counts |
-| S5 | QA scores, defect count by severity, evaluator cycles used |
-| S6 | Log write confirmation, output path |
-
----
-
-## `*trace` command contract
-
-Operator invokes `*trace <field>` to resolve any value in the deliverable.
-
-Response format:
+Given any value in a deliverable, returns:
 
 ```
-FIELD:    pricing.balanced.total_price
-VALUE:    396000.00
-STAGE:    S3 — Pricing
-SOURCE:   scripts/pricing_engine.py
-REF:      kb/cost-tables/warehousing.csv#L14 (WHSE_PALLET unit_cost)
+field:          pricing.total_price
+value:          396000.00
+produced_by:    pricing_engine 2.0.0 (S3)
+inputs:         scope[2 lines], cost-tables/warehousing.csv#L14,
+                cost-tables/fulfillment.csv#L7
+margin_policy:  balanced (0.25, on price)
+run_id:         RUN-20260810-142233-9c1ab4e7
 ```
 
-If resolution fails → defect in the system, not operator error.
+If `*trace` cannot resolve a field, that is a defect in this system. It is
+not an acceptable limitation and it is not closed as "won't fix."
 
----
+## What is deliberately NOT logged
 
-## Redaction
+- Full RFP source text. NDA exposure with no observability benefit; the
+  `kb_snapshot_hash` plus retained source under TTL is sufficient for
+  reproduction.
+- Client names, when `redact_client_names_in_log` is true. `client_ref` is
+  an opaque handle resolvable only against the operator's own records.
+- Model reasoning traces. High volume, low diagnostic value relative to
+  stage timings plus defect codes.
 
-When `redact_client_names_in_log` is true:
-- Client names in case studies without `release_flag` are replaced with `[REDACTED]` in logs
-- RFP source text is never logged verbatim — only hashes and source refs
-- Certificate numbers are logged (needed for audit)
+## Reading the log
 
----
-
-## Retention (specified, not yet enforced)
-
-See `core-config.xml`:
-- RFP source TTL: 30 days
-- Run log TTL: 730 days
-- `use_for_model_training`: false
-
-Enforcement is **G8** — must be implemented before accepting NDA-covered documents.
-
----
-
-## Backend integration
-
-The FastAPI layer (`backend/ai_proposals_agent/`) emits compatible run logs via
-`RunLogBuilder`. Production agent runs should write to the same JSONL path or
-a Postgres mirror in phase 2.
-
----
-
-## Verification
+Mandatory-gap rate across runs:
 
 ```bash
-python3 scripts/run_golden_tests.py   # component self-tests
-python3 -m pytest backend/tests/ -v   # integration tests
+jq -s 'map(select(.outcome=="COMPLETED"))
+       | map(.compliance.n_mandatory_gap) | add / length' \
+  .ai/data/proposal-runs.jsonl
 ```
 
-Golden case **G23** asserts header completeness and human review line on all tiers.
+Halt causes ranked — this is the KB-maturity signal:
+
+```bash
+jq -r 'select(.outcome=="HALTED") | .halt.cause' \
+  .ai/data/proposal-runs.jsonl | sort | uniq -c | sort -rn
+```
+
+`KB_COVERAGE_GAP` and `MISSING_COST_ROW` dominating means the knowledge
+base is underpopulated, not that the agent is broken. Those halts are the
+system working.
+
+Token drift against the ADR-001 assumption:
+
+```bash
+jq -s 'map(.tokens.input) | add / length' .ai/data/proposal-runs.jsonl
+```
+
+If measured input tokens diverge more than 25% from
+`SINGLE_AGENT_TOKENS` in `token_economics.py`, update the constant and
+re-run the cost gate. The ADR's arithmetic is only as good as its inputs.

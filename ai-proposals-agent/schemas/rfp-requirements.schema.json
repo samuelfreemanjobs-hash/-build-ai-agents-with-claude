@@ -1,45 +1,41 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://freeman-intel.local/schemas/rfp-requirements.schema.json",
-  "title": "RfpRequirements",
-  "description": "S0 intake output — extracted RFP requirements and tier assignment.",
+  "$id": "https://ai-proposals-agent/schemas/rfp-requirements.schema.json",
+  "title": "Extracted RFP Requirements",
   "type": "object",
-  "required": [
-    "submission_date",
-    "tier",
-    "client",
-    "scope",
-    "requirements",
-    "intake_answers"
-  ],
+  "additionalProperties": false,
+  "required": ["schema_version", "submission", "scope", "requirements", "evaluation_criteria"],
   "properties": {
-    "submission_date": {
-      "type": "string",
-      "format": "date"
-    },
-    "contract_start_date": {
-      "type": "string",
-      "format": "date"
-    },
-    "tier": {
-      "type": "string",
-      "enum": ["T0", "T1", "T2", "T3"]
-    },
-    "tier_triggers": {
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "rush": {
-      "type": "boolean",
-      "default": false
-    },
+    "schema_version": { "const": "2.0.0" },
     "client": {
       "type": "object",
-      "required": ["company_name", "industry"],
       "properties": {
-        "company_name": { "type": "string" },
+        "name": { "type": "string" },
         "industry": { "type": "string" },
-        "pain_points": { "type": "array", "items": { "type": "string" } }
+        "stated_pain_points": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text", "source_ref"],
+            "properties": {
+              "text": { "type": "string" },
+              "source_ref": { "type": "string" }
+            }
+          }
+        },
+        "incumbent_signals": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "submission": {
+      "type": "object",
+      "required": ["due_date"],
+      "properties": {
+        "due_date": { "type": "string", "format": "date" },
+        "contract_start_date": { "type": ["string", "null"], "format": "date" },
+        "page_limit": { "type": ["integer", "null"], "minimum": 1 },
+        "word_limit": { "type": ["integer", "null"], "minimum": 1 },
+        "required_sections": { "type": "array", "items": { "type": "string" } },
+        "format": { "type": ["string", "null"] }
       }
     },
     "scope": {
@@ -48,71 +44,83 @@
       "properties": {
         "service_lines": {
           "type": "array",
+          "minItems": 1,
           "items": {
             "type": "object",
-            "required": ["service_code"],
+            "required": ["service_code", "source_ref"],
             "properties": {
               "service_code": { "type": "string" },
               "description": { "type": "string" },
               "volume": { "type": ["string", "null"] },
-              "volume_unit": { "type": "string" },
+              "volume_qualifier": {
+                "type": ["string", "null"],
+                "description": "e.g. 'approximately', 'at peak'. Carried, never dropped."
+              },
               "source_ref": { "type": "string" }
             }
           }
         },
-        "geography": { "type": "array", "items": { "type": "string" } },
-        "page_limit": { "type": "integer" },
-        "word_limit": { "type": "integer" }
+        "geographies": { "type": "array", "items": { "type": "string" } }
       }
     },
     "requirements": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name", "mandatory", "source_ref"],
+        "required": ["name", "mandatory", "source_ref", "category"],
         "properties": {
           "name": { "type": "string" },
-          "category": { "type": "string" },
           "mandatory": { "type": "boolean" },
+          "modal_ambiguous": { "type": "boolean", "default": false },
+          "modal_evidence": {
+            "type": ["string", "null"],
+            "description": "The exact modal phrase that set mandatory status."
+          },
+          "category": {
+            "enum": ["certification", "technical", "sla", "insurance",
+                     "reporting", "sustainability", "security", "other"]
+          },
+          "threshold": { "type": ["string", "null"] },
+          "exceeds_operator_history": { "type": "boolean", "default": false },
           "source_ref": { "type": "string" }
         }
       }
     },
     "evaluation_criteria": {
+      "type": "object",
+      "required": ["weights_unnormalized", "criteria"],
+      "properties": {
+        "weights_unnormalized": { "type": "boolean" },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "weight", "source_ref"],
+            "properties": {
+              "name": { "type": "string" },
+              "weight": { "type": "number", "minimum": 0 },
+              "source_ref": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "risk_flags": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["criterion", "weight"],
+        "required": ["flag", "source_ref"],
         "properties": {
-          "criterion": { "type": "string" },
-          "weight": { "type": "number" },
+          "flag": {
+            "enum": ["penalty_clause", "liquidated_damages", "incumbent_displacement",
+                     "sla_exceeds_history", "unlimited_liability", "short_timeline"]
+          },
+          "detail": { "type": "string" },
           "source_ref": { "type": "string" }
         }
       }
     },
-    "weights_unnormalized": {
-      "type": "boolean",
-      "default": false
-    },
-    "intake_answers": {
-      "type": "object",
-      "required": ["q1_submission_date_ok", "q2_cost_coverage_ok", "q3_gaps_surfaced"],
-      "properties": {
-        "q1_submission_date_ok": { "type": "boolean" },
-        "q2_cost_coverage_ok": { "type": "boolean" },
-        "q3_gaps_surfaced": { "type": "boolean" }
-      }
-    },
-    "gap_preview": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["requirement", "reason"],
-        "properties": {
-          "requirement": { "type": "string" },
-          "reason": { "type": "string" }
-        }
-      }
-    }
+    "tier": { "enum": ["T0", "T1", "T2", "T3"] },
+    "tier_trigger": { "type": "string" }
   }
 }
