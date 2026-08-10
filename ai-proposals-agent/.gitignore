@@ -6,6 +6,7 @@
 node_modules/
 dist/
 proposal_PROP-*.json
+generated_proposals/
 *.egg-info/
 __pycache__/
 .pytest_cache/
