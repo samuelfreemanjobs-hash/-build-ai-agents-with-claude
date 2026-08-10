@@ -18,75 +18,47 @@ Built for the same Metro Detroit logistics corridor as [Freeman Intel](../freema
 | Path | Description |
 |------|-------------|
 | [`docs/complete-system-design.md`](docs/complete-system-design.md) | **Full spec** — all 15 sections, v2.1 merged |
+| [`docs/deployment-guide.md`](docs/deployment-guide.md) | **Deploy** — local, Docker, AWS outline |
 | [`docs/system-design.md`](docs/system-design.md) | v2 architecture guarantees |
-| [`docs/prompt-architecture.md`](docs/prompt-architecture.md) | Master + sub-prompt index |
-| [`docs/knowledge-base.md`](docs/knowledge-base.md) | SQL schema + population guide |
-| [`docs/ui-ux-flows.md`](docs/ui-ux-flows.md) | SaaS 7-step + operator console |
-| [`docs/gtm-and-monetization.md`](docs/gtm-and-monetization.md) | Pricing tiers, positioning, retainers |
-| [`docs/implementation-roadmap.md`](docs/implementation-roadmap.md) | 90-day launch plan |
-| [`docs/brand-system.md`](docs/brand-system.md) | Mark, color semantics |
-| [`docs/runbook.md`](docs/runbook.md) | Operator procedures |
-| [`schemas/`](schemas/) | run-log, pricing, compliance, rfp-intake |
-| [`prompts/`](prompts/) | Master, orchestrator, 8 sub-prompts |
-| [`ui/operator-console/`](ui/operator-console/) | Operator console (single-run view) |
+| [`backend/`](backend/) | Python engine + FastAPI |
+| [`frontend/`](frontend/) | React SaaS dashboard |
+| [`deploy/`](deploy/) | Docker Compose, SQL init, `.env.example` |
+| [`ui/operator-console/`](ui/operator-console/) | Operator trace/compliance UI |
 
-## Backend (Python)
+## Quick start
 
-Production-ready v2.1 backend in [`backend/`](backend/):
+### Backend + API
 
 ```bash
-cd backend
-pip install -e ".[dev]"
-python3 -m pytest tests/ -v          # 21 tests
-python3 -m ai_proposals_agent.cli --demo --automotive
-
-# REST API
-pip install -e ".[dev]"
-python3 -m ai_proposals_agent.api.main   # → http://localhost:8000/docs
-# or: ai-proposals-api
+cd backend && pip install -e ".[dev]"
+python3 -m ai_proposals_agent.api.main   # http://localhost:8000/docs
+python3 -m pytest tests/ -v              # 21 tests
 ```
 
-**Key modules:** `PricingEngine` (Decimal, no LLM), `ComplianceChecker`, `RunLogBuilder`, `ProposalAgent`, `NON_OVERRIDABLE` halts (G07).
-
-## Operator console
-
-Open locally:
+### Frontend
 
 ```bash
-cd ui/operator-console && python3 -m http.server 8080
-# → http://localhost:8080
+cd frontend && npm install && npm run dev   # http://localhost:5173
 ```
 
-The console is an **operator tool**, not a SaaS dashboard. Its job is to make traceability and refusals legible.
-
-## Packaging
+### Docker (full stack)
 
 ```bash
-./package.sh
-# → dist/ai-proposals-agent-<timestamp>.tar.gz + .sha256
+cd deploy && cp .env.example .env
+docker compose up -d --build
+# http://localhost · http://localhost:8000/docs
 ```
 
-Blocks on missing files, skill frontmatter validation, self-tests, and JSON well-formedness.
-
-## Pricing tiers (GTM placeholder)
-
-| Tier | Price | Includes |
-|------|-------|----------|
-| Starter | $497/mo | Core generation, 5 proposals/mo, QA checklist |
-| Pro | $997/mo | + pricing scenarios, compliance module, case study matching |
-| Enterprise | $2,497/mo | + KB sync, run-log retention, custom validators |
-
-Service option: $2K–$5K per proposal with retainer discounts.
+See [`docs/deployment-guide.md`](docs/deployment-guide.md) for production checklist and AWS outline.
 
 ## Status
 
-- [x] System design & prompt architecture
-- [x] Core JSON schemas (run-log, pricing, compliance)
-- [x] Operator console + brand system (demo data)
-- [ ] G1: Document ingestion (RFP PDF/DOCX)
-- [ ] G2: DOCX export
-- [ ] Run-log browser (multi-run)
-- [ ] KB coverage view
+- [x] System design, schemas, prompts
+- [x] Python backend + FastAPI + 21 tests
+- [x] Operator console + React dashboard + Docker deploy
+- [x] PostgreSQL init schema (API persistence — phase 2)
+- [ ] G1: PDF/DOCX RFP ingest · G2: DOCX export
+- [ ] Run-log browser · KB coverage view
 
 ## License
 

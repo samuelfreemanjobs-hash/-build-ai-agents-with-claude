@@ -40,7 +40,13 @@ REQUIRED=(
   backend/ai_proposals_agent/pricing_engine.py
   backend/ai_proposals_agent/halts.py
   backend/ai_proposals_agent/api/main.py
-  backend/tests/test_api.py
+  deploy/docker-compose.yml
+  deploy/Dockerfile
+  deploy/.env.example
+  deploy/sql/init.sql
+  docs/deployment-guide.md
+  frontend/package.json
+  frontend/src/App.jsx
   package.sh
 )
 
