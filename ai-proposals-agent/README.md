@@ -18,7 +18,8 @@ Built for the same Metro Detroit logistics corridor as [Freeman Intel](../freema
 | Path | Description |
 |------|-------------|
 | [`docs/complete-system-design.md`](docs/complete-system-design.md) | **Full spec** — all 15 sections, v2.1 merged |
-| [`docs/deployment-guide.md`](docs/deployment-guide.md) | **Deploy** — local, Docker, AWS outline |
+| [`docs/deployment-guide.md`](docs/deployment-guide.md) | **Complete deploy guide** — local, Docker, AWS, economics |
+| [`docs/known-gaps.md`](docs/known-gaps.md) | Honest gap list + build order |
 | [`docs/system-design.md`](docs/system-design.md) | v2 architecture guarantees |
 | [`backend/`](backend/) | Python engine + FastAPI |
 | [`frontend/`](frontend/) | React SaaS dashboard |
