@@ -10,6 +10,8 @@ generated_proposals/
 frontend/node_modules/
 frontend/dist/
 deploy/.env
+!.env.example
+!deploy/.env.example
 *.egg-info/
 __pycache__/
 .pytest_cache/
