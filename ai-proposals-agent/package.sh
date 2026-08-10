@@ -39,7 +39,8 @@ REQUIRED=(
   backend/ai_proposals_agent/agent.py
   backend/ai_proposals_agent/pricing_engine.py
   backend/ai_proposals_agent/halts.py
-  backend/tests/test_pricing_engine.py
+  backend/ai_proposals_agent/api/main.py
+  backend/tests/test_api.py
   package.sh
 )
 

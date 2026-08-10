@@ -37,10 +37,13 @@ Production-ready v2.1 backend in [`backend/`](backend/):
 ```bash
 cd backend
 pip install -e ".[dev]"
-python3 -m pytest tests/ -v          # 14 tests
+python3 -m pytest tests/ -v          # 21 tests
 python3 -m ai_proposals_agent.cli --demo --automotive
-export ANTHROPIC_API_KEY=...         # live LLM
-python3 -m ai_proposals_agent.cli --rfp path/to/rfp.txt
+
+# REST API
+pip install -e ".[dev]"
+python3 -m ai_proposals_agent.api.main   # → http://localhost:8000/docs
+# or: ai-proposals-api
 ```
 
 **Key modules:** `PricingEngine` (Decimal, no LLM), `ComplianceChecker`, `RunLogBuilder`, `ProposalAgent`, `NON_OVERRIDABLE` halts (G07).

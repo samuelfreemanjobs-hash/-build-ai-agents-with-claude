@@ -28,6 +28,24 @@ export ANTHROPIC_API_KEY=sk-ant-...
 python -m ai_proposals_agent.cli --rfp path/to/rfp.txt
 ```
 
+## REST API
+
+```bash
+python3 -m ai_proposals_agent.api.main
+# Docs: http://localhost:8000/docs
+```
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/v1/proposals/generate` | POST | Async proposal job |
+| `/api/v1/proposals/generate-sync` | POST | Sync (testing) |
+| `/api/v1/proposals/status/{job_id}` | GET | Poll job |
+| `/api/v1/proposals/download/{job_id}` | GET | JSON download |
+| `/api/v1/pricing/scenarios` | POST | Engine-only pricing |
+| `/api/v1/compliance/check` | GET | KB compliance validation |
+
+Uses real `ProposalAgent` + `PricingEngine`. Auto-enables mock LLM when `ANTHROPIC_API_KEY` unset.
+
 ## Tests
 
 ```bash
