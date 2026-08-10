@@ -45,6 +45,7 @@ REQUIRED=(
   deploy/.env.example
   deploy/sql/init.sql
   docs/deployment-guide.md
+  docs/known-gaps.md
   frontend/package.json
   frontend/src/App.jsx
   package.sh
