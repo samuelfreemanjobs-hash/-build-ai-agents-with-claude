@@ -11,8 +11,9 @@ A complete marketing operating system for category creation, narrative dominance
 ## Quick Start
 
 1. **Start with the visual map** → [diagrams/visual-architecture.md](diagrams/visual-architecture.md) or open [diagrams/architecture.html](diagrams/architecture.html) in a browser
-2. **Run a Category Creation Sprint** → [sops/01-category-creation-sprint.md](sops/01-category-creation-sprint.md)
-3. **Track KPIs** → [metrics/kpi-dashboard.csv](metrics/kpi-dashboard.csv)
+2. **See a real business application** → [applications/the-freeman-method-business/](applications/the-freeman-method-business/)
+3. **Run a Category Creation Sprint** → [sops/01-category-creation-sprint.md](sops/01-category-creation-sprint.md)
+4. **Track KPIs** → [metrics/kpi-dashboard.csv](metrics/kpi-dashboard.csv)
 
 ---
 
