@@ -1,0 +1,74 @@
+id: freeman-intel
+name: Freeman Intel
+tagline: Plant inbound readiness before the truck arrives.
+architecture: multi-agent
+icp: Manufacturing plant inbound logistics teams (20–500 employees) in Metro Detroit auto/industrial corridor
+wedge: Email-first ASN validation and dock readiness — no TMS API required
+status: design
+path: freeman-intel/
+
+pipeline:
+  - id: S0
+    name: Intake
+    mode: agent
+  - id: S1
+    name: Extract & structure
+    mode: agent
+  - id: S2
+    name: Validate against plant rules
+    mode: deterministic
+  - id: S3
+    name: Plan dock/yard drafts
+    mode: agent
+  - id: S4
+    name: Human approval queue
+    mode: human
+  - id: S5
+    name: Export & draft comms
+    mode: export
+
+skills: []
+
+deterministic_modules:
+  - routing-guide-rules
+  - po-release-matcher
+  - scac-allowlist
+  - appointment-window-check
+
+hard_rules:
+  - Human approval before any action that affects the gate, OTIF, or chargebacks.
+  - Email-first intake — no TMS API required for v1.
+  - Customers buy outcome bundles, not individual agents.
+  - Export-not-API for v1 integrations.
+  - Every inbound record traces to source email or upload.
+
+bundles:
+  - id: core
+    name: Core Plant Inbound
+    menu_items:
+      - inbound-readiness
+      - dock-schedule-assistant
+      - gate-receiving-heads-up
+  - id: compliance
+    name: Auto / Detroit Compliance
+    menu_items:
+      - routing-guide-checker
+      - otif-risk-radar
+      - approved-carrier-guard
+  - id: comms
+    name: Comms & Coordination
+    menu_items:
+      - supplier-asn-chase
+      - carrier-appointment-chase
+      - hot-part-escalation
+
+pricing_tiers:
+  - id: starter
+    name: Starter
+    price_monthly_usd: 499
+  - id: professional
+    name: Professional
+    price_monthly_usd: 999
+  - id: enterprise
+    name: Enterprise
+    price_monthly_usd: 1999

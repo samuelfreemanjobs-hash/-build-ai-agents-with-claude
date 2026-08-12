@@ -29,6 +29,7 @@ Bundle pitch: *"Win Detroit auto lanes and run the dock without chargebacks."*
 
 | Repo | Path |
 |------|------|
+| saas-factory | `saas-factory/` — agent SaaS scaffold and governance |
 | freeman-intel | `freeman-intel/` |
 | ai-proposals-agent | `ai-proposals-agent/` |
 
