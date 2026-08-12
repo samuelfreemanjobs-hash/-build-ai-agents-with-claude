@@ -1,0 +1,80 @@
+id: ai-proposals-agent
+name: AI Proposals Agent™
+tagline: Every number traces.
+architecture: single-agent
+icp: Logistics BD, sales, and solutions teams responding to RFPs in the Detroit corridor
+wedge: Logistics RFP proposals in ~75 minutes with auditable pricing and compliance
+status: scaffold
+path: ai-proposals-agent/
+
+pipeline:
+  - id: S0
+    name: RFP intake
+    mode: agent
+  - id: S1
+    name: Requirement extraction
+    mode: agent
+  - id: S2
+    name: Compliance mapping
+    mode: deterministic
+  - id: S3
+    name: Content generation
+    mode: agent
+  - id: S4
+    name: Pricing
+    mode: deterministic
+  - id: S5
+    name: QA evaluation
+    mode: agent
+  - id: S6
+    name: Export
+    mode: export
+
+skills:
+  - rfp-requirement-extraction
+  - compliance-matrix-mapping
+  - pricing-narrative
+  - case-study-selection
+  - proposal-qa-evaluator
+
+deterministic_modules:
+  - pricing_engine
+  - compliance_validator
+  - case_study_scorer
+  - token_economics
+
+hard_rules:
+  - No generated numerics in binding fields — prices, margins, totals come from pricing_engine.py only.
+  - Compliance is fail-closed — missing or expired certs resolve to GAP, never COMPLIANT.
+  - No pricing regeneration by the model.
+  - Gaps surface, never smooth.
+  - Every run writes a conformant run log entry.
+  - Schema violation is HALT.
+
+bundles:
+  - id: starter
+    name: Starter
+    menu_items:
+      - standard-rfq
+      - rate-quotes
+  - id: professional
+    name: Professional
+    menu_items:
+      - full-rfp
+      - compliance-matrix
+  - id: enterprise
+    name: Enterprise
+    menu_items:
+      - tier-3-bids
+      - evaluator-regeneration
+
+pricing_tiers:
+  - id: starter
+    name: Starter
+    price_monthly_usd: 497
+  - id: professional
+    name: Professional
+    price_monthly_usd: 997
+  - id: enterprise
+    name: Enterprise
+    price_monthly_usd: 2497

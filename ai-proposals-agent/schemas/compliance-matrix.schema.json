@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-proposals-agent/schemas/compliance-matrix.schema.json",
+  "title": "Compliance Matrix",
+  "description": "Output of compliance_validator.py. Status is set only by the validator; narrative is added by the model without altering status.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["validator_version", "submission_date", "rows",
+               "n_compliant", "n_gap", "n_mandatory_gap", "coverage_pct"],
+  "properties": {
+    "validator_version": { "type": "string" },
+    "submission_date": { "type": "string", "format": "date" },
+    "contract_start_date": { "type": ["string", "null"], "format": "date" },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["requirement", "requirement_source_ref", "mandatory", "status"],
+        "properties": {
+          "requirement": { "type": "string" },
+          "requirement_source_ref": { "type": "string" },
+          "mandatory": { "type": "boolean" },
+          "status": { "enum": ["COMPLIANT", "GAP"] },
+          "reason": {
+            "type": ["string", "null"],
+            "description": "Null only when status is COMPLIANT."
+          },
+          "certificate_number": { "type": ["string", "null"] },
+          "expiry_date": { "type": ["string", "null"] },
+          "record_source_ref": { "type": ["string", "null"] },
+          "mitigation": {
+            "type": ["string", "null"],
+            "description": "Model-authored. Must cite a source record or be the literal 'No mitigation currently available.'"
+          },
+          "mitigation_source_ref": { "type": ["string", "null"] }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "status": { "const": "COMPLIANT" } } },
+            "then": {
+              "required": ["certificate_number", "expiry_date", "record_source_ref"],
+              "properties": {
+                "certificate_number": { "type": "string", "minLength": 1 },
+                "expiry_date": { "type": "string", "format": "date" },
+                "reason": { "const": null }
+              }
+            }
+          },
+          {
+            "if": { "properties": { "status": { "const": "GAP" } } },
+            "then": {
+              "required": ["reason"],
+              "properties": { "reason": { "type": "string", "minLength": 1 } }
+            }
+          }
+        ]
+      }
+    },
+    "n_compliant": { "type": "integer", "minimum": 0 },
+    "n_gap": { "type": "integer", "minimum": 0 },
+    "n_mandatory_gap": { "type": "integer", "minimum": 0 },
+    "coverage_pct": { "type": "number", "minimum": 0, "maximum": 100 }
+  }
+}

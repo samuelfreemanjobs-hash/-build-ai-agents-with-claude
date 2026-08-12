@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://freeman-intel.local/schemas/compliance-report.schema.json",
+  "title": "ComplianceReport",
+  "type": "object",
+  "required": ["run_id", "checks", "mandatory_gap_count"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "mandatory_gap_count": { "type": "integer", "minimum": 0 },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "status", "mandatory"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "status": { "type": "string", "enum": ["COMPLIANT", "GAP", "UNKNOWN"] },
+          "mandatory": { "type": "boolean" },
+          "validator_reason": { "type": "string" },
+          "source_ref": { "type": "string" },
+          "mitigation": { "type": "string" },
+          "expires_at": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  }
+}
