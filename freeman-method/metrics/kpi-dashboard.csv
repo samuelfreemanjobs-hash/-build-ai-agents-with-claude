@@ -1,0 +1,10 @@
+Metric,Abbreviation,Definition,Target,Current Value,Previous Value,Trend,Status (Green/Yellow/Red),Pillar,Last Updated,Notes
+Hook Share Rate,HSR,% of audience sharing offer/content,≥ 20%,,,,Red,3 - Remarkability,, 
+Organic Spread Multiplier,OSM,Organic reach ÷ Paid reach,≥ 2.5x,,,,Red,4 - Contagion,,
+Loop Retention Rate,LRR,% of loops active after 30 days,≥ 80%,,,,Red,5 - Loop Leverage,,
+Category Term Adoption Rate,CTAR,% of industry mentions using your terms,≥ 60%,,,,Red,6 - Market Lexicon,,
+Cultural Touchpoint Penetration,CTP,% of planned cultural integrations executed,≥ 75%,,,,Red,7 - Cultural Gravity,,
+Assumption Kill Rate,AKR,% of industry assumptions disproven,≥ 50%,,,,Red,2 - Zero Assumption,,
+Opportunities Found,OF,High-score category opportunities per quarter,3-5,,,,Red,1 - Category Gap,,
+Talkability Score,TS,Total score from Talkability Scorecard (max 70),≥ 50,,,,Red,3 - Remarkability,,
+Brand Embedding Score,BES,Score from Brand Embedding Checklist (max 20),≥ 15,,,,Red,7 - Cultural Gravity,,
