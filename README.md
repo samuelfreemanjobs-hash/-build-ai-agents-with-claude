@@ -16,13 +16,20 @@ A curated AI prompt library inspired by God of Prompt — browse, search, filter
 
 ## Live demo
 
-After deployment, the app is available at:
+**URL:** https://samuelfreemanjobs-hash.github.io/-build-ai-agents-with-claude/
 
-**https://samuelfreemanjobs-hash.github.io/-build-ai-agents-with-claude/**
+### Enable GitHub Pages (one-time)
 
-(GitHub Pages deploys automatically on push to `main` or `cursor/prompt-library-3a2e`.)
+The static site is already on the `gh-pages` branch. Enable Pages in repo settings:
 
-> **Note:** If an agent told you to open `http://localhost:5173`, that only works on the machine where the server is running. On your computer, run the commands below locally — or use the live demo link above.
+1. Open [Settings → Pages](https://github.com/samuelfreemanjobs-hash/-build-ai-agents-with-claude/settings/pages)
+2. **Source:** **Deploy from a branch** (not GitHub Actions)
+3. **Branch:** `gh-pages` / **folder:** `/ (root)`
+4. Save, then wait 1–2 minutes
+
+> If you chose **GitHub Actions** as the source, the deploy workflow will run—but Pages must still be enabled first. The `gh-pages` branch option is simpler and does not require a workflow.
+
+> **Note:** `http://localhost:5173` only works on the machine where you run `npm run dev`—not from a cloud agent link on your laptop.
 
 ## Getting Started (run on your machine)
 
