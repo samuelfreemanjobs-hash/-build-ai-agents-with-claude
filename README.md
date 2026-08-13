@@ -14,7 +14,17 @@ A curated AI prompt library inspired by God of Prompt — browse, search, filter
 - **Sort options** — Shuffled, most copied, most liked, title A-Z
 - **Dark theme UI** — Modern, responsive design
 
-## Getting Started
+## Live demo
+
+After deployment, the app is available at:
+
+**https://samuelfreemanjobs-hash.github.io/-build-ai-agents-with-claude/**
+
+(GitHub Pages deploys automatically on push to `main` or `cursor/prompt-library-3a2e`.)
+
+> **Note:** If an agent told you to open `http://localhost:5173`, that only works on the machine where the server is running. On your computer, run the commands below locally — or use the live demo link above.
+
+## Getting Started (run on your machine)
 
 ```bash
 npm install
