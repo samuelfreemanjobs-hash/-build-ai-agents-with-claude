@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evaluation-report.schema.json",
+  "title": "EvaluationReport",
+  "type": "object",
+  "required": ["problem_id", "option_scores", "risks", "standards"],
+  "properties": {
+    "problem_id": { "type": "string" },
+    "option_scores": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["option_id", "scores", "weighted_total"],
+        "properties": {
+          "option_id": { "type": "string" },
+          "scores": {
+            "type": "object",
+            "properties": {
+              "simplicity": { "type": "number" },
+              "scalability": { "type": "number" },
+              "reliability": { "type": "number" },
+              "security": { "type": "number" },
+              "operability": { "type": "number" },
+              "cost": { "type": "number" },
+              "time_to_market": { "type": "number" }
+            }
+          },
+          "weighted_total": { "type": "number" },
+          "rank": { "type": "integer" }
+        }
+      }
+    },
+    "recommended_option": { "type": "string" },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "severity", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "severity": { "type": "string", "enum": ["critical", "high", "medium", "low"] },
+          "description": { "type": "string" },
+          "option_id": { "type": "string" },
+          "mitigation": { "type": "string" },
+          "acknowledged": { "type": "boolean", "default": false }
+        }
+      }
+    },
+    "standards": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string", "enum": ["PASS", "WARN", "FAIL"] },
+        "violations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rule": { "type": "string" },
+              "severity": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

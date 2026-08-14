@@ -7,3 +7,5 @@ products:
     spec: ai-proposals-agent.yaml
   - id: software-developer-agent
     spec: software-developer-agent.yaml
+  - id: principal-software-engineer
+    spec: principal-software-engineer.yaml

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "constraints.schema.json",
+  "title": "Constraints",
+  "type": "object",
+  "required": ["problem_id", "hard_constraints", "soft_constraints"],
+  "properties": {
+    "problem_id": { "type": "string" },
+    "hard_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "category", "description"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^C-[0-9]+$" },
+          "category": { "type": "string" },
+          "description": { "type": "string" },
+          "source": { "type": "string" }
+        }
+      }
+    },
+    "soft_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "description": { "type": "string" },
+          "weight": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "description": { "type": "string" },
+          "requires_validation": { "type": "boolean" }
+        }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "constraint_ids": { "type": "array", "items": { "type": "string" } },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}
