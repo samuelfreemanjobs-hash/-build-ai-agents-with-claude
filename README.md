@@ -22,6 +22,7 @@ See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs
 | **AI Proposals Agent™** | Every number traces | [`ai-proposals-agent/`](ai-proposals-agent/) |
 | **Software Developer Agent™** | Every change traces | [`software-developer-agent/`](software-developer-agent/) |
 | **Principal Software Engineer Agent™** | Every decision traces | [`principal-software-engineer/`](principal-software-engineer/) |
+| **Software Architect Agent™** | Every boundary traces | [`software-architect/`](software-architect/) |
 
 ## Shared principles
 
@@ -42,6 +43,9 @@ cd software-developer-agent && python3 scripts/run_golden_tests.py
 
 # Principal Software Engineer Agent
 cd principal-software-engineer && python3 scripts/run_golden_tests.py
+
+# Software Architect Agent
+cd software-architect && python3 scripts/run_golden_tests.py
 ```
 
 ## Structure
@@ -50,7 +54,8 @@ cd principal-software-engineer && python3 scripts/run_golden_tests.py
 ├── saas-factory/              # Product specs, scaffold CLI, templates
 ├── freeman-intel/             # Plant inbound logistics (design)
 ├── ai-proposals-agent/        # RFP proposal agent (scaffold + deterministic core)
-├── software-developer-agent/      # Software development agent (scaffold + deterministic core)
-├── principal-software-engineer/ # Architecture design agent (scaffold + deterministic core)
+├── software-developer-agent/        # Implementation agent
+├── principal-software-engineer/     # Architecture decisions agent
+├── software-architect/              # C4 modeling and governance agent
 └── README.md
 ```
