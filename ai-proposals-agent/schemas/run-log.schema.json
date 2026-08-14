@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-proposals-agent/schemas/run-log.schema.json",
+  "title": "Proposal Run Log Entry",
+  "description": "One JSONL line per run. Written to .ai/data/proposal-runs.jsonl. A run that cannot write this entry is a failed run.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id", "schema_version", "started_at", "ended_at", "outcome",
+    "tier", "kb_snapshot_hash", "stages", "scripts", "skills_loaded",
+    "tokens", "human_review_required"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "pattern": "^RUN-[0-9]{8}-[0-9]{6}-[a-f0-9]{8}$",
+      "description": "RUN-YYYYMMDD-HHMMSS-<8 hex>"
+    },
+    "schema_version": { "const": "2.0.0" },
+    "agent_version": { "type": "string" },
+
+    "started_at": { "type": "string", "format": "date-time" },
+    "ended_at": { "type": "string", "format": "date-time" },
+    "wall_clock_seconds": { "type": "number", "minimum": 0 },
+
+    "outcome": {
+      "enum": ["COMPLETED", "HALTED", "FAILED", "OPERATOR_ABORTED"]
+    },
+    "halt": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["stage", "cause", "detail"],
+      "properties": {
+        "stage": { "$ref": "#/$defs/stageId" },
+        "cause": {
+          "enum": [
+            "UNPARSEABLE_INPUT", "MISSING_SUBMISSION_DATE",
+            "KB_COVERAGE_GAP", "MISSING_COST_ROW", "VOLUME_OUT_OF_BAND",
+            "MALFORMED_CERT_RECORD", "SCHEMA_VIOLATION",
+            "NO_ELIGIBLE_CASE_STUDY", "CRITICAL_DEFECT_UNRESOLVED",
+            "LOG_WRITE_FAILURE", "MARGIN_POLICY_VIOLATION"
+          ]
+        },
+        "detail": { "type": "string" },
+        "record_ref": { "type": ["string", "null"] }
+      }
+    },
+
+    "tier": { "enum": ["T0", "T1", "T2", "T3"] },
+    "tier_trigger": {
+      "type": "string",
+      "description": "The specific condition that set this tier. Never blank."
+    },
+    "tier_escalated_from": { "type": ["string", "null"] },
+    "rush": { "type": "boolean", "default": false },
+
+    "client_ref": {
+      "type": "string",
+      "description": "Opaque handle. Client name is redacted when core-config redact_client_names_in_log is true."
+    },
+    "kb_snapshot_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "SHA-256 over the KB records loaded. Makes a run reproducible."
+    },
+
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "duration_ms"],
+        "properties": {
+          "id": { "$ref": "#/$defs/stageId" },
+          "status": { "enum": ["OK", "HALT", "SKIPPED", "RETRIED"] },
+          "duration_ms": { "type": "integer", "minimum": 0 },
+          "retry_count": { "type": "integer", "minimum": 0, "maximum": 1 },
+          "output_schema_valid": { "type": "boolean" },
+          "truncations": {
+            "type": "array",
+            "description": "Tool outputs truncated at max_tool_output_tokens. Never silent.",
+            "items": {
+              "type": "object",
+              "required": ["source", "original_tokens", "kept_tokens"],
+              "properties": {
+                "source": { "type": "string" },
+                "original_tokens": { "type": "integer" },
+                "kept_tokens": { "type": "integer" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "scripts": {
+      "type": "array",
+      "description": "Every deterministic invocation, with version. Required for *trace resolution.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "version", "exit_status"],
+        "properties": {
+          "name": {
+            "enum": ["pricing_engine", "compliance_validator",
+                     "case_study_scorer", "token_economics"]
+          },
+          "version": { "type": "string" },
+          "exit_status": { "enum": ["OK", "HALT"] },
+          "input_hash": { "type": "string" },
+          "output_hash": { "type": "string" }
+        }
+      }
+    },
+
+    "skills_loaded": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "stage"],
+        "properties": {
+          "name": { "type": "string" },
+          "stage": { "$ref": "#/$defs/stageId" }
+        }
+      }
+    },
+
+    "compliance": {
+      "type": "object",
+      "required": ["n_compliant", "n_gap", "n_mandatory_gap", "coverage_pct"],
+      "properties": {
+        "n_compliant": { "type": "integer", "minimum": 0 },
+        "n_gap": { "type": "integer", "minimum": 0 },
+        "n_mandatory_gap": { "type": "integer", "minimum": 0 },
+        "coverage_pct": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+
+    "pricing": {
+      "type": ["object", "null"],
+      "required": ["engine_version", "scenario_emitted"],
+      "properties": {
+        "engine_version": { "type": "string" },
+        "scenario_emitted": { "enum": ["competitive", "balanced", "premium"] },
+        "total_price": { "type": "string", "description": "Decimal as string. Never a float." },
+        "gross_margin_pct": { "type": "string" },
+        "line_item_count": { "type": "integer" }
+      }
+    },
+
+    "evaluator": {
+      "type": ["object", "null"],
+      "required": ["cycles_used", "cycles_permitted", "scores", "defects"],
+      "properties": {
+        "cycles_used": { "type": "integer", "minimum": 0, "maximum": 2 },
+        "cycles_permitted": { "type": "integer", "minimum": 0, "maximum": 2 },
+        "scores": {
+          "type": "object",
+          "required": ["compliance_coverage", "traceability", "consistency",
+                       "specificity", "criteria_responsiveness", "polish"],
+          "additionalProperties": { "type": "number", "minimum": 1, "maximum": 10 }
+        },
+        "defects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["severity", "code", "location"],
+            "properties": {
+              "severity": { "enum": ["CRITICAL", "MAJOR", "MINOR"] },
+              "code": { "type": "string" },
+              "location": { "type": "string" },
+              "resolved": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    },
+
+    "traceability": {
+      "type": "object",
+      "description": "Audit invariant. untraceable_count must be 0 for outcome COMPLETED.",
+      "required": ["binding_numerics_emitted", "untraceable_count"],
+      "properties": {
+        "binding_numerics_emitted": { "type": "integer", "minimum": 0 },
+        "untraceable_count": { "type": "integer", "minimum": 0 },
+        "untraceable_fields": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "tokens": {
+      "type": "object",
+      "required": ["input", "output"],
+      "properties": {
+        "input": { "type": "integer", "minimum": 0 },
+        "output": { "type": "integer", "minimum": 0 },
+        "by_stage": { "type": "object", "additionalProperties": { "type": "integer" } }
+      }
+    },
+
+    "overrides": {
+      "type": "array",
+      "description": "Operator overrides of a HALT. Each requires written justification.",
+      "items": {
+        "type": "object",
+        "required": ["halt_cause", "operator", "justification", "at"],
+        "properties": {
+          "halt_cause": { "type": "string" },
+          "operator": { "type": "string" },
+          "justification": { "type": "string", "minLength": 20 },
+          "at": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+
+    "human_review_required": {
+      "const": true,
+      "description": "Always true. This agent never emits submission-ready output."
+    }
+  },
+
+  "$defs": {
+    "stageId": { "enum": ["S0", "S1", "S2", "S3", "S4", "S5", "S6"] }
+  },
+
+  "allOf": [
+    {
+      "if": { "properties": { "outcome": { "const": "COMPLETED" } } },
+      "then": {
+        "properties": {
+          "traceability": {
+            "properties": { "untraceable_count": { "const": 0 } }
+          }
+        },
+        "required": ["pricing", "compliance", "traceability"]
+      }
+    },
+    {
+      "if": { "properties": { "outcome": { "const": "HALTED" } } },
+      "then": { "properties": { "halt": { "type": "object" } }, "required": ["halt"] }
+    }
+  ]
+}

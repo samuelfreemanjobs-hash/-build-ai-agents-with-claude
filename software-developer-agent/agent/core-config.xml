@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ENVIRONMENTAL GATES ONLY.
+  This file contains no orchestration logic, no behavioral rules, and no
+  decision criteria. Behavior lives in system-prompt.md. If a change here
+  would alter what the agent DOES rather than the limits it operates
+  WITHIN, it belongs in system-prompt.md instead.
+-->
+<config version="1.0.0" agent="software-developer-agent">
+
+  <models>
+    <primary id="claude-sonnet-4-5" role="planning,generation,review"/>
+    <fallback id="claude-haiku-4-5" role="all" trigger="primary_unavailable"/>
+    <!-- VERIFY_BEFORE_USE: confirm model IDs against current API listing -->
+  </models>
+
+  <limits>
+    <max_tool_output_tokens>25000</max_tool_output_tokens>
+    <max_context_tokens>180000</max_context_tokens>
+    <max_fix_cycles>2</max_fix_cycles>
+    <max_review_cycles>2</max_review_cycles>
+    <max_files_per_run>25</max_files_per_run>
+    <max_lines_per_file>500</max_lines_per_file>
+    <min_test_coverage_delta>0</min_test_coverage_delta>
+  </limits>
+
+  <paths>
+    <run_log>.ai/data/dev-runs.jsonl</run_log>
+    <workspace>./workspace/</workspace>
+    <schemas>./schemas/</schemas>
+    <output>./out/</output>
+    <skills>./skills/</skills>
+  </paths>
+
+  <protected_paths>
+  <!-- Changes require explicit operator approval in task spec -->
+    <path>.github/workflows/</path>
+    <path>deploy/</path>
+    <path>.env</path>
+    <path>.env.*</path>
+    <path>**/secrets/**</path>
+    <path>**/*credentials*</path>
+  </protected_paths>
+
+  <verification>
+    <test_timeout_seconds>300</test_timeout_seconds>
+    <lint_severity_halt>error</lint_severity_halt>
+    <security_halt_severities>critical,high</security_halt_severities>
+    <dependency_audit_tier_min>T2</dependency_audit_tier_min>
+  </verification>
+
+  <supported_languages>
+    <language id="python" test_patterns="pytest,nosetest,unittest" lint="ruff,flake8,pylint"/>
+    <language id="javascript" test_patterns="jest,vitest,mocha" lint="eslint"/>
+    <language id="typescript" test_patterns="jest,vitest" lint="eslint,tsc"/>
+    <language id="go" test_patterns="go test" lint="golangci-lint"/>
+    <language id="rust" test_patterns="cargo test" lint="clippy"/>
+    <language id="ruby" test_patterns="rspec,minitest" lint="rubocop"/>
+  </supported_languages>
+
+  <gates>
+    <gate name="test_pass" on_fail="halt"/>
+    <gate name="lint_error" on_fail="halt"/>
+    <gate name="security_critical" on_fail="halt"/>
+    <gate name="schema_validation" on_fail="halt"/>
+    <gate name="run_log_write" on_fail="halt"/>
+    <gate name="secret_detection" on_fail="halt"/>
+  </gates>
+
+  <observability>
+    <log_level>info</log_level>
+    <emit_stage_timings>true</emit_stage_timings>
+    <emit_token_counts>true</emit_token_counts>
+    <emit_skill_loads>true</emit_skill_loads>
+    <redact_secrets_in_log>true</redact_secrets_in_log>
+  </observability>
+
+  <retention>
+    <workspace_snapshot_ttl_days>7</workspace_snapshot_ttl_days>
+    <run_log_ttl_days>365</run_log_ttl_days>
+    <use_for_model_training>false</use_for_model_training>
+  </retention>
+
+</config>

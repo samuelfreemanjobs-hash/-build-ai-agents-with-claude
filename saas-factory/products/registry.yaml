@@ -1,0 +1,9 @@
+# Product registry — canonical list of agent SaaS products in this monorepo
+
+products:
+  - id: freeman-intel
+    spec: freeman-intel.yaml
+  - id: ai-proposals-agent
+    spec: ai-proposals-agent.yaml
+  - id: software-developer-agent
+    spec: software-developer-agent.yaml

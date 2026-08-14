@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Proposals Agent™ — Operator Console</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cyan-trace: #22D3EE;
+      --green-compliant: #34D399;
+      --rose-gap: #FB7185;
+      --amber-gate: #FBBF24;
+      --slate-paper: #E2E8F0;
+      --slate-muted: #64748B;
+      --bg-deep: #0F172A;
+      --bg-panel: #1E293B;
+      --bg-elevated: #334155;
+      --border: #475569;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-deep);
+      color: var(--slate-paper);
+      min-height: 100vh;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+
+    /* Non-dismissable banner */
+    .review-banner {
+      background: rgba(251, 191, 36, 0.12);
+      border-bottom: 1px solid var(--amber-gate);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--amber-gate);
+    }
+    .review-banner svg { flex-shrink: 0; }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-panel);
+    }
+    .logo-lockup { display: flex; align-items: center; gap: 14px; }
+    .logo-mark { width: 40px; height: 40px; }
+    .wordmark .proposals {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--slate-paper);
+      text-transform: uppercase;
+    }
+    .wordmark .agent {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      letter-spacing: 0.18em;
+      font-weight: 500;
+      color: var(--slate-paper);
+    }
+    .wordmark .tagline {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      color: var(--cyan-trace);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .run-meta { text-align: right; font-size: 12px; color: var(--slate-muted); }
+    .run-meta strong { color: var(--slate-paper); display: block; font-size: 13px; }
+
+    /* Tabs */
+    nav.tabs {
+      display: flex;
+      gap: 4px;
+      padding: 12px 24px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-panel);
+    }
+    nav.tabs button {
+      background: none;
+      border: none;
+      color: var(--slate-muted);
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 13px;
+      font-family: inherit;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+    }
+    nav.tabs button.active {
+      color: var(--slate-paper);
+      border-bottom-color: var(--cyan-trace);
+    }
+    nav.tabs button:hover:not(.active) { color: var(--slate-paper); }
+
+    /* Layout */
+    main { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
+    main.active { display: block; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
+    @media (max-width: 960px) { .grid-2 { grid-template-columns: 1fr; } }
+
+    .panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .panel-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .panel-body { padding: 18px; }
+
+    /* Traceable numerics */
+    .trace-link {
+      color: var(--slate-paper);
+      border-bottom: 1px dotted var(--cyan-trace);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .trace-link:hover { color: var(--cyan-trace); }
+
+    /* Compliance */
+    .check-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .check-row:last-child { border-bottom: none; }
+    .status-dot {
+      width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex-shrink: 0;
+    }
+    .status-dot.compliant { background: var(--green-compliant); }
+    .status-dot.gap { background: var(--rose-gap); }
+    .status-dot.unknown { background: var(--slate-muted); }
+    .check-label { font-weight: 500; font-size: 13px; }
+    .check-reason { font-size: 12px; color: var(--slate-muted); margin-top: 4px; }
+    .check-row.gap-row { background: rgba(251, 113, 133, 0.06); margin: 0 -18px; padding: 12px 18px; }
+    .mitigation-missing { font-style: italic; color: var(--slate-muted); }
+
+    /* QA */
+    .qa-overall {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .qa-drag {
+      background: rgba(251, 113, 133, 0.12);
+      border: 1px solid var(--rose-gap);
+      border-radius: 6px;
+      padding: 12px;
+      margin-top: 16px;
+      font-size: 12px;
+    }
+    .qa-drag strong { color: var(--rose-gap); }
+    .dim-bar {
+      display: flex; align-items: center; gap: 10px; margin: 8px 0;
+      font-size: 12px;
+    }
+    .dim-bar .label { width: 140px; color: var(--slate-muted); }
+    .dim-bar .bar {
+      flex: 1; height: 6px; background: var(--bg-elevated); border-radius: 3px; overflow: hidden;
+    }
+    .dim-bar .fill { height: 100%; background: var(--cyan-trace); border-radius: 3px; }
+    .dim-bar .fill.low { background: var(--rose-gap); }
+    .dim-bar .score { width: 24px; text-align: right; font-family: 'JetBrains Mono', monospace; }
+
+    /* Trace drawer */
+    .trace-drawer {
+      position: fixed; top: 0; right: -420px; width: 400px; height: 100vh;
+      background: var(--bg-panel);
+      border-left: 1px solid var(--border);
+      z-index: 100;
+      transition: right 0.25s ease;
+      display: flex; flex-direction: column;
+      box-shadow: -8px 0 32px rgba(0,0,0,0.4);
+    }
+    .trace-drawer.open { right: 0; }
+    .trace-drawer-header {
+      padding: 18px; border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .trace-drawer-header h3 { font-size: 14px; color: var(--cyan-trace); }
+    .trace-drawer-body { padding: 18px; overflow-y: auto; flex: 1; }
+    .trace-chain { list-style: none; }
+    .trace-chain li {
+      padding: 12px 0 12px 20px;
+      border-left: 2px solid var(--border);
+      margin-left: 8px;
+      position: relative;
+    }
+    .trace-chain li::before {
+      content: ''; width: 10px; height: 10px; border-radius: 50%;
+      background: var(--cyan-trace); position: absolute; left: -6px; top: 16px;
+    }
+    .trace-chain li:last-child::before { background: var(--green-compliant); }
+    .chain-layer { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--cyan-trace); }
+    .chain-label { font-size: 13px; margin-top: 4px; }
+    .chain-ref { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--slate-muted); margin-top: 2px; }
+    .overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 99;
+      opacity: 0; pointer-events: none; transition: opacity 0.25s;
+    }
+    .overlay.open { opacity: 1; pointer-events: auto; }
+
+    /* Halt tab */
+    .halt-card {
+      border: 1px solid var(--rose-gap);
+      background: rgba(251, 113, 133, 0.08);
+      border-radius: 8px;
+      padding: 24px;
+      max-width: 640px;
+    }
+    .halt-cause {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      color: var(--rose-gap);
+      margin-bottom: 12px;
+    }
+    .fix-path { margin-top: 16px; }
+    .fix-path h4 { font-size: 12px; color: var(--slate-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+
+    /* Brand tab */
+    .brand-hero {
+      position: relative;
+      padding: 48px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+    .lattice-bg {
+      position: absolute; inset: 0; opacity: 0.15;
+      pointer-events: none;
+    }
+    .brand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .brand-swatch {
+      padding: 16px; border-radius: 6px; border: 1px solid var(--border);
+    }
+    .swatch-chip { height: 48px; border-radius: 4px; margin-bottom: 10px; }
+    .misuse-list { font-size: 13px; color: var(--slate-muted); }
+    .misuse-list li { margin: 8px 0; padding-left: 16px; position: relative; }
+    .misuse-list li::before { content: '×'; color: var(--rose-gap); position: absolute; left: 0; }
+
+    .scenario-pills { display: flex; gap: 8px; margin-top: 12px; }
+    .pill {
+      padding: 4px 12px; border-radius: 999px; font-size: 11px;
+      border: 1px solid var(--border); color: var(--slate-muted);
+    }
+    .pill.active { border-color: var(--cyan-trace); color: var(--cyan-trace); background: rgba(34,211,238,0.08); }
+
+    .proposal-section { margin-bottom: 20px; }
+    .proposal-section h3 { font-size: 15px; margin-bottom: 8px; color: var(--slate-paper); }
+    .proposal-section p { color: var(--slate-muted); font-size: 13px; }
+
+    .btn {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      color: var(--slate-paper);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn:hover { border-color: var(--cyan-trace); }
+    .btn-primary { background: rgba(34,211,238,0.15); border-color: var(--cyan-trace); color: var(--cyan-trace); }
+
+    .doc-header-mock {
+      background: #F8FAFC;
+      color: #0F172A;
+      padding: 24px;
+      border-radius: 8px;
+      margin-top: 24px;
+    }
+    .doc-header-mock .banner-mini {
+      background: rgba(251, 191, 36, 0.2);
+      color: #92400E;
+      padding: 8px 12px;
+      font-size: 11px;
+      margin-top: 16px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="review-banner" id="reviewBanner">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L15 14H1L8 1Z" stroke="#FBBF24" stroke-width="1.5" fill="none"/><path d="M8 6V9M8 11.5V11.51" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <span><strong>HUMAN REVIEW REQUIRED</strong> — No generative authority on pricing. Approve scenario and final draft before export.</span>
+  </div>
+
+  <header>
+    <div class="logo-lockup">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="4" y1="20" x2="28" y2="20" stroke="#22D3EE" stroke-width="2"/>
+        <line x1="28" y1="20" x2="28" y2="32" stroke="#22D3EE" stroke-width="2"/>
+        <circle cx="28" cy="34" r="4" fill="#22D3EE"/>
+      </svg>
+      <div class="wordmark">
+        <div class="proposals">Proposals</div>
+        <div class="agent">AGENT™</div>
+        <div class="tagline">Every number traces</div>
+      </div>
+    </div>
+    <div class="run-meta">
+      <strong class="mono">run_2026-08-10_001</strong>
+      <span>GM Supplier Logistics RFP · Balanced scenario</span>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="active" data-tab="run">Run</button>
+    <button data-tab="compliance">Compliance</button>
+    <button data-tab="qa">QA</button>
+    <button data-tab="halt">Halt</button>
+    <button data-tab="brand">Brand</button>
+  </nav>
+
+  <!-- RUN TAB -->
+  <main id="tab-run" class="active">
+    <div class="grid-2">
+      <div>
+        <div class="panel" style="margin-bottom:20px">
+          <div class="panel-header">
+            Proposal draft
+            <div class="scenario-pills">
+              <span class="pill">Competitive</span>
+              <span class="pill active">Balanced</span>
+              <span class="pill">Premium</span>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="proposal-section">
+              <h3>Executive summary</h3>
+              <p>Freeman Logistics proposes dedicated inbound milk-run service for the Warren stamping facility, achieving
+                <a class="trace-link mono" data-trace="otif">98.2% OTIF</a> on comparable automotive lanes over the trailing 12 months.</p>
+            </div>
+            <div class="proposal-section">
+              <h3>Pricing summary</h3>
+              <p>Annual contract value (Balanced scenario):
+                <a class="trace-link mono" data-trace="total">$396,000.00</a>
+                across <a class="trace-link mono" data-trace="volume">1,200</a> inbound moves at
+                <a class="trace-link mono" data-trace="per_move">$330.00</a> per move all-in.</p>
+            </div>
+            <div class="proposal-section">
+              <h3>Quality & compliance</h3>
+              <p>Operations governed under
+                <a class="trace-link mono" data-trace="iso">ISO 9001:2015</a> (certificate expires
+                <a class="trace-link mono" data-trace="iso_expiry">2026-11-30</a>).
+                CTPAT membership referenced per KB credential row.</p>
+            </div>
+            <div style="margin-top:24px;display:flex;gap:10px">
+              <button class="btn btn-primary">Approve draft</button>
+              <button class="btn">Request revision</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="panel">
+          <div class="panel-header">Pricing (engine output · read-only)</div>
+          <div class="panel-body mono" style="font-size:12px">
+            <div style="color:var(--slate-muted);margin-bottom:12px">pricing_hash: sha256:a3f8…c91e</div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
+              <span>Dedicated shuttle</span>
+              <a class="trace-link" data-trace="line_shuttle">$240,000.00</a>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
+              <span>Yard management</span>
+              <a class="trace-link" data-trace="line_yard">$84,000.00</a>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
+              <span>ASN compliance desk</span>
+              <a class="trace-link" data-trace="line_asn">$72,000.00</a>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;font-weight:600">
+              <span>Total</span>
+              <a class="trace-link" data-trace="total">$396,000.00</a>
+            </div>
+            <p style="font-size:11px;color:var(--slate-muted);margin-top:12px;font-family:Inter,sans-serif">No editable fields. Change inputs and re-run engine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- COMPLIANCE TAB -->
+  <main id="tab-compliance">
+    <div class="panel" style="max-width:720px">
+      <div class="panel-header">
+        Compliance panel
+        <span style="color:var(--rose-gap);font-size:12px">5 mandatory gaps</span>
+      </div>
+      <div class="panel-body" id="complianceList"></div>
+    </div>
+  </main>
+
+  <!-- QA TAB -->
+  <main id="tab-qa">
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-header">QA score (minimum, not mean)</div>
+        <div class="panel-body">
+          <div class="qa-overall" style="color:var(--rose-gap)">4</div>
+          <div style="color:var(--slate-muted);font-size:13px">Overall = min(all dimensions)</div>
+          <div class="qa-drag">
+            <strong>Dragging:</strong> compliance_coverage (4) — five mandatory KB gaps. Writing quality dimensions score 9–10.
+          </div>
+          <div style="margin-top:20px" id="qaBars"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">Recommendation</div>
+        <div class="panel-body" style="font-size:13px;color:var(--slate-muted)">
+          <p>Score reflects <strong style="color:var(--slate-paper)">knowledge-base state</strong>, not writing quality. Populate missing credentials or exclude claims before customer delivery.</p>
+          <p style="margin-top:12px">Do not override pricing or compliance numerics in the draft editor.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- HALT TAB -->
+  <main id="tab-halt">
+    <div class="halt-card">
+      <div style="font-size:12px;color:var(--slate-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px">Designed halt · not an error</div>
+      <div class="halt-cause">MISSING_COST_ROW</div>
+      <p style="color:var(--slate-muted);font-size:13px">Pricing engine cannot resolve cost row for service line <span class="mono">ASN_COMPLIANCE_DESK</span> in corridor <span class="mono">DET-WARREN</span>.</p>
+      <div class="fix-path">
+        <h4>Fix path</h4>
+        <ol style="padding-left:20px;color:var(--slate-muted);font-size:13px">
+          <li>Open KB → pricing_models</li>
+          <li>Add cost row: ASN_COMPLIANCE_DESK / DET-WARREN / unit=annual</li>
+          <li>Re-run pricing phase from checkpoint</li>
+        </ol>
+      </div>
+      <p style="margin-top:16px;font-size:12px;color:var(--rose-gap)">NON_OVERRIDABLE — requires KB fix (G07: enforce in halt handler)</p>
+    </div>
+  </main>
+
+  <!-- BRAND TAB -->
+  <main id="tab-brand">
+    <div class="brand-hero">
+      <svg class="lattice-bg" viewBox="0 0 800 200" preserveAspectRatio="xMidYMid slice">
+        <line x1="50" y1="100" x2="200" y2="60" stroke="#22D3EE" stroke-width="1"/>
+        <line x1="50" y1="100" x2="200" y2="140" stroke="#22D3EE" stroke-width="1"/>
+        <line x1="200" y1="60" x2="400" y2="100" stroke="#22D3EE" stroke-width="1"/>
+        <line x1="200" y1="140" x2="400" y2="100" stroke="#22D3EE" stroke-width="1"/>
+        <line x1="400" y1="100" x2="550" y2="100" stroke="#22D3EE" stroke-width="1"/>
+        <line x1="550" y1="100" x2="550" y2="160" stroke="#22D3EE" stroke-width="1"/>
+        <circle cx="550" cy="170" r="8" fill="#22D3EE"/>
+      </svg>
+      <div style="position:relative;display:flex;align-items:center;gap:24px">
+        <svg width="80" height="80" viewBox="0 0 40 40" fill="none">
+          <line x1="4" y1="20" x2="28" y2="20" stroke="#22D3EE" stroke-width="2"/>
+          <line x1="28" y1="20" x2="28" y2="32" stroke="#22D3EE" stroke-width="2"/>
+          <circle cx="28" cy="34" r="4" fill="#22D3EE"/>
+        </svg>
+        <div>
+          <div class="wordmark"><div class="agent" style="font-size:28px">AGENT™</div></div>
+          <div class="tagline" style="font-size:11px;margin-top:8px">Every number traces</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-bottom:16px;font-size:14px">Color semantics</h3>
+    <div class="brand-grid" style="margin-bottom:32px">
+      <div class="brand-swatch"><div class="swatch-chip" style="background:#22D3EE"></div><strong>Cyan</strong><br><span style="color:var(--slate-muted);font-size:12px">Provenance only</span></div>
+      <div class="brand-swatch"><div class="swatch-chip" style="background:#34D399"></div><strong>Green</strong><br><span style="color:var(--slate-muted);font-size:12px">COMPLIANT validator</span></div>
+      <div class="brand-swatch"><div class="swatch-chip" style="background:#FB7185"></div><strong>Rose</strong><br><span style="color:var(--slate-muted);font-size:12px">Gap / halt</span></div>
+      <div class="brand-swatch"><div class="swatch-chip" style="background:#FBBF24"></div><strong>Amber</strong><br><span style="color:var(--slate-muted);font-size:12px">Review gate</span></div>
+    </div>
+
+    <h3 style="margin-bottom:12px;font-size:14px">Misuse rules</h3>
+    <ul class="misuse-list">
+      <li>Do not use cyan for nav decoration</li>
+      <li>Do not use green for generic success toasts</li>
+      <li>Do not stretch or rotate the mark</li>
+      <li>Do not pair mark with certification seals — implies accreditation this product does not have</li>
+    </ul>
+
+    <div class="doc-header-mock">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div style="display:flex;gap:12px;align-items:center">
+          <svg width="32" height="32" viewBox="0 0 40 40"><line x1="4" y1="20" x2="28" y2="20" stroke="#0F172A" stroke-width="2"/><line x1="28" y1="20" x2="28" y2="32" stroke="#0F172A" stroke-width="2"/><circle cx="28" cy="34" r="4" fill="#0F172A"/></svg>
+          <div><strong>AI Proposals Agent™</strong><br><span style="font-size:10px;letter-spacing:0.15em;color:#0891B2">EVERY NUMBER TRACES</span></div>
+        </div>
+        <div style="font-size:11px;text-align:right;color:#64748B">run_2026-08-10_001<br>Balanced</div>
+      </div>
+      <div class="banner-mini">⚠ HUMAN REVIEW REQUIRED — No generative authority on pricing</div>
+    </div>
+  </main>
+
+  <!-- Trace drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="trace-drawer" id="traceDrawer">
+    <div class="trace-drawer-header">
+      <h3>Provenance chain</h3>
+      <button class="btn" id="closeTrace" style="padding:4px 10px">Close</button>
+    </div>
+    <div class="trace-drawer-body">
+      <div class="mono" style="font-size:18px;margin-bottom:16px" id="traceValue"></div>
+      <ul class="trace-chain" id="traceChain"></ul>
+    </div>
+  </aside>
+
+  <script>
+    const TRACES = {
+      total: {
+        value: '$396,000.00',
+        chain: [
+          { layer: 'Display', ref: 'proposal.pricing.total', label: 'Annual contract value (Balanced)' },
+          { layer: 'Engine', ref: 'pricing-output.scenarios.balanced.total', label: 'Scenario total string' },
+          { layer: 'Calculation', ref: 'engine.v1.4.sum(line_items.extended)', label: 'Sum of extended line items (Decimal)' },
+          { layer: 'Cost row', ref: 'pricing_models.row_shuttle_240k', label: 'Dedicated shuttle — $240,000.00' },
+          { layer: 'Cost row', ref: 'pricing_models.row_yard_84k', label: 'Yard management — $84,000.00' },
+          { layer: 'Cost row', ref: 'pricing_models.row_asn_72k', label: 'ASN compliance desk — $72,000.00' }
+        ]
+      },
+      per_move: {
+        value: '$330.00',
+        chain: [
+          { layer: 'Display', ref: 'proposal.pricing.per_move', label: 'Per move all-in' },
+          { layer: 'Engine', ref: 'pricing-output.scenarios.balanced.unit_rate', label: 'total / volume (Decimal divide)' },
+          { layer: 'Input', ref: 'rfp-intake.volume', label: 'Volume: 1,200 moves/year' }
+        ]
+      },
+      volume: { value: '1,200', chain: [{ layer: 'Input', ref: 'rfp-intake.volume', label: 'RFP stated annual inbound moves' }] },
+      otif: { value: '98.2%', chain: [{ layer: 'KB', ref: 'case_studies.ford_inbound_2024.metric_otif', label: 'Trailing 12mo OTIF — Ford inbound lane' }] },
+      iso: { value: 'ISO 9001:2015', chain: [{ layer: 'KB', ref: 'credentials.iso9001', label: 'Certificate on file' }] },
+      iso_expiry: { value: '2026-11-30', chain: [{ layer: 'KB', ref: 'credentials.iso9001.expires_at', label: 'Expiry date from credential row' }] },
+      line_shuttle: { value: '$240,000.00', chain: [{ layer: 'Engine', ref: 'balanced.line_items[0].extended', label: 'cost_row_ref: shuttle_det_warren_annual' }] },
+      line_yard: { value: '$84,000.00', chain: [{ layer: 'Engine', ref: 'balanced.line_items[1].extended', label: 'cost_row_ref: yard_det_warren_annual' }] },
+      line_asn: { value: '$72,000.00', chain: [{ layer: 'Engine', ref: 'balanced.line_items[2].extended', label: 'cost_row_ref: asn_desk_det_warren_annual' }] }
+    };
+
+    const COMPLIANCE = [
+      { label: 'ISO 9001:2015', status: 'COMPLIANT', reason: 'Certificate valid until 2026-11-30', ref: 'credentials.iso9001' },
+      { label: 'CTPAT membership', status: 'GAP', mandatory: true, reason: 'No valid CTPAT credential row in KB', mitigation: 'No mitigation currently available.' },
+      { label: 'OTIF performance claim', status: 'COMPLIANT', reason: 'Matched to case_studies.ford_inbound_2024', ref: 'case_studies.ford_inbound_2024' },
+      { label: 'SmartWay partnership', status: 'GAP', mandatory: true, reason: 'Boilerplate bp_smartway_v2 references expired partnership', mitigation: 'No mitigation currently available.' },
+      { label: 'Insurance — general liability $2M', status: 'GAP', mandatory: true, reason: 'KB shows $1M; RFP requires $2M', mitigation: 'Obtain certificate endorsement or adjust proposal exclusion.' },
+      { label: 'Sustainability / Scope 1 disclosure', status: 'GAP', mandatory: true, reason: 'No approved boilerplate with source_ref', mitigation: 'No mitigation currently available.' },
+      { label: 'Safety rating (SMS)', status: 'UNKNOWN', reason: 'FMCSA SMS not ingested in KB' }
+    ];
+
+    const QA_DIMS = [
+      { name: 'requirement_coverage', score: 9 },
+      { name: 'traceability', score: 10 },
+      { name: 'compliance_coverage', score: 4 },
+      { name: 'pricing_integrity', score: 10 },
+      { name: 'tone_evidence', score: 9 },
+      { name: 'format_compliance', score: 10 }
+    ];
+
+    // Tabs
+    document.querySelectorAll('nav.tabs button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('nav.tabs button').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('main').forEach(m => m.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Compliance render
+    const cl = document.getElementById('complianceList');
+    COMPLIANCE.forEach(c => {
+      const row = document.createElement('div');
+      row.className = 'check-row' + (c.status === 'GAP' ? ' gap-row' : '');
+      const mit = c.mitigation
+        ? (c.mitigation.startsWith('No mitigation') ? `<span class="mitigation-missing">${c.mitigation}</span>` : c.mitigation)
+        : '';
+      row.innerHTML = `
+        <div class="status-dot ${c.status.toLowerCase()}"></div>
+        <div>
+          <div class="check-label">${c.label}${c.mandatory ? ' <span style="color:var(--rose-gap);font-size:10px">MANDATORY</span>' : ''}</div>
+          <div class="check-reason">${c.reason}</div>
+          ${mit ? `<div class="check-reason" style="margin-top:6px">Mitigation: ${mit}</div>` : ''}
+          ${c.ref ? `<div class="chain-ref">${c.ref}</div>` : ''}
+        </div>`;
+      cl.appendChild(row);
+    });
+
+    // QA bars
+    const qb = document.getElementById('qaBars');
+    QA_DIMS.forEach(d => {
+      const low = d.score <= 4;
+      const bar = document.createElement('div');
+      bar.className = 'dim-bar';
+      bar.innerHTML = `
+        <span class="label">${d.name.replace(/_/g, ' ')}</span>
+        <div class="bar"><div class="fill ${low ? 'low' : ''}" style="width:${d.score * 10}%"></div></div>
+        <span class="score">${d.score}</span>`;
+      qb.appendChild(bar);
+    });
+
+    // Trace drawer
+    const drawer = document.getElementById('traceDrawer');
+    const overlay = document.getElementById('overlay');
+    function openTrace(id) {
+      const t = TRACES[id];
+      if (!t) return;
+      document.getElementById('traceValue').textContent = t.value;
+      const chain = document.getElementById('traceChain');
+      chain.innerHTML = t.chain.map(c => `
+        <li>
+          <div class="chain-layer">${c.layer}</div>
+          <div class="chain-label">${c.label}</div>
+          <div class="chain-ref">${c.ref}</div>
+        </li>`).join('');
+      drawer.classList.add('open');
+      overlay.classList.add('open');
+    }
+    function closeTrace() {
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+    }
+    document.querySelectorAll('.trace-link').forEach(el => {
+      el.addEventListener('click', e => { e.preventDefault(); openTrace(el.dataset.trace); });
+    });
+    document.getElementById('closeTrace').addEventListener('click', closeTrace);
+    overlay.addEventListener('click', closeTrace);
+  </script>
+</body>
+</html>
