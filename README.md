@@ -23,6 +23,7 @@ See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs
 | **Software Developer Agent™** | Every change traces | [`software-developer-agent/`](software-developer-agent/) |
 | **Principal Software Engineer Agent™** | Every decision traces | [`principal-software-engineer/`](principal-software-engineer/) |
 | **Software Architect Agent™** | Every boundary traces | [`software-architect/`](software-architect/) |
+| **Engineering Manager Agent™** | Every commitment traces | [`engineering-manager-agent/`](engineering-manager-agent/) |
 
 ## Shared principles
 
@@ -46,6 +47,9 @@ cd principal-software-engineer && python3 scripts/run_golden_tests.py
 
 # Software Architect Agent
 cd software-architect && python3 scripts/run_golden_tests.py
+
+# Engineering Manager Agent
+cd engineering-manager-agent && python3 scripts/run_golden_tests.py
 ```
 
 ## Structure
@@ -57,5 +61,6 @@ cd software-architect && python3 scripts/run_golden_tests.py
 ├── software-developer-agent/        # Implementation agent
 ├── principal-software-engineer/     # Architecture decisions agent
 ├── software-architect/              # C4 modeling and governance agent
+├── engineering-manager-agent/       # Team leadership and delivery planning agent
 └── README.md
 ```

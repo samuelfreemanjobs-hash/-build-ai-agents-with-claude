@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run-log.schema.json",
+  "title": "ManagementRunLog",
+  "type": "object",
+  "required": ["run_id", "product_id", "status", "started_at", "context_id", "tier"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "product_id": { "type": "string", "const": "engineering-manager-agent" },
+    "context_id": { "type": "string" },
+    "team_name": { "type": "string" },
+    "tier": { "type": "string" },
+    "output_type": { "type": "string" },
+    "status": { "type": "string", "enum": ["running", "completed", "halted", "failed"] },
+    "started_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": "string", "format": "date-time" },
+    "capacity_utilization": { "type": "number" },
+    "governance_score": { "type": "integer" },
+    "stages": { "type": "array" },
+    "halts": { "type": "array" }
+  }
+}
