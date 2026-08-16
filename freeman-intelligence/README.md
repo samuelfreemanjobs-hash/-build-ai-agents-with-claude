@@ -4,71 +4,63 @@
 
 > Find the Money. Fix the System. Build the Engine.
 
-Freeman Intelligence is the umbrella brand for Revenue Systems Engineering — connecting market intelligence, revenue intelligence, automation, AI agents, dashboards, and digital experience into measurable economic outcomes.
-
-**Sister products in this monorepo:**
-
-| Product | Focus |
-|---------|-------|
-| [Freeman Intel](../freeman-intel/) | Plant inbound readiness (logistics operations) |
-| [AI Proposals Agent™](../ai-proposals-agent/) | RFP proposal generation (commercial logistics) |
-
 ---
 
-## WRIS — Website Revenue Intelligence System
-
-WRIS is the Freeman Intelligence methodology for turning market research, positioning, and website intelligence into revenue outcomes.
+## WRIS Phases
 
 | Phase | Status | Deliverable |
 |-------|--------|-------------|
-| Phase 1 | ✅ Complete | Strategic intelligence, positioning, product architecture |
-| Phase 2 | ✅ This repo | Revenue Opportunity Diagnostic + website blueprint |
-
-See [`docs/wris-phase-1-intelligence.md`](docs/wris-phase-1-intelligence.md) for the full Phase 1 run.
+| Phase 1 | ✅ | Strategic intelligence, positioning, product architecture |
+| Phase 2 | ✅ | Revenue Opportunity Diagnostic + website blueprint |
+| Phase 3 | ✅ | Full website, 3 interactive tools, GitHub Pages deploy |
 
 ---
 
-## Phase 2 deliverables
-
-### 1. Revenue Opportunity Diagnostic
-
-Interactive lead-generation tool: 10-question assessment → Revenue Intelligence Score (0–100) → personalized brief.
+## Quick start
 
 ```bash
-# Deterministic scorer (binding facts from script, not model)
+# Deterministic scorers
 cd diagnostic && python3 scripts/run_golden_tests.py
 
-# Interactive web experience
+# Full website + tools
 cd web && npm install && npm run dev
+# → http://localhost:5173
 ```
-
-### 2. Website blueprint
-
-Full homepage and site architecture in [`docs/website-blueprint.md`](docs/website-blueprint.md).
-
-### 3. Product ladder
-
-Four-tier offer stack in [`docs/product-ladder.md`](docs/product-ladder.md).
 
 ---
 
-## Positioning
+## Interactive tools
 
-**Category:** Revenue Systems Engineering
-
-**Primary value proposition:** Turn Your Operations Into a Revenue Engine.
-
-**ICP (Tier 1):** Automotive suppliers with complex quoting, RFQs, program management, and fragmented data systems.
-
-**Differentiator:** Most competitors sell one layer (AI agency, web agency, BI, RevOps). Freeman Intelligence connects the full stack from market intelligence through AI agents to revenue outcomes.
+| Tool | Route | Purpose |
+|------|-------|---------|
+| Revenue Opportunity Diagnostic | `/diagnostic` | 9-question maturity assessment → score + brief |
+| Revenue Leakage Calculator | `/leakage-calculator` | Estimate $ lost to inefficiency |
+| AI Opportunity Mapper | `/ai-mapper` | Rank processes by AI automation ROI |
 
 ---
 
-## Directory layout
+## Site pages
 
-```
-freeman-intelligence/
-├── docs/           # WRIS intelligence, messaging, website blueprint
-├── diagnostic/     # Scoring engine + question config
-└── web/            # Interactive diagnostic (Vite + React)
-```
+| Page | Route |
+|------|-------|
+| Homepage | `/` |
+| How It Works | `/how-it-works` |
+| Products | `/products` |
+| Tools | `/tools` |
+
+---
+
+## Deployment
+
+GitHub Pages workflow deploys from `freeman-intelligence/web/` on push.
+
+Set `VITE_BRIEFING_WEBHOOK` env var to forward briefing form submissions to a CRM webhook.
+
+---
+
+## Documentation
+
+- [`docs/wris-phase-1-intelligence.md`](docs/wris-phase-1-intelligence.md)
+- [`docs/website-blueprint.md`](docs/website-blueprint.md)
+- [`docs/product-ladder.md`](docs/product-ladder.md)
+- [`docs/messaging-framework.md`](docs/messaging-framework.md)
