@@ -25,6 +25,7 @@ See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs
 | **Software Architect Agent™** | Every boundary traces | [`software-architect/`](software-architect/) |
 | **Engineering Manager Agent™** | Every commitment traces | [`engineering-manager-agent/`](engineering-manager-agent/) |
 | **QA Engineer Agent™** | Every defect traces | [`qa-engineer-agent/`](qa-engineer-agent/) |
+| **Freeman Intelligence** | Revenue Systems Engineering | [`freeman-intelligence/`](freeman-intelligence/) |
 
 ## Shared principles
 
@@ -73,5 +74,6 @@ cd qa-engineer-agent && python3 scripts/run_golden_tests.py
 ├── software-architect/          # C4 modeling and governance agent
 ├── engineering-manager-agent/   # Team leadership and delivery planning
 ├── qa-engineer-agent/           # Release validation and test strategy
+├── freeman-intelligence/        # WRIS + Revenue Opportunity Diagnostic
 └── README.md
 ```

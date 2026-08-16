@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "score_formula": {
+    "description": "Revenue Intelligence Score = weighted average of area scores, inverted so higher = better intelligence maturity",
+    "area_weight": 1.0,
+    "max_score": 100
+  },
+  "opportunity_templates": {
+    "leads": {
+      "title": "Lead generation systematization",
+      "impact": "high",
+      "description": "Implement targeted lead capture, qualification scoring, and automated nurture to fill pipeline gaps."
+    },
+    "sales": {
+      "title": "Sales process optimization",
+      "impact": "high",
+      "description": "Define stage gates, win/loss analysis, and pipeline forecasting to improve close rates."
+    },
+    "followup": {
+      "title": "Follow-up automation",
+      "impact": "critical",
+      "description": "Deploy instant response workflows and SLA tracking — slow follow-up is the #1 revenue killer in industrial sales."
+    },
+    "quoting": {
+      "title": "Quoting acceleration",
+      "impact": "critical",
+      "description": "Reduce quote turnaround with templates, pricing engines, and AI-assisted proposal generation."
+    },
+    "operations": {
+      "title": "Sales-to-ops handoff",
+      "impact": "high",
+      "description": "Connect sales commitments to operational delivery with shared dashboards and handoff checklists."
+    },
+    "reporting": {
+      "title": "Executive revenue dashboard",
+      "impact": "medium",
+      "description": "Build real-time KPI dashboards replacing manual spreadsheet reporting."
+    },
+    "retention": {
+      "title": "Customer expansion program",
+      "impact": "high",
+      "description": "Implement churn signals, renewal workflows, and account growth playbooks."
+    },
+    "data": {
+      "title": "Data integration layer",
+      "impact": "critical",
+      "description": "Connect CRM, ERP, and operational systems into a unified revenue data model."
+    },
+    "automation": {
+      "title": "AI automation pilot",
+      "impact": "high",
+      "description": "Identify 2-3 high-ROI processes for AI agent or workflow automation."
+    }
+  },
+  "bottleneck_templates": {
+    "leads": "Inconsistent lead flow creates feast-or-famine revenue cycles",
+    "sales": "Unpredictable pipeline makes capacity planning and forecasting unreliable",
+    "followup": "Delayed follow-up loses deals to faster competitors",
+    "quoting": "Slow quoting extends sales cycles and reduces win rates on time-sensitive RFQs",
+    "operations": "Sales promises outpace operational capacity, damaging customer trust",
+    "reporting": "Leadership makes decisions on stale data — reporting lags reality by weeks",
+    "retention": "Customer churn and missed upsells erode revenue base",
+    "data": "Teams waste hours reconciling data across disconnected systems",
+    "automation": "Manual processes consume capacity that should drive revenue"
+  },
+  "ai_opportunity_map": {
+    "followup": "AI email triage and instant response drafting",
+    "quoting": "AI-assisted RFP analysis and proposal generation",
+    "reporting": "AI-generated executive briefings from live data",
+    "data": "AI data extraction and normalization across systems",
+    "automation": "AI agent workflows for repetitive operational tasks",
+    "operations": "AI-powered exception detection and escalation"
+  },
+  "data_gap_map": {
+    "reporting": "No single source of truth for revenue KPIs",
+    "data": "CRM and ERP data not synchronized",
+    "sales": "Pipeline data incomplete or inconsistently entered",
+    "operations": "Operational metrics not linked to revenue outcomes"
+  },
+  "recommended_project_map": [
+    {"condition": "quoting", "threshold": 3, "project": "Revenue Intelligence Audit + Quoting Acceleration Pilot", "product": "revenue-intelligence-audit"},
+    {"condition": "data", "threshold": 3, "project": "Data Integration + Executive Dashboard", "product": "revenue-systems-engineering"},
+    {"condition": "followup", "threshold": 3, "project": "Follow-up Automation + CRM Workflow", "product": "revenue-systems-engineering"},
+    {"condition": "automation", "threshold": 3, "project": "AI Opportunity Assessment + Pilot Agent", "product": "revenue-systems-engineering"},
+    {"condition": "default", "project": "Revenue Intelligence Audit", "product": "revenue-intelligence-audit"}
+  ],
+  "industry_modifiers": {
+    "automotive": {
+      "bonus_opportunity": "OTIF and routing guide compliance automation",
+      "icp_tier": 1
+    },
+    "logistics": {
+      "bonus_opportunity": "RFP response acceleration and carrier intelligence",
+      "icp_tier": 3
+    },
+    "manufacturing": {
+      "bonus_opportunity": "Production-to-revenue visibility dashboard",
+      "icp_tier": 2
+    }
+  }
+}

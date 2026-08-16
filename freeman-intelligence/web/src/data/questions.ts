@@ -1,0 +1,62 @@
+export interface Area {
+  id: string
+  label: string
+  question: string
+  description: string
+}
+
+export interface ContextOption {
+  value: string
+  label: string
+}
+
+export interface ContextQuestion {
+  id: string
+  label: string
+  type: 'select'
+  options: ContextOption[]
+}
+
+export const AREAS: Area[] = [
+  { id: 'leads', label: 'Lead Generation', question: 'How consistently do you generate qualified leads from your target market?', description: 'Inbound interest, referrals, trade shows, digital channels' },
+  { id: 'sales', label: 'Sales Process', question: 'How predictable and repeatable is your sales process?', description: 'Pipeline stages, win rates, sales cycle length' },
+  { id: 'followup', label: 'Follow-up Speed', question: 'How quickly does your team follow up on new opportunities?', description: 'Response time to inquiries, quotes, and RFQs' },
+  { id: 'quoting', label: 'Quoting & Proposals', question: 'How efficient is your quoting and proposal process?', description: 'Time to quote, accuracy, win rate on submitted bids' },
+  { id: 'operations', label: 'Operations', question: 'How well do your operations support revenue delivery?', description: 'Handoffs between sales and ops, fulfillment, quality' },
+  { id: 'reporting', label: 'Reporting & Visibility', question: 'How quickly can leadership see revenue and operational performance?', description: 'Dashboards, KPIs, executive reporting cadence' },
+  { id: 'retention', label: 'Customer Retention', question: 'How proactively do you retain and expand existing customers?', description: 'Renewals, upsells, churn signals, account management' },
+  { id: 'data', label: 'Data & Systems', question: 'How connected are your business systems and data?', description: 'CRM, ERP, spreadsheets, email — single source of truth' },
+  { id: 'automation', label: 'Automation & AI', question: 'How mature is your automation and AI readiness?', description: 'Manual tasks, workflow automation, AI pilot status' },
+]
+
+export const CONTEXT_QUESTIONS: ContextQuestion[] = [
+  {
+    id: 'industry',
+    label: 'Industry',
+    type: 'select',
+    options: [
+      { value: 'automotive', label: 'Automotive supplier' },
+      { value: 'logistics', label: 'Logistics / transportation' },
+      { value: 'manufacturing', label: 'Industrial manufacturing' },
+      { value: 'other', label: 'Other industrial' },
+    ],
+  },
+  {
+    id: 'company_size',
+    label: 'Company size',
+    type: 'select',
+    options: [
+      { value: 'small', label: '20–100 employees' },
+      { value: 'mid', label: '100–500 employees' },
+      { value: 'large', label: '500+ employees' },
+    ],
+  },
+]
+
+export const SCALE_LABELS: Record<number, string> = {
+  1: 'Critical gap',
+  2: 'Significant weakness',
+  3: 'Adequate',
+  4: 'Strong',
+  5: 'Best-in-class',
+}
