@@ -13,3 +13,5 @@ products:
     spec: software-architect.yaml
   - id: engineering-manager-agent
     spec: engineering-manager-agent.yaml
+  - id: qa-engineer-agent
+    spec: qa-engineer-agent.yaml

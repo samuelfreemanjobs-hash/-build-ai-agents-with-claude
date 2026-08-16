@@ -1,6 +1,6 @@
 # Build AI Agents with Claude
 
-Monorepo for **Claude-powered B2B agent SaaS** products and development agents.
+Monorepo for **Claude-powered B2B agent SaaS** products and software delivery agents.
 
 ## SaaS Factory
 
@@ -24,6 +24,7 @@ See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs
 | **Principal Software Engineer Agent™** | Every decision traces | [`principal-software-engineer/`](principal-software-engineer/) |
 | **Software Architect Agent™** | Every boundary traces | [`software-architect/`](software-architect/) |
 | **Engineering Manager Agent™** | Every commitment traces | [`engineering-manager-agent/`](engineering-manager-agent/) |
+| **QA Engineer Agent™** | Every defect traces | [`qa-engineer-agent/`](qa-engineer-agent/) |
 
 ## Shared principles
 
@@ -33,7 +34,13 @@ See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs
 4. Outcome bundles, not agent marketplaces
 5. Fail closed — schema violation and missing sources are HALT
 
-## Quick verify
+## Verify everything
+
+```bash
+bash scripts/verify-all.sh
+```
+
+## Quick verify (per agent)
 
 ```bash
 # AI Proposals Agent
@@ -50,6 +57,9 @@ cd software-architect && python3 scripts/run_golden_tests.py
 
 # Engineering Manager Agent
 cd engineering-manager-agent && python3 scripts/run_golden_tests.py
+
+# QA Engineer Agent
+cd qa-engineer-agent && python3 scripts/run_golden_tests.py
 ```
 
 ## Structure
@@ -57,10 +67,11 @@ cd engineering-manager-agent && python3 scripts/run_golden_tests.py
 ```
 ├── saas-factory/              # Product specs, scaffold CLI, templates
 ├── freeman-intel/             # Plant inbound logistics (design)
-├── ai-proposals-agent/        # RFP proposal agent (scaffold + deterministic core)
-├── software-developer-agent/        # Implementation agent
-├── principal-software-engineer/     # Architecture decisions agent
-├── software-architect/              # C4 modeling and governance agent
-├── engineering-manager-agent/       # Team leadership and delivery planning agent
+├── ai-proposals-agent/        # RFP proposal agent
+├── software-developer-agent/  # Implementation agent
+├── principal-software-engineer/ # Architecture decisions agent
+├── software-architect/          # C4 modeling and governance agent
+├── engineering-manager-agent/   # Team leadership and delivery planning
+├── qa-engineer-agent/           # Release validation and test strategy
 └── README.md
 ```
