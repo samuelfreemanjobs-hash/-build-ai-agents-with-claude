@@ -1,0 +1,82 @@
+id: qa-engineer-agent
+name: QA Engineer Agent™
+tagline: Every defect traces.
+architecture: single-agent
+icp: QA engineers, test leads, and release managers validating software before production release
+wedge: Spec-to-test-strategy with deterministic coverage and risk scoring before sign-off
+status: scaffold
+path: qa-engineer-agent/
+
+pipeline:
+  - id: S0
+    name: Test scope intake
+    mode: agent
+  - id: S1
+    name: Coverage and risk analysis
+    mode: deterministic
+  - id: S2
+    name: Test strategy authoring
+    mode: agent
+  - id: S3
+    name: Test suite validation
+    mode: deterministic
+  - id: S4
+    name: Defect triage and reporting
+    mode: agent
+  - id: S5
+    name: Release readiness check
+    mode: deterministic
+  - id: S6
+    name: Delivery
+    mode: export
+
+skills:
+  - scope-intake
+  - coverage-analysis
+  - test-strategy
+  - test-case-authoring
+  - defect-triage
+  - release-governance
+
+deterministic_modules:
+  - coverage_analyzer
+  - risk_scorer
+  - test_suite_validator
+  - regression_detector
+  - release_readiness_checker
+
+hard_rules:
+  - Coverage and risk scores come from deterministic scripts only.
+  - Test suite validation errors HALT the run.
+  - Critical release blockers HALT — no narrative override.
+  - Human approval required before production release recommendation.
+  - Every run writes a conformant run log entry.
+  - Schema violation is HALT.
+
+bundles:
+  - id: starter
+    name: Starter
+    menu_items:
+      - smoke-test-plan
+      - release-checklist
+  - id: professional
+    name: Professional
+    menu_items:
+      - regression-strategy
+      - coverage-gap-analysis
+  - id: enterprise
+    name: Enterprise
+    menu_items:
+      - full-release-validation
+      - risk-assessment-report
+
+pricing_tiers:
+  - id: starter
+    name: Starter
+    price_monthly_usd: 297
+  - id: professional
+    name: Professional
+    price_monthly_usd: 697
+  - id: enterprise
+    name: Enterprise
+    price_monthly_usd: 1497

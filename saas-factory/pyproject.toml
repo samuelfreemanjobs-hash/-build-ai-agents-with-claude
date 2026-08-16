@@ -1,0 +1,29 @@
+[project]
+name = "saas-factory"
+version = "0.1.0"
+description = "AI agent-based SaaS factory — scaffold and govern agent SaaS products"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0",
+    "jsonschema>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+saas-factory = "saas_factory.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["saas_factory*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

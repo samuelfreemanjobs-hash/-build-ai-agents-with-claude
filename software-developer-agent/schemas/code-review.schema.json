@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "code-review.schema.json",
+  "title": "CodeReview",
+  "type": "object",
+  "required": ["run_id", "recommendation", "scores", "defects"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "recommendation": {
+      "type": "string",
+      "enum": ["APPROVE", "REVISE", "HALT"]
+    },
+    "scores": {
+      "type": "object",
+      "required": [
+        "requirement_coverage",
+        "code_quality",
+        "test_adequacy",
+        "security_posture",
+        "maintainability",
+        "documentation"
+      ],
+      "properties": {
+        "requirement_coverage": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "code_quality": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "test_adequacy": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "security_posture": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "maintainability": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "documentation": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "overall": { "type": "integer", "minimum": 1, "maximum": 10 }
+      }
+    },
+    "defects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "description"],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "major", "minor"]
+          },
+          "file": { "type": "string" },
+          "line": { "type": "integer" },
+          "description": { "type": "string" },
+          "suggestion": { "type": "string" },
+          "requirement_id": { "type": "string" }
+        }
+      }
+    },
+    "coverage_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion_id": { "type": "string" },
+          "covered": { "type": "boolean" },
+          "test": { "type": "string" }
+        }
+      }
+    }
+  }
+}

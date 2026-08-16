@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version="1.0.0" agent="software-architect">
+
+  <models>
+    <primary id="claude-opus-4-5" role="modeling,governance,nfr"/>
+    <fallback id="claude-sonnet-4-5" role="all" trigger="primary_unavailable"/>
+  </models>
+
+  <limits>
+    <max_tool_output_tokens>30000</max_tool_output_tokens>
+    <max_context_tokens>180000</max_context_tokens>
+    <max_containers_per_view>20</max_containers_per_view>
+    <max_external_systems>15</max_external_systems>
+    <max_review_cycles>2</max_review_cycles>
+  </limits>
+
+  <paths>
+    <run_log>.ai/data/architecture-runs.jsonl</run_log>
+    <schemas>./schemas/</schemas>
+    <output>./out/</output>
+    <patterns>./patterns/</patterns>
+  </paths>
+
+  <c4_required_levels>
+    <level id="context" tier_min="T0" required="true"/>
+    <level id="container" tier_min="T0" required="true"/>
+    <level id="component" tier_min="T2" required="true"/>
+    <level id="code" tier_min="T3" required="false"/>
+  </c4_required_levels>
+
+  <nfr_categories>
+    <category id="availability"/>
+    <category id="scalability"/>
+    <category id="security"/>
+    <category id="maintainability"/>
+    <category id="performance"/>
+    <category id="observability"/>
+  </nfr_categories>
+
+  <gates>
+    <gate name="c4_validation" on_fail="halt"/>
+    <gate name="critical_coupling" on_fail="halt"/>
+    <gate name="as_is_required_for_to_be" on_fail="halt"/>
+    <gate name="schema_validation" on_fail="halt"/>
+    <gate name="run_log_write" on_fail="halt"/>
+  </gates>
+
+  <observability>
+    <log_level>info</log_level>
+    <emit_stage_timings>true</emit_stage_timings>
+    <emit_skill_loads>true</emit_skill_loads>
+  </observability>
+
+</config>

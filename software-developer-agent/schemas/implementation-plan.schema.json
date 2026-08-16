@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "implementation-plan.schema.json",
+  "title": "ImplementationPlan",
+  "type": "object",
+  "required": ["plan_id", "task_id", "approach_summary", "file_changes", "test_strategy"],
+  "properties": {
+    "plan_id": { "type": "string" },
+    "task_id": { "type": "string" },
+    "approach_summary": { "type": "string", "maxLength": 1000 },
+    "estimated_complexity": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "file_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "action", "requirement_ids", "description"],
+        "properties": {
+          "path": { "type": "string" },
+          "action": { "type": "string", "enum": ["create", "modify", "delete"] },
+          "requirement_ids": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "test_strategy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "action", "verifies"],
+        "properties": {
+          "path": { "type": "string" },
+          "action": { "type": "string", "enum": ["create", "modify"] },
+          "verifies": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

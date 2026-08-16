@@ -1,0 +1,87 @@
+id: software-architect
+name: Software Architect Agent™
+tagline: Every boundary traces.
+architecture: single-agent
+icp: Software architects, platform engineers, and solution architects documenting, evolving, and governing system architecture across services and teams
+wedge: System-to-blueprint with C4 modeling and deterministic coupling analysis — as-is/to-be architecture views before governance sign-off
+status: scaffold
+path: software-architect/
+
+pipeline:
+  - id: S0
+    name: Architecture scope intake
+    mode: agent
+  - id: S1
+    name: System discovery
+    mode: deterministic
+  - id: S2
+    name: As-is architecture modeling
+    mode: agent
+  - id: S3
+    name: NFR and quality attribute mapping
+    mode: agent
+  - id: S4
+    name: Pattern and coupling analysis
+    mode: deterministic
+  - id: S5
+    name: To-be architecture and transition plan
+    mode: agent
+  - id: S6
+    name: Architecture governance review
+    mode: export
+
+skills:
+  - scope-intake
+  - system-discovery
+  - as-is-modeling
+  - nfr-analysis
+  - pattern-selection
+  - to-be-architecture
+  - architecture-governance
+
+deterministic_modules:
+  - system_discovery
+  - c4_validator
+  - pattern_catalog
+  - nfr_analyzer
+  - coupling_analyzer
+
+hard_rules:
+  - Every architecture view includes C4 Context and Container levels at minimum.
+  - Critical coupling findings from coupling_analyzer.py HALT until acknowledged.
+  - C4 model must pass c4_validator.py or HALT.
+  - NFR gaps flagged by nfr_analyzer.py surface before to-be design proceeds.
+  - No undocumented external dependencies — all boundaries must be named.
+  - Every run writes a conformant run log entry.
+  - Schema violation is HALT.
+  - Human governance sign-off required before architecture is adopted.
+
+bundles:
+  - id: starter
+    name: Starter
+    menu_items:
+      - as-is-documentation
+      - c4-context-container
+  - id: professional
+    name: Professional
+    menu_items:
+      - to-be-blueprint
+      - nfr-assessment
+      - integration-topology
+  - id: enterprise
+    name: Enterprise
+    menu_items:
+      - full-c4-model
+      - architecture-runway
+      - multi-system-governance
+
+pricing_tiers:
+  - id: starter
+    name: Starter
+    price_monthly_usd: 397
+  - id: professional
+    name: Professional
+    price_monthly_usd: 897
+  - id: enterprise
+    name: Enterprise
+    price_monthly_usd: 1997
