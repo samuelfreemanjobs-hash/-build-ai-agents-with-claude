@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-proposals-agent/schemas/pricing-output.schema.json",
+  "title": "Pricing Engine Output",
+  "description": "Sole authorized source of pricing figures. All monetary values are decimal strings — never JSON numbers, to prevent float contamination downstream.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["engine_version", "recommended", "scenarios"],
+  "properties": {
+    "engine_version": { "type": "string" },
+    "recommended": { "enum": ["competitive", "balanced", "premium"] },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "scenarios": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "margin_rate", "line_items", "total_cost",
+                     "total_price", "gross_margin_amount", "gross_margin_pct"],
+        "properties": {
+          "name": { "enum": ["competitive", "balanced", "premium"] },
+          "margin_rate": { "$ref": "#/$defs/decimalString" },
+          "line_items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["service_code", "unit", "volume", "unit_cost",
+                           "extended_cost", "unit_price", "extended_price",
+                           "source_ref"],
+              "properties": {
+                "service_code": { "type": "string" },
+                "description": { "type": "string" },
+                "unit": { "type": "string" },
+                "volume": { "$ref": "#/$defs/decimalString" },
+                "unit_cost": { "$ref": "#/$defs/decimalString" },
+                "fixed_cost": { "$ref": "#/$defs/decimalString" },
+                "extended_cost": { "$ref": "#/$defs/decimalString" },
+                "unit_price": { "$ref": "#/$defs/decimalString" },
+                "extended_price": { "$ref": "#/$defs/decimalString" },
+                "source_ref": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Cost table row. Required — this is what *trace resolves."
+                }
+              }
+            }
+          },
+          "total_cost": { "$ref": "#/$defs/decimalString" },
+          "total_price": { "$ref": "#/$defs/decimalString" },
+          "gross_margin_amount": { "$ref": "#/$defs/decimalString" },
+          "gross_margin_pct": { "$ref": "#/$defs/decimalString" },
+          "warnings": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "decimalString": {
+      "type": "string",
+      "pattern": "^-?[0-9]+(\\.[0-9]+)?$",
+      "description": "Decimal as string. JSON numbers are rejected to prevent float rounding on money."
+    }
+  }
+}

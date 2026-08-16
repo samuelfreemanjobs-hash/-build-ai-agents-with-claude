@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nfr-map.schema.json",
+  "title": "NFRMap",
+  "type": "object",
+  "required": ["model_id", "mappings"],
+  "properties": {
+    "model_id": { "type": "string" },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["nfr_id", "category", "requirement", "status"],
+        "properties": {
+          "nfr_id": { "type": "string" },
+          "category": { "type": "string" },
+          "requirement": { "type": "string" },
+          "status": { "type": "string", "enum": ["met", "partial", "gap"] },
+          "element_id": { "type": "string" },
+          "evidence": { "type": "string" }
+        }
+      }
+    }
+  }
+}

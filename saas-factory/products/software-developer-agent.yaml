@@ -1,0 +1,86 @@
+id: software-developer-agent
+name: Software Developer Agent™
+tagline: Every change traces.
+architecture: single-agent
+icp: Engineering teams shipping features, fixes, and refactors across web, API, and backend codebases
+wedge: Spec-to-shipped code with deterministic verification — tests, lint, and security gates before human review
+status: scaffold
+path: software-developer-agent/
+
+pipeline:
+  - id: S0
+    name: Task intake and clarification
+    mode: agent
+  - id: S1
+    name: Codebase analysis
+    mode: deterministic
+  - id: S2
+    name: Implementation planning
+    mode: agent
+  - id: S3
+    name: Code generation
+    mode: agent
+  - id: S4
+    name: Verification
+    mode: deterministic
+  - id: S5
+    name: Code review
+    mode: agent
+  - id: S6
+    name: Delivery
+    mode: export
+
+skills:
+  - task-intake
+  - codebase-context
+  - implementation-planning
+  - code-generation
+  - test-authoring
+  - code-review-evaluator
+
+deterministic_modules:
+  - codebase_analyzer
+  - test_runner
+  - lint_validator
+  - security_scanner
+  - dependency_checker
+
+hard_rules:
+  - No untested code ships — test suite must pass or HALT.
+  - Critical security findings from security_scanner.py HALT the run.
+  - Lint errors at error severity HALT; warnings surface but do not block.
+  - No secrets, credentials, or API keys in generated code — ever.
+  - All file changes trace to a requirement in the task spec.
+  - Every run writes a conformant run log entry.
+  - Schema violation is HALT.
+  - Human approval required before merge or deploy.
+
+bundles:
+  - id: starter
+    name: Starter
+    menu_items:
+      - bug-fix
+      - small-feature
+  - id: professional
+    name: Professional
+    menu_items:
+      - feature-implementation
+      - test-coverage
+      - code-review
+  - id: enterprise
+    name: Enterprise
+    menu_items:
+      - full-refactor
+      - security-audit
+      - multi-service-change
+
+pricing_tiers:
+  - id: starter
+    name: Starter
+    price_monthly_usd: 297
+  - id: professional
+    name: Professional
+    price_monthly_usd: 697
+  - id: enterprise
+    name: Enterprise
+    price_monthly_usd: 1497

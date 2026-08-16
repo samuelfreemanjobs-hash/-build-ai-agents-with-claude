@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "governance-review.schema.json",
+  "title": "GovernanceReview",
+  "type": "object",
+  "required": ["run_id", "recommendation", "scores"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "recommendation": { "type": "string", "enum": ["APPROVE", "REVISE", "HALT"] },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "c4_completeness": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "discovery_accuracy": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "nfr_coverage": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "coupling_health": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "transition_feasibility": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "overall": { "type": "integer", "minimum": 1, "maximum": 10 }
+      }
+    },
+    "defects": { "type": "array", "items": { "type": "object" } }
+  }
+}

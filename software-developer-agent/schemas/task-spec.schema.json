@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task-spec.schema.json",
+  "title": "TaskSpec",
+  "type": "object",
+  "required": ["task_id", "title", "task_type", "acceptance_criteria", "tier"],
+  "properties": {
+    "task_id": { "type": "string" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "task_type": {
+      "type": "string",
+      "enum": ["bug-fix", "feature", "refactor", "test-coverage", "security-fix"]
+    },
+    "tier": { "type": "string", "enum": ["T0", "T1", "T2", "T3"] },
+    "repo_path": { "type": "string" },
+    "acceptance_criteria": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "testable"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^AC-[0-9]+$" },
+          "description": { "type": "string", "minLength": 1 },
+          "testable": { "type": "boolean" },
+          "tests_required": { "type": "boolean", "default": true }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "language": { "type": "string" },
+        "framework": { "type": "string" },
+        "style_guide": { "type": "string" }
+      }
+    },
+    "reference_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "purpose"],
+        "properties": {
+          "path": { "type": "string" },
+          "purpose": { "type": "string" }
+        }
+      }
+    },
+    "out_of_scope": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "approved_paths": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Protected paths explicitly approved for modification"
+    }
+  }
+}

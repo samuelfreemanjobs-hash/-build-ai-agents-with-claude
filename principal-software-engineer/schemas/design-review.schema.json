@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "design-review.schema.json",
+  "title": "DesignReview",
+  "type": "object",
+  "required": ["run_id", "recommendation", "scores", "defects"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "recommendation": { "type": "string", "enum": ["APPROVE", "REVISE", "HALT"] },
+    "scores": {
+      "type": "object",
+      "required": ["problem_fit", "option_coverage", "risk_awareness", "standards_compliance", "implementability", "operability"],
+      "properties": {
+        "problem_fit": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "option_coverage": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "risk_awareness": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "standards_compliance": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "implementability": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "operability": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "overall": { "type": "integer", "minimum": 1, "maximum": 10 }
+      }
+    },
+    "defects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "description"],
+        "properties": {
+          "severity": { "type": "string", "enum": ["critical", "major", "minor"] },
+          "description": { "type": "string" },
+          "suggestion": { "type": "string" }
+        }
+      }
+    }
+  }
+}

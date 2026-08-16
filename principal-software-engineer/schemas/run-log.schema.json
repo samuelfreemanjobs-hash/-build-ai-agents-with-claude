@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run-log.schema.json",
+  "title": "DesignRunLog",
+  "type": "object",
+  "required": ["run_id", "product_id", "status", "started_at", "problem_id", "tier"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "product_id": { "type": "string", "const": "principal-software-engineer" },
+    "problem_id": { "type": "string" },
+    "problem_title": { "type": "string" },
+    "tier": { "type": "string", "enum": ["T0", "T1", "T2", "T3"] },
+    "status": { "type": "string", "enum": ["running", "completed", "halted", "failed"] },
+    "started_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": "string", "format": "date-time" },
+    "options_evaluated": { "type": "integer" },
+    "recommended_option": { "type": "string" },
+    "review_score": { "type": "integer" },
+    "stages": { "type": "array", "items": { "type": "object" } },
+    "halts": { "type": "array", "items": { "type": "object" } }
+  }
+}
