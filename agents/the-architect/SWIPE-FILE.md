@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Question |
 
 ---
 
@@ -255,6 +255,24 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** GEN-B | PT-Kennedy+PAS
 **Why it works:** Dollar specificity + competitive threat. Agitate before solve.
 **Structural move:** [Cost of delay] + [specific $] + [external threat]
+
+### L-007 (Abraham — preeminent problem articulation)
+**Copy:** *"You didn't fail because you lacked discipline. You failed because every system you tried was built for someone else's business model — and nobody told you that until now."*
+**Tags:** AW-P | GEN-L | PT-Abraham+Story
+**Why it works:** Reframes blame away from reader; positions writer as protective advisor who sees what they couldn't. Preeminence over persuasion.
+**Structural move:** [Absolve reader] + [name real enemy] + [advisor reveal]
+
+### B-008 (Abraham — total risk reversal)
+**Copy:** *"If this doesn't pay for itself in 90 days, email one line and we refund every penny — and you keep the templates. The risk is entirely ours."*
+**Tags:** GEN-B | PT-Abraham+Proof
+**Why it works:** Names timeframe, removes buyer risk, signals confidence. Risk reversal as conversion catalyst.
+**Structural move:** [Specific guarantee] + [seller assumes risk] + [confidence signal]
+
+### C-009 (Abraham — story-layer close)
+**Copy:** *"That's the same three-lever map we used when [client] went from $40k to $127k without a single new ad dollar. Your move: book the 20-minute audit. If we're not the right fit, we'll tell you — and point you to who is."*
+**Tags:** AW-S | GEN-C | PT-Abraham+Mech+Proof
+**Why it works:** Case proof + geometric growth implied + preeminent CTA (advisor may decline sale). Moves V/F levers, not only N.
+**Structural move:** [Proof story] + [low-friction CTA] + [fiduciary out]
 
 ---
 

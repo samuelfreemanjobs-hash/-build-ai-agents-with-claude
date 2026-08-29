@@ -232,3 +232,56 @@ One reading. New customer. Full story.
 **Hopkins rule:** *The more you tell, the more you sell* — for interested readers.
 
 See `HOPKINS-METHODOLOGY.md` for full laws and checklist.
+
+---
+
+## Abraham Story-Layer Offer (sales assets)
+
+**Use for:** sales pages, VSL offers, webinar closes, high-ticket proposals.
+
+| Layer | Job | Notes |
+|---|---|---|
+| 1. Narrative frame | Origin + case study + strategic journey | Lower analytical defenses; elevate prestige |
+| 2. Problem articulation | State their struggle clearer than they can | Instant authority — preeminence posture |
+| 3. Core promise | Outcome-focused primary value proposition | One dominant transformation |
+| 4. Value stack | Core + bonuses + total perceived utility | Move **V** lever |
+| 5. Risk reversal | Every buyer risk named and shifted to seller | Guarantee, trial, performance terms |
+| 6. Ethical urgency | Scarcity or deadline only if true | Forces decision, not manipulation |
+| 7. Explicit CTA | Step-by-step next action | Trackable; repeat 2–3× through long assets |
+
+**Abraham rule:** Test individual variables (headline, lead, stack, guarantee, CTA) — compound winners.
+
+See `ABRAHAM-METHODOLOGY.md`, `research/ABRAHAM-LEVERS-TEMPLATE.md`.
+
+---
+
+## Abraham Three-Lever Asset Classification
+
+Before writing strategy or offer copy, classify the asset:
+
+| Lever | Symbol | Asset examples |
+|---|---|---|
+| **Clients** | N | Lead gen, ads, host-beneficiary intros, referral campaigns |
+| **Transaction value** | V | Upsells, bundles, premium tiers, value-stack closes |
+| **Frequency** | F | Follow-up sequences, reactivation, subscriptions, ascension |
+
+**Compounding math:** Equal +10% on N, V, F → **+33.1%** revenue. +26% each → **2×**.
+
+If the brief only chases N, note V/F opportunities in the strategic delivery note.
+
+---
+
+## Host–Beneficiary JV Intro (Abraham)
+
+**Use for:** warm list endorsements, strategic partnerships, co-branded launches.
+
+1. **Host frame** — why the host is sharing this (generosity to tribe, exclusive benefit)
+2. **Tribe qualifier** — "If you're [situation], read this"
+3. **Beneficiary credibility transfer** — endorsement, not cold pitch
+4. **Exclusive offer** — tailored for host's audience only
+5. **Risk reversal** — host's reputation protected; buyer risk removed
+6. **CTA** — single clear action; performance terms for partners if relevant
+
+**Voice:** Same Architect tone — the host sounds like a trusted friend introducing another trusted advisor.
+
+See `ABRAHAM-METHODOLOGY.md` (Host–Beneficiary section).

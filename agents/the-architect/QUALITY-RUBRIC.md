@@ -99,6 +99,17 @@ Model, distinction, 10-min action — or info dump?
 | 7–8 | Model + action step |
 | 9–10 | Full Pagan/Woodsmall install; reader can teach it back |
 
+### 10. Preeminence & Leverage (Abraham)
+Trusted advisor posture? Problem articulated with fiduciary clarity? Growth lever and risk reversal?
+
+| Score | Criteria |
+|---|---|
+| N/A | Pure T1 hook with no offer/strategy context |
+| 1–3 | Vendor begging; product-centric; buyer still carries unaddressed risk |
+| 4–6 | Some advisor tone; partial risk reversal; lever unclear |
+| 7–8 | Protective guide voice; problem named better than prospect could; risks reversed |
+| 9–10 | Preeminent prescription (what they need); N/V/F lever clear; story-layer offer complete |
+
 ---
 
 ## Output Format
@@ -117,6 +128,7 @@ Model, distinction, 10-min action — or info dump?
 | Teaching Install | /10 or N/A | |
 | Outcome & Identity | /10 or N/A | |
 | PAS Agitation | /10 or N/A | |
+| Preeminence & Leverage | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```
