@@ -53,6 +53,8 @@ Write for the ear. Short sentences. Stage directions for visuals/demos.
 
 ## Book Chapter (T4)
 
+**Standard teaching spine** — use for lessons and straightforward chapters.
+
 1. **Chapter hook** (story or provocative question)
 2. **Promise** (what they will know/do by end)
 3. **Big Idea** (one sentence)
@@ -63,6 +65,51 @@ Write for the ear. Short sentences. Stage directions for visuals/demos.
 8. **Chapter close** (open loop to next chapter)
 
 **Kindle notes:** 2,000–4,000 words per chapter; end with momentum into next chapter.
+
+---
+
+## Business Book Chapter (T4 — Thriller Mode)
+
+**Use for:** Kindle business books, manifesto-length teaching, series books — anything that must read past midnight.
+
+See `BUSINESS-THRILLER-CRAFT.md`, `research/BOOK-THRILLER-OUTLINE-TEMPLATE.md`.
+
+### Chapter beat (Patterson + Child)
+
+| Beat | Job | Length |
+|---|---|---|
+| **1. Hook** | Child cold open — scenario + deadline or Flynn question | 5–15 lines |
+| **2. Complicate** | Story + data + obstacle; stakes rise | 30–40% |
+| **3. Clue** | Partial insight — **do not complete the picture** | 20% |
+| **4. Turn** | Twist, distinction, or "except when…" | 15% |
+| **5. Install** | 10-min exercise (Pagan) | 10% |
+| **6. Cliff** | End **before** the answer — open loop | Final 3–5 lines |
+
+### Chapter rules
+
+- **Title as question or clue** — *"Chapter 7: The Metric Nobody Prints"*
+- **1,500–3,500 words** — short chapter discipline (Brown)
+- **Never end with summary** — Patterson cliffhanger only
+- **Plant one Chekhov detail** per chapter if running a book-length gun
+- **Alternate** story chapter → data chapter → application chapter
+
+### Cliffhanger lines (examples)
+
+- *"That was the right fix — until the retention data came back."*
+- *"The answer is in Chapter 9. First, you need to see what happened to Lisa's team."*
+- *"I told you the funnel was leaking. I was wrong about where."*
+
+### Full book map
+
+| Section | Thriller job |
+|---|---|
+| Prologue | Hitchcock bomb — cold open |
+| Part I | Christie red herring — wrong answer fair-play |
+| Part II | Clues mount |
+| Part III | Flynn twist — reversal |
+| Part IV | Gathering — framework revealed |
+| Part V | Ticking clock — application race |
+| Epilogue | Campbell return — new identity |
 
 ---
 

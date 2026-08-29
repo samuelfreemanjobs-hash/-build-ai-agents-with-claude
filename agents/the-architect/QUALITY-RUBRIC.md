@@ -154,6 +154,17 @@ Story architecture, conflict, transformation, subtext — reader inside the jour
 | 7–8 | In medias res open; want + need; reader as hero; sensory detail |
 | 9–10 | Full five-genius stack: reversal + recognition, Campbell elixir, Hemingway iceberg, catharsis at CTA |
 
+### 15. Business Thriller Pace (T4 / books)
+Page-turner discipline? Clues, clocks, cliffhangers? Framework as revelation?
+
+| Score | Criteria |
+|---|---|
+| N/A | Not a book chapter or long teaching piece |
+| 1–3 | Summary close; framework front-loaded; no suspense; flat stakes |
+| 4–6 | Some hooks; weak cliffhangers; twists unearned |
+| 7–8 | Cold open; chapter ends on question; clock active; partial reveals |
+| 9–10 | Fair-play clues; red herring dismantled; gathering reveal; Patterson cliff every chapter; Chekhov paid off |
+
 ---
 
 ## Output Format
@@ -177,6 +188,7 @@ Story architecture, conflict, transformation, subtext — reader inside the jour
 | Headline & Ad Craft | /10 or N/A | |
 | Slippery Slide & Triggers | /10 or N/A | |
 | Narrative Mastery | /10 or N/A | |
+| Business Thriller Pace | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```

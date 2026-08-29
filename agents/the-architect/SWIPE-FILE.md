@@ -15,8 +15,8 @@ Reference library for The Architect. When drafting, match **structure and psycho
 | Tag | Meaning |
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
-| **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Question |
+| **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close, T4=book chapter |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
 
 ---
 
@@ -334,6 +334,18 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** AW-M | GEN-C | PT-Campbell+Story
 **Why it works:** Hero's return. Identity transformation (elixir internalized). Reader pictured as protagonist, not customer.
 **Structural move:** [Before identity] + [after identity] + [transformation = them, not product]
+
+### T4-001 (Business thriller — chapter cliff)
+**Copy:** *"She had the dashboard right in front of her. Every number green. And that was exactly the problem — but she wouldn't understand why until the churn report landed on Monday."*
+**Tags:** GEN-T4 | PT-Thriller+Cliff
+**Why it works:** Hitchcock bomb (success = hidden danger). Patterson cliff — ends before explanation. Reader must turn the page.
+**Structural move:** [False victory] + [ominous hint] + [withhold answer]
+
+### T4-002 (Christie — fair play clue)
+**Copy:** *"Back in Chapter 2, I mentioned that Marcus fired his best salesperson. Remember that. It matters more than the funnel fix we spent the last forty pages on."*
+**Tags:** GEN-T4 | PT-Thriller+Christie
+**Why it works:** Chekhov's gun callback. Fair play — clue was planted. Gathering revelation teased.
+**Structural move:** [Recall earlier clue] + [reframe importance] + [promise payoff]
 
 ---
 

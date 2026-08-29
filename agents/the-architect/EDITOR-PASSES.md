@@ -30,6 +30,7 @@ If no → fix the angle before writing more.
 - Proof appears before the ask.
 - Objections pre-handled before CTA.
 - Teaching pieces: model → distinction → demo → install.
+- **T4 / business book pass:** chapter ends on cliffhanger, not summary? Ticking clock active? Framework teased not dumped?
 
 **Cut:** entire sections that do not advance belief or action.
 
@@ -62,6 +63,7 @@ If no → fix the angle before writing more.
 - Enquirer pass (drama + secret): would he tell his friend about this headline?
 - **Sugarman seed pass:** flat section endings get curiosity seeds (*But there's more.* *Let me explain.*)
 - **Hemingway pass:** cut adjectives that don't change meaning; replace labeled emotions with concrete action
+- **Thriller cliff pass (T4):** replace "in summary" endings with unanswered questions; verify one open loop minimum at chapter end
 
 **Swap weak → strong examples:**
 | Weak | Strong |
