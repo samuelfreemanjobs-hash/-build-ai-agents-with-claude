@@ -85,7 +85,7 @@ def test_demo_ui_served():
     from autoborder.api.main import app
 
     client = TestClient(app)
-    response = client.get("/")
+    response = client.get("/demo")
     assert response.status_code == 200
     assert "AutoBorder Comply" in response.text
     assert "cytoscape" in response.text

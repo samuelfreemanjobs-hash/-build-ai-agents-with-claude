@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 
@@ -21,9 +22,16 @@ from autoborder.models import (
     InsuranceQuoteRequest,
     InsuranceQuoteResponse,
     RVCCalculationResult,
+    SavingsReportDelivery,
+    TariffLeakInput,
+    TariffLeakResult,
 )
 from autoborder.reports.forensic_pdf import ForensicPDFGenerator
+from autoborder.reports.savings_report import SavingsReportGenerator
+from autoborder.services.email import EmailDeliveryService
 from autoborder.services.insurance import InsuranceMGUClient
+from autoborder.gtm.bom_parser import BOMParser
+from autoborder.gtm.tariff_leak import TariffLeakCalculator
 
 WEB_DIR = Path(__file__).resolve().parent.parent / "web"
 
@@ -47,6 +55,10 @@ insurance_client = InsuranceMGUClient(
     api_url=settings.insurance_mgu_api_url,
     api_key=settings.insurance_mgu_api_key,
 )
+bom_parser = BOMParser()
+leak_calculator = TariffLeakCalculator()
+savings_report_generator = SavingsReportGenerator()
+email_service = EmailDeliveryService()
 
 if (WEB_DIR / "static").is_dir():
     app.mount("/static", StaticFiles(directory=WEB_DIR / "static"), name="static")
@@ -60,12 +72,98 @@ def _load_part_context(part_number: str, plant: str):
 
 
 @app.get("/", response_class=HTMLResponse)
+def calculator_landing() -> HTMLResponse:
+    """GTM micro-site — Tariff Leak Calculator landing page."""
+    path = WEB_DIR / "calculator.html"
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="Calculator UI not found")
+    return HTMLResponse(path.read_text(encoding="utf-8"))
+
+
+@app.get("/demo", response_class=HTMLResponse)
 def demo_ui() -> HTMLResponse:
     """Call 2 sales demo — interactive supply chain graph visualization."""
     index_path = WEB_DIR / "index.html"
     if not index_path.exists():
         raise HTTPException(status_code=404, detail="Demo UI not found")
     return HTMLResponse(index_path.read_text(encoding="utf-8"))
+
+
+@app.get("/calculator", response_class=HTMLResponse)
+def calculator_alias() -> HTMLResponse:
+    return calculator_landing()
+
+
+@app.get("/calculator/sample-bom")
+def sample_bom() -> Response:
+    sample_path = settings.mock_data_dir / "brake_rotor_bom.json"
+    return Response(
+        content=sample_path.read_bytes(),
+        media_type="application/json",
+        headers={"Content-Disposition": "attachment; filename=brake_rotor_bom.json"},
+    )
+
+
+@app.post("/calculator/analyze", response_model=TariffLeakResult)
+async def analyze_tariff_leak(
+    company_name: str = Form(...),
+    contact_name: str = Form(...),
+    contact_email: str = Form(...),
+    quarterly_units: int = Form(1000),
+    mfn_duty_rate_pct: float = Form(6.5),
+    claimed_usmca_preferential: str = Form("false"),
+    bom_file: UploadFile = File(...),
+) -> TariffLeakResult:
+    """Analyze uploaded BOM and calculate duty overpayment."""
+    try:
+        content = await bom_file.read()
+        bom = bom_parser.parse_json(content)
+        claimed = claimed_usmca_preferential.lower() in ("true", "on", "1", "yes")
+        inputs = TariffLeakInput(
+            company_name=company_name,
+            contact_name=contact_name,
+            contact_email=contact_email,
+            quarterly_units=quarterly_units,
+            mfn_duty_rate_pct=mfn_duty_rate_pct,
+            claimed_usmca_preferential=claimed,
+            paid_mfn_duty=True,
+        )
+        result = leak_calculator.analyze(bom, inputs)
+        return savings_report_generator.store(result)
+    except (ValueError, json.JSONDecodeError) as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.get("/calculator/report/{report_id}", response_class=HTMLResponse)
+def view_savings_report(report_id: str) -> HTMLResponse:
+    result = savings_report_generator.get(report_id)
+    if not result:
+        raise HTTPException(status_code=404, detail=f"Report {report_id} not found")
+    return HTMLResponse(savings_report_generator.render_html(result))
+
+
+@app.get("/calculator/report/{report_id}/pdf")
+def download_savings_report_pdf(report_id: str) -> Response:
+    result = savings_report_generator.get(report_id)
+    if not result:
+        raise HTTPException(status_code=404, detail=f"Report {report_id} not found")
+    pdf_bytes = savings_report_generator.render_pdf(result)
+    return Response(
+        content=pdf_bytes,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f"attachment; filename=savings_report_{report_id}.pdf"},
+    )
+
+
+@app.post("/calculator/report/{report_id}/send", response_model=SavingsReportDelivery)
+def send_savings_report(report_id: str, body: dict) -> SavingsReportDelivery:
+    result = savings_report_generator.get(report_id)
+    if not result:
+        raise HTTPException(status_code=404, detail=f"Report {report_id} not found")
+    recipient = body.get("recipient_email", result.rvc_result.part_number)
+    if "@" not in str(recipient):
+        raise HTTPException(status_code=400, detail="Valid recipient_email required")
+    return email_service.send_savings_report(result, recipient, savings_report_generator)
 
 
 @app.get("/health")

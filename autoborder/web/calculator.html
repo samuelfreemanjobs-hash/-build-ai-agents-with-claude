@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tariff Leak Calculator — AutoBorder Comply</title>
+  <meta name="description" content="Upload a BOM. See how much USMCA duty you overpaid last quarter — in 30 seconds." />
+  <link rel="stylesheet" href="/static/calculator.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="logo">AutoBorder Comply</span>
+      <a href="/demo" class="nav-link">Supply Chain Demo</a>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">The Tariff Leak Calculator</p>
+      <h1>Stop Guessing Tariffs.<br><em>Start Guaranteeing Them.</em></h1>
+      <p class="subhead">Upload a single complex BOM. We'll tell you within 30 seconds how much duty you overpaid last quarter.</p>
+    </div>
+  </section>
+
+  <main class="main">
+    <section id="upload-section" class="card upload-card">
+      <form id="calculator-form" enctype="multipart/form-data">
+        <div class="form-grid">
+          <label class="field">
+            <span>Company Name</span>
+            <input name="company_name" required placeholder="Acme Auto Parts SA de CV" />
+          </label>
+          <label class="field">
+            <span>Your Name</span>
+            <input name="contact_name" required placeholder="Maria Gonzalez" />
+          </label>
+          <label class="field">
+            <span>Work Email</span>
+            <input name="contact_email" type="email" required placeholder="cfo@acmeauto.mx" />
+          </label>
+          <label class="field">
+            <span>Quarterly Shipment Volume (units)</span>
+            <input name="quarterly_units" type="number" value="1000" min="1" required />
+          </label>
+          <label class="field">
+            <span>MFN Duty Rate (%)</span>
+            <input name="mfn_duty_rate_pct" type="number" value="6.5" step="0.1" min="0" />
+          </label>
+          <label class="field checkbox-field">
+            <input name="claimed_usmca_preferential" type="checkbox" />
+            <span>We claimed USMCA preferential treatment last quarter</span>
+          </label>
+        </div>
+
+        <div class="upload-zone" id="upload-zone">
+          <input type="file" id="bom-file" name="bom_file" accept=".json,.txt" required hidden />
+          <div class="upload-placeholder" id="upload-placeholder">
+            <div class="upload-icon">↑</div>
+            <p><strong>Drop your BOM file here</strong> or click to browse</p>
+            <p class="hint">JSON export from SAP, Oracle, or AutoBorder format</p>
+            <button type="button" class="sample-btn" id="use-sample">Use sample brake rotor BOM</button>
+          </div>
+          <div class="upload-selected hidden" id="upload-selected">
+            <span id="file-name"></span>
+            <button type="button" id="clear-file">Remove</button>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn">
+          Calculate My Tariff Leak →
+        </button>
+      </form>
+    </section>
+
+    <section id="loading-section" class="card loading-card hidden">
+      <div class="spinner"></div>
+      <p>Running USMCA Annex 4-B calculation…</p>
+      <p class="hint">Analyzing BOM cost rollup · Tracing non-originating materials</p>
+    </section>
+
+    <section id="results-section" class="hidden">
+      <div class="results-hero card">
+        <p class="eyebrow">Your Savings Report</p>
+        <h2 id="result-headline">—</h2>
+        <div class="hero-metric" id="hero-metric">—</div>
+        <p class="hero-label" id="hero-label">—</p>
+        <p id="result-recommendation" class="recommendation"></p>
+      </div>
+
+      <div class="results-grid">
+        <div class="card stat-card">
+          <span class="stat-label">RVC Calculated</span>
+          <span class="stat-value" id="stat-rvc">—</span>
+        </div>
+        <div class="card stat-card">
+          <span class="stat-label">Quarterly Import Value</span>
+          <span class="stat-value" id="stat-import">—</span>
+        </div>
+        <div class="card stat-card">
+          <span class="stat-label">Duty Paid (MFN)</span>
+          <span class="stat-value" id="stat-paid">—</span>
+        </div>
+        <div class="card stat-card">
+          <span class="stat-label">Should Have Paid</span>
+          <span class="stat-value" id="stat-should">—</span>
+        </div>
+        <div class="card stat-card accent">
+          <span class="stat-label">Annual Savings</span>
+          <span class="stat-value" id="stat-annual">—</span>
+        </div>
+        <div class="card stat-card">
+          <span class="stat-label">Penalty Exposure</span>
+          <span class="stat-value" id="stat-penalty">—</span>
+        </div>
+      </div>
+
+      <div class="card leaks-card">
+        <h3>Top Tariff Leaks</h3>
+        <ul id="leak-list" class="leak-list"></ul>
+      </div>
+
+      <div class="card actions-card">
+        <button id="view-report-btn" class="secondary-btn">View Full Savings Report</button>
+        <button id="email-report-btn" class="submit-btn">Email Report to CFO</button>
+        <button id="reset-btn" class="text-btn">Analyze another BOM</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>AutoBorder Comply · Guaranteed CBP-compliant RVC math in 72 hours — or we pay the penalty.</p>
+    <p class="muted">Calculation engine: deterministic USMCA Annex 4-B build-down · LLM never calculates</p>
+  </footer>
+
+  <script src="/static/calculator.js"></script>
+</body>
+</html>

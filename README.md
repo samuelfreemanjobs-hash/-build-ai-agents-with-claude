@@ -17,6 +17,7 @@ This is the Week 1–12 engineering MVP from the operational blueprint:
 | Week 9–10 | Forensic PDF generator | ✅ ReportLab audit document |
 | Week 11–12 | FastAPI gateway + insurance stub | ✅ Full REST API |
 | Call 2 Demo | Interactive graph visualization UI | ✅ Cytoscape.js + path highlighting |
+| GTM | Tariff Leak Calculator micro-site | ✅ BOM upload + Savings Report |
 
 ## Quick Start
 
@@ -30,9 +31,10 @@ autoborder pipeline 12345
 # Calculate RVC only
 autoborder rvc 12345 -v
 
-# Start API server + Call 2 demo UI
+# Start API server
 uvicorn autoborder.api.main:app --reload --port 8000
-# Open http://localhost:8000
+# Tariff Leak Calculator → http://localhost:8000
+# Call 2 Graph Demo      → http://localhost:8000/demo
 ```
 
 ## Architecture
@@ -50,6 +52,29 @@ RVC = ((Net Cost - Value of Non-Originating Materials) / Net Cost) × 100
 ```
 
 Exclusions: packing, warranty, royalties. Partial originating components use proportional tracing.
+
+## Call 2 Sales Demo — Graph Visualization
+
+Interactive supply chain graph for screen-sharing with VP Supply Chain prospects:
+
+```bash
+uvicorn autoborder.api.main:app --reload --port 8000
+```
+
+Open **http://localhost:8000** to launch the demo UI.
+
+**Features:**
+- Hierarchical BOM graph with color-coded origin status (blue root, green/red/amber nodes)
+- RVC summary panel with compliance status
+- Risk path panel — click to highlight where non-originating content (e.g. Chinese steel) drags down RVC
+- Node detail panel with ERP transaction IDs for audit traceability
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/` | Interactive graph demo UI |
+| GET | `/graph/{part_number}/visualization` | Full graph + RVC payload for UI |
+| GET | `/graph/{part_number}/paths` | Non-originating supply chain paths |
+| GET | `/graph/{part_number}/traverse` | BFS traversal with depth filter |
 
 ## API Endpoints
 

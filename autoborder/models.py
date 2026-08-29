@@ -193,3 +193,50 @@ class InsuranceQuoteResponse(BaseModel):
     coverage_limit_usd: float
     policy_reference: str
     status: str = "quoted"
+
+
+class TariffLeakInput(BaseModel):
+    company_name: str
+    contact_name: str
+    contact_email: str
+    quarterly_units: int = 1000
+    mfn_duty_rate_pct: float = 6.5
+    claimed_usmca_preferential: bool = False
+    paid_mfn_duty: bool = True
+
+
+class LeakLineItem(BaseModel):
+    category: str
+    description: str
+    amount_usd: float
+
+
+class TariffLeakResult(BaseModel):
+    report_id: str
+    company_name: str
+    part_number: str
+    part_description: str
+    rvc_percentage: float
+    meets_usmca_threshold: bool
+    net_cost_per_unit: float
+    quarterly_import_value: float
+    mfn_duty_rate_pct: float
+    usmca_duty_rate_pct: float
+    duty_paid_last_quarter: float
+    duty_should_have_paid: float
+    overpaid_last_quarter: float
+    annual_savings_potential: float
+    penalty_exposure: float
+    leak_type: str
+    headline: str
+    recommendation: str
+    top_leaks: list[LeakLineItem]
+    non_originating_paths: list[NonOriginatingPath]
+    rvc_result: RVCCalculationResult
+
+
+class SavingsReportDelivery(BaseModel):
+    report_id: str
+    recipient_email: str
+    status: str
+    message: str
