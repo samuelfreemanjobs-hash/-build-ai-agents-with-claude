@@ -20,6 +20,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 | [`OBJECTIONS.md`](agents/the-architect/OBJECTIONS.md) | Objection library + rebuttal frames |
 | [`VOC-RESEARCH.md`](agents/the-architect/VOC-RESEARCH.md) | Voice-of-customer research protocol |
 | [`HALBERT-METHODOLOGY.md`](agents/the-architect/HALBERT-METHODOLOGY.md) | Gary Halbert: starving crowd, A-Pile, AIDA, offers |
+| [`KERN-METHODOLOGY.md`](agents/the-architect/KERN-METHODOLOGY.md) | Frank Kern: Results in Advance, IBB, funnels, Core Identity |
 | [`HALBERT-NEWSLETTER-INDEX.md`](agents/the-architect/HALBERT-NEWSLETTER-INDEX.md) | Newsletter archive index by topic |
 | [`research/VOC-LEXICON-TEMPLATE.md`](agents/the-architect/research/VOC-LEXICON-TEMPLATE.md) | Save per-project VOC output |
 
@@ -32,7 +33,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 
 ## What makes this writer different
 
-- **One author voice** — Cosmo hooks, Enquirer drama, Halbert discipline, Pagan teaching — same person throughout
+- **One author voice** — Cosmo hooks, Enquirer drama, Halbert discipline, Kern psychology, Pagan teaching — same person throughout
 - **8-word test first** — if the hook fails short, the long copy will too
 - **Mandatory editor passes** — structural, line, punch-up, proof, CTA, ethics
 - **Quality rubric** — self-scores before shipping (min 8.0 average)

@@ -104,6 +104,7 @@ Model, distinction, 10-min action — or info dump?
 | Offer & CTA | /10 | |
 | Remarkability | /10 | |
 | Teaching Install | /10 or N/A | |
+| Outcome & Identity | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```
