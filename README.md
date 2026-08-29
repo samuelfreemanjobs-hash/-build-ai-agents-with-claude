@@ -136,6 +136,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`CIALDINI-METHODOLOGY.md`](agents/the-architect/CIALDINI-METHODOLOGY.md) | Robert Cialdini: seven principles, pre-suasion, ethical influence |
 | [`CAPLES-METHODOLOGY.md`](agents/the-architect/CAPLES-METHODOLOGY.md) | John Caples: tested headlines, story ads, before/after, split-run testing |
 | [`SCHWARTZ-METHODOLOGY.md`](agents/the-architect/SCHWARTZ-METHODOLOGY.md) | Eugene Schwartz: mass desire, awareness × sophistication, breakthrough advertising |
+| [`HAINES-METHODOLOGY.md`](agents/the-architect/HAINES-METHODOLOGY.md) | Scott Haines: shortcut copywriting, Headline→P.S., bucket brigade, blind bullets |
 | [`SUGARMAN-METHODOLOGY.md`](agents/the-architect/SUGARMAN-METHODOLOGY.md) | Joe Sugarman: slippery slide, 31 triggers, emotion→logic, mail-order craft |
 | [`MASTER-STORYTELLERS.md`](agents/the-architect/MASTER-STORYTELLERS.md) | Aristotle, Homer, Shakespeare, Campbell, Hemingway — narrative genius stack |
 | [`BUSINESS-THRILLER-CRAFT.md`](agents/the-architect/BUSINESS-THRILLER-CRAFT.md) | Hitchcock, Christie, Patterson — thriller/mystery craft for business books |
@@ -144,6 +145,8 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`research/CIALDINI-PRINCIPLES-TEMPLATE.md`](agents/the-architect/research/CIALDINI-PRINCIPLES-TEMPLATE.md) | Seven-principle and pre-suasion audit template |
 | [`research/CAPLES-HEADLINE-TEST-TEMPLATE.md`](agents/the-architect/research/CAPLES-HEADLINE-TEST-TEMPLATE.md) | 10 headline variants + split-test plan |
 | [`research/SCHWARTZ-MARKET-DIAGNOSIS-TEMPLATE.md`](agents/the-architect/research/SCHWARTZ-MARKET-DIAGNOSIS-TEMPLATE.md) | Mass desire, functional angle, awareness, sophistication |
+| [`research/HAINES-COPY-WORKFLOW-TEMPLATE.md`](agents/the-architect/research/HAINES-COPY-WORKFLOW-TEMPLATE.md) | Headline to P.S. linear copy assembly |
+| [`SOURCES-HAINES.md`](agents/the-architect/SOURCES-HAINES.md) | Scott Haines source provenance |
 | [`research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`](agents/the-architect/research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md) | Slippery slide + psychological trigger audit |
 | [`research/STORY-ARC-TEMPLATE.md`](agents/the-architect/research/STORY-ARC-TEMPLATE.md) | Five-genius story arc (Aristotle → Hemingway) |
 | [`research/BOOK-THRILLER-OUTLINE-TEMPLATE.md`](agents/the-architect/research/BOOK-THRILLER-OUTLINE-TEMPLATE.md) | Business book thriller map + chapter cliffhangers |

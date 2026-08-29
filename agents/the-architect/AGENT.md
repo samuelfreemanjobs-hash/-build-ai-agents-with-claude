@@ -39,7 +39,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | Task type | Required diagnostics |
 |---|---|
 | Headlines only | Schwartz diagnosis + Caples headline sheet |
-| Sales page / email / ad | Schwartz diagnosis + Kennedy 10Q + Cialdini + Caples + Sugarman |
+| Sales page / email / ad | Schwartz diagnosis + Kennedy 10Q + Haines workflow + Cialdini + Caples + Sugarman |
 | Strategy / offer | Schwartz diagnosis + Abraham levers + Cialdini |
 | Story-led copy | Story arc + Sugarman |
 | Business book / T4 chapter | Story arc + Book thriller outline |
