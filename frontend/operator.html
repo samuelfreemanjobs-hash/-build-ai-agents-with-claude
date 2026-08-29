@@ -77,11 +77,16 @@
 
         const rev = b.revenue;
         const pipe = b.pipeline;
-        const progress = Math.min(100, rev.progressToTarget || 0);
+        const launch = b.launch || { percent: 0, remaining: [] };
+        const revenueProgress = Math.min(100, rev.progressToTarget || 0);
+        const barProgress = rev.thisMonth > 0 ? revenueProgress : launch.percent;
+        const barLabel = rev.thisMonth > 0
+          ? `${revenueProgress}% of revenue goal`
+          : `Launch readiness · ${launch.completed}/${launch.total}`;
 
         el.innerHTML = `
           <div class="grid-4">
-            <div class="card"><h3>Revenue This Month</h3><div class="val">$${(rev.thisMonth/1000).toFixed(0)}K</div><div class="sub">Target: $${(rev.targetMonthly/1000).toFixed(0)}K · ${progress}% of goal</div><div class="progress-bar" title="Revenue toward monthly target"><div class="progress-fill" style="width:${progress}%"></div></div></div>
+            <div class="card"><h3>${rev.thisMonth > 0 ? 'Revenue This Month' : 'Launch Readiness'}</h3><div class="val">${rev.thisMonth > 0 ? '$' + (rev.thisMonth/1000).toFixed(0) + 'K' : launch.percent + '%'}</div><div class="sub">${rev.thisMonth > 0 ? 'Target: $' + (rev.targetMonthly/1000).toFixed(0) + 'K · ' + revenueProgress + '% of goal' : barLabel}</div><div class="progress-bar" title="${barLabel}"><div class="progress-fill" style="width:${barProgress}%"></div></div></div>
             <div class="card"><h3>MRR</h3><div class="val">$${(rev.mrr/1000).toFixed(1)}K</div><div class="sub">${rev.mrr > 0 ? 'Retainer revenue' : 'No retainers yet — normal pre-launch'}</div></div>
             <div class="card"><h3>Pipeline</h3><div class="val">${pipe.total} leads</div><div class="sub">$${(pipe.weightedValue/1000).toFixed(0)}K weighted · ${pipe.hot} hot</div></div>
             <div class="card"><h3>Outstanding AR</h3><div class="val">$${(rev.outstanding/1000).toFixed(0)}K</div><div class="sub">${rev.overdue > 0 ? '⚠ $' + (rev.overdue/1000).toFixed(0) + 'K overdue' : 'All current'}</div></div>
@@ -111,7 +116,12 @@
           </div>
 
           <div class="card" style="margin-top:16px">
-            <h3>Tasks</h3>
+            <h3>${rev.thisMonth > 0 ? 'Tasks' : 'Launch Checklist — remaining to 100%'}</h3>
+            <div style="margin-top:12px">
+              ${rev.thisMonth > 0 ? '' : (launch.remaining?.length ? launch.remaining.map(item => `
+                <div class="priority-item"><strong>○</strong> ${item}</div>
+              `).join('') : '<p style="color:var(--muted);font-size:0.85rem">Launch checklist complete.</p>')}
+            </div>
             <div style="margin-top:12px" id="taskList">
               ${b.tasks.length ? b.tasks.map(t => `
                 <div class="task" data-id="${t.id}">
@@ -119,7 +129,7 @@
                   <span>${t.title}</span>
                   <span style="margin-left:auto;color:var(--muted);font-size:0.75rem">${t.priority}</span>
                 </div>
-              `).join('') : '<p style="color:var(--muted);font-size:0.85rem">No pending tasks. <a href="#" onclick="createDefaultTasks();return false" style="color:var(--accent)">Create daily tasks</a></p>'}
+              `).join('') : (rev.thisMonth > 0 ? '<p style="color:var(--muted);font-size:0.85rem">No pending tasks. <a href="#" onclick="createDefaultTasks();return false" style="color:var(--accent)">Create daily tasks</a></p>' : '')}
             </div>
           </div>
         `;
