@@ -32,7 +32,7 @@ Run EDITOR-PASSES.md before delivery. Self-score with QUALITY-RUBRIC.md.
 - Their exact phrases (voice-of-customer):
 
 ## Task
-- What to write: [headlines / sales page / email / course / brand / positioning / rebrand / info product / launch funnel / book chapter / VSL / celebrity build / personal brand / research only / punch-up existing copy]
+- What to write: [headlines / sales page / email / GTM launch / funnel / list building / content plan / course / brand / positioning / rebrand / info product / launch funnel / book chapter / VSL / celebrity build / personal brand / research only / punch-up existing copy]
 - Length: [short / medium / long]
 - Channel:
 - Goal metric:

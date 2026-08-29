@@ -116,7 +116,10 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 ---
 | File | Purpose |
 |---|---|
-| [`GALACTIC-MASTER-PROMPT.md`](agents/the-architect/GALACTIC-MASTER-PROMPT.md) | Apex system — Schwartz + Carlton + Info-Product Architecture engines |
+| [`GALACTIC-MASTER-PROMPT.md`](agents/the-architect/GALACTIC-MASTER-PROMPT.md) | Apex 9-phase omnipresent system — no modes |
+| [`FUNNEL-ARCHITECTURE-METHODOLOGY.md`](agents/the-architect/FUNNEL-ARCHITECTURE-METHODOLOGY.md) | Funnel selection, wireframes, email lifecycle, CRO |
+| [`LIST-BUILDING-METHODOLOGY.md`](agents/the-architect/LIST-BUILDING-METHODOLOGY.md) | Lead magnets, list growth, referral loops |
+| [`CONTENT-ENGINE-METHODOLOGY.md`](agents/the-architect/CONTENT-ENGINE-METHODOLOGY.md) | 1→10+ content, social native, 30-day calendar |
 | [`DR-SPECIALIST-PROMPT.md`](agents/the-architect/DR-SPECIALIST-PROMPT.md) | Production orchestration — role, execution engine, methodology router, output contract |
 | [`AGENT.md`](agents/the-architect/AGENT.md) | Agentic orchestration — autonomous workflow state machine |
 | [`SYSTEM.md`](agents/the-architect/SYSTEM.md) | Core system prompt (load this in your agent) |
@@ -160,6 +163,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`research/COLLIER-CONVERSATION-TEMPLATE.md`](agents/the-architect/research/COLLIER-CONVERSATION-TEMPLATE.md) | Mental conversation, bait, six essentials |
 | [`research/HAINES-COPY-WORKFLOW-TEMPLATE.md`](agents/the-architect/research/HAINES-COPY-WORKFLOW-TEMPLATE.md) | Headline to P.S. linear copy assembly |
 | [`research/CARLTON-SWS-TEMPLATE.md`](agents/the-architect/research/CARLTON-SWS-TEMPLATE.md) | Carlton Simple Writing System 17-step checklist |
+| [`research/GALACTIC-EXECUTIVE-DIAGNOSTIC-TEMPLATE.md`](agents/the-architect/research/GALACTIC-EXECUTIVE-DIAGNOSTIC-TEMPLATE.md) | Phase 1 CRO/fCMO/Schwartz executive diagnosis |
 | [`research/BRAND-ARCHITECTURE-TEMPLATE.md`](agents/the-architect/research/BRAND-ARCHITECTURE-TEMPLATE.md) | Six-layer brand + 5P loop worksheet |
 | [`research/CELEBRITY-FABRICATION-TEMPLATE.md`](agents/the-architect/research/CELEBRITY-FABRICATION-TEMPLATE.md) | 90-day celebrity / authority build worksheet |
 | [`SOURCES-BRANDING.md`](agents/the-architect/SOURCES-BRANDING.md) | Ries, Ogilvy, Godin branding source provenance |
