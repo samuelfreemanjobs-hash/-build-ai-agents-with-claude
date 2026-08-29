@@ -143,6 +143,17 @@ Momentum unbroken? Emotion then logic? Triggers ethically active?
 | 7–8 | Short first sentence; section pulls; emotion→logic sequence; guarantee present |
 | 9–10 | Full slide; 5–8 triggers named; involvement + honesty + satisfaction conviction; P.S. or final pull lands |
 
+### 14. Narrative Mastery (Five Geniuses)
+Story architecture, conflict, transformation, subtext — reader inside the journey?
+
+| Score | Criteria |
+|---|---|
+| N/A | Pure utility copy with no narrative role |
+| 1–3 | Chronological bore; no conflict; founder is hero; tells all emotions |
+| 4–6 | Some scene or arc; weak stakes; want without need |
+| 7–8 | In medias res open; want + need; reader as hero; sensory detail |
+| 9–10 | Full five-genius stack: reversal + recognition, Campbell elixir, Hemingway iceberg, catharsis at CTA |
+
 ---
 
 ## Output Format
@@ -165,6 +176,7 @@ Momentum unbroken? Emotion then logic? Triggers ethically active?
 | Persuasion Architecture | /10 or N/A | |
 | Headline & Ad Craft | /10 or N/A | |
 | Slippery Slide & Triggers | /10 or N/A | |
+| Narrative Mastery | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```

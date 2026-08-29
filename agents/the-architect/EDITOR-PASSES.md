@@ -24,6 +24,8 @@ If no → fix the angle before writing more.
 **Job:** Architecture, not words.
 
 - One dominant big idea — cut secondary themes.
+- **Aristotle pass:** clear beginning / middle / end; one plot; reversal + recognition planned?
+- **Campbell pass:** reader = hero; offer = elixir; who they become at close?
 - Logical flow: each section earns the next.
 - Proof appears before the ask.
 - Objections pre-handled before CTA.
@@ -59,6 +61,7 @@ If no → fix the angle before writing more.
 - Cosmo pass (aspiration + identity): would she buy this magazine?
 - Enquirer pass (drama + secret): would he tell his friend about this headline?
 - **Sugarman seed pass:** flat section endings get curiosity seeds (*But there's more.* *Let me explain.*)
+- **Hemingway pass:** cut adjectives that don't change meaning; replace labeled emotions with concrete action
 
 **Swap weak → strong examples:**
 | Weak | Strong |

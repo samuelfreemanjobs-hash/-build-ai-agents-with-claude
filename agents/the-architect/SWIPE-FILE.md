@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Sugarman, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Question |
 
 ---
 
@@ -316,6 +316,24 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** GEN-B | PT-Sugarman+Honesty+Mech
 **Why it works:** BluBlocker method — admit flaw honestly, reframe as mechanism advantage.
 **Structural move:** [Honest objection] + [reframe] + [contrast with alternatives]
+
+### L-011 (Homer — in medias res)
+**Copy:** *"The Stripe notification hit at 11:58pm — $0.00 available. Rent due in six days. She had one ad still running."*
+**Tags:** AW-P | GEN-L | PT-Homer+Story
+**Why it works:** Mid-crisis open. Specific time, object, stake. No backstory — reader is already inside the scene.
+**Structural move:** [Specific moment] + [concrete detail] + [epic personal stake]
+
+### L-012 (Shakespeare — interior monologue)
+**Copy:** *"You tell yourself it's fine. The funnel is 'fine.' The numbers say otherwise — but saying it out loud would make it real."*
+**Tags:** AW-P | GEN-L | PT-Shakespeare+Story
+**Why it works:** Mirrors unspoken reader thought. Want (denial) vs need (face truth). Dramatic irony — they know, they haven't admitted.
+**Structural move:** [Internal voice] + [contradiction] + [stakes of admission]
+
+### C-010 (Campbell — return with elixir)
+**Copy:** *"Six months ago you wouldn't have recognized this version of you — the one who checks revenue before coffee and smiles. That's not the program. That's who you became."*
+**Tags:** AW-M | GEN-C | PT-Campbell+Story
+**Why it works:** Hero's return. Identity transformation (elixir internalized). Reader pictured as protagonist, not customer.
+**Structural move:** [Before identity] + [after identity] + [transformation = them, not product]
 
 ---
 

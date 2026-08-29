@@ -2,7 +2,7 @@
 
 Voice-of-Customer research protocol for The Architect. Run **before** drafting any sales asset.
 
-After VOC extraction, run Kennedy's 10 Questions (`KENNEDY-METHODOLOGY.md`, `research/KENNEDY-10Q-TEMPLATE.md`). For strategy and offer assets, run Abraham's three-lever scan (`ABRAHAM-METHODOLOGY.md`, `research/ABRAHAM-LEVERS-TEMPLATE.md`). For ads and sales copy, run Cialdini's principles audit (`CIALDINI-METHODOLOGY.md`, `research/CIALDINI-PRINCIPLES-TEMPLATE.md`). For headlines and display ads, run Caples headline test sheet (`CAPLES-METHODOLOGY.md`, `research/CAPLES-HEADLINE-TEST-TEMPLATE.md`). For long-form and product copy, run Sugarman trigger audit (`SUGARMAN-METHODOLOGY.md`, `research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`).
+After VOC extraction, run Kennedy's 10 Questions (`KENNEDY-METHODOLOGY.md`, `research/KENNEDY-10Q-TEMPLATE.md`). For strategy and offer assets, run Abraham's three-lever scan (`ABRAHAM-METHODOLOGY.md`, `research/ABRAHAM-LEVERS-TEMPLATE.md`). For ads and sales copy, run Cialdini's principles audit (`CIALDINI-METHODOLOGY.md`, `research/CIALDINI-PRINCIPLES-TEMPLATE.md`). For headlines and display ads, run Caples headline test sheet (`CAPLES-METHODOLOGY.md`, `research/CAPLES-HEADLINE-TEST-TEMPLATE.md`). For long-form and product copy, run Sugarman trigger audit (`SUGARMAN-METHODOLOGY.md`, `research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`). When narrative leads the asset, run story arc template (`MASTER-STORYTELLERS.md`, `research/STORY-ARC-TEMPLATE.md`).
 
 **Output:** Avatar brief + VOC lexicon + objection map + hook seeds (no full copy unless requested)
 

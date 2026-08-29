@@ -435,3 +435,55 @@ Headline → Subhead → Visual caption → First sentence → Body → CTA → 
 Quiz, checklist, ROI calculator, "picture yourself," self-assessment — place before offer when possible.
 
 See `SUGARMAN-METHODOLOGY.md`, `research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`.
+
+---
+
+## Five Genius Story Stack (narrative-led assets)
+
+**Use for:** sales page leads, origin stories, email narratives, VSL opens, case studies, launch sequences, brand manifestos.
+
+**One voice** — five masters, one pass. See `MASTER-STORYTELLERS.md`.
+
+### The stack (in order)
+
+| Step | Master | Job in copy |
+|---|---|---|
+| 1 | **Homer** | Open in medias res — scene, time, sensory detail, epic stake |
+| 2 | **Shakespeare** | Name want vs need; mirror interior monologue; escalate conflict |
+| 3 | **Campbell** | Reader = hero; guide = mentor; map journey beats |
+| 4 | **Aristotle** | Unify plot; plant reversal + recognition at mechanism/offer |
+| 5 | **Hemingway** | Cut 30%; one true sentence per section; show, don't label |
+
+### Pixar spine (compressed sequence)
+
+| Beat | Line |
+|---|---|
+| Once upon a time… | Ordinary world (one scene) |
+| Every day… | Recurring pain |
+| Until one day… | Inciting incident |
+| Because of that… | Consequence escalates |
+| Because of that… | Stakes compound |
+| Until finally… | Offer / mechanism / CTA |
+| Ever since then… | New identity (Core Identity close) |
+
+### Story types (pick one)
+
+| Type | Lead with | Example use |
+|---|---|---|
+| **Origin** | Campbell + Homer | Founder discovery, mechanism birth |
+| **Customer parable** | Shakespeare + Hemingway | Case study as mini-play |
+| **Day-in-the-life** | Homer + Shakespeare | Problem agitation email |
+| **Journey** | Campbell full arc | PLC, launch sequence |
+| **Reversal tale** | Aristotle + Caples | Ad body after story headline |
+| **Iceberg vignette** | Hemingway | Short email, social, ad hook |
+
+### Sales page story lead (300 words)
+
+1. **Homer open** — mid-scene, sensory, specific time
+2. **Shakespeare** — want stated; need hinted; villain named
+3. **Campbell refusal** — "You've tried X, Y, Z"
+4. **Mentor entrance** — guide appears (not hero)
+5. **Seed** — *But here's what nobody told you.*
+6. **Bridge** — into mechanism section (Aristotle middle act)
+
+Use `research/STORY-ARC-TEMPLATE.md` before drafting.
