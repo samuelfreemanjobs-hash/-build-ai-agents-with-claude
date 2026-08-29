@@ -391,3 +391,47 @@ Scene (specific moment)
 **Display ads:** note hero image + caption — must sell, not decorate.
 
 See `CAPLES-METHODOLOGY.md`, `research/CAPLES-HEADLINE-TEST-TEMPLATE.md`.
+
+---
+
+## Sugarman Slippery Slide Playbook (long-form & product)
+
+**Use for:** sales pages, catalog copy, VSL scripts, long emails, infomercials, product launches.
+
+### The slide (every element → next)
+
+```
+Headline → Subhead → Visual caption → First sentence → Body → CTA → P.S.
+```
+
+### Opening (first 3 lines)
+
+1. **First sentence** — one word to one short line; curiosity only; earns sentence two
+2. **Second/third** — expand; story or problem; plant first seed
+3. **Seed example:** *"But let me explain why that matters."*
+
+### Body sequence (emotion → logic)
+
+| Block | Trigger focus | Job |
+|---|---|---|
+| Story / problem | Storytelling, familiarity, hope | Identification |
+| Concept intro | Curiosity, nature of product | Sell concept before specs |
+| Demonstration | Credibility, specificity | Show it works |
+| Benefits | Involvement, ownership | "Imagine when you…" |
+| Honest flaw | Honesty, integrity | Admit → reframe |
+| Value stack | Greed, value proof | Bonuses, comparison |
+| Justify purchase | Logic, mental agreement | ROI, specs, reason-why |
+| Guarantee | Satisfaction conviction | Risk reversal |
+| Urgency | Urgency (true only) | Deadline/cap |
+| CTA | Simplicity, instant gratification | One clear action |
+| P.S. | Curiosity, urgency | Restate strongest benefit |
+
+### Seeds of curiosity (rotate)
+
+*But there's more.* · *Let me explain.* · *Here's why.* · *Now listen to this.* · *And that's not all.*
+
+### Involvement devices
+
+Quiz, checklist, ROI calculator, "picture yourself," self-assessment — place before offer when possible.
+
+See `SUGARMAN-METHODOLOGY.md`, `research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`.

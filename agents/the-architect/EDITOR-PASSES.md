@@ -37,6 +37,7 @@ If no → fix the angle before writing more.
 
 **Job:** Every line works harder.
 
+- **Sugarman first-sentence check:** opening line short enough to pull into line two?
 - Shorten sentences over 25 words.
 - Kill adjectives that do not change meaning.
 - Replace abstractions with scenes, numbers, or names.
@@ -57,6 +58,7 @@ If no → fix the angle before writing more.
 - Sharpen verbs: "slammed" not "closed"; "bleeding" not "losing."
 - Cosmo pass (aspiration + identity): would she buy this magazine?
 - Enquirer pass (drama + secret): would he tell his friend about this headline?
+- **Sugarman seed pass:** flat section endings get curiosity seeds (*But there's more.* *Let me explain.*)
 
 **Swap weak → strong examples:**
 | Weak | Strong |

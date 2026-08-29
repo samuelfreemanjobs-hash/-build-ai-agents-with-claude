@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Sugarman, Question |
 
 ---
 
@@ -303,6 +303,19 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** AW-P | GEN-L | PT-Caples+Story+Proof
 **Why it works:** Specific before/after with timeframe; mechanism tease (headline); reader identifies with struggle.
 **Structural move:** [Before state] + [After state] + [mechanism hint]
+
+### L-010 (Sugarman — short first sentence + seed)
+**Copy:** *"Skeptical."*
+*(next line)* *"That's the right starting point — and exactly why the first 90 seconds of this demo changed how 14,000 drivers see the road."*
+**Tags:** AW-S | GEN-L | PT-Sugarman+Story
+**Why it works:** Sugarman first-sentence law — one word earns the next. Seed of curiosity into demo proof.
+**Structural move:** [Ultra-short open] + [validate reader] + [specific proof tease]
+
+### B-010 (Sugarman — flaw to feature)
+**Copy:** *"Yes, the lenses look yellow. That's the point — they block the blue light that causes fatigue. Most sunglasses don't. Ours do."*
+**Tags:** GEN-B | PT-Sugarman+Honesty+Mech
+**Why it works:** BluBlocker method — admit flaw honestly, reframe as mechanism advantage.
+**Structural move:** [Honest objection] + [reframe] + [contrast with alternatives]
 
 ---
 

@@ -132,6 +132,17 @@ Headline selects reader? Story/specificity over cleverness? Full story + test pl
 | 7–8 | Self-interest clear; story or question lead; subheads; proof substantiates |
 | 9–10 | Caples-grade: 10 variants logic; before/after or story arc; test hypothesis; scanner-friendly long copy |
 
+### 13. Slippery Slide & Triggers (Sugarman)
+Momentum unbroken? Emotion then logic? Triggers ethically active?
+
+| Score | Criteria |
+|---|---|
+| N/A | Pure T1 hook or internal note |
+| 1–3 | Momentum dies mid-piece; long corporate open; all emotion or all specs; no seeds |
+| 4–6 | Readable flow; some curiosity seeds; weak justify-the-purchase |
+| 7–8 | Short first sentence; section pulls; emotion→logic sequence; guarantee present |
+| 9–10 | Full slide; 5–8 triggers named; involvement + honesty + satisfaction conviction; P.S. or final pull lands |
+
 ---
 
 ## Output Format
@@ -153,6 +164,7 @@ Headline selects reader? Story/specificity over cleverness? Full story + test pl
 | Preeminence & Leverage | /10 or N/A | |
 | Persuasion Architecture | /10 or N/A | |
 | Headline & Ad Craft | /10 or N/A | |
+| Slippery Slide & Triggers | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```
