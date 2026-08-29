@@ -108,3 +108,67 @@ Add:
 4. Present the manifesto (5–10 principles, punchy)
 5. Invitation (who this is for; who it is not for)
 6. Call to assemble (community, waitlist, movement)
+
+---
+
+## Sideways Sales Letter — Pre-Launch (Kern)
+
+Same voice all pieces. No pitch until open cart.
+
+| Piece | Job | Do | Don't |
+|---|---|---|---|
+| **PLC 1** | Opportunity | Myth-bust, show what's possible, pre-frame authority | Sell |
+| **PLC 2** | Proof | Actionable win, case study, validate method | Hard CTA |
+| **PLC 3** | Ownership | Future-pace, handle objections, prepare for offer | Discount yet |
+| **Open cart** | Convert | Sales page, real scarcity, deadline | Break trust tone |
+
+---
+
+## 4-Day Cash Machine (Kern)
+
+**Levers:** reason-why + reciprocity (thank + discount 30–70% + bonus stack) + hard midnight Day 4 deadline.
+
+| Day | Email focus |
+|---|---|
+| **1** | Reason-why, full stack, deadline set |
+| **2** | Restate, core benefits, countdown |
+| **3** | Logic, proof, objections |
+| **4** | Final urgency — multiple sends, last hours |
+
+---
+
+## Webinar / VSL — Three Secrets (Kern)
+
+| Section | Secret | Belief barrier |
+|---|---|---|
+| Opening | Teach valuable content | Build state, deliver result in advance |
+| Secret 1 | Vehicle | Old strategy is wrong; here's the right one |
+| Secret 2 | Internal | They CAN do this |
+| Secret 3 | External | Time/money/market obstacles removed |
+| Close | Stack + guarantee + CTA | Pitch as continuation of training |
+
+---
+
+## Gain-Logic-Fear Close (Kern)
+
+Three emails, **same author voice**:
+
+| # | Frame | Content |
+|---|---|---|
+| 1 — Gain | Desire | Transformation, upside, emotional benefits |
+| 2 — Logic | Analytical | Proof, ROI, features-as-benefits, guarantee |
+| 3 — Fear | Loss-averse | Cost of inaction, deadline, offer removed |
+
+Use for: promo closes, cart abandonment, broadcast ends.
+
+---
+
+## Intent-Based Branding Sequence (Kern)
+
+| Phase | Content type | Voice |
+|---|---|---|
+| Pre-frame | Short authority piece, ally positioning | Confident peer |
+| Indoctrinate | Problem-solving content series | Mentor, results in advance |
+| Convert | Direct offer | Natural next step, not tone shift |
+
+See `KERN-METHODOLOGY.md` for full architecture.

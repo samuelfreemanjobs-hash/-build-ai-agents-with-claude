@@ -66,7 +66,18 @@ Would someone share, quote, or argue about this?
 | 7–8 | Clear angle worth noting |
 | 9–10 | Screenshot-worthy; changes how they think |
 
-### 7. Teaching Installation (if educational)
+### 8. Outcome & Identity (Kern)
+Selling transformation and Core Identity — or listing mechanics?
+
+| Score | Criteria |
+|---|---|
+| N/A | Not a sales/promo piece |
+| 1–3 | Feature dump, module counts, no future pace |
+| 4–6 | Some benefits, weak identity |
+| 7–8 | Clear outcome + future-paced scene |
+| 9–10 | Core Identity aligned; reader sees who they become |
+
+---
 Model, distinction, 10-min action — or info dump?
 
 | Score | Criteria |

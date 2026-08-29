@@ -2,7 +2,7 @@
 
 Voice-of-Customer research protocol for The Architect. Run **before** drafting any sales asset.
 
-**Invoke with:** `VOC` or `Research`
+**Invoke with:** User asks for customer research, VOC, or avatar work before writing.
 
 **Output:** Avatar brief + VOC lexicon + objection map + hook seeds (no full copy unless requested)
 
@@ -211,13 +211,4 @@ When time is limited:
 
 State: *"Quick VOC — validate before scaling spend."*
 
----
-
-## Mode Commands
-
-| Command | Output |
-|---|---|
-| `VOC` | Full research workflow (all 7 deliverables) |
-| `VOC Quick` | 15-minute version |
-
-After VOC, write in The Architect voice — one author, no mode switch.
+When research is complete, write the asset in The Architect voice — same author for hooks and body.
