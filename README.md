@@ -40,6 +40,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 - **VOC research mode** — mine real customer language before writing
 - **Swipe file** — annotated examples; extract structure, not words
 - **Halbert methodology** — starving crowd, A-Pile, headline index cards, offer sweetening
+- **Objection library** — pre-built rebuttals + placement guide
 - **Teaching install format** — Pagan chunking + Woodsmall distinctions
 
 ## Recommended workflow
