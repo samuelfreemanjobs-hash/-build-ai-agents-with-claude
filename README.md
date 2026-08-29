@@ -118,6 +118,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`ABRAHAM-METHODOLOGY.md`](agents/the-architect/ABRAHAM-METHODOLOGY.md) | Jay Abraham: Preeminence, N×V×F growth, Parthenon, risk reversal |
 | [`CIALDINI-METHODOLOGY.md`](agents/the-architect/CIALDINI-METHODOLOGY.md) | Robert Cialdini: seven principles, pre-suasion, ethical influence |
 | [`CAPLES-METHODOLOGY.md`](agents/the-architect/CAPLES-METHODOLOGY.md) | John Caples: tested headlines, story ads, before/after, split-run testing |
+| [`SCHWARTZ-METHODOLOGY.md`](agents/the-architect/SCHWARTZ-METHODOLOGY.md) | Eugene Schwartz: mass desire, awareness × sophistication, breakthrough advertising |
 | [`SUGARMAN-METHODOLOGY.md`](agents/the-architect/SUGARMAN-METHODOLOGY.md) | Joe Sugarman: slippery slide, 31 triggers, emotion→logic, mail-order craft |
 | [`MASTER-STORYTELLERS.md`](agents/the-architect/MASTER-STORYTELLERS.md) | Aristotle, Homer, Shakespeare, Campbell, Hemingway — narrative genius stack |
 | [`BUSINESS-THRILLER-CRAFT.md`](agents/the-architect/BUSINESS-THRILLER-CRAFT.md) | Hitchcock, Christie, Patterson — thriller/mystery craft for business books |
@@ -125,6 +126,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`research/ABRAHAM-LEVERS-TEMPLATE.md`](agents/the-architect/research/ABRAHAM-LEVERS-TEMPLATE.md) | Three-lever and offer scan template |
 | [`research/CIALDINI-PRINCIPLES-TEMPLATE.md`](agents/the-architect/research/CIALDINI-PRINCIPLES-TEMPLATE.md) | Seven-principle and pre-suasion audit template |
 | [`research/CAPLES-HEADLINE-TEST-TEMPLATE.md`](agents/the-architect/research/CAPLES-HEADLINE-TEST-TEMPLATE.md) | 10 headline variants + split-test plan |
+| [`research/SCHWARTZ-MARKET-DIAGNOSIS-TEMPLATE.md`](agents/the-architect/research/SCHWARTZ-MARKET-DIAGNOSIS-TEMPLATE.md) | Mass desire, functional angle, awareness, sophistication |
 | [`research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`](agents/the-architect/research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md) | Slippery slide + psychological trigger audit |
 | [`research/STORY-ARC-TEMPLATE.md`](agents/the-architect/research/STORY-ARC-TEMPLATE.md) | Five-genius story arc (Aristotle → Hemingway) |
 | [`research/BOOK-THRILLER-OUTLINE-TEMPLATE.md`](agents/the-architect/research/BOOK-THRILLER-OUTLINE-TEMPLATE.md) | Business book thriller map + chapter cliffhangers |
@@ -151,6 +153,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 - **Kennedy direct response** — PAS, 10 Questions, Magnetic Marketing triad, irresistible offers, follow-up systems
 - **Cialdini persuasion** — seven principles, pre-suasion, ethical proof/scarcity, principle stacking for ads and copy
 - **Caples tested advertising** — headline-first discipline, story hooks, before/after, long copy, split-run testing
+- **Schwartz breakthrough advertising** — mass desire channeling, awareness × sophistication diagnosis, mechanism at stage 3+
 - **Sugarman slippery slide** — momentum copy, 31 triggers, emotion→logic, seeds of curiosity, product/mail-order craft
 - **Five genius storytellers** — Aristotle structure, Homer immersion, Shakespeare conflict, Campbell hero's journey, Hemingway iceberg
 - **Business thriller craft** — Hitchcock suspense, Christie fair play, Patterson cliffhangers — page-turning business books

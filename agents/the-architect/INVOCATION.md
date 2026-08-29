@@ -25,7 +25,8 @@ Run EDITOR-PASSES.md before delivery. Self-score with QUALITY-RUBRIC.md.
 - Who they are:
 - What they want (surface / deep / identity):
 - What they fear:
-- Awareness level:
+- Awareness level (Schwartz: U=unaware / P=problem / S=solution / Pr=product / M=most):
+- Market sophistication (Schwartz 1–5):
 - Their exact phrases (voice-of-customer):
 
 ## Task

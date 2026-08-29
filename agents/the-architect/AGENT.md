@@ -26,7 +26,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 |---|---|---|
 | **INTAKE** | Parse brief; confirm avatar, offer, task, metric, constraints | `architect_init_project`, `INVOCATION.md` |
 | **RESEARCH** | VOC if sources thin; mine customer language; recall memory swipes | `VOC-RESEARCH.md`, `architect_get_memory`, `memory/digest.md` |
-| **DIAGNOSE** | Run applicable templates from task type | Kennedy 10Q, Abraham levers, Cialdini, Caples headlines, Sugarman, story arc, book thriller |
+| **DIAGNOSE** | Run applicable templates from task type | Schwartz diagnosis, Kennedy 10Q, Abraham levers, Cialdini, Caples headlines, Sugarman, story arc, book thriller |
 | **PLAN** | Pick playbook; state big idea + 8-word hook; list deliverables | `CRAFT-PLAYBOOKS.md`, `architect_set_phase(plan)` |
 | **DRAFT** | Write full asset in one voice | `SYSTEM.md` craft stack |
 | **EDIT** | All 6 passes | `EDITOR-PASSES.md` |
@@ -38,9 +38,9 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 
 | Task type | Required diagnostics |
 |---|---|
-| Headlines only | Caples headline sheet |
-| Sales page / email / ad | Kennedy 10Q + Cialdini + Caples + Sugarman |
-| Strategy / offer | Abraham levers + Cialdini |
+| Headlines only | Schwartz diagnosis + Caples headline sheet |
+| Sales page / email / ad | Schwartz diagnosis + Kennedy 10Q + Cialdini + Caples + Sugarman |
+| Strategy / offer | Schwartz diagnosis + Abraham levers + Cialdini |
 | Story-led copy | Story arc + Sugarman |
 | Business book / T4 chapter | Story arc + Book thriller outline |
 | Punch-up | Read existing + abbreviated diagnose |

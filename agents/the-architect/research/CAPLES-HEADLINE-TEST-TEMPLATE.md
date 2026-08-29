@@ -13,6 +13,8 @@
 | Who must self-select from this headline? | |
 | Who should NOT click? | |
 | Awareness level (Schwartz): U / P / S / Pr / M | |
+| Sophistication stage (Schwartz 1–5): | |
+| Schwartz headline strategy (from diagnosis): | |
 
 ---
 

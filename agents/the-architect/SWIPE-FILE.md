@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close, T4=book chapter |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
 
 ---
 
