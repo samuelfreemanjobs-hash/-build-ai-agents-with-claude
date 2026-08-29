@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Question |
 
 ---
 
@@ -225,6 +225,40 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** GEN-B | PT-Halbert+Mech
 **Why it works:** Contrarian math. Specific number (15%). Speaks to sophisticated marketer.
 **Structural move:** [Counterintuitive claim] + [specific %] + [mechanism hint]
+
+### H-011 (Hopkins — preemptive specificity / Schlitz)
+**Copy:** *"Washed in live steam. Filtered through white-wood pulp. Water from 4,018 feet underground."*
+**Tags:** AW-S | GEN-H | PT-Hopkins+Mech
+**Why it works:** Industry-standard process told first = owned claim. Exact figures = credibility.
+**Structural move:** [Process specifics] + [numbers] — zero superlatives
+
+### H-012 (Hopkins — reason-why)
+**Copy:** *"Softens the Beard in One Minute — After 130 Formula Tests"*
+**Tags:** AW-S | GEN-H | PT-Hopkins
+**Why it works:** Specific time + proof of rigor beats "luxurious lather."
+**Structural move:** [Measurable benefit] + [testing proof]
+
+### B-006 (Hopkins — service offer)
+**Copy:** *"Try it seven days. Not what we said? Send it back — you owe nothing."*
+**Tags:** GEN-B | PT-Hopkins+Proof
+**Why it works:** Service posture. Risk on seller. Product sells itself.
+**Structural move:** [Trial] + [easy out] + [seller bears risk]
+
+### L-006 (Kennedy — PAS problem open)
+**Copy (excerpt):** *"It's 2:47am. You're staring at the ceiling again. The pipeline math still doesn't work — and tomorrow you'll smile through another meeting pretending it will."*
+**Tags:** AW-P | GEN-L | PT-Kennedy+PAS
+**Why it works:** 10Q #1 (awake at night). Specific scene. No company intro. Reader feels seen.
+**Structural move:** [Time/scene] + [specific problem] + [emotional cost]
+
+### B-007 (Kennedy — agitation)
+**Copy:** *"Every month you wait costs you roughly $4,200 in leaked leads — and your competitor down the street isn't waiting."*
+**Tags:** GEN-B | PT-Kennedy+PAS
+**Why it works:** Dollar specificity + competitive threat. Agitate before solve.
+**Structural move:** [Cost of delay] + [specific $] + [external threat]
+
+---
+
+## Pattern Extraction Cheat Sheet
 
 When swiping, extract these elements:
 

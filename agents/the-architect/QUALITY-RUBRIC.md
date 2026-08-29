@@ -77,6 +77,17 @@ Selling transformation and Core Identity — or listing mechanics?
 | 7–8 | Clear outcome + future-paced scene |
 | 9–10 | Core Identity aligned; reader sees who they become |
 
+### 9. PAS Agitation (Kennedy)
+Problem named and agitated before solve? Cost of inaction felt?
+
+| Score | Criteria |
+|---|---|
+| N/A | Not sales/promo copy |
+| 1–3 | Problem stated then immediate pitch — no agitation |
+| 4–6 | Light agitation |
+| 7–8 | Clear stakes, cost of inaction, knife twisted |
+| 9–10 | Reader feels inaction is intolerable; solve = relief |
+
 ### 7. Teaching Installation (if educational)
 Model, distinction, 10-min action — or info dump?
 
@@ -105,6 +116,7 @@ Model, distinction, 10-min action — or info dump?
 | Remarkability | /10 | |
 | Teaching Install | /10 or N/A | |
 | Outcome & Identity | /10 or N/A | |
+| PAS Agitation | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```

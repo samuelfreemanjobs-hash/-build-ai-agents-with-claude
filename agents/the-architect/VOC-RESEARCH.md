@@ -2,7 +2,7 @@
 
 Voice-of-Customer research protocol for The Architect. Run **before** drafting any sales asset.
 
-**Invoke with:** User asks for customer research, VOC, or avatar work before writing.
+After VOC extraction, run Kennedy's 10 Questions (`KENNEDY-METHODOLOGY.md`, `research/KENNEDY-10Q-TEMPLATE.md`).
 
 **Output:** Avatar brief + VOC lexicon + objection map + hook seeds (no full copy unless requested)
 

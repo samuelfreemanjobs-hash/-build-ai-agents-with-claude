@@ -22,6 +22,8 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 | [`HALBERT-METHODOLOGY.md`](agents/the-architect/HALBERT-METHODOLOGY.md) | Gary Halbert: starving crowd, A-Pile, AIDA, offers |
 | [`KERN-METHODOLOGY.md`](agents/the-architect/KERN-METHODOLOGY.md) | Frank Kern: Results in Advance, IBB, funnels, Core Identity |
 | [`HOPKINS-METHODOLOGY.md`](agents/the-architect/HOPKINS-METHODOLOGY.md) | Claude Hopkins: scientific advertising, reason-why, specificity, testing |
+| [`KENNEDY-METHODOLOGY.md`](agents/the-architect/KENNEDY-METHODOLOGY.md) | Dan Kennedy: Magnetic Marketing, PAS, 10 Questions, offers |
+| [`research/KENNEDY-10Q-TEMPLATE.md`](agents/the-architect/research/KENNEDY-10Q-TEMPLATE.md) | Pre-copy diagnostic template |
 | [`HALBERT-NEWSLETTER-INDEX.md`](agents/the-architect/HALBERT-NEWSLETTER-INDEX.md) | Newsletter archive index by topic |
 | [`research/VOC-LEXICON-TEMPLATE.md`](agents/the-architect/research/VOC-LEXICON-TEMPLATE.md) | Save per-project VOC output |
 
@@ -42,7 +44,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 - **Micro-copy lab** — 10-variant protocol with pattern diversity
 - **VOC research mode** — mine real customer language before writing
 - **Swipe file** — annotated examples; extract structure, not words
-- **Hopkins scientific advertising** — salesmanship in print, reason-why, specificity, full story, test everything
+- **Kennedy direct response** — PAS, 10 Questions, Magnetic Marketing triad, irresistible offers, follow-up systems
 - **Objection library** — pre-built rebuttals + placement guide
 - **Teaching install format** — Pagan chunking + Woodsmall distinctions
 

@@ -175,6 +175,47 @@ See `KERN-METHODOLOGY.md` for full architecture.
 
 ---
 
+## PAS Framework (Kennedy — default for sales assets)
+
+**Use for:** sales pages, emails, ads, VSL opens, landing pages.
+
+| Phase | Job | Common mistakes |
+|---|---|---|
+| **Problem** | Name their specific acute pain — use 10Q language | Opening with "About us" or features |
+| **Agitate** | Twist the knife — cost, compounding, competition, shame of inaction | Jumping to solution too fast |
+| **Solve** | Offer as relief + proof stack + irresistible offer + CTA | Weak offer after strong agitation |
+
+**Loss aversion note:** Pain of loss ≈ 2× pleasure of gain — agitate before solve.
+
+**Voice:** Same Architect tone throughout — cinematic agitation, not melodrama.
+
+**Length guide:**
+- T2 ad/email: Problem 1–2 lines → Agitate 2–4 → Solve + CTA
+- T3 sales page: Problem lead → Agitate section → Mechanism → Proof → Offer → CTA
+- T4: Problem chapter hook → deep agitate → solve across chapter arc
+
+See `KENNEDY-METHODOLOGY.md` for 10 Questions and offer architecture.
+
+---
+
+## Multi-Touch Follow-Up Sequence (Kennedy)
+
+**Minimum 5 touches** for cold/warm leads. Same voice every email.
+
+| # | Job | Content |
+|---|---|---|
+| 1 | Welcome + deliver lead magnet | Results in advance; no hard pitch |
+| 2 | Problem deep-dive | PAS problem + light agitate |
+| 3 | Proof + story | Case study, testimonial stack |
+| 4 | Offer + stack | Full 5-element offer architecture |
+| 5 | Objection crusher | FAQ, past-failure neutralization |
+| 6 | Urgency | Deadline, scarcity, cost of delay |
+| 7 | Final notice | Last chance, same voice, direct CTA |
+
+**Kennedy rule:** Most conversions happen here — not on touch 1.
+
+---
+
 ## Hopkins Sales Letter Structure (classic DR)
 
 One reading. New customer. Full story.
