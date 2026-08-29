@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-06",
+  "region": "Metro Detroit",
+  "focusedVertical": "Precision Investment Casting, 5-Axis Defense Machining, Transfer Press Automation Tooling & Automotive Stamping/Assemblies",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 97,
+    "estimatedValueRange": "$42,000 – $76,500",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Barron Industries",
+      "url": "https://barronindustries.com",
+      "location": "Oxford, MI",
+      "industry": "Aerospace Components",
+      "employeeCount": 250,
+      "decisionMaker": "VP of Operations / Plant Metallurgical Director",
+      "score": 95,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 25,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Vertically integrated: CAD engineering, wax prototyping, casting pour, 5-axis finish machining, NADCAP-certified NDT lab",
+        "Multi-stage casting batches across mold room shelling, melt pour, heat treat, and 5-axis milling — tracking latency between foundry and CNC cells",
+        "IATF/AS9100 calibration and NDT log traceability requirements across 200+ alloy heats"
+      ],
+      "evidenceSignals": "Precision ferrous & non-ferrous investment casting up to 250 lbs. NADCAP NDT lab in-house. Southeast Michigan defense/aerospace quality standards.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "Investment Casting Shell-to-Spindle Stage-Gate & NDT Compliance Tracker (1-page framework)",
+      "diagnostic": "🔥 Barron scores 95 — HOT tier. Cast blanks from shakeout/heat treat to 5-axis fixtures tracked across separate logs. NDT cert consolidation adds 12–15 hrs/week engineering overhead.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Oxford facility: foundry-to-5-axis machining flow & NADCAP cert logging",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nManaging turnkey investment casting alongside 5-axis finish machining and in-house NDT lab testing in Oxford usually means operations leads spend significant time tracking cast lot readiness before finish machining setups.\n\nI built a 1-screen Casting-to-Spindle WIP Tracker concept tailored for AS9100/NADCAP investment casting facilities that visualizes heat lot readiness and automates NDT inspection cert generation.\n\nWould you be open to a 2-minute review of the visual framework to see if it's helpful for your operations team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-06 — priority #1. Send today. Tied highest score in pipeline."
+    },
+    {
+      "company": "United CNC Machining",
+      "url": "https://unitedcncmachining.com",
+      "location": "Auburn Hills, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 140,
+      "decisionMaker": "Manufacturing Operations Director / General Manager",
+      "score": 92,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "5-axis CNC, wire & sinker EDM, prototype tooling & fixtures for defense, aerospace, and Tier 1 automotive",
+        "Regional defense vehicle and turret machining surge increases spindle capacity pressure",
+        "Complex 3D CAD and prototype print packages ingested via general web forms without automated spec parsing"
+      ],
+      "evidenceSignals": "RivCut Detroit Defense Machining Analysis. CMM first-article queue creates WIP buffers. GD&T tolerance manual checking adds 24–48 hr quote lag.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "5-Axis Pallet Queue & Wire EDM Electrode Wear Tracker Template",
+      "diagnostic": "🔥 United CNC scores 92 — HOT tier. Prototype tooling vs production defense runs without spindle telemetry obscures true availability. CMM validation queue before shipping.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Auburn Hills shop: 5-axis spindle capacity & CMM inspection queue visibility",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nRunning high-precision 5-axis machining and wire EDM cells in Auburn Hills often makes it challenging to balance quick-turn prototype tooling jobs against production defense runs without relying on daily floor status meetings.\n\nI mocked up a 1-screen Spindle Queue & CMM Inspection Board designed for precision aerospace/defense machine shops that tracks pallet utilization and automates first-article QA sign-offs.\n\nLet me know if you'd like me to send over the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-06 — priority #2. Send today."
+    },
+    {
+      "company": "Automation Services LLC",
+      "url": "https://automationservicesllc.com",
+      "location": "Auburn Hills, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 45,
+      "decisionMaker": "Engineering Director / Tooling Build Manager",
+      "score": 89,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Veteran-owned transfer press tooling specialist — custom transfer fingers/rails, press simulation, automotive press line launches",
+        "ETO workflow: mechanical design, press kinematic simulation, shop fabrication, on-site plant tryout milestones must stay synchronized",
+        "Fast-moving design revisions between press simulation and final plant tryout"
+      ],
+      "evidenceSignals": "1195 Centre Road, Auburn Hills. Transfer automation tooling for automotive press line launches.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Transfer Finger Tooling Build-to-Launch Milestone Map",
+      "diagnostic": "🟠 Automation Services scores 89 — HIGH tier. CAD approval to shop assembly to tryout debug coordination fragmented across design revisions.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Centre Road facility: transfer tooling build milestones & press simulation tracking",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nDesigning and building custom transfer press tooling and transfer rails on Centre Road usually involves coordinating multiple fast-moving design revisions between press simulation and final plant tryout.\n\nI created a simple 1-page ETO Tooling Milestone & Launch Tracker layout designed for transfer tooling builders that connects CAD approval to shop assembly and tryout debug.\n\nHappy to send over the 1-page layout if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-06 — priority #3"
+    },
+    {
+      "company": "Landmark Industries (LMI)",
+      "url": "https://landmarkindustries.com",
+      "location": "Dearborn, MI",
+      "industry": "Tier II Automotive Stamping",
+      "employeeCount": 160,
+      "decisionMaker": "Plant Operations Director / Materials Manager",
+      "score": 88,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Dearborn automotive OEM and Tier 1 stamping releases, welded assemblies, returnable container packaging",
+        "Tight width tolerances, coil slit camber variations, and JIT press release schedules require continuous coil lot and scrap monitoring",
+        "Returnable container loops reconciled manually against JIT OEM releases"
+      ],
+      "evidenceSignals": "Metal Master's Detroit Stamping Supply Report. Strategically located in Dearborn automotive corridor.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Coil Slit Camber Scrap & Returnable Container Turn Tracker",
+      "diagnostic": "🟠 LMI scores 88 — HIGH tier. Coil offal scrap tracking and returnable dunnage flow reconciliation consume substantial supervisor time daily.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Dearborn stamping plant: coil yield tracking & returnable dunnage flow",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nOperating automotive stamping and welded assembly lines in Dearborn often means operations supervisors spend substantial time tracking coil offal scrap and reconciling returnable container loops against JIT OEM releases.\n\nI designed a lightweight Stamping Coil Yield & Dunnage Balance board concept that captures press scrap variations and automates container return tracking.\n\nWould you like me to share the 1-page concept dashboard?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-06 — priority #4"
+    }
+  ]
+}
