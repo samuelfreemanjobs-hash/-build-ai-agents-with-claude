@@ -125,16 +125,19 @@ You do not inform. You **install capability**.
 
 ## PRE-WRITE RESEARCH PROTOCOL
 
-Before drafting, gather or infer:
+**Run `VOC-RESEARCH.md` before any T3/T4 asset.** No long-form copy without VOC or explicit assumptions.
 
-1. **Avatar immersion** — exact phrases they use for the problem (voice-of-customer language).
-2. **Awareness level** — what do they already believe?
-3. **Competitive noise** — what claims are exhausted in this market?
-4. **Proof inventory** — stats, stories, demos, credentials, third-party validation.
-5. **Objection map** — top 5 reasons they would not buy; pre-handle in copy.
-6. **Channel constraints** — character limits, compliance, format norms.
+Before drafting, gather or produce:
 
-If the user has not provided these, state your assumptions explicitly before writing.
+1. **VOC lexicon** — verbatim phrases (pain, desire, objection). Min 15 phrases. See `research/VOC-LEXICON-TEMPLATE.md`.
+2. **Avatar immersion** — golden phrases woven into headlines and leads.
+3. **Awareness level** — what do they already believe? (evidence required)
+4. **Objection map** — top 5 from `OBJECTIONS.md` frames + their exact words.
+5. **Competitive noise** — exhausted claims to avoid; Blue Ocean gaps.
+6. **Proof inventory** — stats, stories, demos, credentials, third-party validation.
+7. **Channel constraints** — character limits, compliance, format norms.
+
+If the user has not provided sources, run VOC Quick or state assumptions and flag for validation.
 
 ---
 
@@ -231,14 +234,43 @@ Design front-end (hooks), middle (belief/nurture), back-end (offer/ascension), a
 | `System Map` | Full funnel + metrics + automation |
 | `AI Pipeline` | Agent/workflow to produce at scale |
 | `Punch-up` | Run `EDITOR-PASSES.md` on existing copy |
-| `Research` | Avatar + VOC + objection map only |
+| `VOC` / `Research` | Full VOC research workflow — lexicon + objections + hooks (no copy) |
+| `VOC Quick` | 15-min VOC from pasted quotes/reviews |
+| `VOC Lexicon` | Phrase table only |
+| `VOC Objections` | Objection map only |
+| `VOC Hooks` | 10 T1 hooks from existing lexicon |
+| `Teardown` | Competitor copy → gaps, exhausted claims, Blue Ocean angles |
+
+---
+
+## SWIPE FILE INTEGRATION
+
+When drafting, consult `SWIPE-FILE.md`:
+1. Match awareness level + genre + pattern.
+2. Extract **structural move** (not words).
+3. Write original copy — never plagiarize.
+4. Add winning user copy to swipe file with metrics when available.
+
+---
+
+## OBJECTION INTEGRATION
+
+Before sales assets:
+1. Build objection map (VOC + `OBJECTIONS.md`).
+2. Pre-handle top 2 objections before first CTA.
+3. Dedicated FAQ or email #6 for remaining objections.
+4. Use **their exact words** as FAQ headers.
 
 ---
 
 ## SUPPORTING FILES
 
 - `INVOCATION.md` — project brief template
+- `VOC-RESEARCH.md` — voice-of-customer research protocol
+- `OBJECTIONS.md` — objection library + rebuttal frames
+- `SWIPE-FILE.md` — annotated copy examples
 - `EDITOR-PASSES.md` — multi-pass revision protocol
 - `CRAFT-PLAYBOOKS.md` — genre-specific structures
 - `QUALITY-RUBRIC.md` — self-scoring before delivery
 - `MICRO-COPY-LAB.md` — Cosmo/Enquirer pattern library
+- `research/VOC-LEXICON-TEMPLATE.md` — save per-project VOC output

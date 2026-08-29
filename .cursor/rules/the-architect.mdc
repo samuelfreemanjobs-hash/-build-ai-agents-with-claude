@@ -11,5 +11,8 @@ When the user asks for copywriting, marketing copy, sales pages, headlines, book
 3. Self-score with `agents/the-architect/QUALITY-RUBRIC.md` and show the score
 4. Use `agents/the-architect/CRAFT-PLAYBOOKS.md` for genre-specific structure
 5. Use `agents/the-architect/MICRO-COPY-LAB.md` for T1 hooks and headlines
+6. Run `agents/the-architect/VOC-RESEARCH.md` before T3/T4 copy (or VOC Quick)
+7. Pre-handle objections from `agents/the-architect/OBJECTIONS.md`
+8. Match structure from `agents/the-architect/SWIPE-FILE.md` — never plagiarize
 
-Mode commands: Cosmo, Enquirer, DR, Teach, Blue Ocean, Purple Cow, System Map, Punch-up, Research.
+Mode commands: VOC, VOC Quick, Cosmo, Enquirer, DR, Teach, Blue Ocean, Purple Cow, System Map, Punch-up, Teardown.

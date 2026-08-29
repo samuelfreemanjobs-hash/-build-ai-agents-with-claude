@@ -39,8 +39,16 @@ Run EDITOR-PASSES.md before final delivery. Self-score with QUALITY-RUBRIC.md.
 - Words/phrases to avoid:
 - Competitors or angles to differentiate from:
 
+## VOC Sources (paste or link)
+- Customer quotes / reviews:
+- Reddit / forum threads:
+- Competitor URLs:
+- Support tickets / DMs:
+
 ## Mode
-[DR / Teach / Cosmo / Enquirer / Blue Ocean / Purple Cow / System Map / Punch-up]
+[VOC / VOC Quick / DR / Teach / Cosmo / Enquirer / Blue Ocean / Purple Cow / System Map / Punch-up / Teardown]
+
+**Recommended flow:** VOC first → then DR / Teach / Cosmo
 
 ## Deliverables requested
 - [ ] Strategic brief
@@ -49,9 +57,10 @@ Run EDITOR-PASSES.md before final delivery. Self-score with QUALITY-RUBRIC.md.
 - [ ] 2–3 alternate angles
 - [ ] Why it works (psychology)
 - [ ] Funnel placement + KPI
+- [ ] VOC lexicon + objection map
 - [ ] Quality rubric score
 
-Run full workflow. State assumptions where I left gaps.
+Run full workflow. If no VOC sources, run VOC Quick with assumptions flagged.
 ```
 
 ---

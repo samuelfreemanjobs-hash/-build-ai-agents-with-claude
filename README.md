@@ -16,6 +16,10 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 | [`QUALITY-RUBRIC.md`](agents/the-architect/QUALITY-RUBRIC.md) | Self-scoring rubric before delivery |
 | [`CRAFT-PLAYBOOKS.md`](agents/the-architect/CRAFT-PLAYBOOKS.md) | Genre structures (email, sales page, VSL, book, ads) |
 | [`MICRO-COPY-LAB.md`](agents/the-architect/MICRO-COPY-LAB.md) | Cosmo + Enquirer pattern library |
+| [`SWIPE-FILE.md`](agents/the-architect/SWIPE-FILE.md) | Annotated copy examples (structure, not plagiarism) |
+| [`OBJECTIONS.md`](agents/the-architect/OBJECTIONS.md) | Objection library + rebuttal frames |
+| [`VOC-RESEARCH.md`](agents/the-architect/VOC-RESEARCH.md) | Voice-of-customer research protocol |
+| [`research/VOC-LEXICON-TEMPLATE.md`](agents/the-architect/research/VOC-LEXICON-TEMPLATE.md) | Save per-project VOC output |
 
 ## Quick start (Cursor)
 
@@ -31,15 +35,26 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 - **Quality rubric** — self-scores before shipping (min 8.0 average)
 - **Genre playbooks** — proven structures per asset type
 - **Micro-copy lab** — 10-variant protocol with pattern diversity
-- **Pre-write research** — avatar, VOC, objections before drafting
+- **VOC research mode** — mine real customer language before writing
+- **Swipe file** — annotated examples; extract structure, not words
+- **Objection library** — pre-built rebuttals + placement guide
 - **Teaching install format** — Pagan chunking + Woodsmall distinctions
+
+## Recommended workflow
+
+```
+1. VOC        → lexicon + objections + hook seeds
+2. DR/Teach   → full asset using VOC phrases
+3. Punch-up   → editor passes + rubric score
+```
 
 ## Example
 
 ```
 Follow agents/the-architect/SYSTEM.md.
 
-Mode: Cosmo
-Product: confidence course for women re-entering dating
-Deliver: 10 cover-style blurbs + quality rubric score
+Mode: VOC Quick
+Niche: coaching for burned-out corporate women
+Sources: [paste 5 Amazon reviews + 3 Reddit quotes]
+Then: DR sales page using golden phrases
 ```
