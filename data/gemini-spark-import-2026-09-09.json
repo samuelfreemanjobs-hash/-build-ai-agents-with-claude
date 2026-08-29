@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-09",
+  "region": "Metro Detroit",
+  "focusedVertical": "Tool & Die Validation, Automotive Injection Molds, 5-Axis Aerospace Machining & Injection Molding Robotic Automation",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 116,
+    "estimatedValueRange": "$46,500 – $84,000",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "True Industries, Inc.",
+      "url": "https://trueindustries.com",
+      "location": "Roseville, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 150,
+      "decisionMaker": "VP of Tooling Operations / Plant General Manager",
+      "score": 95,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 25,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Progressive and transfer stamping dies plus validation/tryout modifications for domestic and overseas tooling packages",
+        "Die tryouts, press tonnage spotting, CMM dimensional validation against tight OEM vehicle launch timelines",
+        "Overseas tooling ECO tracking on spreadsheets leads to version confusion during tryout"
+      ],
+      "evidenceSignals": "eFinancialCareers Sterling Heights & Warren Quality Engineering Report. Defense and automotive die buyoff documentation requirements.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Progressive Die Tryout Hit Log & First-Panel Dimensional Buyoff Tracker (1-page framework)",
+      "diagnostic": "🔥 True Industries scores 95 — HOT tier. Press stroke counts and tonnage draw curves on paper travelers. Customer buyoff milestone data takes 8–12 hrs/week of tooling engineering time.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Roseville facility: tracking progressive die tryout hits & tooling validation logs",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nManaging progressive and transfer die builds alongside validation runs on overseas tooling in Roseville usually means your toolmakers and engineering leads spend significant desk hours tracking tryout panel buyoff data.\n\nI built a 1-screen Die Tryout & Validation Milestone board concept designed for tool-and-die builders that captures press hit logs digitally and automates customer tryout reporting.\n\nWould you be open to a 2-minute review of the visual framework to see if it's helpful for your operations team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-09 — priority #1. Send today. Perfect service fit."
+    },
+    {
+      "company": "Diversified Technologies International (DTI)",
+      "url": "https://dtiroseville.com",
+      "location": "Roseville, MI",
+      "industry": "Precision Injection Molding",
+      "employeeCount": 120,
+      "decisionMaker": "Tooling Division Director / Operations Lead",
+      "score": 92,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 19,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Prototype tooling, multi-cavity production molds, fast-track tool modifications for automotive Tier 1 programs",
+        "New mold CNC cavity machining vs incoming mold revision work orders creates EDM and CNC scheduling contention",
+        "Mold flow simulation targets vs first-shot sampling dimensions managed through disparate PDF/spreadsheet reports"
+      ],
+      "evidenceSignals": "16630 Eastland Drive, Roseville. Flex-N-Gate Troy Materials & Planning Operations — Tier 1/2 tooling schedule synchronization critical.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Injection Mold Build Milestone & ECN Modification Tracker Mockup",
+      "diagnostic": "🔥 DTI scores 92 — HOT tier. Fast-turn mold modifications disrupt long-cycle CNC cavity cuts without dynamic spindle buffer. ECN quoting over unstructured email slows Tier 1 response.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Eastland Drive plant: injection mold cavity scheduling & ECN turnaround",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nDelivering new automotive injection molds while supporting rapid engineering modifications in Roseville often makes it difficult to balance CNC milling and EDM capacity between new builds and urgent tool revisions.\n\nI put together a quick mockup of an Injection Mold Build & ECN Tracker designed for mold shops that visualizes cavity machining readiness and automates first-shot sampling milestones.\n\nLet me know if you'd like me to send over the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-09 — priority #2. Send today."
+    },
+    {
+      "company": "KCS Advanced Machining Services",
+      "url": "https://kcsadvancedmachining.com",
+      "location": "Livonia, MI",
+      "industry": "Aerospace Components",
+      "employeeCount": 95,
+      "decisionMaker": "Operations Director / Plant General Manager",
+      "score": 89,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 15,
+        "serviceFit": 14,
+        "accessibility": 9,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Matsuura multi-pallet 5-axis machining centers and Zeiss CMM metrology — aerospace and defense programs",
+        "Unmanned multi-pallet runs require alignment between billet staging, tool life monitoring, and Zeiss CMM first-article queue",
+        "Overnight run schedules vs CMM inspection queue clearance manually balanced"
+      ],
+      "evidenceSignals": "12842 Farmington Road, Livonia. LOTO compliance and digital operational logging standards across Southeast Michigan manufacturing.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "5-Axis Unmanned Pallet Run & CMM Queue Balancing Layout",
+      "diagnostic": "🟠 KCS scores 89 — HIGH tier. Pallet pool utilization and CMM queue flow fragmented — shop leads spend extra time balancing unmanned overnight runs.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Farmington Road shop: 5-axis pallet pool utilization & CMM queue flow",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nRunning automated 5-axis pallet pools alongside Zeiss CMM inspection in Livonia usually means shop leads spend extra time balancing unmanned overnight run schedules against CMM inspection queue clearance.\n\nI created a simple 1-page 5-Axis Pallet Cell & CMM Queue layout designed for precision aerospace shops that highlights pallet readiness and automates first-article QA sign-offs.\n\nHappy to send over the 1-page layout if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-09 — priority #3"
+    },
+    {
+      "company": "Star Automation, Inc. - Michigan Technical Center",
+      "url": "https://starautomation.com",
+      "location": "Livonia, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 40,
+      "decisionMaker": "Technical Center Director / Systems Engineering Lead",
+      "score": 87,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 14,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Servo takeout robots, custom EOAT, degating automation for automotive injection molders across Detroit, Warren, Sterling Heights",
+        "ETO workflow: custom EOAT vacuum/gripper builds, robot cycle-time simulations, press integration tryouts require cross-discipline milestone tracking",
+        "Multiple custom gripper builds and press interface debug stages tracked simultaneously without structured system"
+      ],
+      "evidenceSignals": "Michigan Technical Center serving Metro Detroit plastics processors. Downstream part handling automation.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Robotic EOAT Build & Press Takeout Cycle Time Estimator",
+      "diagnostic": "🟠 Star Automation scores 87 — HIGH tier. EOAT build readiness and press tryout sign-off logs fragmented across parallel customer integrations.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Livonia technical center: custom EOAT build tracking & press tryout logs",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nDelivering custom servo takeout robots and specialized EOAT for injection molders across Metro Detroit often involves tracking multiple custom gripper builds and press interface debug stages simultaneously.\n\nI designed a lightweight EOAT Build Milestone & Press Tryout Tracker concept that monitors gripper build readiness and automates customer integration sign-off logs.\n\nWould you like me to share the 1-page concept dashboard?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-09 — priority #4"
+    }
+  ]
+}

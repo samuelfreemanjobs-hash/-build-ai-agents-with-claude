@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barron Industries — Casting-to-Spindle & NDT Compliance Tracker</title>
+  <link rel="stylesheet" href="_asset-base.css">
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="brand">HUNTER Intelligence</div>
+      <div class="title">Investment Casting Shell-to-Spindle Stage-Gate &amp; NDT Compliance Tracker</div>
+      <div class="subtitle">Prepared for Barron Industries · Oxford, MI</div>
+    </div>
+    <div class="meta">
+      <strong>Operational Framework</strong><br>
+      Confidential · Aug 2026<br>
+      AS9100 / NADCAP Investment Casting
+    </div>
+  </div>
+
+  <h2>Current friction (observed pattern)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>Foundry-to-machine gap</h3>
+      <ul>
+        <li>Cast lots tracked separately from 5-axis machining cells</li>
+        <li>12–15 hrs/week consolidating NDT certs (RT, FPI, chemical)</li>
+        <li>200+ alloy heats — traceability risk on defense audits</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Target outcome</h3>
+      <ul>
+        <li>Heat lot readiness visible before spindle setup</li>
+        <li>Auto NDT cert packet per cast lot at release</li>
+        <li>Single stage-gate from shell → pour → HT → machine → ship</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Casting-to-spindle stage-gate</h2>
+  <div class="flow">
+    <div class="stage"><span class="num">1</span>Shell room<br><span class="label">Wax / shell</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">2</span>Pour &amp; shakeout<br><span class="label">Heat lot ID</span></div>
+    <span class="arrow">→</span>
+    <div class="stage active"><span class="num">3</span>Heat treat<br><span class="label">Spec verify</span></div>
+    <span class="arrow">→</span>
+    <div class="stage bottleneck"><span class="num">4</span>5-axis mill<br><span class="label">⚠ Staging lag</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">5</span>NDT lab<br><span class="label">NADCAP</span></div>
+  </div>
+
+  <h2>Cast lot tracker (sample — ties foundry to spindle)</h2>
+  <table>
+    <tr>
+      <th>Cast Lot</th>
+      <th>Alloy / Heat</th>
+      <th>Stage</th>
+      <th>HT Complete</th>
+      <th>5-Axis Cell</th>
+      <th>NDT</th>
+      <th>Release</th>
+    </tr>
+    <tr>
+      <td>CL-2026-1847</td>
+      <td>Inconel 718 / H-4421</td>
+      <td>5-axis machining</td>
+      <td>✓</td>
+      <td>Cell 2</td>
+      <td>Pending RT</td>
+      <td><span class="badge badge-blue">In process</span></td>
+    </tr>
+    <tr>
+      <td>CL-2026-1842</td>
+      <td>17-4 PH / H-4418</td>
+      <td>NDT complete</td>
+      <td>✓</td>
+      <td>Done</td>
+      <td><span class="badge badge-green">Pass</span></td>
+      <td><span class="badge badge-green">Cert ready</span></td>
+    </tr>
+    <tr>
+      <td>CL-2026-1851</td>
+      <td>A356 / H-4425</td>
+      <td>Heat treat</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td><span class="badge badge-amber">Foundry queue</span></td>
+    </tr>
+  </table>
+
+  <div class="metric-row">
+    <div class="metric"><div class="val">12–15h</div><div class="lbl">Weekly NDT admin saved</div></div>
+    <div class="metric"><div class="val">100%</div><div class="lbl">Heat lot traceability</div></div>
+    <div class="metric"><div class="val">1 screen</div><div class="lbl">Foundry → spindle → NDT</div></div>
+  </div>
+
+  <div class="callout">
+    <strong>Next step:</strong> 15-min walkthrough mapping your Oxford foundry pour schedule to 5-axis cell queue. Built for AS9100/NADCAP audit trails — not ERP replacement.
+  </div>
+
+  <div class="footer">
+    <span>HUNTER Intelligence · Operational Diagnostic Framework</span>
+    <span>Not for distribution · Up to 250 lb investment castings</span>
+  </div>
+</body>
+</html>

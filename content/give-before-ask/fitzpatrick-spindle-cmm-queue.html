@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitzpatrick Manufacturing — Spindle & CMM Queue Visualizer</title>
+  <link rel="stylesheet" href="_asset-base.css">
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="brand">HUNTER Intelligence</div>
+      <div class="title">Multi-Axis Spindle Utilization &amp; CMM Inspection Queue Visualizer</div>
+      <div class="subtitle">Prepared for Fitzpatrick Manufacturing Co. · Sterling Heights, MI</div>
+    </div>
+    <div class="meta">
+      <strong>Operational Framework</strong><br>
+      Confidential · Aug 2026<br>
+      Precision CNC Contract Machining
+    </div>
+  </div>
+
+  <h2>Current friction (observed pattern)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>Capacity visibility gap</h3>
+      <ul>
+        <li>High-mix aerospace, defense, robotics — rapid changeovers</li>
+        <li>Floor walks to check spindle availability &amp; CMM queue</li>
+        <li>First-article parts staging before deburr/plating</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Target outcome</h3>
+      <ul>
+        <li>Real-time spindle status by cell (mill / turn / 5-axis)</li>
+        <li>CMM queue with FAI priority and ETA</li>
+        <li>Auto first-article sign-off log for AS9100 traceability</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Machine cell → CMM → release flow</h2>
+  <div class="flow">
+    <div class="stage active"><span class="num">CNC</span>5-axis / turn<br><span class="label">Spindle run</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">Deburr</span>Secondary<br><span class="label">In process</span></div>
+    <span class="arrow">→</span>
+    <div class="stage bottleneck"><span class="num">CMM</span>FAI queue<br><span class="label">⚠ 6 parts</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">Plating</span>Outside proc<br><span class="label">If required</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">Ship</span>Customer<br><span class="label">On-time</span></div>
+  </div>
+
+  <h2>Spindle &amp; CMM queue board (sample shift view)</h2>
+  <table>
+    <tr>
+      <th>Cell</th>
+      <th>Job / Customer</th>
+      <th>Spindle %</th>
+      <th>Complete ETA</th>
+      <th>CMM</th>
+      <th>Priority</th>
+    </tr>
+    <tr>
+      <td>5-Axis-01</td>
+      <td>Defense turret housing</td>
+      <td>87%</td>
+      <td>2.4 hrs</td>
+      <td>Queued</td>
+      <td><span class="badge badge-red">HOT</span></td>
+    </tr>
+    <tr>
+      <td>Mill-03</td>
+      <td>Robotics fixture proto</td>
+      <td>62%</td>
+      <td>5.1 hrs</td>
+      <td>—</td>
+      <td><span class="badge badge-blue">Normal</span></td>
+    </tr>
+    <tr>
+      <td>Turn-02</td>
+      <td>Aerospace shaft lot</td>
+      <td>Done</td>
+      <td>—</td>
+      <td><span class="badge badge-amber">In CMM</span></td>
+      <td><span class="badge badge-amber">FAI hold</span></td>
+    </tr>
+    <tr>
+      <td>5-Axis-02</td>
+      <td>Automotive bracket</td>
+      <td>34%</td>
+      <td>8.0 hrs</td>
+      <td>—</td>
+      <td><span class="badge badge-green">On track</span></td>
+    </tr>
+  </table>
+
+  <div class="metric-row">
+    <div class="metric"><div class="val">↓ 40%</div><div class="lbl">CMM WIP dwell time</div></div>
+    <div class="metric"><div class="val">3×</div><div class="lbl">Faster capacity answers</div></div>
+    <div class="metric"><div class="val">$35K</div><div class="lbl">Typical implementation</div></div>
+  </div>
+
+  <div class="callout">
+    <strong>Next step:</strong> 15-min diagnostic to map this board to your actual cell layout. Connects to existing machine data — no controller replacement.
+  </div>
+
+  <div class="footer">
+    <span>HUNTER Intelligence · Operational Diagnostic Framework</span>
+    <span>Not for distribution · Aerospace / defense / robotics mix</span>
+  </div>
+</body>
+</html>

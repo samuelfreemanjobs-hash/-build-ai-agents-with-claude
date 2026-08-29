@@ -1,0 +1,145 @@
+{
+  "runDate": "2026-08-29",
+  "region": "Metro Detroit",
+  "focusedVertical": "Tier II/III Automotive Stamping, Material Handling Automation, Injection Molding & Airport Corridor 3PL Logistics",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 3,
+    "monitoringPool": 48,
+    "estimatedValueRange": "$32,000 – $58,500",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Reliant Industries Inc.",
+      "url": "https://reliantindustries.com",
+      "location": "Sterling Heights, MI",
+      "industry": "Tier II Automotive Stamping",
+      "employeeCount": 180,
+      "decisionMaker": "Plant Operations Director / Quality & Materials Manager",
+      "score": 93,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 24,
+        "buyingSignal": 19,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Dual-facility material flow and daily scrap/weld inspection logging handoffs across two Sterling Heights divisions",
+        "Rapid tooling changeovers and OEM delivery deadlines require continuous schedule alignment",
+        "Stellantis Warren & Sterling Stamping Program expansions increase zero-defect JIT shipping verification demand"
+      ],
+      "evidenceSignals": "Macomb County stamping shops hiring Materials Managers & Inventory Specialists. Multi-division stamping and welding operations.",
+      "matchedService": "Spreadsheet Elimination System",
+      "giveBeforeAsk": "Stamping Press Die Changeover & Weld Scrap Tracker Mockup",
+      "diagnostic": "🔥 Reliant scores 93 — HOT tier. Multi-division reporting gap: coil consumption and weld counts manually consolidated in end-of-shift Excel. Die changeover visibility obscures hidden press capacity. OEM lot traceability requires manual paper-to-spreadsheet entry.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Streamlining die changeover & weld scrap logs across your Sterling Heights cells",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nOperating multi-cell stamping and robotic welding lines across Sterling Heights usually means plant supervisors spend 1–2 hours at the end of every shift reconciling coil weight, press stroke counts, and weld scrap reports.\n\nI built a lightweight, 1-screen Press Downtime & Scrap Tracker concept tailored for Tier II stamping shops that logs changeovers and auto-generates first-piece inspection certificates without adding administrative load to operators.\n\nWould you be open to a 2-minute review of the concept mockup to see if it would save your shift supervisors time?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-29 — priority #1. Send today."
+    },
+    {
+      "company": "Total Tool Solutions",
+      "url": "https://totaltoolsolutions.com",
+      "location": "Sterling Heights, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 85,
+      "decisionMaker": "VP of Engineering / General Manager",
+      "score": 90,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "20,000 sq ft integrated facility — engineering, machining, fabrication, assembly, tryout under one roof",
+        "ETO model: design revisions, BOM changes, and shop fabrication milestones frequently desynchronize",
+        "No interactive RFQ spec configurator or project milestone tracking portal for Tier I integrators"
+      ],
+      "evidenceSignals": "Custom engineering-to-order model. Web presence descriptive but lacks RFQ configurator or milestone portal.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Engineer-to-Order (ETO) BOM-to-Fabrication Tracking Workflow",
+      "diagnostic": "🔥 Total Tool scores 90 — HOT tier. Tryout & assembly milestone tracking on spreadsheets creates blind spots. ECNs risk rework on custom-machined tooling plates. Complex 3D RFQs via email lengthen quoting cycles.",
+      "outreachStrategy": "A",
+      "outreachSubject": "BOM-to-Tryout milestone visibility for custom assembly builds",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nWith Total Tool Solutions managing engineering, machining, and tryout under one roof in Sterling Heights, keeping custom assembly builds on schedule when CAD revisions drop usually requires heavy manual coordination between design and the shop floor.\n\nI put together a 1-page visual framework showing how ETO tooling builders connect CAD release milestones directly to machining and assembly tryout schedules to eliminate progress-chasing meetings.\n\nHappy to send over the 1-page framework if you'd like to see how other custom tooling builders set this up.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-29 — priority #2. Send today."
+    },
+    {
+      "company": "American Test Plaque (ATP)",
+      "url": "https://americantestplaque.com",
+      "location": "Livonia, MI",
+      "industry": "Precision Injection Molding",
+      "employeeCount": 120,
+      "decisionMaker": "Operations Manager / Plant Superintendent",
+      "score": 84,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 20,
+        "buyingSignal": 17,
+        "abilityToPay": 13,
+        "serviceFit": 14,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "High shot-size variability (1 oz to 7 lbs) across low-to-high volume runs — resin lot tracking, mold changeover, regrind ratio complexity",
+        "Static web forms without automated resin spec calculation or instant file upload routing for automotive rapid-manufacturing clients"
+      ],
+      "evidenceSignals": "100–700 ton presses. Custom injection molding and rapid tooling. Automotive rapid-manufacturing client base.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Molding Press Scheduling & Resin Inventory Balance Sheet",
+      "diagnostic": "🟠 ATP scores 84 — HIGH tier. Press scheduling and mold changeover planning tricky when juggling prototype batches alongside production runs.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Visualizing mold changeovers & shot-capacity across your Livonia presses",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nRunning 100-ton to 700-ton presses with varying shot sizes at American Test Plaque makes press scheduling and mold changeover planning tricky when juggling short prototype batches alongside production runs.\n\nI mocked up an automated Press Utilization & Mold Changeover board tailored for custom molding facilities in Livonia that balances resin lots and flags upcoming tool change bottlenecks.\n\nLet me know if you'd be interested in seeing the mockup.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-29 — priority #3"
+    },
+    {
+      "company": "Crane Worldwide Logistics - Detroit Facility",
+      "url": "https://craneww.com",
+      "location": "Romulus, MI",
+      "industry": "3PL Warehousing",
+      "employeeCount": 350,
+      "decisionMaker": "General Manager / Regional Operations Director",
+      "score": 86,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 17,
+        "abilityToPay": 15,
+        "serviceFit": 13,
+        "accessibility": 7,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Airport corridor proximity requires coordinating origin consolidation, deconsolidation, sub-assembly, and quality inspection",
+        "Cross-dock staging and sub-assembly lines generate manual variance logs",
+        "Recurring regional demand for Detroit Area Inventory & Warehouse Coordinators"
+      ],
+      "evidenceSignals": "10725 Harrison Road Romulus facility. Automotive supply chain cross-dock and sub-assembly operations near DTW.",
+      "matchedService": "3PL Cross-Dock & VMI Buffer Exception Dashboard",
+      "giveBeforeAsk": "Cross-Dock Staging Turnaround & Sub-Assembly Inspection Tracker",
+      "diagnostic": "🟠 Crane Detroit scores 86 — HIGH tier. Reporting lag between inbound deconsolidation and final sub-assembly QA release. Bay dwell times exceed 45 minutes without automated flagging.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Romulus cross-dock staging & sub-assembly inspection latency",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nOperating a high-velocity cross-dock and sub-assembly facility in Romulus serving automotive supply chains often leads to reporting lag between inbound deconsolidation and final sub-assembly QA release.\n\nI mapped out a simple Cross-Dock Exception Dashboard concept that flags bay dwell times exceeding 45 minutes and automates inspection release logging for JIT plant deliveries.\n\nWould you like me to share the 1-page exception dashboard layout?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-29 — priority #4"
+    }
+  ]
+}

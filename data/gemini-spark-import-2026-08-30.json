@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-08-30",
+  "region": "Metro Detroit",
+  "focusedVertical": "Automotive Steel Processing, High-Precision 5-Axis CNC Machining, ETO Gage Tooling & Tier 2 Injection Molding",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 53,
+    "estimatedValueRange": "$34,000 – $61,000",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "SRS Manufacturing Inc.",
+      "url": "https://srsmfg.com",
+      "location": "Metro Detroit, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 220,
+      "decisionMaker": "VP of Manufacturing / Plant Operations Director",
+      "score": 94,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 24,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "40+ CNC machines across two divisions (prototype vs production) — scheduling friction and spindle utilization blind spots",
+        "Manual job status reporting and ERP/MRP exception translation into daily dispatch sheets",
+        "Regional hiring for Production Schedulers & Planners signals heavy administrative burden"
+      ],
+      "evidenceSignals": "20,000 sq ft climate-controlled facility. 5-axis milling, dual-spindle turn/mill, wire EDM. Two-division model: quick-turn prototyping + high-volume Tier 1/2 production.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "5-Axis Pallet & Spindle Capacity Bottleneck Visualizer (1-page sheet)",
+      "diagnostic": "🔥 SRS scores 94 — HOT tier. Prototype-to-production dispatch handoff adds 10–15 hrs/week manual coordination. Multi-axis setup tracking obscures true capacity across 40+ machines. CMM queue latency creates machine downtime during first-piece sign-offs.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Balancing prototype and production spindle capacity across 40+ CNCs",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nRunning 40+ CNC machines split between rapid prototyping and production runs at SRS Manufacturing usually means operations leads spend 1–2 hours every morning resolving pallet scheduling conflicts and job-status inquiries.\n\nI built a 1-screen Spindle Utilization & Pallet Queue board specifically for multi-division precision machine shops that visualizes machine bottlenecks and automates shift handoff reporting without altering your CAM or controller setups.\n\nWould you be open to reviewing the 1-page visual mockup to see if it could save your shop supervisors time?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-30 — priority #1. Send today."
+    },
+    {
+      "company": "Ameristeel",
+      "url": "https://ameristeel.com",
+      "location": "Fraser, MI & Warren, MI",
+      "industry": "Heavy Steel Fabrication",
+      "employeeCount": 280,
+      "decisionMaker": "Operations Director / Materials & Supply Chain Manager",
+      "score": 91,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Two hubs: flat-rolled steel coil slitting/blanking in Fraser, fabrication/forming in Warren — cross-facility inventory lag",
+        "JIT deliveries for Tier 1 stampers vs low-minimum prototype coil orders require intense daily reconciliation",
+        "Manual slitting scrap & drop yield tracking slows inventory re-allocation"
+      ],
+      "evidenceSignals": "Regional hiring for Inventory Planning & Materials Control Managers. Mill certificate tracking and raw material variance management.",
+      "matchedService": "Spreadsheet Elimination System",
+      "giveBeforeAsk": "Master Coil Yield & Multi-Location Transfer Dashboard Mockup",
+      "diagnostic": "🔥 Ameristeel scores 91 — HOT tier. Multi-facility inventory lag between Fraser coil stock and Warren cut-to-length jobs. Offal/remnant yield calculated manually. RFQ turnaround slowed by email-based prototype blank quoting.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Fraser-to-Warren coil tracking & slitting yield visibility",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nSupplying automotive Tier 1 stampers with production coils while supporting quick-turn prototype blanks across your Fraser and Warren facilities usually creates an administrative drag in tracking coil remnants, heat numbers, and cross-facility transfers.\n\nI mocked up a lightweight Coil Yield & Transfer Dashboard concept designed to automate master coil drop tracking and eliminate manual inventory reconciliations.\n\nLet me know if you'd be interested in taking a look at the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-30 — priority #2. Send today."
+    },
+    {
+      "company": "S&M Machining Company",
+      "url": "https://smmachining.com",
+      "location": "Wixom, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 45,
+      "decisionMaker": "Jim Phillips (Owner & Operator) / Operations Lead",
+      "score": 86,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 17,
+        "abilityToPay": 13,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "High-mix, low-volume ETO shop: precision measurement gages, inspection fixtures, prototype parts",
+        "CAD models, engineering change requests, and multi-step project management via manual communication",
+        "Gage calibration and tooling build milestone tracking fragmented"
+      ],
+      "evidenceSignals": "47590 Avante Drive, Wixom. Automotive and defense gage systems. Owner-operated.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Gage Calibration & Tooling Build Milestone Workflow Map",
+      "diagnostic": "🟠 S&M scores 86 — HIGH tier. Custom gage builds require back-and-forth on CAD revisions, component stages, and final inspection sign-offs without structured milestone tracking.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Streamlining gage build milestones & calibration tracking in Wixom",
+      "outreachBody": "I found an opportunity...\n\nHi Jim,\n\nDelivering tight-tolerance gage and measurement fixtures for automotive and defense clients in Wixom often involves a lot of back-and-forth tracking CAD revisions, component build stages, and final inspection sign-offs.\n\nI created a 1-page ETO Tooling Milestone Tracker designed specifically for custom gage builders that connects design approval to machining and inspection without spreadsheet clutter.\n\nHappy to send the 1-page framework over if you'd like to check it out.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-30 — priority #3"
+    },
+    {
+      "company": "Elite Mold & Engineering",
+      "url": "https://elitemold.com",
+      "location": "Metro Detroit, MI",
+      "industry": "Precision Injection Molding",
+      "employeeCount": 150,
+      "decisionMaker": "Engineering Director / Tooling & Plant Manager",
+      "score": 88,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "32+ years supporting OEM-directed and Tier 1 programs — rapid tooling turnaround (aluminum vs steel molds)",
+        "Weekly project timeline alignment with OEM program managers is manual",
+        "Regional demand for Master Schedulers & Production Coordinators signals mold-to-press coordination friction"
+      ],
+      "evidenceSignals": "Automotive injection molds: airbag covers, instrument clusters, consoles. Aluminum prototype + multi-cavity production molds.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Mold Build Timeline & Tier 1 Milestone Tracking Dashboard",
+      "diagnostic": "🟠 Elite Mold scores 88 — HIGH tier. Managing aluminum prototype tooling alongside multi-cavity production molds makes weekly OEM milestone status updates time-consuming.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Visualizing mold build milestones & press sampling schedules",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nManaging aluminum prototype tooling alongside multi-cavity production molds for Tier 1 automotive programs often makes it time-consuming to provide weekly milestone status updates to OEM program managers.\n\nI designed a clean Tooling Build & Sampling Milestone Dashboard concept that automates program status reporting from mold design through first-shot approval.\n\nWould you like me to share the 1-page dashboard layout?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-30 — priority #4"
+    }
+  ]
+}

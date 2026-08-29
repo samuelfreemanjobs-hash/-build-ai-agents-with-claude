@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>True Industries — Die Tryout Hit Log & Buyoff Tracker</title>
+  <link rel="stylesheet" href="_asset-base.css">
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="brand">HUNTER Intelligence</div>
+      <div class="title">Progressive Die Tryout Hit Log &amp; First-Panel Buyoff Tracker</div>
+      <div class="subtitle">Prepared for True Industries, Inc. · Roseville, MI</div>
+    </div>
+    <div class="meta">
+      <strong>Operational Framework</strong><br>
+      Confidential · Aug 2026<br>
+      Tool &amp; Die Validation
+    </div>
+  </div>
+
+  <h2>Current friction (observed pattern)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>Tryout documentation gap</h3>
+      <ul>
+        <li>Press stroke counts &amp; tonnage curves logged on paper travelers</li>
+        <li>8–12 hrs/week compiling customer buyoff packets</li>
+        <li>Overseas tooling ECO versions desync during tryout</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Target outcome</h3>
+      <ul>
+        <li>Digital hit log per die set — auto-linked to panel ID</li>
+        <li>One-click customer tryout report at buyoff milestone</li>
+        <li>ECO revision flag before next press stroke</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Die tryout stage-gate flow</h2>
+  <div class="flow">
+    <div class="stage"><span class="num">1</span>Die received<br><span class="label">Overseas / domestic</span></div>
+    <span class="arrow">→</span>
+    <div class="stage active"><span class="num">2</span>Tryout setup<br><span class="label">Strip layout</span></div>
+    <span class="arrow">→</span>
+    <div class="stage bottleneck"><span class="num">3</span>Press hits<br><span class="label">⚠ Paper log</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">4</span>CMM buyoff<br><span class="label">Panel dims</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">5</span>Customer sign-off<br><span class="label">Release</span></div>
+  </div>
+
+  <h2>Sample tryout hit log (replaces paper traveler)</h2>
+  <table>
+    <tr>
+      <th>Die Set</th>
+      <th>ECO Rev</th>
+      <th>Hit #</th>
+      <th>Tonnage</th>
+      <th>Strip OK?</th>
+      <th>CMM</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>PRG-2847-A</td>
+      <td>Rev C <span class="badge badge-amber">NEW</span></td>
+      <td>142</td>
+      <td>412 tons</td>
+      <td>Yes</td>
+      <td>Pending</td>
+      <td><span class="badge badge-blue">In tryout</span></td>
+    </tr>
+    <tr>
+      <td>TRF-1192-B</td>
+      <td>Rev B</td>
+      <td>89</td>
+      <td>680 tons</td>
+      <td>Yes</td>
+      <td>Pass</td>
+      <td><span class="badge badge-green">Buyoff ready</span></td>
+    </tr>
+    <tr>
+      <td>OS-4401-X</td>
+      <td>Rev A <span class="badge badge-red">ECO pending</span></td>
+      <td>—</td>
+      <td>—</td>
+      <td>Hold</td>
+      <td>—</td>
+      <td><span class="badge badge-red">Blocked</span></td>
+    </tr>
+  </table>
+
+  <div class="metric-row">
+    <div class="metric"><div class="val">8–12h</div><div class="lbl">Weekly buyoff admin saved</div></div>
+    <div class="metric"><div class="val">0</div><div class="lbl">ECO version misses at press</div></div>
+    <div class="metric"><div class="val">24hr</div><div class="lbl">Faster customer tryout reports</div></div>
+  </div>
+
+  <div class="callout">
+    <strong>Next step:</strong> 15-min walkthrough of how this connects to your existing tryout presses and CMM workflow. No ERP replacement — digital layer on top of current process.
+  </div>
+
+  <div class="footer">
+    <span>HUNTER Intelligence · Operational Diagnostic Framework</span>
+    <span>Not for distribution · trueindustries.com context</span>
+  </div>
+</body>
+</html>

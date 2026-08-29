@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUNTER Intelligence OS</title>
+  <style>
+    :root {
+      --bg: #0a0e17;
+      --surface: #111827;
+      --surface2: #1a2234;
+      --border: #2a3548;
+      --text: #e8edf5;
+      --muted: #8896ab;
+      --accent: #3b82f6;
+      --accent2: #6366f1;
+      --hot: #ef4444;
+      --high: #f97316;
+      --medium: #eab308;
+      --watch: #94a3b8;
+      --success: #22c55e;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+    }
+    .sidebar {
+      width: 240px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: 100vh;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .logo-sub { font-size: 0.7rem; color: var(--muted); margin-bottom: 32px; letter-spacing: 1px; }
+    .nav-item {
+      padding: 10px 14px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      color: var(--muted);
+      margin-bottom: 4px;
+      transition: all 0.15s;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-item:hover, .nav-item.active {
+      background: var(--surface2);
+      color: var(--text);
+    }
+    .nav-item.active { border-left: 3px solid var(--accent); }
+    .status-bar {
+      margin-top: auto;
+      padding: 12px;
+      background: var(--surface2);
+      border-radius: var(--radius);
+      font-size: 0.75rem;
+    }
+    .status-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    .status-dot.online { background: var(--success); }
+    .status-dot.offline { background: var(--hot); }
+    .main {
+      margin-left: 240px;
+      flex: 1;
+      padding: 32px;
+      max-width: 1400px;
+    }
+    .view { display: none; }
+    .view.active { display: block; }
+    h1 { font-size: 1.8rem; margin-bottom: 8px; }
+    .subtitle { color: var(--muted); margin-bottom: 28px; }
+    .grid { display: grid; gap: 20px; }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 1100px) {
+      .grid-4, .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .sidebar { width: 60px; padding: 16px 8px; }
+      .sidebar .logo, .sidebar .logo-sub, .nav-item span { display: none; }
+      .main { margin-left: 60px; padding: 16px; }
+      .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .card h3 { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .card .value { font-size: 2rem; font-weight: 700; }
+    .card .change { font-size: 0.8rem; color: var(--success); margin-top: 4px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px 14px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    textarea { min-height: 120px; resize: vertical; font-family: inherit; }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+    }
+    .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+    .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+    .btn-secondary {
+      background: var(--surface2);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-danger { background: var(--hot); color: white; }
+    .btn-sm { padding: 6px 12px; font-size: 0.8rem; }
+    .btn-hot { background: linear-gradient(135deg, var(--hot), #dc2626); color: white; }
+    .btn-high { background: linear-gradient(135deg, var(--high), #ea580c); color: white; }
+    .batch-bar { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:20px; padding:16px; background:var(--surface2); border-radius:var(--radius); border:1px solid var(--border); align-items:center; }
+    .batch-bar .label { color:var(--muted); font-size:0.85rem; margin-right:8px; }
+    .engagement { display:inline-block; padding:2px 8px; border-radius:12px; font-size:0.7rem; font-weight:600; margin-left:6px; }
+    .engagement-opened { background:rgba(59,130,246,0.2); color:var(--accent); }
+    .engagement-clicked { background:rgba(34,197,94,0.2); color:var(--success); }
+    .engagement-bounced { background:rgba(239,68,68,0.2); color:var(--hot); }
+    .preview-list { max-height:300px; overflow-y:auto; margin:16px 0; }
+    .preview-item { padding:10px 12px; background:var(--surface2); border-radius:8px; margin-bottom:6px; font-size:0.85rem; display:flex; justify-content:space-between; }
+    .tier-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .tier-HOT { background: rgba(239,68,68,0.2); color: var(--hot); }
+    .tier-HIGH { background: rgba(249,115,22,0.2); color: var(--high); }
+    .tier-MEDIUM { background: rgba(234,179,8,0.2); color: var(--medium); }
+    .tier-WATCH { background: rgba(148,163,184,0.2); color: var(--watch); }
+    .score-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .score-bar-label { width: 140px; font-size: 0.8rem; color: var(--muted); }
+    .score-bar-track {
+      flex: 1;
+      height: 8px;
+      background: var(--surface2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      transition: width 0.5s ease;
+    }
+    .score-bar-val { width: 40px; text-align: right; font-size: 0.8rem; font-weight: 600; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; }
+    tr:hover td { background: var(--surface2); }
+    .pipeline-col {
+      min-width: 260px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .pipeline-col h4 {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .pipeline-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .pipeline-card:hover { border-color: var(--accent); }
+    .pipeline-card .company { font-weight: 600; font-size: 0.9rem; }
+    .pipeline-card .meta { font-size: 0.75rem; color: var(--muted); margin-top: 4px; }
+    .pipeline-board { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 16px; }
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      width: 90%;
+      max-width: 600px;
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+    .modal h2 { margin-bottom: 20px; }
+    .modal-actions { display: flex; gap: 12px; margin-top: 20px; justify-content: flex-end; }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      padding: 14px 20px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      z-index: 300;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast.success { border-color: var(--success); }
+    .toast.error { border-color: var(--hot); }
+    .loading { display: inline-block; width: 16px; height: 16px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.6s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .problems-list { list-style: none; margin-top: 12px; }
+    .problems-list li {
+      padding: 8px 12px;
+      background: var(--surface2);
+      border-radius: 6px;
+      margin-bottom: 6px;
+      font-size: 0.85rem;
+      border-left: 3px solid var(--accent);
+    }
+    .api-config {
+      margin-top: 16px;
+      padding: 12px;
+      background: var(--surface2);
+      border-radius: var(--radius);
+      font-size: 0.8rem;
+    }
+    .api-config input { margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">HUNTER</div>
+    <div class="logo-sub">AUTONOMOUS OS</div>
+    <nav>
+      <div class="nav-item active" data-view="dashboard"><span>📊</span> <span>Dashboard</span></div>
+      <div class="nav-item" data-view="scorer"><span>🎯</span> <span>AI Scorer</span></div>
+      <div class="nav-item" data-view="pipeline"><span>📋</span> <span>Pipeline</span></div>
+      <div class="nav-item" data-view="outreach"><span>✉️</span> <span>Outreach</span></div>
+      <div class="nav-item" data-view="analytics"><span>📈</span> <span>Analytics</span></div>
+    </nav>
+    <div class="status-bar">
+      <div><span class="status-dot" id="statusDot"></span><span id="statusText">Connecting...</span></div>
+      <div class="api-config">
+        <label>API URL</label>
+        <input type="text" id="apiUrlInput" value="http://localhost:3001/api">
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <!-- Dashboard -->
+    <section class="view active" id="view-dashboard">
+      <h1>Command Center</h1>
+      <p class="subtitle">Real-time revenue intelligence overview</p>
+      <div class="grid grid-4" id="dashboardStats"></div>
+      <div class="grid grid-2" style="margin-top:24px">
+        <div class="card">
+          <h3>Hot Leads</h3>
+          <div id="hotLeadsList"></div>
+        </div>
+        <div class="card">
+          <h3>Pipeline by Stage</h3>
+          <div id="stageBreakdown"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Scorer -->
+    <section class="view" id="view-scorer">
+      <h1>AI Scorer</h1>
+      <p class="subtitle">Paste a company URL — Gemini reads the site and scores across 7 dimensions</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="form-group">
+            <label>Company Name *</label>
+            <input type="text" id="scoreCompany" placeholder="Acme Manufacturing">
+          </div>
+          <div class="form-group">
+            <label>Website URL</label>
+            <input type="url" id="scoreUrl" placeholder="https://acme.com">
+          </div>
+          <div class="form-group">
+            <label>Industry</label>
+            <select id="scoreIndustry"></select>
+          </div>
+          <div class="form-group">
+            <label>Location</label>
+            <input type="text" id="scoreLocation" placeholder="Detroit, MI">
+          </div>
+          <div class="form-group">
+            <label>Employee Count</label>
+            <input type="number" id="scoreEmployees" placeholder="150" value="50">
+          </div>
+          <button class="btn btn-primary" id="btnScore" onclick="runAutoScore()">Auto-Score Company</button>
+        </div>
+        <div class="card" id="scoreResults" style="display:none">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+            <h3>Score Results</h3>
+            <span class="tier-badge" id="scoreTier"></span>
+          </div>
+          <div class="value" id="scoreTotal" style="margin-bottom:16px"></div>
+          <div id="scoreBreakdown"></div>
+          <ul class="problems-list" id="scoreProblems"></ul>
+          <p id="scoreDiagnostic" style="margin-top:12px;font-size:0.85rem;color:var(--muted)"></p>
+          <button class="btn btn-primary" style="margin-top:16px" onclick="saveScoredLead()">Save as Lead</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pipeline -->
+    <section class="view" id="view-pipeline">
+      <h1>Pipeline</h1>
+      <p class="subtitle">Drag-free kanban — click a card to edit</p>
+      <div style="margin-bottom:16px;display:flex;gap:12px">
+        <button class="btn btn-primary" onclick="openNewLeadModal()">+ New Lead</button>
+        <button class="btn btn-secondary" onclick="loadLeads()">Refresh</button>
+      </div>
+      <div class="pipeline-board" id="pipelineBoard"></div>
+    </section>
+
+    <!-- Outreach -->
+    <section class="view" id="view-outreach">
+      <h1>Outreach Engine</h1>
+      <p class="subtitle">One-click batch outreach + automatic engagement tracking via Resend webhooks</p>
+
+      <div class="batch-bar">
+        <span class="label">Batch send:</span>
+        <button class="btn btn-hot btn-sm" onclick="previewBatch('HOT')">Preview HOT</button>
+        <button class="btn btn-hot btn-sm" onclick="sendBatch('HOT')">Send HOT</button>
+        <button class="btn btn-high btn-sm" onclick="previewBatch('HIGH')">Preview HIGH</button>
+        <button class="btn btn-high btn-sm" onclick="sendBatch('HIGH')">Send HIGH</button>
+        <button class="btn btn-secondary btn-sm" onclick="sendBatch('HOT,HIGH')">Send HOT + HIGH</button>
+        <span id="batchStatus" style="color:var(--muted);font-size:0.8rem;margin-left:auto"></span>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 style="margin-bottom:16px">Single Outreach</h3>
+          <div class="form-group">
+            <label>Select Lead</label>
+            <select id="outreachLead" onchange="loadOutreachTemplate()"></select>
+          </div>
+          <div class="form-group">
+            <label>Recipient Email *</label>
+            <input type="email" id="outreachTo" placeholder="decisionmaker@company.com">
+          </div>
+          <div class="form-group">
+            <label>Strategy</label>
+            <select id="outreachStrategy"></select>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" id="outreachSubject">
+          </div>
+          <div class="form-group">
+            <label>Body</label>
+            <textarea id="outreachBody"></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="sendOutreachEmail()">Send Outreach</button>
+        </div>
+        <div class="card">
+          <h3>Outreach Log & Engagement</h3>
+          <p style="color:var(--muted);font-size:0.8rem;margin:8px 0">Opens/clicks auto-update pipeline via Resend webhook</p>
+          <div id="outreachLogList" style="margin-top:12px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytics -->
+    <section class="view" id="view-analytics">
+      <h1>Analytics</h1>
+      <p class="subtitle">Pipeline value, win rate, and strategy performance</p>
+      <div class="grid grid-4" id="analyticsStats"></div>
+      <div class="grid grid-2" style="margin-top:24px">
+        <div class="card">
+          <h3>By Industry</h3>
+          <div id="analyticsIndustry"></div>
+        </div>
+        <div class="card">
+          <h3>By Strategy</h3>
+          <div id="analyticsStrategy"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lead Modal -->
+  <div class="modal-overlay" id="leadModal">
+    <div class="modal">
+      <h2 id="modalTitle">New Lead</h2>
+      <input type="hidden" id="modalLeadId">
+      <div class="form-group">
+        <label>Company *</label>
+        <input type="text" id="modalCompany">
+      </div>
+      <div class="form-group">
+        <label>Location *</label>
+        <input type="text" id="modalLocation">
+      </div>
+      <div class="form-group">
+        <label>Industry</label>
+        <select id="modalIndustry"></select>
+      </div>
+      <div class="form-group">
+        <label>URL</label>
+        <input type="url" id="modalUrl">
+      </div>
+      <div class="form-group">
+        <label>Decision Maker</label>
+        <input type="text" id="modalDecisionMaker" value="Plant Manager">
+      </div>
+      <div class="form-group">
+        <label>Stage</label>
+        <select id="modalStage">
+          <option>New Opportunity</option>
+          <option>Diagnostic Ready</option>
+          <option>Outreach Sent</option>
+          <option>Meeting Booked</option>
+          <option>Proposal Active</option>
+          <option>Closed Won / Client</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Notes</label>
+        <textarea id="modalNotes"></textarea>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-danger btn-sm" id="btnDeleteLead" onclick="deleteLead()" style="margin-right:auto;display:none">Delete</button>
+        <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+        <button class="btn btn-primary" onclick="saveLeadFromModal()">Save Lead</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- Batch Preview Modal -->
+  <div class="modal-overlay" id="batchModal">
+    <div class="modal">
+      <h2 id="batchModalTitle">Batch Preview</h2>
+      <p id="batchModalSub" style="color:var(--muted);margin-bottom:12px"></p>
+      <div class="preview-list" id="batchPreviewList"></div>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" onclick="closeBatchModal()">Cancel</button>
+        <button class="btn btn-primary" id="batchConfirmBtn" onclick="confirmBatchSend()">Send All</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ─── API INTEGRATION ──────────────────────────────────────────────
+    function getApiBase() {
+      return document.getElementById('apiUrlInput').value.replace(/\/$/, '');
+    }
+
+    async function apiCall(endpoint, options = {}) {
+      const res = await fetch(`${getApiBase()}${endpoint}`, {
+        headers: { 'Content-Type': 'application/json', ...options.headers },
+        ...options
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'API error');
+      return data;
+    }
+
+    async function autoScoreCompany(company, url, industry, location, employeeCount) {
+      return apiCall('/score', {
+        method: 'POST',
+        body: JSON.stringify({ company, url, industry, location, employeeCount })
+      });
+    }
+
+    async function saveLead(leadData) {
+      return apiCall('/leads', {
+        method: 'POST',
+        body: JSON.stringify(leadData)
+      });
+    }
+
+    async function fetchLeads() {
+      return apiCall('/leads');
+    }
+
+    async function updateLead(id, updates) {
+      return apiCall(`/leads/${id}`, {
+        method: 'PUT',
+        body: JSON.stringify(updates)
+      });
+    }
+
+    async function deleteLeadApi(id) {
+      return apiCall(`/leads/${id}`, { method: 'DELETE' });
+    }
+
+    async function sendOutreach(leadId, to, subject, body, strategy) {
+      return apiCall('/outreach/send', {
+        method: 'POST',
+        body: JSON.stringify({ leadId, to, subject, body, strategy })
+      });
+    }
+
+    async function previewBatchOutreach(tiers) {
+      const q = Array.isArray(tiers) ? tiers.join(',') : tiers;
+      return apiCall(`/outreach/batch/preview?tiers=${q}`);
+    }
+
+    async function sendBatchOutreach(tiers, dryRun = false) {
+      const tierList = typeof tiers === 'string' && tiers.includes(',') ? tiers.split(',') : [tiers];
+      return apiCall('/outreach/batch', {
+        method: 'POST',
+        body: JSON.stringify({ tiers: tierList, dryRun })
+      });
+    }
+
+    let pendingBatchTiers = null;
+
+    async function fetchAnalytics() {
+      return apiCall('/analytics');
+    }
+
+    async function fetchOutreachLogs() {
+      return apiCall('/outreach/logs');
+    }
+
+    async function fetchConfig() {
+      return apiCall('/config');
+    }
+
+    // ─── STATE ──────────────────────────────────────────────────────
+    let leads = [];
+    let config = { industries: [], strategies: [], scoringDimensions: {} };
+    let lastScoreResult = null;
+    const STAGES = ['New Opportunity', 'Diagnostic Ready', 'Outreach Sent', 'Meeting Booked', 'Proposal Active', 'Closed Won / Client'];
+
+    // ─── NAVIGATION ─────────────────────────────────────────────────
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+        document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+        item.classList.add('active');
+        document.getElementById(`view-${item.dataset.view}`).classList.add('active');
+        if (item.dataset.view === 'pipeline') loadLeads();
+        if (item.dataset.view === 'analytics') loadAnalytics();
+        if (item.dataset.view === 'outreach') { loadOutreachLeads(); loadOutreachLogs(); }
+        if (item.dataset.view === 'dashboard') loadDashboard();
+      });
+    });
+
+    // ─── TOAST ──────────────────────────────────────────────────────
+    function showToast(msg, type = 'success') {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.className = `toast show ${type}`;
+      setTimeout(() => t.classList.remove('show'), 3000);
+    }
+
+    // ─── HEALTH CHECK ───────────────────────────────────────────────
+    async function checkHealth() {
+      try {
+        const health = await apiCall('/health');
+        document.getElementById('statusDot').className = 'status-dot online';
+        document.getElementById('statusText').textContent = 'API Online';
+        return health;
+      } catch {
+        document.getElementById('statusDot').className = 'status-dot offline';
+        document.getElementById('statusText').textContent = 'API Offline';
+        return null;
+      }
+    }
+
+    // ─── DASHBOARD ──────────────────────────────────────────────────
+    async function loadDashboard() {
+      try {
+        const analytics = await fetchAnalytics();
+        document.getElementById('dashboardStats').innerHTML = `
+          <div class="card"><h3>Total Leads</h3><div class="value">${analytics.totalLeads}</div></div>
+          <div class="card"><h3>Pipeline Value</h3><div class="value">$${(analytics.pipelineValue / 1000).toFixed(0)}K</div></div>
+          <div class="card"><h3>Hot Leads</h3><div class="value">${analytics.hotCount}</div></div>
+          <div class="card"><h3>Win Rate</h3><div class="value">${analytics.winRate.toFixed(1)}%</div></div>
+        `;
+        document.getElementById('hotLeadsList').innerHTML = analytics.hotLeads.length
+          ? analytics.hotLeads.map(l => `<div class="pipeline-card" onclick="openEditLead('${l.id}')"><div class="company">🔥 ${l.company}</div><div class="meta">Score: ${l.score}</div></div>`).join('')
+          : '<p style="color:var(--muted);font-size:0.85rem">No hot leads yet</p>';
+        document.getElementById('stageBreakdown').innerHTML = Object.entries(analytics.byStage || {})
+          .map(([stage, count]) => `<div class="score-bar"><span class="score-bar-label">${stage}</span><div class="score-bar-track"><div class="score-bar-fill" style="width:${Math.min(100, count * 20)}%"></div></div><span class="score-bar-val">${count}</span></div>`).join('');
+      } catch (e) {
+        document.getElementById('dashboardStats').innerHTML = '<div class="card"><p style="color:var(--muted)">Connect API to view dashboard</p></div>';
+      }
+    }
+
+    // ─── AI SCORER ──────────────────────────────────────────────────
+    async function runAutoScore() {
+      const company = document.getElementById('scoreCompany').value.trim();
+      if (!company) return showToast('Company name required', 'error');
+
+      const btn = document.getElementById('btnScore');
+      btn.disabled = true;
+      btn.innerHTML = '<span class="loading"></span> Scoring...';
+
+      try {
+        const result = await autoScoreCompany(
+          company,
+          document.getElementById('scoreUrl').value,
+          document.getElementById('scoreIndustry').value,
+          document.getElementById('scoreLocation').value,
+          document.getElementById('scoreEmployees').value
+        );
+        lastScoreResult = result;
+        displayScoreResults(result);
+        showToast('Company scored successfully');
+      } catch (e) {
+        showToast(e.message, 'error');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Auto-Score Company';
+      }
+    }
+
+    function displayScoreResults(result) {
+      document.getElementById('scoreResults').style.display = 'block';
+      document.getElementById('scoreTotal').textContent = result.score;
+      document.getElementById('scoreTier').textContent = result.tier;
+      document.getElementById('scoreTier').className = `tier-badge tier-${result.tier}`;
+      document.getElementById('scoreDiagnostic').textContent = result.diagnostic;
+
+      const dims = config.scoringDimensions || {};
+      document.getElementById('scoreBreakdown').innerHTML = Object.entries(result.scoreBreakdown).map(([key, val]) => {
+        const max = dims[key]?.max || 25;
+        const label = dims[key]?.label || key;
+        return `<div class="score-bar"><span class="score-bar-label">${label}</span><div class="score-bar-track"><div class="score-bar-fill" style="width:${(val / max) * 100}%"></div></div><span class="score-bar-val">${val}</span></div>`;
+      }).join('');
+
+      document.getElementById('scoreProblems').innerHTML = (result.detectedProblems || []).map(p => `<li>${p}</li>`).join('');
+    }
+
+    async function saveScoredLead() {
+      if (!lastScoreResult) return;
+      try {
+        await saveLead({
+          company: document.getElementById('scoreCompany').value,
+          url: document.getElementById('scoreUrl').value,
+          industry: document.getElementById('scoreIndustry').value,
+          location: document.getElementById('scoreLocation').value || 'Unknown',
+          employeeCount: document.getElementById('scoreEmployees').value,
+          scoreBreakdown: lastScoreResult.scoreBreakdown,
+          detectedProblems: lastScoreResult.detectedProblems,
+          evidenceSignals: lastScoreResult.evidenceSignals,
+          matchedService: lastScoreResult.recommendedService,
+          diagnostic: lastScoreResult.diagnostic,
+          outreachStrategy: lastScoreResult.outreachStrategy,
+          outreachSubject: lastScoreResult.outreachSubject,
+          outreachBody: lastScoreResult.outreachBody
+        });
+        showToast('Lead saved to pipeline');
+        lastScoreResult = null;
+      } catch (e) {
+        showToast(e.message, 'error');
+      }
+    }
+
+    // ─── PIPELINE ───────────────────────────────────────────────────
+    async function loadLeads() {
+      try {
+        leads = await fetchLeads();
+        renderPipeline();
+      } catch (e) {
+        showToast(e.message, 'error');
+      }
+    }
+
+    function renderPipeline() {
+      const board = document.getElementById('pipelineBoard');
+      board.innerHTML = STAGES.map(stage => {
+        const stageLeads = leads.filter(l => l.stage === stage);
+        return `<div class="pipeline-col"><h4>${stage} (${stageLeads.length})</h4>${stageLeads.map(l => `
+          <div class="pipeline-card" onclick="openEditLead('${l.id}')">
+            <div class="company">${l.company}</div>
+            <div class="meta">${l.location} · <span class="tier-badge tier-${l.tier}">${l.tier}</span> · ${l.score}</div>
+          </div>`).join('')}</div>`;
+      }).join('');
+    }
+
+    function openNewLeadModal() {
+      document.getElementById('modalTitle').textContent = 'New Lead';
+      document.getElementById('modalLeadId').value = '';
+      document.getElementById('modalCompany').value = '';
+      document.getElementById('modalLocation').value = '';
+      document.getElementById('modalUrl').value = '';
+      document.getElementById('modalDecisionMaker').value = 'Plant Manager';
+      document.getElementById('modalStage').value = 'New Opportunity';
+      document.getElementById('modalNotes').value = '';
+      document.getElementById('btnDeleteLead').style.display = 'none';
+      document.getElementById('leadModal').classList.add('open');
+    }
+
+    function openEditLead(id) {
+      const lead = leads.find(l => l.id === id);
+      if (!lead) return;
+      document.getElementById('modalTitle').textContent = lead.company;
+      document.getElementById('modalLeadId').value = lead.id;
+      document.getElementById('modalCompany').value = lead.company;
+      document.getElementById('modalLocation').value = lead.location;
+      document.getElementById('modalIndustry').value = lead.industry || '';
+      document.getElementById('modalUrl').value = lead.url || '';
+      document.getElementById('modalDecisionMaker').value = lead.decision_maker || '';
+      document.getElementById('modalStage').value = lead.stage;
+      document.getElementById('modalNotes').value = lead.notes || '';
+      document.getElementById('btnDeleteLead').style.display = 'block';
+      document.getElementById('leadModal').classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('leadModal').classList.remove('open');
+    }
+
+    async function saveLeadFromModal() {
+      const id = document.getElementById('modalLeadId').value;
+      const data = {
+        company: document.getElementById('modalCompany').value,
+        location: document.getElementById('modalLocation').value,
+        industry: document.getElementById('modalIndustry').value,
+        url: document.getElementById('modalUrl').value,
+        decisionMaker: document.getElementById('modalDecisionMaker').value,
+        stage: document.getElementById('modalStage').value,
+        notes: document.getElementById('modalNotes').value
+      };
+      if (!data.company || !data.location) return showToast('Company and location required', 'error');
+
+      try {
+        if (id) {
+          await updateLead(id, data);
+        } else {
+          await saveLead(data);
+        }
+        closeModal();
+        loadLeads();
+        showToast('Lead saved');
+      } catch (e) {
+        showToast(e.message, 'error');
+      }
+    }
+
+    async function deleteLead() {
+      const id = document.getElementById('modalLeadId').value;
+      if (!id || !confirm('Delete this lead?')) return;
+      try {
+        await deleteLeadApi(id);
+        closeModal();
+        loadLeads();
+        showToast('Lead deleted');
+      } catch (e) {
+        showToast(e.message, 'error');
+      }
+    }
+
+    // ─── OUTREACH ───────────────────────────────────────────────────
+    async function loadOutreachLeads() {
+      try {
+        leads = await fetchLeads();
+        const select = document.getElementById('outreachLead');
+        select.innerHTML = '<option value="">Select a lead...</option>' +
+          leads.map(l => `<option value="${l.id}">${l.company} (${l.tier})</option>`).join('');
+      } catch (e) { /* silent */ }
+    }
+
+    function loadOutreachTemplate() {
+      const lead = leads.find(l => l.id === document.getElementById('outreachLead').value);
+      if (!lead) return;
+      document.getElementById('outreachStrategy').value = lead.outreach_strategy || 'A';
+      document.getElementById('outreachSubject').value = lead.outreach_subject || '';
+      document.getElementById('outreachBody').value = lead.outreach_body || '';
+      const email = (lead.decision_maker || '').includes('@') ? lead.decision_maker : '';
+      if (email) document.getElementById('outreachTo').value = email;
+    }
+
+    async function previewBatch(tiers) {
+      try {
+        const data = await previewBatchOutreach(tiers);
+        pendingBatchTiers = typeof tiers === 'string' && tiers.includes(',') ? tiers.split(',') : [tiers];
+        document.getElementById('batchModalTitle').textContent = `Send to ${data.count} leads`;
+        document.getElementById('batchModalSub').textContent = `Tiers: ${data.tiers.join(', ')} — review before sending`;
+        document.getElementById('batchPreviewList').innerHTML = data.leads.length
+          ? data.leads.map(l => `<div class="preview-item"><span><strong>${l.company}</strong> <span class="tier-badge tier-${l.tier}">${l.tier}</span> (${l.score})</span><span style="color:var(--muted)">${l.email}</span></div>`).join('')
+          : '<p style="color:var(--muted)">No eligible leads — all may already be in Outreach Sent stage or missing emails.</p>';
+        document.getElementById('batchConfirmBtn').style.display = data.count ? 'inline-block' : 'none';
+        document.getElementById('batchModal').classList.add('open');
+      } catch (e) {
+        showToast(e.message, 'error');
+      }
+    }
+
+    function closeBatchModal() {
+      document.getElementById('batchModal').classList.remove('open');
+      pendingBatchTiers = null;
+    }
+
+    async function confirmBatchSend() {
+      if (!pendingBatchTiers) return;
+      const btn = document.getElementById('batchConfirmBtn');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      try {
+        const result = await sendBatchOutreach(pendingBatchTiers.join(','), false);
+        closeBatchModal();
+        showToast(`Sent ${result.sent.length}, failed ${result.failed.length}`);
+        document.getElementById('batchStatus').textContent = `Last batch: ${result.sent.length} sent`;
+        loadOutreachLogs();
+        loadOutreachLeads();
+      } catch (e) {
+        showToast(e.message, 'error');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send All';
+      }
+    }
+
+    async function sendBatch(tiers) {
+      if (!confirm(`Send outreach to all ${tiers} leads with valid emails?`)) return;
+      const status = document.getElementById('batchStatus');
+      status.textContent = 'Sending...';
+      try {
+        const tierArg = typeof tiers === 'string' && tiers.includes(',') ? tiers.split(',') : tiers;
+        const result = await sendBatchOutreach(tierArg, false);
+        showToast(`Sent ${result.sent.length}, failed ${result.failed.length}`);
+        status.textContent = `Last batch: ${result.sent.length} sent`;
+        loadOutreachLogs();
+        loadOutreachLeads();
+      } catch (e) {
+        showToast(e.message, 'error');
+        status.textContent = '';
+      }
+    }
+
+    function engagementBadge(status, openCount, clickCount) {
+      if (status === 'clicked' || clickCount > 0) return '<span class="engagement engagement-clicked">CLICKED</span>';
+      if (status === 'opened' || openCount > 0) return `<span class="engagement engagement-opened">OPENED${openCount > 1 ? ' ' + openCount + 'x' : ''}</span>`;
+      if (status === 'bounced') return '<span class="engagement engagement-bounced">BOUNCED</span>';
+      return '';
+    }
+
+    async function sendOutreachEmail() {
+      const leadId = document.getElementById('outreachLead').value;
+      const lead = leads.find(l => l.id === leadId);
+      const to = document.getElementById('outreachTo').value || (lead?.decision_maker?.includes('@') ? lead.decision_maker : '');
+      if (!leadId || !to) return showToast('Select lead and enter email', 'error');
+
+      try {
+        await sendOutreach(leadId, to,
+          document.getElementById('outreachSubject').value,
+          document.getElementById('outreachBody').value,
+          document.getElementById('outreachStrategy').value
+        );
+        showToast('Outreach sent!');
+        loadOutreachLogs();
+        loadOutreachLeads();
+      } catch (e) {
+        showToast(e.message, 'error');
+      }
+    }
+
+    async function loadOutreachLogs() {
+      try {
+        if (!leads.length) leads = await fetchLeads();
+        const logs = await fetchOutreachLogs();
+        const leadMap = Object.fromEntries(leads.map(l => [l.id, l.company]));
+        document.getElementById('outreachLogList').innerHTML = logs.length
+          ? `<table><tr><th>Company</th><th>Subject</th><th>Status</th><th>Engagement</th><th>Sent</th></tr>${logs.map(l => `<tr><td>${leadMap[l.lead_id] || '—'}</td><td>${l.subject?.slice(0,40) || '—'}</td><td>${l.status}</td><td>${engagementBadge(l.status, l.open_count, l.click_count)}</td><td>${new Date(l.sent_at).toLocaleDateString()}</td></tr>`).join('')}</table>`
+          : '<p style="color:var(--muted);font-size:0.85rem">No outreach sent yet</p>';
+      } catch (e) { /* silent */ }
+    }
+
+    // ─── ANALYTICS ──────────────────────────────────────────────────
+    async function loadAnalytics() {
+      try {
+        const a = await fetchAnalytics();
+        document.getElementById('analyticsStats').innerHTML = `
+          <div class="card"><h3>Total Leads</h3><div class="value">${a.totalLeads}</div></div>
+          <div class="card"><h3>Active Pipeline</h3><div class="value">${a.activeCount}</div></div>
+          <div class="card"><h3>Avg Deal Size</h3><div class="value">$${(a.avgDealSize / 1000).toFixed(0)}K</div></div>
+          <div class="card"><h3>Closed Won</h3><div class="value">${a.wonCount}</div></div>
+        `;
+        document.getElementById('analyticsIndustry').innerHTML = Object.entries(a.byIndustry || {})
+          .map(([ind, d]) => `<div class="score-bar"><span class="score-bar-label">${ind}</span><div class="score-bar-track"><div class="score-bar-fill" style="width:${Math.min(100, d.count * 15)}%"></div></div><span class="score-bar-val">${d.count} · $${(d.totalValue/1000).toFixed(0)}K</span></div>`).join('');
+        document.getElementById('analyticsStrategy').innerHTML = Object.entries(a.byStrategy || {})
+          .map(([s, d]) => `<div class="score-bar"><span class="score-bar-label">Strategy ${s}</span><div class="score-bar-track"><div class="score-bar-fill" style="width:${d.count ? (d.won/d.count*100) : 0}%"></div></div><span class="score-bar-val">${d.won}/${d.count}</span></div>`).join('');
+      } catch (e) {
+        showToast(e.message, 'error');
+      }
+    }
+
+    // ─── INIT ───────────────────────────────────────────────────────
+    async function init() {
+      document.getElementById('apiUrlInput').addEventListener('change', () => {
+        checkHealth();
+        loadDashboard();
+      });
+
+      await checkHealth();
+
+      try {
+        config = await fetchConfig();
+        const industryOptions = config.industries.map(i => `<option value="${i}">${i}</option>`).join('');
+        document.getElementById('scoreIndustry').innerHTML = industryOptions;
+        document.getElementById('modalIndustry').innerHTML = industryOptions;
+        document.getElementById('outreachStrategy').innerHTML = config.strategies.map(s => `<option value="${s.id}">${s.id}: ${s.label}</option>`).join('');
+      } catch { /* config optional when API offline */ }
+
+      loadDashboard();
+    }
+
+    init();
+  </script>
+</body>
+</html>

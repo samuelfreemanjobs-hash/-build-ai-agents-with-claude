@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-10",
+  "region": "Metro Detroit",
+  "focusedVertical": "Precision CNC Machining, Custom Molded Rubber/Elastomers, Multi-Material Fixture Fabrication & Robotic Welding Assemblies",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 122,
+    "estimatedValueRange": "$48,000 – $86,500",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Fitzpatrick Manufacturing Co.",
+      "url": "https://fitzpatrickmfg.com",
+      "location": "Sterling Heights, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 180,
+      "decisionMaker": "VP of Manufacturing / Plant Operations Director",
+      "score": 94,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 24,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "High-mix aerospace/defense components and prototype robotics tooling across tight-tolerance milling and turning cells",
+        "Complex multi-axis CAD models and first-article CMM validation queues create multi-shift tracking friction",
+        "GD&T quote estimation over email adds 24–48 hr RFQ delay"
+      ],
+      "evidenceSignals": "Flex-N-Gate Troy Materials & Planning Operations. Precision supplier schedule synchronization critical for delivery penalties.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "Multi-Axis Spindle Utilization & CMM Inspection Queue Visualizer (1-page framework)",
+      "diagnostic": "🔥 Fitzpatrick scores 94 — HOT tier. Flight-critical aerospace vs robotics parts changeovers without spindle telemetry obscure capacity. CMM buyoff WIP queues before deburring and plating.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Sterling Heights plant: tracking CNC spindle capacity & CMM inspection queue",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nRunning high-precision CNC milling and turning across aerospace, robotics, and automotive programs in Sterling Heights usually means operations leads spend significant time walking the floor to check CMM inspection queues and spindle availability.\n\nI built a 1-screen Spindle Capacity & CMM Queue board concept tailored for precision contract machine shops that visualizes machine completion times and automates first-article QA sign-offs.\n\nWould you be open to a 2-minute review of the visual framework to see if it's helpful for your manufacturing team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-10 — priority #1. Send today."
+    },
+    {
+      "company": "Wayne Rubber",
+      "url": "https://waynerubber.com",
+      "location": "Wixom, MI",
+      "industry": "Precision Injection Molding",
+      "employeeCount": 110,
+      "decisionMaker": "Plant Operations Manager / Technical Director",
+      "score": 92,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 19,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Compression, transfer, and injection molding across 12+ elastomer families for Tier 1/2 automotive and industrial",
+        "Raw compound batches, cure press cycles, rubber-to-metal substrate prep, and cryogenic deflashing create continuous shift-log handoffs",
+        "Compound lot shelf-life and expiration tracking on spreadsheets creates batch scrap risk"
+      ],
+      "evidenceSignals": "29445 Wall Street, Wixom. Metal Master's Detroit Regional Report — lot traceability and zero-defect JIT for sealing components.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Rubber Molding Cure Cycle & Compound Lot Traceability Log Mockup",
+      "diagnostic": "🔥 Wayne Rubber scores 92 — HOT tier. Metal insert primer staging vs press molding schedules creates WIP clutter. Post-cure bake and durometer checks slow lot release documentation.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Wall Street facility: elastomer compound lot tracking & cure press turnover",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nProducing custom molded rubber seals, vibration mounts, and rubber-to-metal bonded parts across 12+ elastomer families in Wixom often makes it time-consuming to balance raw compound shelf-life against daily press cure schedules.\n\nI put together a quick mockup of a Compound Batch & Press Cure Tracker designed for custom rubber molders to automate lot traceability and monitor press cycle downtime.\n\nLet me know if you'd like me to send over the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-10 — priority #2. Send today."
+    },
+    {
+      "company": "Wetzel Tool & Engineering",
+      "url": "https://wetzelengineering.com",
+      "location": "Wixom, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 60,
+      "decisionMaker": "Operations Director / General Manager",
+      "score": 88,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 13,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Custom tooling, specialty fabrication, certified welding (aluminum, stainless, cast iron) for industrial machinery accounts",
+        "Multi-process routing (saw cut → CNC → weld fit-up → finish grinding) relies on manual shop travelers and whiteboard updates",
+        "Job progress between machining cells and welding bays fragmented"
+      ],
+      "evidenceSignals": "High-mix Oakland County custom job shop. Multi-material welding certifications.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Custom Tooling Build Milestone & Weld Inspection Workflow Map",
+      "diagnostic": "🟠 Wetzel scores 88 — HIGH tier. Part routing visibility between machining and welding bays requires daily supervisor walk-throughs.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Wixom shop: multi-material welding flow & tooling build milestones",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nHandling precision machining alongside custom aluminum, stainless, and cast-iron fabrication in Wixom usually means shop leads spend extra time tracking job progress between machining cells and welding bays.\n\nI created a simple 1-page Tooling & Fabrication Milestone layout designed for custom job shops that tracks part routing and visualizes assembly readiness.\n\nHappy to send over the 1-page framework if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-10 — priority #3"
+    },
+    {
+      "company": "Classic Welding, Inc.",
+      "url": "https://classicweldinginc.com",
+      "location": "Warren, MI",
+      "industry": "Heavy Steel Fabrication",
+      "employeeCount": 85,
+      "decisionMaker": "Manufacturing Operations Lead / Quality Superintendent",
+      "score": 89,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "In-house design and machining of non-standard welding fixtures alongside robotic and manual weld assembly — ISO 9001:2015",
+        "Balancing toolroom fixture builds against active production weld defect logging",
+        "Randstad Warren Assembly & Welding Market — high line turnover demands standardized visual weld inspection logging"
+      ],
+      "evidenceSignals": "Warren strategic location. Robotic weld assembly with custom fixture design in-house.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Robotic Weld Cell Scrap & Fixture Maintenance Balance Sheet",
+      "diagnostic": "🟠 Classic Welding scores 89 — HIGH tier. Fixture build progress vs production weld defect root cause logging creates daily coordination friction.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Warren facility: custom welding fixture build tracking & weld defect logs",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nDesigning custom welding fixtures while running robotic weld assembly lines in Warren often makes it challenging to balance toolroom build progress against active production weld defect logging.\n\nI designed a lightweight Weld Fixture & Cell QA Balance board concept that captures weld defect root causes and monitors fixture maintenance intervals in real time.\n\nWould you like me to share the 1-page concept dashboard?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-10 — priority #4"
+    }
+  ]
+}

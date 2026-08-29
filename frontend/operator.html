@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUNTER — Operator Command Center</title>
+  <style>
+    :root { --bg:#0a0e17; --surface:#111827; --surface2:#1a2234; --border:#2a3548; --text:#e8edf5; --muted:#8896ab; --accent:#3b82f6; --hot:#ef4444; --success:#22c55e; --warn:#eab308; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--text); }
+    .header { padding:24px 32px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; }
+    .header h1 { font-size:1.4rem; }
+    .header .date { color:var(--muted); font-size:0.9rem; }
+    .health { display:flex; align-items:center; gap:8px; }
+    .health-dot { width:10px; height:10px; border-radius:50%; background:var(--success); }
+    .container { max-width:1400px; margin:0 auto; padding:24px 32px; }
+    .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px; }
+    .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    @media(max-width:900px) { .grid-4,.grid-2 { grid-template-columns:1fr; } }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:20px; }
+    .card h3 { font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px; }
+    .card .val { font-size:2rem; font-weight:700; }
+    .card .sub { font-size:0.8rem; color:var(--muted); margin-top:4px; }
+    .alert { padding:12px 16px; border-radius:8px; margin-bottom:8px; font-size:0.85rem; display:flex; justify-content:space-between; align-items:center; }
+    .alert-critical { background:rgba(239,68,68,0.15); border-left:3px solid var(--hot); }
+    .alert-high { background:rgba(59,130,246,0.15); border-left:3px solid var(--accent); }
+    .alert-medium { background:rgba(234,179,8,0.1); border-left:3px solid var(--warn); }
+    .priority-item { padding:10px 14px; background:var(--surface2); border-radius:8px; margin-bottom:6px; font-size:0.85rem; }
+    .priority-item .action { color:var(--accent); font-size:0.8rem; margin-top:4px; }
+    .task { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid var(--border); font-size:0.85rem; }
+    .task input { accent-color:var(--accent); }
+    .task.done { opacity:0.5; text-decoration:line-through; }
+    .nav-links { display:flex; gap:16px; }
+    .nav-links a { color:var(--muted); text-decoration:none; font-size:0.85rem; }
+    .nav-links a:hover { color:var(--text); }
+    .progress-bar { height:6px; background:var(--surface2); border-radius:3px; margin-top:8px; overflow:hidden; }
+    .progress-fill { height:100%; background:linear-gradient(90deg,var(--accent),#6366f1); border-radius:3px; transition:width 0.5s; }
+    .btn { padding:8px 16px; background:var(--accent); color:white; border:none; border-radius:8px; cursor:pointer; font-size:0.85rem; }
+    .btn:hover { opacity:0.9; }
+    .loading { text-align:center; padding:60px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1 id="greeting">Operator Command Center</h1>
+      <div class="date" id="today"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:24px">
+      <div class="health"><span class="health-dot" id="healthDot"></span><span id="healthScore">—</span></div>
+      <div class="nav-links">
+        <a href="/hunter_crm.html">CRM</a>
+        <a href="/index.html">Landing</a>
+        <button class="btn" onclick="loadBriefing()">Refresh</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="content">
+    <div class="loading">Loading daily briefing...</div>
+  </div>
+
+  <script>
+    const API = (localStorage.getItem('hunterApi') || window.location.origin + '/api');
+
+    async function loadBriefing() {
+      const el = document.getElementById('content');
+      try {
+        const res = await fetch(API + '/operator/daily');
+        if (!res.ok) throw new Error('API unavailable — configure Supabase');
+        const b = await res.json();
+
+        document.getElementById('greeting').textContent = b.greeting;
+        document.getElementById('today').textContent = b.date;
+        document.getElementById('healthScore').textContent = 'Health: ' + b.metrics.score + '/100';
+        document.getElementById('healthDot').style.background = b.metrics.score >= 70 ? 'var(--success)' : b.metrics.score >= 40 ? 'var(--warn)' : 'var(--hot)';
+
+        const rev = b.revenue;
+        const pipe = b.pipeline;
+        const launch = b.launch || { percent: 0, remaining: [] };
+        const revenueProgress = Math.min(100, rev.progressToTarget || 0);
+        const barProgress = rev.thisMonth > 0 ? revenueProgress : launch.percent;
+        const barLabel = rev.thisMonth > 0
+          ? `${revenueProgress}% of revenue goal`
+          : `Launch readiness · ${launch.completed}/${launch.total}`;
+
+        el.innerHTML = `
+          <div class="grid-4">
+            <div class="card"><h3>${rev.thisMonth > 0 ? 'Revenue This Month' : 'Launch Readiness'}</h3><div class="val">${rev.thisMonth > 0 ? '$' + (rev.thisMonth/1000).toFixed(0) + 'K' : launch.percent + '%'}</div><div class="sub">${rev.thisMonth > 0 ? 'Target: $' + (rev.targetMonthly/1000).toFixed(0) + 'K · ' + revenueProgress + '% of goal' : barLabel}</div><div class="progress-bar" title="${barLabel}"><div class="progress-fill" style="width:${barProgress}%"></div></div></div>
+            <div class="card"><h3>MRR</h3><div class="val">$${(rev.mrr/1000).toFixed(1)}K</div><div class="sub">${rev.mrr > 0 ? 'Retainer revenue' : 'No retainers yet — normal pre-launch'}</div></div>
+            <div class="card"><h3>Pipeline</h3><div class="val">${pipe.total} leads</div><div class="sub">$${(pipe.weightedValue/1000).toFixed(0)}K weighted · ${pipe.hot} hot</div></div>
+            <div class="card"><h3>Outstanding AR</h3><div class="val">$${(rev.outstanding/1000).toFixed(0)}K</div><div class="sub">${rev.overdue > 0 ? '⚠ $' + (rev.overdue/1000).toFixed(0) + 'K overdue' : 'All current'}</div></div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3>Today's Priorities</h3>
+              <div style="margin-top:12px">
+                ${b.priorities.length ? b.priorities.map(p => `
+                  <div class="priority-item">
+                    <strong>${p.company || p.message || p.type}</strong>
+                    ${p.action ? '<div class="action">→ ' + p.action + '</div>' : ''}
+                    ${p.score ? '<div class="action">Score: ' + p.score + '</div>' : ''}
+                  </div>
+                `).join('') : '<p style="color:var(--muted);font-size:0.85rem">No urgent priorities. Run n8n discovery or send outreach.</p>'}
+              </div>
+            </div>
+            <div class="card">
+              <h3>Alerts</h3>
+              <div style="margin-top:12px">
+                ${b.metrics.alerts.length ? b.metrics.alerts.map(a => `
+                  <div class="alert alert-${a.priority}"><span>${a.message}</span></div>
+                `).join('') : '<p style="color:var(--muted);font-size:0.85rem">All clear.</p>'}
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <h3>${rev.thisMonth > 0 ? 'Tasks' : 'Launch Checklist — remaining to 100%'}</h3>
+            <div style="margin-top:12px">
+              ${rev.thisMonth > 0 ? '' : (launch.remaining?.length ? launch.remaining.map(item => `
+                <div class="priority-item"><strong>○</strong> ${item}</div>
+              `).join('') : '<p style="color:var(--muted);font-size:0.85rem">Launch checklist complete.</p>')}
+            </div>
+            <div style="margin-top:12px" id="taskList">
+              ${b.tasks.length ? b.tasks.map(t => `
+                <div class="task" data-id="${t.id}">
+                  <input type="checkbox" onchange="completeTask('${t.id}')" ${t.status === 'done' ? 'checked' : ''}>
+                  <span>${t.title}</span>
+                  <span style="margin-left:auto;color:var(--muted);font-size:0.75rem">${t.priority}</span>
+                </div>
+              `).join('') : (rev.thisMonth > 0 ? '<p style="color:var(--muted);font-size:0.85rem">No pending tasks. <a href="#" onclick="createDefaultTasks();return false" style="color:var(--accent)">Create daily tasks</a></p>' : '')}
+            </div>
+          </div>
+        `;
+      } catch (e) {
+        el.innerHTML = `<div class="card"><h3>Setup Required</h3><p style="margin-top:12px;color:var(--muted)">${e.message}</p><p style="margin-top:12px;font-size:0.85rem">1. Run Supabase migrations<br>2. Set SUPABASE_URL and SUPABASE_ANON_KEY<br>3. Refresh this page</p></div>`;
+      }
+    }
+
+    async function completeTask(id) {
+      await fetch(API + '/tasks/' + id, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ status: 'done' }) });
+    }
+
+    async function createDefaultTasks() {
+      const tasks = [
+        { title: 'Review HOT leads and send outreach', category: 'sales', priority: 'high' },
+        { title: 'Follow up active proposals', category: 'sales', priority: 'high' },
+        { title: 'Check active project delivery status', category: 'delivery', priority: 'medium' },
+        { title: 'Chase overdue invoices', category: 'finance', priority: 'critical' },
+        { title: 'Post 1 LinkedIn piece', category: 'marketing', priority: 'medium' }
+      ];
+      for (const t of tasks) {
+        await fetch(API + '/tasks', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...t, due_date: new Date().toISOString().split('T')[0] }) });
+      }
+      loadBriefing();
+    }
+
+    loadBriefing();
+  </script>
+</body>
+</html>

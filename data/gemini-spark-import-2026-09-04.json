@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-04",
+  "region": "Metro Detroit",
+  "focusedVertical": "Press Automation Fabrication, Tube & Sheet Laser Processing, Automotive VMI Warehousing & Build-to-Print Wire Harnesses",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 84,
+    "estimatedValueRange": "$41,000 – $73,500",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "KRH Industries",
+      "url": "https://krhindustries.com",
+      "location": "Sterling Heights, MI",
+      "industry": "Heavy Steel Fabrication",
+      "employeeCount": 120,
+      "decisionMaker": "Operations Director / General Manager",
+      "score": 94,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 24,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "36,000 sq ft — custom structural weldments and press automation tooling for automotive and aerospace",
+        "ETO workflow: large-scale weldment staging, multi-pass weld inspection logs, post-weld stress-relieving handoffs tracked across disparate shift logs",
+        "Raw steel plate allocation against rapid tooling engineering revisions consumes 6–10 hrs/week of supervisor time"
+      ],
+      "evidenceSignals": "25 years operation. Macomb County hiring for Manufacturing Quality Engineers & Inspectors. 42450 R. Mancini Drive, Sterling Heights.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Structural Weldment Stage-Gate & NDT Inspection Visualizer (1-page framework)",
+      "diagnostic": "🔥 KRH scores 94 — HOT tier. Heavy weldment bay dwell without real-time staging alerts leads to gridlock. Weld QA logs on paper before paint/stress-relief handoffs create documentation latency.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Sterling Heights facility: tracking press automation weldments & inspection handoffs",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nFabricating heavy press automation frames and structural weldments in Sterling Heights usually means floor leads spend substantial time walking the floor to check fit-up progress and coordinate inspection sign-offs before machining.\n\nI built a 1-screen Weldment Staging & Inspection Tracker concept tailored for heavy steel fabricators that logs stage completions and flags bay bottlenecks in real time.\n\nWould you be open to a 2-minute review of the visual framework to see if it's helpful for your operations team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-04 — priority #1. Send today."
+    },
+    {
+      "company": "James Group International",
+      "url": "https://jamesgroupintl.com",
+      "location": "Romulus, MI",
+      "industry": "3PL Warehousing",
+      "employeeCount": 500,
+      "decisionMaker": "VP of Supply Chain & Warehousing / General Manager",
+      "score": 92,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "450,000+ sq ft rail-served logistics complex near DTW — JIT automotive assembly feeds and VMI buffer programs",
+        "Balancing inbound rail car offloading against JIT OEM delivery schedules requires manual reconciliation between rail manifests, warehouse locations, and carrier dispatch",
+        "VMI safety stock monitoring manually creates risk of emergency hot-shot freight when OEM pull rates spike"
+      ],
+      "evidenceSignals": "Rail-to-truck cross-docking. Export packaging. Regional hiring for Logistics & Materials Operations Coordinators.",
+      "matchedService": "3PL Cross-Dock & VMI Buffer Exception Dashboard",
+      "giveBeforeAsk": "VMI Safety Stock Burn-Rate & Rail Dwell Exception Dashboard Mockup",
+      "diagnostic": "🔥 James Group scores 92 — HOT tier. Rail inbound-to-bay transit lag creates 12–24 hr visibility delay. VMI buffer stockouts risk emergency freight runs.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Romulus complex: VMI buffer burn-rates & rail siding turnover",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nOperating your 450,000 sq. ft. rail-served hub in Romulus feeding automotive assembly lines often means dispatch leads spend hours daily monitoring supplier safety stock buffers and tracking rail car staging times.\n\nI put together a quick mockup of a VMI Buffer & Rail Dwell Exception Dashboard designed to flag fast-depleting SKUs and automate dock turnover visibility for automotive accounts.\n\nLet me know if you'd like me to send over the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-04 — priority #2. Send today. Largest facility in pipeline."
+    },
+    {
+      "company": "Troy Laser & Fab LLC",
+      "url": "https://troylaserfab.com",
+      "location": "Warren, MI",
+      "industry": "Heavy Steel Fabrication",
+      "employeeCount": 65,
+      "decisionMaker": "Plant Superintendent / Production Manager",
+      "score": 88,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 13,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "2D flat-sheet laser, tube laser processing, press brake forming, and weld assembly under one roof",
+        "Multi-process routing handoffs (tube laser → deburring → press brake → welding) create WIP tracking blind spots",
+        "Machine changeovers vs downstream welding cell demand difficult to balance"
+      ],
+      "evidenceSignals": "23720 Dequindre Road, Warren. High-mix metal fabricator combining multiple processes.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Tube Laser Cutting Yield & Press Brake WIP Routing Map",
+      "diagnostic": "🟠 Troy Laser scores 88 — HIGH tier. WIP queues between laser cutting and press brake forming lack visibility. Tube nesting yield tracking manual.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Warren facility: tube laser nesting yield & brake WIP flow",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nCombining tube laser cutting with flat laser, press brakes, and weld assembly on Dequindre Road often makes it challenging to balance machine changeovers against downstream welding cell demand.\n\nI created a simple 1-page Routing & Tube Nesting Yield dashboard concept tailored for multi-process fab shops that visualizes WIP queues between laser cutting and press brake forming.\n\nHappy to send over the 1-page layout if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-04 — priority #3"
+    },
+    {
+      "company": "Bappca",
+      "url": "https://bappca.com",
+      "location": "Royal Oak, MI",
+      "industry": "Wire Harness Assembly",
+      "employeeCount": 40,
+      "decisionMaker": "Engineering Lead / Operations Manager",
+      "score": 86,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 17,
+        "abilityToPay": 12,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Agile low-to-medium volume wire harness builder — fast-turn automotive and specialty vehicle prototypes",
+        "Translating customer build-to-print documentation into shop floor cutting lists and wire-board routing layouts consumes significant engineering desk hours",
+        "IPC/WHMA-A-620 compliance sign-offs handled manually"
+      ],
+      "evidenceSignals": "Build-to-print wire harness fabrication. Custom cables. Royal Oak agile prototype shop.",
+      "matchedService": "Wire Harness Continuity & QA Ingestion Engine",
+      "giveBeforeAsk": "Wire Harness Pin-Out & Crimp Pull-Force Verification Sheet",
+      "diagnostic": "🟠 Bappca scores 86 — HIGH tier. Build-to-print schematic translation to bench cut lists is manual bottleneck. IPC-620 pull-force logs slow prototype turnaround.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Royal Oak shop: wire cut-list setup & IPC-620 pull-force logs",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nProducing build-to-print wire harnesses and custom cable assemblies in Royal Oak often involves manual back-and-forth translating customer schematic prints into bench cut lists and crimp verification logs.\n\nI mocked up a lightweight Wire Cut-List & Pull-Force QA Log layout that speeds up prototype wire-board setup and automates IPC/WHMA-A-620 compliance sign-offs.\n\nWould you like me to share the 1-page visual mockup?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-04 — priority #4"
+    }
+  ]
+}
