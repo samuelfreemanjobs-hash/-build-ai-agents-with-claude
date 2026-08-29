@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Metal Craft — ECN Revision & Laser Trim Queue Board</title>
+  <link rel="stylesheet" href="_asset-base.css">
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="brand">HUNTER Intelligence</div>
+      <div class="title">Prototype ECN Revision &amp; Laser Trim Fixture Queue Board</div>
+      <div class="subtitle">Prepared for Auto Metal Craft · Oak Park, MI</div>
+    </div>
+    <div class="meta">
+      <strong>Operational Framework</strong><br>
+      Confidential · Aug 2026<br>
+      Prototype Stamping &amp; Laser Trim
+    </div>
+  </div>
+
+  <h2>Current friction (observed pattern)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>Prototype velocity risk</h3>
+      <ul>
+        <li>14-piece sprints to 300+ assembly runs with rapid CAD revisions</li>
+        <li>Hand-fed presses → 4 laser trim cells — WIP blind spots</li>
+        <li>Laser program not synced to latest die hit = scrap risk</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Target outcome</h3>
+      <ul>
+        <li>Live ECN flag on every active job before press/laser run</li>
+        <li>Laser fixture readiness visible from stamping floor</li>
+        <li>CMM check fixture queue tied to trim cell schedule</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Stamping → laser → CMM routing</h2>
+  <div class="flow">
+    <div class="stage active"><span class="num">Press</span>Hand-fed stamp<br><span class="label">ECN Rev D</span></div>
+    <span class="arrow">→</span>
+    <div class="stage bottleneck"><span class="num">WIP</span>Staging bay<br><span class="label">⚠ No queue</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">L1–L4</span>Laser trim<br><span class="label">4 cells</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">CMM</span>Check fixture<br><span class="label">Qual sign-off</span></div>
+    <span class="arrow">→</span>
+    <div class="stage"><span class="num">Ship</span>OEM release<br><span class="label">GM / EV prog</span></div>
+  </div>
+
+  <h2>Live job board (sample — prototype floor)</h2>
+  <table>
+    <tr>
+      <th>Job / OEM Prog</th>
+      <th>ECN</th>
+      <th>Press</th>
+      <th>Laser Cell</th>
+      <th>Fixture</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>EV-BKT-2026-041</td>
+      <td>Rev D <span class="badge badge-red">ACTIVE</span></td>
+      <td>Press 2</td>
+      <td>Laser 3</td>
+      <td>Ready</td>
+      <td><span class="badge badge-blue">In laser trim</span></td>
+    </tr>
+    <tr>
+      <td>GM-BRKT-SPR-118</td>
+      <td>Rev B</td>
+      <td>Press 1</td>
+      <td>—</td>
+      <td><span class="badge badge-amber">Setup</span></td>
+      <td><span class="badge badge-amber">Awaiting fixture</span></td>
+    </tr>
+    <tr>
+      <td>PROTO-14PC-009</td>
+      <td>Rev A</td>
+      <td>Done</td>
+      <td>Laser 1</td>
+      <td>Ready</td>
+      <td><span class="badge badge-green">CMM queue</span></td>
+    </tr>
+  </table>
+
+  <div class="metric-row">
+    <div class="metric"><div class="val">1–2h</div><div class="lbl">Daily supervisor walk time saved</div></div>
+    <div class="metric"><div class="val">↓ scrap</div><div class="lbl">ECN sync before laser run</div></div>
+    <div class="metric"><div class="val">4 cells</div><div class="lbl">Visible from one screen</div></div>
+  </div>
+
+  <div class="callout">
+    <strong>For Chuck &amp; team:</strong> This is a 1-screen concept — not a software pitch. Happy to walk through how it maps to your Kirksite prototype workflow in 2 minutes.
+  </div>
+
+  <div class="footer">
+    <span>HUNTER Intelligence · Operational Diagnostic Framework</span>
+    <span>Not for distribution · 70+ yr Oak Park prototype stamper</span>
+  </div>
+</body>
+</html>
