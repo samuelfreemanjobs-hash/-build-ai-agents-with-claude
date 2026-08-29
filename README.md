@@ -19,6 +19,8 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 | [`SWIPE-FILE.md`](agents/the-architect/SWIPE-FILE.md) | Annotated copy examples (structure, not plagiarism) |
 | [`OBJECTIONS.md`](agents/the-architect/OBJECTIONS.md) | Objection library + rebuttal frames |
 | [`VOC-RESEARCH.md`](agents/the-architect/VOC-RESEARCH.md) | Voice-of-customer research protocol |
+| [`HALBERT-METHODOLOGY.md`](agents/the-architect/HALBERT-METHODOLOGY.md) | Gary Halbert: starving crowd, A-Pile, AIDA, offers |
+| [`HALBERT-NEWSLETTER-INDEX.md`](agents/the-architect/HALBERT-NEWSLETTER-INDEX.md) | Newsletter archive index by topic |
 | [`research/VOC-LEXICON-TEMPLATE.md`](agents/the-architect/research/VOC-LEXICON-TEMPLATE.md) | Save per-project VOC output |
 
 ## Quick start (Cursor)
@@ -37,7 +39,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 - **Micro-copy lab** — 10-variant protocol with pattern diversity
 - **VOC research mode** — mine real customer language before writing
 - **Swipe file** — annotated examples; extract structure, not words
-- **Objection library** — pre-built rebuttals + placement guide
+- **Halbert methodology** — starving crowd, A-Pile, headline index cards, offer sweetening
 - **Teaching install format** — Pagan chunking + Woodsmall distinctions
 
 ## Recommended workflow

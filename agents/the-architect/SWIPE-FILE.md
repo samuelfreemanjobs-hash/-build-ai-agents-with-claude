@@ -202,7 +202,29 @@ Reference library for The Architect. When drafting, match **structure and psycho
 
 ---
 
-## Pattern Extraction Cheat Sheet
+### H-009 (Halbert — celebrity sweetener)
+**Copy:** *"Have you heard about this? Famous Movie Star Reveals How You Can Get Dirt-Cheap Cars And Houses Seized From Drug Dealers!"*
+**Tags:** AW-S | GEN-H | PT-Halbert+Enq
+**Why it works:** Question hook + celebrity + forbidden goods + specificity. Halbert sweetening factor ×1.4.
+**Structural move:** [Have you heard] + [authority] + [reveals] + [specific outrageous benefit]
+
+### H-010 (Halbert — proven offer)
+**Copy:** *"How To Get Cars And Houses That Have Been Seized From Drug Dealers And Other Criminal Scum!"*
+**Tags:** AW-S | GEN-H | PT-Mech+Halbert
+**Why it works:** Proven market (competitor ads running). Specific, vivid enemy ("criminal scum"). How-to frame.
+**Structural move:** [How to get] + [desirable thing] + [from villain source]
+
+### L-005 (Halbert — Dear Friend lead)
+**Copy (excerpt):** *"Dear Friend, my name is Famous Movie Star and I want to tell you about a hot new report I just read that could be worth a small fortune to you..."*
+**Tags:** AW-S | GEN-L | PT-Halbert+Story
+**Why it works:** A-Pile personal opener. Third-party endorsement. Report = lower friction than hard sell.
+**Structural move:** [Dear Friend] + [credible narrator] + [discovery story] + [fortune tease]
+
+### B-005 (Halbert — profit math bullet)
+**Copy:** *"You do not have to double your response to double your profit — a 15% sweetening of gross can do it when fixed costs are high."*
+**Tags:** GEN-B | PT-Halbert+Mech
+**Why it works:** Contrarian math. Specific number (15%). Speaks to sophisticated marketer.
+**Structural move:** [Counterintuitive claim] + [specific %] + [mechanism hint]
 
 When swiping, extract these elements:
 
