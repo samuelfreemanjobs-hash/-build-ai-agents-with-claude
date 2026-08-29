@@ -49,6 +49,8 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | Strategy / offer | Schwartz diagnosis + Abraham levers + Cialdini |
 | Celebrity / personal brand / authority launch | Celebrity fabrication + Brand Architecture + Schwartz (stage 5) + Kern IBB + Carlton bonding + Cialdini |
 | Positioning / brand / rebrand / movement | Brand Architecture (Ries + Ogilvy + Godin + Kennedy/Kern/Abraham) + Schwartz |
+| **Framework / methodology design** | Framework Design template + Schwartz + teaching spine + diagram |
+| **Workflow / SOP / process design** | Workflow Design template + framework map + gates + metrics |
 | Story-led copy | Story arc + Sugarman |
 | Business book / T4 chapter | Story arc + Book thriller outline |
 | Punch-up | Read existing + abbreviated diagnose |

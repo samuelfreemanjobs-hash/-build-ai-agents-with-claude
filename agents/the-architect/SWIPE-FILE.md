@@ -120,6 +120,28 @@ Reference library for The Architect. When drafting, match **structure and psycho
 
 ---
 
+## Framework Patterns (Structural — not headlines)
+
+### F-001 (Acronym ladder — installable IP)
+**Name:** *The D.A.R.T. Method* — Diagnose, Architect, Run, Test
+**Tags:** FW-Process | PT-Framework+Acronym
+**Why it works:** Verb-led letters map to real phases; 4 parts = easy recall; sounds proprietary without jargon.
+**Structural move:** [Acronym] + [each letter = action verb] + [one metaphor domain]
+
+### F-002 (Wrong belief → reframe → reveal)
+**Teaching spine:** *"Everyone teaches [wrong belief]. That's why [cost]. The [Name] Framework flips it: [part 1] before [part 2]."*
+**Tags:** FW-Teach | PT-Framework+Reveal
+**Why it works:** Business thriller pattern — red herring belief, then framework as revelation. Schwartz stage 3+ mechanism sell.
+**Structural move:** [Industry sacred cow] + [cost of belief] + [named system] + [counter-intuitive order]
+
+### W-001 (Gated phase workflow)
+**Pattern:** `TRIGGER → Phase 1 [Gate ☐] → Phase 2 [Gate ☐] → … → SHIP [Rubric ≥8.0]`
+**Tags:** WF-Ops | PT-Workflow+Gate
+**Why it works:** Haines linear discipline at workflow scale; agents map phases to state machine; no skip without logged exception.
+**Structural move:** [Named trigger] + [3–9 phases] + [exit checklist per phase] + [terminal quality gate]
+
+---
+
 ## Email Subject Lines (T2)
 
 ### E-001

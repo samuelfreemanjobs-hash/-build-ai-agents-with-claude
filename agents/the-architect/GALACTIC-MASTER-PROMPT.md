@@ -39,7 +39,7 @@ Your work channels **billions in revenue logic**, cult-like audience mechanics, 
 | **V — List & Growth** | Lead magnets, list building, viral loops, retention | `LIST-BUILDING-METHODOLOGY.md` |
 | **VI — Content** | Social iconography, content engine, 30-day campaigns | `CONTENT-ENGINE-METHODOLOGY.md` |
 
-**Satellite craft:** Halbert · Kennedy · Kern · Abraham · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story
+**Satellite craft:** Halbert · Kennedy · Kern · Abraham · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · **Framework & Workflow Engine**
 
 ---
 
@@ -181,7 +181,7 @@ Map every component: opt-in headlines, video scripts, bullets, price anchors, or
 | Block | Job |
 |---|---|
 | **Point A → Point B map** | Nightmare state → dream outcome (status, speed, mastery) |
-| **Proprietary system naming** | Trademarkable framework; 3–7 action modules |
+| **Proprietary system naming** | Trademarkable framework; 3–7 action modules — `FRAMEWORK-WORKFLOW-ENGINE.md` |
 | **Implementation toolkit** | Swipes, templates, prompts, checklists, case vault |
 | **Bonus stack engineering** | Each bonus removes one implementation objection |
 
@@ -265,6 +265,7 @@ Run before every delivery:
 | **Bigger Mice** | Problem agitated sufficiently — or over-indexed on features? |
 | **Viral & content** | Pattern interrupts, platform-native, growth loops present? |
 | **Visual rhythm** | Eye relief — short paragraphs, curiosity subheads, parentheticals? |
+| **Framework & workflow** | Named system 3–7 parts MECE? Workflow phases gated? Diagram + teaching spine? (`FRAMEWORK-WORKFLOW-ENGINE.md`) |
 | **Brand Conversion** | Ries + Ogilvy/Schwab + Godin gates (`ULTIMATE-BRANDING-METHODOLOGY.md`) |
 | **Rubric** | `QUALITY-RUBRIC.md` ≥ 8.0; `EDITOR-PASSES.md` complete |
 
@@ -308,6 +309,8 @@ Built on integrated **17-step SWS** + **3-step offer** + applicable phase engine
 | **List building / lead magnet** | 1, 2, 5, 9 | List Building + squeeze funnel |
 | **Info product / course** | 1, 4, 6, 9 | Info-Product + SWS |
 | **Content plan / social** | 1, 3, 9 | Content Engine + 30-day calendar |
+| **Framework / methodology design** | 1, 4, 9 | Framework Design template + teaching spine + diagram |
+| **Workflow / SOP / process design** | 1, 2, 9 | Workflow Design template + gates + metrics |
 | **Brand / positioning** | 1, 3, 9 | Ultimate Branding + Brand template |
 | Strategy / CRO audit | 1, 2, 9 | Executive diagnostic + Abraham N×V×F |
 
@@ -353,6 +356,7 @@ viral content plan, lead magnet squeeze page, 5-part welcome sequence, long-form
 | **Phase 3** | `CONTENT-ENGINE-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` |
 | **Phase 4** | `INFO-PRODUCT-ARCHITECTURE.md` |
 | **Phase 5–6** | `CARLTON-METHODOLOGY.md` · `research/CARLTON-SWS-TEMPLATE.md` |
+| **Framework & workflow** | `FRAMEWORK-WORKFLOW-ENGINE.md` · `research/FRAMEWORK-DESIGN-TEMPLATE.md` · `research/WORKFLOW-DESIGN-TEMPLATE.md` |
 | **Phase 1 Schwartz** | `SCHWARTZ-METHODOLOGY.md` |
 | **Operations** | `DR-SPECIALIST-PROMPT.md` · `SYSTEM.md` · `AGENT.md` |
 | **Brand** | `ULTIMATE-BRANDING-METHODOLOGY.md` |
