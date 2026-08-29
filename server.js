@@ -8,6 +8,7 @@ const axios = require('axios');
 const cron = require('node-cron');
 const { SERVICES, STRATEGIES, INDUSTRIES, SCORING_DIMENSIONS, matchService } = require('./lib/services-catalog');
 const { registerBusinessRoutes } = require('./lib/routes-business');
+const { createStore } = require('./lib/store');
 
 const app = express();
 app.use(cors());
@@ -23,6 +24,7 @@ const SLACK_WEBHOOK = process.env.SLACK_WEBHOOK;
 const supabase = SUPABASE_URL && SUPABASE_ANON_KEY
   ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
   : null;
+const store = createStore(supabase);
 const genAI = GEMINI_API_KEY ? new GoogleGenerativeAI(GEMINI_API_KEY) : null;
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 
@@ -189,12 +191,13 @@ async function sendSlackNotification(message) {
   }
 }
 
-function requireSupabase(res) {
-  if (!supabase) {
-    res.status(503).json({ error: 'Supabase not configured. Set SUPABASE_URL and SUPABASE_ANON_KEY.' });
-    return false;
-  }
+function requireStore(res) {
   return true;
+}
+
+function dbUnavailable(res) {
+  res.status(503).json({ error: 'Storage not available.' });
+  return false;
 }
 
 // ─── API ROUTES ──────────────────────────────────────────────────
@@ -204,10 +207,12 @@ app.get('/api/health', (req, res) => {
     status: 'online',
     timestamp: new Date().toISOString(),
     services: {
-      supabase: !!supabase,
+      storage: store.mode,
+      supabase: store.mode === 'supabase',
       gemini: !!genAI,
       resend: !!resend,
-      slack: !!SLACK_WEBHOOK
+      slack: !!SLACK_WEBHOOK,
+      booking: process.env.BOOKING_URL || null
     }
   });
 });
@@ -249,7 +254,7 @@ app.post('/api/score', async (req, res) => {
 });
 
 app.post('/api/leads', async (req, res) => {
-  if (!requireSupabase(res)) return;
+  if (!requireStore(res)) return;
 
   try {
     const { company, url, location, industry, decisionMaker, employeeCount } = req.body;
@@ -295,7 +300,7 @@ app.post('/api/leads', async (req, res) => {
       created_at: new Date().toISOString()
     };
 
-    const { data, error } = await supabase
+    const { data, error } = await store
       .from('leads')
       .insert([lead])
       .select();
@@ -314,10 +319,10 @@ app.post('/api/leads', async (req, res) => {
 });
 
 app.get('/api/leads', async (req, res) => {
-  if (!requireSupabase(res)) return;
+  if (!requireStore(res)) return;
 
   try {
-    const { data, error } = await supabase
+    const { data, error } = await store
       .from('leads')
       .select('*')
       .order('created_at', { ascending: false });
@@ -330,10 +335,10 @@ app.get('/api/leads', async (req, res) => {
 });
 
 app.get('/api/leads/:id', async (req, res) => {
-  if (!requireSupabase(res)) return;
+  if (!requireStore(res)) return;
 
   try {
-    const { data, error } = await supabase
+    const { data, error } = await store
       .from('leads')
       .select('*')
       .eq('id', req.params.id)
@@ -347,7 +352,7 @@ app.get('/api/leads/:id', async (req, res) => {
 });
 
 app.put('/api/leads/:id', async (req, res) => {
-  if (!requireSupabase(res)) return;
+  if (!requireStore(res)) return;
 
   try {
     const { id } = req.params;
@@ -357,7 +362,7 @@ app.put('/api/leads/:id', async (req, res) => {
     };
     delete updates.id;
 
-    const { data, error } = await supabase
+    const { data, error } = await store
       .from('leads')
       .update(updates)
       .eq('id', id)
@@ -371,11 +376,11 @@ app.put('/api/leads/:id', async (req, res) => {
 });
 
 app.delete('/api/leads/:id', async (req, res) => {
-  if (!requireSupabase(res)) return;
+  if (!requireStore(res)) return;
 
   try {
     const { id } = req.params;
-    const { error } = await supabase
+    const { error } = await store
       .from('leads')
       .delete()
       .eq('id', id);
@@ -388,7 +393,7 @@ app.delete('/api/leads/:id', async (req, res) => {
 });
 
 app.post('/api/outreach/send', async (req, res) => {
-  if (!requireSupabase(res)) return;
+  if (!requireStore(res)) return;
 
   try {
     const { leadId, to, subject, body, strategy } = req.body;
@@ -410,7 +415,7 @@ app.post('/api/outreach/send', async (req, res) => {
 
     if (error) throw error;
 
-    const { error: logError } = await supabase
+    const { error: logError } = await store
       .from('outreach_logs')
       .insert([{
         lead_id: leadId,
@@ -422,7 +427,7 @@ app.post('/api/outreach/send', async (req, res) => {
 
     if (logError) console.error('Log error:', logError);
 
-    await supabase
+    await store
       .from('leads')
       .update({ stage: 'Outreach Sent', last_activity: new Date().toISOString() })
       .eq('id', leadId);
@@ -435,11 +440,11 @@ app.post('/api/outreach/send', async (req, res) => {
 });
 
 app.get('/api/outreach/logs', async (req, res) => {
-  if (!requireSupabase(res)) return;
+  if (!requireStore(res)) return;
 
   try {
     const { leadId } = req.query;
-    let query = supabase.from('outreach_logs').select('*').order('sent_at', { ascending: false });
+    let query = store.from('outreach_logs').select('*').order('sent_at', { ascending: false });
     if (leadId) query = query.eq('lead_id', leadId);
 
     const { data, error } = await query;
@@ -451,10 +456,10 @@ app.get('/api/outreach/logs', async (req, res) => {
 });
 
 app.get('/api/analytics', async (req, res) => {
-  if (!requireSupabase(res)) return;
+  if (!requireStore(res)) return;
 
   try {
-    const { data: leads, error } = await supabase
+    const { data: leads, error } = await store
       .from('leads')
       .select('*');
 
@@ -517,14 +522,63 @@ app.get('/api/analytics', async (req, res) => {
   }
 });
 
+// ─── SEED ENDPOINT ──────────────────────────────────────────────
+app.post('/api/seed', async (req, res) => {
+  if (!requireStore(res)) return;
+  try {
+    const fs = require('fs');
+    const path = require('path');
+    const seeds = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/seed-leads.json'), 'utf8'));
+    const { data: existing } = await store.from('leads').select('*');
+    const existingNames = new Set((existing || []).map(l => l.company?.toLowerCase()));
+    const created = [];
+
+    for (const seed of seeds) {
+      if (existingNames.has(seed.company.toLowerCase())) continue;
+      const breakdown = seed.scoreBreakdown;
+      const totalScore = Object.values(breakdown).reduce((a, b) => a + b, 0);
+      const tier = getTier(totalScore);
+      const strategy = STRATEGIES.find(s => s.id === seed.outreachStrategy) || STRATEGIES[0];
+      const lead = {
+        id: crypto.randomUUID(),
+        company: seed.company,
+        url: seed.url,
+        location: seed.location,
+        industry: seed.industry,
+        size: String(seed.employeeCount),
+        decision_maker: seed.decisionMaker,
+        score: totalScore,
+        score_breakdown: breakdown,
+        tier: tier.label,
+        stage: 'New Opportunity',
+        estimated_value: 50000,
+        matched_service: seed.matchedService,
+        detected_problems: seed.detectedProblems,
+        evidence_signals: seed.evidenceSignals,
+        outreach_strategy: seed.outreachStrategy,
+        outreach_subject: `${strategy.prefix} ${seed.company}`,
+        outreach_body: `${strategy.prefix}\n\nHi,\n\nI've been analyzing ${seed.industry} operations in ${seed.location} and identified specific opportunities at ${seed.company}.\n\nWould you be open to a 15-min diagnostic call? Book here: ${process.env.BOOKING_URL || '[BOOKING_URL]'}\n\nBest,\nHUNTER Intelligence`,
+        notes: seed.notes,
+        last_activity: new Date().toISOString(),
+        created_at: new Date().toISOString()
+      };
+      const { data } = await store.from('leads').insert([lead]).select();
+      created.push(data[0]);
+    }
+    res.json({ created: created.length, leads: created });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // ─── CRON JOBS ──────────────────────────────────────────────
 
-if (supabase) {
+if (store.mode === 'supabase') {
   cron.schedule('0 9 * * *', async () => {
     console.log('Running daily follow-up check...');
     try {
       const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
-      const { data, error } = await supabase
+      const { data, error } = await store
         .from('leads')
         .select('*')
         .eq('stage', 'Outreach Sent')
@@ -533,7 +587,7 @@ if (supabase) {
       if (error) throw error;
 
       for (const lead of data) {
-        await supabase
+        await store
           .from('leads')
           .update({
             stage: 'Diagnostic Ready',
@@ -554,7 +608,7 @@ if (supabase) {
   cron.schedule('0 12 * * 1', async () => {
     console.log('Generating weekly report...');
     try {
-      const { data: leads } = await supabase.from('leads').select('*');
+      const { data: leads } = await store.from('leads').select('*');
       if (!leads) return;
 
       const hot = leads.filter(l => l.score >= 90);
@@ -575,7 +629,7 @@ if (supabase) {
   });
 }
 
-registerBusinessRoutes(app, { supabase, genAI, resend, sendSlackNotification, requireSupabase });
+registerBusinessRoutes(app, { store, genAI, resend, sendSlackNotification, requireStore });
 
 // Serve frontend in production
 const path = require('path');

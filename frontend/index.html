@@ -59,6 +59,7 @@
     <h1>Your plant runs on <span>spreadsheets and hope.</span><br>We fix that in 2 weeks.</h1>
     <p>Operational intelligence for mid-market manufacturers. We find friction, build systems, and deliver measurable ROI — not 6-month consulting engagements.</p>
     <a href="#diagnostic" class="btn btn-primary">Get Free Diagnostic</a>
+    <a href="#" id="bookCallBtn" class="btn btn-secondary" style="display:none">Book 15-Min Call</a>
     <a href="#services" class="btn btn-secondary">View Services</a>
     <div class="stats">
       <div class="stat"><div class="num">2-4 wk</div><div class="label">Delivery</div></div>
@@ -114,6 +115,12 @@
       try {
         const res = await fetch(API + '/services');
         const data = await res.json();
+        const health = await fetch(API + '/health').then(r => r.json()).catch(() => ({}));
+        if (health.services?.booking) {
+          const btn = document.getElementById('bookCallBtn');
+          btn.href = health.services.booking;
+          btn.style.display = 'inline-block';
+        }
         const select = document.querySelector('select[name=industry]');
         const industries = [...new Set(data.services.flatMap(s => s.industries))];
         select.innerHTML = '<option value="">Select Industry</option>' +
