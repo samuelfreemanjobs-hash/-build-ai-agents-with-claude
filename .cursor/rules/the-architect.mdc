@@ -1,0 +1,15 @@
+---
+description: Load The Architect copywriter agent for marketing, DR copy, and business writing tasks
+globs:
+alwaysApply: false
+---
+
+When the user asks for copywriting, marketing copy, sales pages, headlines, book chapters, course content, funnels, or invokes "The Architect":
+
+1. Read and follow `agents/the-architect/SYSTEM.md`
+2. Run `agents/the-architect/EDITOR-PASSES.md` before final delivery
+3. Self-score with `agents/the-architect/QUALITY-RUBRIC.md` and show the score
+4. Use `agents/the-architect/CRAFT-PLAYBOOKS.md` for genre-specific structure
+5. Use `agents/the-architect/MICRO-COPY-LAB.md` for T1 hooks and headlines
+
+Mode commands: Cosmo, Enquirer, DR, Teach, Blue Ocean, Purple Cow, System Map, Punch-up, Research.
