@@ -1,0 +1,238 @@
+{
+  "root_part_number": "12345",
+  "description": "Brake Rotor Assembly - Front Axle",
+  "plant": "1000",
+  "extraction_source": "mock_sap_sandbox",
+  "extracted_at": "2026-08-29T09:00:00Z",
+  "metadata": {
+    "bom_usage": "1",
+    "bom_alternative": "01",
+    "sap_tables": ["MARA", "MAST", "STKO", "CSAP"]
+  },
+  "root": {
+    "part_number": "12345",
+    "description": "Brake Rotor Assembly - Front Axle",
+    "quantity": 1.0,
+    "unit": "EA",
+    "unit_cost": 142.50,
+    "currency": "USD",
+    "origin_country": "MX",
+    "origin_status": "unknown",
+    "erp_transaction_id": "SAP-CO-2026-00891",
+    "cost_lines": [
+      {
+        "line_id": "CL-001",
+        "description": "Assembly labor - Monterrey plant",
+        "amount": 18.40,
+        "currency": "USD",
+        "category": "labor",
+        "erp_transaction_id": "SAP-CO-2026-00892"
+      },
+      {
+        "line_id": "CL-002",
+        "description": "Packing materials - export crate",
+        "amount": 2.10,
+        "currency": "USD",
+        "category": "packing",
+        "erp_transaction_id": "SAP-CO-2026-00893",
+        "excluded_from_net_cost": true,
+        "exclusion_reason": "USMCA Annex 4-B packing cost exclusion"
+      },
+      {
+        "line_id": "CL-003",
+        "description": "Extended warranty reserve",
+        "amount": 1.25,
+        "currency": "USD",
+        "category": "warranty",
+        "erp_transaction_id": "SAP-CO-2026-00894",
+        "excluded_from_net_cost": true,
+        "exclusion_reason": "USMCA Annex 4-B warranty cost exclusion"
+      }
+    ],
+    "children": [
+      {
+        "part_number": "12345-01",
+        "description": "Cast Iron Rotor Disc",
+        "quantity": 1.0,
+        "unit": "EA",
+        "unit_cost": 68.20,
+        "currency": "USD",
+        "origin_country": "MX",
+        "origin_status": "originating",
+        "originating_content_pct": 100.0,
+        "erp_transaction_id": "SAP-MM-2026-01401",
+        "cost_lines": [
+          {
+            "line_id": "CL-101",
+            "description": "Gray iron casting",
+            "amount": 52.00,
+            "currency": "USD",
+            "category": "material",
+            "erp_transaction_id": "SAP-MM-2026-01402"
+          },
+          {
+            "line_id": "CL-102",
+            "description": "Machining - turning and drilling",
+            "amount": 16.20,
+            "currency": "USD",
+            "category": "labor",
+            "erp_transaction_id": "SAP-MM-2026-01403"
+          }
+        ],
+        "children": [
+          {
+            "part_number": "12345-01-A",
+            "description": "Gray Iron Ingot Feedstock",
+            "quantity": 12.5,
+            "unit": "KG",
+            "unit_cost": 3.20,
+            "currency": "USD",
+            "origin_country": "MX",
+            "origin_status": "originating",
+            "originating_content_pct": 100.0,
+            "erp_transaction_id": "SAP-MM-2026-01410",
+            "cost_lines": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "part_number": "12345-02",
+        "description": "Caliper Mounting Bracket",
+        "quantity": 2.0,
+        "unit": "EA",
+        "unit_cost": 14.75,
+        "currency": "USD",
+        "origin_country": "US",
+        "origin_status": "originating",
+        "originating_content_pct": 100.0,
+        "erp_transaction_id": "SAP-MM-2026-01420",
+        "cost_lines": [],
+        "children": [
+          {
+            "part_number": "12345-02-A",
+            "description": "Stamped Steel Plate",
+            "quantity": 1.0,
+            "unit": "EA",
+            "unit_cost": 8.90,
+            "currency": "USD",
+            "origin_country": "US",
+            "origin_status": "originating",
+            "originating_content_pct": 100.0,
+            "erp_transaction_id": "SAP-MM-2026-01421",
+            "cost_lines": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "part_number": "12345-03",
+        "description": "Wheel Hub Bearing Assembly",
+        "quantity": 1.0,
+        "unit": "EA",
+        "unit_cost": 22.30,
+        "currency": "USD",
+        "origin_country": "CN",
+        "origin_status": "non_originating",
+        "originating_content_pct": 0.0,
+        "erp_transaction_id": "SAP-MM-2026-01430",
+        "cost_lines": [
+          {
+            "line_id": "CL-301",
+            "description": "Imported bearing races",
+            "amount": 18.50,
+            "currency": "USD",
+            "category": "material",
+            "erp_transaction_id": "SAP-MM-2026-01431"
+          },
+          {
+            "line_id": "CL-302",
+            "description": "Technology royalty - bearing design",
+            "amount": 3.80,
+            "currency": "USD",
+            "category": "royalty",
+            "erp_transaction_id": "SAP-MM-2026-01432",
+            "excluded_from_net_cost": true,
+            "exclusion_reason": "USMCA Annex 4-B royalty exclusion"
+          }
+        ],
+        "children": [
+          {
+            "part_number": "12345-03-A",
+            "description": "Chrome Steel Balls",
+            "quantity": 24.0,
+            "unit": "EA",
+            "unit_cost": 0.35,
+            "currency": "USD",
+            "origin_country": "CN",
+            "origin_status": "non_originating",
+            "originating_content_pct": 0.0,
+            "erp_transaction_id": "SAP-MM-2026-01433",
+            "cost_lines": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "part_number": "12345-04",
+        "description": "Anti-Rust Coating Kit",
+        "quantity": 1.0,
+        "unit": "EA",
+        "unit_cost": 6.85,
+        "currency": "USD",
+        "origin_country": "CA",
+        "origin_status": "originating",
+        "originating_content_pct": 60.0,
+        "erp_transaction_id": "SAP-MM-2026-01440",
+        "cost_lines": [
+          {
+            "line_id": "CL-401",
+            "description": "Canadian polymer base",
+            "amount": 4.11,
+            "currency": "USD",
+            "category": "material",
+            "erp_transaction_id": "SAP-MM-2026-01441"
+          },
+          {
+            "line_id": "CL-402",
+            "description": "Imported solvent additive",
+            "amount": 2.74,
+            "currency": "USD",
+            "category": "material",
+            "erp_transaction_id": "SAP-MM-2026-01442"
+          }
+        ],
+        "children": [
+          {
+            "part_number": "12345-04-A",
+            "description": "Solvent Additive - Imported",
+            "quantity": 0.15,
+            "unit": "L",
+            "unit_cost": 12.00,
+            "currency": "USD",
+            "origin_country": "DE",
+            "origin_status": "non_originating",
+            "originating_content_pct": 0.0,
+            "erp_transaction_id": "SAP-MM-2026-01443",
+            "cost_lines": [],
+            "children": []
+          },
+          {
+            "part_number": "12345-04-B",
+            "description": "Polymer Base - Toronto",
+            "quantity": 0.85,
+            "unit": "L",
+            "unit_cost": 4.84,
+            "currency": "USD",
+            "origin_country": "CA",
+            "origin_status": "originating",
+            "originating_content_pct": 100.0,
+            "erp_transaction_id": "SAP-MM-2026-01444",
+            "cost_lines": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
