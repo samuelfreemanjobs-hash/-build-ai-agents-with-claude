@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close, T4=book chapter |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Haines, Carlton, Collier, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Haines, Carlton, Celebrity, Collier, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
 
 ---
 
@@ -99,6 +99,12 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** AW-S | GEN-H | PT-Carlton+Story+Mech
 **Why it works:** Carlton's benchmark hook. Extreme contrast (one leg vs 280 yards) creates cognitive dissonance — if he can, reader has no excuse. Incomplete story forces body read. Body anchors disbelief with named mechanics (Triple Coil Swing: rotation, torque, leverage).
 **Structural move:** [Incongruous character] + [impossible result] + [secret tease] → body: [physics/mechanism reframe]
+
+### H-014 (Celebrity — reluctant guru origin)
+**Copy:** *"I Was Fired, Broke, and Sleeping on a Friend's Couch When I Accidentally Discovered the One Thing Gurus Refuse to Teach"*
+**Tags:** AW-U | GEN-H | PT-Celebrity+Story+Contrarian
+**Why it works:** Origin myth wound + discovery tease + enemy (gurus). Reluctant expert frame. Incomplete story forces read. Stage 5 identification — person over promise.
+**Structural move:** [Specific low point] + [accidental discovery] + [forbidden knowledge enemy]
 
 ---
 

@@ -26,7 +26,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 |---|---|---|
 | **INTAKE** | Parse brief; confirm avatar, offer, task, metric, constraints | `architect_init_project`, `INVOCATION.md` |
 | **RESEARCH** | VOC; mental conversation + mass desire; recall memory swipes; Carlton sales-detective sources | `VOC-RESEARCH.md`, `COLLIER-CONVERSATION-TEMPLATE.md`, `CARLTON-METHODOLOGY.md`, `architect_get_memory` |
-| **DIAGNOSE** | Run applicable templates from task type | Collier conversation, Schwartz diagnosis, Kennedy 10Q, Abraham levers, Cialdini, Caples, Sugarman, Carlton SWS, story arc, book thriller |
+| **DIAGNOSE** | Run applicable templates from task type | Collier conversation, Schwartz diagnosis, Kennedy 10Q, Abraham levers, Cialdini, Caples, Sugarman, Carlton SWS, Celebrity fabrication, story arc, book thriller |
 | **PLAN** | Pick playbook; state big idea + 8-word hook; list deliverables | `CRAFT-PLAYBOOKS.md`, `architect_set_phase(plan)` |
 | **DRAFT** | Write full asset in one voice | `SYSTEM.md` craft stack |
 | **EDIT** | All 6 passes | `EDITOR-PASSES.md` |
@@ -41,6 +41,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | Headlines only | Schwartz diagnosis + Caples headline sheet |
 | Sales page / email / ad | Collier conversation + Schwartz diagnosis + Kennedy 10Q + Haines workflow + Carlton SWS + Cialdini + Caples + Sugarman |
 | Strategy / offer | Schwartz diagnosis + Abraham levers + Cialdini |
+| Celebrity / personal brand / authority launch | Celebrity fabrication + Schwartz (stage 5) + Kern IBB + Carlton bonding + Cialdini |
 | Story-led copy | Story arc + Sugarman |
 | Business book / T4 chapter | Story arc + Book thriller outline |
 | Punch-up | Read existing + abbreviated diagnose |

@@ -251,3 +251,7 @@ Risk shifts to seller. Unconditional or performance guarantees. Friction at chec
 - Sell the Tuesday morning after they buy.
 - Talk to who they're becoming.
 - Gain them, logic them, fear them — same voice all three.
+
+---
+
+**Celebrity / personal brand:** Kern IBB maps directly to the 7-layer celebrity stack — pre-frame (origin myth), indoctrinate (war stories + polarity), convert (access offer). See `CELEBRITY-BUILDING-METHODOLOGY.md`, `research/CELEBRITY-FABRICATION-TEMPLATE.md`.
