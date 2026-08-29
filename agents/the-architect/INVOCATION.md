@@ -2,6 +2,8 @@
 
 Copy, fill in, paste. One author voice — no modes.
 
+**Agentic runtime:** Save as `brief.txt` and run `the-architect run --file brief.txt` (see repo README).
+
 ---
 
 ```
