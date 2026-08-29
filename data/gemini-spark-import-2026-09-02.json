@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-02",
+  "region": "Metro Detroit",
+  "focusedVertical": "Tier 2/3 Automotive Wire Harnesses, Progressive Die Stamping, Fastener Kitting/3PL Logistics & Precision CNC Milling",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 71,
+    "estimatedValueRange": "$38,000 – $67,500",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Netcon Enterprises, Inc.",
+      "url": "https://netconenterprises.com",
+      "location": "Waterford, MI",
+      "industry": "Wire Harness Assembly",
+      "employeeCount": 175,
+      "decisionMaker": "VP of Operations / Quality & Engineering Manager",
+      "score": 94,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 24,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "30+ year Tier 2/3/4 supplier — 100% visual and electrical continuity testing logs, IMDS submissions, conflict mineral reporting",
+        "End-of-shift documentation bottlenecks before lot release on continuity and pin-out test logging",
+        "High-mix connector inventories across prototype and production runs without real-time staging alerts"
+      ],
+      "evidenceSignals": "ISO 9001:2015 & IATF 16949 certified. Southeast Michigan hiring for Automotive Quality Engineers & Inspectors. Automotive, industrial, and marine wiring assemblies.",
+      "matchedService": "Wire Harness Continuity & QA Ingestion Engine",
+      "giveBeforeAsk": "Wire Continuity QA Log & Pin-Out Defect Root Cause Dashboard Mockup",
+      "diagnostic": "🔥 Netcon scores 94 — HOT tier. 100% continuity test logging creates end-of-shift bottlenecks. IMDS and PPAP documentation packets consume substantial engineering desk hours.",
+      "outreachStrategy": "D",
+      "outreachSubject": "100% wire continuity testing & terminal balancing in Waterford",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nProducing custom automotive wire harnesses and jumper assemblies in Waterford usually means quality leads spend substantial time documenting 100% electrical continuity checks and balancing terminal inventory across active harness boards.\n\nI designed a 1-screen Harness Continuity & Defect Tracker concept tailored for Tier 2 wiring manufacturers that logs pin-out test results digitally and automates lot release sign-offs for IATF audits.\n\nWould you be open to reviewing the 1-page visual framework to see if it's helpful for your quality team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-02 — priority #1. Send today."
+    },
+    {
+      "company": "AM Specialties Inc.",
+      "url": "https://amspecialties.com",
+      "location": "Sterling Heights, MI",
+      "industry": "Tier II Automotive Stamping",
+      "employeeCount": 140,
+      "decisionMaker": "Operations Director / Tooling Superintendent",
+      "score": 92,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 19,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Short-run and high-volume metal stampings with extensive outside subcontract networks for heat treating, plating, and painting",
+        "Global accounts require weekly tooling milestone progress reports on progressive die builds",
+        "Spreadsheet-based tracking of outside processing turnaround times against press schedule commitments"
+      ],
+      "evidenceSignals": "Established 1982. Progressive & draw dies, wire EDM, CNC machining. Macomb County outside processing friction.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Outside Processing (Heat Treat/Plating) Lead Time & Die Stroke Tracker",
+      "diagnostic": "🔥 AM Specialties scores 92 — HOT tier. Outside vendor processing lag creates blind spots in return ETAs. Weekly CAD-to-tryout timelines take 5–8 hrs/week of engineering management time.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Sterling Heights stamping: outside plating tracking & die stroke intervals",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nOperating progressive stamping lines in Sterling Heights while coordinating outside heat treating, plating, and painting usually creates an administrative lag in tracking vendor turnaround times against press run dates.\n\nI put together a quick mockup of an Outside Processing & Die Stroke Tracker designed for custom stamping shops to automate vendor return ETAs and preventive die maintenance intervals.\n\nLet me know if you'd like me to send over the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-02 — priority #2. Send today."
+    },
+    {
+      "company": "Hollingsworth LLC",
+      "url": "https://hollingsworthllc.com",
+      "location": "Dearborn, MI",
+      "industry": "3PL Warehousing",
+      "employeeCount": 400,
+      "decisionMaker": "Director of Warehousing & Sequencing / Operations Lead",
+      "score": 87,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 18,
+        "abilityToPay": 15,
+        "serviceFit": 13,
+        "accessibility": 7,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Automotive fastener distribution, JIT sequencing, kitting & packaging 3PL in Wayne County",
+        "High-velocity assembly line demand puts pressure on kitting accuracy and dock turnarounds",
+        "Tracking friction balancing kitting station line rates against returnable container cycles"
+      ],
+      "evidenceSignals": "Major automotive supply chain hubs. Fastener packaging and JIT delivery to OEM assembly plants. Reverse logistics operations.",
+      "matchedService": "3PL Cross-Dock & VMI Buffer Exception Dashboard",
+      "giveBeforeAsk": "Fastener Kitting Station Throughput & Dunnage Tracking Map",
+      "diagnostic": "🟠 Hollingsworth scores 87 — HIGH tier. Kitting station bottlenecks and returnable dunnage return delays risk plant dispatch misses.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Visualizing fastener kitting throughput & dunnage turnaround in Dearborn",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nManaging high-volume automotive fastener packaging and JIT assembly sequencing in Dearborn often leads to tracking friction when balancing kitting station line rates against returnable container cycles.\n\nI mapped out a 1-page Kitting Station Throughput & Dunnage Exception Dashboard concept that flags station bottlenecks and container return delays before plant dispatch.\n\nHappy to share the 1-page visual framework if you'd like to check it out.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-02 — priority #3"
+    },
+    {
+      "company": "NTL Industries Inc.",
+      "url": "https://ntlindustries.com",
+      "location": "Sterling Heights, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 75,
+      "decisionMaker": "Operations Manager / General Manager",
+      "score": 86,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 20,
+        "buyingSignal": 18,
+        "abilityToPay": 13,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "High-precision contract machining — CNC milling and turning cells in Macomb County",
+        "No interactive CAD intake or material cert routing for prototype and short-run production inquiries",
+        "Manual review of unformatted CAD drawing attachments and job progress tracking across milling cells"
+      ],
+      "evidenceSignals": "Clean but basic digital presence. Multi-axis milling and tooling components.",
+      "matchedService": "Conversion Website Sprint + RFQ Spec Ingestion Engine",
+      "giveBeforeAsk": "5-Point CNC RFQ Conversion & Machine Spindle Utilization Layout",
+      "diagnostic": "🟠 NTL scores 86 — HIGH tier. RFQ spec intake gap and spindle queue visibility across milling cells.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Sterling Heights shop spindle capacity & RFQ spec intake",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nDelivering tight-tolerance CNC machined components in Sterling Heights often means shop leads spend extra time manually reviewing unformatted CAD drawing attachments and tracking job progress across milling cells.\n\nI created a simple 1-page RFQ Intake & Spindle Queue concept that automates print spec capture and visualizes machine completion times.\n\nWould you like me to send over the 1-page layout?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-02 — priority #4"
+    }
+  ]
+}
