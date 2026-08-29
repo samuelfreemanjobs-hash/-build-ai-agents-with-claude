@@ -7,3 +7,4 @@ dist/
 data/*.json
 !data/seed-leads.json
 !data/gemini-spark-import.json
+!data/gemini-spark-import-*.json
