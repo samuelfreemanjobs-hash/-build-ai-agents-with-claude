@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-07",
+  "region": "Metro Detroit",
+  "focusedVertical": "Large-Capacity Wire EDM, Precision Aerospace Machining, Heavy Die Spotting/Aerospace Tooling & Automotive Plastic Injection Molding",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 103,
+    "estimatedValueRange": "$43,500 – $79,000",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Futuramic",
+      "url": "https://futuramic.com",
+      "location": "Warren, MI",
+      "industry": "Aerospace Components",
+      "employeeCount": 350,
+      "decisionMaker": "VP of Manufacturing / Tooling Operations Director",
+      "score": 95,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 25,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Large-scale gantry machining, die spotting presses, structural assembly bays for aerospace flight hardware, defense, and automotive stamping tools",
+        "Multi-bay assembly and large die tryouts require tracking between gantry spindle runtime, CMM laser tracker verification, and customer witness sign-offs",
+        "ECO alignment across multi-stage fixture builds requires 10+ hrs/week supervisor reconciliation"
+      ],
+      "evidenceSignals": "24680 Gibson, Warren. Lensa Manufacturing Production Planner Report — Excel workbook friction reconciling ERP capacity vs assembly bay bottlenecks.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Large Gantry Spindle Queue & Die Spotting Milestone Visualizer (1-page framework)",
+      "diagnostic": "🔥 Futuramic scores 95 — HOT tier. Multi-ton weldments waiting for CMM/laser tracker sign-offs before teardown create documentation delays. Die spotting bay dwell without real-time telemetry causes staging bottlenecks.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Warren facility: tracking large fixture assembly bays & die spotting tryouts",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nBuilding large-scale aerospace fixtures and managing die spotting tryouts on Gibson usually means operations leads spend hours daily cross-referencing gantry spindle schedules against assembly bay readiness.\n\nI built a 1-screen Tooling Bay Staging & Spotting Tryout framework designed for large tooling fabricators that visualizes assembly milestone progress and flags inspection bottlenecks in real time.\n\nWould you be open to a 2-minute review of the visual framework to see if it's helpful for your operations team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-07 — priority #1. Send today. Tied highest score."
+    },
+    {
+      "company": "Troy Tool & Design, LLC",
+      "url": "https://troytoolanddesign.com",
+      "location": "Troy, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 45,
+      "decisionMaker": "Operations Manager / General Manager",
+      "score": 92,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 19,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Large-capacity wire EDM up to 20\" thick on Sodick AG 600LH, sinker EDM, precision tool steels to 0.0002\" tolerance",
+        "Active tooling changeovers in Oakland County create heavy demand for fast EDM burn cycles on trim dies and mold inserts",
+        "3D CAD quoting relies on general web forms without automated thickness-to-burn calculation"
+      ],
+      "evidenceSignals": "Trillium Staffing Troy Tool & Die Setter Market. Multi-hour unmanned burn cycles on heavy die blocks.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "Wire EDM Burn Cycle & Die Steel Thickness Quoting Estimator",
+      "diagnostic": "🔥 Troy Tool scores 92 — HOT tier. Tank fill/drain and threader errors obscure available machine windows on overnight burns. Electrode wear on paper travelers creates staging delays.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Troy facility: wire EDM burn cycle tracking & die insert turnaround",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nRunning large-capacity wire EDM slicing up to 20-inch thick die blocks alongside sinker EDM in Troy often makes tracking unmanned overnight burn cycles and electrode changeovers a manual task on the floor.\n\nI mocked up a 1-screen Wire EDM Spindle & Die Insert Board designed for specialized EDM shops that tracks machine burn hours and automates job completion forecasts.\n\nLet me know if you'd like me to send over the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-07 — priority #2. Send today."
+    },
+    {
+      "company": "BT Aerospace",
+      "url": "https://btaerospace.com",
+      "location": "Livonia, MI",
+      "industry": "Aerospace Components",
+      "employeeCount": 85,
+      "decisionMaker": "VP of Operations / Quality & Manufacturing Director",
+      "score": 89,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 15,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Family-owned precision machining — flight-critical components, tooling, assemblies for aerospace and defense primes",
+        "AS9100 requires 100% material cert verification, CMM dimensional logging, outside processing traceability per lot",
+        "First-article inspection packet assembly consumes significant quality desk hours"
+      ],
+      "evidenceSignals": "AS9100 certified. Flight-critical Livonia facility.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "Aerospace First-Article Inspection & Outside Processing Flow Map",
+      "diagnostic": "🟠 BT Aerospace scores 89 — HIGH tier. CMM dimensional data to shipping certs disconnected — spreadsheet clutter on every lot release.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Livonia plant: AS9100 lot traceability & CMM first-article queue visibility",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nDelivering flight-critical machined components and complex tooling in Livonia usually means your quality leads spend significant desk hours assembling AS9100 first-article inspection packets and tracking outside processing certs.\n\nI created a 1-page Aerospace Lot Traceability & CMM Queue layout designed for precision flight shops that connects CMM dimensional data to shipping certs without spreadsheet clutter.\n\nHappy to send over the 1-page framework if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-07 — priority #3"
+    },
+    {
+      "company": "Plastic Molding Development (PMD)",
+      "url": "https://plasticmoldingdevelopment.com",
+      "location": "Sterling Heights, MI",
+      "industry": "Precision Injection Molding",
+      "employeeCount": 95,
+      "decisionMaker": "Plant Superintendent / Tooling Manager",
+      "score": 87,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 14,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Multi-press injection molding, insert molding, prototype tooling, secondary assembly in Sterling Heights",
+        "Prototype mold trials vs scheduled production runs create shift scheduling friction",
+        "Manual scrap logging across molding and secondary assembly stations"
+      ],
+      "evidenceSignals": "Custom injection molding with insert molding and prototype tooling capabilities.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Injection Mold Sampling & Secondary Assembly Station Balance Sheet",
+      "diagnostic": "🟠 PMD scores 87 — HIGH tier. Prototype mold sampling vs production scrap logs create daily tracking delay for shift supervisors.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Sterling Heights facility: press shot-count scrap & mold sampling schedules",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nOperating custom injection molding and insert molding lines in Sterling Heights often creates a tracking delay when shop supervisors balance prototype mold sampling against daily production scrap logs.\n\nI designed a lightweight Press Downtime & Scrap Balance board concept that captures shift reject root causes and tracks cycle time variations in real time.\n\nWould you like me to share the 1-page concept dashboard?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-07 — priority #4"
+    }
+  ]
+}
