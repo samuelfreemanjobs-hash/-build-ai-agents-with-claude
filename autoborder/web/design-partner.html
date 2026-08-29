@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Partner Outreach Kit — AutoBorder Comply</title>
+  <link rel="stylesheet" href="/static/outreach.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="logo">AutoBorder Comply · Sales Kit</span>
+      <div class="nav-links">
+        <a href="/">Calculator</a>
+        <a href="/demo">Graph Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="eyebrow">Door 3 — Design Partner Outreach</p>
+    <h1>Monterrey & Saltillo<br>VP Supply Chain Playbook</h1>
+    <p class="subhead">Personalized cold emails, LinkedIn scripts, 3-call cadence, and LoI — with the $10,000 error guarantee baked in.</p>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar card">
+      <h2>Prospect Profile</h2>
+      <form id="prospect-form">
+        <label>Company<input name="company_name" value="Grupo Industrial Saltillo" required /></label>
+        <label>Contact Name<input name="contact_name" value="Francisco Vega" required /></label>
+        <label>Title<input name="contact_title" value="Director of Customs Compliance" /></label>
+        <label>City<input name="city" value="Saltillo" /></label>
+        <label>Part Focus<input name="part_focus" value="brake and rotor assemblies" /></label>
+        <label>Quarterly Import Value<input name="quarterly_import_value" value="$4.2M" /></label>
+        <label>Audit Context<input name="audit_context" value="CBP Rapid Response audit in the last 18 months" /></label>
+        <label>Your Name<input name="sender_name" value="Alex Rivera" /></label>
+        <label>Your Email<input name="sender_email" type="email" value="alex@autobordercomply.ai" /></label>
+        <button type="submit" class="btn-primary">Generate Scripts</button>
+      </form>
+
+      <div class="targets-section">
+        <h3>Target Accounts</h3>
+        <select id="target-select">
+          <option value="">Load from list…</option>
+        </select>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="program-banner card" id="program-banner">
+        <div>
+          <strong>Design Partner Program</strong>
+          <p id="program-summary">Loading…</p>
+        </div>
+        <div class="guarantee">
+          <span class="guarantee-label">$10K Guarantee</span>
+          <p id="guarantee-clause">Loading…</p>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-filter="email">Emails</button>
+        <button class="tab" data-filter="linkedin">LinkedIn</button>
+        <button class="tab" data-filter="call">Call Scripts</button>
+        <button class="tab" data-filter="document">LoI & Program</button>
+      </div>
+
+      <div id="scripts-container" class="scripts-container"></div>
+    </section>
+  </main>
+
+  <script src="/static/outreach.js"></script>
+</body>
+</html>

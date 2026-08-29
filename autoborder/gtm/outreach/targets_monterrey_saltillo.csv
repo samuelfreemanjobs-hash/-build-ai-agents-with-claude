@@ -1,0 +1,11 @@
+company_name,contact_name,contact_title,city,country,part_focus,quarterly_import_value,priority,tier,notes
+Metalsa SA de CV,Roberto Mendez,VP Supply Chain,Monterrey,Mexico,chassis frame assemblies,$12.4M,1,Tier-1,CBP audit Q1 2025 — rebuild RVC on 200+ parts
+Nemak,Ana Villareal,Director of Customs Compliance,Monterrey,Mexico,aluminum powertrain components,$8.7M,1,Tier-1,Uses 3 customs brokers — roll-up method suspected
+Teksid Hierro,Sofia Ramirez,CFO,Saltillo,Mexico,engine block castings,$5.1M,2,Tier-2,Post-audit penalty — looking for automation
+Vitro Automotriz,Carlos Herrera,VP Supply Chain,Monterrey,Mexico,glass and sealing systems,$3.8M,2,Tier-2,Excel RVC with known 40% error rate
+Cooper Standard Monterrey,Patricia Luna,Director of Customs Compliance,Monterrey,Mexico,fluid handling systems,$6.2M,1,Tier-1,Expanding USMCA certification to 500 BOMs
+San Luis Metalforming,Luis Ortega,VP Operations,Saltillo,Mexico,stampings and welded assemblies,$2.9M,3,Tier-2,Mid-tier — ideal Design Partner profile
+American Axle Saltillo,Mariana Delgado,Director of Supply Chain,Saltillo,Mexico,driveline components,$9.3M,1,Tier-1,Build-down method — strong technical buyer
+Metalfrio Solutions,Diego Fuentes,CFO,Monterrey,Mexico,HVAC compressor assemblies,$1.8M,3,Tier-3,Smaller but complex BOM trees — good demo candidate
+Magna Powertrain Saltillo,Elena Castillo,VP Supply Chain,Saltillo,Mexico,electrified drive units,$11.1M,1,Tier-1,New EV lines — RVC not yet calculated
+Grupo Industrial Saltillo,Francisco Vega,Director of Customs Compliance,Saltillo,Mexico,brake and rotor assemblies,$4.2M,2,Tier-2,Similar BOM to sandbox demo part #12345

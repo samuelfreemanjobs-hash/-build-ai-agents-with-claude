@@ -1,0 +1,24 @@
+# SAP table mapping — update remotely without code changes when SAP API evolves.
+sap:
+  tables:
+    material_master: MARA
+    bom_links: MAST
+    bom_headers: STKO
+    costing: CSAP
+  fields:
+    material_number: MATNR
+    material_description: MAKTX
+    plant: WERKS
+    bom_usage: STLAN
+    bom_alternative: STLAL
+    component: IDNRK
+    component_quantity: MENGE
+    unit: MEINS
+    standard_cost: STPRS
+    currency: WAERS
+    origin_country: HERKL
+
+oracle:
+  modules:
+    bom: BOM
+    cost_management: CST
