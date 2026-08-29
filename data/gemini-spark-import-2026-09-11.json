@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-11",
+  "region": "Metro Detroit",
+  "focusedVertical": "Large-Part HMC Engine Machining, 120-Tool Makino Aerospace Machining, Multi-Process Tube Laser/Stamping & Custom Automation Assembly",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 128,
+    "estimatedValueRange": "$50,500 – $89,500",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Skyway Precision Inc.",
+      "url": "https://skywayprecision.com",
+      "location": "Livonia, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 450,
+      "decisionMaker": "VP of Manufacturing / Plant Operations Director",
+      "score": 95,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 25,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "50+ horizontal machining centers — diesel engine blocks, oil pans, chassis components up to 80\" on 1,250mm/1,000mm/800mm centers",
+        "Livonia expansion increases spindle scheduling complexity across 50+ HMC cells",
+        "Millipore cleanliness validation, leak testing, assembly tracked on separate paper travelers before OEM shipment"
+      ],
+      "evidenceSignals": "Skyway Precision Livonia Expansion Postings. Heavy-duty diesel and automotive powertrain machining across Livonia & Plymouth facilities.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "50+ HMC Spindle Bottleneck & Millipore Inspection Queue Visualizer (1-page framework)",
+      "diagnostic": "🔥 Skyway scores 95 — HOT tier. 50+ HMC cells without real-time telemetry obscure cycle variances. Paper millipore/leak test logs slow diesel OEM shipping releases.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Livonia facility: tracking 50+ HMC spindle cycles & millipore validation flow",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nRunning 50+ horizontal machining centers on large powertrain and diesel components across Livonia usually means your operations leads spend significant time tracking machine cycle times and coordinating millipore cleanliness test sign-offs.\n\nI built a 1-screen HMC Spindle Telemetry & Millipore QA Tracker concept tailored for high-capacity diesel/automotive machining plants that visualizes machine completion forecasts and automates leak test compliance logs.\n\nWould you be open to a 2-minute review of the visual framework to see if it's helpful for your operations team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-11 — priority #1. Send today. Largest HMC footprint in pipeline."
+    },
+    {
+      "company": "IQ Manufacturing",
+      "url": "https://iqmanufacturing.com",
+      "location": "Auburn Hills, MI",
+      "industry": "Aerospace Components",
+      "employeeCount": 120,
+      "decisionMaker": "Plant Operations Director / General Manager",
+      "score": 93,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 24,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 4
+      },
+      "detectedProblems": [
+        "Turnkey aerospace tooling, defense hardware, stamping die components — AS-9100 & ISO-9001",
+        "New 120-tool Makino machining centers — tool magazine management and pallet scheduling demand",
+        "Prototype aluminum jobs vs mold/die cavity burns create scheduling contention"
+      ],
+      "evidenceSignals": "1180 Centre Road, Auburn Hills. Recent Makino capital equipment expansion. 8–12 hrs/week on AS-9100 first-article CMM reports.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "Makino Tool Life & Pallet Queue Optimization Layout (1-page framework)",
+      "diagnostic": "🔥 IQ Manufacturing scores 93 — HOT tier. 120-tool magazine balancing without automated tool life tracking causes unexpected spindle stops. Prototype vs die build clashes on floor.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Centre Road plant: Makino spindle capacity & 120-tool life tracking",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nWith IQ Manufacturing running multi-axis CNC cells, wire EDM, and your new 120-tool Makino equipment in Auburn Hills, balancing rapid prototype runs against complex aerospace and die cavity machining often creates scheduling friction on the floor.\n\nI put together a quick mockup of a Spindle Queue & Tool Life Tracker designed for precision AS-9100 machine shops that visualizes tool magazine wear and automates first-article QA sign-offs.\n\nLet me know if you'd like me to send over the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-11 — priority #2. Send today."
+    },
+    {
+      "company": "Livonia Tool & Laser",
+      "url": "https://livoniatoolandlaser.com",
+      "location": "Livonia, MI",
+      "industry": "Heavy Steel Fabrication",
+      "employeeCount": 140,
+      "decisionMaker": "Operations Director / Plant Superintendent",
+      "score": 89,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "50,000 sq ft since 1943 — stamping, tube laser up to 14\" OD, tube bending, powder coating under one roof",
+        "Multi-operation routing (tube laser → bending → stamping → powder coat) creates WIP staging clutter",
+        "No unified stage-gate telemetry across integrated cells"
+      ],
+      "evidenceSignals": "Vertically integrated Livonia fab/stamping/coating plant.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Tube Laser Nesting Scrap & Stamping-to-Coating Flow Map",
+      "diagnostic": "🟠 Livonia Tool & Laser scores 89 — HIGH tier. Floor walks to balance WIP between cutting cells and paint line consume supervisor hours daily.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Livonia plant: multi-process tube laser, stamping & powder coat WIP flow",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nOperating tube laser cutting alongside progressive stamping, tube bending, and powder coating in Livonia usually means shop supervisors spend substantial time walking the floor to balance WIP buffers between cutting cells and the paint line.\n\nI created a simple 1-page Multi-Process Routing & Coating Queue layout designed for integrated fab/stamping shops that visualizes job progress across cells without spreadsheet clutter.\n\nHappy to send over the 1-page layout if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-11 — priority #3"
+    },
+    {
+      "company": "Flotronics Automation",
+      "url": "https://flotronicsautomation.com",
+      "location": "Auburn Hills, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 55,
+      "decisionMaker": "General Manager / Systems Engineering Director",
+      "score": 87,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 14,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "$5M+ automation inventory — custom pneumatic panels, air logic assemblies, aluminum extrusion frames for automotive system builders",
+        "Complex automation RFQs and CAD packages ingested via contact forms without BOM parsing",
+        "Custom panel build stages tracked manually across engineering and assembly"
+      ],
+      "evidenceSignals": "4260 Giddings Road, Auburn Hills. Industrial automation distributor and light manufacturer.",
+      "matchedService": "Conversion Website Sprint + RFQ Spec Ingestion Engine",
+      "giveBeforeAsk": "Pneumatic Manifold BOM & Extrusion Assembly Milestone Layout",
+      "diagnostic": "🟠 Flotronics scores 87 — HIGH tier. BOM estimation from customer CAD prints creates quote friction. Assembly milestone visibility fragmented.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Giddings Road facility: pneumatic panel build tracking & CAD BOM intake",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nBuilding custom pneumatic panels and structural aluminum machine assemblies in Auburn Hills often creates administrative friction when estimating complex component BOMs from customer CAD prints.\n\nI designed a lightweight Assembly Milestone & CAD BOM Ingestion layout that speeds up quote review and tracks custom panel build stages.\n\nWould you like me to share the 1-page concept dashboard?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-11 — priority #4"
+    }
+  ]
+}
