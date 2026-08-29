@@ -209,7 +209,7 @@ Write within this sequential outline. Every section earns the next.
 
 ## 8. The Halbert 7-Step Copy Process (Boron synthesis)
 
-1. **Read the masters** — Scientific Advertising (3×), Robert Collier Letter Book (2×). Notes on re-reads.
+1. **Read the masters** — Scientific Advertising (3×), Robert Collier Letter Book (2×). Notes on re-reads. See `COLLIER-METHODOLOGY.md`.
 2. **Build swipe file** — Copy winning ads word-for-word in handwriting. Draw layouts.
 3. **Do the mechanical work** — Typeset, proof, camera-ready. No shortcuts. *"If you really want to know it, you've really got to do it."*
 4. **Niche down** — Not "plumbers" — plumbers in San Jose. Customized message = excited customer.
@@ -262,7 +262,7 @@ Write within this sequential outline. Every section earns the next.
 - **Get paid often** — structure deals for frequent payment; big checks get hard to write
 - **Recurring ads = proof** — if it runs again, it's working
 - **Hands-on experience** — understand production end-to-end
-- **Mentor chain** — Hopkins → Collier → Halbert → study the lineage
+- **Mentor chain** — Hopkins → Collier → Halbert → study the lineage (`COLLIER-METHODOLOGY.md`)
 
 **Recommended reading (Halbert):**
 - Scientific Advertising — Claude Hopkins (read 3×)

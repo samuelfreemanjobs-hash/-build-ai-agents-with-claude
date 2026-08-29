@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close, T4=book chapter |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Haines, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Haines, Collier, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
 
 ---
 
@@ -81,6 +81,18 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** AW-P | GEN-H | PT-Schwartz+Proof
 **Why it works:** Channels mass health desire directly. Intensification language. Problem-aware audience — names enemy (disease) and promises elimination.
 **Structural move:** [Action verb] + [enemy] + [body/outcome location]
+
+### H-011
+**Copy:** *"When the Rattlesnake Struck!"*
+**Tags:** AW-U | GEN-H | PT-Collier+News
+**Why it works:** Collier news hook — sold hundreds of thousands of O. Henry books. Pure news interest flags jaded attention; reader must know what happened.
+**Structural move:** [Dramatic news headline] + [unresolved event]
+
+### H-012
+**Copy:** *"Suppose a good job were open where you work. Could you fill it?"*
+**Tags:** AW-P | GEN-H | PT-Collier+Question
+**Why it works:** Enters mental conversation (career anxiety). Hypothetical implicates reader; training/offer becomes logical next step.
+**Structural move:** [Hypothetical scenario] + [self-implicating question] + [gap tease]
 
 ---
 

@@ -136,6 +136,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`CIALDINI-METHODOLOGY.md`](agents/the-architect/CIALDINI-METHODOLOGY.md) | Robert Cialdini: seven principles, pre-suasion, ethical influence |
 | [`CAPLES-METHODOLOGY.md`](agents/the-architect/CAPLES-METHODOLOGY.md) | John Caples: tested headlines, story ads, before/after, split-run testing |
 | [`SCHWARTZ-METHODOLOGY.md`](agents/the-architect/SCHWARTZ-METHODOLOGY.md) | Eugene Schwartz: mass desire, awareness × sophistication, breakthrough advertising |
+| [`COLLIER-METHODOLOGY.md`](agents/the-architect/COLLIER-METHODOLOGY.md) | Robert Collier: mental conversation, bait principle, six essentials |
 | [`HAINES-METHODOLOGY.md`](agents/the-architect/HAINES-METHODOLOGY.md) | Scott Haines: shortcut copywriting, Headline→P.S., bucket brigade, blind bullets |
 | [`SUGARMAN-METHODOLOGY.md`](agents/the-architect/SUGARMAN-METHODOLOGY.md) | Joe Sugarman: slippery slide, 31 triggers, emotion→logic, mail-order craft |
 | [`MASTER-STORYTELLERS.md`](agents/the-architect/MASTER-STORYTELLERS.md) | Aristotle, Homer, Shakespeare, Campbell, Hemingway — narrative genius stack |
@@ -145,6 +146,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`research/CIALDINI-PRINCIPLES-TEMPLATE.md`](agents/the-architect/research/CIALDINI-PRINCIPLES-TEMPLATE.md) | Seven-principle and pre-suasion audit template |
 | [`research/CAPLES-HEADLINE-TEST-TEMPLATE.md`](agents/the-architect/research/CAPLES-HEADLINE-TEST-TEMPLATE.md) | 10 headline variants + split-test plan |
 | [`research/SCHWARTZ-MARKET-DIAGNOSIS-TEMPLATE.md`](agents/the-architect/research/SCHWARTZ-MARKET-DIAGNOSIS-TEMPLATE.md) | Mass desire, functional angle, awareness, sophistication |
+| [`research/COLLIER-CONVERSATION-TEMPLATE.md`](agents/the-architect/research/COLLIER-CONVERSATION-TEMPLATE.md) | Mental conversation, bait, six essentials |
 | [`research/HAINES-COPY-WORKFLOW-TEMPLATE.md`](agents/the-architect/research/HAINES-COPY-WORKFLOW-TEMPLATE.md) | Headline to P.S. linear copy assembly |
 | [`SOURCES-HAINES.md`](agents/the-architect/SOURCES-HAINES.md) | Scott Haines source provenance |
 | [`research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`](agents/the-architect/research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md) | Slippery slide + psychological trigger audit |
@@ -174,6 +176,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 - **Cialdini persuasion** — seven principles, pre-suasion, ethical proof/scarcity, principle stacking for ads and copy
 - **Caples tested advertising** — headline-first discipline, story hooks, before/after, long copy, split-run testing
 - **Schwartz breakthrough advertising** — mass desire channeling, awareness × sophistication diagnosis, mechanism at stage 3+
+- **Collier letter craft** — enter the mental conversation; bait principle; six essentials; emotion before reason
 - **Sugarman slippery slide** — momentum copy, 31 triggers, emotion→logic, seeds of curiosity, product/mail-order craft
 - **Five genius storytellers** — Aristotle structure, Homer immersion, Shakespeare conflict, Campbell hero's journey, Hemingway iceberg
 - **Business thriller craft** — Hitchcock suspense, Christie fair play, Patterson cliffhangers — page-turning business books
