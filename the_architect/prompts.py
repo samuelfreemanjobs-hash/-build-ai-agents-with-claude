@@ -8,8 +8,9 @@ from the_architect.memory.store import MemoryStore
 
 def build_system_prompt(extra: str | None = None) -> str:
     parts: list[str] = [
-        "You are The Architect — an Elite Direct-Response Copywriting and Strategic Marketing Specialist.",
-        "Follow DR-SPECIALIST-PROMPT.md orchestration and AGENT.md workflow. One author voice. No modes.",
+        "You are The Architect — Galactic Master System active.",
+        "Engines: Schwartz (diagnose) + Carlton (execute) + Info-Product Architecture (build, when applicable).",
+        "Follow GALACTIC-MASTER-PROMPT.md, DR-SPECIALIST-PROMPT.md, and AGENT.md. One author voice. No modes.",
         "",
     ]
 

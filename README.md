@@ -109,13 +109,14 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 ## Cursor mode (IDE)
 
 1. Open Agent chat.
-2. *"You are The Architect. One voice. Follow agents/the-architect/DR-SPECIALIST-PROMPT.md and SYSTEM.md"*
+2. *"You are The Architect. Galactic Master System. Follow agents/the-architect/GALACTIC-MASTER-PROMPT.md and SYSTEM.md"*
 3. Fill in [`INVOCATION.md`](agents/the-architect/INVOCATION.md) with your project.
 4. Same voice for headlines, sales pages, emails, books — no mode switching.
 
 ---
 | File | Purpose |
 |---|---|
+| [`GALACTIC-MASTER-PROMPT.md`](agents/the-architect/GALACTIC-MASTER-PROMPT.md) | Apex system — Schwartz + Carlton + Info-Product Architecture engines |
 | [`DR-SPECIALIST-PROMPT.md`](agents/the-architect/DR-SPECIALIST-PROMPT.md) | Production orchestration — role, execution engine, methodology router, output contract |
 | [`AGENT.md`](agents/the-architect/AGENT.md) | Agentic orchestration — autonomous workflow state machine |
 | [`SYSTEM.md`](agents/the-architect/SYSTEM.md) | Core system prompt (load this in your agent) |
@@ -141,6 +142,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`HAINES-METHODOLOGY.md`](agents/the-architect/HAINES-METHODOLOGY.md) | Scott Haines: shortcut copywriting, Headline→P.S., bucket brigade, blind bullets |
 | [`CARLTON-METHODOLOGY.md`](agents/the-architect/CARLTON-METHODOLOGY.md) | John Carlton: Theatre/Salesmanship/Bonding, sales detective, hook engineering, SWS 17 steps |
 | [`CELEBRITY-BUILDING-METHODOLOGY.md`](agents/the-architect/CELEBRITY-BUILDING-METHODOLOGY.md) | Authority from thin air: origin myth, polarity, proof cascade, 90-day celebrity sprint |
+| [`INFO-PRODUCT-ARCHITECTURE.md`](agents/the-architect/INFO-PRODUCT-ARCHITECTURE.md) | Nine-phase engine: curriculum spine, offer stack, launch funnel, backend |
 | [`SUGARMAN-METHODOLOGY.md`](agents/the-architect/SUGARMAN-METHODOLOGY.md) | Joe Sugarman: slippery slide, 31 triggers, emotion→logic, mail-order craft |
 | [`MASTER-STORYTELLERS.md`](agents/the-architect/MASTER-STORYTELLERS.md) | Aristotle, Homer, Shakespeare, Campbell, Hemingway — narrative genius stack |
 | [`BUSINESS-THRILLER-CRAFT.md`](agents/the-architect/BUSINESS-THRILLER-CRAFT.md) | Hitchcock, Christie, Patterson — thriller/mystery craft for business books |
@@ -153,6 +155,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`research/HAINES-COPY-WORKFLOW-TEMPLATE.md`](agents/the-architect/research/HAINES-COPY-WORKFLOW-TEMPLATE.md) | Headline to P.S. linear copy assembly |
 | [`research/CARLTON-SWS-TEMPLATE.md`](agents/the-architect/research/CARLTON-SWS-TEMPLATE.md) | Carlton Simple Writing System 17-step checklist |
 | [`research/CELEBRITY-FABRICATION-TEMPLATE.md`](agents/the-architect/research/CELEBRITY-FABRICATION-TEMPLATE.md) | 90-day celebrity / authority build worksheet |
+| [`research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md`](agents/the-architect/research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md) | Nine-phase info-product build worksheet |
 | [`SOURCES-HAINES.md`](agents/the-architect/SOURCES-HAINES.md) | Scott Haines source provenance |
 | [`SOURCES-CARLTON.md`](agents/the-architect/SOURCES-CARLTON.md) | John Carlton source provenance |
 | [`research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`](agents/the-architect/research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md) | Slippery slide + psychological trigger audit |
