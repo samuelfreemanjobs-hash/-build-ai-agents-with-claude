@@ -18,6 +18,7 @@ This is the Week 1–12 engineering MVP from the operational blueprint:
 | Week 11–12 | FastAPI gateway + insurance stub | ✅ Full REST API |
 | Call 2 Demo | Interactive graph visualization UI | ✅ Cytoscape.js + path highlighting |
 | GTM | Tariff Leak Calculator micro-site | ✅ BOM upload + Savings Report |
+| GTM | Design Partner outreach kit | ✅ Cold email + LoI + call scripts |
 
 ## Quick Start
 
@@ -35,6 +36,7 @@ autoborder rvc 12345 -v
 uvicorn autoborder.api.main:app --reload --port 8000
 # Tariff Leak Calculator → http://localhost:8000
 # Call 2 Graph Demo      → http://localhost:8000/demo
+# Design Partner Kit     → http://localhost:8000/design-partner
 ```
 
 ## Architecture
@@ -53,15 +55,56 @@ RVC = ((Net Cost - Value of Non-Originating Materials) / Net Cost) × 100
 
 Exclusions: packing, warranty, royalties. Partial originating components use proportional tracing.
 
-## Call 2 Sales Demo — Graph Visualization
+## GTM — Tariff Leak Calculator
 
-Interactive supply chain graph for screen-sharing with VP Supply Chain prospects:
+LinkedIn ad hook micro-site: *"Upload a single complex BOM. We will tell you within 30 seconds how much duty you overpaid last quarter."*
 
 ```bash
 uvicorn autoborder.api.main:app --reload --port 8000
 ```
 
-Open **http://localhost:8000** to launch the demo UI.
+Open **http://localhost:8000**
+
+**Flow:**
+1. Prospect uploads BOM (JSON) + company info
+2. Engine runs USMCA RVC calculation in ~30 seconds
+3. Shows overpayment amount, penalty exposure, and top tariff leaks
+4. Generates CFO-ready Savings Report (HTML/PDF)
+5. "Email Report to CFO" queues delivery for sales handoff
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/` | Tariff Leak Calculator landing page |
+| POST | `/calculator/analyze` | Upload BOM + calculate leak |
+| GET | `/calculator/report/{id}` | View Savings Report |
+| POST | `/calculator/report/{id}/send` | Email report to CFO |
+
+Sample brake rotor BOM available via "Use sample" button or `GET /calculator/sample-bom`.
+
+## Design Partner Outreach Kit
+
+Sales playbook for Monterrey/Saltillo VP Supply Chain outreach with the **$10,000 error guarantee**:
+
+Open **http://localhost:8000/design-partner**
+
+**Includes:**
+- 3-email cold sequence (discovery → ROI → guarantee close)
+- LinkedIn connect + follow-up scripts
+- 3-call cadence scripts (SDR discovery → graph demo → legal close)
+- Letter of Intent template with guarantee clause
+- 10 target accounts in Monterrey/Saltillo (CSV)
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/design-partner` | Sales team UI — personalize and copy scripts |
+| POST | `/outreach/personalize` | Generate full kit for a prospect |
+| GET | `/outreach/targets` | Target account list (Monterrey/Saltillo) |
+
+## Call 2 Sales Demo — Graph Visualization
+
+Interactive supply chain graph for screen-sharing with VP Supply Chain prospects:
+
+Open **http://localhost:8000/demo**
 
 **Features:**
 - Hierarchical BOM graph with color-coded origin status (blue root, green/red/amber nodes)
@@ -71,7 +114,7 @@ Open **http://localhost:8000** to launch the demo UI.
 
 | Method | Path | Description |
 |--------|------|-------------|
-| GET | `/` | Interactive graph demo UI |
+| GET | `/demo` | Interactive graph demo UI |
 | GET | `/graph/{part_number}/visualization` | Full graph + RVC payload for UI |
 | GET | `/graph/{part_number}/paths` | Non-originating supply chain paths |
 | GET | `/graph/{part_number}/traverse` | BFS traversal with depth filter |
@@ -120,8 +163,10 @@ autoborder/
 ├── graph/          # Neo4j mapper + Cypher generator
 ├── engine/         # Deterministic USMCA RVC calculator
 ├── extractors/     # LLM cost field extraction
-├── reports/        # Forensic PDF generator
-├── services/       # Insurance MGU integration
+├── gtm/            # Tariff Leak Calculator + BOM parser + outreach kit
+├── reports/        # Forensic PDF + Savings Report
+├── services/       # Insurance MGU + email delivery
+├── web/            # Calculator + graph demo + design partner UI
 ├── api/            # FastAPI gateway
 ├── data/mock/      # Sandbox BOM + cost sheets
 └── cli.py          # Command-line interface

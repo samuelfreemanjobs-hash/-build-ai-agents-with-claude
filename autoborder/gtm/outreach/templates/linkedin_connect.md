@@ -1,0 +1,1 @@
+Hi {contact_name} — I work with auto suppliers in {city} on USMCA RVC compliance. Saw {company_name}'s work on {part_focus}. Would value connecting on how teams there are handling post-audit RVC recalculations. — {sender_name}

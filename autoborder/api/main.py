@@ -32,6 +32,7 @@ from autoborder.services.email import EmailDeliveryService
 from autoborder.services.insurance import InsuranceMGUClient
 from autoborder.gtm.bom_parser import BOMParser
 from autoborder.gtm.tariff_leak import TariffLeakCalculator
+from autoborder.gtm.outreach.kit import OutreachKit, OutreachKitResponse, ProspectProfile
 
 WEB_DIR = Path(__file__).resolve().parent.parent / "web"
 
@@ -59,6 +60,7 @@ bom_parser = BOMParser()
 leak_calculator = TariffLeakCalculator()
 savings_report_generator = SavingsReportGenerator()
 email_service = EmailDeliveryService()
+outreach_kit = OutreachKit()
 
 if (WEB_DIR / "static").is_dir():
     app.mount("/static", StaticFiles(directory=WEB_DIR / "static"), name="static")
@@ -164,6 +166,34 @@ def send_savings_report(report_id: str, body: dict) -> SavingsReportDelivery:
     if "@" not in str(recipient):
         raise HTTPException(status_code=400, detail="Valid recipient_email required")
     return email_service.send_savings_report(result, recipient, savings_report_generator)
+
+
+@app.get("/design-partner", response_class=HTMLResponse)
+def design_partner_kit() -> HTMLResponse:
+    """Sales team — personalized outreach scripts and Design Partner LoI."""
+    path = WEB_DIR / "design-partner.html"
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="Design Partner kit not found")
+    return HTMLResponse(path.read_text(encoding="utf-8"))
+
+
+@app.get("/outreach/templates")
+def list_outreach_templates() -> dict:
+    return {"templates": outreach_kit.list_templates()}
+
+
+@app.post("/outreach/personalize", response_model=OutreachKitResponse)
+def personalize_outreach(prospect: ProspectProfile) -> OutreachKitResponse:
+    return outreach_kit.render_full_kit(prospect)
+
+
+@app.get("/outreach/targets")
+def list_target_accounts() -> list[dict]:
+    import csv
+
+    targets_path = Path(__file__).resolve().parent.parent / "gtm" / "outreach" / "targets_monterrey_saltillo.csv"
+    with targets_path.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
 
 
 @app.get("/health")
