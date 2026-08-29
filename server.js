@@ -6,6 +6,8 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { Resend } = require('resend');
 const axios = require('axios');
 const cron = require('node-cron');
+const { SERVICES, STRATEGIES, INDUSTRIES, SCORING_DIMENSIONS, matchService } = require('./lib/services-catalog');
+const { registerBusinessRoutes } = require('./lib/routes-business');
 
 const app = express();
 app.use(cors());
@@ -24,41 +26,7 @@ const supabase = SUPABASE_URL && SUPABASE_ANON_KEY
 const genAI = GEMINI_API_KEY ? new GoogleGenerativeAI(GEMINI_API_KEY) : null;
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 
-// ─── SCORING ENGINE ──────────────────────────────────────────────
-const SCORING_DIMENSIONS = {
-  problemSeverity: { max: 25, label: 'Problem Severity' },
-  buyingSignal: { max: 20, label: 'Buying Signal' },
-  abilityToPay: { max: 15, label: 'Ability to Pay' },
-  serviceFit: { max: 15, label: 'Service Fit' },
-  accessibility: { max: 10, label: 'Accessibility' },
-  urgency: { max: 10, label: 'Urgency' },
-  competitivePressure: { max: 5, label: 'Competitive Pressure' }
-};
-
-const SERVICES = [
-  'Spreadsheet Elimination System',
-  'KPI Command Center & Executive Dashboard Sprint',
-  'CNC Spindle Telemetry & CMM Queue Bridge',
-  'Die Tryout Milestone & Tooling Validation Bridge',
-  'Wire Harness Continuity & QA Ingestion Engine',
-  '3PL Cross-Dock & VMI Buffer Exception Dashboard',
-  'Conversion Website Sprint + RFQ Spec Ingestion Engine'
-];
-
-const STRATEGIES = [
-  { id: 'A', label: 'Diagnostic', prefix: 'I noticed something...' },
-  { id: 'B', label: 'Opportunity', prefix: 'I found an opportunity...' },
-  { id: 'C', label: 'Competitive', prefix: 'Your competitors are doing...' },
-  { id: 'D', label: 'Build', prefix: 'I mocked up what this could look like...' },
-  { id: 'E', label: 'Audit', prefix: 'I ran a quick audit...' },
-  { id: 'F', label: 'Intelligence', prefix: 'I found three things you may want to know...' }
-];
-
-const INDUSTRIES = [
-  'CNC Machining', 'Tier II Automotive Stamping', '3PL Warehousing',
-  'Tool & Die Validation', 'Wire Harness Assembly', 'Heavy Steel Fabrication',
-  'Precision Injection Molding', 'Aerospace Components'
-];
+const SERVICE_NAMES = SERVICES.map(s => s.name);
 
 const getTier = (score) => {
   if (score >= 90) return { label: 'HOT', emoji: '🔥' };
@@ -130,7 +98,7 @@ Return ONLY JSON:
   "competitivePressure": number,
   "detectedProblems": ["problem1", "problem2", "problem3"],
   "evidenceSignals": "specific signal found",
-  "recommendedService": "one of: ${SERVICES.join(', ')}"
+  "recommendedService": "one of: ${SERVICE_NAMES.join(', ')}"
 }
 `;
 
@@ -157,13 +125,14 @@ Return ONLY JSON:
     const totalScore = Object.values(scoreBreakdown).reduce((sum, val) => sum + val, 0);
     const tier = getTier(totalScore);
     const strategy = STRATEGIES[Math.floor(Math.random() * STRATEGIES.length)];
-    const recommendedService = parsed.recommendedService || SERVICES[0];
+    const recommendedService = parsed.recommendedService || SERVICE_NAMES[0];
+    const matchedSvc = matchService(industry, parsed.detectedProblems);
 
     return {
       scoreBreakdown,
       detectedProblems: parsed.detectedProblems || ['Operational inefficiency detected'],
       evidenceSignals: parsed.evidenceSignals || 'AI-analyzed public data',
-      recommendedService,
+      recommendedService: recommendedService || matchedSvc.name,
       diagnostic: `${tier.emoji} ${name} scores ${totalScore} — ${tier.label} tier opportunity. Focus on ${recommendedService}.`,
       outreachStrategy: strategy.id,
       outreachSubject: `${strategy.prefix} ${name}`,
@@ -198,11 +167,11 @@ function buildFallbackScore(name, industry, location, employeeCount) {
     scoreBreakdown,
     detectedProblems: ['Manual processes detected'],
     evidenceSignals: 'Scored via fallback logic',
-    recommendedService: SERVICES[0],
-    diagnostic: `${tier.emoji} ${name} scores ${totalScore} — ${tier.label} tier opportunity. Focus on ${SERVICES[0]}.`,
+    recommendedService: SERVICE_NAMES[0],
+    diagnostic: `${tier.emoji} ${name} scores ${totalScore} — ${tier.label} tier opportunity. Focus on ${SERVICE_NAMES[0]}.`,
     outreachStrategy: strategy.id,
     outreachSubject: `${strategy.prefix} ${name}`,
-    outreachBody: `${strategy.prefix}\n\nHi [Decision Maker],\n\nI've been tracking ${industry || 'manufacturing'} in ${location || 'your region'} and noticed an opportunity to optimize ${SERVICES[0]}.\n\nWould you be open to a 15-min diagnostic call?\n\nBest,\nHUNTER Intelligence`
+    outreachBody: `${strategy.prefix}\n\nHi [Decision Maker],\n\nI've been tracking ${industry || 'manufacturing'} in ${location || 'your region'} and noticed an opportunity to optimize ${SERVICE_NAMES[0]}.\n\nWould you be open to a 15-min diagnostic call?\n\nBest,\nHUNTER Intelligence`
   };
 }
 
@@ -246,7 +215,8 @@ app.get('/api/health', (req, res) => {
 app.get('/api/config', (req, res) => {
   res.json({
     scoringDimensions: SCORING_DIMENSIONS,
-    services: SERVICES,
+    services: SERVICE_NAMES,
+    serviceCatalog: SERVICES,
     strategies: STRATEGIES,
     industries: INDUSTRIES
   });
@@ -312,7 +282,7 @@ app.post('/api/leads', async (req, res) => {
       stage: 'New Opportunity',
       estimated_value: req.body.estimatedValue || 50000,
       value_range: `$${((req.body.estimatedValue || 50000) - 5000).toLocaleString()} – $${((req.body.estimatedValue || 50000) + 10000).toLocaleString()}`,
-      matched_service: req.body.matchedService || scoredData.recommendedService || SERVICES[0],
+      matched_service: req.body.matchedService || scoredData.recommendedService || SERVICE_NAMES[0],
       detected_problems: req.body.detectedProblems || scoredData.detectedProblems || ['Operational inefficiency detected'],
       evidence_signals: req.body.evidenceSignals || scoredData.evidenceSignals || 'AI-enriched lead',
       give_before_ask: req.body.giveBeforeAsk || 'Custom diagnostic asset',
@@ -604,6 +574,8 @@ if (supabase) {
     }
   });
 }
+
+registerBusinessRoutes(app, { supabase, genAI, resend, sendSlackNotification, requireSupabase });
 
 // Serve frontend in production
 const path = require('path');

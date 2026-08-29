@@ -1,127 +1,165 @@
-# Autonomous HUNTER OS
+# Autonomous HUNTER OS — Complete Business Operating System
 
-Production-ready revenue intelligence system with AI auto-scoring, email outreach, lead discovery, multi-user sync via Supabase, and Slack notifications.
+**One person. Full autonomous revenue machine. Launch-ready.**
+
+HUNTER Intelligence is a complete business-in-a-box for solo operators selling operational intelligence to mid-market manufacturers. Every system — sales, delivery, finance, marketing, operations — is built, automated, and ready to profit.
+
+## What You Get
+
+| Layer | Components |
+|-------|-----------|
+| **Revenue Engine** | AI lead scoring, outreach, proposals, diagnostics, pipeline CRM |
+| **Discovery** | n8n LinkedIn auto-discovery + follow-up email sequences |
+| **Delivery** | Service catalog, SOW/MSA templates, delivery prompts |
+| **Finance** | Invoice generation, AR tracking, revenue metrics, MRR |
+| **Operations** | Operator dashboard, daily briefing, task management |
+| **Go-To-Market** | Landing page, lead capture, email sequences, LinkedIn content system |
+| **Business Intel** | Business model, pricing, financial targets, 30-day launch plan |
 
 ## Architecture
 
 ```
-Lead Discovery → AI Scoring & Enrich → Outreach Engine
-                        ↓
-              Supabase (PostgreSQL)
-                        ↓
-         HUNTER Frontend / Analytics / Slack Bot
+                    ┌─────────────────────────────────┐
+                    │     SOLO OPERATOR (You)         │
+                    │  Decide · Sell · Deliver · Collect │
+                    └──────────────┬──────────────────┘
+                                   │
+          ┌────────────────────────┼────────────────────────┐
+          ▼                        ▼                        ▼
+   ┌─────────────┐         ┌─────────────┐         ┌─────────────┐
+   │  DISCOVER   │         │   SELL      │         │  DELIVER    │
+   │  n8n+Apify  │────────▶│  HUNTER CRM │────────▶│  Projects   │
+   │  LinkedIn   │         │  Proposals  │         │  Invoices   │
+   └─────────────┘         │  Diagnostics│         └─────────────┘
+                           └──────┬──────┘
+                                  ▼
+                    ┌─────────────────────────┐
+                    │  Supabase (PostgreSQL)   │
+                    │  Leads · Clients · Projects │
+                    │  Invoices · Tasks · Proposals │
+                    └─────────────────────────┘
 ```
 
-## Quick Start
-
-### 1. Install dependencies
+## Quick Start (Launch Today)
 
 ```bash
+# 1. Install & configure
 npm install
-```
+cp .env.example .env   # Fill in all keys
 
-### 2. Configure environment
+# 2. Database
+# Run supabase/migration.sql then migration-v2-business.sql in Supabase SQL Editor
 
-```bash
-cp .env.example .env
-# Edit .env with your API keys
-```
-
-### 3. Set up Supabase
-
-1. Create a project at [supabase.com](https://supabase.com)
-2. Run the migration in `supabase/migration.sql` via the SQL Editor
-3. Copy your project URL and anon key to `.env`
-
-### 4. Start the backend
-
-```bash
+# 3. Start
 npm start
-# or for development:
-npm run dev
+
+# 4. Open
+# Landing page:    http://localhost:3001/
+# Operator Center: http://localhost:3001/operator.html
+# CRM:             http://localhost:3001/hunter_crm.html
+
+# 5. Automate
+# Import n8n/*.json workflows — see n8n/README.md
+
+# 6. Launch
+# Follow business/LAUNCH_CHECKLIST.md
 ```
 
-API runs at `http://localhost:3001/api`
+## Docker Deploy
 
-### 5. Open the frontend
-
-Open `frontend/hunter_crm.html` in your browser, or visit `http://localhost:3001/hunter_crm.html` when the server is running.
+```bash
+docker compose up -d
+# or deploy Dockerfile to Railway/Render/Fly.io
+```
 
 ## API Endpoints
 
+### Core
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/health` | Health check + service status |
-| GET | `/api/config` | Scoring dimensions, services, strategies |
-| POST | `/api/score` | Auto-score a company via Gemini |
-| POST | `/api/leads` | Create lead (auto-scores if no breakdown provided) |
-| GET | `/api/leads` | List all leads |
-| GET | `/api/leads/:id` | Get single lead |
-| PUT | `/api/leads/:id` | Update lead |
-| DELETE | `/api/leads/:id` | Delete lead |
-| POST | `/api/outreach/send` | Send outreach email via Resend |
-| GET | `/api/outreach/logs` | Outreach history |
-| GET | `/api/analytics` | Pipeline analytics |
+| GET | `/api/health` | System health |
+| GET | `/api/config` | Scoring config + service catalog |
+| POST | `/api/score` | AI-score a company |
+| POST | `/api/capture` | Landing page lead capture |
 
-## Features
+### Sales
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| CRUD | `/api/leads` | Lead pipeline |
+| POST | `/api/leads/:id/convert` | Close deal → client + project + invoice |
+| POST | `/api/proposals/generate` | AI proposal generation |
+| POST | `/api/diagnostics/generate` | AI diagnostic report |
+| POST | `/api/outreach/send` | Send outreach email |
 
-- **Auto-Scoring** — Paste a URL, Gemini reads the website, returns 7-dimension scores + diagnostic
-- **Lead Pipeline** — Kanban-style pipeline with tier badges (HOT/HIGH/MEDIUM/WATCH)
-- **Outreach Engine** — One-click email sending via Resend with strategy templates
-- **Follow-Up Automation** — Daily cron checks leads stuck in "Outreach Sent" >7 days
-- **Slack Notifications** — HOT leads and weekly reports sent automatically
-- **Analytics** — Pipeline value, win rate, strategy performance by industry
-- **Multi-User Sync** — Supabase replaces localStorage for team-wide data
-- **Lead Discovery (n8n)** — Automated LinkedIn company search → auto-score → create leads
+### Business
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/services` | Full service catalog with pricing |
+| GET | `/api/business/metrics` | Revenue, pipeline, MRR, health score |
+| GET | `/api/operator/daily` | Daily operator briefing |
+| CRUD | `/api/clients` | Client management |
+| CRUD | `/api/projects` | Project delivery tracking |
+| CRUD | `/api/invoices` | Invoice & AR management |
+| CRUD | `/api/tasks` | Operator task list |
 
-## Lead Discovery (n8n)
+## Revenue Targets
 
-Import `n8n/hunter-lead-discovery.json` into n8n for automated lead discovery:
+| Month | Target | How |
+|-------|--------|-----|
+| 1-2 | $25K/mo | 1 project closing |
+| 3-4 | $50K/mo | 2 projects |
+| 5-6 | $75K/mo | 2 projects + 1 retainer |
+| 7-12 | $100K+/mo | 2 projects + 3 retainers |
 
-1. Runs daily at 6 AM (or trigger manually / via webhook)
-2. Searches LinkedIn via Apify for manufacturing companies by industry × location
-3. Deduplicates against existing HUNTER leads
-4. Creates + auto-scores each new lead via `POST /api/leads`
-5. Sends Slack alerts for HOT leads and daily summary reports
-
-See [n8n/README.md](n8n/README.md) for full setup instructions.
-
-## Environment Variables
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `SUPABASE_URL` | Yes | Supabase project URL |
-| `SUPABASE_ANON_KEY` | Yes | Supabase anon/public key |
-| `GEMINI_API_KEY` | For scoring | Google Gemini API key |
-| `RESEND_API_KEY` | For email | Resend API key |
-| `SLACK_WEBHOOK` | Optional | Slack incoming webhook URL |
-| `PORT` | Optional | Server port (default: 3001) |
-
-## Deployment
-
-### Backend (Railway / Render)
-
-1. Push to GitHub
-2. Connect repo to Railway or Render
-3. Set environment variables
-4. Deploy — `npm start` runs automatically
-
-### Frontend (Vercel / static)
-
-The frontend is a single HTML file. Deploy `frontend/` as a static site, or serve it from the Express backend (already configured).
+See `business/BUSINESS_MODEL.md` and `business/PRICING.md` for full details.
 
 ## File Structure
 
 ```
 hunter-autonomous-os/
-├── server.js                  # Backend API
-├── package.json
-├── .env.example
-├── supabase/
-│   └── migration.sql          # Database schema
+├── server.js                     # API server
+├── lib/
+│   ├── services-catalog.js       # 7 services + pricing + retainer
+│   ├── proposal-engine.js        # AI proposal/diagnostic generation
+│   ├── business-metrics.js       # Revenue, pipeline, health scoring
+│   └── routes-business.js        # Business API routes
 ├── frontend/
-│   └── hunter_crm.html        # HUNTER CRM frontend
-└── n8n/
-    ├── hunter-lead-discovery.json  # n8n auto-discovery workflow
-    └── README.md                   # n8n setup guide
+│   ├── index.html                # Landing page (lead capture)
+│   ├── operator.html             # Solo operator command center
+│   └── hunter_crm.html           # Full CRM
+├── business/
+│   ├── BUSINESS_MODEL.md         # ICP, unit economics, GTM
+│   ├── PRICING.md                # Service catalog pricing
+│   ├── OPERATOR_PLAYBOOK.md      # Daily routine for solo operator
+│   └── LAUNCH_CHECKLIST.md       # 30-day launch plan
+├── prompts/                      # AI prompts for every business function
+├── templates/                    # MSA, SOW, email sequences
+├── supabase/
+│   ├── migration.sql             # Core tables
+│   └── migration-v2-business.sql # Clients, projects, invoices, tasks
+├── n8n/                          # Automation workflows
+├── Dockerfile + docker-compose.yml
+└── .env.example
 ```
+
+## Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `SUPABASE_URL` | Yes | Database |
+| `SUPABASE_ANON_KEY` | Yes | Database auth |
+| `GEMINI_API_KEY` | Yes | AI scoring, proposals, diagnostics |
+| `RESEND_API_KEY` | For email | Outreach + follow-ups |
+| `RESEND_FROM` | For email | Verified sender address |
+| `SLACK_WEBHOOK` | Recommended | HOT lead + daily alerts |
+| `REVENUE_TARGET_MONTHLY` | Optional | Default: 50000 |
+
+## Your Daily Workflow (90 min)
+
+1. Open **Operator Dashboard** → act on priorities
+2. Send outreach to HOT leads (CRM)
+3. Follow up proposals
+4. Check delivery on active projects
+5. Collect overdue invoices
+
+Everything else runs autonomously. See `business/OPERATOR_PLAYBOOK.md`.

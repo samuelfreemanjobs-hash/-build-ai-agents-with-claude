@@ -1,0 +1,154 @@
+{
+  "name": "HUNTER — Follow-Up Email Sequence",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 10 * * *" }]
+        }
+      },
+      "id": "fu-001",
+      "name": "Daily 10AM",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {},
+      "id": "fu-002",
+      "name": "Manual Test",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 100]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "c1", "name": "hunterApiUrl", "value": "http://localhost:3001/api", "type": "string" },
+            { "id": "c2", "name": "resendApiKey", "value": "YOUR_RESEND_API_KEY", "type": "string" },
+            { "id": "c3", "name": "fromEmail", "value": "HUNTER Intelligence <hunter@yourdomain.com>", "type": "string" }
+          ]
+        }
+      },
+      "id": "fu-003",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [240, 200]
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Config').first().json.hunterApiUrl }}/leads",
+        "options": {}
+      },
+      "id": "fu-004",
+      "name": "Get All Leads",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const leads = $input.all().map(i => i.json);\nconst flat = leads.length === 1 && Array.isArray(leads[0]) ? leads[0] : leads;\nconst now = Date.now();\n\nconst sequences = [];\n\nfor (const lead of flat) {\n  if (!lead.company || lead.stage === 'Closed Won / Client') continue;\n  if (!lead.decision_maker || !lead.decision_maker.includes('@')) continue;\n  \n  const daysSince = (now - new Date(lead.last_activity).getTime()) / 86400000;\n  const notes = lead.notes || '';\n  \n  if (lead.stage === 'Outreach Sent' && daysSince >= 3 && daysSince < 5 && !notes.includes('Day 3 follow-up')) {\n    sequences.push({ json: { ...lead, sequenceDay: 3, subject: `Quick follow-up — ${lead.company}`, body: `Hi,\\n\\nI sent a note earlier this week about operational efficiency at ${lead.company}.\\n\\nManufacturers in ${lead.industry || 'your industry'} typically lose $180K–$320K annually to the friction patterns I identified.\\n\\nHappy to share a brief analysis — no strings attached. Worth 15 minutes?\\n\\nBest,\\nHUNTER Intelligence` } });\n  }\n  \n  if ((lead.stage === 'Outreach Sent' || lead.stage === 'Diagnostic Ready') && daysSince >= 7 && daysSince < 9 && !notes.includes('Day 7 follow-up')) {\n    sequences.push({ json: { ...lead, sequenceDay: 7, subject: `How a ${lead.industry || 'manufacturing'} shop cut reporting time by 90%`, body: `Hi,\\n\\nQuick story: a shop similar to ${lead.company} was spending 15 hours/week on production reports from 12 spreadsheets.\\n\\nWe built a live KPI dashboard in 3 weeks. Any metric in under 30 seconds now.\\n\\nIf ${lead.company} has similar challenges, I can run a free diagnostic. 15 minutes this week?\\n\\nBest,\\nHUNTER Intelligence` } });\n  }\n  \n  if ((lead.stage === 'Outreach Sent' || lead.stage === 'Diagnostic Ready') && daysSince >= 14 && daysSince < 16 && !notes.includes('Day 14 breakup')) {\n    sequences.push({ json: { ...lead, sequenceDay: 14, subject: `Closing the loop — ${lead.company}`, body: `Hi,\\n\\nI've reached out a few times about operational intelligence for ${lead.company}. Totally understand if timing isn't right.\\n\\nI'll close your file for now. If things change, reply \"DIAGNOSTIC\" and I'll run a free friction report — no call required.\\n\\nBest,\\nHUNTER Intelligence` } });\n  }\n}\n\nif (sequences.length === 0) return [{ json: { _empty: true, message: 'No follow-ups due today' } }];\nreturn sequences;"
+      },
+      "id": "fu-005",
+      "name": "Calculate Follow-Ups",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [{
+            "leftValue": "={{ $json._empty }}",
+            "rightValue": true,
+            "operator": { "type": "boolean", "operation": "notEquals" }
+          }]
+        }
+      },
+      "id": "fu-006",
+      "name": "Has Follow-Ups?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [960, 200]
+    },
+    {
+      "parameters": { "batchSize": 1 },
+      "id": "fu-007",
+      "name": "Process One",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1200, 120]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.resend.com/emails",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "=Bearer {{ $('Config').first().json.resendApiKey }}" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"from\": \"{{ $('Config').first().json.fromEmail }}\",\n  \"to\": [\"{{ $json.decision_maker }}\"],\n  \"subject\": \"{{ $json.subject }}\",\n  \"text\": \"{{ $json.body }}\"\n}"
+      },
+      "id": "fu-008",
+      "name": "Send Email (Resend)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1440, 120]
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "={{ $('Config').first().json.hunterApiUrl }}/leads/{{ $json.id }}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"notes\": \"{{ $json.notes || '' }}\\n[{{ new Date().toISOString() }}] Day {{ $json.sequenceDay }} follow-up sent via n8n.\"\n}"
+      },
+      "id": "fu-009",
+      "name": "Update Lead Notes",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1680, 120]
+    },
+    {
+      "parameters": { "amount": 3, "unit": "seconds" },
+      "id": "fu-010",
+      "name": "Rate Limit",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1920, 120],
+      "webhookId": "fu-rate"
+    }
+  ],
+  "connections": {
+    "Daily 10AM": { "main": [[{ "node": "Config", "type": "main", "index": 0 }]] },
+    "Manual Test": { "main": [[{ "node": "Config", "type": "main", "index": 0 }]] },
+    "Config": { "main": [[{ "node": "Get All Leads", "type": "main", "index": 0 }]] },
+    "Get All Leads": { "main": [[{ "node": "Calculate Follow-Ups", "type": "main", "index": 0 }]] },
+    "Calculate Follow-Ups": { "main": [[{ "node": "Has Follow-Ups?", "type": "main", "index": 0 }]] },
+    "Has Follow-Ups?": {
+      "main": [
+        [{ "node": "Process One", "type": "main", "index": 0 }],
+        []
+      ]
+    },
+    "Process One": {
+      "main": [
+        [],
+        [{ "node": "Send Email (Resend)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Send Email (Resend)": { "main": [[{ "node": "Update Lead Notes", "type": "main", "index": 0 }]] },
+    "Update Lead Notes": { "main": [[{ "node": "Rate Limit", "type": "main", "index": 0 }]] },
+    "Rate Limit": { "main": [[{ "node": "Process One", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "tags": [{ "name": "HUNTER" }, { "name": "Follow-Up" }]
+}
