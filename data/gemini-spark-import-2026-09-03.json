@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-03",
+  "region": "Metro Detroit",
+  "focusedVertical": "Prototype & Short-Run Stamping, Four-Slide Wire Forming, Turnkey Robotics/Assembly Systems & Custom Thermoformed Returnable Packaging",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 78,
+    "estimatedValueRange": "$39,500 – $71,000",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Auto Metal Craft",
+      "url": "https://autometalcraft.com",
+      "location": "Oak Park, MI",
+      "industry": "Tier II Automotive Stamping",
+      "employeeCount": 50,
+      "decisionMaker": "Chuck Karch (President) / Tooling & Plant Manager",
+      "score": 95,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 25,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 8,
+        "competitivePressure": 4
+      },
+      "detectedProblems": [
+        "High-velocity prototype batches (14-piece sprints to 300+ assemblies) with rapid engineering revisions",
+        "Hand-fed stamping presses + 4 dedicated 3D laser trimming cells — continuous routing handoffs between stamping, laser trim fixtures, and CMM check fixtures",
+        "Accelerated EV prototype iterations and OEM program shifts require constant revision tracking"
+      ],
+      "evidenceSignals": "70+ year track record. Key GM & EV Tier 1/2 supplier. Kirksite tooling, 3D laser trimming. Livonia & Warren Master Scheduler hiring trends.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Rapid Prototype ECN Revision & Laser Trim Fixture Queue Board (1-page framework)",
+      "diagnostic": "🔥 Auto Metal Craft scores 95 — HOT tier. ECN version lag across 300+ prototype assemblies creates scrap risk if laser programs not synced with latest die hit. Stamping-to-laser WIP bottleneck without real-time queue visibility.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Oak Park facility: tracking rapid CAD revisions between press hits and laser trim",
+      "outreachBody": "I mocked up what this could look like...\n\nHi Chuck,\n\nWhen handling rapid-turn prototype stamping and short runs for OEM programs in Oak Park, balancing rapid CAD revisions across your hand-fed presses and 4 laser trimming cells usually takes heavy manual tracking between tooling and laser setup.\n\nI built a lightweight Prototype ECN & Laser Queue visual board concept designed for prototype stampers that flags active revision changes and tracks laser fixture readiness in real time.\n\nWould you be open to a 2-minute review of the 1-page visual framework to see if it could save your shop leads time?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-03 — priority #1. Send today. Highest score in pipeline."
+    },
+    {
+      "company": "Four-Slide Technology, Inc.",
+      "url": "https://fourslidetechnology.com",
+      "location": "Metro Detroit, MI",
+      "industry": "Tier II Automotive Stamping",
+      "employeeCount": 90,
+      "decisionMaker": "VP of Operations / Tooling & Production Manager",
+      "score": 91,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 19,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Four-slide tooling, mechanical stamping up to 80 tons, multi-head resistance welding, and customer-specific kitting under one roof",
+        "Tooling changeovers on four-slide machines alongside secondary tapping, trimming, and assembly fixtures require setup-to-run cycle tracking",
+        "Customer-specific kitting logs managed manually increase pack-and-ship verification time"
+      ],
+      "evidenceSignals": "Macomb/Wayne county hiring for Material Planners & Production Schedulers. Precision metal clips, clamps, brackets.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Four-Slide Tooling Setup & Resistance Weld QA Balance Sheet",
+      "diagnostic": "🔥 Four-Slide Technology scores 91 — HOT tier. Cam setup duration tracked manually obscures line downtime reduction opportunities. Secondary weld staging without digital WIP buffers causes line imbalance.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Four-slide setup turnover & secondary welding station balance",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nRunning high-mix four-slide forming lines alongside secondary resistance welding and custom kitting in Metro Detroit often creates administrative friction when balancing cam changeover times against assembly station rates.\n\nI put together a quick mockup of a Four-Slide Setup & Secondary Assembly Board designed to track machine changeovers and automate kitting verification.\n\nLet me know if you'd like me to send over the concept mockup.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-03 — priority #2. Send today."
+    },
+    {
+      "company": "Quantix Automation",
+      "url": "https://quantixautomation.com",
+      "location": "Greater Detroit Area, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 55,
+      "decisionMaker": "Director of Engineering / Systems Integration Lead",
+      "score": 89,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 15,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Turnkey assembly automation, robotic material handling, automated testing & palletizing for Tier 1 automotive",
+        "ETO workflow: mechanical design, PLC programming, robot simulation, and customer dry-run tryouts require multi-discipline milestone visibility",
+        "Overlapping mechanical builds, controls software drops, and customer FAT runoff schedules across multiple bays"
+      ],
+      "evidenceSignals": "Custom turnkey automation for Tier 1 automotive and advanced manufacturing clients.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Robotic Integration & Factory Acceptance Test (FAT) Milestone Framework",
+      "diagnostic": "🟠 Quantix scores 89 — HIGH tier. FAT milestone readiness and PLC dry-run logs fragmented across mechanical, controls, and customer runoff workstreams.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Visualizing FAT milestone readiness & PLC dry-run logs",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nIntegrating custom robotic assembly and inline test stations for automotive Tier 1s in Greater Detroit usually means managing overlapping mechanical builds, controls software drops, and customer FAT runoff schedules across multiple bays.\n\nI created a 1-page Turnkey Automation FAT Milestone framework designed for system integrators that highlights component lead times and tracks software readiness without spreadsheet clutter.\n\nHappy to send over the 1-page layout if you'd like to see how other integrators set this up.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-03 — priority #3"
+    },
+    {
+      "company": "Peninsula Plastics",
+      "url": "https://peninsulaplastics.com",
+      "location": "Metro Detroit, MI",
+      "industry": "Precision Injection Molding",
+      "employeeCount": 85,
+      "decisionMaker": "Operations Director / Product Engineering Lead",
+      "score": 87,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Custom reusable plastic packaging and robotic lift-assist dunnage for automotive assembly and Tier 1 component transit",
+        "Thermoforming tool changeovers, plastic sheet extrusion inventory, and custom tray nesting trials across diverse OEM vehicle programs",
+        "Manual scheduling between mold changeovers, sheet gauge inventory, and sample tray approvals"
+      ],
+      "evidenceSignals": "Heavy-gauge reusable plastic packaging. Automotive assembly and Tier 1 component transit dunnage.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Reusable Dunnage Cycle Time & Sheet Scrap Optimization Map",
+      "diagnostic": "🟠 Peninsula Plastics scores 87 — HIGH tier. Thermoforming mold changeover dwell times and material scrap calculations handled manually across OEM programs.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Metro Detroit facility: thermoforming tool changeovers & sheet yield tracking",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nManufacturing custom heavy-gauge returnable dunnage and automotive packaging in Metro Detroit often involves a lot of manual scheduling between thermoforming mold changeovers, sheet gauge inventory, and sample tray approvals.\n\nI designed a simple 1-page Thermoforming Tooling & Sheet Yield tracker concept that monitors mold changeover dwell times and automates material scrap calculations.\n\nWould you like me to share the 1-page concept sheet?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-03 — priority #4"
+    }
+  ]
+}
