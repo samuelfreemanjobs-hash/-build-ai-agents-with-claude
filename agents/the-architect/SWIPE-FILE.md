@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close, T4=book chapter |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Haines, Carlton, Celebrity, Collier, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Haines, Carlton, Celebrity, VictorSchwab, Collier, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
 
 ---
 
@@ -105,6 +105,18 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** AW-U | GEN-H | PT-Celebrity+Story+Contrarian
 **Why it works:** Origin myth wound + discovery tease + enemy (gurus). Reluctant expert frame. Incomplete story forces read. Stage 5 identification — person over promise.
 **Structural move:** [Specific low point] + [accidental discovery] + [forbidden knowledge enemy]
+
+### H-015 (Victor Schwab — little mistake / loss)
+**Copy:** *"A Little Mistake That Cost a Farmer $3,000 a Year"*
+**Tags:** AW-P | GEN-H | PT-VictorSchwab+Loss
+**Why it works:** Schwab #2 from the 100. Specific loss amount + "little" mistake = "am I making it?" Negative reward often outpulls gain. Forces read to discover the error.
+**Structural move:** [Little mistake] + [cost specific $] + [avatar type]
+
+### H-016 (Victor Schwab — question + these hook)
+**Copy:** *"Do You Make These Mistakes in English?"*
+**Tags:** AW-P | GEN-H | PT-VictorSchwab+Caples+Question
+**Why it works:** Schwab #10 — also Caples classic. "These" is the hook — can't dismiss with yes/no. Interrogative challenge implicates reader in a list they fear.
+**Structural move:** [Do you make these] + [mistakes in topic]?
 
 ---
 

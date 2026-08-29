@@ -38,8 +38,8 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 
 | Task type | Required diagnostics |
 |---|---|
-| Headlines only | Schwartz diagnosis + Caples headline sheet |
-| Sales page / email / ad | Collier conversation + Schwartz diagnosis + Kennedy 10Q + Haines workflow + Carlton SWS + Cialdini + Caples + Sugarman |
+| Headlines only | Schwartz diagnosis + Caples headline sheet + Victor Schwab audit |
+| Sales page / email / ad | Collier conversation + Schwartz diagnosis + Kennedy 10Q + Haines workflow + Carlton SWS + Victor Schwab five-step + Cialdini + Caples + Sugarman |
 | **Info product / course / program** | **Schwartz + Info-Product Architecture + Carlton SWS + Kennedy 10Q + Haines** |
 | **Course launch funnel** | **All above + Kern PLC or webinar blueprint** |
 | Strategy / offer | Schwartz diagnosis + Abraham levers + Cialdini |

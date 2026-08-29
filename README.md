@@ -137,6 +137,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`ABRAHAM-METHODOLOGY.md`](agents/the-architect/ABRAHAM-METHODOLOGY.md) | Jay Abraham: Preeminence, N×V×F growth, Parthenon, risk reversal |
 | [`CIALDINI-METHODOLOGY.md`](agents/the-architect/CIALDINI-METHODOLOGY.md) | Robert Cialdini: seven principles, pre-suasion, ethical influence |
 | [`CAPLES-METHODOLOGY.md`](agents/the-architect/CAPLES-METHODOLOGY.md) | John Caples: tested headlines, story ads, before/after, split-run testing |
+| [`VICTOR-SCHWAB-METHODOLOGY.md`](agents/the-architect/VICTOR-SCHWAB-METHODOLOGY.md) | Victor Schwab: headline select+reward, five-step ad, 100-headline archetypes |
 | [`SCHWARTZ-METHODOLOGY.md`](agents/the-architect/SCHWARTZ-METHODOLOGY.md) | Eugene Schwartz: mass desire, awareness × sophistication, breakthrough advertising |
 | [`COLLIER-METHODOLOGY.md`](agents/the-architect/COLLIER-METHODOLOGY.md) | Robert Collier: mental conversation, bait principle, six essentials |
 | [`HAINES-METHODOLOGY.md`](agents/the-architect/HAINES-METHODOLOGY.md) | Scott Haines: shortcut copywriting, Headline→P.S., bucket brigade, blind bullets |
@@ -150,6 +151,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`research/ABRAHAM-LEVERS-TEMPLATE.md`](agents/the-architect/research/ABRAHAM-LEVERS-TEMPLATE.md) | Three-lever and offer scan template |
 | [`research/CIALDINI-PRINCIPLES-TEMPLATE.md`](agents/the-architect/research/CIALDINI-PRINCIPLES-TEMPLATE.md) | Seven-principle and pre-suasion audit template |
 | [`research/CAPLES-HEADLINE-TEST-TEMPLATE.md`](agents/the-architect/research/CAPLES-HEADLINE-TEST-TEMPLATE.md) | 10 headline variants + split-test plan |
+| [`research/VICTOR-SCHWAB-HEADLINE-AUDIT-TEMPLATE.md`](agents/the-architect/research/VICTOR-SCHWAB-HEADLINE-AUDIT-TEMPLATE.md) | Select+reward headline test + five-step ad map |
 | [`research/SCHWARTZ-MARKET-DIAGNOSIS-TEMPLATE.md`](agents/the-architect/research/SCHWARTZ-MARKET-DIAGNOSIS-TEMPLATE.md) | Mass desire, functional angle, awareness, sophistication |
 | [`research/COLLIER-CONVERSATION-TEMPLATE.md`](agents/the-architect/research/COLLIER-CONVERSATION-TEMPLATE.md) | Mental conversation, bait, six essentials |
 | [`research/HAINES-COPY-WORKFLOW-TEMPLATE.md`](agents/the-architect/research/HAINES-COPY-WORKFLOW-TEMPLATE.md) | Headline to P.S. linear copy assembly |
@@ -157,6 +159,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`research/CELEBRITY-FABRICATION-TEMPLATE.md`](agents/the-architect/research/CELEBRITY-FABRICATION-TEMPLATE.md) | 90-day celebrity / authority build worksheet |
 | [`research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md`](agents/the-architect/research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md) | Nine-phase info-product build worksheet |
 | [`SOURCES-HAINES.md`](agents/the-architect/SOURCES-HAINES.md) | Scott Haines source provenance |
+| [`SOURCES-VICTOR-SCHWAB.md`](agents/the-architect/SOURCES-VICTOR-SCHWAB.md) | Victor Schwab source provenance (distinct from Eugene Schwartz) |
 | [`SOURCES-CARLTON.md`](agents/the-architect/SOURCES-CARLTON.md) | John Carlton source provenance |
 | [`research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md`](agents/the-architect/research/SUGARMAN-TRIGGER-AUDIT-TEMPLATE.md) | Slippery slide + psychological trigger audit |
 | [`research/STORY-ARC-TEMPLATE.md`](agents/the-architect/research/STORY-ARC-TEMPLATE.md) | Five-genius story arc (Aristotle → Hemingway) |

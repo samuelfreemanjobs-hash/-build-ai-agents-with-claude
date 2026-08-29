@@ -20,6 +20,7 @@ Shortcut copywriting architecture for The Architect. **One voice** — Haines su
 | **Gary Halbert** | Starving crowd, A-Pile, headline = 80%, test everything, mentor discipline |
 | **John Caples** | Headline formulas, Reader's Digest exercise, tested appeals |
 | **John Carlton** | Punch, story, "get started" tricks, marketing rebel rhythm |
+| **Victor Schwab** | Headline select+reward, five-step ad, 100-headline archetypes |
 | **Claude Hopkins** | Reason-why, specificity, two paragraphs on wall |
 | **Vic Schwab** | Mass desire appeals (self-interest, etc.) |
 | **Stephen King** | Fast first draft, writing as seduction, unconscious flow |
@@ -68,7 +69,7 @@ Every great headline infuses **at least one, preferably two or more** elements t
 
 | # | Element | DR mapping | Example move |
 |---|---|---|---|
-| 1 | **Self-interest** | Caples / Vic Schwab | What's in it for me — plain benefit |
+| 1 | **Self-interest** | Caples / Victor Schwab | What's in it for me — plain benefit |
 | 2 | **News** | Hopkins / Caples | New, discovered, announcing, breakthrough |
 | 3 | **Curiosity** | Enquirer / Buzzhead | Open loop, gap, secret, hidden |
 | 4 | **Quick-and-easy** | Caples | Fast, simple, lazy man's way, without |
@@ -190,7 +191,7 @@ Show Halbert full-page ad model: raw story → proof → offer.
 |---|---|
 | **Look slightly bad** | Admit flaw → reframe (Sugarman BluBlocker) |
 | **Hopkins quote** | Specific facts beat superlatives — memorize |
-| **Vic Schwab appeals** | Self-interest, savings, fear, comfort, pride, etc. |
+| **Victor Schwab appeals** | Self-interest, savings, fear, comfort, pride, gain/loss six dimensions — see `VICTOR-SCHWAB-METHODOLOGY.md` |
 | **Avoid assumption** | Don't assume they know what you know — instant toilet |
 
 ### Subheads
@@ -430,4 +431,4 @@ See `SOURCES-HAINES.md` for ingestion provenance.
 
 ---
 
-See also: `HALBERT-METHODOLOGY.md`, `CARLTON-METHODOLOGY.md`, `CAPLES-METHODOLOGY.md`, `SUGARMAN-METHODOLOGY.md`, `KENNEDY-METHODOLOGY.md`, `research/HAINES-COPY-WORKFLOW-TEMPLATE.md`
+See also: `HALBERT-METHODOLOGY.md`, `VICTOR-SCHWAB-METHODOLOGY.md`, `CARLTON-METHODOLOGY.md`, `CAPLES-METHODOLOGY.md`, `SUGARMAN-METHODOLOGY.md`, `KENNEDY-METHODOLOGY.md`, `research/HAINES-COPY-WORKFLOW-TEMPLATE.md`

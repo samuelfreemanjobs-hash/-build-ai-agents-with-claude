@@ -286,4 +286,4 @@ For digital: note hero image, thumbnail, and video still requirements in deliver
 
 Use `research/CAPLES-HEADLINE-TEST-TEMPLATE.md` per project.
 
-See also: `HOPKINS-METHODOLOGY.md`, `HALBERT-METHODOLOGY.md`, `SCHWARTZ-METHODOLOGY.md`, `CRAFT-PLAYBOOKS.md`, `MICRO-COPY-LAB.md`, `SWIPE-FILE.md`
+See also: `VICTOR-SCHWAB-METHODOLOGY.md`, `HOPKINS-METHODOLOGY.md`, `HALBERT-METHODOLOGY.md`, `SCHWARTZ-METHODOLOGY.md`, `CRAFT-PLAYBOOKS.md`, `MICRO-COPY-LAB.md`, `SWIPE-FILE.md`

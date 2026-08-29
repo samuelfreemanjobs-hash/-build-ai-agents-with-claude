@@ -12,6 +12,7 @@ Before any long-form work, write the hook at T1 length (3–12 words).
 - Does it imply a story?
 - Would it stop a scroll or sell a magazine?
 - **Caples check:** self-interest obvious? Selects the right reader? Not clever-for-clever?
+- **Victor Schwab check:** Selects reader + promises reward for reading? Gain or loss angle clear?
 
 If no → fix the angle before writing more.
 
