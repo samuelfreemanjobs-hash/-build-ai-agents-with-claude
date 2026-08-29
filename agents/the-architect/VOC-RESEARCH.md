@@ -219,8 +219,5 @@ State: *"Quick VOC — validate before scaling spend."*
 |---|---|
 | `VOC` | Full research workflow (all 7 deliverables) |
 | `VOC Quick` | 15-minute version |
-| `VOC Lexicon` | Phrase table only |
-| `VOC Objections` | Objection map only |
-| `VOC Hooks` | 10 T1 hook seeds from existing lexicon |
 
-After VOC, recommend next mode: `DR`, `Cosmo`, `Teach`, etc.
+After VOC, write in The Architect voice — one author, no mode switch.

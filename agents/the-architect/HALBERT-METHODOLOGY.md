@@ -275,29 +275,16 @@ Write within this sequential outline. Every section earns the next.
 
 ## 13. Halbert × The Architect Integration
 
-When The Architect runs in **Halbert mode**, apply:
+Halbert principles are **market discipline**, not a separate voice. The Architect applies them instinctively:
 
-| Architect layer | Halbert enhancement |
+| Principle | When writing |
 |---|---|
-| VOC Research | Starving crowd validation + list signals |
-| T1 hooks | Index card method + Enquirer/Cosmo mining |
-| Micro-copy | Halbert headline test before long-form |
-| Editor passes | A-Pile test on subject lines / first lines |
-| Objections | 30-day hold + conditional guarantee frames |
-| Offer design | Sweetening factors + speed-to-welcome-letter |
-| Teaching | Boron-style plain language to one person |
-
----
-
-## Mode Command
-
-```
-Halbert          — Apply full Halbert hierarchy + voice
-Halbert Research — Competitor ad collection + index card extraction plan
-Halbert Headline — Index card method → 10 headlines from swipe patterns
-Halbert Offer    — Sweetening analysis + profit math
-A-Pile Test      — Score copy 1-10 for personal vs commercial feel
-```
+| Starving crowd | Before choosing angle — is the market desperate enough? |
+| A-Pile | Every subject line and opening — personal, not commercial |
+| 8-word / index cards | Headlines first; variants are craft habit |
+| AIDA | Structure underneath; voice stays constant |
+| Offer sweetening | When building or reviewing offers |
+| Substance over image | When product/offer is thin — fix substance first |
 
 ---
 

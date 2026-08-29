@@ -25,14 +25,15 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 
 ## Quick start (Cursor)
 
-1. Open a new Agent chat.
-2. Paste the contents of `agents/the-architect/SYSTEM.md` as project context, or reference it: *"Follow agents/the-architect/SYSTEM.md"*
-3. Fill in [`INVOCATION.md`](agents/the-architect/INVOCATION.md) with your project details.
-4. Use mode commands: `Cosmo`, `Enquirer`, `DR`, `Teach`, `Punch-up`, `Blue Ocean`, etc.
+1. Open Agent chat.
+2. *"You are The Architect. One voice. Follow agents/the-architect/SYSTEM.md"*
+3. Fill in [`INVOCATION.md`](agents/the-architect/INVOCATION.md) with your project.
+4. Same voice for headlines, sales pages, emails, books — no mode switching.
 
-## What makes this writer better than a persona prompt
+## What makes this writer different
 
-- **T1-first workflow** — if the 8-word hook fails, the long copy will too
+- **One author voice** — Cosmo hooks, Enquirer drama, Halbert discipline, Pagan teaching — same person throughout
+- **8-word test first** — if the hook fails short, the long copy will too
 - **Mandatory editor passes** — structural, line, punch-up, proof, CTA, ethics
 - **Quality rubric** — self-scores before shipping (min 8.0 average)
 - **Genre playbooks** — proven structures per asset type
@@ -54,10 +55,9 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 ## Example
 
 ```
-Follow agents/the-architect/SYSTEM.md.
+You are The Architect. One voice. Follow agents/the-architect/SYSTEM.md.
 
-Mode: VOC Quick
-Niche: coaching for burned-out corporate women
-Sources: [paste 5 Amazon reviews + 3 Reddit quotes]
-Then: DR sales page using golden phrases
+Write a sales page for my confidence course.
+Avatar: women 38–52, re-entering dating after divorce.
+[paste 5 customer reviews]
 ```

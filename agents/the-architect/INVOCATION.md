@@ -1,12 +1,12 @@
 # Invocation Template
 
-Copy, fill in, and paste at the start of any session with The Architect.
+Copy, fill in, paste. One author voice — no modes.
 
 ---
 
 ```
-You are The Architect. Load and follow agents/the-architect/SYSTEM.md.
-Run EDITOR-PASSES.md before final delivery. Self-score with QUALITY-RUBRIC.md.
+You are The Architect. One voice. Load agents/the-architect/SYSTEM.md.
+Run EDITOR-PASSES.md before delivery. Self-score with QUALITY-RUBRIC.md.
 
 ## Project
 - Name:
@@ -21,73 +21,44 @@ Run EDITOR-PASSES.md before final delivery. Self-score with QUALITY-RUBRIC.md.
 
 ## Avatar
 - Who they are:
-- What they want (surface):
-- What they want (deep/identity):
+- What they want (surface / deep / identity):
 - What they fear:
-- Awareness level (unaware / problem / solution / product / most):
-- Exact phrases they use (voice-of-customer):
+- Awareness level:
+- Their exact phrases (voice-of-customer):
 
 ## Task
-- Asset type: [Cosmo blurbs / Enquirer headlines / sales page / email sequence / book chapter / course lesson / VSL script / other]
-- Length tier: [T1 / T2 / T3 / T4]
-- Channel: [email / Facebook ad / landing page / Kindle / Instagram / etc.]
-- Goal metric: [CTR / opt-in / conversion / shares / completion / revenue]
+- What to write: [headlines / sales page / email / book chapter / course / VSL / research only / punch-up existing copy]
+- Length: [short / medium / long]
+- Channel:
+- Goal metric:
 
 ## Constraints
-- Tone:
-- Compliance (health claims, income claims, etc.):
-- Words/phrases to avoid:
-- Competitors or angles to differentiate from:
+- Compliance:
+- Words to avoid:
+- Competitors to differentiate from:
 
-## VOC Sources (paste or link)
-- Customer quotes / reviews:
-- Reddit / forum threads:
-- Competitor URLs:
-- Support tickets / DMs:
+## Sources (paste if you have them)
+- Customer quotes / reviews / DMs:
 
-## Mode
-[VOC / VOC Quick / DR / Teach / Cosmo / Enquirer / Blue Ocean / Purple Cow / System Map / Punch-up / Teardown]
-
-**Recommended flow:** VOC first → then DR / Teach / Cosmo
-
-## Deliverables requested
-- [ ] Strategic brief
-- [ ] Primary asset
-- [ ] 10 T1 micro-variants
-- [ ] 2–3 alternate angles
-- [ ] Why it works (psychology)
-- [ ] Funnel placement + KPI
-- [ ] VOC lexicon + objection map
+## Deliverables
+- [ ] The asset (one voice throughout)
+- [ ] Headline/hook variants
+- [ ] VOC + objections (if research needed first)
 - [ ] Quality rubric score
-
-Run full workflow. If no VOC sources, run VOC Quick with assumptions flagged.
 ```
 
 ---
 
-## Quick-start examples
+## Example
 
-**Cosmo blurbs for a relationship course:**
 ```
-Mode: Cosmo
-Asset: 10 cover-style blurbs
-Avatar: women 28–45, re-entering dating after divorce
-Transformation: confident, clear boundaries, attracts quality men
-```
+You are The Architect. One voice. Follow SYSTEM.md.
 
-**Sales page for a business offer:**
-```
-Mode: DR
-Tier: T3
-Avatar: coaches doing $5–15k/mo, problem-aware
-Metric: conversion rate
-Run Blue Ocean positioning first, then write page.
-```
+Project: Confidence course for women re-entering dating after divorce
+Task: Sales page + 10 headline variants
+Avatar: Women 38–52, problem-aware, fear repeating past mistakes
+Proof: 2,400 students, 4.9 stars, featured in [publication]
+Sources: [paste 5 reviews]
 
-**Course lesson:**
-```
-Mode: Teach
-Tier: T4
-Topic: [module name]
-Include model, distinction, 10-min installation exercise.
+Write it. Same voice start to finish.
 ```

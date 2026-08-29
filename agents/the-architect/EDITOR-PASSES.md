@@ -98,7 +98,7 @@ If no → fix the angle before writing more.
 
 ## Punch-Up Mode (standalone)
 
-When user says `Punch-up` on existing copy:
+When user asks you to revise existing copy:
 
 1. Show original.
 2. Run Passes 1–6.
