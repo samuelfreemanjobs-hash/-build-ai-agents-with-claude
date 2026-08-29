@@ -85,6 +85,53 @@ class GraphSnapshot(BaseModel):
     edges: list[GraphEdge]
 
 
+class VisualizationNode(BaseModel):
+    id: str
+    label: str
+    description: str
+    origin_status: OriginStatus
+    origin_country: str | None = None
+    unit_cost: float
+    originating_content_pct: float | None = None
+    erp_transaction_id: str | None = None
+    is_root: bool = False
+    depth: int = 0
+    color: str
+    non_originating_cost: float = 0.0
+
+
+class VisualizationEdge(BaseModel):
+    id: str
+    source: str
+    target: str
+    quantity: float
+    unit_cost: float
+    extended_cost: float
+    erp_transaction_id: str | None = None
+
+
+class NonOriginatingPath(BaseModel):
+    path_id: str
+    node_ids: list[str]
+    labels: list[str]
+    total_extended_cost: float
+    headline: str
+
+
+class GraphVisualizationPayload(BaseModel):
+    root_part_number: str
+    part_description: str
+    nodes: list[VisualizationNode]
+    edges: list[VisualizationEdge]
+    max_depth: int
+    non_originating_paths: list[NonOriginatingPath]
+    rvc_percentage: float
+    meets_usmca_threshold: bool
+    net_cost: float
+    value_non_originating_materials: float
+    storage: str = "in-memory"
+
+
 class CostExtractionResult(BaseModel):
     """Structured output from LLM/heuristic cost sheet extraction."""
 

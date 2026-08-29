@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoBorder Comply — Supply Chain Graph</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="brand-mark">ABC</span>
+      <div>
+        <h1>AutoBorder Comply</h1>
+        <p class="tagline">Call 2 Demo — Supply Chain Origin Visualization</p>
+      </div>
+    </div>
+    <form id="load-form" class="load-form">
+      <input id="part-number" type="text" value="12345" placeholder="Part #" aria-label="Part number" />
+      <button type="submit">Load Graph</button>
+    </form>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section class="panel rvc-panel">
+        <h2>RVC Summary</h2>
+        <div id="rvc-status" class="rvc-status compliant">—</div>
+        <dl class="stats">
+          <div><dt>RVC</dt><dd id="stat-rvc">—</dd></div>
+          <div><dt>Net Cost</dt><dd id="stat-net">—</dd></div>
+          <div><dt>Non-Orig. Value</dt><dd id="stat-non-orig">—</dd></div>
+          <div><dt>Graph Depth</dt><dd id="stat-depth">—</dd></div>
+          <div><dt>Nodes</dt><dd id="stat-nodes">—</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel">
+        <h2>Origin Legend</h2>
+        <ul class="legend">
+          <li><span class="swatch root"></span> Root finished part</li>
+          <li><span class="swatch originating"></span> Originating (US/CA/MX)</li>
+          <li><span class="swatch partial"></span> Partial originating</li>
+          <li><span class="swatch non-originating"></span> Non-originating</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Risk Paths</h2>
+        <p class="hint">Red supply chain paths dragging down your RVC score.</p>
+        <ul id="risk-paths" class="risk-paths"></ul>
+      </section>
+
+      <section class="panel node-detail hidden" id="node-detail">
+        <h2>Selected Part</h2>
+        <dl class="detail-list">
+          <div><dt>Part #</dt><dd id="detail-part">—</dd></div>
+          <div><dt>Description</dt><dd id="detail-desc">—</dd></div>
+          <div><dt>Origin</dt><dd id="detail-origin">—</dd></div>
+          <div><dt>Country</dt><dd id="detail-country">—</dd></div>
+          <div><dt>Unit Cost</dt><dd id="detail-cost">—</dd></div>
+          <div><dt>Non-Orig. Cost</dt><dd id="detail-non-orig">—</dd></div>
+          <div><dt>ERP Txn</dt><dd id="detail-erp">—</dd></div>
+        </dl>
+      </section>
+    </aside>
+
+    <section class="graph-area">
+      <div id="cy"></div>
+      <div id="loading" class="loading hidden">Loading supply chain graph…</div>
+      <div id="error" class="error hidden"></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

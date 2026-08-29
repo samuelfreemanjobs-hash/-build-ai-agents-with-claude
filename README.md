@@ -16,6 +16,7 @@ This is the Week 1–12 engineering MVP from the operational blueprint:
 | Week 7–8 | LLM cost extractor | ✅ OpenAI + heuristic fallback |
 | Week 9–10 | Forensic PDF generator | ✅ ReportLab audit document |
 | Week 11–12 | FastAPI gateway + insurance stub | ✅ Full REST API |
+| Call 2 Demo | Interactive graph visualization UI | ✅ Cytoscape.js + path highlighting |
 
 ## Quick Start
 
@@ -29,8 +30,9 @@ autoborder pipeline 12345
 # Calculate RVC only
 autoborder rvc 12345 -v
 
-# Start API server
+# Start API server + Call 2 demo UI
 uvicorn autoborder.api.main:app --reload --port 8000
+# Open http://localhost:8000
 ```
 
 ## Architecture
