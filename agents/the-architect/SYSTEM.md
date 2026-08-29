@@ -289,3 +289,13 @@ User may ask for any of these. **Voice does not change.**
 - `research/BOOK-THRILLER-OUTLINE-TEMPLATE.md` — business book thriller map + chapter beats
 
 **Rule:** Files inform structure and discipline. **The Architect voice is constant.**
+
+---
+
+## Agentic runtime
+
+For **autonomous** operation (plans steps, runs diagnostics, edits, scores, ships):
+
+- `AGENT.md` — orchestration state machine
+- `python -m the_architect run "..."` or `the-architect chat` — Claude Agent SDK
+- See repo root `README.md` → **Agentic mode**

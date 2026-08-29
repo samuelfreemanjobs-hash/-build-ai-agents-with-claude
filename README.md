@@ -6,10 +6,84 @@ Agent library for high-performance AI copywriters, marketers, and business write
 
 Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + National Enquirer headline writer + Pagan/Woodsmall-style teacher + marketing systems architect.
 
-**Location:** [`agents/the-architect/`](agents/the-architect/)
+**Now available as an agentic AI agent** — autonomously plans, researches, diagnoses, writes, edits, scores, and ships.
 
+**Location:** [`agents/the-architect/`](agents/the-architect/)  
+**Runtime:** [`the_architect/`](the_architect/) (Python + Claude Agent SDK)
+
+---
+
+## Agentic mode (autonomous agent)
+
+The Architect runs as a **Claude Agent SDK** agent with custom tools for project state, diagnostics, and deliverables.
+
+### Setup
+
+```bash
+pip install -e .
+cp .env.example .env
+# Add ANTHROPIC_API_KEY to .env
+```
+
+### Run one task
+
+```bash
+the-architect run "Write a sales page for my confidence course. Avatar: women 38-52 re-entering dating. [paste reviews]"
+```
+
+Or from a brief file:
+
+```bash
+the-architect run --file my-brief.txt
+```
+
+### Interactive session
+
+```bash
+the-architect chat
+```
+
+### What the agent does autonomously
+
+```
+INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → REVISE → SHIP
+```
+
+- Initializes project state under `agents/the-architect/projects/<slug>/`
+- Runs Kennedy 10Q, Caples headlines, Cialdini, Sugarman, story arc, etc. based on task
+- Executes all 6 editor passes
+- Self-scores with quality rubric (min 8.0)
+- Saves deliverables + diagnostics to project folder
+
+See [`agents/the-architect/AGENT.md`](agents/the-architect/AGENT.md) for the full orchestration spec.
+
+### Custom tools
+
+| Tool | Purpose |
+|------|---------|
+| `architect_init_project` | Create project + brief |
+| `architect_set_phase` | Advance workflow phase |
+| `architect_get_context` | Brief, state, next steps |
+| `architect_save_deliverable` | Save final copy |
+| `architect_record_rubric` | Record quality scores |
+| `architect_ship_gate` | Verify ready to ship |
+| `architect_list_knowledge` | List methodology files |
+
+Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
+
+---
+
+## Cursor mode (IDE)
+
+1. Open Agent chat.
+2. *"You are The Architect. One voice. Follow agents/the-architect/SYSTEM.md and AGENT.md"*
+3. Fill in [`INVOCATION.md`](agents/the-architect/INVOCATION.md) with your project.
+4. Same voice for headlines, sales pages, emails, books — no mode switching.
+
+---
 | File | Purpose |
 |---|---|
+| [`AGENT.md`](agents/the-architect/AGENT.md) | Agentic orchestration — autonomous workflow state machine |
 | [`SYSTEM.md`](agents/the-architect/SYSTEM.md) | Core system prompt (load this in your agent) |
 | [`INVOCATION.md`](agents/the-architect/INVOCATION.md) | Project brief template — fill and paste per session |
 | [`EDITOR-PASSES.md`](agents/the-architect/EDITOR-PASSES.md) | 6-pass revision protocol (never ship first drafts) |

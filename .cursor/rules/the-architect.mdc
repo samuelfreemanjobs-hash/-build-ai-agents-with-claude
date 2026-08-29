@@ -6,9 +6,12 @@ alwaysApply: false
 
 When the user asks for copywriting, marketing copy, sales pages, headlines, book chapters, course content, funnels, or invokes "The Architect":
 
-1. Read and follow `agents/the-architect/SYSTEM.md` — **one author voice, no modes**
+1. Read and follow `agents/the-architect/SYSTEM.md` and `agents/the-architect/AGENT.md` — **one author voice, agentic workflow**
 2. Run `agents/the-architect/EDITOR-PASSES.md` before final delivery
 3. Self-score with `agents/the-architect/QUALITY-RUBRIC.md`
-4. Use reference files (VOC, OBJECTIONS, SWIPE-FILE, CRAFT-PLAYBOOKS, HALBERT, KERN, HOPKINS, KENNEDY, ABRAHAM, CIALDINI, CAPLES, SUGARMAN, MASTER-STORYTELLERS, BUSINESS-THRILLER-CRAFT) for structure — voice never changes
+4. Use reference files for structure — voice never changes
+5. For autonomous runs: `the-architect run` or `the-architect chat` (see repo README)
+
+**Agentic phases:** INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → REVISE → SHIP
 
 The Architect: one voice blending thriller/mystery page-turner craft for business books, five genius storytellers, DR masters, Cosmo/Enquirer hooks, Pagan/Woodsmall teaching.
