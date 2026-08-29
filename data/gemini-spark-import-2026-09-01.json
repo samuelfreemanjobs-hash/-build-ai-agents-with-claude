@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-01",
+  "region": "Metro Detroit",
+  "focusedVertical": "Batch Heat Treating, Precision Deep-Hole Machining, Downriver Industrial Finishing & Tier 2 Injection Molding",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 64,
+    "estimatedValueRange": "$35,000 – $62,500",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "East-Lind Heat Treat",
+      "url": "https://eastlind.com",
+      "location": "Madison Heights, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 95,
+      "decisionMaker": "Operations Manager / Metallurgical Lab Director",
+      "score": 93,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 24,
+        "buyingSignal": 19,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "700+ local tool & die, stamping, and precision machining clients — high-mix batch furnace loads",
+        "Furnace cycle logging, recipe dwell times, and Rockwell hardness certs consolidated manually before release",
+        "Phone and email status inquiries from 700+ shops interrupt plant floor supervisors during turnaround windows"
+      ],
+      "evidenceSignals": "Regional hiring for Tool Room & Manufacturing Quality Managers in Warren/Madison Heights. Batch thermal processing and straightening.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Heat Treat Batch Dwell & Automated Cert Generator Workflow Map",
+      "diagnostic": "🔥 East-Lind scores 93 — HOT tier. Re-typing furnace run charts and hardness test values into customer certs adds 10–12 hrs/week. Batch load optimization without real-time staging boards leads to idle furnace dwell.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Automating hardness test certs & batch load staging in Madison Heights",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nRunning high-mix batch heat treating and straightening for hundreds of Metro Detroit tool & die shops usually means your office spends hours every afternoon keying hardness readings and furnace run data into customer certs.\n\nI built a lightweight Batch Staging & Auto-Cert framework designed specifically for industrial heat treaters that logs test indentations and automatically generates customer compliance certs at quench sign-off.\n\nWould you be open to a 2-minute look at the visual workflow to see if it could save your team time?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-01 — priority #1. Send today."
+    },
+    {
+      "company": "Dearborn, Inc.",
+      "url": "https://dearborninc.com",
+      "location": "Dearborn, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 130,
+      "decisionMaker": "VP of Manufacturing / Plant Superintendent",
+      "score": 91,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 18,
+        "abilityToPay": 15,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Specialized gundrilling, trepanning, honing — tight straightness and depth-tolerance logging on custom proprietary equipment",
+        "Complex shaft drawings and deep-bore cycle time quoting relies on manual engineering estimation",
+        "Tier 1 powertrain and energy programs require stringent bore inspection and concentricity documentation"
+      ],
+      "evidenceSignals": "Ford Dearborn Tooling & Manufacturing hiring trends. Inconel, 4140, titanium deep-bore work. Wayne County defense and energy programs.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "Gundrill Feed/Speed Calculation & Spindle Run Time Tracker Template",
+      "diagnostic": "🔥 Dearborn scores 91 — HOT tier. Air-gage, bore micrometer, and straightness runout checks create documentation bottleneck before shipment. Gundrill/honing changeovers need close tracking to prevent spindle idle time.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Deep-hole spindle utilization & bore runout tracking concept",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nPerforming precision gundrilling, trepanning, and honing on custom machinery in Dearborn often makes tracking machine cycle times and recording bore concentricity checks a labor-intensive process on the floor.\n\nI mocked up a 1-screen Deep-Hole Spindle & Inspection Board designed for specialized machining shops to log bore runout digitally and flag upcoming changeovers.\n\nHappy to send over the concept layout if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-01 — priority #2. Send today."
+    },
+    {
+      "company": "Apex Powder Coating",
+      "url": "https://apexpowdercoating.com",
+      "location": "Taylor, MI",
+      "industry": "Heavy Steel Fabrication",
+      "employeeCount": 35,
+      "decisionMaker": "Raymond Boggess (Owner & General Manager)",
+      "score": 86,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 18,
+        "abilityToPay": 12,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Downriver industrial fabricators and automotive suppliers — batch oven finishing",
+        "Quote intake relies on phone inquiries and contact forms without substrate or mil-thickness spec capture",
+        "Batch oven load planning (powder color and cure cycle temperature) managed via shop whiteboard"
+      ],
+      "evidenceSignals": "27258 Wick Road, Taylor. 20+ years operation. Owner-operated.",
+      "matchedService": "Conversion Website Sprint + RFQ Spec Ingestion Engine",
+      "giveBeforeAsk": "Powder Color Changeover & Oven Batch Schedule Visualizer",
+      "diagnostic": "🟠 Apex scores 86 — HIGH tier. Daily coordination to group parts by powder color and oven cure temperature without slowing rack line. RFQ spec capture gap on incoming requests.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Streamlining batch oven staging & RFQ color specs in Taylor",
+      "outreachBody": "I found an opportunity...\n\nHi Raymond,\n\nRunning industrial powder coating on Wick Road across automotive and fabrication jobs usually involves a lot of daily coordination to group parts by powder color and oven cure temperature without slowing down the rack line.\n\nI created a simple 1-page Batch Staging & Color Changeover layout that helps coating shops organize oven runs and capture exact job specs on incoming requests.\n\nLet me know if you'd like me to share the 1-page visual sheet.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-01 — priority #3"
+    },
+    {
+      "company": "Champion Plastics, Inc.",
+      "url": "https://championplastics.com",
+      "location": "Auburn Hills, MI",
+      "industry": "Precision Injection Molding",
+      "employeeCount": 110,
+      "decisionMaker": "Plant Operations Director / Molding Superintendent",
+      "score": 88,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "110T–339T presses with secondary value-added assembly and ultrasonic welding for automotive programs",
+        "Shift scrap tracking and regrind ratio compliance create high operational demand",
+        "Tracking delay when shift leads balance raw resin consumption against secondary assembly scrap"
+      ],
+      "evidenceSignals": "Oakland County hiring for Automotive Molding Process Technicians & Assembly Leads. Auburn Hills & Rochester Hills corridor.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Molding Press Scrap & Assembly Station Balance Sheet",
+      "diagnostic": "🟠 Champion Plastics scores 88 — HIGH tier. Shift rejects and cycle time variances across molding + ultrasonic welding stations need real-time balance tracking.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Auburn Hills plant press scrap logging & secondary assembly balance",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nRunning 110-ton to 339-ton molding presses combined with ultrasonic welding in Auburn Hills often creates a tracking delay when shift leads balance raw resin consumption against secondary assembly scrap.\n\nI designed a clean Press Scrap & Secondary Assembly Balance board concept that captures shift rejects and tracks cycle time variances in real time.\n\nWould you like me to send over the 1-page concept dashboard?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-01 — priority #4"
+    }
+  ]
+}
