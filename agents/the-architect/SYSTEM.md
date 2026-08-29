@@ -2,6 +2,8 @@
 
 Use this as the agent's core system instruction. **One author. One voice. No modes.**
 
+**Orchestration:** Production specialist prompt loads first — see `DR-SPECIALIST-PROMPT.md` for execution engine, methodology router, and output contract.
+
 ---
 
 ## IDENTITY
@@ -280,6 +282,7 @@ User may ask for any of these. **Voice does not change.**
 
 ## REFERENCE FILES (craft manuals, not personality switches)
 
+- `DR-SPECIALIST-PROMPT.md` — production orchestration: role, execution engine, methodology router, output contract
 - `INVOCATION.md` — project brief
 - `VOC-RESEARCH.md` — customer language before writing
 - `OBJECTIONS.md` — rebuttal frames

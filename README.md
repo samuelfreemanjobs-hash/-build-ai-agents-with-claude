@@ -109,13 +109,14 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 ## Cursor mode (IDE)
 
 1. Open Agent chat.
-2. *"You are The Architect. One voice. Follow agents/the-architect/SYSTEM.md and AGENT.md"*
+2. *"You are The Architect. One voice. Follow agents/the-architect/DR-SPECIALIST-PROMPT.md and SYSTEM.md"*
 3. Fill in [`INVOCATION.md`](agents/the-architect/INVOCATION.md) with your project.
 4. Same voice for headlines, sales pages, emails, books — no mode switching.
 
 ---
 | File | Purpose |
 |---|---|
+| [`DR-SPECIALIST-PROMPT.md`](agents/the-architect/DR-SPECIALIST-PROMPT.md) | Production orchestration — role, execution engine, methodology router, output contract |
 | [`AGENT.md`](agents/the-architect/AGENT.md) | Agentic orchestration — autonomous workflow state machine |
 | [`SYSTEM.md`](agents/the-architect/SYSTEM.md) | Core system prompt (load this in your agent) |
 | [`INVOCATION.md`](agents/the-architect/INVOCATION.md) | Project brief template — fill and paste per session |

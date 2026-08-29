@@ -1,6 +1,6 @@
 # The Architect — Agentic Orchestration
 
-Autonomous agent specification. The runtime (`the_architect` Python package) loads this + `SYSTEM.md` and executes the loop below.
+Autonomous agent specification. The runtime (`the_architect` Python package) loads `DR-SPECIALIST-PROMPT.md` + this file + `SYSTEM.md` and executes the loop below.
 
 **One voice. No modes. Agent plans its own steps within this workflow.**
 
