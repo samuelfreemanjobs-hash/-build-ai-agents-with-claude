@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-09-08",
+  "region": "Metro Detroit",
+  "focusedVertical": "Heavy Material Handling Fabrication, Dual-Facility Stamping & EOAT Tooling, Precision CNC Turning & High-Volume Automotive Machining",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 110,
+    "estimatedValueRange": "$45,000 – $81,500",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Dearborn Mid-West Company (DMW)",
+      "url": "https://dearbornmidwest.com",
+      "location": "Taylor, MI",
+      "industry": "Heavy Steel Fabrication",
+      "employeeCount": 280,
+      "decisionMaker": "VP of Fabrication / Plant Operations Director",
+      "score": 95,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 25,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Heavy structural weldments, skids, overhead conveyor systems for automotive assembly and stamping plants — multi-bay Taylor campus",
+        "Structural welding stage-gates, laser cutting nests, mechanical assembly tryouts tracked against tight OEM shutdown/installation schedules",
+        "Outside galvanizing, stress relief, specialty paint coordinated manually against installation site drop dates"
+      ],
+      "evidenceSignals": "Ford Dearborn Die Process & Quality Engineering postings. Downriver fabrication & technical campus.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Heavy Structural Conveyor Bay Staging & Tryout Milestone Tracker (1-page framework)",
+      "diagnostic": "🔥 DMW scores 95 — HOT tier. Conveyor truss weldments staged on spreadsheets between laser, weld fit-up, and drive assembly bays. ECN alignment during fast-moving OEM plant layout changes consumes supervisor desk hours.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Taylor campus: tracking heavy conveyor fabrication bays & field install dates",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nManaging heavy conveyor fabrication and structural assembly in Taylor for OEM automotive programs usually means project leads spend hours daily cross-referencing weld bay progress against jobsite delivery schedules.\n\nI built a 1-screen Conveyor Fabrication & Bay Staging framework designed for heavy material handling integrators that tracks weldment completion milestones and automates outside processing status updates.\n\nWould you be open to a 2-minute review of the visual framework to see if it's helpful for your operations team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-08 — priority #1. Send today. Tied highest score."
+    },
+    {
+      "company": "Macomb Engineering",
+      "url": "https://macombengineering.com",
+      "location": "Macomb County, MI",
+      "industry": "Tier II Automotive Stamping",
+      "employeeCount": 175,
+      "decisionMaker": "Operations Director / Tooling Superintendent",
+      "score": 92,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 19,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Two Macomb facilities — production stamping/machining plus custom tooling (check fixtures, 3D printed fixturing, robotic EOAT, 60\" wire EDM)",
+        "Production press runs vs custom 60\" wire EDM tooling creates scheduling contention between production parts and custom builds",
+        "Single metrology CMM lab creates validation backlogs for fixtures and production stampings"
+      ],
+      "evidenceSignals": "Flex-N-Gate Troy Materials & Planning Operations intelligence. Dual-facility multi-plant raw material and outside processing challenges.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "Dual-Plant Press Schedule & 60\" Wire EDM Burn Queue Visualizer",
+      "diagnostic": "🔥 Macomb Engineering scores 92 — HOT tier. Production stamping vs robotic EOAT builds clash on shared 4-axis milling and wire EDM cells. Outside 5-axis/titanium welding routing through manual logs.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Macomb facilities: balancing production stamping runs with custom EOAT builds",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nCoordinating production stamping lines alongside custom robotic EOAT and check fixture builds across your two Macomb plants often makes it tricky to balance machine spindle hours and wire EDM capacity without daily whiteboard scheduling.\n\nI mocked up a 1-screen Multi-Plant Tooling & Production Queue board tailored for dual-facility machining/stamping shops that separates custom fixture jobs from volume runs.\n\nLet me know if you'd like me to send over the concept layout.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-08 — priority #2. Send today."
+    },
+    {
+      "company": "Patriot Manufacturing, LLC",
+      "url": "https://patriotmanufacturing.com",
+      "location": "Plymouth, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 55,
+      "decisionMaker": "Plant Operations Manager / General Manager",
+      "score": 88,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 18,
+        "abilityToPay": 13,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Precision CNC milling, turning, assembly for automotive, defense, and industrial machinery — 45345 Five Mile Road, Plymouth",
+        "No interactive CAD quote intake interface or automated material cert routing for fast-turn prototype requests",
+        "Unformatted CAD drawing review adds desk hours on every quote"
+      ],
+      "evidenceSignals": "Clear website capabilities but basic digital RFQ intake.",
+      "matchedService": "Conversion Website Sprint + RFQ Spec Ingestion Engine",
+      "giveBeforeAsk": "5-Point CNC RFQ Intake Spec & Spindle Queue Board",
+      "diagnostic": "🟠 Patriot scores 88 — HIGH tier. Drawing review and spindle queue visibility fragmented across milling and turning cells.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Five Mile Road shop: CNC spindle capacity & CAD quote turnaround",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nDelivering tight-tolerance CNC turned and milled components in Plymouth often means shop leads spend extra desk hours reviewing unformatted CAD drawing attachments and tracking job progress across milling cells.\n\nI created a simple 1-page RFQ Spec Intake & Spindle Utilization layout that speeds up drawing review and visualizes machine completion forecasts.\n\nHappy to send over the 1-page layout if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-08 — priority #3"
+    },
+    {
+      "company": "Michigan Production Machining, Inc. (MPM)",
+      "url": "https://michiganproductionmachining.com",
+      "location": "Macomb, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 200,
+      "decisionMaker": "VP of Manufacturing / Plant Quality Director",
+      "score": 89,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 15,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "High-volume production machining — dedicated CNC cells for Tier 1 automotive programs",
+        "Tool insert wear, cycle time variances, and shift-to-shift scrap rates tracked manually to protect OEM JIT delivery buffers",
+        "End-of-shift scrap reporting for IATF audits labor-intensive"
+      ],
+      "evidenceSignals": "Dedicated turning/milling cells. Tier 1 automotive high-volume production facility in Macomb.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "Tool Insert Life & Shift Scrap Rate Variance Tracker",
+      "diagnostic": "🟠 MPM scores 89 — HIGH tier. Insert wear intervals and scrap reconciliation across turning cells consume significant supervisor time every shift.",
+      "outreachStrategy": "E",
+      "outreachSubject": "Macomb plant: high-volume machining scrap tracking & tool insert life",
+      "outreachBody": "I ran a quick audit...\n\nHi [First Name],\n\nRunning high-volume automotive CNC machining lines in Macomb usually means shift supervisors spend significant time tracking insert wear intervals and reconciling scrap logs across turning cells.\n\nI designed a lightweight Tool Wear & Shift Scrap Tracker concept that captures part dimensional drift and automates end-of-shift scrap reporting for IATF audits.\n\nWould you like me to share the 1-page concept dashboard?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-09-08 — priority #4"
+    }
+  ]
+}
