@@ -157,6 +157,16 @@
     }
     .btn-danger { background: var(--hot); color: white; }
     .btn-sm { padding: 6px 12px; font-size: 0.8rem; }
+    .btn-hot { background: linear-gradient(135deg, var(--hot), #dc2626); color: white; }
+    .btn-high { background: linear-gradient(135deg, var(--high), #ea580c); color: white; }
+    .batch-bar { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:20px; padding:16px; background:var(--surface2); border-radius:var(--radius); border:1px solid var(--border); align-items:center; }
+    .batch-bar .label { color:var(--muted); font-size:0.85rem; margin-right:8px; }
+    .engagement { display:inline-block; padding:2px 8px; border-radius:12px; font-size:0.7rem; font-weight:600; margin-left:6px; }
+    .engagement-opened { background:rgba(59,130,246,0.2); color:var(--accent); }
+    .engagement-clicked { background:rgba(34,197,94,0.2); color:var(--success); }
+    .engagement-bounced { background:rgba(239,68,68,0.2); color:var(--hot); }
+    .preview-list { max-height:300px; overflow-y:auto; margin:16px 0; }
+    .preview-item { padding:10px 12px; background:var(--surface2); border-radius:8px; margin-bottom:6px; font-size:0.85rem; display:flex; justify-content:space-between; }
     .tier-badge {
       display: inline-block;
       padding: 3px 10px;
@@ -382,9 +392,21 @@
     <!-- Outreach -->
     <section class="view" id="view-outreach">
       <h1>Outreach Engine</h1>
-      <p class="subtitle">Send personalized outreach via Resend — one click from HUNTER</p>
+      <p class="subtitle">One-click batch outreach + automatic engagement tracking via Resend webhooks</p>
+
+      <div class="batch-bar">
+        <span class="label">Batch send:</span>
+        <button class="btn btn-hot btn-sm" onclick="previewBatch('HOT')">Preview HOT</button>
+        <button class="btn btn-hot btn-sm" onclick="sendBatch('HOT')">Send HOT</button>
+        <button class="btn btn-high btn-sm" onclick="previewBatch('HIGH')">Preview HIGH</button>
+        <button class="btn btn-high btn-sm" onclick="sendBatch('HIGH')">Send HIGH</button>
+        <button class="btn btn-secondary btn-sm" onclick="sendBatch('HOT,HIGH')">Send HOT + HIGH</button>
+        <span id="batchStatus" style="color:var(--muted);font-size:0.8rem;margin-left:auto"></span>
+      </div>
+
       <div class="grid grid-2">
         <div class="card">
+          <h3 style="margin-bottom:16px">Single Outreach</h3>
           <div class="form-group">
             <label>Select Lead</label>
             <select id="outreachLead" onchange="loadOutreachTemplate()"></select>
@@ -408,7 +430,8 @@
           <button class="btn btn-primary" onclick="sendOutreachEmail()">Send Outreach</button>
         </div>
         <div class="card">
-          <h3>Outreach Log</h3>
+          <h3>Outreach Log & Engagement</h3>
+          <p style="color:var(--muted);font-size:0.8rem;margin:8px 0">Opens/clicks auto-update pipeline via Resend webhook</p>
           <div id="outreachLogList" style="margin-top:12px"></div>
         </div>
       </div>
@@ -482,6 +505,19 @@
 
   <div class="toast" id="toast"></div>
 
+  <!-- Batch Preview Modal -->
+  <div class="modal-overlay" id="batchModal">
+    <div class="modal">
+      <h2 id="batchModalTitle">Batch Preview</h2>
+      <p id="batchModalSub" style="color:var(--muted);margin-bottom:12px"></p>
+      <div class="preview-list" id="batchPreviewList"></div>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" onclick="closeBatchModal()">Cancel</button>
+        <button class="btn btn-primary" id="batchConfirmBtn" onclick="confirmBatchSend()">Send All</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     // ─── API INTEGRATION ──────────────────────────────────────────────
     function getApiBase() {
@@ -533,6 +569,21 @@
         body: JSON.stringify({ leadId, to, subject, body, strategy })
       });
     }
+
+    async function previewBatchOutreach(tiers) {
+      const q = Array.isArray(tiers) ? tiers.join(',') : tiers;
+      return apiCall(`/outreach/batch/preview?tiers=${q}`);
+    }
+
+    async function sendBatchOutreach(tiers, dryRun = false) {
+      const tierList = typeof tiers === 'string' && tiers.includes(',') ? tiers.split(',') : [tiers];
+      return apiCall('/outreach/batch', {
+        method: 'POST',
+        body: JSON.stringify({ tiers: tierList, dryRun })
+      });
+    }
+
+    let pendingBatchTiers = null;
 
     async function fetchAnalytics() {
       return apiCall('/analytics');
@@ -789,11 +840,79 @@
       document.getElementById('outreachStrategy').value = lead.outreach_strategy || 'A';
       document.getElementById('outreachSubject').value = lead.outreach_subject || '';
       document.getElementById('outreachBody').value = lead.outreach_body || '';
+      const email = (lead.decision_maker || '').includes('@') ? lead.decision_maker : '';
+      if (email) document.getElementById('outreachTo').value = email;
+    }
+
+    async function previewBatch(tiers) {
+      try {
+        const data = await previewBatchOutreach(tiers);
+        pendingBatchTiers = typeof tiers === 'string' && tiers.includes(',') ? tiers.split(',') : [tiers];
+        document.getElementById('batchModalTitle').textContent = `Send to ${data.count} leads`;
+        document.getElementById('batchModalSub').textContent = `Tiers: ${data.tiers.join(', ')} — review before sending`;
+        document.getElementById('batchPreviewList').innerHTML = data.leads.length
+          ? data.leads.map(l => `<div class="preview-item"><span><strong>${l.company}</strong> <span class="tier-badge tier-${l.tier}">${l.tier}</span> (${l.score})</span><span style="color:var(--muted)">${l.email}</span></div>`).join('')
+          : '<p style="color:var(--muted)">No eligible leads — all may already be in Outreach Sent stage or missing emails.</p>';
+        document.getElementById('batchConfirmBtn').style.display = data.count ? 'inline-block' : 'none';
+        document.getElementById('batchModal').classList.add('open');
+      } catch (e) {
+        showToast(e.message, 'error');
+      }
+    }
+
+    function closeBatchModal() {
+      document.getElementById('batchModal').classList.remove('open');
+      pendingBatchTiers = null;
+    }
+
+    async function confirmBatchSend() {
+      if (!pendingBatchTiers) return;
+      const btn = document.getElementById('batchConfirmBtn');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      try {
+        const result = await sendBatchOutreach(pendingBatchTiers.join(','), false);
+        closeBatchModal();
+        showToast(`Sent ${result.sent.length}, failed ${result.failed.length}`);
+        document.getElementById('batchStatus').textContent = `Last batch: ${result.sent.length} sent`;
+        loadOutreachLogs();
+        loadOutreachLeads();
+      } catch (e) {
+        showToast(e.message, 'error');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send All';
+      }
+    }
+
+    async function sendBatch(tiers) {
+      if (!confirm(`Send outreach to all ${tiers} leads with valid emails?`)) return;
+      const status = document.getElementById('batchStatus');
+      status.textContent = 'Sending...';
+      try {
+        const tierArg = typeof tiers === 'string' && tiers.includes(',') ? tiers.split(',') : tiers;
+        const result = await sendBatchOutreach(tierArg, false);
+        showToast(`Sent ${result.sent.length}, failed ${result.failed.length}`);
+        status.textContent = `Last batch: ${result.sent.length} sent`;
+        loadOutreachLogs();
+        loadOutreachLeads();
+      } catch (e) {
+        showToast(e.message, 'error');
+        status.textContent = '';
+      }
+    }
+
+    function engagementBadge(status, openCount, clickCount) {
+      if (status === 'clicked' || clickCount > 0) return '<span class="engagement engagement-clicked">CLICKED</span>';
+      if (status === 'opened' || openCount > 0) return `<span class="engagement engagement-opened">OPENED${openCount > 1 ? ' ' + openCount + 'x' : ''}</span>`;
+      if (status === 'bounced') return '<span class="engagement engagement-bounced">BOUNCED</span>';
+      return '';
     }
 
     async function sendOutreachEmail() {
       const leadId = document.getElementById('outreachLead').value;
-      const to = document.getElementById('outreachTo').value;
+      const lead = leads.find(l => l.id === leadId);
+      const to = document.getElementById('outreachTo').value || (lead?.decision_maker?.includes('@') ? lead.decision_maker : '');
       if (!leadId || !to) return showToast('Select lead and enter email', 'error');
 
       try {
@@ -804,6 +923,7 @@
         );
         showToast('Outreach sent!');
         loadOutreachLogs();
+        loadOutreachLeads();
       } catch (e) {
         showToast(e.message, 'error');
       }
@@ -811,9 +931,11 @@
 
     async function loadOutreachLogs() {
       try {
+        if (!leads.length) leads = await fetchLeads();
         const logs = await fetchOutreachLogs();
+        const leadMap = Object.fromEntries(leads.map(l => [l.id, l.company]));
         document.getElementById('outreachLogList').innerHTML = logs.length
-          ? `<table><tr><th>Subject</th><th>Strategy</th><th>Status</th><th>Sent</th></tr>${logs.map(l => `<tr><td>${l.subject}</td><td>${l.strategy}</td><td>${l.status}</td><td>${new Date(l.sent_at).toLocaleDateString()}</td></tr>`).join('')}</table>`
+          ? `<table><tr><th>Company</th><th>Subject</th><th>Status</th><th>Engagement</th><th>Sent</th></tr>${logs.map(l => `<tr><td>${leadMap[l.lead_id] || '—'}</td><td>${l.subject?.slice(0,40) || '—'}</td><td>${l.status}</td><td>${engagementBadge(l.status, l.open_count, l.click_count)}</td><td>${new Date(l.sent_at).toLocaleDateString()}</td></tr>`).join('')}</table>`
           : '<p style="color:var(--muted);font-size:0.85rem">No outreach sent yet</p>';
       } catch (e) { /* silent */ }
     }

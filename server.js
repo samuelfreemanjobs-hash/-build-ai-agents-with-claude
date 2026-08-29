@@ -9,10 +9,13 @@ const cron = require('node-cron');
 const { SERVICES, STRATEGIES, INDUSTRIES, SCORING_DIMENSIONS, matchService } = require('./lib/services-catalog');
 const { registerBusinessRoutes } = require('./lib/routes-business');
 const { createStore } = require('./lib/store');
-
-const app = express();
-app.use(cors());
-app.use(express.json({ limit: '10mb' }));
+const {
+  sendOutreachEmail,
+  sendBatchOutreach,
+  getBatchCandidates,
+  extractEmail,
+  handleResendEvent
+} = require('./lib/outreach-engine');
 
 // ─── CONFIGURATION ──────────────────────────────────────────────
 const SUPABASE_URL = process.env.SUPABASE_URL;
@@ -27,6 +30,11 @@ const supabase = SUPABASE_URL && SUPABASE_ANON_KEY
 const store = createStore(supabase);
 const genAI = GEMINI_API_KEY ? new GoogleGenerativeAI(GEMINI_API_KEY) : null;
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
+
+const app = express();
+app.use(cors());
+app.use('/api/webhooks/resend', express.raw({ type: 'application/json' }));
+app.use(express.json({ limit: '10mb' }));
 
 const SERVICE_NAMES = SERVICES.map(s => s.name);
 
@@ -191,6 +199,25 @@ async function sendSlackNotification(message) {
   }
 }
 
+// ─── RESEND WEBHOOK ─────────────────────────────────────────────
+app.post('/api/webhooks/resend', async (req, res) => {
+  try {
+    const event = JSON.parse(req.body.toString());
+    const result = await handleResendEvent(event, {
+      store,
+      sendSlackNotification,
+      getLeadById: async (id) => {
+        const { data } = await store.from('leads').select('*').eq('id', id).single();
+        return data;
+      }
+    });
+    res.json({ received: true, ...result });
+  } catch (error) {
+    console.error('Resend webhook error:', error);
+    res.status(400).json({ error: error.message });
+  }
+});
+
 function requireStore(res) {
   return true;
 }
@@ -212,7 +239,8 @@ app.get('/api/health', (req, res) => {
       gemini: !!genAI,
       resend: !!resend,
       slack: !!SLACK_WEBHOOK,
-      booking: process.env.BOOKING_URL || null
+      booking: process.env.BOOKING_URL || null,
+      webhookUrl: process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/api/webhooks/resend` : null
     }
   });
 });
@@ -397,44 +425,77 @@ app.post('/api/outreach/send', async (req, res) => {
 
   try {
     const { leadId, to, subject, body, strategy } = req.body;
+    if (!leadId) return res.status(400).json({ error: 'Lead ID is required' });
 
-    if (!leadId || !to) {
-      return res.status(400).json({ error: 'Lead ID and recipient email are required' });
-    }
+    const { data: lead, error } = await store.from('leads').select('*').eq('id', leadId).single();
+    if (error || !lead) return res.status(404).json({ error: 'Lead not found' });
 
-    if (!resend) {
-      return res.status(503).json({ error: 'Resend not configured. Set RESEND_API_KEY.' });
-    }
+    const recipient = to || extractEmail(lead);
+    if (!recipient) return res.status(400).json({ error: 'Recipient email required' });
 
-    const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM || 'HUNTER Intelligence <hunter@yourdomain.com>',
-      to: [to],
-      subject: subject || 'Operational Intelligence Opportunity',
-      text: body || 'Hello,\n\nI found an opportunity for your company.\n\nBest,\nHUNTER'
+    const result = await sendOutreachEmail({
+      store, resend, lead, to: recipient, subject, body, strategy
     });
 
-    if (error) throw error;
+    if (lead.tier === 'HOT') {
+      await sendSlackNotification(`📧 Outreach sent to HOT lead *${lead.company}* → ${recipient}`);
+    }
 
-    const { error: logError } = await store
-      .from('outreach_logs')
-      .insert([{
-        lead_id: leadId,
-        strategy: strategy || 'A',
-        subject: subject || 'Operational Intelligence Opportunity',
-        sent_at: new Date().toISOString(),
-        status: 'sent'
-      }]);
-
-    if (logError) console.error('Log error:', logError);
-
-    await store
-      .from('leads')
-      .update({ stage: 'Outreach Sent', last_activity: new Date().toISOString() })
-      .eq('id', leadId);
-
-    res.json({ success: true, messageId: data?.id });
+    res.json(result);
   } catch (error) {
     console.error('Send email error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/outreach/batch/preview', async (req, res) => {
+  if (!requireStore(res)) return;
+  try {
+    const { tier, tiers } = req.query;
+    const { data: leads } = await store.from('leads').select('*');
+    const tierList = tiers ? tiers.split(',') : (tier ? [tier] : ['HOT', 'HIGH']);
+    const candidates = getBatchCandidates(leads || [], { tiers: tierList });
+
+    res.json({
+      count: candidates.length,
+      tiers: tierList,
+      leads: candidates.map(l => ({
+        id: l.id,
+        company: l.company,
+        tier: l.tier,
+        score: l.score,
+        email: extractEmail(l),
+        subject: l.outreach_subject,
+        stage: l.stage
+      }))
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post('/api/outreach/batch', async (req, res) => {
+  if (!requireStore(res)) return;
+
+  try {
+    const { tier, tiers, leadIds, dryRun } = req.body;
+    const { data: leads } = await store.from('leads').select('*');
+
+    const results = await sendBatchOutreach({
+      store, resend,
+      leads: leads || [],
+      options: { tier, tiers, leadIds, dryRun: !!dryRun }
+    });
+
+    if (!dryRun && results.sent.length > 0) {
+      await sendSlackNotification(
+        `📧 *Batch outreach complete*\nSent: ${results.sent.length}\nFailed: ${results.failed.length}\n` +
+        results.sent.map(r => `• ${r.company} → ${r.to}`).join('\n')
+      );
+    }
+
+    res.json(results);
+  } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
