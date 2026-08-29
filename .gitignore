@@ -9,3 +9,7 @@ dist/
 # Agent project outputs (user work)
 agents/the-architect/projects/*
 !agents/the-architect/projects/.gitkeep
+
+# Gmail OAuth (never commit)
+agents/the-architect/credentials.json
+agents/the-architect/.gmail-token.json

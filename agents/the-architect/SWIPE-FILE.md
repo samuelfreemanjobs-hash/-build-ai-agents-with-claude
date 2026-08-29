@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close, T4=book chapter |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
 
 ---
 
@@ -69,6 +69,18 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** AW-Pr | GEN-H | PT-Proof+Story
 **Why it works:** Ogilvy's famous ad. Demonstration as headline. Extreme specificity sells quality without saying "quality."
 **Structural move:** [Specific scenario] + [surprising proof detail]
+
+### H-009
+**Copy:** *"Read 300 Business Magazines in 30 Minutes"*
+**Tags:** AW-S | GEN-H | PT-Schwartz+Mech
+**Why it works:** Schwartz Boardroom control. Functional product (condensed knowledge) not physical (magazines). Absurd specificity creates mechanism curiosity. Time-bound promise.
+**Structural move:** [Impossible-sounding input] + [compressed timeframe] + [functional benefit]
+
+### H-010
+**Copy:** *"Burn Disease Out of Your Body"*
+**Tags:** AW-P | GEN-H | PT-Schwartz+Proof
+**Why it works:** Channels mass health desire directly. Intensification language. Problem-aware audience — names enemy (disease) and promises elimination.
+**Structural move:** [Action verb] + [enemy] + [body/outcome location]
 
 ---
 
@@ -363,6 +375,18 @@ When swiping, extract these elements:
 | **Mechanism** | What "new way" is teased? |
 | **Proof type** | Stat, story, demo, authority, social? |
 | **CTA friction** | What risk is removed? |
+
+---
+
+## Kennedy & Kern Email Corpus (Gmail ingestion)
+
+Full annotated swipe from your inbox — one-time ingest via `the-architect ingest-gmail`.
+
+**Location:** `swipes/kennedy-kern/KENNEDY-KERN-EMAIL-SWIPE.md`  
+**Pattern summary:** `swipes/kennedy-kern/EMAIL-PATTERNS-LEARNED.md`  
+**Setup:** `GMAIL-INGEST.md`
+
+Use for email-specific psychology: subject lines, opens, P.S., Kennedy urgency vs Kern conversational soft-sell.
 
 ---
 

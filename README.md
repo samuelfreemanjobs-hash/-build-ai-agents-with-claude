@@ -45,6 +45,22 @@ the-architect memory
 
 Automated via GitHub Actions (daily 06:00 UTC). See [`MEMORY.md`](agents/the-architect/MEMORY.md).
 
+### Kennedy & Kern email swipe (one-time Gmail)
+
+Ingest all Kennedy and Kern emails from your inbox into a massive annotated swipe file:
+
+```bash
+# 1. Set up Google OAuth — see GMAIL-INGEST.md
+# 2. Authenticate once
+the-architect ingest-gmail --auth
+# 3. Dry run
+the-architect ingest-gmail --dry-run
+# 4. Full ingest
+the-architect ingest-gmail
+```
+
+Output: `agents/the-architect/swipes/kennedy-kern/`
+
 Or from a brief file:
 
 ```bash
@@ -109,6 +125,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`MICRO-COPY-LAB.md`](agents/the-architect/MICRO-COPY-LAB.md) | Cosmo + Enquirer pattern library |
 | [`SWIPE-FILE.md`](agents/the-architect/SWIPE-FILE.md) | Annotated copy examples (structure, not plagiarism) |
 | [`MEMORY.md`](agents/the-architect/MEMORY.md) | Persistent memory + daily headline swipe learning |
+| [`GMAIL-INGEST.md`](agents/the-architect/GMAIL-INGEST.md) | One-time Kennedy/Kern Gmail email swipe ingestion |
 | [`OBJECTIONS.md`](agents/the-architect/OBJECTIONS.md) | Objection library + rebuttal frames |
 | [`VOC-RESEARCH.md`](agents/the-architect/VOC-RESEARCH.md) | Voice-of-customer research protocol |
 | [`HALBERT-METHODOLOGY.md`](agents/the-architect/HALBERT-METHODOLOGY.md) | Gary Halbert: starving crowd, A-Pile, AIDA, offers |
