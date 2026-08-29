@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Question |
 
 ---
 
@@ -273,6 +273,24 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** AW-S | GEN-C | PT-Abraham+Mech+Proof
 **Why it works:** Case proof + geometric growth implied + preeminent CTA (advisor may decline sale). Moves V/F levers, not only N.
 **Structural move:** [Proof story] + [low-friction CTA] + [fiduciary out]
+
+### H-007 (Cialdini — social proof + unity)
+**Copy:** *"2,341 coaches in our community stopped guessing their pricing. You're next."*
+**Tags:** AW-S | GEN-H | PT-Cialdini+Proof
+**Why it works:** Specific number (social proof) + tribe identity (unity) + inclusive "you're next" (liking/commitment).
+**Structural move:** [Specific number] + [tribe label] + [inclusive invitation]
+
+### L-008 (Cialdini — reciprocity lead)
+**Copy:** *"Before you hire another agency, grab the 9-minute audit we built — it shows exactly where your funnel leaks. No opt-in. No pitch. Just the map."*
+**Tags:** AW-P | GEN-L | PT-Cialdini+Reciprocity
+**Why it works:** Unexpected value first; removes strings; pre-suades attention to "funnel leaks" before any offer.
+**Structural move:** [Give first] + [specific tool] + [anti-pitch credibility]
+
+### B-009 (Cialdini — scarcity + loss)
+**Copy:** *"Cohort 7 closes Sunday at midnight. After that, the bonus implementation call disappears — and waitlist opens for March."*
+**Tags:** GEN-B | PT-Cialdini+Scarcity
+**Why it works:** True deadline + specific loss (bonus removed) + newly scarce access. Loss framing beats vague "limited."
+**Structural move:** [Hard deadline] + [what they lose] + [next availability]
 
 ---
 

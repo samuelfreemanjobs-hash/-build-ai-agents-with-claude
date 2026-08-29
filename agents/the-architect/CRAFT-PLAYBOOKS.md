@@ -285,3 +285,54 @@ If the brief only chases N, note V/F opportunities in the strategic delivery not
 **Voice:** Same Architect tone — the host sounds like a trusted friend introducing another trusted advisor.
 
 See `ABRAHAM-METHODOLOGY.md` (Host–Beneficiary section).
+
+---
+
+## Cialdini Principle Stack (ads & sales copy)
+
+**Use for:** Facebook/Google ads, advertorials, sales pages, email closes, landing pages.
+
+### Pre-suasion sequence (every asset)
+
+1. **Channel attention** — headline/open primes one concept (problem, identity, proof, or loss)
+2. **Deliver message** — PAS, story, or mechanism (same Architect voice)
+3. **Stack principles** — layer ethically toward CTA
+4. **Commitment CTA** — single clear action; micro-yes when possible
+
+### Seven principles — copy placement
+
+| Principle | Where to deploy | Example move |
+|---|---|---|
+| **Reciprocity** | Lead, lead magnet, content, bonus reveal | Free tool before pitch |
+| **Commitment** | Quiz, opt-in, application, "if you've read this far" | Micro-yes ladder |
+| **Social proof** | Proof section, sidebar, near objection | Testimonial from similar avatar |
+| **Authority** | Mechanism, bio, "as featured in," guarantee | Reason-why + credentials on claim |
+| **Liking** | Voice, founder story, shared enemy | Peer tone, "we've all been sold bad advice" |
+| **Scarcity** | Close, PS, cart — **only if true** | Cohort deadline, seat cap |
+| **Unity** | Headline, manifesto, community close | "Fellow [tribe] who refuse to [fail]" |
+
+### Short ad playbooks (T1–T2)
+
+| Ad job | Lead principle | Skeleton |
+|---|---|---|
+| Lead gen | Reciprocity | [Specific free outcome] + [curiosity gap] + [CTA] |
+| Retarget | Consistency | [You looked at X] + [next logical step] + [CTA] |
+| Cold traffic | Social proof / Unity | [Number or tribe] + [transformation] + [CTA] |
+| Urgency | Scarcity (true) | [Deadline/cap] + [loss frame] + [CTA] |
+| Founder story | Liking + Authority | [Relatable pain] + [credential] + [CTA] |
+
+### Sales page principle map
+
+| Section | Principles |
+|---|---|
+| Headline / lead | Pre-suasion, Liking, Unity |
+| Problem (PAS) | Pre-suasion, Commitment (self-ID) |
+| Mechanism | Authority, Consistency |
+| Proof | Social proof, Authority |
+| Offer | Reciprocity (bonuses), Scarcity (if true) |
+| Guarantee | Authority, Reciprocity |
+| CTA | Commitment, Scarcity, Consistency |
+
+**Cialdini rule:** Never fabricate proof or scarcity. Influence must benefit the reader.
+
+See `CIALDINI-METHODOLOGY.md`, `research/CIALDINI-PRINCIPLES-TEMPLATE.md`.

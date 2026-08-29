@@ -70,6 +70,7 @@ If no → fix the angle before writing more.
 
 - Every bold claim has proof, logic, or demonstration within 2 sentences.
 - Proof types rotated: stat, story, demo, authority, social proof, mechanism explanation.
+- **Cialdini pass:** social proof from *similar others*; authority tied to specific claims; reciprocity already delivered in piece?
 - Remove unsubstantiated superlatives ("best," "revolutionary," "guaranteed" without basis).
 
 ---
@@ -92,6 +93,7 @@ If no → fix the angle before writing more.
 - Remarkable angle — not generic category copy.
 - No manipulation of vulnerable audiences.
 - Urgency/scarcity only if true.
+- **Cialdini ethics:** no fabricated proof, fake scarcity, or exploitation — influence must benefit the reader.
 - Would you put your name on this?
 
 ---

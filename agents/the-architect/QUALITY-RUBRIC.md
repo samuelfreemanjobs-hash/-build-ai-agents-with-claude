@@ -110,6 +110,17 @@ Trusted advisor posture? Problem articulated with fiduciary clarity? Growth leve
 | 7–8 | Protective guide voice; problem named better than prospect could; risks reversed |
 | 9–10 | Preeminent prescription (what they need); N/V/F lever clear; story-layer offer complete |
 
+### 11. Persuasion Architecture (Cialdini)
+Principles ethically stacked? Pre-suasion in opening? Proof and scarcity honest?
+
+| Score | Criteria |
+|---|---|
+| N/A | Internal doc with no persuasion context |
+| 1–3 | Pitch before value; fake or missing proof; manipulation red flags |
+| 4–6 | Some principles present but weak or misaligned (wrong testimonial avatar, abrupt CTA) |
+| 7–8 | Reciprocity + proof + authority active; opening primes the right concept |
+| 9–10 | Full ethical stack; pre-suasion earns the close; unity/liking feel authentic |
+
 ---
 
 ## Output Format
@@ -129,6 +140,7 @@ Trusted advisor posture? Problem articulated with fiduciary clarity? Growth leve
 | Outcome & Identity | /10 or N/A | |
 | PAS Agitation | /10 or N/A | |
 | Preeminence & Leverage | /10 or N/A | |
+| Persuasion Architecture | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```
