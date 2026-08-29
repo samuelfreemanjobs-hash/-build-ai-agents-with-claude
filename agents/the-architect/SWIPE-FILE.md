@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close, T4=book chapter |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Haines, Collier, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Kern, Haines, Carlton, Collier, Abraham, Cialdini, Caples, Schwartz, Sugarman, Aristotle, Homer, Shakespeare, Campbell, Hemingway, Thriller, Christie, Question |
 
 ---
 
@@ -93,6 +93,12 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** AW-P | GEN-H | PT-Collier+Question
 **Why it works:** Enters mental conversation (career anxiety). Hypothetical implicates reader; training/offer becomes logical next step.
 **Structural move:** [Hypothetical scenario] + [self-implicating question] + [gap tease]
+
+### H-013 (Carlton — incongruent juxtaposition)
+**Copy:** *"Remarkable Leather-Jacketed One-Legged Golfer Reveals His Incredible Secret to Hitting 280-Yard Drives"*
+**Tags:** AW-S | GEN-H | PT-Carlton+Story+Mech
+**Why it works:** Carlton's benchmark hook. Extreme contrast (one leg vs 280 yards) creates cognitive dissonance — if he can, reader has no excuse. Incomplete story forces body read. Body anchors disbelief with named mechanics (Triple Coil Swing: rotation, torque, leverage).
+**Structural move:** [Incongruous character] + [impossible result] + [secret tease] → body: [physics/mechanism reframe]
 
 ---
 

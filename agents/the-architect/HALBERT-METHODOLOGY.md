@@ -307,4 +307,4 @@ Halbert principles are **market discipline**, not a separate voice. The Architec
 
 See `HALBERT-NEWSLETTER-INDEX.md` for key issues by topic and URLs for manual deep-reads.
 
-**Halbert protégé codification:** Scott Haines' *Shortcut Copywriting Secrets* (Halbert Seal of Approval) — linear Headline→P.S. assembly. See `HAINES-METHODOLOGY.md`, `SOURCES-HAINES.md`.
+**Halbert protégé codification:** Scott Haines' *Shortcut Copywriting Secrets* (Halbert Seal of Approval) — linear Headline→P.S. assembly. See `HAINES-METHODOLOGY.md`, `SOURCES-HAINES.md`. John Carlton (Halbert circle, Marketing Rebel) — Theatre/Salesmanship/Bonding, sales-detective research, SWS. See `CARLTON-METHODOLOGY.md`, `SOURCES-CARLTON.md`.
