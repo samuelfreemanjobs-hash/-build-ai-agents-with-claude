@@ -90,6 +90,9 @@ docker compose up -d
 | POST | `/api/proposals/generate` | AI proposal generation |
 | POST | `/api/diagnostics/generate` | AI diagnostic report |
 | POST | `/api/outreach/send` | Send outreach email |
+| GET | `/api/outreach/batch/preview` | Preview batch recipients (`?tiers=HOT,HIGH`) |
+| POST | `/api/outreach/batch` | Batch send to tier(s), supports `dryRun` |
+| POST | `/api/webhooks/resend` | Resend webhooks — auto stage updates on open/click |
 
 ### Business
 | Method | Endpoint | Description |
