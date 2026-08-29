@@ -16,7 +16,7 @@ Reference library for The Architect. When drafting, match **structure and psycho
 |---|---|
 | **AW** | Awareness: U=unaware, P=problem, S=solution, Pr=product, M=most |
 | **GEN** | Genre: H=headline, E=email, L=lead, SP=sales page, B=bullet, C=close |
-| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Question |
+| **PT** | Pattern: Cosmo, Enq, Mech, Story, Proof, Contrarian, Hopkins, Kennedy, Abraham, Cialdini, Caples, Question |
 
 ---
 
@@ -24,14 +24,14 @@ Reference library for The Architect. When drafting, match **structure and psycho
 
 ### H-001
 **Copy:** *"They Laughed When I Sat Down at the Piano — But When I Started to Play!~"*
-**Tags:** AW-P | GEN-H | PT-Story
-**Why it works:** Classic story hook. Social humiliation → reversal. Reader must know what happened next. Specific scene (sat down, started to play).
+**Tags:** AW-P | GEN-H | PT-Caples+Story
+**Why it works:** Caples' most famous story headline. Social humiliation → reversal. Reader must know what happened next. Specific scene (sat down, started to play).
 **Structural move:** [Ridicule] + [but] + [payoff tease]
 
 ### H-002
 **Copy:** *"Do You Make These Mistakes in English?"*
-**Tags:** AW-S | GEN-H | PT-Question
-**Why it works:** Direct question implicates the reader. "These" implies a known list they might be on. Low friction — curiosity, not fear.
+**Tags:** AW-S | GEN-H | PT-Caples+Question
+**Why it works:** Caples question headline. Direct question implicates the reader. "These" implies a known list they might be on. Low friction — curiosity, not fear.
 **Structural move:** [Question] + [implied list] + [topic]
 
 ### H-003
@@ -291,6 +291,18 @@ Reference library for The Architect. When drafting, match **structure and psycho
 **Tags:** GEN-B | PT-Cialdini+Scarcity
 **Why it works:** True deadline + specific loss (bonus removed) + newly scarce access. Loss framing beats vague "limited."
 **Structural move:** [Hard deadline] + [what they lose] + [next availability]
+
+### H-008 (Caples — how-to + quick way)
+**Copy:** *"How to Play a Simple Tune on the Piano in 7 Days"*
+**Tags:** AW-S | GEN-H | PT-Caples+HowTo
+**Why it works:** Self-interest + quick-and-easy way + specific timeframe. Reader knows exactly what's offered.
+**Structural move:** [How to] + [benefit] + [time qualifier]
+
+### L-009 (Caples — before/after lead)
+**Copy:** *"Six months ago I couldn't land a client. Last Tuesday I turned down two — same offer, same price, one rewritten headline."*
+**Tags:** AW-P | GEN-L | PT-Caples+Story+Proof
+**Why it works:** Specific before/after with timeframe; mechanism tease (headline); reader identifies with struggle.
+**Structural move:** [Before state] + [After state] + [mechanism hint]
 
 ---
 

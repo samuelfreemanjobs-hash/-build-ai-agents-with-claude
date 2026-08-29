@@ -25,9 +25,11 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 | [`KENNEDY-METHODOLOGY.md`](agents/the-architect/KENNEDY-METHODOLOGY.md) | Dan Kennedy: Magnetic Marketing, PAS, 10 Questions, offers |
 | [`ABRAHAM-METHODOLOGY.md`](agents/the-architect/ABRAHAM-METHODOLOGY.md) | Jay Abraham: Preeminence, N×V×F growth, Parthenon, risk reversal |
 | [`CIALDINI-METHODOLOGY.md`](agents/the-architect/CIALDINI-METHODOLOGY.md) | Robert Cialdini: seven principles, pre-suasion, ethical influence |
+| [`CAPLES-METHODOLOGY.md`](agents/the-architect/CAPLES-METHODOLOGY.md) | John Caples: tested headlines, story ads, before/after, split-run testing |
 | [`research/KENNEDY-10Q-TEMPLATE.md`](agents/the-architect/research/KENNEDY-10Q-TEMPLATE.md) | Pre-copy diagnostic template |
 | [`research/ABRAHAM-LEVERS-TEMPLATE.md`](agents/the-architect/research/ABRAHAM-LEVERS-TEMPLATE.md) | Three-lever and offer scan template |
 | [`research/CIALDINI-PRINCIPLES-TEMPLATE.md`](agents/the-architect/research/CIALDINI-PRINCIPLES-TEMPLATE.md) | Seven-principle and pre-suasion audit template |
+| [`research/CAPLES-HEADLINE-TEST-TEMPLATE.md`](agents/the-architect/research/CAPLES-HEADLINE-TEST-TEMPLATE.md) | 10 headline variants + split-test plan |
 | [`HALBERT-NEWSLETTER-INDEX.md`](agents/the-architect/HALBERT-NEWSLETTER-INDEX.md) | Newsletter archive index by topic |
 | [`research/VOC-LEXICON-TEMPLATE.md`](agents/the-architect/research/VOC-LEXICON-TEMPLATE.md) | Save per-project VOC output |
 
@@ -40,7 +42,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 
 ## What makes this writer different
 
-- **One author voice** — Cosmo hooks, Enquirer drama, Halbert discipline, Kern psychology, Kennedy PAS, Abraham preeminence, Cialdini persuasion — same person throughout
+- **One author voice** — Cosmo hooks, Enquirer drama, Halbert discipline, Kern psychology, Kennedy PAS, Abraham preeminence, Cialdini persuasion, Caples headline science — same person throughout
 - **8-word test first** — if the hook fails short, the long copy will too
 - **Mandatory editor passes** — structural, line, punch-up, proof, CTA, ethics
 - **Quality rubric** — self-scores before shipping (min 8.0 average)
@@ -50,6 +52,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 - **Swipe file** — annotated examples; extract structure, not words
 - **Kennedy direct response** — PAS, 10 Questions, Magnetic Marketing triad, irresistible offers, follow-up systems
 - **Cialdini persuasion** — seven principles, pre-suasion, ethical proof/scarcity, principle stacking for ads and copy
+- **Caples tested advertising** — headline-first discipline, story hooks, before/after, long copy, split-run testing
 - **Objection library** — pre-built rebuttals + placement guide
 - **Teaching install format** — Pagan chunking + Woodsmall distinctions
 

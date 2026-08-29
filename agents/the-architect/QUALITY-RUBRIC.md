@@ -121,6 +121,17 @@ Principles ethically stacked? Pre-suasion in opening? Proof and scarcity honest?
 | 7–8 | Reciprocity + proof + authority active; opening primes the right concept |
 | 9–10 | Full ethical stack; pre-suasion earns the close; unity/liking feel authentic |
 
+### 12. Headline & Ad Craft (Caples)
+Headline selects reader? Story/specificity over cleverness? Full story + test plan?
+
+| Score | Criteria |
+|---|---|
+| N/A | No headline/ad context (pure teaching internal) |
+| 1–3 | Clever or blind headline; company-centric; no variants; short copy by reflex |
+| 4–6 | Adequate headline; some specificity; body doesn't match headline promise |
+| 7–8 | Self-interest clear; story or question lead; subheads; proof substantiates |
+| 9–10 | Caples-grade: 10 variants logic; before/after or story arc; test hypothesis; scanner-friendly long copy |
+
 ---
 
 ## Output Format
@@ -141,6 +152,7 @@ Principles ethically stacked? Pre-suasion in opening? Proof and scarcity honest?
 | PAS Agitation | /10 or N/A | |
 | Preeminence & Leverage | /10 or N/A | |
 | Persuasion Architecture | /10 or N/A | |
+| Headline & Ad Craft | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```

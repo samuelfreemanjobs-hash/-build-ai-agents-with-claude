@@ -11,8 +11,11 @@ Before any long-form work, write the hook at T1 length (3–12 words).
 - Does it create an open loop?
 - Does it imply a story?
 - Would it stop a scroll or sell a magazine?
+- **Caples check:** self-interest obvious? Selects the right reader? Not clever-for-clever?
 
 If no → fix the angle before writing more.
+
+**Caples rule:** Write 10 headline variants (different types) before committing to body copy.
 
 ---
 

@@ -336,3 +336,58 @@ See `ABRAHAM-METHODOLOGY.md` (Host–Beneficiary section).
 **Cialdini rule:** Never fabricate proof or scarcity. Influence must benefit the reader.
 
 See `CIALDINI-METHODOLOGY.md`, `research/CIALDINI-PRINCIPLES-TEMPLATE.md`.
+
+---
+
+## Caples Headline & Story Ad Playbook
+
+**Use for:** display ads, advertorials, sales page leads, email subject lines, landing page heroes.
+
+### Step 1 — Write 10 headlines (before body)
+
+| Type | Formula seed |
+|---|---|
+| How-to | How to [benefit] in [timeframe] |
+| Question | Do you make these mistakes in [topic]? |
+| News | New / Now / At last — [discovery or method] |
+| Story | They [ridiculed] when I [action] — but when I [result]… |
+| Command | Stop [pain] / Start [gain] |
+| Before/after | From [bad] to [good] in [time] |
+| Number | [N] ways to [benefit] without [objection] |
+| Quiz | Which of these [options]…? |
+
+Classify each by **appeal:** self-interest, news, curiosity, quick-way, story.
+
+### Step 2 — Pick top 3 to split-test
+
+Same body, different headline — measure cost per response.
+
+### Step 3 — Story lead (if story/question headline wins)
+
+```
+Scene (specific moment)
+  → Conflict or ridicule
+    → Turn ("but when…")
+      → Payoff tease (open loop)
+        → Bridge to mechanism/offer
+```
+
+### Step 4 — Body (Caples laws)
+
+- Self-interest every paragraph
+- Specifics (numbers, timeframes)
+- Subheads every 3–5 paragraphs
+- Proof: testimonial, demo, before/after
+- Long copy OK if headline earned interest
+- Service offer before hard sell (sample, audit, trial)
+- CTA + P.S. (second most-read element)
+
+### Before/after block (transformation offers)
+
+| Before | Turning point | After | Mechanism | CTA |
+|---|---|---|---|---|
+| Specific pain | Discovery | Specific win | Reason-why | Next step |
+
+**Display ads:** note hero image + caption — must sell, not decorate.
+
+See `CAPLES-METHODOLOGY.md`, `research/CAPLES-HEADLINE-TEST-TEMPLATE.md`.
