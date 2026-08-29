@@ -71,7 +71,17 @@ async function run() {
   const svc = healthRes.services || {};
 
   console.log('\n📋 Service Status:');
-  console.log(`  Storage:  ${svc.supabase ? '✅ Supabase' : svc.storage === 'local' ? '📁 Local JSON' : '❌ Not configured'}`);
+  const storageLabel = svc.storage === 'local-fallback'
+    ? `📁 Local JSON (Supabase misconfigured — ${svc.leadCount ?? '?'} leads in data/)`
+    : svc.supabase
+      ? `✅ Supabase (${svc.leadCount ?? '?'} leads)`
+      : svc.storage === 'local'
+        ? `📁 Local JSON (${svc.leadCount ?? '?'} leads)`
+        : '❌ Not configured';
+  console.log(`  Storage:  ${storageLabel}`);
+  if (svc.supabaseIssues?.length) {
+    console.log('  Supabase: ⚠️  ' + svc.supabaseIssues[0]);
+  }
   console.log(`  Gemini:   ${svc.gemini ? '✅ Connected' : '⚠️  Not set (fallback scoring active)'}`);
   console.log(`  Resend:   ${svc.resend ? '✅ Connected' : '⚠️  Not set (outreach disabled)'}`);
   console.log(`  Slack:    ${svc.slack ? '✅ Connected' : '⚠️  Not set (alerts disabled)'}`);

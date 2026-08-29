@@ -81,9 +81,9 @@
 
         el.innerHTML = `
           <div class="grid-4">
-            <div class="card"><h3>Revenue This Month</h3><div class="val">$${(rev.thisMonth/1000).toFixed(0)}K</div><div class="sub">Target: $${(rev.targetMonthly/1000).toFixed(0)}K</div><div class="progress-bar"><div class="progress-fill" style="width:${progress}%"></div></div></div>
-            <div class="card"><h3>MRR</h3><div class="val">$${(rev.mrr/1000).toFixed(1)}K</div><div class="sub">${rev.mrr > 0 ? 'Retainer revenue' : 'No retainers yet'}</div></div>
-            <div class="card"><h3>Pipeline</h3><div class="val">$${(pipe.weightedValue/1000).toFixed(0)}K</div><div class="sub">${pipe.active} active · ${pipe.hot} hot</div></div>
+            <div class="card"><h3>Revenue This Month</h3><div class="val">$${(rev.thisMonth/1000).toFixed(0)}K</div><div class="sub">Target: $${(rev.targetMonthly/1000).toFixed(0)}K · ${progress}% of goal</div><div class="progress-bar" title="Revenue toward monthly target"><div class="progress-fill" style="width:${progress}%"></div></div></div>
+            <div class="card"><h3>MRR</h3><div class="val">$${(rev.mrr/1000).toFixed(1)}K</div><div class="sub">${rev.mrr > 0 ? 'Retainer revenue' : 'No retainers yet — normal pre-launch'}</div></div>
+            <div class="card"><h3>Pipeline</h3><div class="val">${pipe.total} leads</div><div class="sub">$${(pipe.weightedValue/1000).toFixed(0)}K weighted · ${pipe.hot} hot</div></div>
             <div class="card"><h3>Outstanding AR</h3><div class="val">$${(rev.outstanding/1000).toFixed(0)}K</div><div class="sub">${rev.overdue > 0 ? '⚠ $' + (rev.overdue/1000).toFixed(0) + 'K overdue' : 'All current'}</div></div>
           </div>
 

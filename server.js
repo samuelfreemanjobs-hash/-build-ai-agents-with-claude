@@ -9,7 +9,7 @@ const axios = require('axios');
 const cron = require('node-cron');
 const { SERVICES, STRATEGIES, INDUSTRIES, SCORING_DIMENSIONS, matchService } = require('./lib/services-catalog');
 const { registerBusinessRoutes } = require('./lib/routes-business');
-const { createStore } = require('./lib/store');
+const { createStoreAsync, readTable } = require('./lib/store');
 const {
   sendOutreachEmail,
   sendBatchOutreach,
@@ -30,7 +30,7 @@ const SPARK_WEBHOOK_SECRET = process.env.SPARK_WEBHOOK_SECRET;
 const supabase = SUPABASE_URL && SUPABASE_ANON_KEY
   ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
   : null;
-const store = createStore(supabase);
+let store = null;
 const genAI = GEMINI_API_KEY ? new GoogleGenerativeAI(GEMINI_API_KEY) : null;
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 
@@ -252,20 +252,34 @@ function dbUnavailable(res) {
 
 // ─── API ROUTES ──────────────────────────────────────────────────
 
-app.get('/api/health', (req, res) => {
+app.get('/api/health', async (req, res) => {
+  let leadCount = 0;
+  try {
+    const { data } = await store.from('leads').select('id');
+    leadCount = data?.length ?? 0;
+  } catch (_) {
+    try { leadCount = readTable('leads').length; } catch (_) {}
+  }
+
   res.json({
     status: 'online',
     timestamp: new Date().toISOString(),
     services: {
       storage: store.mode,
-      supabase: store.mode === 'supabase',
+      supabase: store.mode === 'supabase' && store.supabaseConnected !== false,
+      supabaseConfigured: !!store.supabaseConfigured,
+      supabaseConnected: store.supabaseConnected ?? (store.mode === 'supabase'),
+      supabaseIssues: store.supabaseIssues || null,
+      leadCount,
       gemini: !!genAI,
       resend: !!resend,
-      slack: !!SLACK_WEBHOOK,
+      slack: !!(SLACK_WEBHOOK && !SLACK_WEBHOOK.includes('xxx')),
       booking: process.env.BOOKING_URL || null,
       webhooks: {
-        resend: process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/api/webhooks/resend` : null,
-        spark: process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/api/webhooks/spark` : null
+        resend: process.env.PUBLIC_URL && !process.env.PUBLIC_URL.includes('your-app')
+          ? `${process.env.PUBLIC_URL}/api/webhooks/resend` : null,
+        spark: process.env.PUBLIC_URL && !process.env.PUBLIC_URL.includes('your-app')
+          ? `${process.env.PUBLIC_URL}/api/webhooks/spark` : null
       }
     }
   });
@@ -658,9 +672,9 @@ app.post('/api/seed', async (req, res) => {
   }
 });
 
-// ─── CRON JOBS ──────────────────────────────────────────────
+// ─── CRON JOBS (registered after store init in start()) ───────
 
-if (store.mode === 'supabase') {
+function registerCronJobs() {
   cron.schedule('0 9 * * *', async () => {
     console.log('Running daily follow-up check...');
     try {
@@ -716,15 +730,33 @@ if (store.mode === 'supabase') {
   });
 }
 
-registerBusinessRoutes(app, { store, genAI, resend, sendSlackNotification, requireStore });
-
 // Serve frontend in production
 const path = require('path');
 app.use('/content', express.static(path.join(__dirname, 'content')));
 app.use(express.static(path.join(__dirname, 'frontend')));
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`🚀 HUNTER Autonomous OS running on port ${PORT}`);
-  console.log(`📡 API available at http://localhost:${PORT}/api`);
+
+async function start() {
+  store = await createStoreAsync(supabase);
+  registerBusinessRoutes(app, { store, genAI, resend, sendSlackNotification, requireStore });
+  registerCronJobs();
+
+  app.listen(PORT, async () => {
+    let leads = 0;
+    try {
+      const { data } = await store.from('leads').select('id');
+      leads = data?.length ?? 0;
+    } catch (_) {}
+    console.log(`🚀 HUNTER Autonomous OS running on port ${PORT}`);
+    console.log(`📡 API: http://localhost:${PORT}/api  ·  Storage: ${store.mode}  ·  ${leads} leads loaded`);
+    if (store.supabaseIssues?.length) {
+      console.log('   Fix Supabase in .env to sync to cloud (local data/ works for launch)');
+    }
+  });
+}
+
+start().catch((err) => {
+  console.error('Failed to start HUNTER:', err);
+  process.exit(1);
 });
