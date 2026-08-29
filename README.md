@@ -142,6 +142,10 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`COLLIER-METHODOLOGY.md`](agents/the-architect/COLLIER-METHODOLOGY.md) | Robert Collier: mental conversation, bait principle, six essentials |
 | [`HAINES-METHODOLOGY.md`](agents/the-architect/HAINES-METHODOLOGY.md) | Scott Haines: shortcut copywriting, Headline→P.S., bucket brigade, blind bullets |
 | [`CARLTON-METHODOLOGY.md`](agents/the-architect/CARLTON-METHODOLOGY.md) | John Carlton: Theatre/Salesmanship/Bonding, sales detective, hook engineering, SWS 17 steps |
+| [`ULTIMATE-BRANDING-METHODOLOGY.md`](agents/the-architect/ULTIMATE-BRANDING-METHODOLOGY.md) | Ries + Ogilvy + Godin + DR brand — six layers, 5P conversion loop |
+| [`RIES-POSITIONING-METHODOLOGY.md`](agents/the-architect/RIES-POSITIONING-METHODOLOGY.md) | Al Ries: positioning, one word, category, focus |
+| [`OGILVY-BRAND-METHODOLOGY.md`](agents/the-architect/OGILVY-BRAND-METHODOLOGY.md) | David Ogilvy: brand image, big idea, personality, prestige |
+| [`GODIN-BRAND-METHODOLOGY.md`](agents/the-architect/GODIN-BRAND-METHODOLOGY.md) | Seth Godin: purple cow, tribes, permission, SVA |
 | [`CELEBRITY-BUILDING-METHODOLOGY.md`](agents/the-architect/CELEBRITY-BUILDING-METHODOLOGY.md) | Authority from thin air: origin myth, polarity, proof cascade, 90-day celebrity sprint |
 | [`INFO-PRODUCT-ARCHITECTURE.md`](agents/the-architect/INFO-PRODUCT-ARCHITECTURE.md) | Nine-phase engine: curriculum spine, offer stack, launch funnel, backend |
 | [`SUGARMAN-METHODOLOGY.md`](agents/the-architect/SUGARMAN-METHODOLOGY.md) | Joe Sugarman: slippery slide, 31 triggers, emotion→logic, mail-order craft |
@@ -156,7 +160,9 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`research/COLLIER-CONVERSATION-TEMPLATE.md`](agents/the-architect/research/COLLIER-CONVERSATION-TEMPLATE.md) | Mental conversation, bait, six essentials |
 | [`research/HAINES-COPY-WORKFLOW-TEMPLATE.md`](agents/the-architect/research/HAINES-COPY-WORKFLOW-TEMPLATE.md) | Headline to P.S. linear copy assembly |
 | [`research/CARLTON-SWS-TEMPLATE.md`](agents/the-architect/research/CARLTON-SWS-TEMPLATE.md) | Carlton Simple Writing System 17-step checklist |
+| [`research/BRAND-ARCHITECTURE-TEMPLATE.md`](agents/the-architect/research/BRAND-ARCHITECTURE-TEMPLATE.md) | Six-layer brand + 5P loop worksheet |
 | [`research/CELEBRITY-FABRICATION-TEMPLATE.md`](agents/the-architect/research/CELEBRITY-FABRICATION-TEMPLATE.md) | 90-day celebrity / authority build worksheet |
+| [`SOURCES-BRANDING.md`](agents/the-architect/SOURCES-BRANDING.md) | Ries, Ogilvy, Godin branding source provenance |
 | [`research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md`](agents/the-architect/research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md) | Nine-phase info-product build worksheet |
 | [`SOURCES-HAINES.md`](agents/the-architect/SOURCES-HAINES.md) | Scott Haines source provenance |
 | [`SOURCES-VICTOR-SCHWAB.md`](agents/the-architect/SOURCES-VICTOR-SCHWAB.md) | Victor Schwab source provenance (distinct from Eugene Schwartz) |

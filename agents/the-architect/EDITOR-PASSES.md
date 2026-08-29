@@ -97,11 +97,12 @@ If no → fix the angle before writing more.
 
 ---
 
-## Pass 6: Purple Cow + Ethics
+## Pass 6: Purple Cow + Brand + Ethics
 
 **Job:** Final quality gate.
 
-- Remarkable angle — not generic category copy.
+- Remarkable angle — not generic category copy (Godin purple cow / rubric dimension 6).
+- **Brand Conversion Audit** (if brand/positioning asset): Ries word + Ogilvy consistency + Godin SVA — see `ULTIMATE-BRANDING-METHODOLOGY.md`.
 - No manipulation of vulnerable audiences.
 - Urgency/scarcity only if true.
 - **Cialdini ethics:** no fabricated proof, fake scarcity, or exploitation — influence must benefit the reader.

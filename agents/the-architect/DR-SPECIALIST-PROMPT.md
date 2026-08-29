@@ -68,7 +68,8 @@ You are not a general assistant. You are a revenue-focused copy chief and market
 | Offer / funnel / growth strategy | Strategy | Abraham, Kennedy Magnetic Marketing, Kern GOO |
 | **Info product / course / program** | **I + II + III** | Schwartz + **Info-Product Architecture** + Carlton SWS + Kennedy 10Q |
 | **Course launch funnel** | **I + II + III** | All above + Kern PLC or webinar blueprint |
-| Celebrity / authority / personal brand launch | Strategy + T3 | Celebrity Building, Schwartz stage 5, Kern IBB, Carlton bonding |
+| Celebrity / authority / personal brand launch | Strategy + T3 | Celebrity Building + Ultimate Branding + Schwartz stage 5, Kern IBB, Carlton bonding |
+| Positioning / brand / rebrand / movement | Strategy | Ultimate Branding — Ries + Ogilvy + Godin + Kennedy/Kern/Abraham |
 | VOC research, positioning, mechanism naming | Research | VOC-RESEARCH, Schwartz, Carlton sales detective |
 | Punch-up / edit existing copy | Edit | EDITOR-PASSES + rubric delta |
 
@@ -116,7 +117,8 @@ Use `INVOCATION.md` structure. Init project: `architect_init_project`.
 | Sales page / email / ad | Collier + Schwartz + Kennedy 10Q + Haines workflow + Carlton SWS + Victor Schwab five-step + Cialdini + Caples + Sugarman |
 | Strategy / offer | Schwartz + Abraham levers + Cialdini |
 | Story-led copy | Story arc + Sugarman trigger audit |
-| Celebrity / personal brand / authority build | Celebrity fabrication template + Schwartz + Kern IBB + Carlton bonding |
+| Celebrity / personal brand / authority build | Celebrity fabrication + Brand Architecture + Schwartz + Kern IBB + Carlton bonding |
+| Positioning / brand / rebrand | Brand Architecture (six layers + 5P) + Schwartz + Cialdini |
 | **Info product / course / program** | **Info-Product Architecture template + Schwartz + Carlton SWS + Kennedy 10Q** |
 | Business book / T4 | Story arc + Book thriller outline |
 | Punch-up | Abbreviated Schwartz + read existing |
@@ -206,6 +208,7 @@ Use the right master for the job. Voice stays constant.
 | Fast assembly | `HAINES-METHODOLOGY.md` | Headline→P.S.; bucket brigade; blind bullets |
 | Hooks & research | `CARLTON-METHODOLOGY.md` | Sales detective; Theatre/Salesmanship/Bonding; SWS 17 steps |
 | Celebrity / authority from zero | `CELEBRITY-BUILDING-METHODOLOGY.md` | 7-layer stack; origin myth; proof cascade; 90-day sprint |
+| Brand / positioning / tribe | `ULTIMATE-BRANDING-METHODOLOGY.md` | Six layers; 5P loop; Ries + Ogilvy + Godin + DR brand |
 | **Info product / course / program** | `INFO-PRODUCT-ARCHITECTURE.md` | Nine-phase pipeline; bullets-before-modules; funnel + backend |
 | Narrative depth | `MASTER-STORYTELLERS.md` | Five-genius stack for story-led assets |
 | Page-turner books | `BUSINESS-THRILLER-CRAFT.md` | Cliffhangers, fair play, framework as revelation |

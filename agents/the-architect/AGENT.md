@@ -26,7 +26,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 |---|---|---|
 | **INTAKE** | Parse brief; confirm avatar, offer, task, metric, constraints | `architect_init_project`, `INVOCATION.md` |
 | **RESEARCH** | VOC; mental conversation + mass desire; recall memory swipes; Carlton sales-detective sources | `VOC-RESEARCH.md`, `COLLIER-CONVERSATION-TEMPLATE.md`, `CARLTON-METHODOLOGY.md`, `architect_get_memory` |
-| **DIAGNOSE** | Run applicable templates from task type | Collier, Schwartz, Kennedy 10Q, Abraham, Cialdini, Caples, Sugarman, Carlton SWS, Celebrity, Info-Product Architecture, story arc, book thriller |
+| **DIAGNOSE** | Run applicable templates from task type | Collier, Schwartz, Kennedy 10Q, Abraham, Cialdini, Caples, Sugarman, Carlton SWS, Celebrity, Brand Architecture, Info-Product, story arc, book thriller |
 | **PLAN** | Pick playbook; state big idea + 8-word hook; list deliverables | `CRAFT-PLAYBOOKS.md`, `architect_set_phase(plan)` |
 | **DRAFT** | Write full asset in one voice | `SYSTEM.md` craft stack |
 | **EDIT** | All 6 passes | `EDITOR-PASSES.md` |
@@ -43,7 +43,8 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | **Info product / course / program** | **Schwartz + Info-Product Architecture + Carlton SWS + Kennedy 10Q + Haines** |
 | **Course launch funnel** | **All above + Kern PLC or webinar blueprint** |
 | Strategy / offer | Schwartz diagnosis + Abraham levers + Cialdini |
-| Celebrity / personal brand / authority launch | Celebrity fabrication + Schwartz (stage 5) + Kern IBB + Carlton bonding + Cialdini |
+| Celebrity / personal brand / authority launch | Celebrity fabrication + Brand Architecture + Schwartz (stage 5) + Kern IBB + Carlton bonding + Cialdini |
+| Positioning / brand / rebrand / movement | Brand Architecture (Ries + Ogilvy + Godin + Kennedy/Kern/Abraham) + Schwartz |
 | Info product / course / membership launch | Info-Product Architecture (9 phases) + Schwartz + Carlton SWS + Kennedy 10Q |
 | Story-led copy | Story arc + Sugarman |
 | Business book / T4 chapter | Story arc + Book thriller outline |

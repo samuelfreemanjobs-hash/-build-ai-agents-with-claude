@@ -257,6 +257,10 @@ Tabloid craft for attention architecture:
 
 | Master | Celebrity layer |
 |---|---|
+| **Ries** | Layer 1 category claim = owned word + ladder |
+| **Ogilvy** | Layer 3 signature = consistent brand personality |
+| **Godin** | Tribe leader; permission; purple cow remarkability |
+| **Ultimate Branding** | Six-layer stack + 5P loop — celebrity = Layers 1–4 executed |
 | **Schwartz** | Stage 5 identification; awareness-matched celebrity headlines |
 | **Collier** | Mental conversation — celebrity enters their self-talk |
 | **Carlton** | Bonding + theatre + war stories; sales-detective anecdote mining |
@@ -339,4 +343,4 @@ See `research/CELEBRITY-FABRICATION-TEMPLATE.md` — per-project 90-day celebrit
 
 ---
 
-See also: `SCHWARTZ-METHODOLOGY.md`, `KERN-METHODOLOGY.md`, `CARLTON-METHODOLOGY.md`, `CIALDINI-METHODOLOGY.md`, `HALBERT-METHODOLOGY.md`, `MICRO-COPY-LAB.md`, `CRAFT-PLAYBOOKS.md`
+See also: `ULTIMATE-BRANDING-METHODOLOGY.md`, `RIES-POSITIONING-METHODOLOGY.md`, `GODIN-BRAND-METHODOLOGY.md`, `SCHWARTZ-METHODOLOGY.md`, `KERN-METHODOLOGY.md`, `CARLTON-METHODOLOGY.md`, `CIALDINI-METHODOLOGY.md`, `HALBERT-METHODOLOGY.md`, `MICRO-COPY-LAB.md`, `CRAFT-PLAYBOOKS.md`
