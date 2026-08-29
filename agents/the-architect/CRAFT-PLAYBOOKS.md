@@ -172,3 +172,22 @@ Use for: promo closes, cart abandonment, broadcast ends.
 | Convert | Direct offer | Natural next step, not tone shift |
 
 See `KERN-METHODOLOGY.md` for full architecture.
+
+---
+
+## Hopkins Sales Letter Structure (classic DR)
+
+One reading. New customer. Full story.
+
+1. **Headline** — select reader; self-interest only
+2. **Lead** — enter their problem; service posture
+3. **Reason-why body** — specific claims, mechanism, preemptive truth
+4. **Proof** — demonstration, figures, tests, samples offered
+5. **Full claim stack** — every important argument (don't serialize)
+6. **Offer** — trial / sample / guarantee / risk on seller
+7. **CTA** — clear action device (coupon, link, reply)
+8. **P.S.** — second most-read element; restate strongest benefit or deadline
+
+**Hopkins rule:** *The more you tell, the more you sell* — for interested readers.
+
+See `HOPKINS-METHODOLOGY.md` for full laws and checklist.

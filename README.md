@@ -21,6 +21,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 | [`VOC-RESEARCH.md`](agents/the-architect/VOC-RESEARCH.md) | Voice-of-customer research protocol |
 | [`HALBERT-METHODOLOGY.md`](agents/the-architect/HALBERT-METHODOLOGY.md) | Gary Halbert: starving crowd, A-Pile, AIDA, offers |
 | [`KERN-METHODOLOGY.md`](agents/the-architect/KERN-METHODOLOGY.md) | Frank Kern: Results in Advance, IBB, funnels, Core Identity |
+| [`HOPKINS-METHODOLOGY.md`](agents/the-architect/HOPKINS-METHODOLOGY.md) | Claude Hopkins: scientific advertising, reason-why, specificity, testing |
 | [`HALBERT-NEWSLETTER-INDEX.md`](agents/the-architect/HALBERT-NEWSLETTER-INDEX.md) | Newsletter archive index by topic |
 | [`research/VOC-LEXICON-TEMPLATE.md`](agents/the-architect/research/VOC-LEXICON-TEMPLATE.md) | Save per-project VOC output |
 
@@ -41,7 +42,7 @@ Elite direct-response copywriter + Cosmopolitan cover blurb ghostwriter + Nation
 - **Micro-copy lab** — 10-variant protocol with pattern diversity
 - **VOC research mode** — mine real customer language before writing
 - **Swipe file** — annotated examples; extract structure, not words
-- **Halbert methodology** — starving crowd, A-Pile, headline index cards, offer sweetening
+- **Hopkins scientific advertising** — salesmanship in print, reason-why, specificity, full story, test everything
 - **Objection library** — pre-built rebuttals + placement guide
 - **Teaching install format** — Pagan chunking + Woodsmall distinctions
 

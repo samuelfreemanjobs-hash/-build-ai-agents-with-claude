@@ -16,15 +16,15 @@ Does the opening work at 3–12 words? Open loop? Implied story?
 | 7–8 | Strong curiosity or identity pull |
 | 9–10 | Would stop scroll / sell magazine / forward to a friend |
 
-### 2. Specificity
-Numbers, scenes, names, timeframes — or vague fog?
+### 2. Specificity (Hopkins)
+Numbers, scenes, names, timeframes, tested figures — or vague fog?
 
 | Score | Criteria |
 |---|---|
-| 1–3 | Abstract, could apply to anyone |
-| 4–6 | Some specifics |
-| 7–8 | Vivid, concrete throughout |
-| 9–10 | Cinematic; reader is in the scene |
+| 1–3 | Platitudes: "best," "lowest," "world-class" — water off a duck |
+| 4–6 | Some specifics mixed with generics |
+| 7–8 | Concrete facts, reason-why throughout |
+| 9–10 | Hopkins-grade: preemptive truth, exact figures, every claim verifiable |
 
 ### 3. Mechanism & Belief
 Why does this work? Is belief earned?
@@ -77,7 +77,7 @@ Selling transformation and Core Identity — or listing mechanics?
 | 7–8 | Clear outcome + future-paced scene |
 | 9–10 | Core Identity aligned; reader sees who they become |
 
----
+### 7. Teaching Installation (if educational)
 Model, distinction, 10-min action — or info dump?
 
 | Score | Criteria |
