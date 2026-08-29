@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const crypto = require('crypto');
@@ -719,6 +720,7 @@ registerBusinessRoutes(app, { store, genAI, resend, sendSlackNotification, requi
 
 // Serve frontend in production
 const path = require('path');
+app.use('/content', express.static(path.join(__dirname, 'content')));
 app.use(express.static(path.join(__dirname, 'frontend')));
 
 const PORT = process.env.PORT || 3001;
