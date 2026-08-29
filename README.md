@@ -72,6 +72,19 @@ Open `frontend/hunter_crm.html` in your browser, or visit `http://localhost:3001
 - **Slack Notifications** — HOT leads and weekly reports sent automatically
 - **Analytics** — Pipeline value, win rate, strategy performance by industry
 - **Multi-User Sync** — Supabase replaces localStorage for team-wide data
+- **Lead Discovery (n8n)** — Automated LinkedIn company search → auto-score → create leads
+
+## Lead Discovery (n8n)
+
+Import `n8n/hunter-lead-discovery.json` into n8n for automated lead discovery:
+
+1. Runs daily at 6 AM (or trigger manually / via webhook)
+2. Searches LinkedIn via Apify for manufacturing companies by industry × location
+3. Deduplicates against existing HUNTER leads
+4. Creates + auto-scores each new lead via `POST /api/leads`
+5. Sends Slack alerts for HOT leads and daily summary reports
+
+See [n8n/README.md](n8n/README.md) for full setup instructions.
 
 ## Environment Variables
 
@@ -106,6 +119,9 @@ hunter-autonomous-os/
 ├── .env.example
 ├── supabase/
 │   └── migration.sql          # Database schema
-└── frontend/
-    └── hunter_crm.html        # HUNTER CRM frontend
+├── frontend/
+│   └── hunter_crm.html        # HUNTER CRM frontend
+└── n8n/
+    ├── hunter-lead-discovery.json  # n8n auto-discovery workflow
+    └── README.md                   # n8n setup guide
 ```

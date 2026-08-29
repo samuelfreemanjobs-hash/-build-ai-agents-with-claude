@@ -1,0 +1,546 @@
+{
+  "name": "HUNTER — LinkedIn Lead Discovery",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 6 * * *"
+            }
+          ]
+        }
+      },
+      "id": "a1b2c3d4-0001-4000-8000-000000000001",
+      "name": "Daily 6AM",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {},
+      "id": "a1b2c3d4-0002-4000-8000-000000000002",
+      "name": "Manual Test",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 100]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "hunter-discover",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0003-4000-8000-000000000003",
+      "name": "Webhook Push",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 500],
+      "webhookId": "hunter-discover"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cfg-1",
+              "name": "hunterApiUrl",
+              "value": "http://localhost:3001/api",
+              "type": "string"
+            },
+            {
+              "id": "cfg-2",
+              "name": "apifyToken",
+              "value": "YOUR_APIFY_API_TOKEN",
+              "type": "string"
+            },
+            {
+              "id": "cfg-3",
+              "name": "apifyActorId",
+              "value": "harvestapi~linkedin-company-search",
+              "type": "string"
+            },
+            {
+              "id": "cfg-4",
+              "name": "maxResultsPerQuery",
+              "value": 15,
+              "type": "number"
+            },
+            {
+              "id": "cfg-5",
+              "name": "slackWebhook",
+              "value": "YOUR_SLACK_WEBHOOK_URL",
+              "type": "string"
+            },
+            {
+              "id": "cfg-6",
+              "name": "industries",
+              "value": "=[\"CNC Machining\",\"Tier II Automotive Stamping\",\"3PL Warehousing\",\"Tool & Die Validation\",\"Wire Harness Assembly\"]",
+              "type": "array"
+            },
+            {
+              "id": "cfg-7",
+              "name": "locations",
+              "value": "=[\"Michigan\",\"Ohio\",\"Indiana\",\"Tennessee\",\"South Carolina\"]",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1b2c3d4-0004-4000-8000-000000000004",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [280, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Build industry × location search queries for LinkedIn company discovery\nconst config = $('Config').first().json;\nconst industries = config.industries || [];\nconst locations = config.locations || [];\nconst webhookBody = $input.first().json.body || $input.first().json;\n\n// Webhook can push a single company directly\nif (webhookBody && webhookBody.company && webhookBody.location) {\n  return [{\n    json: {\n      company: webhookBody.company,\n      url: webhookBody.url || '',\n      industry: webhookBody.industry || 'Industrial Manufacturing',\n      location: webhookBody.location,\n      employeeCount: webhookBody.employeeCount || 50,\n      decisionMaker: webhookBody.decisionMaker || 'Plant Manager',\n      source: 'webhook',\n      skipApify: true\n    }\n  }];\n}\n\n// Otherwise build Apify search queries\nconst queries = [];\nfor (const industry of industries) {\n  for (const location of locations) {\n    queries.push({\n      json: {\n        searchQuery: `${industry} companies in ${location}`,\n        industry,\n        location,\n        source: 'apify',\n        skipApify: false\n      }\n    });\n  }\n}\n\nreturn queries;"
+      },
+      "id": "a1b2c3d4-0005-4000-8000-000000000005",
+      "name": "Build Search Queries",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [520, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "cond-skip",
+              "leftValue": "={{ $json.skipApify }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1b2c3d4-0006-4000-8000-000000000006",
+      "name": "Webhook or Scheduled?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [760, 300]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "a1b2c3d4-0007-4000-8000-000000000007",
+      "name": "Loop Queries",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1000, 420]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.apify.com/v2/acts/{{ $('Config').first().json.apifyActorId }}/runs?token={{ $('Config').first().json.apifyToken }}&waitForFinish=120",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"search\": \"{{ $json.searchQuery }}\",\n  \"maxResults\": {{ $('Config').first().json.maxResultsPerQuery }},\n  \"location\": \"{{ $json.location }}\"\n}",
+        "options": {
+          "timeout": 180000
+        }
+      },
+      "id": "a1b2c3d4-0008-4000-8000-000000000008",
+      "name": "Apify: LinkedIn Search",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1240, 420]
+    },
+    {
+      "parameters": {
+        "url": "=https://api.apify.com/v2/datasets/{{ $json.data.defaultDatasetId }}/items?token={{ $('Config').first().json.apifyToken }}&clean=true&format=json",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0009-4000-8000-000000000009",
+      "name": "Apify: Fetch Results",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1480, 420]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Normalize Apify LinkedIn company results into HUNTER lead format\nconst queryMeta = $('Loop Queries').first().json;\nconst items = $input.all().map(i => i.json);\n\n// Apify may return array in single item or multiple items\nlet companies = [];\nif (items.length === 1 && Array.isArray(items[0])) {\n  companies = items[0];\n} else if (items.length === 1 && items[0].name) {\n  companies = items;\n} else {\n  companies = items.flat();\n}\n\nconst normalized = companies\n  .filter(c => c && (c.name || c.companyName || c.title))\n  .map(c => {\n    const name = c.name || c.companyName || c.title || '';\n    const location = c.location || c.headquarters || c.city || queryMeta.location || 'Unknown';\n    const industry = c.industry || queryMeta.industry || 'Industrial Manufacturing';\n    const employeeCount = parseInt(c.employeeCount || c.staffCount || c.companySize || '50', 10) || 50;\n    const url = c.website || c.url || c.companyUrl || '';\n    const linkedinUrl = c.linkedinUrl || c.url || c.profileUrl || '';\n\n    return {\n      json: {\n        company: name.trim(),\n        url: url.startsWith('http') ? url : (url ? `https://${url}` : ''),\n        location: typeof location === 'string' ? location : JSON.stringify(location),\n        industry,\n        employeeCount,\n        decisionMaker: 'Plant Manager',\n        notes: `Auto-discovered via LinkedIn/n8n. Query: \"${queryMeta.searchQuery}\". LinkedIn: ${linkedinUrl}`,\n        source: 'linkedin-apify'\n      }\n    };\n  })\n  .filter(c => c.json.company.length > 1);\n\nif (normalized.length === 0) {\n  return [{ json: { _empty: true, searchQuery: queryMeta.searchQuery } }];\n}\n\nreturn normalized;"
+      },
+      "id": "a1b2c3d4-0010-4000-8000-000000000010",
+      "name": "Normalize Companies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1720, 420]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Pass through webhook-pushed single lead\nconst item = $input.first().json;\nreturn [{ json: { ...item, source: item.source || 'webhook' } }];"
+      },
+      "id": "a1b2c3d4-0011-4000-8000-000000000011",
+      "name": "Format Webhook Lead",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1000, 160]
+    },
+    {
+      "parameters": {
+        "mode": "append"
+      },
+      "id": "a1b2c3d4-0012-4000-8000-000000000012",
+      "name": "Merge All Leads",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [1960, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "cond-empty",
+              "leftValue": "={{ $json._empty }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "notEquals"
+              }
+            },
+            {
+              "id": "cond-company",
+              "leftValue": "={{ $json.company }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1b2c3d4-0013-4000-8000-000000000013",
+      "name": "Has Company?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [2200, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Config').first().json.hunterApiUrl }}/leads",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0014-4000-8000-000000000014",
+      "name": "Get Existing Leads",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2440, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Deduplicate discovered companies against existing HUNTER leads\nconst existing = $('Get Existing Leads').all().flatMap(i => {\n  const data = i.json;\n  return Array.isArray(data) ? data : [data];\n});\n\nconst existingNames = new Set(\n  existing\n    .filter(l => l && l.company)\n    .map(l => l.company.toLowerCase().trim())\n);\n\nconst discovered = $('Has Company?').all().map(i => i.json);\nconst newLeads = discovered.filter(lead => {\n  const name = (lead.company || '').toLowerCase().trim();\n  return name && !existingNames.has(name);\n});\n\nif (newLeads.length === 0) {\n  return [{ json: { _summary: true, newCount: 0, skippedCount: discovered.length, message: 'No new leads — all duplicates' } }];\n}\n\nreturn newLeads.map(lead => ({ json: lead }));"
+      },
+      "id": "a1b2c3d4-0015-4000-8000-000000000015",
+      "name": "Deduplicate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2680, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "cond-summary",
+              "leftValue": "={{ $json._summary }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "notEquals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1b2c3d4-0016-4000-8000-000000000016",
+      "name": "Has New Leads?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [2920, 200]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "a1b2c3d4-0017-4000-8000-000000000017",
+      "name": "Process One Lead",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [3160, 120]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.hunterApiUrl }}/leads",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"company\": \"{{ $json.company }}\",\n  \"url\": \"{{ $json.url }}\",\n  \"location\": \"{{ $json.location }}\",\n  \"industry\": \"{{ $json.industry }}\",\n  \"employeeCount\": {{ $json.employeeCount || 50 }},\n  \"decisionMaker\": \"{{ $json.decisionMaker || 'Plant Manager' }}\",\n  \"notes\": \"{{ $json.notes || 'Auto-discovered via n8n' }}\"\n}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "a1b2c3d4-0018-4000-8000-000000000018",
+      "name": "HUNTER: Create & Score",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [3400, 120]
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "seconds"
+      },
+      "id": "a1b2c3d4-0019-4000-8000-000000000019",
+      "name": "Rate Limit Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [3640, 120],
+      "webhookId": "hunter-rate-limit"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "cond-hot",
+              "leftValue": "={{ $json.tier }}",
+              "rightValue": "HOT",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1b2c3d4-0020-4000-8000-000000000020",
+      "name": "Is HOT Lead?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [3880, 120]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.slackWebhook }}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"text\": \"🔥 *HUNTER n8n Discovery — HOT Lead*\\n\\n*{{ $json.company }}* scored {{ $json.score }}\\n📍 {{ $json.location }}\\n🏭 {{ $json.industry }}\\n🎯 {{ $json.matched_service }}\\n\\n_Auto-discovered via LinkedIn + n8n_\",\n  \"username\": \"HUNTER Intelligence\",\n  \"icon_emoji\": \":hunter:\"\n}",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0021-4000-8000-000000000021",
+      "name": "Slack: HOT Alert",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [4120, 40]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Build discovery run summary\nconst created = $('HUNTER: Create & Score').all().map(i => i.json).filter(l => l.company);\nconst hot = created.filter(l => l.tier === 'HOT');\nconst high = created.filter(l => l.tier === 'HIGH');\n\nconst summary = {\n  runAt: new Date().toISOString(),\n  totalCreated: created.length,\n  hotLeads: hot.length,\n  highLeads: high.length,\n  companies: created.map(l => `${l.company} (${l.score} — ${l.tier})`),\n  message: `HUNTER Discovery complete: ${created.length} new leads (${hot.length} HOT, ${high.length} HIGH)`\n};\n\nreturn [{ json: summary }];"
+      },
+      "id": "a1b2c3d4-0022-4000-8000-000000000022",
+      "name": "Discovery Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [4360, 120]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.slackWebhook }}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"text\": \"📊 *HUNTER Daily Discovery Report*\\n\\n✅ New leads: {{ $json.totalCreated }}\\n🔥 HOT: {{ $json.hotLeads }}\\n🟠 HIGH: {{ $json.highLeads }}\\n\\n{{ $json.companies.length > 0 ? $json.companies.map(c => '• ' + c).join('\\\\n') : '_No new companies found_' }}\",\n  \"username\": \"HUNTER Intelligence\",\n  \"icon_emoji\": \":bar_chart:\"\n}",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0023-4000-8000-000000000023",
+      "name": "Slack: Daily Report",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [4600, 120]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0024-4000-8000-000000000024",
+      "name": "Webhook Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [4840, 120]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Skip empty Apify results and continue loop\nreturn [{ json: { _skipped: true, reason: 'No companies found for query' } }];"
+      },
+      "id": "a1b2c3d4-0025-4000-8000-000000000025",
+      "name": "Skip Empty",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2440, 420]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { message: 'All discovered leads were duplicates', newCount: 0 } }];"
+      },
+      "id": "a1b2c3d4-0026-4000-8000-000000000026",
+      "name": "All Duplicates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3160, 300]
+    }
+  ],
+  "connections": {
+    "Daily 6AM": {
+      "main": [[{ "node": "Config", "type": "main", "index": 0 }]]
+    },
+    "Manual Test": {
+      "main": [[{ "node": "Config", "type": "main", "index": 0 }]]
+    },
+    "Webhook Push": {
+      "main": [[{ "node": "Config", "type": "main", "index": 0 }]]
+    },
+    "Config": {
+      "main": [[{ "node": "Build Search Queries", "type": "main", "index": 0 }]]
+    },
+    "Build Search Queries": {
+      "main": [[{ "node": "Webhook or Scheduled?", "type": "main", "index": 0 }]]
+    },
+    "Webhook or Scheduled?": {
+      "main": [
+        [{ "node": "Format Webhook Lead", "type": "main", "index": 0 }],
+        [{ "node": "Loop Queries", "type": "main", "index": 0 }]
+      ]
+    },
+    "Format Webhook Lead": {
+      "main": [[{ "node": "Merge All Leads", "type": "main", "index": 0 }]]
+    },
+    "Loop Queries": {
+      "main": [
+        [{ "node": "Get Existing Leads", "type": "main", "index": 0 }],
+        [{ "node": "Apify: LinkedIn Search", "type": "main", "index": 0 }]
+      ]
+    },
+    "Apify: LinkedIn Search": {
+      "main": [[{ "node": "Apify: Fetch Results", "type": "main", "index": 0 }]]
+    },
+    "Apify: Fetch Results": {
+      "main": [[{ "node": "Normalize Companies", "type": "main", "index": 0 }]]
+    },
+    "Normalize Companies": {
+      "main": [[{ "node": "Merge All Leads", "type": "main", "index": 1 }]]
+    },
+    "Merge All Leads": {
+      "main": [[{ "node": "Has Company?", "type": "main", "index": 0 }]]
+    },
+    "Has Company?": {
+      "main": [
+        [{ "node": "Get Existing Leads", "type": "main", "index": 0 }],
+        [{ "node": "Skip Empty", "type": "main", "index": 0 }]
+      ]
+    },
+    "Get Existing Leads": {
+      "main": [[{ "node": "Deduplicate", "type": "main", "index": 0 }]]
+    },
+    "Deduplicate": {
+      "main": [[{ "node": "Has New Leads?", "type": "main", "index": 0 }]]
+    },
+    "Has New Leads?": {
+      "main": [
+        [{ "node": "Process One Lead", "type": "main", "index": 0 }],
+        [{ "node": "All Duplicates", "type": "main", "index": 0 }]
+      ]
+    },
+    "Process One Lead": {
+      "main": [
+        [{ "node": "Discovery Summary", "type": "main", "index": 0 }],
+        [{ "node": "HUNTER: Create & Score", "type": "main", "index": 0 }]
+      ]
+    },
+    "HUNTER: Create & Score": {
+      "main": [[{ "node": "Rate Limit Wait", "type": "main", "index": 0 }]]
+    },
+    "Rate Limit Wait": {
+      "main": [[{ "node": "Is HOT Lead?", "type": "main", "index": 0 }]]
+    },
+    "Is HOT Lead?": {
+      "main": [
+        [{ "node": "Slack: HOT Alert", "type": "main", "index": 0 }],
+        [{ "node": "Process One Lead", "type": "main", "index": 0 }]
+      ]
+    },
+    "Slack: HOT Alert": {
+      "main": [[{ "node": "Process One Lead", "type": "main", "index": 0 }]]
+    },
+    "Discovery Summary": {
+      "main": [[{ "node": "Slack: Daily Report", "type": "main", "index": 0 }]]
+    },
+    "Slack: Daily Report": {
+      "main": [[{ "node": "Webhook Response", "type": "main", "index": 0 }]]
+    },
+    "Skip Empty": {
+      "main": [[{ "node": "Loop Queries", "type": "main", "index": 0 }]]
+    },
+    "All Duplicates": {
+      "main": [[{ "node": "Webhook Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "hunter-v1",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [
+    { "name": "HUNTER" },
+    { "name": "Lead Discovery" }
+  ]
+}
