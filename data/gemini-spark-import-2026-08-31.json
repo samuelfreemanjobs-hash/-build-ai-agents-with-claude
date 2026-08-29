@@ -1,0 +1,146 @@
+{
+  "runDate": "2026-08-31",
+  "region": "Metro Detroit",
+  "focusedVertical": "Contract Box-Build Assembly, Precision Laser Fabrication, Automated Parts Feeding & Automotive Wire Harness Manufacturing",
+  "pipelineMetrics": {
+    "hot": 2,
+    "high": 2,
+    "monitoringPool": 59,
+    "estimatedValueRange": "$36,500 – $66,000",
+    "outreachQueue": 4
+  },
+  "outreachQueue": [
+    {
+      "company": "Lotus Integrated Solutions (LICUS)",
+      "url": "https://lotusintegrated.com",
+      "location": "Canton, MI",
+      "industry": "Wire Harness Assembly",
+      "employeeCount": 450,
+      "decisionMaker": "VP of Operations / Manufacturing Systems Director",
+      "score": 93,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 24,
+        "buyingSignal": 19,
+        "abilityToPay": 15,
+        "serviceFit": 15,
+        "accessibility": 8,
+        "urgency": 8,
+        "competitivePressure": 4
+      },
+      "detectedProblems": [
+        "300,000 sq ft high-mix box-build — multi-tier component shortages vs production line changeovers create manual procurement-to-assembly reporting",
+        "Functional test data aggregation across disparate testing stations handled via manual spreadsheet export",
+        "ECO propagation across 300,000 sq ft creates risk of assembling outdated circuit or housing revisions"
+      ],
+      "evidenceSignals": "Southeast Michigan hiring pressure for Material Planners & Production Control Coordinators. Cleanroom operations and electromechanical box-build under one roof.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Electromechanical Box-Build Line Readiness & Shortage Visualizer (1-page framework)",
+      "diagnostic": "🔥 LICUS scores 93 — HOT tier. Single missing harness or PCB connector halts cleanroom cells without line-readiness visibility. ECO propagation risk across 300K sq ft facility.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Visualizing box-build line readiness & component shortages in Canton",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nRunning high-mix electromechanical box-builds and sub-assemblies across your 300,000 sq. ft. Canton plant usually means production leads spend hours every week cross-referencing ERP shortages against physical staging bays.\n\nI designed a 1-screen Line Readiness & Component Shortage dashboard concept tailored for complex contract manufacturers that highlights incomplete assembly kits before jobs hit the floor.\n\nWould you be open to reviewing the 1-page visual framework to see if it's helpful for your operations team?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-31 — priority #1. Send today."
+    },
+    {
+      "company": "Viking Laser",
+      "url": "https://vikinglaser.com",
+      "location": "Roseville, MI",
+      "industry": "Heavy Steel Fabrication",
+      "employeeCount": 175,
+      "decisionMaker": "Plant Operations Manager / General Manager",
+      "score": 91,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "60+ year laser fleet — balancing rapid-turn prototype blanks with scheduled truckload production for Tier 1 automotive and defense",
+        "Manual offal/sheet remnant logging between production runs creates hidden inventory clutter",
+        "Beam-on cutting hours vs table changeover times difficult to track without automated telemetry"
+      ],
+      "evidenceSignals": "Mitsubishi laser systems. Internal Proforge ERP. Macomb County heat-lot traceability and zero-defect JIT for defense and automotive.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "Laser Cutting Dwell & Sheet Offal Scrap Optimization Map",
+      "diagnostic": "🔥 Viking Laser scores 91 — HOT tier. Nesting remnant allocation manual. Quote-to-cut turnaround lag 24–48 hours during peak quoting cycles.",
+      "outreachStrategy": "A",
+      "outreachSubject": "Roseville facility laser table turnover & sheet remnant tracking",
+      "outreachBody": "I noticed something...\n\nHi [First Name],\n\nManaging a high-capacity laser fleet in Roseville serving automotive and defense tiers often creates administrative friction when balancing sheet remnant inventory and tracking beam cutting hours against table changeover times.\n\nI put together a quick mockup of a Laser Cell Throughput Dashboard designed to track real-time table turnover and automate sheet drop allocation without replacing your existing Proforge workflows.\n\nLet me know if you'd like me to send over the concept mockup.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-31 — priority #2. Send today."
+    },
+    {
+      "company": "Spectrum Automation",
+      "url": "https://spectrumautomation.com",
+      "location": "Livonia, MI",
+      "industry": "Tool & Die Validation",
+      "employeeCount": 65,
+      "decisionMaker": "Engineering Director / General Manager",
+      "score": 87,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 18,
+        "abilityToPay": 13,
+        "serviceFit": 15,
+        "accessibility": 9,
+        "urgency": 6,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Custom ETO builder of vibratory bowls, parts feeders, and conveyor cells for automotive assembly plants",
+        "Mechanical build stages, electrical controls integration, and customer runoff tryouts require tight cross-functional tracking",
+        "High-mix engineering environment with fragmented milestone visibility"
+      ],
+      "evidenceSignals": "Custom parts feeding and material handling automation. Automotive assembly plant customers.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Custom Automation Runoff & Commissioning Milestone Tracker",
+      "diagnostic": "🟠 Spectrum scores 87 — HIGH tier. Multiple custom tooling builds through design, assembly, and customer runoff without structured milestone tracking.",
+      "outreachStrategy": "B",
+      "outreachSubject": "Streamlining parts-feeder build stages & customer runoff logs in Livonia",
+      "outreachBody": "I found an opportunity...\n\nHi [First Name],\n\nDesigning custom vibratory feeders and conveyor automation in Livonia usually means keeping multiple custom tooling builds on track through design, assembly, and final customer runoff.\n\nI created a 1-page ETO Build Milestone Tracker tailored for custom feeder builders that connects mechanical assembly milestones to controls tryout without spreadsheet clutter.\n\nHappy to send over the 1-page layout if you'd like to take a look.\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-31 — priority #3"
+    },
+    {
+      "company": "Orion Electronics",
+      "url": "https://orionelectronics.com",
+      "location": "Auburn Hills, MI",
+      "industry": "Wire Harness Assembly",
+      "employeeCount": 200,
+      "decisionMaker": "Operations Director / Quality & Plant Manager",
+      "score": 88,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 18,
+        "abilityToPay": 14,
+        "serviceFit": 14,
+        "accessibility": 8,
+        "urgency": 7,
+        "competitivePressure": 5
+      },
+      "detectedProblems": [
+        "Mission-critical harness assemblies for Tier 1 and OEM clients in Auburn Hills automotive corridor",
+        "High-mix wire termination and pin crimp configurations require strict IATF 16949 pull-force testing documentation",
+        "Terminal reel inventory balancing and crimp pull-force test sample logging across multiple harness boards"
+      ],
+      "evidenceSignals": "IATF 16949 compliance requirements. Tier 1 and OEM wire harness and cable assembly production.",
+      "matchedService": "Wire Harness Continuity & QA Ingestion Engine",
+      "giveBeforeAsk": "Wire Cut-List & Terminal Pull-Force QA Log System",
+      "diagnostic": "🟠 Orion scores 88 — HIGH tier. Crimp pull-force data and lot traceability sign-offs for Tier 1 audits handled manually across harness boards.",
+      "outreachStrategy": "D",
+      "outreachSubject": "Auburn Hills plant wire cut-list & terminal crimp QA tracking",
+      "outreachBody": "I mocked up what this could look like...\n\nHi [First Name],\n\nBuilding custom automotive wire harnesses and cable assemblies in Auburn Hills often creates tracking friction when operators balance terminal reel inventory and log mandatory crimp pull-force test samples across multiple harness boards.\n\nI mocked up a 1-screen Harness QA & Crimp Verification dashboard concept that logs pull-force data digitally and automates lot traceability sign-offs for Tier 1 audits.\n\nWould you like me to share the 1-page dashboard layout?\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-31 — priority #4"
+    }
+  ]
+}
