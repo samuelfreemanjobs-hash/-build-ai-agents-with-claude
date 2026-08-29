@@ -93,6 +93,7 @@ docker compose up -d
 | GET | `/api/outreach/batch/preview` | Preview batch recipients (`?tiers=HOT,HIGH`) |
 | POST | `/api/outreach/batch` | Batch send to tier(s), supports `dryRun` |
 | POST | `/api/webhooks/resend` | Resend webhooks — auto stage updates on open/click |
+| POST | `/api/webhooks/spark` | Gemini Spark import — auto-import daily opportunity cards |
 
 ### Business
 | Method | Endpoint | Description |

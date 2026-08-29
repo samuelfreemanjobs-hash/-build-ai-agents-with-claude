@@ -16,6 +16,7 @@ const {
   extractEmail,
   handleResendEvent
 } = require('./lib/outreach-engine');
+const { importSparkPayload, verifySparkSecret } = require('./lib/spark-import');
 
 // ─── CONFIGURATION ──────────────────────────────────────────────
 const SUPABASE_URL = process.env.SUPABASE_URL;
@@ -23,6 +24,7 @@ const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const SLACK_WEBHOOK = process.env.SLACK_WEBHOOK;
+const SPARK_WEBHOOK_SECRET = process.env.SPARK_WEBHOOK_SECRET;
 
 const supabase = SUPABASE_URL && SUPABASE_ANON_KEY
   ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
@@ -199,6 +201,26 @@ async function sendSlackNotification(message) {
   }
 }
 
+// ─── GEMINI SPARK WEBHOOK ───────────────────────────────────────
+app.post('/api/webhooks/spark', async (req, res) => {
+  if (!requireStore(res)) return;
+  if (!verifySparkSecret(req, SPARK_WEBHOOK_SECRET)) {
+    return res.status(401).json({ error: 'Invalid or missing Spark webhook secret' });
+  }
+  try {
+    const result = await importSparkPayload(req.body, {
+      store,
+      getTier,
+      bookingUrl: process.env.BOOKING_URL,
+      sendSlackNotification
+    });
+    res.json({ received: true, ...result });
+  } catch (error) {
+    console.error('Spark webhook error:', error);
+    res.status(400).json({ error: error.message });
+  }
+});
+
 // ─── RESEND WEBHOOK ─────────────────────────────────────────────
 app.post('/api/webhooks/resend', async (req, res) => {
   try {
@@ -240,7 +262,10 @@ app.get('/api/health', (req, res) => {
       resend: !!resend,
       slack: !!SLACK_WEBHOOK,
       booking: process.env.BOOKING_URL || null,
-      webhookUrl: process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/api/webhooks/resend` : null
+      webhooks: {
+        resend: process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/api/webhooks/resend` : null,
+        spark: process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/api/webhooks/spark` : null
+      }
     }
   });
 });

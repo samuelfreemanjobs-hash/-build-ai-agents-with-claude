@@ -8,6 +8,7 @@
     "dev": "nodemon server.js",
     "setup": "bash scripts/setup.sh",
     "seed": "node scripts/seed-leads.js",
+    "import-spark": "node scripts/import-spark.js",
     "health": "node scripts/health-check.js"
   },
   "dependencies": {

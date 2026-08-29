@@ -1,0 +1,140 @@
+{
+  "runDate": "2026-08-29",
+  "region": "Metro Detroit",
+  "outreachQueue": [
+    {
+      "company": "Riviera Industries",
+      "url": "https://rivieraindustries.com",
+      "location": "Warren, MI",
+      "industry": "CNC Machining",
+      "employeeCount": 165,
+      "decisionMaker": "VP Operations",
+      "score": 92,
+      "tier": "HOT",
+      "scoreBreakdown": {
+        "problemSeverity": 23,
+        "buyingSignal": 18,
+        "abilityToPay": 11,
+        "serviceFit": 14,
+        "accessibility": 9,
+        "urgency": 9,
+        "competitivePressure": 4
+      },
+      "detectedProblems": [
+        "CMM queue managed in spreadsheet — 2+ hour daily reconciliation",
+        "No spindle load monitoring on 12 CNC cells",
+        "Quality holds discovered after parts ship to OEM"
+      ],
+      "evidenceSignals": "ISO 9001 recertification Q3. Hiring quality engineer + CNC programmer. OEM launch deadline mentioned on careers page.",
+      "matchedService": "CNC Spindle Telemetry & CMM Queue Bridge",
+      "giveBeforeAsk": "CMM queue workflow map for Riviera's 12-cell floor layout",
+      "diagnostic": "🔥 Riviera scores 92 — HOT tier. Spindle telemetry + CMM bridge eliminates 15+ hrs/week manual queue management and catches quality holds before shipment.",
+      "outreachStrategy": "A",
+      "outreachSubject": "I noticed something at Riviera Industries",
+      "outreachBody": "I noticed something...\n\nHi,\n\nI mapped Riviera's CMM queue workflow across your 12 CNC cells — there's a 2-hour daily reconciliation gap that's likely costing you OEM launch buffer.\n\nI put together a one-page workflow map showing where spindle telemetry would catch quality holds before shipment. Happy to send it over before we talk.\n\n15-min diagnostic: [BOOKING_URL]\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-29 — priority #1"
+    },
+    {
+      "company": "Logos Logistics",
+      "url": "https://logoslogistics.com",
+      "location": "Romulus, MI",
+      "industry": "3PL Warehousing",
+      "employeeCount": 380,
+      "decisionMaker": "Director of Operations",
+      "score": 89,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 22,
+        "buyingSignal": 17,
+        "abilityToPay": 12,
+        "serviceFit": 14,
+        "accessibility": 9,
+        "urgency": 8,
+        "competitivePressure": 3
+      },
+      "detectedProblems": [
+        "Cross-dock exceptions handled via phone + email — no SLA tracking",
+        "VMI buffer breaches found after customer complaints",
+        "No unified dashboard across 3 facilities"
+      ],
+      "evidenceSignals": "Expanded to Romulus hub 2025. Major retail clients listed. Active ops manager hiring.",
+      "matchedService": "3PL Cross-Dock & VMI Buffer Exception Dashboard",
+      "giveBeforeAsk": "Cross-dock exception SLA audit for Romulus hub",
+      "diagnostic": "🟠 Logos scores 89 — HIGH tier. Exception dashboard would cut SLA breaches ~60% and save 1 FTE of manual exception management.",
+      "outreachStrategy": "E",
+      "outreachSubject": "I ran a quick audit on Logos Logistics",
+      "outreachBody": "I ran a quick audit...\n\nHi,\n\nI audited cross-dock exception handling patterns for 3PL operators in Metro Detroit — Logos stood out because your Romulus expansion likely created SLA blind spots across facilities.\n\nI can share a 1-page exception SLA gap analysis specific to multi-facility 3PL ops. Worth a look before Q4 peak?\n\n15-min diagnostic: [BOOKING_URL]\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-29 — priority #2"
+    },
+    {
+      "company": "Carpatians MFG",
+      "url": "https://carpatiansmfg.com",
+      "location": "Sterling Heights, MI",
+      "industry": "Tier II Automotive Stamping",
+      "employeeCount": 240,
+      "decisionMaker": "Plant Manager",
+      "score": 87,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 21,
+        "buyingSignal": 16,
+        "abilityToPay": 11,
+        "serviceFit": 13,
+        "accessibility": 9,
+        "urgency": 8,
+        "competitivePressure": 3
+      },
+      "detectedProblems": [
+        "Die tryout milestones tracked in email chains — approvals lost",
+        "No customer-facing tryout progress portal",
+        "OEM PPAP deadlines at risk from manual milestone tracking"
+      ],
+      "evidenceSignals": "Tier 1 supplier award 2025. Tooling engineer job posting. PPAP deadline language on quality page.",
+      "matchedService": "Die Tryout Milestone & Tooling Validation Bridge",
+      "giveBeforeAsk": "Die tryout milestone tracker mockup for Carpatians",
+      "diagnostic": "🟠 Carpatians scores 87 — HIGH tier. Tryout milestone bridge cuts cycle time ~25% and eliminates lost approval paperwork.",
+      "outreachStrategy": "B",
+      "outreachSubject": "I found an opportunity at Carpatians MFG",
+      "outreachBody": "I found an opportunity...\n\nHi,\n\nStamping shops in Sterling Heights are losing tryout approvals in email chains — Carpatians' Tier 1 award makes this especially costly with PPAP deadlines.\n\nI mocked up a milestone tracker that gives your OEM customers a live tryout progress view. Happy to share before we schedule a call.\n\n15-min diagnostic: [BOOKING_URL]\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-29 — priority #3"
+    },
+    {
+      "company": "IMTS",
+      "url": "https://imts.com",
+      "location": "Chicago, IL (Detroit corridor prospects)",
+      "industry": "CNC Machining",
+      "employeeCount": 0,
+      "decisionMaker": "Exhibitor Outreach — Event Intelligence",
+      "score": 82,
+      "tier": "HIGH",
+      "scoreBreakdown": {
+        "problemSeverity": 18,
+        "buyingSignal": 19,
+        "abilityToPay": 10,
+        "serviceFit": 13,
+        "accessibility": 8,
+        "urgency": 9,
+        "competitivePressure": 3
+      },
+      "detectedProblems": [
+        "Event-triggered buying window — exhibitors investing in automation",
+        "Post-show follow-up typically drops 80% of warm leads",
+        "No systematic outreach to Metro Detroit exhibitor list"
+      ],
+      "evidenceSignals": "IMTS 2026 exhibitor list published. 42 Metro Detroit manufacturers in monitoring pool. Peak automation buying signal.",
+      "matchedService": "KPI Command Center & Executive Dashboard Sprint",
+      "giveBeforeAsk": "IMTS exhibitor ops intelligence brief — top 10 Metro Detroit targets",
+      "diagnostic": "🟠 IMTS scores 82 — HIGH tier event trigger. Batch outreach to exhibitor list during show week captures peak buying intent.",
+      "outreachStrategy": "F",
+      "outreachSubject": "I found three things about IMTS exhibitors you may want to know",
+      "outreachBody": "I found three things you may want to know...\n\nHi,\n\nIMTS exhibitor season creates a 6-week buying window for ops intelligence — most shops drop 80% of post-show follow-up.\n\nI compiled a Metro Detroit exhibitor brief with the top automation gaps by sub-sector. Useful if you're planning post-show outreach.\n\n15-min diagnostic: [BOOKING_URL]\n\nBest,\nHUNTER Intelligence",
+      "pool": "outreach-queue",
+      "notes": "Spark run 2026-08-29 — event intelligence trigger, not a direct sales target"
+    }
+  ],
+  "monitoringPool": 42,
+  "summary": "4 outreach-queue cards from Gemini Spark Metro Detroit run"
+}
