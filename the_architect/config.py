@@ -10,6 +10,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 AGENT_ROOT = REPO_ROOT / "agents" / "the-architect"
 PROJECTS_DIR = AGENT_ROOT / "projects"
 RESEARCH_DIR = AGENT_ROOT / "research"
+MEMORY_DIR = AGENT_ROOT / "memory"
 
 SYSTEM_PROMPT_FILES = [
     AGENT_ROOT / "SYSTEM.md",

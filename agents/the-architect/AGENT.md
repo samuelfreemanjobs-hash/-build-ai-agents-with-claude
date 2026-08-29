@@ -25,7 +25,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | Phase | Job | Tools / files |
 |---|---|---|
 | **INTAKE** | Parse brief; confirm avatar, offer, task, metric, constraints | `architect_init_project`, `INVOCATION.md` |
-| **RESEARCH** | VOC if sources thin; mine customer language | `VOC-RESEARCH.md`, web if needed, save `voc.md` |
+| **RESEARCH** | VOC if sources thin; mine customer language; recall memory swipes | `VOC-RESEARCH.md`, `architect_get_memory`, `memory/digest.md` |
 | **DIAGNOSE** | Run applicable templates from task type | Kennedy 10Q, Abraham levers, Cialdini, Caples headlines, Sugarman, story arc, book thriller |
 | **PLAN** | Pick playbook; state big idea + 8-word hook; list deliverables | `CRAFT-PLAYBOOKS.md`, `architect_set_phase(plan)` |
 | **DRAFT** | Write full asset in one voice | `SYSTEM.md` craft stack |
@@ -62,8 +62,11 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | `architect_save_deliverable` | Save scored deliverable with metadata |
 | `architect_list_knowledge` | List all craft/methodology files |
 | `architect_ship_gate` | Return checklist + rubric from state |
+| `architect_get_memory` | Recent headline learnings + stats |
+| `architect_record_insight` | Save craft insight after SHIP |
+| `architect_run_daily_learning` | Collect swipes from Buzzhead, Cosmo, Enquirer, proven, sales letters |
 
-**Read `SYSTEM.md` and relevant methodology files before DRAFT.** Do not rely on memory for craft rules.
+**Read `SYSTEM.md` and relevant methodology files before DRAFT.** Load `memory/digest.md` or `architect_get_memory` for recent headline patterns.
 
 ---
 
@@ -77,6 +80,7 @@ Every completed task outputs:
 4. **Why it works** — 2–5 bullets
 5. **Quality score** — full rubric table
 6. **Diagnostics** — saved templates used (in project folder)
+7. **Craft insight** — `architect_record_insight` with one thing that worked (feeds continuous improvement)
 
 Save to: `agents/the-architect/projects/<slug>/`
 

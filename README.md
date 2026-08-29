@@ -31,6 +31,20 @@ cp .env.example .env
 the-architect run "Write a sales page for my confidence course. Avatar: women 38-52 re-entering dating. [paste reviews]"
 ```
 
+### Daily headline learning (memory)
+
+The Architect collects and learns from headline swipes daily — Buzzhead (BuzzFeed-style), Cosmo, National Enquirer, proven DR headlines, and sales letter headlines.
+
+```bash
+# Run now (also runs on environment start)
+the-architect learn
+
+# Inspect memory
+the-architect memory
+```
+
+Automated via GitHub Actions (daily 06:00 UTC). See [`MEMORY.md`](agents/the-architect/MEMORY.md).
+
 Or from a brief file:
 
 ```bash
@@ -68,6 +82,9 @@ See [`agents/the-architect/AGENT.md`](agents/the-architect/AGENT.md) for the ful
 | `architect_record_rubric` | Record quality scores |
 | `architect_ship_gate` | Verify ready to ship |
 | `architect_list_knowledge` | List methodology files |
+| `architect_get_memory` | Recent headline learnings + craft insights |
+| `architect_record_insight` | Log post-SHIP craft learning |
+| `architect_run_daily_learning` | On-demand swipe collection |
 
 Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 
@@ -91,6 +108,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | [`CRAFT-PLAYBOOKS.md`](agents/the-architect/CRAFT-PLAYBOOKS.md) | Genre structures (email, sales page, VSL, book, ads) |
 | [`MICRO-COPY-LAB.md`](agents/the-architect/MICRO-COPY-LAB.md) | Cosmo + Enquirer pattern library |
 | [`SWIPE-FILE.md`](agents/the-architect/SWIPE-FILE.md) | Annotated copy examples (structure, not plagiarism) |
+| [`MEMORY.md`](agents/the-architect/MEMORY.md) | Persistent memory + daily headline swipe learning |
 | [`OBJECTIONS.md`](agents/the-architect/OBJECTIONS.md) | Objection library + rebuttal frames |
 | [`VOC-RESEARCH.md`](agents/the-architect/VOC-RESEARCH.md) | Voice-of-customer research protocol |
 | [`HALBERT-METHODOLOGY.md`](agents/the-architect/HALBERT-METHODOLOGY.md) | Gary Halbert: starving crowd, A-Pile, AIDA, offers |

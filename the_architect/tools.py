@@ -10,6 +10,8 @@ from typing import Any
 from claude_agent_sdk import create_sdk_mcp_server, tool
 
 from the_architect.config import AGENT_ROOT, PROJECTS_DIR, ensure_projects_dir, slugify
+from the_architect.learning.pipeline import format_summary, run_daily_learning
+from the_architect.memory.store import MemoryStore
 
 PHASES = [
     "INTAKE",
@@ -235,6 +237,68 @@ async def architect_ship_gate(args: dict[str, Any]) -> dict[str, Any]:
     )
 
 
+@tool(
+    "architect_get_memory",
+    "Get recent headline learnings, memory stats, and craft insights",
+    {"limit": int, "source": str},
+)
+async def architect_get_memory(args: dict[str, Any]) -> dict[str, Any]:
+    limit = int(args.get("limit", 20))
+    source = args.get("source") or None
+    if source == "":
+        source = None
+
+    store = MemoryStore()
+    store.ensure_dirs()
+    recent = store.get_recent_swipes(limit=limit, source=source)
+    stats = store.get_stats()
+
+    insights_path = store.root / "insights.jsonl"
+    insights: list[dict[str, Any]] = []
+    if insights_path.exists():
+        for line in insights_path.read_text(encoding="utf-8").splitlines()[-10:]:
+            if line.strip():
+                insights.append(json.loads(line))
+
+    return _text(
+        json.dumps(
+            {
+                "stats": stats,
+                "recent_swipes": recent,
+                "recent_insights": insights,
+                "digest_file": "agents/the-architect/memory/digest.md",
+            },
+            indent=2,
+        )
+    )
+
+
+@tool(
+    "architect_record_insight",
+    "Record a craft insight for continuous improvement (post-SHIP learning)",
+    {"category": str, "insight": str, "project_slug": str},
+)
+async def architect_record_insight(args: dict[str, Any]) -> dict[str, Any]:
+    category = args["category"]
+    insight = args["insight"]
+    project_slug = args.get("project_slug") or None
+
+    store = MemoryStore()
+    store.record_insight(category=category, insight=insight, project_slug=project_slug)
+    return _text(f"Insight recorded under '{category}'.")
+
+
+@tool(
+    "architect_run_daily_learning",
+    "Run daily headline swipe collection from Buzzhead, Cosmo, Enquirer, proven headlines, and sales letters",
+    {"limit_per_source": int},
+)
+async def architect_run_daily_learning(args: dict[str, Any]) -> dict[str, Any]:
+    limit = int(args.get("limit_per_source", 15))
+    summary = run_daily_learning(limit_per_source=limit)
+    return _text(format_summary(summary))
+
+
 def create_architect_mcp_server():
     return create_sdk_mcp_server(
         name="architect",
@@ -247,6 +311,9 @@ def create_architect_mcp_server():
             architect_list_knowledge,
             architect_record_rubric,
             architect_ship_gate,
+            architect_get_memory,
+            architect_record_insight,
+            architect_run_daily_learning,
         ],
     )
 
@@ -259,4 +326,7 @@ ARCHITECT_TOOL_NAMES = [
     "mcp__architect__architect_list_knowledge",
     "mcp__architect__architect_record_rubric",
     "mcp__architect__architect_ship_gate",
+    "mcp__architect__architect_get_memory",
+    "mcp__architect__architect_record_insight",
+    "mcp__architect__architect_run_daily_learning",
 ]

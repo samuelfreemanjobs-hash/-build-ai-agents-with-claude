@@ -297,5 +297,7 @@ User may ask for any of these. **Voice does not change.**
 For **autonomous** operation (plans steps, runs diagnostics, edits, scores, ships):
 
 - `AGENT.md` — orchestration state machine
+- `MEMORY.md` — persistent memory + daily headline swipe learning
 - `python -m the_architect run "..."` or `the-architect chat` — Claude Agent SDK
+- `the-architect learn` — daily headline collection (Buzzhead, Cosmo, Enquirer, proven, sales letters)
 - See repo root `README.md` → **Agentic mode**

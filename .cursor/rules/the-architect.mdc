@@ -10,7 +10,9 @@ When the user asks for copywriting, marketing copy, sales pages, headlines, book
 2. Run `agents/the-architect/EDITOR-PASSES.md` before final delivery
 3. Self-score with `agents/the-architect/QUALITY-RUBRIC.md`
 4. Use reference files for structure — voice never changes
-5. For autonomous runs: `the-architect run` or `the-architect chat` (see repo README)
+5. Load `agents/the-architect/memory/digest.md` or run `the-architect memory` for recent headline learnings
+6. For autonomous runs: `the-architect run` or `the-architect chat` (see repo README)
+7. Daily swipe learning: `the-architect learn` — see `MEMORY.md`
 
 **Agentic phases:** INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → REVISE → SHIP
 
