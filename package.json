@@ -1,0 +1,31 @@
+{
+  "name": "cline-agent-server",
+  "version": "1.0.0",
+  "description": "Autonomous coding agent server powered by the Cline SDK",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "cline",
+    "ai-agent",
+    "coding-agent",
+    "autonomous-agent"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@cline/sdk": "^0.0.81",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
