@@ -194,23 +194,38 @@ document.getElementById('taskForm')?.addEventListener('submit', e => {
 document.getElementById('taskFilterDomain')?.addEventListener('change', renderTasks);
 
 async function saveJSON(endpoint, payload) {
+  const storageKey = `fi-ops-${endpoint}`;
   try {
     const r = await fetch(`api/${endpoint}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
       body: JSON.stringify(payload),
     });
-    return r.ok;
-  } catch {
-    localStorage.setItem(endpoint, JSON.stringify(payload));
-    return false;
+    const body = await r.json().catch(() => ({}));
+    if (r.ok) {
+      localStorage.removeItem(storageKey);
+      return { ok: true, message: `Saved to server (${body.updated || 'ok'})` };
+    }
+    const err = body.error || r.statusText;
+    localStorage.setItem(storageKey, JSON.stringify(payload));
+    return { ok: false, message: `Server error: ${err}. Stored in browser only.` };
+  } catch (e) {
+    localStorage.setItem(storageKey, JSON.stringify(payload));
+    return { ok: false, message: 'Offline — saved in browser only. Deploy PHP on Hostinger for server sync.' };
   }
 }
 
 document.getElementById('btnSaveTasks')?.addEventListener('click', async () => {
   DATA.tasks.updated = new Date().toISOString().slice(0, 10);
-  const ok = await saveJSON('save-tasks.php', DATA.tasks);
-  alert(ok ? 'Tasks saved to server' : 'Saved locally (enable PHP on Hostinger for server sync)');
+  const result = await saveJSON('save-tasks.php', DATA.tasks);
+  alert(result.message);
+});
+
+document.getElementById('btnSaveMetrics')?.addEventListener('click', async () => {
+  DATA.metrics.updated = new Date().toISOString().slice(0, 10);
+  const result = await saveJSON('save-metrics.php', DATA.metrics);
+  alert(result.message);
 });
 
 /* ── Analytics ── */
@@ -295,10 +310,9 @@ function renderCharts() {
 
 document.getElementById('btnSaveMetrics')?.addEventListener('click', async () => {
   DATA.metrics.updated = new Date().toISOString().slice(0, 10);
-  const ok = await saveJSON('save-metrics.php', DATA.metrics);
-  alert(ok ? 'Metrics saved to server' : 'Saved locally (enable PHP on Hostinger for server sync)');
+  const result = await saveJSON('save-metrics.php', DATA.metrics);
+  alert(result.message);
 });
-
 /* ── Calendar ── */
 function renderCalendar() {
   const bp = DATA.business_plan;
@@ -372,9 +386,10 @@ async function init() {
   try {
     document.getElementById('syncStatus').textContent = 'Loading…';
     await loadAll();
-    // restore local overrides if PHP unavailable
+    // Restore unsaved browser copies (if server save failed previously)
     ['save-tasks.php', 'save-metrics.php'].forEach(key => {
-      const local = localStorage.getItem(key);
+      const storageKey = `fi-ops-${key}`;
+      const local = localStorage.getItem(storageKey) || localStorage.getItem(key);
       if (local) {
         const data = JSON.parse(local);
         if (key.includes('tasks')) DATA.tasks = data;
