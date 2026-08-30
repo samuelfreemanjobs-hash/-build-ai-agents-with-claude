@@ -34,6 +34,21 @@ def get_gemini_api_key() -> str | None:
     return os.environ.get("GEMINI_API_KEY")
 
 
+def get_hostinger_config() -> dict[str, str | None]:
+    """Hostinger website credentials — local .env only, never commit."""
+    return {
+        "domain": os.environ.get("HOSTINGER_DOMAIN"),
+        "sftp_host": os.environ.get("HOSTINGER_SFTP_HOST"),
+        "sftp_user": os.environ.get("HOSTINGER_SFTP_USER"),
+        "sftp_password": os.environ.get("HOSTINGER_SFTP_PASSWORD"),
+        "sftp_port": os.environ.get("HOSTINGER_SFTP_PORT", "21"),
+        "wp_url": os.environ.get("HOSTINGER_WP_URL"),
+        "wp_user": os.environ.get("HOSTINGER_WP_USER"),
+        "wp_app_password": os.environ.get("HOSTINGER_WP_APP_PASSWORD"),
+        "api_token": os.environ.get("HOSTINGER_API_TOKEN"),
+    }
+
+
 def ensure_projects_dir() -> Path:
     PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
     return PROJECTS_DIR

@@ -22,7 +22,7 @@ The Architect runs as a **Claude Agent SDK** agent with custom tools for project
 ```bash
 pip install -e .
 cp .env.example .env
-# Add ANTHROPIC_API_KEY to .env
+# Add ANTHROPIC_API_KEY, GEMINI_API_KEY, HOSTINGER_* — see OPERATOR-SETUP.md
 ```
 
 ### Run one task

@@ -109,6 +109,9 @@ Samuel runs The Architect with:
 |---|---|---|
 | **Claude (Anthropic)** | `ANTHROPIC_API_KEY` | The Architect agent, factory, build-agent — **default runtime** |
 | **Gemini (Google)** | `GEMINI_API_KEY` | Benchmarking, alternate drafts, multimodal experiments (`AI-MODEL-BENCHMARKING-METHODOLOGY.md`) |
+| **Hostinger** | `HOSTINGER_*` | Website deploy — SFTP, domain, optional WordPress (`OPERATOR-SETUP.md`) |
+
+**Full setup guide:** `OPERATOR-SETUP.md`
 
 ```bash
 cp .env.example .env
