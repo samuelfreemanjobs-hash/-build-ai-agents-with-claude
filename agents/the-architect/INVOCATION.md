@@ -41,7 +41,7 @@ Normalize [INPUT PARAMETERS]. Run EDITOR-PASSES.md + pre-delivery 100-pt score b
 - Their exact phrases (voice-of-customer):
 
 ## Task
-- What to write: [headlines / sales page / email / GTM launch / funnel / list building / content plan / course / brand / positioning / rebrand / info product / offer design / pricing / stack / AI prompt / agent system / RAG / build marketing agent / marketing research / visual design / packaging / UI wireframe / framework design / workflow design / SOP / launch funnel / book chapter / VSL / celebrity build / personal brand / research only / punch-up existing copy / platform ads Meta TikTok YouTube / B2B ABM / SaaS retention / funnel CRO audit / viral referral growth]
+- What to write: [headlines / sales page / email / GTM launch / funnel / list building / content plan / course / brand / positioning / rebrand / info product / offer design / pricing / stack / AI prompt / agent system / RAG / build marketing agent / marketing research / visual design / packaging / UI wireframe / $10K website design / website redesign / landing page design / framework design / workflow design / SOP / launch funnel / book chapter / VSL / celebrity build / personal brand / research only / punch-up existing copy / platform ads Meta TikTok YouTube / B2B ABM / SaaS retention / funnel CRO audit / viral referral growth]
 - Length: [short / medium / long]
 - Channel:
 - Goal metric: [must be client attraction — opt-ins, calls, CVR, applications, revenue]

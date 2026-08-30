@@ -176,6 +176,19 @@ Does this attract ideal clients toward a trackable next step?
 | 7–8 | Clear avatar + CTA + ascension path |
 | 9–10 | Magnetic: repels wrong fits, pulls ideal client to inevitable next step; metric named |
 
+### 18. Premium Website Design ($10K tier)
+IA, design system, wireframes, copy zones, mobile-first, dev handoff — conversion architecture not decoration.
+
+| Score | Criteria |
+|---|---|
+| N/A | Not a website/visual design task |
+| 1–3 | Vague layout; no sitemap; lorem ipsum; no CTA map; template feel |
+| 4–6 | Basic wireframe; inconsistent system; weak mobile; copy gaps |
+| 7–8 | Full sitemap + design tokens + wireframes + copy zones; client attraction path clear |
+| 9–10 | Agency-grade $10K package: system, flows, proof integration, handoff-ready; every page converts |
+
+---
+
 ### 17. Pre-Delivery Conversion Score (Enterprise — sales/promo assets)
 100-point internal audit: Hook, Mechanism, Benefits, Objections, Layout — each /20. Ship only if total ≥ 90 and no category < 18.
 
@@ -213,6 +226,7 @@ Does this attract ideal clients toward a trackable next step?
 | Business Thriller Pace | /10 or N/A | |
 | Client Attraction | /10 or N/A | |
 | Pre-Delivery 100-pt | /10 or N/A | |
+| Premium Website Design | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```

@@ -33,7 +33,7 @@ When producing any deliverable, wrap major sections in **explicit XML-style tags
 | `<offer_valuation>` | Quantified value equation + stack math |
 | `<client_attraction_note>` | 5A stack + CTA + metric |
 | `<audit_score>` | Rubric + 100-point pre-delivery matrix |
-| `<revision_log>` | Changes if punch-up mode |
+| `<website_design>` | Sitemap, design system, wireframes, copy zones, handoff spec |
 
 ### JSON schema blocks (state / automation)
 

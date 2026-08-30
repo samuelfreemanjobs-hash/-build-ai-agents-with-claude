@@ -20,7 +20,7 @@
 3C  Product Design & UX/UI
 ```
 
-**Brand link:** `ULTIMATE-BRANDING-METHODOLOGY.md` (Ogilvy image layer) · `OGILVY-BRAND-METHODOLOGY.md`
+**Paired:** `ULTIMATE-BRANDING-METHODOLOGY.md` (Ogilvy image layer) · `OGILVY-BRAND-METHODOLOGY.md` · **`PREMIUM-WEBSITE-DESIGN-METHODOLOGY.md`** (full $10K website builds)
 
 ---
 
