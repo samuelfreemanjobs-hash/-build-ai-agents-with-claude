@@ -29,9 +29,24 @@
 
 Run after factory updates or before each deploy.
 
-### 2. Upload via SFTP
+### 2. Upload via SFTP/FTP
 
-Upload entire `website/ops/` folder to:
+**Automated (run on your computer after `.env` has real Hostinger credentials):**
+
+```bash
+./scripts/sync-ops-portal.sh
+python3 scripts/deploy-ops-portal.py          # FTP (port 21)
+python3 scripts/deploy-ops-portal.py --sftp   # SFTP (port 22) if FTP fails
+python3 scripts/deploy-ops-portal.py --dry-run
+```
+
+One command:
+
+```bash
+./scripts/deploy-ops-portal.sh
+```
+
+**Manual (FileZilla):** Upload entire `website/ops/` to:
 
 ```
 public_html/ops/
