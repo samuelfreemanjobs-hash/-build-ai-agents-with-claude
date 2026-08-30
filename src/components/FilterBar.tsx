@@ -68,6 +68,7 @@ export function FilterBar({
             { value: 'prompthero', label: '🎨 PromptHero' },
             { value: 'moreusefulthings', label: '📖 More Useful Things' },
             { value: 'godofprompt', label: '⚡ God of Prompt' },
+            { value: 'business-generated', label: '🏭 Business Generator' },
           ]}
         />
 

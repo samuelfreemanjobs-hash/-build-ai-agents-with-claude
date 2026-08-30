@@ -27,6 +27,7 @@
     "scrape:moreusefulthings:live": "tsx scripts/scraper/run-agent.ts -- --source moreusefulthings --live",
     "scrape:godofprompt": "tsx scripts/scraper/run-agent.ts -- --source godofprompt",
     "scrape:godofprompt:live": "tsx scripts/scraper/run-agent.ts -- --source godofprompt --live",
+    "scrape:business-generated": "tsx scripts/scraper/run-agent.ts -- --source business-generated",
     "scrape:dry": "tsx scripts/scraper/run-agent.ts -- --dry-run",
     "preview": "vite preview",
     "start": "vite preview --host 0.0.0.0 --port 4173"

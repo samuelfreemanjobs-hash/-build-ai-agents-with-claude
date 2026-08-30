@@ -89,7 +89,9 @@ export function importPrompts(
                                 ? 'More Useful Things'
                                 : collId === 'godofprompt'
                                   ? 'God of Prompt Library'
-                                  : collId!,
+                                  : collId === 'business-generated'
+                                    ? 'Business Prompt Generator'
+                                    : collId!,
           sourceUrl: sourceMeta.url,
           sectionCount: new Set(toImport.filter((p) => p.collection === collId).map((p) => p.collectionSection)).size,
           promptCount: count,

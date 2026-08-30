@@ -20,6 +20,7 @@ import { scrapeGeminiPromptLibrary, GEMINI_COLLECTION } from './sources/gemini-p
 import { scrapePromptHeroLibrary, PROMPTHERO_COLLECTION } from './sources/prompthero-parser'
 import { scrapeMoreUsefulThingsLibrary, MOREUSEFULTHINGS_COLLECTION } from './sources/moreusefulthings-parser'
 import { scrapeGodOfPromptLibrary, GOOFPROMPT_COLLECTION } from './sources/godofprompt-parser'
+import { scrapeBusinessPromptGenerator, BUSINESS_GENERATOR_COLLECTION } from './sources/business-prompt-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -345,6 +346,30 @@ async function main() {
       db,
       scraped,
       { name: GOOFPROMPT_COLLECTION.name, url: GOOFPROMPT_COLLECTION.sourceUrl },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
+
+  if (options.source === 'business-generated') {
+    console.log('📚 Generating Original Business Prompt Library...')
+    console.log(`   Source: ${BUSINESS_GENERATOR_COLLECTION.name} (Role/Context/Task templates)`)
+    console.log('   Mode: programmatic generation from 334 base tasks × audience × style variants')
+    console.log('   (Original prompts + swipes + fill-in-blank)\n')
+
+    const { prompts: scraped, method, message } = await scrapeBusinessPromptGenerator({
+      existingPrompts: db.prompts,
+      limit: options.limit,
+    })
+    console.log(`Extracted ${scraped.length} transformed prompts (${method})`)
+    if (message) console.log(`   ${message}`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      { name: BUSINESS_GENERATOR_COLLECTION.name, url: BUSINESS_GENERATOR_COLLECTION.sourceUrl },
       options.dryRun
     )
 
