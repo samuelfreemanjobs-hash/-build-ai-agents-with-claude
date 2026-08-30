@@ -21,3 +21,7 @@ agents/the-architect/projects/freeman-intelligence/*
 # Gmail OAuth (never commit)
 agents/the-architect/credentials.json
 agents/the-architect/.gmail-token.json
+
+# Ops portal secrets (generate locally, upload to Hostinger)
+website/ops/.htpasswd
+website/ops/.htaccess

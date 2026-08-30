@@ -58,17 +58,37 @@ Use credentials from `.env` (`HOSTINGER_SFTP_*`).
 
 ### 3. Password protect (required)
 
-In hPanel → **Advanced** → **Directory Privacy**, protect `/ops/`.
+**Option A — hPanel (recommended, no files needed)**
 
-Or copy `.htaccess.example` → `.htaccess` and create `.htpasswd`:
+1. hPanel → **Advanced** → **Directory Privacy**
+2. Select folder `public_html/ops`
+3. Create username + password (e.g. `samuel`)
+4. Save
+
+**Option B — `.htaccess` Basic Auth**
 
 ```bash
-htpasswd -c .htpasswd samuel
+./scripts/setup-ops-auth.sh
 ```
 
-Upload `.htpasswd` outside `public_html` and set path in `.htaccess`.
+This creates:
+- `website/ops/.htpasswd` → upload **outside** `public_html` (see script output for path)
+- `website/ops/.htaccess` → upload to `public_html/ops/.htaccess`
 
-### 4. Enable PHP (for save)
+Or copy `.htaccess.example` → `.htaccess` and set `AuthUserFile` to your Hostinger path.
+
+**Never commit `.htpasswd` or `.htaccess`** (already in `.gitignore`).
+
+### 4. Preview locally (before upload)
+
+```bash
+cd website/ops
+python3 -m http.server 8080
+```
+
+Open **http://localhost:8080** — no password locally; auth only applies on Hostinger after deploy.
+
+Note: PHP save (`api/save-*.php`) won't work locally; tasks/metrics use browser localStorage until deployed.
 
 Hostinger shared hosting includes PHP. The portal saves tasks/metrics via:
 
