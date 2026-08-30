@@ -9,14 +9,17 @@
 
 | URL | Path | Purpose |
 |---|---|---|
-| `/` | `index.html` | **DR squeeze homepage** — Intelligence Brief lead magnet + cohort upsell |
+| `/` | `index.html` | **DR squeeze** — Dual-Intel Discovery Kit + Systems Lab upsell |
 | `/waitlist/` | `waitlist/index.html` | FI-001 launch waitlist · tag `waitlist` |
 | `/rubric/` | `rubric/index.html` | DR rubric lead magnet · tag `lead_rubric` |
-| `/cohort/` | `cohort/index.html` | Founding cohort $497 · tag `cohort_interest` |
-| `/downloads/intelligence-brief.html` | 4-Page Intelligence Brief (free report) |
+| `/cohort/` | `cohort/index.html` | Dual-Intel Systems Lab $497 · tag `cohort_interest` |
+| `/downloads/marketing-intel-brief.html` | Marketing Intel Brief (4 pages) |
+| `/downloads/revenue-intel-brief.html` | Revenue Intel Brief (4 pages) |
 | `/downloads/dr-rubric-install.html` | Printable rubric (save as PDF) |
 
 **Internal (separate):** `/ops/` — password-protected backend dashboard
+
+**Strategy:** `agents/the-architect/strategy/OPPORTUNITY-DISCOVERY.md`
 
 ---
 
@@ -24,10 +27,10 @@
 
 | Offer | Price | ESP tag | Role |
 |---|---|---|---|
-| **The 4-Page Intelligence Brief** | Free | `lead_intelligence_brief` | Primary squeeze on `/` — DR scorecard + agent handoff map |
+| **Dual-Intel Discovery Kit** | Free | `lead_dual_intel` | Marketing Intel + Revenue Intel briefs — discover opportunity in 48h |
 | **DR Rubric 10-Min Install** | Free | `lead_rubric` | Secondary free line on `/rubric/` |
 | **FI-001 Waitlist** | Free | `waitlist` | Kindle launch list |
-| **Autonomous Revenue Systems Lab** (Founding Cohort) | $497 | `cohort_interest` | Flagship backend — 30-day implementation |
+| **Dual-Intel Systems Lab** (Founding Cohort) | $497 | `cohort_interest` | Install both intel layers · 30-day implementation |
 
 ---
 

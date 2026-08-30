@@ -293,7 +293,15 @@
   color: #999;
 }
 
-.dr-price-now {
-  font-size: 1.75rem;
-  font-weight: 900;
+.dual-intel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.25rem 0;
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .dual-intel-grid { grid-template-columns: 1fr; }
 }
