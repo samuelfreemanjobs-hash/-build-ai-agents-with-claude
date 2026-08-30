@@ -36,6 +36,18 @@ ROI_MODEL_INPUTS:
 SALES_CYCLE_LENGTH:
 ```
 
+### Website design ($10K tier — when applicable)
+
+```
+SITE_ARCHETYPE:               # high_ticket | info_product | saas | personal_brand | ecommerce | funnel_hub
+PAGES_IN_SCOPE:               # e.g. Home, About, Services, Case Studies, Book Call
+PRIMARY_CONVERSION_ACTION:    # book_call | buy | apply | opt_in
+PLATFORM / TECH STACK:        # Webflow, WordPress, Shopify, custom
+EXISTING_BRAND_ASSETS:        # logo, colors, fonts — or build from scratch
+```
+
+**Template:** `research/WEBSITE-DESIGN-BUILD-TEMPLATE.md`
+
 ### SaaS / Subscription (when applicable)
 
 ```

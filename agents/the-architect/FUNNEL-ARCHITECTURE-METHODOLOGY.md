@@ -2,7 +2,7 @@
 
 Phase 2 of the Galactic Master System. End-to-end revenue funnel design, micro-copy wireframing, and email lifecycle architecture. **One voice** — funnel structure informs copy; copy maps to every conversion node.
 
-**Paired:** Phase 1 Executive Diagnostic · Phase 6 SWS · `KERN-METHODOLOGY.md` · `KENNEDY-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `SAAS-RETENTION-CRO-METHODOLOGY.md`
+**Paired:** `OMNICHANNEL-GROWTH-METHODOLOGY.md` (ABM base) · `B2B-OUTBOUND-ENTERPRISE-METHODOLOGY.md` (outbound depth, proposals)
 
 ---
 

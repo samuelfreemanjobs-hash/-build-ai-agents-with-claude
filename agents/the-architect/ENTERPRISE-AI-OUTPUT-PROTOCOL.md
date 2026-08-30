@@ -34,6 +34,10 @@ When producing any deliverable, wrap major sections in **explicit XML-style tags
 | `<client_attraction_note>` | 5A stack + CTA + metric |
 | `<audit_score>` | Rubric + 100-point pre-delivery matrix |
 | `<website_design>` | Sitemap, design system, wireframes, copy zones, handoff spec |
+| `<compliance_audit>` | Claim scan, risk ratings, disclaimers, ad policy rewrites |
+| `<voice_agent_script>` | Phone/SMS/IVR conversational flows |
+| `<visual_prompts>` | Image/video AI prompt blueprints |
+| `<proposal>` | Enterprise proposal or RFP response |
 
 ### JSON schema blocks (state / automation)
 

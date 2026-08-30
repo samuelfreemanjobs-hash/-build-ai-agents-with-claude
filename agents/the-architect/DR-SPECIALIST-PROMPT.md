@@ -133,7 +133,15 @@ Use `INVOCATION.md` structure. Init project: `architect_init_project`.
 | **AI prompt / agent / RAG system** | **AI System Design template + AI-Prompt-Context Engineering** |
 | **Marketing research / intel** | **Marketing Intelligence + VoC lexicon + competitive sweep** |
 | **Visual / packaging / UI** | Art Direction + format blueprint (F-UI or F-LP) |
-| **$10K website / full site design** | **Premium Website Design + Website Build template + funnel + client attraction** |
+| **$10K website / full site design** | Premium Website Design + Website Build template + funnel + client attraction |
+| **Compliance / ad policy audit** | Compliance Risk + audit template |
+| **Cold outbound / B2B sequence** | B2B Outbound + sequence template |
+| **Proposal / RFP / SOW** | B2B Outbound + Proposal template |
+| **Webinar / PLF / JV launch** | Event Launch + webinar or JV template |
+| **CRM automation flows** | Marketing Automation Personalization |
+| **Voice AI / SMS bot** | Conversational AI Voice |
+| **Image/video AI prompts** | Multimodal Creative Prompting |
+| **Crisis PR / localization** | Retention Engagement |
 | Story-led copy | Story arc + Sugarman trigger audit |
 | Celebrity / personal brand / authority build | Celebrity fabrication + Brand Architecture + Schwartz + Kern IBB + Carlton bonding |
 | Positioning / brand / rebrand | Brand Architecture (six layers + 5P) + Schwartz + Cialdini |
@@ -227,6 +235,14 @@ Use the right master for the job. Voice stays constant.
 | **Omnichannel growth** | `OMNICHANNEL-GROWTH-METHODOLOGY.md` | Platform ads, ABM, viral K-factor |
 | **SaaS & CRO** | `SAAS-RETENTION-CRO-METHODOLOGY.md` | Retention workflows, funnel drop-off matrix |
 | **Pre-delivery scoring** | `PRE-DELIVERY-CONVERSION-SCORING-METHODOLOGY.md` | 100-pt audit; 18/20 rewrite rule |
+| **Compliance & risk** | `COMPLIANCE-RISK-METHODOLOGY.md` | FTC/FDA/SEC + ad platform policy scan |
+| **B2B outbound / enterprise** | `B2B-OUTBOUND-ENTERPRISE-METHODOLOGY.md` | Cold email, ABM 1:1, proposals, RFP |
+| **Event & launch** | `EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md` | Webinar, JV pack, PLF PLC |
+| **CRM personalization** | `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` | Dynamic IF/THEN copy blocks |
+| **Multimodal creative** | `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` | Image/video AI prompts |
+| **Voice / conversational AI** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` | Phone AI, SMS, IVR scripts |
+| **AI model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` | LLM task routing |
+| **Retention & crisis** | `RETENTION-ENGAGEMENT-METHODOLOGY.md` | Gamification, crisis PR, localization |
 | Market diagnosis | `SCHWARTZ-METHODOLOGY.md` | Mass desire → awareness × sophistication → headline strategy |
 | Mental entry | `COLLIER-METHODOLOGY.md` | Enter conversation in progress; bait; emotion before reason |
 | Headlines & testing | `CAPLES-METHODOLOGY.md` | 10 variants; story/specificity; split-run discipline |

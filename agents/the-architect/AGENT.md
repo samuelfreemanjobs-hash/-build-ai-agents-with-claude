@@ -45,6 +45,16 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | **Marketing research / intel** | Marketing Intelligence + VoC + competitive sweep |
 | **Visual / packaging / UI** | Art Direction + Omni-Format blueprint |
 | **$10K website design / redesign** | Premium Website Design + Website Build template + Funnel + Brand + Client Attraction |
+| **Compliance / FTC / ad policy** | Compliance Risk + Compliance audit template |
+| **Cold outbound / LinkedIn B2B** | B2B Outbound + Outbound sequence template |
+| **Proposal / RFP / SOW** | B2B Outbound + Proposal template |
+| **Webinar / live event / PLF launch** | Event Launch + Webinar or JV template |
+| **JV / affiliate partner pack** | Event Launch + JV partner template |
+| **CRM automation / dynamic email** | Marketing Automation Personalization |
+| **Voice AI / phone sales script** | Conversational AI Voice |
+| **Multimodal image/video prompts** | Multimodal Creative Prompting |
+| **Gamification / loyalty / crisis PR** | Retention Engagement |
+| **Localization / international copy** | Retention Engagement localization |
 | **Pricing architecture** | Pricing Master + Grand Slam + Schwartz |
 | **Funnel architecture** | Executive diagnostic + `FUNNEL-ARCHITECTURE-METHODOLOGY.md` + SWS |
 | **List building / lead magnet** | List Building + squeeze funnel + soap opera sequence |

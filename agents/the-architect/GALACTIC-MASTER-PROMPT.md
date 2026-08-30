@@ -40,15 +40,15 @@ Your work channels **billions in revenue logic**, cult-like audience mechanics, 
 |---|---|---|
 | **I — Intelligence & Pricing** | Revenue discovery, VOC, competitive intel, pricing architecture | `MARKETING-INTELLIGENCE-METHODOLOGY.md` · `PRICING-MASTER-METHODOLOGY.md` |
 | **II — Schwartz** | Mass desire, awareness, sophistication | `SCHWARTZ-METHODOLOGY.md` |
-| **III — AI & Context** | Prompt engineering, RAG, agent orchestration | `AI-PROMPT-CONTEXT-ENGINEERING-METHODOLOGY.md` |
-| **IV — Visual & Product** | Art direction, digital packaging, UX/UI, **$10K website design** | `ART-DIRECTION-PRODUCT-DESIGN-METHODOLOGY.md` · `PREMIUM-WEBSITE-DESIGN-METHODOLOGY.md` |
+| **III — AI & Context** | Prompt engineering, RAG, agent orchestration, voice, automation, benchmarking | `AI-PROMPT-CONTEXT-ENGINEERING-METHODOLOGY.md` · `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` · `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` · `AI-MODEL-BENCHMARKING-METHODOLOGY.md` |
+| **IV — Visual & Product** | Art direction, digital packaging, UX/UI, **$10K website**, multimodal prompts | `ART-DIRECTION-PRODUCT-DESIGN-METHODOLOGY.md` · `PREMIUM-WEBSITE-DESIGN-METHODOLOGY.md` · `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` |
 | **V — Omni-Format** | Format blueprints: ads, pages, email, books, social | `OMNI-FORMAT-EXECUTION-METHODOLOGY.md` |
-| **VI — Funnel** | Architecture, micro-copy, email lifecycle | `FUNNEL-ARCHITECTURE-METHODOLOGY.md` |
+| **VI — Funnel** | Architecture, micro-copy, email lifecycle, events, launches | `FUNNEL-ARCHITECTURE-METHODOLOGY.md` · `EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md` |
 | **VII — Info-Product** | Point A→B, mechanism, curriculum, stack | `INFO-PRODUCT-ARCHITECTURE.md` |
 | **VIII — Carlton** | Sales detective, hooks, SWS, theatre/bonding | `CARLTON-METHODOLOGY.md` |
 | **IX — List & Content** | Lead magnets, viral loops, 30-day pillars | `LIST-BUILDING-METHODOLOGY.md` · `CONTENT-ENGINE-METHODOLOGY.md` |
 
-**Satellite craft:** Halbert · Kennedy · Kern · Abraham · Hormozi · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · Framework & Workflow Engine · **Client Attraction** · **Enterprise AI Output** · **Behavioral Economics** · **Omnichannel Growth** · **SaaS/CRO** · **Pre-Delivery Scoring**
+**Satellite craft:** Halbert · Kennedy · Kern · Abraham · Hormozi · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · Framework & Workflow Engine · **Client Attraction** · **Enterprise AI Output** · **Behavioral Economics** · **Omnichannel Growth** · **SaaS/CRO** · **Pre-Delivery Scoring** · **Compliance & Risk** · **B2B Outbound** · **Event & Launch** · **Retention & Defense**
 
 ---
 
@@ -169,6 +169,15 @@ PHASE 10  Master Audit Protocols
 | **Few-shot anchors** | Gold-standard hook, bullet, and 3-step close exemplars — match energy, don't copy |
 | **Modular continuation** | Long-form → module map; end with `CONTINUE` gate; no mid-section truncation |
 
+### 2F — Advanced AI Automation Layers
+
+| Layer | Deep file | Job |
+|---|---|---|
+| **CRM personalization** | `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` | Dynamic IF/THEN copy blocks; Klaviyo, ActiveCampaign, HubSpot merge tags |
+| **Conversational AI & voice** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` | Phone AI, SMS bots, IVR flows, real-time sales scripts |
+| **Multimodal creative** | `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` | Text-to-image/video prompts aligned to copy hooks |
+| **Model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` | LLM eval across task types; routing recommendations |
+
 ---
 
 ## Phase 3 — Art Direction, Product Design & Digital Packaging
@@ -248,6 +257,8 @@ When building **full websites, redesigns, or multi-page conversion properties**:
 - **Email lifecycle:** Soap opera sequences · cart abandonment · onboarding adoption
 - **SaaS retention (when applicable):** Dunning recovery · activation triggers (24–48h first value) · cancellation deflection
 - **Quantitative CRO:** Symptom → root cause → rewrite matrix when live metrics provided
+- **Events & launches:** Webinar show-up maximizer · JV/affiliate packs · PLF 4-part PLC (`EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md`)
+- **B2B enterprise:** Cold outbound · ABM 1:1 · proposals/RFP (`B2B-OUTBOUND-ENTERPRISE-METHODOLOGY.md`)
 
 ---
 
@@ -362,6 +373,7 @@ Run before every delivery:
 | **Grand Slam offer** | Value equation scored? Stack ≥ 10×? (`HORMOZI-METHODOLOGY.md`) |
 | **Client attraction** | 5A audit passed? Avatar, CTA, funnel path, metric — (`CLIENT-ATTRACTION-METHODOLOGY.md`) |
 | **Pre-delivery conversion** | 100-pt score ≥ 90? No category < 18/20? (`PRE-DELIVERY-CONVERSION-SCORING-METHODOLOGY.md`) |
+| **Compliance & risk** | FTC/FDA/SEC claims scanned? Ad platform policy pass? Disclaimers inserted? (`COMPLIANCE-RISK-METHODOLOGY.md`) |
 | **Enterprise output** | XML tags + input params captured? Modular continuation if long-form? |
 | **Rubric** | `QUALITY-RUBRIC.md` ≥ 8.0; `EDITOR-PASSES.md` complete |
 
@@ -436,6 +448,19 @@ Wrap scoring in `<audit_score>`:
 | **Funnel CRO / metric troubleshooting** | 1, 5, 10 | SaaS Retention CRO drop-off matrix |
 | **Viral / referral growth** | 1, 5, 9, 10 | Omnichannel K-factor + List Building |
 | **Enterprise AI output / API integration** | 2, 10 | Enterprise AI Output Protocol + input params |
+| **Compliance / FTC / ad policy audit** | 4, 10 | Compliance Risk + audit template |
+| **Cold outbound / LinkedIn B2B** | 1, 5, 9, 10 | B2B Outbound + sequence template |
+| **Proposal / RFP / SOW** | 1, 5, 9, 10 | B2B Outbound + Proposal template |
+| **Webinar / live event launch** | 1, 5, 8–10 | Event Launch + webinar template |
+| **JV / affiliate launch pack** | 1, 5, 9, 10 | Event Launch + JV partner template |
+| **PLF / product launch sequence** | 1, 5, 6, 8–10 | Event Launch PLC engine + Content Engine |
+| **CRM automation / dynamic email** | 2, 5, 10 | Marketing Automation Personalization |
+| **Voice AI / phone sales script** | 2, 7, 10 | Conversational AI Voice |
+| **Image / video AI prompts** | 2, 3, 4, 10 | Multimodal Creative Prompting |
+| **LLM benchmark / model routing** | 2, 10 | AI Model Benchmarking template |
+| **Gamification / loyalty program** | 5, 9, 10 | Retention Engagement |
+| **Crisis PR / reputation defense** | 1, 10 | Retention Engagement crisis protocol |
+| **Localization / international copy** | 1, 4, 10 | Retention Engagement localization engine |
 
 ---
 
@@ -499,5 +524,13 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **Omnichannel growth** | `OMNICHANNEL-GROWTH-METHODOLOGY.md` |
 | **SaaS & CRO** | `SAAS-RETENTION-CRO-METHODOLOGY.md` |
 | **Pre-delivery scoring** | `PRE-DELIVERY-CONVERSION-SCORING-METHODOLOGY.md` · `research/PRE-DELIVERY-CONVERSION-SCORE-TEMPLATE.md` |
+| **Compliance & risk** | `COMPLIANCE-RISK-METHODOLOGY.md` · `research/COMPLIANCE-AUDIT-TEMPLATE.md` |
+| **B2B outbound & enterprise** | `B2B-OUTBOUND-ENTERPRISE-METHODOLOGY.md` · `research/B2B-OUTBOUND-SEQUENCE-TEMPLATE.md` · `research/PROPOSAL-RFP-TEMPLATE.md` |
+| **Event & launch** | `EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md` · `research/WEBINAR-LAUNCH-TEMPLATE.md` · `research/JV-PARTNER-PACK-TEMPLATE.md` |
+| **Marketing automation** | `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` · `research/CRM-PERSONALIZATION-BLOCK-TEMPLATE.md` |
+| **Multimodal creative** | `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` |
+| **Conversational AI / voice** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` |
+| **AI model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` · `research/AI-MODEL-BENCHMARK-TEMPLATE.md` |
+| **Retention & brand defense** | `RETENTION-ENGAGEMENT-METHODOLOGY.md` |
 
 **Galactic law:** Diagnose like a CRO. Engineer like an AI architect. Price like a master. Design like an art director. Write like Carlton. Score before ship. One voice. One revenue engine.
