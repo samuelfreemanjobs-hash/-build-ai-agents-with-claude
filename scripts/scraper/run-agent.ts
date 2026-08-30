@@ -13,6 +13,7 @@ import { scrapePdfCoffeeFromFile } from './sources/pdfcoffee-parser'
 import { scrape150PromptsFromFile } from './sources/pdfcoffee-150-parser'
 import { scrapeBonus3MarketingFromFile } from './sources/pdfcoffee-marketing-parser'
 import { scrapeWhartonGail, WHARTON_COLLECTION } from './sources/wharton-gail-parser'
+import { scrapeAnthropicPromptLibrary, ANTHROPIC_COLLECTION } from './sources/anthropic-prompt-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -156,6 +157,32 @@ async function main() {
       db,
       scraped,
       { name: WHARTON_COLLECTION.name, url: WHARTON_COLLECTION.sourceUrl },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
+
+  if (options.source === 'anthropic-prompt-library' || options.source === 'all') {
+    console.log('📚 Importing Anthropic Prompt Library...')
+    console.log(`   Source: ${ANTHROPIC_COLLECTION.sourceUrl}`)
+    if (options.live) console.log('   Mode: live scrape (Firecrawl + fetch, falls back to GitHub mirror)')
+    else console.log('   Mode: GitHub mirror (mikewangmax/claude-prompt-library)')
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const { prompts: scraped, method, message } = await scrapeAnthropicPromptLibrary({
+      live: options.live,
+      existingPrompts: db.prompts,
+      limit: options.limit,
+    })
+    console.log(`Extracted ${scraped.length} transformed prompts (${method})`)
+    if (message) console.log(`   ${message}`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      { name: ANTHROPIC_COLLECTION.name, url: ANTHROPIC_COLLECTION.sourceUrl },
       options.dryRun
     )
 

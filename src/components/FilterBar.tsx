@@ -61,6 +61,7 @@ export function FilterBar({
             { value: '150-chatgpt-prompts', label: '⚡ 150 Best ChatGPT' },
             { value: 'bonus3-marketing', label: '🎯 BONUS 3 Marketing' },
             { value: 'wharton-gail', label: '🎓 Wharton GAIL' },
+            { value: 'anthropic-prompt-library', label: '🤖 Anthropic Library' },
           ]}
         />
 

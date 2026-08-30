@@ -13,6 +13,8 @@
     "scrape:bonus3": "tsx scripts/scraper/run-agent.ts -- --source bonus3-marketing --file data/sources/bonus3-marketing-raw.txt",
     "scrape:wharton": "tsx scripts/scraper/run-agent.ts -- --source wharton-gail --file data/sources/wharton-gail-prompts.json",
     "scrape:wharton:live": "tsx scripts/scraper/run-agent.ts -- --source wharton-gail --live",
+    "scrape:anthropic": "tsx scripts/scraper/run-agent.ts -- --source anthropic-prompt-library",
+    "scrape:anthropic:live": "tsx scripts/scraper/run-agent.ts -- --source anthropic-prompt-library --live",
     "scrape:dry": "tsx scripts/scraper/run-agent.ts -- --dry-run",
     "preview": "vite preview",
     "start": "vite preview --host 0.0.0.0 --port 4173"
