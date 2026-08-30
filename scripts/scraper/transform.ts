@@ -51,9 +51,8 @@ export function generateFillInBlank(content: string): string {
   let result = content
 
   for (const { pattern, placeholder } of FILL_PATTERNS) {
-    if (result.includes(placeholder)) continue
     result = result.replace(pattern, (match) => {
-      if (match.includes('{{')) return match
+      if (match.includes('{{') || result.includes(placeholder)) return match
       return placeholder
     })
   }

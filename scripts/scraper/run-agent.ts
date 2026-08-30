@@ -9,19 +9,22 @@
 
 import { scrapeAwesomePromptsCsv } from './sources'
 import { scrape1000PromptsCollection } from './sources/pdfcoffee'
+import { scrapePdfCoffeeFromFile } from './sources/pdfcoffee-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
   const args = process.argv.slice(2)
   const options = {
-    source: 'pdfcoffee',
-    limit: 120,
+    source: 'pdfcoffee-text',
+    limit: Infinity as number,
     dryRun: false,
+    file: 'data/sources/1000-prompts-raw.txt',
   }
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--source' && args[i + 1]) options.source = args[++i]
     if (args[i] === '--limit' && args[i + 1]) options.limit = parseInt(args[++i], 10)
+    if (args[i] === '--file' && args[i + 1]) options.file = args[++i]
     if (args[i] === '--dry-run') options.dryRun = true
   }
 
@@ -37,12 +40,34 @@ async function main() {
   if (!db.collections) db.collections = []
   console.log(`Current database: ${db.prompts.length} prompts from ${db.sources.length} sources\n`)
 
+  if (options.source === 'pdfcoffee-text' || options.source === 'all') {
+    console.log('📚 Importing 1000+ Prompts Collection (PDFCoffee text)...')
+    console.log(`   File: ${options.file}`)
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const scraped = await scrapePdfCoffeeFromFile(options.file, db.prompts, options.limit)
+    console.log(`Extracted ${scraped.length} transformed prompts with swipes`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      {
+        name: '1000+ Prompts Collection (PDFCoffee)',
+        url: 'https://pdfcoffee.com/1000-prompts-pdf-free.html',
+      },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
+
   if (options.source === 'pdfcoffee' || options.source === 'all') {
-    console.log('📚 Scraping 1000+ Prompts Collection (PDFCoffee-style)...')
+    console.log('📚 Scraping 1000+ Prompts Collection (GitHub mirror)...')
     console.log('   Source: https://pdfcoffee.com/1000-prompts-pdf-free.html')
     console.log('   (Using GitHub mirror + originality transforms + swipes)\n')
 
-    const scraped = await scrape1000PromptsCollection(db.prompts, options.limit)
+    const scraped = await scrape1000PromptsCollection(db.prompts, options.limit === Infinity ? 120 : options.limit)
     console.log(`Extracted ${scraped.length} transformed prompts with swipes`)
 
     const report = importPrompts(
