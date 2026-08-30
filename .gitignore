@@ -6,9 +6,17 @@ dist/
 *.egg-info/
 .pytest_cache/
 
-# Agent project outputs (user work)
+# Agent project outputs (user work) — PM ops plans/launches are tracked
 agents/the-architect/projects/*
 !agents/the-architect/projects/.gitkeep
+!agents/the-architect/projects/persuasion-mechanics/
+agents/the-architect/projects/persuasion-mechanics/*
+!agents/the-architect/projects/persuasion-mechanics/plans/
+!agents/the-architect/projects/persuasion-mechanics/plans/**
+!agents/the-architect/projects/persuasion-mechanics/launch/
+!agents/the-architect/projects/persuasion-mechanics/launch/**
+!agents/the-architect/projects/persuasion-mechanics/reviews/
+!agents/the-architect/projects/persuasion-mechanics/reviews/**
 
 # Gmail OAuth (never commit)
 agents/the-architect/credentials.json
