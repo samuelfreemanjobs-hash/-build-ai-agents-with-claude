@@ -71,7 +71,9 @@ export function importPrompts(
               ? '1000+ Prompts Collection'
               : collId === '150-chatgpt-prompts'
                 ? '150 Best ChatGPT Prompts'
-                : collId!,
+                : collId === 'bonus3-marketing'
+                  ? 'BONUS 3 AI Marketing Prompt Library'
+                  : collId!,
           sourceUrl: sourceMeta.url,
           sectionCount: new Set(toImport.filter((p) => p.collection === collId).map((p) => p.collectionSection)).size,
           promptCount: count,

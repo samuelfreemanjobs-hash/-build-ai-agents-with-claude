@@ -59,6 +59,7 @@ export function FilterBar({
           options={[
             { value: '1000-prompts', label: '📚 1000+ Prompts' },
             { value: '150-chatgpt-prompts', label: '⚡ 150 Best ChatGPT' },
+            { value: 'bonus3-marketing', label: '🎯 BONUS 3 Marketing' },
           ]}
         />
 

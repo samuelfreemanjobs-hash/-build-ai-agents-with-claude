@@ -1,0 +1,143 @@
+CATEGORY 1: Research & Assets Creation (4 Prompts)
+
+1. The "Deep Dive" Avatar Research Use this before you write a single word of copy. It reveals what your customers actually want. "Act as an expert market researcher. I am selling [PRODUCT NAME] to [TARGET AUDIENCE]. Please generate a psychographic profile of my ideal customer. I need to know: The '3 AM' Worries: What keeps them awake at night regarding [SPECIFIC PROBLEM]? The 'Enemy': Who or what do they secretly blame for their failure? The 'Dream': If money/time were no object, what would their life look like after using my product? Output this as a structured table."
+
+2. The "Grand Slam" Offer Creator Use this to turn a boring product into an irresistible deal. "Act as Alex Hormozi. I have a core product called [PRODUCT NAME] priced at [PRICE]. Help me turn this into a 'Grand Slam Offer' by adding value without adding cost. Please suggest: 3 Scarcity Tactics: (e.g., limited seats, time deadlines). 3 Urgency Triggers: (Why they must act now). 3 Bonuses: Create 3 digital bonuses (checklists, templates, guides) that solve specific implementation problems for [TARGET AUDIENCE]. Guarantee: Write a 'risk-reversal' guarantee that removes all fear of buying."
+
+3. The "Chameleon" Copywriter (Tone Shifter) Use this to rewrite boring content into exciting copy. "I am pasting a piece of marketing text below. I want you to rewrite it in the style of [FAMOUS EXPERT OR STYLE] (e.g., David Ogilvy, witty & sarcastic, or professional & corporate). Goals for the rewrite: Make it punchier. Use short sentences. Focus on the benefit: [MAIN BENEFIT]. Original Text: [PASTE YOUR TEXT HERE]"
+
+4. The "Midjourney" Visual Prompter Use this to generate image descriptions you can feed into AI art tools for ads. "Act as a professional art director. I need an image for a Facebook Ad selling [PRODUCT NAME]. Please write 3 detailed image prompts I can put into Midjourney/DALL-E. Vibe: [DESIRED EMOTION: e.g., Energetic, Trustworthy, Luxurious]. Subject: A happy user achieving [DESIRED RESULT]. Lighting/Style: Cinematic lighting, photorealistic, 4k. Aspect Ratio: 1:1."
+
+CATEGORY 2: Content Strategy & Ideation (5 Prompts)
+
+5. The "Content Pillar" Architect "I need to build 4 content pillars for my personal brand in the [NICHE] space. My target audience is [TARGET AUDIENCE]. Please suggest 4 distinct content pillars (themes) and list 5 video topic ideas under each pillar that would appeal to beginners."
+
+6. The "Viral Hook" Generator "I am creating a short-form video about [TOPIC]. Please generate 10 viral hooks (opening sentences) that utilize 'Pattern Interrupts' and 'Curiosity Gaps' to stop the scroll immediately. Keep them under 5 seconds spoken length."
+
+7. The "Complex-to-Simple" Analogy Finder "I am trying to explain the concept of [COMPLEX TOPIC] to a complete beginner. Please provide 3 metaphors or analogies from everyday life (like cooking, driving, or sports) that make this concept instantly understandable."
+
+8. The "Trend Jacking" Expert "A current trending topic is [CURRENT NEWS/TREND]. How can I relate this trend to my industry of [YOUR INDUSTRY] in a way that is relevant, educational, and not cringey? Give me 3 content angles."
+
+9. The "Objection Killer" FAQ "List the top 10 objections someone might have before buying [PRODUCT NAME]. Then, for each objection, write a short social media post caption that addresses and neutralizes that objection without sounding salesy."
+
+10. The "Content Multiplier" (Repurposing Engine) Turn one asset into a week's worth of traffic. "I have a long-form video/blog post about [TOPIC]. Please repurpose this into a 'Content Waterfall': 3 Twitter/X Threads: Summarizing the key points. 5 LinkedIn Text Posts: Each focusing on one specific sub-point. 5 Short-Form Video Scripts: (TikTok/Reels) focusing on the 'Hook' and 'Result'. 1 Newsletter Email: Teasing the full content."
+
+11. The "Netflix-Style" Series Planner Create binge-worthy content that keeps people coming back. "I want to create a 5-part educational content series on social media about [TOPIC]. Goal: Structure it like a Netflix mini-series. Part 1: The Pilot (The big problem/mystery). Part 2-4: The Journey (Steps, mistakes, and small wins). Part 5: The Season Finale (The final result and a Call to Action). Write the titles and a 1-sentence synopsis for each part."
+
+12. The "Blue Ocean" Angle Finder Say what nobody else is saying. "Everyone in the [YOUR NICHE] industry is talking about [COMMON TOPIC] in the same way (usually saying [COMMON ADVICE]). Please give me 3 'Contrarian' or 'Blue Ocean' angles that challenge this common advice. I want to stand out by offering a fresh, unique perspective."
+
+13. The "Reddit Detective" (Market Pulse) Find the hidden questions your customers are asking. "Act as a researcher. I want you to simulate a search on Reddit (subreddits: [LIST SUBREDDITS]) regarding the keyword [KEYWORD]. List 10 specific questions, complaints, or struggles that real users are discussing right now. I will use these as topics for my next YouTube videos."
+
+14. The "Data-to-Drama" Storyteller Turn boring numbers into exciting narratives. "I have a statistic that says: [INSERT STATISTIC, e.g., 80% of businesses fail]. Please turn this dry stat into a compelling story or social media post. Hook: Start with the shocking number. Body: Visualize what that number actually looks like in real life (humanize the data). Lesson: Explain how to be part of the successful percentage using my method."
+
+CATEGORY 3: Design Suggestions (10 Prompts)
+
+15. The "Color Psychology" Architect "Act as a brand color psychologist. I am launching a brand in the [INDUSTRY] space targeting [TARGET AUDIENCE]. I want to evoke feelings of [DESIRED EMOTIONS, e.g., TRUST, LUXURY, ENERGY]. Please suggest 3 distinct color palettes (Primary, Secondary, and Accent colors) with their Hex Codes and explain why each palette works for this specific audience."
+
+16. The "Font Pairing" Expert "I need a typography pairing for my website. My brand personality is [BRAND PERSONALITY, e.g., MODERN, CLASSIC, PLAYFUL]. Suggest 3 font combinations (one for Headings, one for Body Text). Ensure they are Google Fonts compatible and legible on mobile. Explain the 'vibe' of each pairing."
+
+17. The "High-Converting" Landing Page Layout "Describe the visual layout for a high-converting landing page selling a [PRICE] product. Above the Fold: What image/video placement works best? Visual Hierarchy: How should I use whitespace and contrast to guide the eye to the CTA? Section Flow: Describe the visual order of sections from top to bottom."
+
+18. The "YouTube Thumbnail" Director "I am making a video titled [VIDEO TITLE]. Describe 3 click-worthy thumbnail concepts. Concept 1: Focus on emotion (face). Concept 2: Focus on the 'Before & After' result. Concept 3: Focus on a curiosity-inducing object. For each, describe the background color, text overlay, and central image composition."
+
+19. The "Ad Creative" visualizer (Meta Ads) "I need 5 visual concepts for a Facebook Ad image selling [PRODUCT]. Instead of generic stock photos, describe 5 'Pattern Interrupt' visuals that would stop a user from scrolling. Format: 1:1 Square. Text Overlay: Keep it under 20% of the image."
+
+20. The "Infographic" Structurer "I have a blog post with these 5 key data points: [LIST DATA POINTS]. Describe how to turn this into a viral infographic. Visual Metaphor: What is the central theme (e.g., a roadmap, a pyramid, an iceberg)? Flow: How should the user read it? Icons: Suggest icons for each data point."
+
+21. The "Slide Deck" Aesthetics "I am creating a pitch deck for [INVESTORS/CLIENTS]. My current slides look boring. Suggest a visual theme based on [BRAND STYLE]. Backgrounds: Solid, gradient, or image-based? Image Style: Cutouts, black & white, or illustrations? Data Visualization: How should I style my charts to look modern?"
+
+22. The "UI/UX" Audit "Act as a UX designer. I am designing a mobile checkout page. List 5 'Dark Patterns' I must avoid to build trust, and 5 'Trust Elements' (visual cues) I should add near the 'Buy Button' to increase conversion rates."
+
+23. The "Social Grid" Planner "I want my Instagram grid to look cohesive and aesthetic. My niche is [NICHE]. Suggest a 'Checkerboard' or 'Row-by-Row' visual strategy. Post Type A: (e.g., Quote card with dark background). Post Type B: (e.g., Lifestyle photo with light filter). Explain how to alternate them for the best visual impact."
+
+24. The "Logo" Brainstormer "I need ideas for a logo for [COMPANY NAME]. We do [SERVICE]. Suggest 5 concepts: Minimalist (Wordmark only). Abstract Icon (Geometric shape). Literal Icon (Related to the industry). Emblem (Vintage style). Monogram (Initials). Describe the visual elements for each."
+
+CATEGORY 4: Campaign Ideas (10 Prompts)
+
+25. The "Seasonal" Campaign Planner "Plan a 3-phase marketing campaign for [UPCOMING HOLIDAY, e.g., DIWALI/BLACK FRIDAY]. Phase 1 (The Tease): 7 days before. What content goes out? Phase 2 (The Launch): The Big Offer details. Phase 3 (The Close): The final 48 hours scarcity push. The product is [PRODUCT NAME]."
+
+26. The "Gamification" Strategist "I want to run a contest to generate leads for [BUSINESS TYPE]. Design a 'Gamified' campaign where users earn points for actions (e.g., sharing, commenting). The Hook: What is the grand prize? The Mechanics: How do they enter? The Viral Loop: How do they get extra entries by referring friends?"
+
+27. The "Challenge" Funnel Architect "Create a concept for a '5-Day Live Challenge' to sell my high-ticket coaching program [PROGRAM NAME]. Title of Challenge: Needs to promise a specific result in 5 days. Day 1-4 Content: What small wins do they get each day? Day 5: The Masterclass and the Pitch. Goal: Build trust before selling."
+
+28. The "Guerrilla Marketing" Stunt "I have a budget of [BUDGET]. Give me 3 unconventional, 'Guerrilla Marketing' ideas to get attention for my local business [BUSINESS TYPE]. These should be low-cost but high-impact stunts that people would want to take photos of and share on social media."
+
+29. The "User-Generated Content" (UGC) Wave "I want my customers to create content for me. Design a campaign that incentivizes users to post photos of themselves using [PRODUCT]. Campaign Hashtag: Catchy and unique. Incentive: What do they get? (Discount, feature, freebie?) Theme: What specifically should they take a photo of?"
+
+30. The "Flash Sale" (Inventory Clear-out) "I need to clear out old inventory of [PRODUCT]. Plan a 24-hour 'Vault' sale. Angle: 'We found a box of unreleased...' or 'Spring Cleaning'. The Offer: Bundle pricing ideas. Email Sequence: 3 emails (Morning, Afternoon, 1 Hour Left)."
+
+31. The "Collaboration" Cross-Promo "I want to partner with a non-competing brand in the [RELATED INDUSTRY] space. Suggest 3 campaign ideas where we can cross-pollinate our audiences. Idea 1: Joint Webinar. Idea 2: Co-created Bundle. Idea 3: Social Media Takeover. Explain the benefit for both parties."
+
+32. The "Birthday" Bash "It is our company's 5th anniversary. Plan a 'Birthday Week' campaign. Day 1-4: Giveaways and gratitude posts (no selling). Day 5: The 'Big Birthday Offer' (our biggest discount of the year). Goal: Brand loyalty and sales."
+
+33. The "Lost Customer" Win-Back "Design a campaign specifically for people who canceled their subscription 3+ months ago. The 'Olive Branch': Acknowledging we miss them. The 'What's New': Highlight feature updates they missed. The 'Come Back' Offer: A special rate for the first 3 months if they return this week."
+
+34. The "Newsjacking" Pivot "There is currently a lot of news attention on [CURRENT EVENT/TREND]. How can I ethically create a campaign for [PRODUCT] that ties into this conversation? Angle: How does my product help navigate this new situation? Tone: Helpful, not opportunistic. Content: Blog post and Email blast ideas."
+
+CATEGORY 5: Email Marketing Mastery (5 Prompts)
+
+35. The "Subject Line" Split Tester "I have an email about [EMAIL TOPIC]. Please write 10 subject lines. 5 should be 'Curiosity-Based' (blind) and 5 should be 'Benefit-Based' (direct). Highlight which ones are likely to have the highest Open Rate."
+
+36. The "Story-Selling" Email "Write an email connecting a personal story about [MUNDANE ACTIVITY, E.G., WALKING THE DOG] to a business lesson about [BUSINESS LESSON]. Transition smoothly from the story to the lesson, and end with a soft pitch for [PRODUCT NAME]."
+
+37. The "Flash Sale" Urgency Script "I am running a 24-hour flash sale for [PRODUCT NAME]. Write a short, punchy email. Subject: Urgent/Alert style. Body: Focus entirely on the 'Cost of Inaction' (what they lose by missing out). CTA: 3 distinct links to the checkout page."
+
+38. The "List Cleaning" Re-engagement "I have a list of inactive subscribers. Write a 'Do I stay or do I go?' email. Be polite but firm. Ask them if they still want to hear about [TOPIC]. If not, tell them it's okay to unsubscribe. Use the 'Nine Word Email' framework."
+
+39. The "Post-Purchase" Delight "A customer just bought [PRODUCT NAME]. Write a warm, enthusiastic 'Thank You' email. Confirm their order, tell them exactly what to do next to get started, and give them a 'surprise' unannounced bonus tip related to the product."
+
+CATEGORY 6: Social Media Growth (5 Prompts)
+
+40. The "Carousel" Outliner "Create an outline for a 7-slide Instagram Carousel about [TOPIC]. Slide 1: Hook. Slides 2-6: Step-by-step educational value. Slide 7: Call to Action asking them to comment the word [KEYWORD] to get a free guide."
+
+41. The "LinkedIn Thought Leader" "Write a LinkedIn text post debating the controversial topic: [CONTROVERSIAL TOPIC]. Present both sides of the argument fairly, then pivot to my unique perspective which is [YOUR STANCE]. End with a question to drive comments."
+
+42. The "Twitter/X Thread" Converter "Take the following blog paragraph and turn it into a viral Twitter thread consisting of 6 tweets. Use short sentences, line breaks for rhythm, and emojis where appropriate. Text to convert: [PASTE TEXT]"
+
+43. The "Reel Script" (Educational) "Write a 60-second script for a 'Talking Head' Instagram Reel. 0-3s: Hook mentioning a common mistake. 3-45s: 3 tips to fix the mistake. 45-60s: CTA to follow for more tips on [TOPIC]."
+
+44. The "Comment Reply" Bot "I want to reply to comments on my post about [POST TOPIC]. Please generate 5 generic but thoughtful replies that thank the user and ask a follow-up question to keep the algorithm engagement high."
+
+CATEGORY 7: Paid Ads (Facebook & YouTube) (5 Prompts)
+
+45. The "Us vs. Them" Comparison Ad "Write a Facebook ad copy comparing [PRODUCT NAME] to [TRADITIONAL ALTERNATIVE]. Use a table format or 'Checklist' style in the text to visually show why my product is superior (e.g., faster, cheaper, easier)."
+
+46. The "YouTube Ad" Script (Hook-Body-CTA) "Write a 90-second YouTube pre-roll ad script. Hook (0-5s): Call out [TARGET AUDIENCE] directly. Problem: Mention [PAIN POINT]. Solution: Introduce [PRODUCT NAME] as the solution. Proof: Briefly mention a case study. CTA: Tell them to click the link to watch the free training."
+
+47. The "Retargeting" Ad "Write a short ad for people who visited my sales page for [PRODUCT NAME] but didn't buy. Don't be creepy. Just acknowledge that 'life gets busy' and remind them that the special offer for [BONUS] expires in 24 hours."
+
+48. The "Google Ads" Headlines "Generate 15 Google Search Ad Headlines (max 30 characters each) for [KEYWORD]. Include dynamic keyword insertion ideas and focus on 'Speed' and 'Results'."
+
+49. The "Story Ad" (Long Form) "Write a long-form Facebook ad telling the story of 'Jane Doe', who went from [STARTING STRUGGLE] to [DESIRED RESULT] using [PRODUCT NAME]. Focus heavily on the emotional journey."
+
+CATEGORY 8: High-Level Strategy (5 Prompts)
+
+50. The "Webinar Title" Generator "I am hosting a webinar about [TOPIC]. Generate 10 high-converting titles. Use formulas like: 'How to X without Y' 'The New Way to Z' 'X vs Y: The Truth' 'The [Number] Secrets to...'"
+
+51. The "Lead Magnet" Ideator "I want to build an email list of [TARGET AUDIENCE]. Suggest 5 high-value, low-effort Lead Magnet ideas (e.g., Cheat Sheet, Checklist, Swipe File) that solve a specific, immediate problem for them."
+
+52. The "Pricing Psychology" Audit "I am selling a course for [PRICE]. Suggest 3 ways to reframe this price to make it seem like a 'no-brainer' bargain. (e.g., compare it to the cost of a daily coffee, or the cost of not solving the problem)."
+
+53. The "Competitor Analysis" Simulation "Act as a customer comparing my product [MY PRODUCT] vs my competitor [COMPETITOR PRODUCT]. List 3 reasons why someone would choose them, and 3 reasons why someone would choose me. Be brutally honest."
+
+54. The "Upsell" Script "I need a script for a 'Thank You Page' video. The customer just bought a [TRIPWIRE PRODUCT] for [LOW PRICE]. I want to upsell them my [CORE PRODUCT] for [HIGH PRICE]. Use the 'Yes, and...' technique (e.g., 'You bought the gym membership, now you need the meal plan')."
+
+CATEGORY 9: SEO & Blogging Dominance (10 Prompts)
+
+55. The "Keyword Cluster" Strategist "Act as an SEO expert. I want to rank for the head term [MAIN KEYWORD]. Please generate a list of 10 long-tail keyword variations and sub-topics that I should cover to build 'Topical Authority'. Organize them by search intent (Informational vs. Transactional)."
+
+56. The "Click-Worthy" Meta Description "Write 3 meta descriptions (under 160 characters) for a blog post titled [BLOG POST TITLE]. Include the keyword [KEYWORD] and a call-to-action that maximizes Click-Through Rate (CTR)."
+
+57. The "Featured Snippet" Hunter "I want to capture the 'Position Zero' snippet on Google for the question: [SPECIFIC QUESTION]. Write a concise, 50-word answer that directly addresses this question using clear, simple language."
+
+58. The "LSI Keyword" Finder "I am writing an article about [TOPIC]. List 20 LSI (Latent Semantic Indexing) keywords—related terms and synonyms—that I should naturally include in the text to help Google understand the context."
+
+59. The "Blog Post" Outliner "Create a detailed outline for a 2,000-word ultimate guide on [TOPIC]. Include H2 and H3 headings, bullet points for key takeaways in each section, and a 'Conclusion' that leads to a specific CTA."
+
+60. The "Content Refresher" "I have an old blog post from 2022 about [TOPIC]. How can I update this for [CURRENT YEAR]? Suggest 5 specific updates (e.g., new trends, statistics, or examples) to make it fresh and relevant again."
+
+61. The "Internal Link" Builder "I have a blog with these 5 core articles: [LIST ARTICLES]. Suggest a logical internal linking structure. Which article should link to which to guide the reader towards buying [PRODUCT NAME]?"
+
+62. The "Guest Post" Pitch "Write a persuasive email pitching a guest post idea to [WEBSITE NAME]. The topic is [TOPIC]. Explain why their audience will love it and mention that I have already done keyword research for them."
+
+63. The "FAQ Schema" Generator "Generate a list of 5 Frequently Asked Questions (and answers) about [TOPIC] that I can add to my blog post to qualify for Google's FAQ rich snippets."

@@ -10,6 +10,7 @@
     "scrape": "tsx scripts/scraper/run-agent.ts",
     "scrape:pdfcoffee": "tsx scripts/scraper/run-agent.ts -- --source pdfcoffee-text --file data/sources/1000-prompts-raw.txt",
     "scrape:150": "tsx scripts/scraper/run-agent.ts -- --source 150-prompts --file data/sources/150-chatgpt-prompts-raw.txt",
+    "scrape:bonus3": "tsx scripts/scraper/run-agent.ts -- --source bonus3-marketing --file data/sources/bonus3-marketing-raw.txt",
     "scrape:dry": "tsx scripts/scraper/run-agent.ts -- --dry-run",
     "preview": "vite preview",
     "start": "vite preview --host 0.0.0.0 --port 4173"

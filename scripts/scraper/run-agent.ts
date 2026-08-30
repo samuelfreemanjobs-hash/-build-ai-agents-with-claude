@@ -11,6 +11,7 @@ import { scrapeAwesomePromptsCsv } from './sources'
 import { scrape1000PromptsCollection } from './sources/pdfcoffee'
 import { scrapePdfCoffeeFromFile } from './sources/pdfcoffee-parser'
 import { scrape150PromptsFromFile } from './sources/pdfcoffee-150-parser'
+import { scrapeBonus3MarketingFromFile } from './sources/pdfcoffee-marketing-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -40,6 +41,29 @@ async function main() {
   const db = loadDatabase()
   if (!db.collections) db.collections = []
   console.log(`Current database: ${db.prompts.length} prompts from ${db.sources.length} sources\n`)
+
+  if (options.source === 'bonus3-marketing' || options.source === 'all') {
+    const fileBonus3 = options.file.includes('bonus3') ? options.file : 'data/sources/bonus3-marketing-raw.txt'
+    console.log('📚 Importing BONUS 3 AI Marketing Prompt Library...')
+    console.log(`   File: ${fileBonus3}`)
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const scraped = await scrapeBonus3MarketingFromFile(fileBonus3, db.prompts, options.limit)
+    console.log(`Extracted ${scraped.length} transformed prompts with swipes`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      {
+        name: 'BONUS 3 AI Marketing Prompt Library',
+        url: 'https://pdfcoffee.com/bonus-3-ai-marketing-prompt-library-pdf-free.html',
+      },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
 
   if (options.source === '150-prompts' || options.source === 'all') {
     const file150 = options.file.includes('150') ? options.file : 'data/sources/150-chatgpt-prompts-raw.txt'
