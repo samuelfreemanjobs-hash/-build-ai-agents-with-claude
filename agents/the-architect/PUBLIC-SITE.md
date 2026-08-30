@@ -9,13 +9,25 @@
 
 | URL | Path | Purpose |
 |---|---|---|
-| `/` | `index.html` | Brand home · path cards |
+| `/` | `index.html` | **DR squeeze homepage** — Intelligence Brief lead magnet + cohort upsell |
 | `/waitlist/` | `waitlist/index.html` | FI-001 launch waitlist · tag `waitlist` |
 | `/rubric/` | `rubric/index.html` | DR rubric lead magnet · tag `lead_rubric` |
 | `/cohort/` | `cohort/index.html` | Founding cohort $497 · tag `cohort_interest` |
+| `/downloads/intelligence-brief.html` | 4-Page Intelligence Brief (free report) |
 | `/downloads/dr-rubric-install.html` | Printable rubric (save as PDF) |
 
 **Internal (separate):** `/ops/` — password-protected backend dashboard
+
+---
+
+## Offer stack (M1)
+
+| Offer | Price | ESP tag | Role |
+|---|---|---|---|
+| **The 4-Page Intelligence Brief** | Free | `lead_intelligence_brief` | Primary squeeze on `/` — DR scorecard + agent handoff map |
+| **DR Rubric 10-Min Install** | Free | `lead_rubric` | Secondary free line on `/rubric/` |
+| **FI-001 Waitlist** | Free | `waitlist` | Kindle launch list |
+| **Autonomous Revenue Systems Lab** (Founding Cohort) | $497 | `cohort_interest` | Flagship backend — 30-day implementation |
 
 ---
 

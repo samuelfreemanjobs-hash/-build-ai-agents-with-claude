@@ -20,6 +20,10 @@ Cross-sell line (use in back matter, email, site):
 
 > *You mastered AI product design. Now engineer the intelligence layer — multi-agent systems that research, write, and convert.*
 
+**Primary free line (homepage squeeze):** *The 4-Page Intelligence Brief* — slop detector, 7-Gate Scorecard, Agent Handoff Map, 48-Hour Deployment Plan. ESP tag: `lead_intelligence_brief`.
+
+**Flagship backend (M1):** *Autonomous Revenue Systems Lab* — Founding Cohort, $497, 20 seats. Application via `/cohort/`.
+
 ---
 
 ## Positioning (one sentence)
