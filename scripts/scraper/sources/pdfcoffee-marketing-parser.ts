@@ -7,7 +7,7 @@ import {
   generateUniqueTitle,
   rewriteForOriginality,
 } from '../transform.ts'
-import { slugify, inferCategories, inferModels, inferType, generateTags, isDuplicate, normalizePlaceholders } from '../normalize.ts'
+import { slugify, inferCategories, inferModels, inferType, generateTags, similarity, normalizePlaceholders } from '../normalize.ts'
 import type { ScrapedPrompt } from '../types.ts'
 import { CATEGORY_EMOJI } from '../types.ts'
 
@@ -35,6 +35,10 @@ export const MARKETING_CATEGORIES: MarketingCategory[] = [
   { id: 'paid-ads', name: 'Paid Ads', emoji: '🖱️', categoryIds: ['marketing'], headerPattern: /CATEGORY 7:\s*Paid Ads/i },
   { id: 'strategy', name: 'High-Level Strategy', emoji: '🎯', categoryIds: ['business', 'marketing'], headerPattern: /CATEGORY 8:\s*High-Level/i },
   { id: 'seo-blogging', name: 'SEO & Blogging', emoji: '🔍', categoryIds: ['seo', 'content'], headerPattern: /CATEGORY 9:\s*SEO/i },
+  { id: 'brand-voice', name: 'Brand Voice & Identity', emoji: '🎭', categoryIds: ['marketing', 'business'], headerPattern: /CATEGORY 10:\s*Brand Voice/i },
+  { id: 'customer-retention', name: 'Customer Support & Retention', emoji: '🤝', categoryIds: ['customer-service', 'marketing'], headerPattern: /CATEGORY 11:\s*Customer Support/i },
+  { id: 'product-launch', name: 'Product Launch & Events', emoji: '🎪', categoryIds: ['marketing'], headerPattern: /CATEGORY 12:\s*Product Launch/i },
+  { id: 'influencer', name: 'Influencer & Networking', emoji: '🌟', categoryIds: ['social-media', 'marketing'], headerPattern: /CATEGORY 13:\s*Influencer/i },
 ]
 
 export interface ParsedMarketingPrompt {
@@ -109,7 +113,8 @@ export function parseBonus3MarketingText(raw: string): ParsedMarketingPrompt[] {
     const end = i + 1 < categoryHits.length ? categoryHits[i + 1].index : cleaned.length
     const body = cleaned.slice(index + headerLen, end)
 
-    const blocks = body.split(/(?=\d+\.\s*The\s+")/)
+    // Split only at line-start prompt headers — avoid false splits inside numbers like "10." → "0. The"
+    const blocks = body.split(/(?:^|\n)(?=\d+\.\s*The\s+")/m)
     for (const block of blocks) {
       const parsed = parsePromptBlock(block.trim(), category)
       if (parsed) results.push(parsed)
@@ -148,7 +153,7 @@ export function importBonus3Prompts(
   for (const item of parsed) {
     if (results.length >= limit) break
 
-    const baseTitle = `${item.title}`
+    const baseTitle = item.useCase ? `${item.title} (${item.useCase})` : item.title
     const uniqueTitle = generateUniqueTitle(baseTitle)
     const structured = buildMarketingContent(item)
     const rewritten = rewriteForOriginality(structured, uniqueTitle)
@@ -162,10 +167,10 @@ export function importBonus3Prompts(
     const models: import('../../src/types/prompt').AIModel[] =
       type === 'image' ? ['Midjourney'] : [...inferModels(categories, rewritten)]
 
-    let id = slugify(`bonus3-${item.number}-${item.title}`)
+    let id = slugify(`bonus3-${item.category.id}-${item.number}-${item.title}`)
     let suffix = 2
     while (existingIds.has(id)) {
-      id = `${slugify(item.title).slice(0, 45)}-b3-${suffix++}`
+      id = `${slugify(`${item.category.id}-${item.title}`).slice(0, 45)}-b3-${suffix++}`
     }
     existingIds.add(id)
 
@@ -199,7 +204,18 @@ export function importBonus3Prompts(
       source: sourceMeta,
     }
 
-    if (isDuplicate(prompt, [...existingPrompts, ...results], 0.9)) continue
+    // Same title across categories (e.g. two "Flash Sale" prompts) is intentional — compare content only
+    if (
+      [...existingPrompts, ...results].some(
+        (p) =>
+          p.id === prompt.id ||
+          (p.collection === prompt.collection &&
+            p.collectionSection === prompt.collectionSection &&
+            similarity(p.content, prompt.content) >= 0.95)
+      )
+    ) {
+      continue
+    }
     results.push(prompt)
   }
 

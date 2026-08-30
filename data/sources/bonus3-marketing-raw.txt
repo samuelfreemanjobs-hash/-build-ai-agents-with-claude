@@ -140,4 +140,94 @@ CATEGORY 9: SEO & Blogging Dominance (10 Prompts)
 
 62. The "Guest Post" Pitch "Write a persuasive email pitching a guest post idea to [WEBSITE NAME]. The topic is [TOPIC]. Explain why their audience will love it and mention that I have already done keyword research for them."
 
-63. The "FAQ Schema" Generator "Generate a list of 5 Frequently Asked Questions (and answers) about [TOPIC] that I can add to my blog post to qualify for Google's FAQ rich snippets."
+63. The "FAQ Schema" Generator "Generate a list of 5 Frequently Asked Questions (and answers) about [TOPIC] that I can add to the bottom of my web page to increase the chance of appearing in Google's 'People Also Ask' section."
+
+64. The "Title Tag" Optimizer "I have a title tag that is currently: [CURRENT TITLE]. It is performing poorly. Suggest 5 variations that include the keyword [KEYWORD] but use 'Power Words' to drive more curiosity and clicks."
+
+CATEGORY 10: Brand Voice & Identity (10 Prompts)
+
+65. The "Brand Archetype" Definer "Based on the description of my business: [BUSINESS DESCRIPTION], which of the 12 Brand Archetypes (e.g., Hero, Sage, Jester) fits me best? Explain why, and list 5 adjectives I should use in all my copy."
+
+66. The "Elevator Pitch" Creator "Write 3 versions of an elevator pitch for [BUSINESS NAME] (10 seconds, 30 seconds, and 60 seconds). Focus on the problem we solve for [TARGET AUDIENCE]."
+
+67. The "Origin Story" Script "Interview me. Ask me 5 probing questions to help me uncover my 'Origin Story'—the emotional reason why I started this business. Once I answer, weave it into a compelling 'About Us' page narrative."
+
+68. The "USP" Refiner "My current Unique Selling Proposition is: [CURRENT USP]. It feels weak. Rewrite it to be more punchy, specific, and benefit-driven. Compare it to 'Generic' competitors."
+
+69. The "Mission Statement" Generator "Write a mission statement for [COMPANY NAME] that inspires both my team and my customers. It should focus on the impact we want to have on the world, not just making money."
+
+70. The "Tone of Voice" Guide "Create a 'Do's and Don'ts' style guide for my writers. My brand voice is [ADJECTIVES, E.G., FUN, BOLD, REBELLIOUS]. Give 3 examples of words/phrases we always use, and 3 we never use."
+
+71. The "Manifesto" Writer "Write a 10-point 'Brand Manifesto' for [COMPANY NAME]. These are the core beliefs we stand by. Start each point with 'We believe...'."
+
+72. The "Tagline" Brainstormer "Generate 20 tagline ideas for [PRODUCT NAME]. 5 should be short (under 4 words), 5 should be rhyming, 5 should be funny, and 5 should be serious/trust-building."
+
+73. The "Visual Mood" Describer "If my brand [BRAND NAME] were a person, describe how they would dress, what car they would drive, and what music they would listen to. This will help me brief my graphic designer."
+
+74. The "Niche Down" Consultant "I am currently targeting 'everyone'. Help me niche down. Suggest 3 sub-niches within the [BROAD INDUSTRY] market that are high-ticket and under-served."
+
+CATEGORY 11: Customer Support & Retention (10 Prompts)
+
+75. The "Angry Customer" De-escalator "A customer is angry because [REASON]. Write a polite, empathetic email response. Acknowledge the mistake, apologize without making excuses, and offer [COMPENSATION] to make it right."
+
+76. The "Testimonial" Extractor "Write an email to a happy client asking for a testimonial. Don't just ask 'Can you give a review?'. Instead, ask them 3 specific questions about their transformation to guide them into writing a glowing case study."
+
+77. The "Onboarding" Checklist "Create a step-by-step onboarding checklist for a new client who just signed up for [SERVICE NAME]. Ensure they feel supported and know exactly what to expect in the first 7 days."
+
+78. The "Churn" Preventer "A customer wants to cancel their subscription to [PRODUCT]. Write a script for a retention call. Acknowledge their decision, but offer a 'Pause' option or a 'Downsell' to a cheaper plan to keep them in the ecosystem."
+
+79. The "Birthday" Delight "Write a personalized email to send to customers on their birthday. Include a special discount code [CODE] and make it sound like a genuine celebration, not a sales grab."
+
+80. The "Feedback" Survey "I want to improve my product. Write an email asking customers to fill out a 2-minute survey. Subject line needs to get them to open it. Promise a small gift (e.g., a PDF guide) in exchange for their time."
+
+81. The "Referral" Program Pitch "Write an email announcing our new referral program. Explain that if they refer a friend, they get [REWARD] and their friend gets [DISCOUNT]. Make it sound exclusive."
+
+82. The "Usage" Nudge "I noticed a user hasn't logged into [SOFTWARE/COURSE] in 14 days. Write a gentle 'nudge' email reminding them of the progress they made and encouraging them to log back in to achieve [GOAL]."
+
+83. The "Community" Welcome "Write a welcome post for a new member joining our private Facebook group. Tag them, ask them to introduce themselves, and tell them to check out the 'Start Here' pinned post."
+
+84. The "Price Increase" Announcer "We are raising our prices next month. Write an email to existing customers explaining why (added value, new features) and letting them know they are locked in at their old rate (grandfathered in) as a reward for loyalty."
+
+CATEGORY 12: Product Launch & Events (10 Prompts)
+
+85. The "Waitlist" Builder "I am launching [PRODUCT NAME] in 30 days. Write a landing page headline and sub-headline that convinces people to join the 'VIP Waitlist' to get early access and a special discount."
+
+86. The "Teaser" Social Post "Write a mysterious social media post teasing a big announcement coming in 3 days. Use a 'Behind the Scenes' photo concept. Don't reveal the product yet—just build hype."
+
+87. The "Cart Open" Email "The doors are finally open for [PRODUCT NAME]. Write a high-energy email announcing the launch. List the top 3 benefits and mention that the 'Fast Action Bonuses' are only available for the first 50 buyers."
+
+88. The "Mid-Launch" FAQs "It's day 3 of our 5-day launch. Send an email with the subject line 'Quick Question?'. List the top 5 questions people are asking about [PRODUCT] and answer them to remove barriers to buying."
+
+89. The "Cart Closing" Warning "Write an email to be sent 4 hours before the cart closes. Subject: 'Doors closing in 4 hours'. Tone: Urgent but respectful. Remind them this is the last chance to get [BONUS]."
+
+90. The "Affiliate" Recruitment "Write an email inviting industry influencers to promote my launch. Explain the commission structure ([COMMISSION %]) and why their audience will thank them for recommending this product."
+
+91. The "Webinar" Invite "Write an email inviting my list to a live workshop: [WORKSHOP TITLE]. Focus on the 'One Big Thing' they will learn that will change their business immediately."
+
+92. The "Live Stream" Script "Write a script for a 10-minute Instagram Live to do a Q&A about the launch. Start with a story, transition to the offer, and then answer common questions."
+
+93. The "Post-Launch" Thank You "The launch is over. Write an email to everyone who didn't buy. Thank them for following along, give them some free value anyway (a recap of the week's content), and tell them when the doors might open again."
+
+94. The "Launch Post-Mortem" "Act as a business analyst. I just finished a launch. Ask me 10 questions to help me analyze what went right, what went wrong, and how to improve for the next one."
+
+CATEGORY 13: Influencer & Networking (10 Prompts)
+
+95. The "Cold DM" Opener "Write a short, non-spammy DM to send to an influencer in the [NICHE] space. I want to interview them for my podcast. Compliment a specific recent post of theirs so they know it's not a bot."
+
+96. The "Collaboration" Pitch "I want to do a joint Instagram Live with [NAME]. Write a pitch explaining the mutual benefit: I expose them to my audience of [NUMBER] people, and we share value."
+
+97. The "Podcast" Guest Pitch "Write an email pitching myself as a guest on [PODCAST NAME]. Suggest 3 unique topic ideas I could discuss that their audience hasn't heard a million times before."
+
+98. The "Sponsorship" Inquiry "I want to sponsor a newsletter in my niche. Write an email asking for their media kit and open rates. keep it professional and direct."
+
+99. The "Networking" Follow-Up "I just met [NAME] at a conference. Write a follow-up email. Mention something specific we discussed ([TOPIC]) and suggest a 15-minute coffee chat next week."
+
+100. The "Mentor" Request "Write a respectful email asking [NAME] for advice. Do NOT ask 'Will you be my mentor?'. Instead, ask one specific, thoughtful question about [TOPIC] that shows I respect their time."
+
+101. The "Value-Add" Introduction "I want to introduce two people in my network: [PERSON A] and [PERSON B]. Write an email connecting them, explaining why they should know each other (mutual business interests)."
+
+102. The "Review" Request (Influencer) "I want to send a free sample of [PRODUCT] to an influencer. Write a note to include in the package. No strings attached—just 'Hope you enjoy it, let me know what you think'."
+
+103. The "LinkedIn" Connection Request "Write a connection request message (max 300 chars) for a potential high-ticket client. Don't sell. Just mention a mutual connection or a piece of their content I enjoyed."
+
+104. The "Unsubscribe" Reversal "I noticed a VIP client unsubscribed from my list. Write a personal, plain-text email (from the CEO) asking if everything is okay and if there was a specific issue that caused them to leave."
