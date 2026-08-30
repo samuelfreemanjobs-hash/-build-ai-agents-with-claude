@@ -149,12 +149,23 @@ Note: PHP save won't work in Python server — uses localStorage fallback.
 
 ## Future integrations
 
-| Source | Metric |
-|---|---|
-| ESP (ConvertKit etc.) | Subscribers, opens, clicks |
-| Amazon KDP | Kindle units, royalties |
-| Stripe / checkout | Backend revenue |
-| GitHub Actions | Auto-sync after factory daily run |
+| Source | Metrics | Setup |
+|---|---|---|
+| **ESP** (ConvertKit / Beehiiv) | Subscribers, opens, clicks | `.env`: `ESP_PROVIDER`, API keys · GitHub secrets for CI |
+| **Amazon KDP** | Kindle units, royalties | Export CSV → `KDP_CSV_PATH` or upload in Analytics view |
+| **Stripe / checkout** | Backend revenue | `STRIPE_SECRET_KEY` + webhook → `api/stripe-webhook.php` |
+| **GitHub Actions** | Auto-sync after factory | Runs daily after `architect-daily-production` workflow |
+
+**Sync locally:**
+
+```bash
+./scripts/sync-ops-portal.sh --with-metrics   # factory JSON + external APIs
+python3 scripts/sync-external-metrics.py      # ESP/KDP/Stripe only
+```
+
+**Hostinger cron (optional):** POST to `ops/api/sync-integrations.php?token=OPS_SYNC_TOKEN`
+
+**Docs:** `INTEGRATIONS.md` · `strategy/KPI-DEFINITIONS.md`
 
 ---
 

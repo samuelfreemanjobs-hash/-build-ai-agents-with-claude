@@ -58,3 +58,29 @@ jobs:
             git commit -m "chore(architect): daily production $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      - name: Sync ops portal data
+        run: ./scripts/sync-ops-portal.sh
+
+      - name: Sync external metrics (ESP · KDP · Stripe)
+        env:
+          ESP_PROVIDER: ${{ secrets.ESP_PROVIDER }}
+          CONVERTKIT_API_SECRET: ${{ secrets.CONVERTKIT_API_SECRET }}
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUBLICATION_ID: ${{ secrets.BEEHIIV_PUBLICATION_ID }}
+          KDP_CSV_PATH: ${{ secrets.KDP_CSV_PATH }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          python3 scripts/sync-external-metrics.py --triggered-by=github_actions || echo "External metrics skipped or partial (configure GitHub secrets to enable)"
+
+      - name: Commit ops portal sync
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add website/ops/data/
+          if git diff --staged --quiet; then
+            echo "No ops portal data changes."
+          else
+            git commit -m "chore(ops): sync portal data $(date -u +%Y-%m-%d)"
+            git push
+          fi

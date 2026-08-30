@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "updated": null,
+  "sources": {
+    "esp": {
+      "provider": null,
+      "status": "not_configured",
+      "error": "Set ESP_PROVIDER and API keys in .env",
+      "last_sync": null,
+      "metrics": {
+        "subscribers": null,
+        "open_rate": null,
+        "click_rate": null,
+        "opens": null,
+        "clicks": null
+      }
+    },
+    "kdp": {
+      "status": "not_configured",
+      "error": "Export KDP sales CSV and set KDP_CSV_PATH",
+      "last_sync": null,
+      "source_file": null,
+      "metrics": {
+        "units_sold": null,
+        "royalties": null,
+        "kenp_read": null
+      }
+    },
+    "stripe": {
+      "status": "not_configured",
+      "error": "Set STRIPE_SECRET_KEY for revenue sync",
+      "last_sync": null,
+      "metrics": {
+        "backend_total": null,
+        "month_revenue": null,
+        "transaction_count": null,
+        "currency": "usd"
+      }
+    }
+  },
+  "sync_log": []
+}

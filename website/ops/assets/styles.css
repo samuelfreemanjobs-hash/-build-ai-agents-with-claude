@@ -206,3 +206,9 @@ dialog input, dialog select { width: 100%; margin-top: 0.25rem; }
 
 .legend { display: flex; gap: 1rem; flex-wrap: wrap; }
 .legend-item { font-size: 0.8rem; font-weight: 600; }
+
+.badge-sync { font-size: 0.65rem; padding: 0.1rem 0.35rem; vertical-align: middle; border-color: #22c55e; color: #22c55e; }
+.badge-danger { border-color: #ef4444; color: #ef4444; }
+.badge-muted { border-color: var(--border); color: var(--muted); }
+.kdp-upload { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; font-size: 0.85rem; }
+.kdp-upload input[type="file"] { max-width: 220px; }

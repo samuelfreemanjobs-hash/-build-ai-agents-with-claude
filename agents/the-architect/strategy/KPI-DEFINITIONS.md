@@ -99,13 +99,13 @@ Template: `research/WEEKLY-GOO-REVIEW-TEMPLATE.md`
 
 ## Data sources (lock when live)
 
-| Source | Metrics |
-|---|---|
-| **ESP** (TBD) | Subscribers, opens, clicks, revenue |
-| **Amazon KDP** | Units, KENP, royalties |
-| **Checkout** (TBD) | Backend revenue, AOV |
-| **factory/state.json** | Chapters, active book |
-| **Weekly GOO files** | Tests, diagnoses |
+| Source | Metrics | Sync |
+|---|---|---|
+| **ESP** (ConvertKit / Beehiiv) | Subscribers, opens, clicks | `scripts/sync-external-metrics.py` · GitHub Actions daily |
+| **Amazon KDP** | Units, KENP, royalties | CSV import · `KDP_CSV_PATH` or portal upload |
+| **Stripe checkout** | Backend revenue, AOV | API pull + `ops/api/stripe-webhook.php` |
+| **factory/state.json** | Chapters, active book | `scripts/sync-ops-portal.sh` |
+| **Weekly GOO files** | Tests, diagnoses | Manual |
 
 ---
 

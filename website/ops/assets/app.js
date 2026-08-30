@@ -22,7 +22,7 @@ async function loadAll() {
   const files = [
     'state.json', 'business-plan.json', 'marketing-operations-plan.json',
     'product-catalog.json', 'published-catalog.json', 'ascension-ladder.json',
-    'ops-tasks.json', 'ops-metrics.json', 'systems-index.json',
+    'ops-tasks.json', 'ops-metrics.json', 'integrations.json', 'systems-index.json',
   ];
   await Promise.all(files.map(async (f) => { DATA[f.replace('.json', '').replace(/-/g, '_')] = await loadJSON(f); }));
   // normalize keys
@@ -34,7 +34,19 @@ async function loadAll() {
   DATA.ascension = await loadJSON('ascension-ladder.json');
   DATA.tasks = await loadJSON('ops-tasks.json');
   DATA.metrics = await loadJSON('ops-metrics.json');
+  DATA.integrations = await loadJSON('integrations.json');
   DATA.systems = await loadJSON('systems-index.json');
+}
+
+function syncBadge(key) {
+  const src = DATA.metrics?.auto_synced?.[key];
+  if (!src) return '';
+  return `<span class="badge badge-sync" title="Auto-synced from ${src}">live</span>`;
+}
+
+function integrationStatus(status) {
+  const map = { ok: 'badge-gold', error: 'badge-danger', not_configured: 'badge-muted' };
+  return map[status] || 'badge-muted';
 }
 
 function pct(actual, target) {
@@ -59,17 +71,17 @@ function renderDashboard() {
   document.getElementById('activeProductBadge').textContent = bp.active_product_id || '—';
 
   const kpis = [
-    { label: 'Subscribers', actual: m.actuals.subscribers, target: m.targets.subscribers },
-    { label: 'Waitlist', actual: m.actuals.waitlist, target: m.targets.waitlist },
-    { label: 'Chapters', actual: book?.chapters_completed ?? m.actuals.chapters_shipped, target: m.targets.chapters_shipped },
-    { label: 'Kindle units', actual: m.actuals.kindle_units, target: m.targets.kindle_units },
-    { label: 'Cohort seats', actual: m.actuals.cohort_seats, target: m.targets.cohort_seats },
-    { label: 'Tests run', actual: m.actuals.tests_run, target: m.targets.tests_run },
+    { label: 'Subscribers', actual: m.actuals.subscribers, target: m.targets.subscribers, key: 'subscribers' },
+    { label: 'Waitlist', actual: m.actuals.waitlist, target: m.targets.waitlist, key: 'waitlist' },
+    { label: 'Chapters', actual: book?.chapters_completed ?? m.actuals.chapters_shipped, target: m.targets.chapters_shipped, key: 'chapters_shipped' },
+    { label: 'Kindle units', actual: m.actuals.kindle_units, target: m.targets.kindle_units, key: 'kindle_units' },
+    { label: 'Cohort seats', actual: m.actuals.cohort_seats, target: m.targets.cohort_seats, key: 'cohort_seats' },
+    { label: 'Tests run', actual: m.actuals.tests_run, target: m.targets.tests_run, key: 'tests_run' },
   ];
 
   document.getElementById('kpiGrid').innerHTML = kpis.map(k => `
     <div class="kpi">
-      <div class="kpi-label">${k.label}</div>
+      <div class="kpi-label">${k.label} ${syncBadge(k.key)}</div>
       <div class="kpi-value">${fmt(k.actual)}</div>
       <div class="kpi-target">Target: ${fmt(k.target)}</div>
       <div class="kpi-bar"><div class="kpi-bar-fill" style="width:${pct(k.actual, k.target)}%"></div></div>
@@ -235,10 +247,12 @@ function renderAnalytics() {
 
   document.getElementById('metricsForm').innerHTML = keys.map(k => `
     <div class="metric-row">
-      <label>${k.replace(/_/g, ' ')}</label>
+      <label>${k.replace(/_/g, ' ')} ${syncBadge(k)}</label>
       <input type="number" data-target="${k}" value="${m.targets[k] ?? ''}" placeholder="Target">
       <input type="number" data-actual="${k}" value="${m.actuals[k] ?? ''}" placeholder="Actual">
     </div>`).join('');
+
+  renderIntegrations();
 
   document.querySelectorAll('#metricsForm input[data-target]').forEach(inp => {
     inp.addEventListener('change', () => { m.targets[inp.dataset.target] = +inp.value || null; renderCharts(); });
@@ -258,12 +272,82 @@ function renderAnalytics() {
     `<tr><td>${n}</td><td>${d}</td><td>${fmt(v)}</td></tr>`).join('');
 
   document.getElementById('revenuePanel').innerHTML = `
-    <div class="metric-row"><label>Kindle royalties</label><span>$${m.revenue?.kindle_royalties ?? 0}</span></div>
-    <div class="metric-row"><label>Backend</label><span>$${m.revenue?.backend_total ?? 0}</span></div>
+    <div class="metric-row"><label>Kindle royalties ${syncBadge('kindle_royalties')}</label><span>$${m.revenue?.kindle_royalties ?? 0}</span></div>
+    <div class="metric-row"><label>Backend ${syncBadge('backend_total')}</label><span>$${m.revenue?.backend_total ?? 0}</span></div>
     <div class="metric-row"><label>Consulting</label><span>$${m.revenue?.consulting ?? 0}</span></div>`;
 
   renderCharts();
 }
+
+function renderIntegrations() {
+  const integ = DATA.integrations || {};
+  const sources = integ.sources || {};
+  const rows = [
+    ['ESP', sources.esp?.provider || '—', sources.esp?.status, formatEsp(sources.esp)],
+    ['Amazon KDP', sources.kdp?.source_file || 'CSV', sources.kdp?.status, formatKdp(sources.kdp)],
+    ['Stripe', 'checkout', sources.stripe?.status, formatStripe(sources.stripe)],
+  ];
+  const last = integ.updated ? new Date(integ.updated).toLocaleString() : 'Never';
+  document.getElementById('integrationsPanel').innerHTML = `
+    <p class="hint" style="margin-bottom:0.75rem">Last sync: ${last}</p>
+    <table class="data-table">
+      <thead><tr><th>Source</th><th>Provider</th><th>Status</th><th>Metrics</th></tr></thead>
+      <tbody>${rows.map(([name, prov, st, met]) => `
+        <tr>
+          <td>${name}</td>
+          <td>${prov}</td>
+          <td><span class="badge ${integrationStatus(st)}">${st || 'unknown'}</span></td>
+          <td style="font-size:0.85rem">${met}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>`;
+}
+
+function formatEsp(esp) {
+  if (!esp?.metrics) return '—';
+  const m = esp.metrics;
+  const parts = [];
+  if (m.subscribers != null) parts.push(`${fmt(m.subscribers)} subs`);
+  if (m.open_rate != null) parts.push(`${(m.open_rate * 100).toFixed(1)}% open`);
+  if (m.click_rate != null) parts.push(`${(m.click_rate * 100).toFixed(1)}% click`);
+  return parts.join(' · ') || '—';
+}
+
+function formatKdp(kdp) {
+  if (!kdp?.metrics) return '—';
+  const m = kdp.metrics;
+  const parts = [];
+  if (m.units_sold != null) parts.push(`${fmt(m.units_sold)} units`);
+  if (m.royalties != null) parts.push(`$${m.royalties}`);
+  return parts.join(' · ') || '—';
+}
+
+function formatStripe(stripe) {
+  if (!stripe?.metrics) return '—';
+  const m = stripe.metrics;
+  if (m.backend_total != null) return `$${m.backend_total} (${m.transaction_count ?? 0} tx)`;
+  return '—';
+}
+
+document.getElementById('kdpUploadForm')?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const fd = new FormData(form);
+  try {
+    const r = await fetch('api/import-kdp.php', { method: 'POST', body: fd, credentials: 'same-origin' });
+    const body = await r.json();
+    if (r.ok) {
+      alert(`KDP imported: ${body.units_sold} units · $${body.royalties} royalties`);
+      await loadAll();
+      renderAnalytics();
+      renderDashboard();
+    } else {
+      alert(body.error || 'Upload failed');
+    }
+  } catch (err) {
+    alert('Upload failed — deploy PHP on Hostinger for KDP import.');
+  }
+});
 
 function renderCharts() {
   const m = DATA.metrics;

@@ -49,6 +49,20 @@ def get_hostinger_config() -> dict[str, str | None]:
     }
 
 
+def get_integration_config() -> dict[str, str | None]:
+    """External metrics integrations — ESP, KDP CSV, Stripe."""
+    return {
+        "esp_provider": os.environ.get("ESP_PROVIDER"),
+        "convertkit_api_secret": os.environ.get("CONVERTKIT_API_SECRET"),
+        "beehiiv_api_key": os.environ.get("BEEHIIV_API_KEY"),
+        "beehiiv_publication_id": os.environ.get("BEEHIIV_PUBLICATION_ID"),
+        "kdp_csv_path": os.environ.get("KDP_CSV_PATH"),
+        "stripe_secret_key": os.environ.get("STRIPE_SECRET_KEY"),
+        "stripe_webhook_secret": os.environ.get("STRIPE_WEBHOOK_SECRET"),
+        "metrics_month": os.environ.get("METRICS_MONTH"),
+    }
+
+
 def ensure_projects_dir() -> Path:
     PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
     return PROJECTS_DIR

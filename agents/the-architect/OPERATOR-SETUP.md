@@ -119,10 +119,12 @@ Leads save to `public_html/data/leads.json` via `api/subscribe.php`.
 Includes: command dashboard · task kanban · marketing analytics · 12-month calendar · product pipeline · business systems library.
 
 ```bash
-./scripts/sync-ops-portal.sh          # refresh JSON from factory
-# SFTP upload website/ops/ to Hostinger
+./scripts/sync-ops-portal.sh --with-metrics   # factory JSON + ESP/KDP/Stripe
+python3 scripts/deploy-ops-portal.py         # upload to Hostinger
 # hPanel → Directory Privacy → password-protect /ops/
 ```
+
+**Integrations guide:** `INTEGRATIONS.md` — ESP, KDP CSV, Stripe webhook, GitHub auto-sync.
 
 **URL:** `https://freemanintelligence.com/ops/` (internal only)
 
@@ -133,6 +135,11 @@ Includes: command dashboard · task kanban · marketing analytics · 12-month ca
 | Secret name | Required | Used by |
 |---|---|---|
 | `ANTHROPIC_API_KEY` | **Yes** (for factory automation) | Daily production + weekly launch workflows |
+| `ESP_PROVIDER` | No | Ops portal ESP sync (ConvertKit or beehiiv) |
+| `CONVERTKIT_API_SECRET` | No | ConvertKit subscriber/opens/clicks |
+| `BEEHIIV_API_KEY` | No | Beehiiv (with `BEEHIIV_PUBLICATION_ID`) |
+| `STRIPE_SECRET_KEY` | No | Backend revenue in ops metrics |
+| `KDP_CSV_PATH` | No | KDP units/royalties (usually upload CSV on Hostinger instead) |
 | `GEMINI_API_KEY` | No | Future benchmark workflow (not wired yet) |
 
 Hostinger credentials stay **local in `.env` only** — do not add FTP passwords to GitHub.
