@@ -14,6 +14,27 @@ A curated AI prompt library inspired by God of Prompt — browse, search, filter
 - **Sort options** — Shuffled, most copied, most liked, title A-Z
 - **Dark theme UI** — Modern, responsive design
 
+## Prompt Scraper AI Agent
+
+Automatically extract prompts from public sources into `data/prompts-db.json`.
+
+**Agent spec:** `agents/prompt-scraper-agent.md`
+
+```bash
+npm run scrape                    # Scrape default sources (Awesome ChatGPT Prompts CSV)
+npm run scrape -- --limit 200     # Scrape up to 200 prompts
+npm run scrape:dry                # Preview without saving
+npm run build:prompts             # Sync database → web app
+```
+
+Current library: **210 prompts** (20 seed + 190 scraped from [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)).
+
+To add Firecrawl-powered scraping (requires `FIRECRAWL_API_KEY`):
+
+```bash
+firecrawl agent "extract all AI prompts" --urls "https://example.com/prompts" --schema scripts/schemas/prompt-extraction.schema.json --wait
+```
+
 ## Live demo
 
 **URL:** https://samuelfreemanjobs-hash.github.io/-build-ai-agents-with-claude/
