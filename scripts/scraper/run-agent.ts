@@ -10,6 +10,7 @@
 import { scrapeAwesomePromptsCsv } from './sources'
 import { scrape1000PromptsCollection } from './sources/pdfcoffee'
 import { scrapePdfCoffeeFromFile } from './sources/pdfcoffee-parser'
+import { scrape150PromptsFromFile } from './sources/pdfcoffee-150-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -39,6 +40,29 @@ async function main() {
   const db = loadDatabase()
   if (!db.collections) db.collections = []
   console.log(`Current database: ${db.prompts.length} prompts from ${db.sources.length} sources\n`)
+
+  if (options.source === '150-prompts' || options.source === 'all') {
+    const file150 = options.file.includes('150') ? options.file : 'data/sources/150-chatgpt-prompts-raw.txt'
+    console.log('📚 Importing 150 Best ChatGPT Prompts (PDFCoffee)...')
+    console.log(`   File: ${file150}`)
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const scraped = await scrape150PromptsFromFile(file150, db.prompts, options.limit)
+    console.log(`Extracted ${scraped.length} transformed prompts with swipes`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      {
+        name: '150 Best ChatGPT Prompts (PDFCoffee)',
+        url: 'https://pdfcoffee.com/150-chatgpt-prompts-pdf-free.html',
+      },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
 
   if (options.source === 'pdfcoffee-text' || options.source === 'all') {
     console.log('📚 Importing 1000+ Prompts Collection (PDFCoffee text)...')

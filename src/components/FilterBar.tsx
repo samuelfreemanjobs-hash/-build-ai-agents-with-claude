@@ -58,6 +58,7 @@ export function FilterBar({
           onChange={(v) => onFilterChange({ collection: v || null })}
           options={[
             { value: '1000-prompts', label: '📚 1000+ Prompts' },
+            { value: '150-chatgpt-prompts', label: '⚡ 150 Best ChatGPT' },
           ]}
         />
 

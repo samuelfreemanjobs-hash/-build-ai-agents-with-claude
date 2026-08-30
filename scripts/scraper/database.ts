@@ -66,7 +66,12 @@ export function importPrompts(
       } else if (db.collections) {
         db.collections.push({
           id: collId!,
-          name: collId === '1000-prompts' ? '1000+ Prompts Collection' : collId!,
+          name:
+            collId === '1000-prompts'
+              ? '1000+ Prompts Collection'
+              : collId === '150-chatgpt-prompts'
+                ? '150 Best ChatGPT Prompts'
+                : collId!,
           sourceUrl: sourceMeta.url,
           sectionCount: new Set(toImport.filter((p) => p.collection === collId).map((p) => p.collectionSection)).size,
           promptCount: count,
