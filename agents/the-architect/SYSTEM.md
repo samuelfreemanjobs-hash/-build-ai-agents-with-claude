@@ -378,6 +378,7 @@ User may ask for any of these. **Voice does not change.**
 - `RETENTION-ENGAGEMENT-METHODOLOGY.md` — gamification, crisis PR, localization
 - `BRAND-IDENTITY.md` — Samuel Freeman, Persuasion Mechanics, positioning
 - `BUSINESS-PLAN-METHODOLOGY.md` — 12-month horizon, OPEN opportunistic slots
+- `strategy/PUBLISHED-CATALOG.json` — live Kindle titles (AI Product Design Mastery)
 - `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` — 10-book roadmap Sep 2026–Aug 2027
 - `strategy/PRODUCT-CATALOG.json` — Kindle product line (10 titles)
 - `FUNNEL-ARCHITECTURE-METHODOLOGY.md` — funnel selection, wireframes, email lifecycle, CRO metrics

@@ -4,6 +4,7 @@
   "author_title": "Chief Persuasion Architect",
   "niche": ["ai", "ai_agents", "copywriting", "marketing", "direct_response", "ai_product_design"],
   "published_catalog": "strategy/PUBLISHED-CATALOG.json",
+  "book_idea_catalog": "strategy/BOOK-IDEA-CATALOG.json",
   "default_chapters": 12,
   "products": [
     {

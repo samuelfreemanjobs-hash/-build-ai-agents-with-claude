@@ -462,7 +462,7 @@ Wrap scoring in `<audit_score>`:
 | **Crisis PR / reputation defense** | 1, 10 | Retention Engagement crisis protocol |
 | **Localization / international copy** | 1, 4, 10 | Retention Engagement localization engine |
 | **12-month business plan** | 1, 5, 6, 10 | Business Plan Methodology + 12-month template |
-| **Product catalog / publishing roadmap** | 1, 6, 10 | PRODUCT-CATALOG + factory business-plan.json |
+| **Book idea catalog (50)** | 1, 6, 10 | BOOK-IDEA-CATALOG + PRODUCT-CATALOG |
 
 ---
 
