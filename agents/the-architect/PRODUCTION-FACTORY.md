@@ -19,6 +19,8 @@ One voice. No modes. Runs on schedule via GitHub Actions + `the-architect factor
 
 **North star:** Everything the factory produces must **attract ideal clients** — see `CLIENT-ATTRACTION-METHODOLOGY.md`.
 
+**Business plan sync:** Production follows `factory/business-plan.json` and `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` — 12-month horizon, OPEN months for opportunistic revenue.
+
 ---
 
 ## Quick start

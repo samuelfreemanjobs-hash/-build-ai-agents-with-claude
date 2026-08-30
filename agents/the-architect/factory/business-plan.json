@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "brand": "Persuasion Mechanics",
+  "author": "Samuel Freeman",
+  "plan_horizon_months": 12,
+  "plan_start": "2026-09",
+  "plan_end": "2027-08",
+  "current_month": "2026-09",
+  "current_month_label": "M1",
+  "mode": "LAUNCH",
+  "active_product_id": "PM-001",
+  "open_months": ["2027-01", "2027-04"],
+  "opportunistic_overlay_max_pct": 20,
+  "catalog_file": "strategy/PRODUCT-CATALOG.json",
+  "plan_file": "strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md",
+  "schedule": [
+    {"month": "2026-09", "label": "M1", "mode": "LAUNCH", "product_id": "PM-001", "opportunistic": ["soft_launch_webinar"]},
+    {"month": "2026-10", "label": "M2", "mode": "PRODUCE", "product_id": "PM-007", "opportunistic": ["linkedin_outbound_sprint"]},
+    {"month": "2026-11", "label": "M3", "mode": "PRODUCE", "product_id": "PM-010", "opportunistic": ["bfcm_bundle"]},
+    {"month": "2026-12", "label": "M4", "mode": "PRODUCE", "product_id": "PM-002", "opportunistic": ["year_end_consulting"]},
+    {"month": "2027-01", "label": "M5", "mode": "OPEN", "product_id": null, "opportunistic": ["new_year_challenge", "catalog_relaunch"]},
+    {"month": "2027-02", "label": "M6", "mode": "PRODUCE", "product_id": "PM-003", "opportunistic": ["jv_webinar"]},
+    {"month": "2027-03", "label": "M7", "mode": "PRODUCE", "product_id": "PM-005", "opportunistic": ["speaking_podcast_tour"]},
+    {"month": "2027-04", "label": "M8", "mode": "OPEN", "product_id": null, "opportunistic": ["agency_sprint_workshop", "event_slot"]},
+    {"month": "2027-05", "label": "M9", "mode": "PRODUCE", "product_id": "PM-004", "opportunistic": ["partner_colaunch"]},
+    {"month": "2027-06", "label": "M10", "mode": "PRODUCE", "product_id": "PM-006", "opportunistic": ["abm_pilot"]},
+    {"month": "2027-07", "label": "M11", "mode": "PRODUCE", "product_id": "PM-008", "opportunistic": ["summer_promo"]},
+    {"month": "2027-08", "label": "M12", "mode": "CAPSTONE", "product_id": "PM-009", "opportunistic": ["10_book_box_set", "year_2_planning"]}
+  ]
+}

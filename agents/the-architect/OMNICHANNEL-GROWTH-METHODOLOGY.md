@@ -4,7 +4,7 @@
 
 **One voice.** Platform changes format; author never changes.
 
-**Paired:** `OMNI-FORMAT-EXECUTION-METHODOLOGY.md` · `CONTENT-ENGINE-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md`
+**Paired:** `OMNI-FORMAT-EXECUTION-METHODOLOGY.md` · `CONTENT-ENGINE-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `B2B-OUTBOUND-ENTERPRISE-METHODOLOGY.md` (outbound depth, proposals)
 
 ---
 

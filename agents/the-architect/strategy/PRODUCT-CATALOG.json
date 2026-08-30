@@ -1,0 +1,100 @@
+{
+  "brand": "Persuasion Mechanics",
+  "author": "Samuel Freeman",
+  "author_title": "Chief Persuasion Architect",
+  "niche": ["ai", "ai_agents", "copywriting", "marketing", "direct_response"],
+  "default_chapters": 12,
+  "products": [
+    {
+      "id": "PM-001",
+      "angle": "mechanics_psychology",
+      "title": "The Autonomous Copywriter",
+      "subtitle": "How to Engineer Multi-Agent Marketing Systems That Research, Write, and Convert at Scale",
+      "hook": "Prompts don't convert—psychology does. Discover the step-by-step framework to turn raw AI into an autonomous direct-response engine that mines market desire and writes copy that sells.",
+      "slug": "the-autonomous-copywriter",
+      "priority": 1,
+      "flagship": true
+    },
+    {
+      "id": "PM-002",
+      "angle": "systems_architecture",
+      "title": "The Autonomous Revenue Engine",
+      "subtitle": "Building Multi-Agent AI Workflows That Turn Cold Traffic into Predictable Pipeline",
+      "hook": "Move beyond basic chatbot prompts. Learn how top growth operators build connected agent swarms that handle market research, ad creative, and lead qualification on total autopilot.",
+      "slug": "the-autonomous-revenue-engine",
+      "priority": 4
+    },
+    {
+      "id": "PM-003",
+      "angle": "classical_copywriting",
+      "title": "Breakthrough AI",
+      "subtitle": "Modernizing Classical Direct-Response Psychology for Autonomous Multi-Agent Systems",
+      "hook": "What happens when Eugene Schwartz's timeless conversion laws meet autonomous AI agents? You get an unstoppable sales machine that diagnoses prospect awareness and prints profit.",
+      "slug": "breakthrough-ai",
+      "priority": 6
+    },
+    {
+      "id": "PM-004",
+      "angle": "solopreneur_agency",
+      "title": "The 1-Person Agency Engine",
+      "subtitle": "How to Deploy Autonomous AI Agents to Scale Lead Gen, Copywriting, and Client Delivery",
+      "hook": "You don't need a 20-person creative department. Here is the operational blueprint to build, deploy, and profit from autonomous marketing agents with zero venture capital.",
+      "slug": "the-1-person-agency-engine",
+      "priority": 9
+    },
+    {
+      "id": "PM-005",
+      "angle": "data_conversion",
+      "title": "Engineered Persuasion",
+      "subtitle": "The System Architect's Guide to Multi-Agent Copywriting, Context Windows, and Algorithmic Sales",
+      "hook": "Stop guessing what your audience wants. Build autonomous agents that extract unfiltered buyer pain points from raw data and engineer high-converting sales letters in seconds.",
+      "slug": "engineered-persuasion",
+      "priority": 7
+    },
+    {
+      "id": "PM-006",
+      "angle": "enterprise_b2b",
+      "title": "The Agentic Funnel",
+      "subtitle": "How to Automate Prospect Research, High-Converting Copy, and B2B Deal Pipeline with AI",
+      "hook": "Traditional funnels leak revenue at every step. Discover how agentic workflows orchestrate every touchpoint—from first cold impression to closed-won enterprise deal.",
+      "slug": "the-agentic-funnel",
+      "priority": 10
+    },
+    {
+      "id": "PM-007",
+      "angle": "practical_implementation",
+      "title": "Building Direct-Response AI Agents",
+      "subtitle": "A Tactical Guide to Tool-Calling, Memory Architecture, and Automated Conversion Workflows",
+      "hook": "No theoretical fluff or generic ChatGPT prompts. This is your hands-on manual for designing, testing, and shipping autonomous agents built specifically to drive cash-in-bank conversions.",
+      "slug": "building-direct-response-ai-agents",
+      "priority": 2
+    },
+    {
+      "id": "PM-008",
+      "angle": "market_saturation",
+      "title": "The Machine-Speed Mechanism",
+      "subtitle": "Cutting Through Saturated Markets with Classical Copywriting and Autonomous AI",
+      "hook": "In an internet flooded with generic, AI-generated noise, only deep psychological mechanisms win. Here is how to program AI agents to build trust, handle objections, and close skeptical buyers.",
+      "slug": "the-machine-speed-mechanism",
+      "priority": 11
+    },
+    {
+      "id": "PM-009",
+      "angle": "lead_to_close",
+      "title": "The Zero-Click Sales Machine",
+      "subtitle": "Orchestrating Autonomous Agents to Generate Ads, Route Traffic, and Close High-Ticket Buyers",
+      "hook": "Turn your marketing operations into a self-tuning flywheel. Learn how autonomous sub-agents communicate with each other to test ad angles, refine copy, and optimize conversion rates 24/7.",
+      "slug": "the-zero-click-sales-machine",
+      "priority": 12
+    },
+    {
+      "id": "PM-010",
+      "angle": "step_by_step_blueprint",
+      "title": "The AI Direct-Response Playbook",
+      "subtitle": "System Prompts, Agentic Workflows, and Conversion Blueprints for the Modern Marketer",
+      "hook": "The definitive roadmap for growth marketers and operators looking to replace manual copywriting grind with self-executing, autonomous AI agent workflows.",
+      "slug": "the-ai-direct-response-playbook",
+      "priority": 3
+    }
+  ]
+}

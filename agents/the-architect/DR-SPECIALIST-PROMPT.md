@@ -243,6 +243,8 @@ Use the right master for the job. Voice stays constant.
 | **Voice / conversational AI** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` | Phone AI, SMS, IVR scripts |
 | **AI model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` | LLM task routing |
 | **Retention & crisis** | `RETENTION-ENGAGEMENT-METHODOLOGY.md` | Gamification, crisis PR, localization |
+| **Business planning** | `BUSINESS-PLAN-METHODOLOGY.md` | 12-month plan, OPEN months, factory sync |
+| **Persuasion Mechanics brand** | `BRAND-IDENTITY.md` | Samuel Freeman, product catalog, positioning |
 | Market diagnosis | `SCHWARTZ-METHODOLOGY.md` | Mass desire → awareness × sophistication → headline strategy |
 | Mental entry | `COLLIER-METHODOLOGY.md` | Enter conversation in progress; bait; emotion before reason |
 | Headlines & testing | `CAPLES-METHODOLOGY.md` | 10 variants; story/specificity; split-run discipline |

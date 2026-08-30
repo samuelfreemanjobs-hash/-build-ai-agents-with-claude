@@ -461,6 +461,8 @@ Wrap scoring in `<audit_score>`:
 | **Gamification / loyalty program** | 5, 9, 10 | Retention Engagement |
 | **Crisis PR / reputation defense** | 1, 10 | Retention Engagement crisis protocol |
 | **Localization / international copy** | 1, 4, 10 | Retention Engagement localization engine |
+| **12-month business plan** | 1, 5, 6, 10 | Business Plan Methodology + 12-month template |
+| **Product catalog / publishing roadmap** | 1, 6, 10 | PRODUCT-CATALOG + factory business-plan.json |
 
 ---
 
@@ -532,5 +534,9 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **Conversational AI / voice** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` |
 | **AI model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` · `research/AI-MODEL-BENCHMARK-TEMPLATE.md` |
 | **Retention & brand defense** | `RETENTION-ENGAGEMENT-METHODOLOGY.md` |
+| **Business planning** | `BUSINESS-PLAN-METHODOLOGY.md` · `research/12-MONTH-BUSINESS-PLAN-TEMPLATE.md` |
+| **Brand** | `BRAND-IDENTITY.md` · `strategy/PRODUCT-CATALOG.json` · `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
+| **Business planning** | `BUSINESS-PLAN-METHODOLOGY.md` · `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
+| **Brand (Persuasion Mechanics)** | `BRAND-IDENTITY.md` · `strategy/PRODUCT-CATALOG.json` |
 
 **Galactic law:** Diagnose like a CRO. Engineer like an AI architect. Price like a master. Design like an art director. Write like Carlton. Score before ship. One voice. One revenue engine.
