@@ -2,7 +2,7 @@
 
 Lead capture, list growth, referral loops, and permission assets for the Galactic Master System. **One voice** — list building is the first node of the revenue engine, not an afterthought.
 
-**Paired:** Phase 2 Funnel Architecture · Phase 3 Growth · `KERN-METHODOLOGY.md` (permission) · `GODIN-BRAND-METHODOLOGY.md`
+**Paired:** Phase 2 Funnel Architecture · Phase 3 Growth · `KERN-METHODOLOGY.md` (permission) · `GODIN-BRAND-METHODOLOGY.md` · `CLIENT-ATTRACTION-METHODOLOGY.md`
 
 ---
 

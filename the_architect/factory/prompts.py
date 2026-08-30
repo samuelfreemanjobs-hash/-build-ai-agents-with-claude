@@ -21,6 +21,7 @@ Write **Chapter {chapter_number} of {total}** for the Kindle book: **{title}**.
 ## Rules
 - One voice throughout (SYSTEM.md). Business thriller craft (BUSINESS-THRILLER-CRAFT.md).
 - End chapter on cliffhanger — never summarize at chapter end.
+- **Client attraction:** End with back-matter CTA block — resource, newsletter, or next-step for ideal reader (`CLIENT-ATTRACTION-METHODOLOGY.md`).
 - Framework teased, not dumped (unless this is the Gathering chapter per outline).
 - Run EDITOR-PASSES.md. Self-score QUALITY-RUBRIC.md (min 8.0).
 - Do NOT skip diagnostics — brief strategic note at top.
@@ -62,6 +63,7 @@ Generate today's **content factory output** for active launch: **{launch["title"
 - **{posts_per_day}** pieces minimum across: {platform_list}
 - Repurpose one core idea → platform-native variants (CONTENT-ENGINE-METHODOLOGY.md)
 - One voice. Trackable CTAs where promo (Kennedy DR).
+- **Client attraction:** Every post advances ideal avatar toward opt-in, DM, or conversation — no engagement bait without path.
 
 ## Project
 Slug: `{slug}`
@@ -123,10 +125,20 @@ Produce ALL of the following. Save each to `agents/the-architect/projects/{slug}
 | content_calendar_7day | `assets/content-calendar-7d.md` | CONTENT-ENGINE |
 | funnel_map | `assets/funnel-map.md` | FUNNEL-ARCHITECTURE |
 
+## Client attraction (non-negotiable)
+Every asset in the manifest must pass the **5A stack** (`CLIENT-ATTRACTION-METHODOLOGY.md`):
+- Avatar: one ideal buyer with ability + urgency to pay
+- Angle: mass desire channeled toward this offer category
+- Action: one trackable CTA per asset
+- Ascension: connects to list, funnel, or backend — no dead ends
+- Anti-commodity: repels wrong fits, magnetizes right ones
+
+Include a **Client Attraction Note** (3–5 bullets) in `LAUNCH-INDEX.md` per asset.
+
 ## Workflow
 1. `architect_init_project` — name: `{launch["title"]}`, brief above
 2. INTAKE → RESEARCH → DIAGNOSE → PLAN → produce each asset → EDIT → SCORE
-3. Each asset: rubric ≥ 8.0 or flag gap in revision log
+3. Each asset: rubric ≥ 8.0 + client attraction audit or flag gap in revision log
 4. Final: Strategic + Technical Diagnostic Summary + launch index `LAUNCH-INDEX.md` linking all assets
 5. `architect_ship_gate` before declaring complete
 6. `architect_record_insight` — what worked for this launch

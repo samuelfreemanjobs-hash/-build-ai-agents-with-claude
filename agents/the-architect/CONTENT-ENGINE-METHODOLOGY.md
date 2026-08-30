@@ -2,7 +2,7 @@
 
 Phase 3 of the Galactic Master System — viral growth, social iconography, and content planning. **One voice** — platform-native packaging, same author underneath.
 
-**Paired:** `GODIN-BRAND-METHODOLOGY.md` · `CELEBRITY-BUILDING-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `MICRO-COPY-LAB.md`
+**Paired:** `GODIN-BRAND-METHODOLOGY.md` · `CELEBRITY-BUILDING-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `MICRO-COPY-LAB.md` · `CLIENT-ATTRACTION-METHODOLOGY.md`
 
 ---
 

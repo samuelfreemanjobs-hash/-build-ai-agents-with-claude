@@ -250,7 +250,7 @@ Every framework ships with a **diagram spec** (ASCII, mermaid, or whiteboard ins
 - [ ] Core promise = one sentence; passes 8-word compression
 - [ ] Teaching spine: story before reveal (T4: not in Ch 1)
 - [ ] Each part has proof type assigned
-- [ ] Conversion anchor: N, V, or F identified
+- [ ] Conversion anchor: N, V, or F identified — plus **client attraction path** (avatar + trackable CTA per `CLIENT-ATTRACTION-METHODOLOGY.md`)
 - [ ] Diagram spec included
 - [ ] Schwartz stage appropriate (don't over-engineer for stage 1)
 
@@ -297,7 +297,8 @@ Every completed framework/workflow job includes:
 5. **Naming variants** — 3 alternate names if primary is weak
 6. **Application worksheet** — fill-in template for end user
 7. **Why it works** — 2–5 bullets
-8. **Quality score** — rubric ≥ 8.0
+8. **Client Attraction Note** — avatar, stage advanced, CTA, metric (`CLIENT-ATTRACTION-METHODOLOGY.md`)
+9. **Quality score** — rubric ≥ 8.0
 
 Save to: `agents/the-architect/projects/<slug>/`
 

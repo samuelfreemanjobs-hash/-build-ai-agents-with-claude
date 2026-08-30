@@ -97,6 +97,20 @@ If no → fix the angle before writing more.
 
 ---
 
+## Pass 5b: Client Attraction Audit
+
+**Job:** Ensure the piece attracts ideal clients — not vanity applause.
+
+- **5A stack** (`CLIENT-ATTRACTION-METHODOLOGY.md`): Avatar, Angle, Action, Ascension, Anti-commodity — all pass?
+- Which **attraction stage** does this move (Attention → Trust → Desire → Action → Ascension)?
+- **Trackable action** named (opt-in, reply, book, buy) — not "learn more" without a path.
+- **Ascension path** clear: what happens after they act? (list, nurture, offer, backend)
+- **Wrong-fit repulsion:** does it filter freebie hunters / tire-kickers?
+
+If any fail → rewrite before Pass 6.
+
+---
+
 ## Pass 6: Purple Cow + Brand + Ethics
 
 **Job:** Final quality gate.

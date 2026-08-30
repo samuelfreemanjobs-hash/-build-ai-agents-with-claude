@@ -17,6 +17,8 @@ One voice. No modes. Runs on schedule via GitHub Actions + `the-architect factor
 
 **Target throughput:** 1 chapter/day · 1 product/week · continuous content during launch windows.
 
+**North star:** Everything the factory produces must **attract ideal clients** — see `CLIENT-ATTRACTION-METHODOLOGY.md`.
+
 ---
 
 ## Quick start
@@ -171,6 +173,7 @@ Factory runs use **Galactic v3** phases 1–10. Chapter runs → `BUSINESS-THRIL
 3. **Outline first** — run `factory outline` once before daily chapters.
 4. **Queue launches** — register Monday's product Sunday night; workflow fires Monday 08:00 UTC.
 5. **Review commits** — Actions push to repo; human reviews PR or main as your process requires.
+6. **Client attraction** — every chapter ends with CTA block; every content batch has trackable next step; every launch includes lead magnet + funnel path.
 
 ---
 

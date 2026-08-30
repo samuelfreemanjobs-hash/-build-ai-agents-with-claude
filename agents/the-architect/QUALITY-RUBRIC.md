@@ -165,6 +165,17 @@ Page-turner discipline? Clues, clocks, cliffhangers? Framework as revelation?
 | 7–8 | Cold open; chapter ends on question; clock active; partial reveals |
 | 9–10 | Fair-play clues; red herring dismantled; gathering reveal; Patterson cliff every chapter; Chekhov paid off |
 
+### 16. Client Attraction (Architect — all assets)
+Does this attract ideal clients toward a trackable next step?
+
+| Score | Criteria |
+|---|---|
+| N/A | Pure internal diagnostic — must still document how it enables attraction |
+| 1–3 | No CTA; wrong avatar; awareness wallpaper; dead-end content |
+| 4–6 | Weak CTA or vague audience; no funnel connection |
+| 7–8 | Clear avatar + CTA + ascension path |
+| 9–10 | Magnetic: repels wrong fits, pulls ideal client to inevitable next step; metric named |
+
 ---
 
 ## Output Format
@@ -189,6 +200,7 @@ Page-turner discipline? Clues, clocks, cliffhangers? Framework as revelation?
 | Slippery Slide & Triggers | /10 or N/A | |
 | Narrative Mastery | /10 or N/A | |
 | Business Thriller Pace | /10 or N/A | |
+| Client Attraction | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```

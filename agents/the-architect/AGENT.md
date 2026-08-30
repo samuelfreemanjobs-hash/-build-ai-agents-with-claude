@@ -59,7 +59,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | **Workflow / SOP / process design** | Workflow Design template + framework map + gates + metrics |
 | Story-led copy | Story arc + Sugarman |
 | Business book / T4 chapter | Story arc + Book thriller outline |
-| Punch-up | Read existing + abbreviated diagnose |
+| Punch-up | Read existing + abbreviated diagnose + client attraction audit |
 
 ---
 
@@ -119,6 +119,7 @@ Every completed task outputs:
 5. **Quality score** — full rubric table
 6. **Diagnostics** — saved templates used (in project folder)
 7. **Craft insight** — `architect_record_insight` with one thing that worked (feeds continuous improvement)
+8. **Client Attraction Note** — avatar, 5A stage, CTA, funnel path, metric (`CLIENT-ATTRACTION-METHODOLOGY.md`)
 
 Save to: `agents/the-architect/projects/<slug>/`
 

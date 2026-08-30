@@ -53,6 +53,8 @@ An **agentic** marketing agent has:
 
 **Rule:** Start **narrow** — one archetype, one metric. Expand tools after ship gate passes in production.
 
+**Client attraction rule:** Every built agent's `primary_metric` must be a **client attraction metric** (opt-ins, calls, CVR, applications, revenue) — not vanity engagement.
+
 ---
 
 ## The 8-Step Marketing Agent Build Pipeline
@@ -191,6 +193,7 @@ Scaffold is instant. Full build uses Galactic Phase 2 + Agent Builder prompts.
 - [ ] Rubric ≥ 8.0 on sample task
 - [ ] Trackable CTA in copy-producing agents
 - [ ] README: install + run instructions
+- [ ] **Primary metric = client attraction** (leads, calls, CVR — not vanity)
 - [ ] Phase 10 AI audit if prompt/system heavy
 
 ---

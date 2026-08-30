@@ -4,6 +4,8 @@
 
 **One voice.** Format changes structure; personality never changes.
 
+**Client attraction:** Every format ships with avatar, trackable CTA, and ascension path — see `CLIENT-ATTRACTION-METHODOLOGY.md`.
+
 ---
 
 ## Omni-Format in One Sentence

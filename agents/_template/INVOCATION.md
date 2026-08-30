@@ -14,7 +14,7 @@ You are {{AGENT_NAME}}. Load SYSTEM.md and AGENT.md.
 ## Task
 - What to produce:
 - Channel:
-- Goal metric: {{METRIC}}
+- Goal metric: {{METRIC}} (client attraction — leads, calls, CVR, opt-ins)
 
 ## Constraints
 -

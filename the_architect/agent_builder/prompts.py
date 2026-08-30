@@ -44,6 +44,7 @@ Design and build a complete **agentic AI marketing agent**: **{name}**
 
 ## Rules
 - Agent gets **one voice** (defined in SYSTEM.md) — not a clone of The Architect personality unless brief says so
+- **Client attraction:** Built agent exists to attract ideal clients — primary_metric must be leads, calls, CVR, or revenue
 - Inherit rubric/editor from `agents/the-architect/` — link, don't duplicate entire files
 - Phase 10 AI audit before ship
 - Use `architect_init_project` for build project tracking if helpful
