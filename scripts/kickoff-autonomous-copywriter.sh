@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Kick off The Autonomous Copywriter (FI-001): outline + chapter 1
 # Run locally — Cloud Agent VMs block api.anthropic.com egress.
+# For book + launch content, use: ./scripts/start-factory.sh
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
