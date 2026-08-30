@@ -16,6 +16,7 @@ import { scrapeWhartonGail, WHARTON_COLLECTION } from './sources/wharton-gail-pa
 import { scrapeAnthropicPromptLibrary, ANTHROPIC_COLLECTION } from './sources/anthropic-prompt-parser'
 import { scrapeGammaPromptLibrary, GAMMA_COLLECTION } from './sources/gamma-prompt-parser'
 import { scrapeSnackPromptLibrary, SNACKPROMPT_COLLECTION } from './sources/snackprompt-parser'
+import { scrapeGeminiPromptLibrary, GEMINI_COLLECTION } from './sources/gemini-prompt-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -237,6 +238,32 @@ async function main() {
       db,
       scraped,
       { name: SNACKPROMPT_COLLECTION.name, url: SNACKPROMPT_COLLECTION.sourceUrl },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
+
+  if (options.source === 'gemini-api-prompts' || options.source === 'all') {
+    console.log('📚 Importing Gemini API Prompt Gallery...')
+    console.log(`   Source: ${GEMINI_COLLECTION.sourceUrl}`)
+    if (options.live) console.log('   Mode: live scrape (gallery + GitHub cookbook)')
+    else console.log('   Mode: GitHub cookbook (google-gemini/cookbook) + seed')
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const { prompts: scraped, method, message } = await scrapeGeminiPromptLibrary({
+      live: options.live,
+      existingPrompts: db.prompts,
+      limit: options.limit,
+    })
+    console.log(`Extracted ${scraped.length} transformed prompts (${method})`)
+    if (message) console.log(`   ${message}`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      { name: GEMINI_COLLECTION.name, url: GEMINI_COLLECTION.sourceUrl },
       options.dryRun
     )
 

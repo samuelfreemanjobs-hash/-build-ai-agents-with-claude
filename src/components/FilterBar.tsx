@@ -64,6 +64,7 @@ export function FilterBar({
             { value: 'anthropic-prompt-library', label: '🤖 Anthropic Library' },
             { value: 'gamma-prompt-library', label: '📊 Gamma Library' },
             { value: 'snackprompt', label: '🍿 Snack Prompt' },
+            { value: 'gemini-api-prompts', label: '💎 Gemini API' },
           ]}
         />
 
