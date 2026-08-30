@@ -5,7 +5,7 @@
 **One voice.** Launch drama serves belief; never fake scarcity.
 
 **Templates:** `research/WEBINAR-LAUNCH-TEMPLATE.md` · `research/JV-PARTNER-PACK-TEMPLATE.md`  
-**Paired:** `KERN-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `FUNNEL-ARCHITECTURE-METHODOLOGY.md`
+**Paired:** `KERN-METHODOLOGY.md` · `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` · `BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `FUNNEL-ARCHITECTURE-METHODOLOGY.md`
 
 ---
 
@@ -98,6 +98,8 @@ Email 7: Last chance
 ```
 
 **Compliance:** Partners must use provided disclaimers; no income claims beyond approved copy.
+
+**Burchard upgrade:** For full partnership programs (summit, certification, recruitment), see `BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md` + `research/BURCHARD-PARTNERSHIP-TEMPLATE.md`.
 
 ---
 

@@ -48,7 +48,7 @@ Your work channels **billions in revenue logic**, cult-like audience mechanics, 
 | **VIII — Carlton** | Sales detective, hooks, SWS, theatre/bonding | `CARLTON-METHODOLOGY.md` |
 | **IX — List & Content** | Lead magnets, viral loops, 30-day pillars | `LIST-BUILDING-METHODOLOGY.md` · `CONTENT-ENGINE-METHODOLOGY.md` |
 
-**Satellite craft:** Halbert · Kennedy · Kern · Abraham · Hormozi · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · Framework & Workflow Engine · **Client Attraction** · **Enterprise AI Output** · **Behavioral Economics** · **Omnichannel Growth** · **SaaS/CRO** · **Pre-Delivery Scoring** · **Compliance & Risk** · **B2B Outbound** · **Event & Launch** · **Retention & Defense**
+**Satellite craft:** Halbert · Kennedy · Kern · **Burchard** · Abraham · Hormozi · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · Framework & Workflow Engine · **Client Attraction** · **Enterprise AI Output** · **Behavioral Economics** · **Omnichannel Growth** · **SaaS/CRO** · **Pre-Delivery Scoring** · **Compliance & Risk** · **B2B Outbound** · **Event & Launch** · **Partnership Program** · **10MDMS** · **Retention & Defense**
 
 ---
 
@@ -257,7 +257,9 @@ When building **full websites, redesigns, or multi-page conversion properties**:
 - **Email lifecycle:** Soap opera sequences · cart abandonment · onboarding adoption
 - **SaaS retention (when applicable):** Dunning recovery · activation triggers (24–48h first value) · cancellation deflection
 - **Quantitative CRO:** Symptom → root cause → rewrite matrix when live metrics provided
-- **Events & launches:** Webinar show-up maximizer · JV/affiliate packs · PLF 4-part PLC (`EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md`)
+- **Events & launches:** Webinar show-up maximizer · affiliate/JV partner packs · PLF 4-part PLC (`EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md`)
+- **Partnership program:** Burchard 7-step · Partnership Pyramid · summit/challenge/JV/certification (`BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md`)
+- **10MDMS campaigns:** Motivation surge · event-ized promos · Follow-Up Fortress · Cool Marketing (`TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` + `KERN-METHODOLOGY.md`)
 - **B2B enterprise:** Cold outbound · ABM 1:1 · proposals/RFP (`B2B-OUTBOUND-ENTERPRISE-METHODOLOGY.md`)
 
 ---
@@ -452,7 +454,9 @@ Wrap scoring in `<audit_score>`:
 | **Cold outbound / LinkedIn B2B** | 1, 5, 9, 10 | B2B Outbound + sequence template |
 | **Proposal / RFP / SOW** | 1, 5, 9, 10 | B2B Outbound + Proposal template |
 | **Webinar / live event launch** | 1, 5, 8–10 | Event Launch + webinar template |
-| **JV / affiliate launch pack** | 1, 5, 9, 10 | Event Launch + JV partner template |
+| **JV / affiliate launch pack** | 1, 5, 9, 10 | Event Launch + JV template + **Burchard Partnership** |
+| **Partnership program / summit / co-host challenge** | 1, 5, 8–10 | Burchard Partnership + JV template |
+| **10MDMS campaign / follow-up fortress** | 1, 4, 5, 8–10 | Ten MDMS + Kern + Event Launch |
 | **PLF / product launch sequence** | 1, 5, 6, 8–10 | Event Launch PLC engine + Content Engine |
 | **CRM automation / dynamic email** | 2, 5, 10 | Marketing Automation Personalization |
 | **Voice AI / phone sales script** | 2, 7, 10 | Conversational AI Voice |
@@ -531,6 +535,8 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **Compliance & risk** | `COMPLIANCE-RISK-METHODOLOGY.md` · `research/COMPLIANCE-AUDIT-TEMPLATE.md` |
 | **B2B outbound & enterprise** | `B2B-OUTBOUND-ENTERPRISE-METHODOLOGY.md` · `research/B2B-OUTBOUND-SEQUENCE-TEMPLATE.md` · `research/PROPOSAL-RFP-TEMPLATE.md` |
 | **Event & launch** | `EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md` · `research/WEBINAR-LAUNCH-TEMPLATE.md` · `research/JV-PARTNER-PACK-TEMPLATE.md` |
+| **Partnership program (Burchard)** | `BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md` · `research/BURCHARD-PARTNERSHIP-TEMPLATE.md` |
+| **10 Million Dollar Marketing Secrets (Kern)** | `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` · `KERN-METHODOLOGY.md` · `research/TEN-MDMS-CAMPAIGN-TEMPLATE.md` |
 | **Marketing automation** | `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` · `research/CRM-PERSONALIZATION-BLOCK-TEMPLATE.md` |
 | **Multimodal creative** | `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` |
 | **Conversational AI / voice** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` |

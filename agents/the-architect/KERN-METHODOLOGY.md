@@ -255,3 +255,5 @@ Risk shifts to seller. Unconditional or performance guarantees. Friction at chec
 ---
 
 **Celebrity / personal brand:** Kern IBB maps directly to the 7-layer celebrity stack — pre-frame (origin myth), indoctrinate (war stories + polarity), convert (access offer). See `CELEBRITY-BUILDING-METHODOLOGY.md`, `research/CELEBRITY-FABRICATION-TEMPLATE.md`.
+
+**10MDMS extension:** Motivation surges, Follow-Up Fortress, event-ized campaigns, Cool Marketing — `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` + `research/TEN-MDMS-CAMPAIGN-TEMPLATE.md`.

@@ -119,6 +119,19 @@ Industrial: Done-with-you Demand Machine build ($10K–$25K)
 4. Lean Revenue System (DMAIC + DR)
 5. Book bundle + architecture call CTA
 
+### Sequence C — Partner recruitment (Burchard 7-step)
+
+1. Value deposit — promote partner's work first
+2. Alignment story — shared audience
+3. Invitation — summit slot or JV window
+4. Partner pack delivery — swipes + calendar
+5. Launch week support + leaderboard
+6. Results celebration + next collab
+
+### Sequence D — 10MDMS Follow-Up Fortress (cart open)
+
+See `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` — pre-write all fortress emails before cart opens.
+
 ---
 
 ## Production schedule (post Year 1 box set)

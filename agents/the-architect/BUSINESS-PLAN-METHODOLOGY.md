@@ -55,7 +55,8 @@
 |---|---|---|
 | Trending news reactive | 24–48h | Thread, magnet, email |
 | Webinar / challenge | 1–2 weeks | `WEBINAR-LAUNCH-TEMPLATE.md` |
-| JV / affiliate | 2–3 weeks | `JV-PARTNER-PACK-TEMPLATE.md` |
+| JV / affiliate | 2–3 weeks | `JV-PARTNER-PACK-TEMPLATE.md` + `BURCHARD-PARTNERSHIP-TEMPLATE.md` |
+| 10MDMS campaign | 1–2 weeks | `TEN-MDMS-CAMPAIGN-TEMPLATE.md` |
 | Consulting sprint | Immediate | `PROPOSAL-RFP-TEMPLATE.md` |
 | Event / speaking | 1 week | Talk outline + stage offer |
 | Short course | 2 weeks | Info-product architecture |

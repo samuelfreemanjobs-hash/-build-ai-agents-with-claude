@@ -49,7 +49,9 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | **Cold outbound / LinkedIn B2B** | B2B Outbound + Outbound sequence template |
 | **Proposal / RFP / SOW** | B2B Outbound + Proposal template |
 | **Webinar / live event / PLF launch** | Event Launch + Webinar or JV template |
-| **JV / affiliate partner pack** | Event Launch + JV partner template |
+| **JV / affiliate partner pack** | Event Launch + JV partner template + Burchard Partnership |
+| **Partnership program / summit** | Burchard Partnership + Burchard template |
+| **10MDMS campaign** | Ten MDMS + Kern + TEN-MDMS campaign template |
 | **CRM automation / dynamic email** | Marketing Automation Personalization |
 | **Voice AI / phone sales script** | Conversational AI Voice |
 | **Multimodal image/video prompts** | Multimodal Creative Prompting |
