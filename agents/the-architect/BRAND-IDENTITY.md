@@ -1,9 +1,9 @@
 # Brand Identity — Persuasion Mechanics
 
 **Author:** Samuel Freeman  
-**Title:** Chief Persuasion Architect  
+**Title:** Chief Persuasion Architect · **Revenue Systems Engineer**  
 **Business:** Persuasion Mechanics  
-**Niche:** AI · AI agents · copywriting · marketing · direct-response · product design
+**Niche:** AI · AI agents · copywriting · marketing · direct-response · product design · revenue systems · growth architecture
 
 ---
 
@@ -24,7 +24,9 @@ Cross-sell line (use in back matter, email, site):
 
 ## Positioning (one sentence)
 
-> **Samuel Freeman builds AI-powered persuasion systems — autonomous agents, conversion copy, and marketing architecture — for operators who sell with words.**
+> **Samuel Freeman engineers revenue systems — logistics, AI agents, direct-response psychology, and growth architecture wired into one machine — for operators who sell with words.**
+
+**Dual title logic:** *Chief Persuasion Architect* owns the **psychology layer**; *Revenue Systems Engineer* owns the **architecture layer** (funnels, metrics, martech, agent runtime, launch ops).
 
 ---
 
@@ -40,7 +42,7 @@ Cross-sell line (use in back matter, email, site):
 
 ```
 Samuel Freeman
-Chief Persuasion Architect, Persuasion Mechanics
+Chief Persuasion Architect · Revenue Systems Engineer, Persuasion Mechanics
 Author of AI Product Design Mastery (Kindle)
 ```
 
@@ -123,6 +125,8 @@ cp .env.example .env
 |---|---|
 | **Published** | `strategy/PUBLISHED-CATALOG.json` |
 | **Pipeline (10 Kindle)** | `strategy/PRODUCT-CATALOG.json` |
+| **Book ideas (50)** | `strategy/BOOK-IDEA-CATALOG.json` |
+| **Revenue Systems Engineer ideas (36)** | `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json` |
 | **12-month plan** | `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
 | **Factory sync** | `factory/business-plan.json` · `factory/state.json` |
 

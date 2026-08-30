@@ -4,6 +4,7 @@
   "author": "Samuel Freeman",
   "total_concepts": 50,
   "id_range": "PM-000 through PM-049",
+  "revenue_systems_extension": "strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json",
   "status_legend": {
     "live_kindle": "Published on KDP",
     "scheduled": "In PRODUCT-CATALOG.json / 12-month plan",

@@ -5,6 +5,7 @@
   "niche": ["ai", "ai_agents", "copywriting", "marketing", "direct_response", "ai_product_design"],
   "published_catalog": "strategy/PUBLISHED-CATALOG.json",
   "book_idea_catalog": "strategy/BOOK-IDEA-CATALOG.json",
+  "revenue_systems_book_catalog": "strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json",
   "default_chapters": 12,
   "products": [
     {

@@ -9,7 +9,8 @@
 | **SCHEDULED** | In `PRODUCT-CATALOG.json` / 12-month plan |
 | **BACKLOG** | High-demand — slot when ready |
 
-Machine index: `strategy/BOOK-IDEA-CATALOG.json`
+Machine index: `strategy/BOOK-IDEA-CATALOG.json`  
+**Revenue Systems Engineer extension (36):** `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.md` · PM-050–PM-085
 
 ---
 
