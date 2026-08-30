@@ -1,6 +1,6 @@
 # Galactic Executive Diagnostic — [Project / Campaign]
 
-Phase 1 strategic diagnosis. Complete before funnel, content, product, or copy execution.
+**Galactic v3 — Phase 1:** Executive Intelligence, Research & Pricing Engine. Complete before funnel, AI system, visual design, content, product, or copy execution.
 
 **Project:**  
 **Date:**  
@@ -10,65 +10,135 @@ Phase 1 strategic diagnosis. Complete before funnel, content, product, or copy e
 
 ---
 
-## 1A — Revenue Engine & Unit Economics (CRO)
+## 1A — Revenue Opportunity & Discovery Intel
 
-| Metric | Target | Current (if known) |
-|---|---|---|
-| CAC | $ | $ |
-| AOV | $ | $ |
-| LTV | $ | $ |
-| Gross margin | % | % |
-| Payback period | days | |
-| Monthly churn (if recurring) | % | % |
-
-**LTV monetization model:** Front-end + backend + continuity?
-
-**Primary Abraham lever:** ☐ N ☐ V ☐ F
+| Field | Answer |
+|---|---|
+| Market arbitrage / white space | |
+| Unexploited channels or sub-segments | |
+| Monetization multiplier #1 | |
+| Monetization multiplier #2 | |
+| Backend / ascension opportunity | |
 
 ---
 
-## 1B — Business Architecture & Positioning (fCMO)
+## 1B — Marketing Research & Competitive Intelligence
+
+**VoC lexicon (min 20 phrases):**
+
+| # | Verbatim phrase | Emotion tag |
+|---|---|---|
+| 1 | | |
+| … | | |
+
+| Metric | Benchmark | Current | Gap |
+|---|---|---|---|
+| CAC | | | |
+| ROAS / MER | | | |
+| LTV | | | |
+| CVR (key stage) | | | |
+| Churn (if recurring) | | | |
+
+**Top funnel drop-off stage + hypothesis:**
+
+**Competitor sophistication stage (1–5):**
+
+---
+
+## 1C — Business Architecture & GTM (fCMO)
 
 | Field | Answer |
 |---|---|
 | Market moat / "only-ness" | |
 | Ownable word (Ries) | |
 | Category name | |
-| GTM mix (paid / organic / affiliate / DM) | |
-| Primary traffic source | |
+| Omnichannel GTM mix | |
+| Lowest CAC:LTV channel hypothesis | |
+
+**Unit economics:**
+
+| Metric | Target |
+|---|---|
+| CAC | $ |
+| AOV | $ |
+| LTV | $ |
+| Payback period | days |
+| Primary Abraham lever | ☐ N ☐ V ☐ F |
 
 ---
 
-## 1C — Mass Desire Excavation (Schwartz)
+## 1D — Pricing Master Architecture
+
+| Field | Answer |
+|---|---|
+| Economic value basis (not cost-plus) | |
+| Anchor / decoy tier (if used) | |
+| Primary target price | $ |
+| Stack total (perceived value) | $ |
+| Stack ÷ price ratio | × |
+| Payment terms | ☐ Full ☐ Split ☐ Trial ☐ Usage |
+| Price elasticity hypothesis | |
+
+*Full stack: `research/GRAND-SLAM-OFFER-TEMPLATE.md`*
+
+---
+
+## 1E — Mass Desire Excavation (Schwartz)
 
 | Field | Answer |
 |---|---|
 | Primary emotional drive | |
-| Permanent vs transient motivation | |
+| Permanent vs transient | |
 | Direction: ☐ Away from pain ☐ Toward identity | |
-| Physical product → functional benefit | |
+| Physical → functional benefit | |
 
 ---
 
-## 1D — Consumer Awareness Stage
+## 1F — Awareness & Sophistication
 
-**Select one:** ☐ Most Aware ☐ Product-Aware ☐ Solution-Aware ☐ Problem-Aware ☐ Unaware
+**Awareness:** ☐ Most Aware ☐ Product-Aware ☐ Solution-Aware ☐ Problem-Aware ☐ Unaware
 
-**Lead strategy for this stage:**
-
----
-
-## 1E — Market Sophistication Stage
-
-**Select one:** ☐ 1 Direct ☐ 2 Enlarge ☐ 3 Mechanism ☐ 4 Elaborate mechanism ☐ 5 Identification
-
-**Winning strategy:**
+**Sophistication:** ☐ 1 ☐ 2 ☐ 3 Mechanism ☐ 4 ☐ 5 Identification
 
 **Named mechanism (if 3+):**
 
+**Lead strategy:**
+
 ---
 
-## Phase 2 — Funnel Selection
+## Phase 2 — AI System (if applicable)
+
+| Field | Answer |
+|---|---|
+| System purpose | |
+| Topology | ☐ Pipeline ☐ Router ☐ Eval-optimizer |
+| RAG / memory needed? | ☐ |
+| Key tools / APIs | |
+
+*Full: `research/AI-SYSTEM-DESIGN-TEMPLATE.md`*
+
+---
+
+## Phase 3 — Visual / Packaging (if applicable)
+
+| Field | Answer |
+|---|---|
+| Premium vs accessible positioning | |
+| Palette / mood direction | |
+| Packaging type (mockup, UI, workbook) | |
+| Primary CTA micro-copy | |
+
+---
+
+## Phase 4 — Format Selection
+
+**Primary format blueprint:** ☐ F-MED ☐ F-ECOM ☐ F-SALES ☐ F-AD ☐ F-UI ☐ F-DM ☐ F-BOOK ☐ F-LP ☐ F-EMAIL ☐ F-MAG ☐ F-BLOG ☐ F-LEAD ☐ F-SOC
+
+*See `OMNI-FORMAT-EXECUTION-METHODOLOGY.md`*
+
+---
+
+## Phase 5 — Funnel Selection
 
 **Architecture:** ☐ Squeeze ☐ Tripwire+OTO ☐ VSL/Webinar ☐ PLC ☐ Evergreen ☐ Subscription
 
@@ -79,46 +149,33 @@ Phase 1 strategic diagnosis. Complete before funnel, content, product, or copy e
 | Belief | | |
 | Convert | | |
 | Ascend | | |
-| Retain | | |
 
 ---
 
-## Phase 3 — Content & Growth
-
-| Field | Answer |
-|---|---|
-| Master content asset (1→10+ source) | |
-| Primary social platforms | |
-| 30-day pillar mix planned? | ☐ |
-| Referral / viral loop | |
-
----
-
-## Phase 4 — Info-Product (if applicable)
+## Phase 6 — Info-Product (if applicable)
 
 | Field | Answer |
 |---|---|
 | Point A (nightmare) | |
 | Point B (dream outcome) | |
 | Module count (3–7) | |
-| Implementation toolkit items | |
-| Bonus stack vs objections | |
+| Implementation toolkit | |
 
 *Full: `INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md`*
 
 ---
 
-## Phase 5–6 — Hook & SWS
+## Phase 7–8 — Hook & SWS
 
 **Primary hook (8-word test):**
 
-**One-Legged Golfer angle (if used):**
+**One-Legged Golfer angle:**
 
-**SWS checklist started?** ☐ `CARLTON-SWS-TEMPLATE.md`
+**SWS started?** ☐ `CARLTON-SWS-TEMPLATE.md`
 
 ---
 
-## Strategic & System Diagnostic Summary (SHIP HEADER)
+## Strategic, Technical & System Diagnostic Summary (SHIP HEADER)
 
 | Field | Locked answer |
 |---|---|
@@ -127,18 +184,22 @@ Phase 1 strategic diagnosis. Complete before funnel, content, product, or copy e
 | **Sophistication** | |
 | **Core mechanism** | |
 | **Primary hook** | |
+| **Pricing architecture** | |
+| **AI/system blueprint** | |
+| **Visual direction** | |
 | **Funnel model** | |
 | **Revenue metric target** | |
 
 ---
 
-## Phase 9 — Pre-Ship Audit Preview
+## Phase 10 — Pre-Ship Audit Preview
 
 | Audit | Pass? |
 |---|---|
 | Gun to the Head | ☐ |
-| CRO / unit economics | ☐ |
-| Bigger mice (agitation) | ☐ |
-| Viral / content | ☐ |
-| Visual rhythm | ☐ |
+| AI & context engineering | ☐ N/A |
+| Pricing & unit economics | ☐ |
+| Visual art direction | ☐ N/A |
+| Bigger mice | ☐ |
+| Grand Slam / stack | ☐ |
 | Rubric ≥ 8.0 | ☐ |
