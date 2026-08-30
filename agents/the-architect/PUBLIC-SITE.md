@@ -9,12 +9,11 @@
 
 | URL | Path | Purpose |
 |---|---|---|
-| `/` | `index.html` | **DR squeeze** — Dual-Intel Discovery Kit + Systems Lab upsell |
+| `/` | `index.html` | **DR squeeze** — Revenue Intel Briefing form (ICP + niche → email) |
 | `/waitlist/` | `waitlist/index.html` | FI-001 launch waitlist · tag `waitlist` |
 | `/rubric/` | `rubric/index.html` | DR rubric lead magnet · tag `lead_rubric` |
 | `/cohort/` | `cohort/index.html` | Dual-Intel Systems Lab $497 · tag `cohort_interest` |
-| `/downloads/marketing-intel-brief.html` | Marketing Intel Brief (4 pages) |
-| `/downloads/revenue-intel-brief.html` | Revenue Intel Brief (4 pages) |
+| `/api/revenue-intel-briefing.php` | Generates + emails personalized Revenue Intel Briefing |
 | `/downloads/dr-rubric-install.html` | Printable rubric (save as PDF) |
 
 **Internal (separate):** `/ops/` — password-protected backend dashboard
@@ -27,7 +26,7 @@
 
 | Offer | Price | ESP tag | Role |
 |---|---|---|---|
-| **Dual-Intel Discovery Kit** | Free | `lead_dual_intel` | Marketing Intel + Revenue Intel briefs — discover opportunity in 48h |
+| **Revenue Intel Briefing** | Free | `revenue_intel_briefing` | ICP + niche → personalized briefing emailed |
 | **DR Rubric 10-Min Install** | Free | `lead_rubric` | Secondary free line on `/rubric/` |
 | **FI-001 Waitlist** | Free | `waitlist` | Kindle launch list |
 | **Dual-Intel Systems Lab** (Founding Cohort) | $497 | `cohort_interest` | Install both intel layers · 30-day implementation |

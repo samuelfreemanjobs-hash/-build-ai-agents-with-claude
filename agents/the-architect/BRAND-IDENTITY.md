@@ -20,11 +20,7 @@ Cross-sell line (use in back matter, email, site):
 
 > *You mastered AI product design. Now engineer the intelligence layer — multi-agent systems that research, write, and convert.*
 
-**Primary free line (homepage squeeze):** *Dual-Intel Discovery Kit* — Marketing Intel Brief + Revenue Intel Brief + 48-hour discovery worksheet. ESP tag: `lead_dual_intel`.
-
-**Flagship backend (M1):** *Dual-Intel Systems Lab* — Founding Cohort, $497, 20 seats. Application via `/cohort/`.
-
-**Opportunity thesis:** Operators automated creation AI but not discovery. Marketing Intel = what converts (upstream). Revenue Intel = what pays (downstream). See `strategy/OPPORTUNITY-DISCOVERY.md`.
+**Primary free line (homepage):** *Revenue Intel Briefing* — user submits ICP + market/niche → personalized briefing emailed. ESP tag: `revenue_intel_briefing`. API: `/api/revenue-intel-briefing.php`.
 
 ---
 

@@ -77,18 +77,15 @@ Creation tools are commodities. **Dual-intel systems are the moat.**
 
 ## Offer architecture (M1)
 
-### Free line — Dual-Intel Discovery Kit
+### Free line — Revenue Intel Briefing (personalized email)
 
-Two 4-page reports (squeeze both on homepage):
+| Asset | Delivers | ESP tag |
+|---|---|---|
+| **Revenue Intel Briefing** | ICP + niche in → personalized briefing emailed (churn signals, funnel leak, attach map, discovered opportunity) | `revenue_intel_briefing` |
 
-| Report | ID | Delivers | ESP tag |
-|---|---|---|---|
-| **Marketing Intel Brief** | FI-LM-MI | Mass desire map · awareness diagnostic · competitor angle scan · copy opportunity score | `lead_marketing_intel` |
-| **Revenue Intel Brief** | FI-LM-RI | Retainer health signals · funnel leak audit · churn precursor checklist · backend attach map | `lead_revenue_intel` |
-
-**Combined tag on single opt-in:** `lead_dual_intel`
-
-**48-hour promise:** Run both briefs → discover one hidden opportunity (new angle OR saved retainer OR leak fix).
+**Endpoint:** `POST /api/revenue-intel-briefing.php`  
+**Fields:** `name`, `email`, `icp` (textarea), `niche`  
+**Static templates:** `/downloads/marketing-intel-brief.html` · `/downloads/revenue-intel-brief.html` (reference)
 
 ### Flagship backend
 

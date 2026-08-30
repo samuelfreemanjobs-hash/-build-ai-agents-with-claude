@@ -29,4 +29,5 @@ website/ops/api/config.php
 
 # Public site lead data (generated on Hostinger)
 website/public/data/leads.json
+website/public/data/briefings/
 website/public/api/config.php

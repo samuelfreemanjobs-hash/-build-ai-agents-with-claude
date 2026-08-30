@@ -1,5 +1,6 @@
 (function () {
-  const API = '/api/subscribe.php';
+  const SUBSCRIBE_API = '/api/subscribe.php';
+  const BRIEFING_API = '/api/revenue-intel-briefing.php';
 
   function qs(sel, root) {
     return (root || document).querySelector(sel);
@@ -12,17 +13,44 @@
     const successEl = qs('.form-success', container);
     const formWrap = qs('.form-wrap', container) || form;
 
-    const payload = {
-      tag: form.dataset.tag || 'general',
-      name: (qs('[name="name"]', form)?.value || '').trim(),
-      email: (qs('[name="email"]', form)?.value || '').trim(),
-      source: form.dataset.source || window.location.pathname,
-      fields: {},
-    };
+    const isBriefing = form.dataset.fiBriefing === 'revenue-intel';
+    const endpoint = form.dataset.fiEndpoint || (isBriefing ? BRIEFING_API : SUBSCRIBE_API);
 
-    form.querySelectorAll('[data-field]').forEach((el) => {
-      payload.fields[el.name || el.dataset.field] = el.value.trim();
-    });
+    let payload;
+    if (isBriefing) {
+      payload = {
+        name: (qs('[name="name"]', form)?.value || '').trim(),
+        email: (qs('[name="email"]', form)?.value || '').trim(),
+        icp: (qs('[name="icp"]', form)?.value || '').trim(),
+        niche: (qs('[name="niche"]', form)?.value || '').trim(),
+        source: form.dataset.source || window.location.pathname,
+      };
+      if (!payload.icp || payload.icp.length < 10) {
+        if (errEl) {
+          errEl.textContent = 'Describe your ICP in at least one sentence (10+ characters).';
+          errEl.classList.add('visible');
+        }
+        return;
+      }
+      if (!payload.niche || payload.niche.length < 2) {
+        if (errEl) {
+          errEl.textContent = 'Enter your market or niche.';
+          errEl.classList.add('visible');
+        }
+        return;
+      }
+    } else {
+      payload = {
+        tag: form.dataset.tag || 'general',
+        name: (qs('[name="name"]', form)?.value || '').trim(),
+        email: (qs('[name="email"]', form)?.value || '').trim(),
+        source: form.dataset.source || window.location.pathname,
+        fields: {},
+      };
+      form.querySelectorAll('[data-field]').forEach((el) => {
+        payload.fields[el.name || el.dataset.field] = el.value.trim();
+      });
+    }
 
     if (!payload.email || !payload.email.includes('@')) {
       if (errEl) {
@@ -36,11 +64,11 @@
     if (btn) {
       btn.disabled = true;
       btn.dataset.originalText = btn.textContent;
-      btn.textContent = 'Sending…';
+      btn.textContent = isBriefing ? 'Generating briefing…' : 'Sending…';
     }
 
     try {
-      const r = await fetch(API, {
+      const r = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'same-origin',
@@ -52,12 +80,14 @@
         formWrap.classList.add('hidden');
         if (successEl) {
           successEl.classList.add('visible');
+          const msg = qs('[data-success-message]', successEl);
+          if (msg && body.message) msg.textContent = body.message;
           const dl = qs('[data-download]', successEl);
           if (dl && body.download) dl.href = body.download;
         }
         return;
       }
-      throw new Error(body.error || 'Subscribe failed');
+      throw new Error(body.error || 'Request failed');
     } catch (e) {
       if (errEl) {
         errEl.textContent = e.message || 'Something went wrong. Try again.';
