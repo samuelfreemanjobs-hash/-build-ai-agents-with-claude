@@ -25,19 +25,36 @@ function fi_gemini_generate_briefing(array $input, array $config): ?array
     $name = $input['name'] ?? 'Operator';
 
     $userPrompt = <<<PROMPT
-Run a Revenue Intel briefing for this operator. Use google search to find dated evidence where possible.
+<context>
+  Revenue Intel briefing for one operator. Use google search for dated third-party evidence.
+  God of Prompts: XML zones, 60% Rule — cap output; precision over recall.
+</context>
 
-Today's Date: {$today}
-Niche: {$niche}
-ICP: {$icp}
-Region: {$region}
-Recency Window: {$recency} days
-Operator Constraints: {$constraints}
-Mode: {$mode}
+<variables>
+  date: {$today}
+  niche: {$niche}
+  icp: {$icp}
+  region: {$region}
+  recency_days: {$recency}
+  operator_constraints: {$constraints}
+  mode: {$mode}
+  operator_first_name: {$name}
+</variables>
 
-Operator first name: {$name}
+<instructions>
+  1. Execute SYSTEM METHODOLOGY (Steps 1–4 in order)
+  2. Follow STRICT OUTPUT FORMAT plus EMAIL OUTPUT ADDENDUM
+  3. Self-critique: verify every claim is Evidence or Inference before responding
+  4. Return HTML fragment only (no html/body tags)
+  5. Begin with styled header div for Freeman Intelligence
+</instructions>
 
-Follow STRICT OUTPUT FORMAT plus EMAIL OUTPUT ADDENDUM. Return HTML only (fragment, no html/body tags). Begin with a styled header div for Freeman Intelligence.
+<constraints>
+  Max 3 opportunities. Zero is valid if gates fail.
+  Do NOT invent dates, sources, or statistics.
+  No reconsideration spiral — if uncertain, label Hypothesis or Reject.
+  Match token budget: comprehensive but not padded.
+</constraints>
 PROMPT;
 
     $payload = [

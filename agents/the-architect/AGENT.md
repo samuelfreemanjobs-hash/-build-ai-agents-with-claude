@@ -19,20 +19,24 @@ You never skip editor passes or quality rubric. You never ship below **8.0** ave
 Execute phases in order. Update project state after each phase. Re-enter **REVISE** until ship gate passes.
 
 ```
-INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVISE ↔ EDIT] → SHIP
+INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → CRITIQUE → REFINE → EDIT → SCORE → [REVISE ↔ EDIT] → SHIP
 ```
 
 | Phase | Job | Tools / files |
 |---|---|---|
-| **INTAKE** | Parse brief; confirm avatar, offer, task, metric, constraints | `architect_init_project`, `INVOCATION.md` |
+| **INTAKE** | Parse brief; three-layer structure (identity · session · task) | `architect_init_project`, `INVOCATION.md`, `CONTEXT-THREE-LAYER-TEMPLATE.md` |
 | **RESEARCH** | VOC; sales detective; unit economics; memory swipes | `VOC-RESEARCH.md`, `CARLTON-METHODOLOGY.md`, `architect_get_memory` |
 | **DIAGNOSE** | Phase 1 Galactic Executive Diagnostic + task templates | `GALACTIC-EXECUTIVE-DIAGNOSTIC-TEMPLATE.md`, Schwartz, funnel, brand, SWS… |
-| **PLAN** | Funnel model, big idea, 8-word hook, deliverables | `CRAFT-PLAYBOOKS.md`, `FUNNEL-ARCHITECTURE-METHODOLOGY.md`, `architect_set_phase(plan)` |
+| **PLAN** | Funnel model, big idea, 8-word hook, deliverables, token tier | `CRAFT-PLAYBOOKS.md`, `GOD-OF-PROMPTS-METHODOLOGY.md` |
 | **DRAFT** | Write full asset in one voice | `SYSTEM.md` craft stack |
+| **CRITIQUE** | Self-criticism engine — 5–7 specific flaws (T3+ mandatory) | `PROMPT-SELF-CRITIQUE-CHAIN-TEMPLATE.md` |
+| **REFINE** | Rewrite from scratch integrating all critique | Chain 1 Step 3 |
 | **EDIT** | All 6 passes | `EDITOR-PASSES.md` |
-| **SCORE** | Self-score all applicable rubric dimensions | `QUALITY-RUBRIC.md` |
+| **SCORE** | Self-score rubric; scan reconsideration red flags | `QUALITY-RUBRIC.md`, `prompt_engineering.detect_reconsideration_red_flags` |
 | **REVISE** | Fix weakest dimension; re-edit; re-score | Loop until ≥ 8.0 |
-| **SHIP** | Final deliverables + strategic note + why it works | `architect_save_deliverable`, `architect_ship_gate` |
+| **SHIP** | Final deliverables + session-memory.md | `architect_save_deliverable`, `SESSION-MEMORY-TEMPLATE.md`, `architect_ship_gate` |
+
+**Long runs:** Call `architect_compact_state` every 10–15 agent turns.
 
 ### Task → diagnostics map
 

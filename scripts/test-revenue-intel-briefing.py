@@ -31,18 +31,28 @@ def main() -> int:
     instructions = PROMPT.read_text(encoding="utf-8")
     today = __import__("datetime").date.today().isoformat()
 
-    user = f"""Run a Revenue Intel briefing. Use google search for dated evidence.
+    user = f"""<context>
+  Revenue Intel briefing. Use google search for dated evidence.
+</context>
 
-Today's Date: {today}
-Niche: {niche}
-ICP: {icp}
-Region: {region}
-Recency Window: 180 days
-Operator Constraints: Solo operator · manual delivery · act within 90 days
-Mode: Scan
-Operator first name: {name}
+<variables>
+  date: {today}
+  niche: {niche}
+  icp: {icp}
+  region: {region}
+  recency_days: 180
+  mode: Scan
+  operator_first_name: {name}
+</variables>
 
-Follow STRICT OUTPUT FORMAT plus EMAIL OUTPUT ADDENDUM. Return HTML fragment only."""
+<instructions>
+  Execute SYSTEM METHODOLOGY. Follow STRICT OUTPUT FORMAT + EMAIL OUTPUT ADDENDUM.
+  Return HTML fragment only.
+</instructions>
+
+<constraints>
+  Max 3 opportunities. Evidence or Inference labels. No padding.
+</constraints>"""
 
     payload = {
         "system_instruction": {"parts": [{"text": instructions}]},

@@ -69,7 +69,19 @@
 | **Retrieval corpus** | Swipe files, VOC, methodology slices |
 | **Session memory** | Project state, prior deliverables, insights |
 
-**Architect runtime pattern:** `GALACTIC-MASTER-PROMPT.md` → `DR-SPECIALIST` → `SYSTEM` → `AGENT` + `architect_get_memory`.
+**Architect runtime pattern:** `GALACTIC-MASTER-PROMPT.md` → `GOD-OF-PROMPTS-METHODOLOGY.md` → `DR-SPECIALIST` → `SYSTEM` → `AGENT` + `architect_get_memory` + Layer 1 identity context.
+
+### God of Prompts integration (Phase 2A+)
+
+| Principle | Implementation |
+|---|---|
+| XML zoning | `<context>`, `<role>`, `<variables>`, `<constraints>` — see `the_architect/prompt_engineering.py` |
+| Three layers | INTAKE briefs via `CONTEXT-THREE-LAYER-TEMPLATE.md` |
+| Self-critique | CRITIQUE → REFINE phases before EDIT (T3+) |
+| Token budgets | T1=500 · T2=1200 · T3=4000 · T4=8000 |
+| State compaction | `architect_compact_state` every 10–15 turns |
+| Meta-prompting | `PROMPT-GENERATOR-TEMPLATE.md` |
+| Full reference | `references/god-of-prompts-complete.md` |
 
 ### Context window strategy
 

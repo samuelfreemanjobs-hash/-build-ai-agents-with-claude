@@ -15,10 +15,13 @@ FACTORY_DIR = AGENT_ROOT / "factory"
 
 SYSTEM_PROMPT_FILES = [
     AGENT_ROOT / "GALACTIC-MASTER-PROMPT.md",
+    AGENT_ROOT / "GOD-OF-PROMPTS-METHODOLOGY.md",
     AGENT_ROOT / "DR-SPECIALIST-PROMPT.md",
     AGENT_ROOT / "SYSTEM.md",
     AGENT_ROOT / "AGENT.md",
 ]
+
+CONTEXT_IDENTITY_FILE = AGENT_ROOT / "context" / "freeman-intelligence-identity.md"
 
 KNOWLEDGE_GLOBS = [
     "agents/the-architect/*.md",

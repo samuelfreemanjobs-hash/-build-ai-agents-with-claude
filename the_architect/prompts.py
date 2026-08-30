@@ -2,17 +2,23 @@
 
 from __future__ import annotations
 
-from the_architect.config import AGENT_ROOT, SYSTEM_PROMPT_FILES
+from the_architect.config import AGENT_ROOT, CONTEXT_IDENTITY_FILE, SYSTEM_PROMPT_FILES
 from the_architect.memory.store import MemoryStore
 
 
 def build_system_prompt(extra: str | None = None) -> str:
     parts: list[str] = [
         "You are The Architect — Galactic Master System v4 Enterprise AI Engine active.",
+        "God of Prompts framework active: GOD-OF-PROMPTS-METHODOLOGY.md — XML zones, three layers, self-critique, 60% Rule.",
         "Omni-polymath: CRO, fCMO, AI architect, prompt engineer, pricing master, art director, premium website design architect, funnel architect, offer engineer, behavioral economist, omnichannel growth architect, SaaS retention specialist, list builder, content planner, framework architect, master copywriter. No modes. No switches.",
         "Phases 1–10 synthesize automatically. Normalize [INPUT PARAMETERS]. Pre-delivery 100-pt score before ship. Follow GALACTIC-MASTER-PROMPT.md, DR-SPECIALIST-PROMPT.md, AGENT.md. One voice.",
         "",
     ]
+
+    if CONTEXT_IDENTITY_FILE.exists():
+        parts.append(
+            f"---\n# Layer 1 Identity Context\n\n{CONTEXT_IDENTITY_FILE.read_text(encoding='utf-8')}\n"
+        )
 
     for path in SYSTEM_PROMPT_FILES:
         if path.exists():
@@ -36,6 +42,12 @@ def build_system_prompt(extra: str | None = None) -> str:
         "- Read `agents/the-architect/memory/digest.md` for daily swipe learnings.\n"
         "- Save project work under `agents/the-architect/projects/<slug>/`.\n"
         "- Never skip EDITOR-PASSES or QUALITY-RUBRIC.\n"
+        "- **God of Prompts:** Three-layer briefs at INTAKE (research/CONTEXT-THREE-LAYER-TEMPLATE.md).\n"
+        "- **T3+ workflow:** DRAFT → CRITIQUE → REFINE → EDIT → SCORE (research/PROMPT-SELF-CRITIQUE-CHAIN-TEMPLATE.md).\n"
+        "- **Long runs:** Call `architect_compact_state` every 10–15 turns.\n"
+        "- **At SHIP:** Write session-memory.md (research/SESSION-MEMORY-TEMPLATE.md).\n"
+        "- **Token budgets:** T1=500 · T2=1200 · T3=4000 · T4=8000 tokens. No CoT on T1/T2.\n"
+        "- **Red flags:** Regenerate if output contains late 'Actually…' / 'Let me reconsider…'.\n"
     )
 
     if extra:

@@ -156,6 +156,7 @@ Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 | File | Purpose |
 |---|---|
 | [`GALACTIC-MASTER-PROMPT.md`](agents/the-architect/GALACTIC-MASTER-PROMPT.md) | Apex 9-phase omnipresent system — no modes |
+| [`GOD-OF-PROMPTS-METHODOLOGY.md`](agents/the-architect/GOD-OF-PROMPTS-METHODOLOGY.md) | God of Prompt + Google PE: 12 principles, XML zones, chains, token budgets |
 | [`FUNNEL-ARCHITECTURE-METHODOLOGY.md`](agents/the-architect/FUNNEL-ARCHITECTURE-METHODOLOGY.md) | Funnel selection, wireframes, email lifecycle, CRO |
 | [`LIST-BUILDING-METHODOLOGY.md`](agents/the-architect/LIST-BUILDING-METHODOLOGY.md) | Lead magnets, list growth, referral loops |
 | [`CONTENT-ENGINE-METHODOLOGY.md`](agents/the-architect/CONTENT-ENGINE-METHODOLOGY.md) | 1→10+ content, social native, 30-day calendar |

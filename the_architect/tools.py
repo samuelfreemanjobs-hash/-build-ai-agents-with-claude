@@ -19,7 +19,11 @@ from the_architect.factory.state import (
     register_launch,
 )
 from the_architect.learning.pipeline import format_summary, run_daily_learning
-from the_architect.memory.store import MemoryStore
+from the_architect.prompt_engineering import (
+    detect_reconsideration_red_flags,
+    format_compacted_state,
+    state_compaction_schema,
+)
 
 PHASES = [
     "INTAKE",
@@ -27,6 +31,8 @@ PHASES = [
     "DIAGNOSE",
     "PLAN",
     "DRAFT",
+    "CRITIQUE",
+    "REFINE",
     "EDIT",
     "SCORE",
     "REVISE",
@@ -356,6 +362,44 @@ async def architect_factory_complete_launch(args: dict[str, Any]) -> dict[str, A
     return _text(f"Launch archived: {launch.get('title', 'unknown')}")
 
 
+@tool(
+    "architect_compact_state",
+    "Compact session state to JSON save point (God of Prompts — every 10-15 turns)",
+    {
+        "project_slug": str,
+        "original_goal": str,
+        "next_action": str,
+        "completed_milestones": str,
+        "open_questions": str,
+        "tier": str,
+    },
+)
+async def architect_compact_state(args: dict[str, Any]) -> dict[str, Any]:
+    slug = args["project_slug"]
+    state = _load_state(slug)
+    compact = state_compaction_schema()
+    compact["original_goal"] = args.get("original_goal") or ""
+    compact["project_slug"] = slug
+    compact["current_phase"] = state.get("phase", "INTAKE")
+    compact["active_constraints"] = state.get("constraints") or []
+    compact["next_action_required"] = args.get("next_action") or ""
+    compact["token_budget_tier"] = args.get("tier") or "T3"
+    try:
+        compact["completed_milestones"] = json.loads(args.get("completed_milestones") or "[]")
+    except json.JSONDecodeError:
+        compact["completed_milestones"] = []
+    try:
+        compact["open_questions"] = json.loads(args.get("open_questions") or "[]")
+    except json.JSONDecodeError:
+        compact["open_questions"] = []
+    state["compacted_state"] = compact
+    state["turn_count"] = 0
+    _save_state(slug, state)
+    pdir = _project_dir(slug)
+    (pdir / "compacted-state.json").write_text(json.dumps(compact, indent=2), encoding="utf-8")
+    return _text(format_compacted_state(compact))
+
+
 def create_architect_mcp_server():
     return create_sdk_mcp_server(
         name="architect",
@@ -375,6 +419,7 @@ def create_architect_mcp_server():
             architect_factory_mark_chapter,
             architect_factory_mark_launch_asset,
             architect_factory_complete_launch,
+            architect_compact_state,
         ],
     )
 
@@ -394,4 +439,5 @@ ARCHITECT_TOOL_NAMES = [
     "mcp__architect__architect_factory_mark_chapter",
     "mcp__architect__architect_factory_mark_launch_asset",
     "mcp__architect__architect_factory_complete_launch",
+    "mcp__architect__architect_compact_state",
 ]
