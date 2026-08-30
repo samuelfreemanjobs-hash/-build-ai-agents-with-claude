@@ -12,6 +12,7 @@ import { scrape1000PromptsCollection } from './sources/pdfcoffee'
 import { scrapePdfCoffeeFromFile } from './sources/pdfcoffee-parser'
 import { scrape150PromptsFromFile } from './sources/pdfcoffee-150-parser'
 import { scrapeBonus3MarketingFromFile } from './sources/pdfcoffee-marketing-parser'
+import { scrapeWhartonGail, WHARTON_COLLECTION } from './sources/wharton-gail-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -20,6 +21,7 @@ function parseArgs() {
     source: 'pdfcoffee-text',
     limit: Infinity as number,
     dryRun: false,
+    live: false,
     file: 'data/sources/1000-prompts-raw.txt',
   }
 
@@ -28,6 +30,7 @@ function parseArgs() {
     if (args[i] === '--limit' && args[i + 1]) options.limit = parseInt(args[++i], 10)
     if (args[i] === '--file' && args[i + 1]) options.file = args[++i]
     if (args[i] === '--dry-run') options.dryRun = true
+    if (args[i] === '--live') options.live = true
   }
 
   return options
@@ -125,6 +128,34 @@ async function main() {
         name: '1000+ Prompts Collection (PDFCoffee-style)',
         url: 'https://pdfcoffee.com/1000-prompts-pdf-free.html',
       },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
+
+  if (options.source === 'wharton-gail' || options.source === 'all') {
+    const seedFile = options.file.includes('wharton') ? options.file : 'data/sources/wharton-gail-prompts.json'
+    console.log('📚 Importing Wharton GAIL Prompt Library...')
+    console.log(`   Source: ${WHARTON_COLLECTION.sourceUrl}`)
+    if (options.live) console.log('   Mode: live scrape (Firecrawl + fetch)')
+    else console.log(`   Mode: seed/cache (${seedFile})`)
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const { prompts: scraped, method, message } = await scrapeWhartonGail({
+      live: options.live,
+      seedFile,
+      existingPrompts: db.prompts,
+      limit: options.limit,
+    })
+    console.log(`Extracted ${scraped.length} transformed prompts (${method})`)
+    if (message) console.log(`   ${message}`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      { name: WHARTON_COLLECTION.name, url: WHARTON_COLLECTION.sourceUrl },
       options.dryRun
     )
 
