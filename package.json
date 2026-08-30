@@ -1,0 +1,37 @@
+{
+  "name": "prompt-library",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:prompts && tsc -b && vite build",
+    "build:prompts": "tsx scripts/build-prompts.ts",
+    "scrape": "tsx scripts/scraper/run-agent.ts",
+    "scrape:pdfcoffee": "tsx scripts/scraper/run-agent.ts -- --source pdfcoffee-text --file data/sources/1000-prompts-raw.txt",
+    "scrape:150": "tsx scripts/scraper/run-agent.ts -- --source 150-prompts --file data/sources/150-chatgpt-prompts-raw.txt",
+    "scrape:bonus3": "tsx scripts/scraper/run-agent.ts -- --source bonus3-marketing --file data/sources/bonus3-marketing-raw.txt",
+    "scrape:wharton": "tsx scripts/scraper/run-agent.ts -- --source wharton-gail --file data/sources/wharton-gail-prompts.json",
+    "scrape:wharton:live": "tsx scripts/scraper/run-agent.ts -- --source wharton-gail --live",
+    "scrape:dry": "tsx scripts/scraper/run-agent.ts -- --dry-run",
+    "preview": "vite preview",
+    "start": "vite preview --host 0.0.0.0 --port 4173"
+  },
+  "dependencies": {
+    "lucide-react": "^0.469.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "firecrawl-cli": "^1.23.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
