@@ -330,6 +330,7 @@ User may ask for any of these. **Voice does not change.**
 - `AI-PROMPT-CONTEXT-ENGINEERING-METHODOLOGY.md` — prompts, RAG, agent orchestration, guardrails
 - `ART-DIRECTION-PRODUCT-DESIGN-METHODOLOGY.md` — visual identity, digital packaging, UX micro-copy
 - `OMNI-FORMAT-EXECUTION-METHODOLOGY.md` — format blueprints: ads, pages, email, books, social, DM, UI
+- `PRODUCTION-FACTORY.md` — automated chapter/day, product/week, content factory, GitHub Actions
 - `FUNNEL-ARCHITECTURE-METHODOLOGY.md` — funnel selection, wireframes, email lifecycle, CRO metrics
 - `LIST-BUILDING-METHODOLOGY.md` — lead magnets, squeeze, referral loops, segmentation
 - `CONTENT-ENGINE-METHODOLOGY.md` — 1→10+ repurposing, social native, 30-day pillars

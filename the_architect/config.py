@@ -11,6 +11,7 @@ AGENT_ROOT = REPO_ROOT / "agents" / "the-architect"
 PROJECTS_DIR = AGENT_ROOT / "projects"
 RESEARCH_DIR = AGENT_ROOT / "research"
 MEMORY_DIR = AGENT_ROOT / "memory"
+FACTORY_DIR = AGENT_ROOT / "factory"
 
 SYSTEM_PROMPT_FILES = [
     AGENT_ROOT / "GALACTIC-MASTER-PROMPT.md",

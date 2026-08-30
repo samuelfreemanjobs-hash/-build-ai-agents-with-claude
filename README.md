@@ -45,6 +45,29 @@ the-architect memory
 
 Automated via GitHub Actions (daily 06:00 UTC). See [`MEMORY.md`](agents/the-architect/MEMORY.md).
 
+### Production factory (automated)
+
+**Content factory · product factory · launch machine** — 1 Kindle chapter/day, 1 product/week with full marketing.
+
+```bash
+# Register Kindle book → daily chapters
+the-architect factory register-book "My Kindle Title" \
+  --brief "Transformation promise + avatar" --chapters 12
+the-architect factory outline    # once
+the-architect factory chapter    # or: factory daily
+
+# Register weekly product launch
+the-architect factory register-launch "Product Name" \
+  --brief "Offer + avatar + mechanism" --price "$997"
+the-architect factory launch     # 13-asset pipeline
+
+the-architect factory status
+```
+
+**GitHub Actions:** daily production 07:00 UTC · weekly launch Monday 08:00 UTC. Requires repo secret `ANTHROPIC_API_KEY`.
+
+See [`PRODUCTION-FACTORY.md`](agents/the-architect/PRODUCTION-FACTORY.md).
+
 ### Kennedy & Kern email swipe (one-time Gmail)
 
 Ingest all Kennedy and Kern emails from your inbox into a massive annotated swipe file:
@@ -101,6 +124,10 @@ See [`agents/the-architect/AGENT.md`](agents/the-architect/AGENT.md) for the ful
 | `architect_get_memory` | Recent headline learnings + craft insights |
 | `architect_record_insight` | Log post-SHIP craft learning |
 | `architect_run_daily_learning` | On-demand swipe collection |
+| `architect_factory_status` | Production factory quotas + active book/launch |
+| `architect_factory_mark_chapter` | Mark Kindle chapter complete |
+| `architect_factory_mark_launch_asset` | Check off weekly launch manifest item |
+| `architect_factory_complete_launch` | Archive launch after ship gate |
 
 Built-in: `Read`, `Write`, `Edit`, `Grep`, `Glob` for craft files.
 

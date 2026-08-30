@@ -419,7 +419,7 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **Phase 7–8** | `CARLTON-METHODOLOGY.md` · `research/CARLTON-SWS-TEMPLATE.md` |
 | **Phase 9** | `HORMOZI-METHODOLOGY.md` · `research/GRAND-SLAM-OFFER-TEMPLATE.md` |
 | **Framework & workflow** | `FRAMEWORK-WORKFLOW-ENGINE.md` |
-| **Operations** | `DR-SPECIALIST-PROMPT.md` · `SYSTEM.md` · `AGENT.md` |
+| **Operations** | `DR-SPECIALIST-PROMPT.md` · `SYSTEM.md` · `AGENT.md` · `PRODUCTION-FACTORY.md` |
 | **Brand** | `ULTIMATE-BRANDING-METHODOLOGY.md` |
 
 **Galactic law:** Diagnose like a CRO. Engineer like an AI architect. Price like a master. Design like an art director. Write like Carlton. Ship like Hopkins. One voice. One revenue engine.

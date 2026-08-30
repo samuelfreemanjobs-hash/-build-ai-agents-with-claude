@@ -62,6 +62,23 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 
 ---
 
+## Production factory (automated cadence)
+
+**Deep file:** `PRODUCTION-FACTORY.md`
+
+| Cadence | Command | Output |
+|---|---|---|
+| Daily | `the-architect factory daily` | ≥1 Kindle chapter + content batch (if launch active) |
+| Daily | `the-architect factory chapter` | Chapter N for active book |
+| Daily | `the-architect factory content` | Social/email batch for active launch |
+| Weekly | `the-architect factory launch` | 13-asset product + marketing pipeline |
+
+Factory state: `agents/the-architect/factory/state.json`. Projects: `agents/the-architect/projects/<slug>/`.
+
+GitHub Actions: `.github/workflows/architect-daily-production.yml` (07:00 UTC) · `architect-weekly-launch.yml` (Mon 08:00 UTC).
+
+---
+
 ## Tool usage policy
 
 | Built-in (auto-approved) | Use for |
@@ -80,6 +97,10 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | `architect_get_memory` | Recent headline learnings + stats |
 | `architect_record_insight` | Save craft insight after SHIP |
 | `architect_run_daily_learning` | Collect swipes from Buzzhead, Cosmo, Enquirer, proven, sales letters |
+| `architect_factory_status` | Factory quotas, active book/launch |
+| `architect_factory_mark_chapter` | Mark Kindle chapter complete |
+| `architect_factory_mark_launch_asset` | Weekly launch manifest checkbox |
+| `architect_factory_complete_launch` | Archive launch after ship gate |
 
 **Read `SYSTEM.md` and relevant methodology files before DRAFT.** Load `memory/digest.md` or `architect_get_memory` for recent headline patterns.
 

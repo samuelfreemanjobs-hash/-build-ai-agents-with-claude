@@ -1,0 +1,60 @@
+name: Architect Daily Production
+
+on:
+  schedule:
+    # 07:00 UTC daily — chapter + content (after headline learning at 06:00)
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only (no API calls)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install The Architect
+        run: pip install -e .
+
+      - name: Factory status
+        run: the-architect factory status
+
+      - name: Run daily production
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "ANTHROPIC_API_KEY not set — running dry-run preview"
+            the-architect factory daily --dry-run
+            exit 0
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            the-architect factory daily --dry-run
+          else
+            the-architect factory daily
+          fi
+
+      - name: Commit factory and project outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add agents/the-architect/factory/ agents/the-architect/projects/
+          if git diff --staged --quiet; then
+            echo "No factory outputs to commit."
+          else
+            git commit -m "chore(architect): daily production $(date -u +%Y-%m-%d)"
+            git push
+          fi

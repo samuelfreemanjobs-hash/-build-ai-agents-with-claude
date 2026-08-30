@@ -10,6 +10,14 @@ from typing import Any
 from claude_agent_sdk import create_sdk_mcp_server, tool
 
 from the_architect.config import AGENT_ROOT, PROJECTS_DIR, ensure_projects_dir, slugify
+from the_architect.factory.state import (
+    factory_status as get_factory_status,
+    mark_chapter_complete,
+    mark_launch_asset,
+    complete_launch,
+    register_book,
+    register_launch,
+)
 from the_architect.learning.pipeline import format_summary, run_daily_learning
 from the_architect.memory.store import MemoryStore
 
@@ -52,17 +60,26 @@ def _text(content: str) -> dict[str, Any]:
 @tool(
     "architect_init_project",
     "Initialize a new Architect project with brief and state",
-    {"name": str, "brief": str},
+    {"name": str, "brief": str, "project_type": str},
 )
 async def architect_init_project(args: dict[str, Any]) -> dict[str, Any]:
     name = args["name"]
     brief = args["brief"]
+    project_type = args.get("project_type") or "general"
     slug = slugify(name)
     pdir = _project_dir(slug)
     pdir.mkdir(parents=True, exist_ok=True)
 
     (pdir / "brief.json").write_text(
-        json.dumps({"name": name, "brief": brief, "created_at": datetime.now(timezone.utc).isoformat()}, indent=2),
+        json.dumps(
+            {
+                "name": name,
+                "brief": brief,
+                "project_type": project_type,
+                "created_at": datetime.now(timezone.utc).isoformat(),
+            },
+            indent=2,
+        ),
         encoding="utf-8",
     )
     state = {
@@ -71,6 +88,7 @@ async def architect_init_project(args: dict[str, Any]) -> dict[str, Any]:
         "rubric": {},
         "ship_gate": {},
         "deliverables": [],
+        "project_type": project_type,
     }
     _save_state(slug, state)
 
@@ -299,6 +317,45 @@ async def architect_run_daily_learning(args: dict[str, Any]) -> dict[str, Any]:
     return _text(format_summary(summary))
 
 
+@tool(
+    "architect_factory_status",
+    "Get production factory status: active book, launch, daily quotas",
+    {},
+)
+async def architect_factory_status(args: dict[str, Any]) -> dict[str, Any]:
+    return _text(json.dumps(get_factory_status(), indent=2, default=str))
+
+
+@tool(
+    "architect_factory_mark_chapter",
+    "Mark a Kindle chapter complete in factory state",
+    {"chapter_number": int, "filename": str},
+)
+async def architect_factory_mark_chapter(args: dict[str, Any]) -> dict[str, Any]:
+    book = mark_chapter_complete(int(args["chapter_number"]), filename=args.get("filename") or "")
+    return _text(json.dumps(book, indent=2))
+
+
+@tool(
+    "architect_factory_mark_launch_asset",
+    "Mark a weekly launch asset complete in factory checklist",
+    {"asset_key": str},
+)
+async def architect_factory_mark_launch_asset(args: dict[str, Any]) -> dict[str, Any]:
+    launch = mark_launch_asset(args["asset_key"])
+    return _text(json.dumps(launch.get("asset_checklist", {}), indent=2))
+
+
+@tool(
+    "architect_factory_complete_launch",
+    "Archive active launch to history after ship gate passes",
+    {},
+)
+async def architect_factory_complete_launch(args: dict[str, Any]) -> dict[str, Any]:
+    launch = complete_launch()
+    return _text(f"Launch archived: {launch.get('title', 'unknown')}")
+
+
 def create_architect_mcp_server():
     return create_sdk_mcp_server(
         name="architect",
@@ -314,6 +371,10 @@ def create_architect_mcp_server():
             architect_get_memory,
             architect_record_insight,
             architect_run_daily_learning,
+            architect_factory_status,
+            architect_factory_mark_chapter,
+            architect_factory_mark_launch_asset,
+            architect_factory_complete_launch,
         ],
     )
 
@@ -329,4 +390,8 @@ ARCHITECT_TOOL_NAMES = [
     "mcp__architect__architect_get_memory",
     "mcp__architect__architect_record_insight",
     "mcp__architect__architect_run_daily_learning",
+    "mcp__architect__architect_factory_status",
+    "mcp__architect__architect_factory_mark_chapter",
+    "mcp__architect__architect_factory_mark_launch_asset",
+    "mcp__architect__architect_factory_complete_launch",
 ]

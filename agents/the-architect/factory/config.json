@@ -1,0 +1,10 @@
+{
+  "schedule": {
+    "chapters_per_day_min": 1,
+    "products_per_week": 1,
+    "content_posts_per_day": 3,
+    "daily_production_utc": "07:00",
+    "weekly_launch_day": "monday"
+  },
+  "platforms": ["x", "linkedin", "email"]
+}
