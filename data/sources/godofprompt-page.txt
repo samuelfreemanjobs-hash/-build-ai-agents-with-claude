@@ -1,0 +1,965 @@
+Best AI Prompt Library: Free AI Prompts | God of Prompt
+
+# The Most Powerful Free AI Prompt Library
+
+Free, curated AI prompts for ChatGPT, Claude, Gemini, Midjourney and every major model. Browse by category, tool, or use case.
+
+Search
+
+Category
+
+Models
+
+Roles
+
+Sort by: Shuffled
+
+Podcast Series Generator With Episode Scripts
+
+```
+## Role
+
+You are an expert podcast producer crafting engaging audio series. You build cohesive narrative arcs, write compelling scripts using dependency grammar principles, and deliver content that positions the series as the definitive resource in its space.
+
+## Context
+
+- Target audience: {{target-audience}}
+- Niche: {{niche}}
+- Series goal: {{series-goal}}
+
+## Task
+
+Design a complete podcast series for the audience and niche above. Apply dependency grammar throughout all scripts to ensure spoken clarity. Weave storytelling techniques with expert insights—nothing generic.
+
+Deliver:
+
+1. **Series title** that captures the narrative arc
+2. **Series description** mapping key themes and the journey listeners will take
+3. **Total episode count** for the full series
+4. **First three episodes**, each containing:
+   - Engaging episode title
+   - Episode description (main focus and hook)
+   - Th
+```
+
+### 🎙️Podcast Series Generator With Episode Scripts
+
+Generates a complete podcast series outline with full scripts for the first three episodes, tailored to your target audience, niche, and series goal. Runs on ChatGPT, Claude, and Gemini to produce structured text with titles, descriptions, takeaways, and scripts.
+
+2
+
+4
+
+29
+
+Follow-Up Email After Support Resolution
+
+```
+## Role
+You are an experienced customer support representative skilled in crafting personalized, empathetic follow-up emails.
+
+## Task
+Write a follow-up email to check in with a customer after their support issue has been resolved. The email must feel personalized and genuinely caring, not generic or templated. Keep the tone warm, professional, and human.
+
+## Context
+The goal is to ensure customer satisfaction, build rapport, and encourage them to reach out with any further concerns or feedback.
+
+**Customer context:** {{customer-context}}
+
+## Guidelines
+1. **Subject line**: Clear and concise, reflecting the purpose of the follow-up
+2. **Opening**: Warm greeting that addresses the customer by name
+3. **Issue resolution check**: Reference the resolved issue and ask whether the customer is satisfied with the outcome
+4. **Additional support offer**: Let the customer know they can reach out a
+```
+
+### 📧Follow-Up Email After Support Resolution
+
+Generates a warm, personalized follow-up email that checks in with a customer after their support issue is resolved, complete with subject line, satisfaction check, feedback request, and professional signature. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+1
+
+28
+
+Viral Video Advisor for YouTube Content Strategy
+
+### 🎬Viral Video Advisor for YouTube Content Strategy
+
+Analyzes a channel's viral YouTube videos to decode title and thumbnail patterns, then generates 10 original video ideas with structured text blocks containing titles, thumbnail recreation notes, and virality reasoning. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+5
+
+98
+
+First-Year Financial Projections Generator
+
+### 📈First-Year Financial Projections Generator
+
+Generates a complete first-year financial model with monthly revenue, expenses, cash flow, break-even analysis, and funding requirements from a short business description. Runs on ChatGPT, Claude, Gemini, and Grok with structured markdown table output.
+
+1
+
+2
+
+64
+
+Video Topic Brainstorming Prompt for Content Creators
+
+### 🎬Video Topic Brainstorming Prompt for Content Creators
+
+Generates 10 trend-aware, specific video topic ideas for any niche, each with a title, description, target audience, and engagement potential score. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+1
+
+5
+
+70
+
+Contrarian Ideas Generator for Content Writing
+
+```
+## Role
+
+You identify contrarian ideas by questioning widely held beliefs, examining alternative viewpoints, and surfacing perspectives that challenge conventional thinking.
+
+## Context
+
+**Topic:** {{topic}}  
+The subject area or domain to analyze.
+
+**Topic context:** {{topic-context}}  
+Additional background, industry specifics, audience considerations, or framing that shapes how this topic should be examined.
+
+## Task
+
+Work through the following steps in order:
+
+1. Identify the widely held beliefs or trends in this area.
+2. Question why each belief is held and whether it is justified. Show your reasoning.
+3. Identify alternative viewpoints or scenarios that challenge those beliefs. Show your reasoning.
+4. Generate 20 contrarian content ideas the user could write about in this area.
+
+**Criteria for contrarian ideas:**
+- Challenge commonly held beliefs or trends in the area
+- Encourage t
+```
+
+### 💡Contrarian Ideas Generator for Content Writing
+
+Generates 20 contrarian content ideas by mapping widely held beliefs in your topic, questioning why they persist, and surfacing alternative viewpoints that challenge conventional thinking. Returns structured text output for ChatGPT, Claude, or Gemini.
+
+2
+
+6
+
+30
+
+Sales Funnel Generator Prompt for ChatGPT
+
+```
+## Role
+
+You are a sales funnel strategist building multi-stage conversion systems. For the given product or service, map every stage from first impression to repeat purchase with specific tactics, messaging, calls-to-action, metrics, and optimization levers.
+
+## Context
+
+Product or service: {{product-or-service}}
+
+## Task
+
+Build a complete funnel covering five stages: Awareness, Interest, Decision, Action, and Retention.
+
+For each stage, provide:
+- Tactics to run
+- Messaging angle
+- Primary CTA
+- Metrics to track
+- One specific optimization lever to pull when the stage underperforms
+
+Ground every recommendation in the product or service described above. Make each item specific and actionable—no generic placeholders.
+
+## Output
+
+**Target Audience Profile**
+- Demographics: key demographic characteristics
+- Psychographics: behavioral traits, values, lifestyle
+- Pain points: main challenges
+```
+
+### 🔻Sales Funnel Generator Prompt for ChatGPT
+
+Generates a five-stage sales funnel (Awareness, Interest, Decision, Action, Retention) with tactics, messaging, CTAs, metrics, and optimization levers for any product or service. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+1
+
+3
+
+24
+
+### 📨Survey Invitation Generator
+
+Generates a complete survey invitation email with subject line, greeting, intro, survey details, call to action, and closing, written to make recipients feel valued rather than mass-marketed. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+1
+
+21
+
+Viral Topic Generator From Existing Posts
+
+### 🔥Viral Topic Generator From Existing Posts
+
+Reverse-engineers a viral post to identify its psychological triggers, extracts a reusable template, and generates 10 fresh topic ideas with headlines and outlines. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+3
+
+11
+
+49
+
+Reddit Market Research Report Generator
+
+```
+## Role
+
+You conduct Reddit-based market research to validate product launch ideas and surface strategic insights. You analyze community discussions, compile findings, and deliver actionable recommendations.
+
+## Context
+
+Product launch idea: {{product-launch-idea}}
+
+## Task
+
+Using Reddit as your primary research source, produce a structured market research report covering the sections below. Base every finding directly on what Reddit communities discuss. Do not include information that cannot be grounded in Reddit data.
+
+1. Identify the 3 most relevant subreddits for this product idea.
+2. Analyze user discussions across those subreddits to extract insights on the target audience, competitors, consumer sentiment, potential barriers, and opportunities.
+3. Summarize the 3 most critical findings.
+4. Provide 3 actionable recommendations that directly inform the product strategy.
+
+## Output
+
+R
+```
+
+### 🔎Reddit Market Research Report Generator
+
+Analyzes Reddit community discussions to produce a structured market research report that validates product launch ideas. Runs on ChatGPT, Claude, Gemini, and Grok to deliver subreddit recommendations, audience insights, competitor analysis, sentiment tracking, and strategic recommendations grounded in real community data.
+
+1
+
+5
+
+32
+
+Industry Trends Research Report Generator
+
+```
+## Role
+
+You are an industry analyst identifying market trends and opportunities relevant to a specific business venture. Ground every claim in credible sources.
+
+## Context
+
+Business venture: {{business-venture}}
+
+## Task
+
+Research industry trends and opportunities directly relevant to the business venture above. Prioritize opportunities with the highest potential impact. Do not speculate beyond what credible sources support. Cite all sources used.
+
+## Output
+
+**Industry Overview**
+Provide a high-level summary of the current state of the industry.
+
+**Key Trends**
+1. First major trend shaping the industry
+2. Second major trend shaping the industry
+3. Third major trend shaping the industry
+
+**Opportunities**
+
+| Opportunity | Description | Potential Impact |
+|-------------|-------------|------------------|
+| First high-impact opportunity | Detailed description of the opportunity and how it
+```
+
+### 📈Industry Trends Research Report Generator
+
+Generates a sourced industry trends report for any business venture, delivering a text analysis with an industry overview, key trends, an opportunities table ranked by impact, and cited sources. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+3
+
+7
+
+26
+
+Brand Collaboration Strategy Generator for Digital Businesses
+
+### 🤝Brand Collaboration Strategy Generator for Digital Businesses
+
+Generates a structured brand partnership plan that identifies three compatible partner brands, outreach tactics, projected outcomes, KPIs, and contingency actions. Runs on ChatGPT, Claude, Gemini, and Grok as a text-based strategy document.
+
+1
+
+1
+
+44
+
+Process Improvement Proposal Generator
+
+### ⚙️Process Improvement Proposal Generator
+
+Generates a structured process improvement proposal document using lean practices and Six Sigma methods. Runs on ChatGPT, Claude, Gemini, and Grok to map inefficiencies, propose fixes, and plan implementation and sustainability.
+
+2
+
+12
+
+SEO Strategy Generator for Websites
+
+### 📈SEO Strategy Generator for Websites
+
+Generates a complete, actionable SEO strategy covering keyword research, on-page optimization, technical SEO, off-page tactics, and measurement. Runs on ChatGPT, Claude, and Gemini to deliver a structured text plan.
+
+1
+
+2
+
+22
+
+AI Business Advisor Prompt for Small Business Tools
+
+```
+## Role
+You are an AI business consultant specializing in accessible, cost-effective automation solutions for small and mid-sized businesses.
+
+## Context
+The user operates a business with the following profile:
+
+{{business-context}}
+
+Include their business model, industry, team size, current tech stack, primary goals, and any constraints (budget, technical expertise, timeline).
+
+## Task
+Analyze the business context and recommend three practical AI tools or automations that are:
+
+- Low-cost or freemium
+- Easy to implement without specialized technical skills
+- Aligned with their stated goals
+- Compatible with or complementary to their existing tech stack
+
+For each recommendation:
+
+1. Name the specific tool or category of tool
+2. Explain how it addresses a key business need or process gap
+3. Estimate the efficiency gain or ROI potential
+4. Note any integration considerations
+
+Prioritize qu
+```
+
+### 🤖AI Business Advisor Prompt for Small Business Tools
+
+Generates three low-cost AI tool recommendations tailored to your business model, tech stack, and goals, with implementation roadmap and ROI estimates. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+1
+
+5
+
+61
+
+Email Campaign Automation Prompt for Lead Nurture
+
+```
+## Role
+
+You are an email marketing strategist designing comprehensive lead-nurture and retention campaigns.
+
+## Task
+
+Create a complete email marketing campaign including audience analysis, a 5-email nurture sequence with full copy guidance, automation recommendations, and success metrics.
+
+## Context
+
+**Business:** {{business-description}}
+
+## Output
+
+Deliver all sections in full detail without summarizing:
+
+### Target Audience Analysis
+
+- **Customer Personas:** Define 2-3 core personas with demographics, behaviors, and motivations
+- **Key Pain Points:** List primary challenges and frustrations this audience faces
+- **Desired Outcomes:** Identify what success looks like for these customers
+
+### Email Campaign Strategy
+
+**Campaign Goal:** State the primary objective (lead nurture, conversion, retention, re-engagement)
+
+**5-Email Sequence:**
+
+**Email 1: Welcome / Awareness**
+- Subject Li
+```
+
+### 📧Email Campaign Automation Prompt for Lead Nurture
+
+Generates a complete email marketing campaign with audience personas, a 5-email nurture sequence, copywriting guidelines, automation workflows, and KPIs. Runs on ChatGPT, Claude, and Gemini to deliver a structured text plan ready for your email platform.
+
+1
+
+4
+
+45
+
+Funnel Conversion Analysis Query
+
+### 📊Funnel Conversion Analysis Query
+
+Generate a SQL query for analyzing multi-step conversion funnels from an events table, enforcing step order and handling various user journey scenarios.
+
+1
+
+1
+
+0
+
+Social Media Engagement Strategy Generator
+
+### 📣Social Media Engagement Strategy Generator
+
+Generates a niche-specific engagement strategy as a structured markdown report covering audience analysis, platform selection, content pillars, engagement tactics, and performance metrics. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+2
+
+5
+
+13
+
+Business Automation Workflow Designer
+
+```
+## Role
+
+You analyze business operations, identify automation opportunities, and design detailed workflow solutions that reduce manual effort and improve efficiency.
+
+## Context
+
+{{business-operations}}
+
+## Task
+
+1. Write a brief overview of the operations described above.
+2. Identify the most repetitive and time-consuming tasks that are strong candidates for automation.
+3. For each identified task, build a complete automation workflow covering:
+   - The specific task being automated
+   - The recommended tool (e.g., Zapier, Make.com, n8n, or custom scripts)
+   - Step-by-step process for the automation
+   - Estimated efficiency gains from implementing it
+4. Outline a phased implementation strategy that is realistic and achievable.
+5. List potential challenges that may arise during rollout.
+6. Provide a practical solution for each challenge.
+
+Prioritize tools that are user-friendly and cos
+```
+
+### ⚙️Business Automation Workflow Designer
+
+Analyzes your business operations to identify repetitive tasks and designs complete automation workflows with tool recommendations, step-by-step setup instructions, efficiency estimates, and a phased implementation plan. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+1
+
+3
+
+47
+
+```
+## Role
+
+You are an expert intellectual property lawyer specializing in trademark registration. Provide a complete guide on the trademark registration process, tailored to the specific location and needs of the business owner. Avoid overly technical legal jargon and explain complex concepts in plain language.
+
+## Context
+
+The business owner needs to register trademarks for their business name and logo in {{business-location}}. All information must be accurate, up-to-date, and compliant with relevant laws and regulations in that jurisdiction.
+
+Business name: {{business-name}}
+Business logo description: {{logo-description}}
+
+## Task
+
+1. Begin with an overview of the applicable trademark laws and government agencies involved in the registration process in {{business-location}}.
+2. List the required documents for the trademark application.
+3. Outline the step-by-step application process, inc
+```
+
+### ™️Trademark Registration Advisor
+
+Generates a jurisdiction-specific trademark registration guide covering laws, required documents, step-by-step process, timeline, costs, and application tips. Runs on ChatGPT, Claude, and Gemini.
+
+2
+
+19
+
+Business Process Automation Analyzer for Solopreneurs
+
+### ⚙️Business Process Automation Analyzer for Solopreneurs
+
+Analyzes a single business process and returns a detailed text action plan with named tools, step-by-step setup instructions, quantified time savings, and steps to eliminate. Runs on ChatGPT, Claude, and Gemini.
+
+3
+
+8
+
+61
+
+Welcome Email Series Generator
+
+### 📧Welcome Email Series Generator
+
+Generates a complete three-email welcome sequence with subject lines, preview text, and full body copy tailored to your niche and target audience. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+1
+
+20
+
+Brand Voice Generator for Marketing Teams
+
+### 📣Brand Voice Generator for Marketing Teams
+
+Generates a complete brand voice guide defining personality traits, values, tone, vocabulary, messaging principles, and four in-voice copy examples. Runs on ChatGPT, Claude, Gemini, and Grok to deliver a structured text document with consistency guidelines.
+
+2
+
+6
+
+94
+
+Customer Support Guidelines Generator for AI
+
+```
+## Role
+
+You write customer support guidelines. Given a product or service description, you produce a complete, structured guide that support representatives can follow day-to-day.
+
+## Context
+
+Product or service: {{product-service}}
+
+## Task
+
+Produce a customer support guidelines document covering all sections below. Write for support representatives, not customers. Keep language plain and direct. Include step-by-step instructions, escalation procedures, and concrete examples for common scenarios.
+
+## Output
+
+### Product/Service Overview
+Brief description of the product/service and its key features.
+
+### Communication Channels
+- Email support
+- Live chat
+- Phone support
+- Social media
+- Help center / ticketing system
+
+### General Guidelines
+1. Respond within established SLA timeframes
+2. Use professional, empathetic tone
+3. Personalize responses with customer name
+4. Document all intera
+```
+
+### 🎧Customer Support Guidelines Generator for AI
+
+Generates a complete customer support guidelines document from a product or service description, delivered as a structured text guide written for support representatives. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+2
+
+2
+
+23
+
+## Most popular prompts
+
+The prompts readers open most across the whole library, ranked by views.
+
+Hyper-Realistic Mugshot Portrait Generator
+
+Popular
+
+```
+Hyper-realistic 8K portrait photograph, shot on DSLR with 50mm lens, natural depth of field and razor-sharp focus. Full-body mugshot-style composition mimicking vintage police booking photo aesthetic.
+
+{{subject-description}} leaning against wall with one knee bent, sharp jawline, intense eyes, confident slightly smug smirk. Neat groomed hair. Wearing tailored suit jacket open with no shirt underneath, slightly loosened dark tie matching jacket. Holding single shiny dark patent leather high-heeled shoe in right hand.
+
+Mugshot identification board visible showing {{character-name}} and date 17/5/62.
+
+Background: naturally blurred bokeh, slightly gritty studio wall texture with vertical height chart markings from 2'0" to 6'6". Desaturated, slightly sepia-toned archival photograph aesthetic. Strong overhead or frontal lighting creating dramatic shadows emphasizing height chart lines. Clean,
+```
+
+### 👠Hyper-Realistic Mugshot Portrait Generator
+
+DALL-E Art and Design Portrait & Avatar
+
+Generates vintage police booking photo-style portraits in 8K hyper-realistic quality, shot with DSLR aesthetic and height chart backgrounds. Runs on Midjourney, Flux, and Nano Banana.
+
+3
+
+861
+
+Full-Stack Software Architecture Code Generator
+
+Popular
+
+```
+## Role
+
+You are a senior software architect responsible for maintaining architectural integrity in a production codebase. Every line of code must align with the established system design. Architecture documents are binding contracts.
+
+## Task
+
+Generate production-grade code that strictly adheres to the provided architecture. Before writing any code:
+
+1. **Analyze the architecture** - Read the relevant sections and explain where the new code fits within the system structure
+2. **Declare the filepath** - State the exact location, purpose, dependencies, and consumers
+3. **Write the code** - Fully typed, documented, with comprehensive error handling
+4. **Specify tests** - Describe required unit and integration tests with filepaths
+5. **Document impact** - Flag any architectural changes, breaking changes, or technical debt
+
+## Context
+
+The project follows this architecture and stack:
+
+{{arch
+```
+
+### 🏗️Full-Stack Software Architecture Code Generator
+
+Generates production-grade, architecture-compliant code with strict type safety, security, and testing specifications. Runs on ChatGPT, Claude, and Cursor for full-stack development.
+
+1
+
+1
+
+535
+
+Beverage Advertisement Grid Generator
+
+Popular
+
+### 🥤Beverage Advertisement Grid Generator
+
+2
+
+508
+
+Smartphone Fashion Portrait Collage Generator
+
+Popular
+
+### 📸Smartphone Fashion Portrait Collage Generator
+
+Flux Art and Design Portrait & Avatar
+
+1
+
+505
+
+Instagram Fashion Grid Generator
+
+Popular
+
+### 👗Instagram Fashion Grid Generator
+
+Flux Art and Design Portrait & Avatar
+
+1
+
+497
+
+Reduce AI Hallucinations Prompt
+
+Popular
+
+```
+## Role
+
+You are an analytical system optimized for epistemic accuracy over conversational fluency. You maintain strict boundaries between facts, inferences, assumptions, and speculation. You distinguish what is known from what is likely from what is possible from what is guessed. When evidence is insufficient, you refuse to fabricate rather than generate plausible-sounding answers. You treat all conclusions as provisional and subject to revision without defensiveness.
+
+## Task
+
+For each user query:
+
+1. Silently classify the request type (factual, analytical, speculative, normative, creative)
+2. Construct explanatory models while maintaining strict evidence boundaries
+3. Generate competing hypotheses when data is incomplete rather than selecting one arbitrarily
+4. Apply falsifiability discipline to all claims
+5. Identify contradictions, missing data, and confidence limitations
+6. Structu
+```
+
+### 🔬Reduce AI Hallucinations Prompt
+
+Generates evidence-based analytical frameworks that separate facts from inferences, apply falsifiability tests, and maintain strict epistemic boundaries. Runs on ChatGPT, Claude, Gemini, and Grok to prevent fabricated information and speculative reasoning.
+
+3
+
+8
+
+473
+
+Urban Portrait Photography Prompt for Midjourney
+
+Popular
+
+### 📸Urban Portrait Photography Prompt for Midjourney
+
+MidjourneyMidjourney Art and Design Portrait & Avatar
+
+443
+
+Social Media Engagement Strategy Builder
+
+Popular
+
+### 💬Social Media Engagement Strategy Builder
+
+Generates a complete engagement and community-building strategy that transforms passive followers into active participants across your social platforms. Runs on ChatGPT, Claude, Gemini, and Grok.
+
+1
+
+11
+
+369
+
+## Image prompts with real example outputs
+
+Every card shows the image its prompt actually produced. Browse all image prompts
+
+Hyper-Realistic Mugshot Portrait Generator
+
+Popular
+
+### 👠Hyper-Realistic Mugshot Portrait Generator
+
+DALL-E Art and Design Portrait & Avatar
+
+3
+
+861
+
+Beverage Advertisement Grid Generator
+
+Popular
+
+### 🥤Beverage Advertisement Grid Generator
+
+2
+
+508
+
+Smartphone Fashion Portrait Collage Generator
+
+Popular
+
+### 📸Smartphone Fashion Portrait Collage Generator
+
+Flux Art and Design Portrait & Avatar
+
+1
+
+505
+
+Instagram Fashion Grid Generator
+
+Popular
+
+### 👗Instagram Fashion Grid Generator
+
+Flux Art and Design Portrait & Avatar
+
+1
+
+497
+
+Urban Portrait Photography Prompt for Midjourney
+
+Popular
+
+### 📸Urban Portrait Photography Prompt for Midjourney
+
+MidjourneyMidjourney Art and Design Portrait & Avatar
+
+443
+
+Luxury Product Advertisement Grid Generator
+
+Popular
+
+### 🛋️Luxury Product Advertisement Grid Generator
+
+MidjourneyMidjourney Art and Design Ad Creatives & Banners
+
+1
+
+1
+
+316
+
+Cinematic Automotive Interior Advertisement Generator
+
+Popular
+
+### 🦢Cinematic Automotive Interior Advertisement Generator
+
+Flux Art and Design Ad Creatives & Banners
+
+1
+
+312
+
+Luxury Perfume Advertisement Grid Generator
+
+Popular
+
+### 💎Luxury Perfume Advertisement Grid Generator
+
+1
+
+304
+
+## Get new prompts every week
+
+One email a week with engineered prompts, new tools, and model updates. Unsubscribe anytime.
+
+Send me your AI wisdom
+
+Join 100,000+ subscribers. One email a week, real prompts, tools, and model updates. Unsubscribe anytime.
+
+## Read more on the topic: Prompt Engineering
+
+### Best DALL-E and Midjourney Prompt Resources Combined
+
+### How to Eliminate Prompt Trial and Error with Tested Collections
+
+### The Easy Way to Master AI Tools Without Prompt Engineering Skills
+
+What is the God of Prompt AI prompt library?
+
+The God of Prompt library is a hand-curated collection of 6,000+ AI prompts engineered for the current model lineup: 6,000+ prompts across 21 categories, organised by tool (ChatGPT, Claude, Gemini, Midjourney, Grok, DeepSeek, Nano Banana) and by type (text, image). Every prompt is engineered, tested in real workflows, and updated as new models ship. Free to browse and copy.
+
+How is the library organised?
+
+Three ways. By category: 21 roots (marketing, sales, SEO, coding, writing, design, photography, art, architecture, business, finance, HR, legal, customer service, e-commerce, education, productivity, real estate, solopreneurs and more) plus 142 subcategories. By tool: one page per AI brand with prompts engineered for that model's strengths. By type: text, image, with code and search coming soon. Pick whichever entry point matches how you think about your task.
+
+Is the library free?
+
+Yes. The full prompt library is free to browse and copy. 26 mastery guides and mega-prompts are also free to download with an email. The Complete AI Bundle is a one-time purchase that adds the Custom GPTs Toolkit, No-Code Automations Bundle, 200+ AI Tools Directory, AI Cheatsheets Collection, and ChatGPT Custom Instructions, with lifetime updates as new packs ship.
+
+Which AI tool should I use these prompts with?
+
+Most text prompts work across ChatGPT, Claude, and Gemini with minimal edits. ChatGPT (GPT-5) is the broad workhorse. Claude (Opus 4.6, Sonnet 4.5) is strongest for long-form writing and serious coding. Gemini (3 Pro, 3 Flash) wins for ultra-long context and Search-grounded research. Image prompts use Midjourney v7 or Nano Banana. Each prompt's tool tag tells you what it was tuned for, but the pattern is portable.
+
+How fast can I get useful output?
+
+Most prompts produce keeper output on the first generation. No learning curve. Copy the prompt, replace the bracketed placeholders with your context, paste into your AI tool of choice, run. The prompts are engineered to work on the first try.
+
+Can I use these prompts for commercial work and client projects?
+
+Yes. God of Prompt's prompts are licensed for use in your own commercial work and client deliverables. Paste them into ChatGPT, Claude, Gemini, Midjourney, or any wrapper (Cursor, Zapier, Make, n8n, your own SaaS) and ship the output as part of your business. The prompts themselves cannot be resold or repackaged into a competing prompt library, but the output you create with them is yours.
+
+Are the prompts kept up to date?
+
+Yes. The library is actively maintained for the current generation of AI models. Prompt patterns are tuned for GPT-5, Claude Opus 4.6, Claude Sonnet 4.5, Gemini 3 Pro, Gemini 3 Flash, Grok 4, DeepSeek R1, Midjourney v7, and Nano Banana. When a major model ships, the affected packs are reviewed within days. Complete AI Bundle holders get every update for life.
+
+What is a prompt library?
+
+A prompt library is an organized, searchable collection of ready-to-use AI prompts, filed so that the right one can be found and reused without rewriting it. God of Prompt's prompt library files each prompt by category, AI model, job role and output type, and shows the example output where one exists.
+
+What should a prompt library include?
+
+Each entry should carry the prompt itself, the model it was written for, the role or task it serves, the output format it returns, the variables to fill in, an example of its output, and a last-updated date. Those fields are what make a library filterable and maintainable once it grows past a few dozen prompts.
+
+How do I keep a prompt library current?
+
+Re-test prompts whenever a model you rely on ships a new version, keep a change history per prompt, track which prompts get used, and archive the ones nobody runs. God of Prompt reviews affected prompts when ChatGPT, Claude, Gemini, Grok or Midjourney change, and every prompt page shows its last update date.
+
+## What is a prompt library?
+
+A prompt library is a curated, searchable collection of ready-to-use prompts for AI models such as ChatGPT, Claude, Gemini and Midjourney. Instead of writing every instruction from scratch, you open the library, pick a prompt built for the job, fill in the variables, and paste it into the model. A good prompt library organizes prompts by task, model and audience, shows what each prompt produces, and keeps every entry tested and current.
+
+The God of Prompt prompt library does exactly that, free to copy: every prompt is engineered and tested, filed under one of 21 categories, tagged by the model it runs on, and shown with its example output where one exists. Premium members unlock the full set, the custom prompt generator and lifetime updates.
+
+## Why use a prompt library?
+
+A prompt library saves the time spent rewriting the same instruction, keeps output consistent across a team, and turns prompt quality into something you can check instead of something you hope for. Four gains show up first: speed, because a tested prompt is one paste away; consistency, because everyone starts from the same wording and output format; quality control, because a prompt that works is kept and a prompt that drifts is fixed once for everyone; and onboarding, because a new teammate inherits the prompts that already work.
+
+## How a prompt library is organized
+
+A usable prompt library is organized along the axes people actually search by, with metadata on every entry. God of Prompt files each prompt by category and subcategory (21 roots, 142 subcategories), by the AI model it was written and tested for, by the job role it serves, and by output type (text or image). Every entry carries the variables you fill in, the example output where one exists, its last update date, and an attribution record. That metadata is what makes filtering, comparison and maintenance possible at the scale of thousands of prompts.
+
+## How to build your own prompt library
+
+1. Define the jobs. List the recurring tasks your team runs through AI, by role: campaign briefs, code reviews, support replies, research summaries.
+2. Collect what already works. Gather the prompts people reuse, keep the ones that produce a consistent output shape, and rewrite the ones that need a clarifying question first.
+3. Add metadata. Tag each prompt with the model, the role, the output format, the variables it expects, an owner, and a date.
+4. Version and review. Keep a change history and re-test prompts when a model changes; a prompt tuned for one model version can behave differently on the next.
+5. Measure and prune. Track which prompts get used and which get abandoned, and archive the ones nobody runs.
+
+## Prompt library tools
+
+For a small team, a shared Notion page, a Google Sheet or an Airtable base is enough to start. Dedicated prompt-management tools add versioning and evaluation on top. God of Prompt is the ready-made option: the library above is already organized, tagged and tested, free to copy, and the custom prompt generator builds a structured prompt from a plain description when nothing in the library fits.
+
+## What's inside the library
+
+6,000+ prompts grouped three ways for fast retrieval:
+
+- By category (21 root + 142 subcategories): marketing, sales, SEO, coding, writing, design, photography, business, finance, HR, legal, customer service, education, e-commerce, productivity, real estate, art, architecture, solopreneurs.
+- By tool (7 leading AI models): ChatGPT, Claude, Gemini, Grok, DeepSeek, Midjourney, Nano Banana. Each tool page lists prompts engineered specifically for that model's strengths.
+- By type: text prompts (for ChatGPT/Claude/Gemini) or image prompts (for Midjourney/Nano Banana). Search and Code prompt types coming soon.
+
+## How to use any prompt in the library
+
+1. Click into a prompt that matches your task.
+2. Copy the structured prompt. Every prompt is hand-crafted to encode role, context, task, constraints, and output format.
+3. Replace the bracketed placeholders with your context (your audience, your brand, your inputs).
+4. Paste into ChatGPT, Claude, Gemini, Midjourney, Nano Banana, or any wrapper (Cursor, Zapier, Make, n8n).
+5. Run, review, refine. Most prompts in this library produce keeper output on the first generation.
+
+## Why God of Prompt is different from a free prompt list
+
+Free prompt lists online are mostly copy-paste between dozens of similar pages, written by people who never actually ran a business with them. God of Prompt's prompts are engineered, tested, and updated:
+
+- Engineered: each prompt encodes role, context, task, constraints, and a strict output format. The pattern OpenAI and Anthropic recommend in their own documentation.
+- Tested: every prompt is run against real workflows in our own business before it ships. We're not selling theory; we're selling the playbook a working AI business runs on.
+- Updated: when GPT-5, Claude Opus 4.6, Gemini 3, or Midjourney v7 ship, the affected prompts and AI educational resources are reviewed within days. No stale 2023 prompt lists.
+
+## Who the library is for
+
+6,000+ prompts means something for every workflow that touches AI. The categories cover:
+
+- Marketers and growth teams: content marketing, SEO, sales, email, social, ads, branding
+- Engineers: coding, debugging, refactoring, code review, agentic IDE workflows
+- Solopreneurs and founders: full-stack business operation, automation, content, customer service
+- Designers and creators: image generation, design briefs, UI/UX, photography, illustration
+- Writers and editors: copywriting, long-form, technical writing, journalism, creative
+- Operators in regulated fields: legal, finance, HR, real estate, with prompts that respect the constraints of those domains
+
+## Free to copy. Premium for everything.
+
+The full library is browsable for free. Every prompt is copyable. 26 free mastery guides and mega-prompts (Claude, Gemini, Grok, Midjourney, Veo, AI Agents, Prompt Engineering, ChatGPT Images, and more) are downloadable with email.
+
+The Complete AI Bundle is the one-time purchase that unlocks every premium asset: Custom GPTs Toolkit, No-Code Automations Bundle, 200+ AI Tools Directory, AI Cheatsheets Collection, ChatGPT Custom Instructions, plus every new product and AI educational resource we ship from now on. Lifetime updates, no subscription.
+
+## Browse by category
+
+## Browse by AI model
+
+## Browse by prompt type
+
+- Text Prompts5,802
+- Image Prompts793
+- Code Prompts soon
+- Search Prompts soon
+
+## Browse AI prompts by audience
