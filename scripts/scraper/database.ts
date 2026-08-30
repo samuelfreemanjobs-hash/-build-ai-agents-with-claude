@@ -83,7 +83,9 @@ export function importPrompts(
                           ? 'Snack Prompt Library'
                           : collId === 'gemini-api-prompts'
                             ? 'Gemini API Prompt Gallery'
-                            : collId!,
+                            : collId === 'prompthero'
+                              ? 'PromptHero Library'
+                              : collId!,
           sourceUrl: sourceMeta.url,
           sectionCount: new Set(toImport.filter((p) => p.collection === collId).map((p) => p.collectionSection)).size,
           promptCount: count,

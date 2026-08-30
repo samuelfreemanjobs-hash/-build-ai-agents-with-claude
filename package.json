@@ -21,6 +21,8 @@
     "scrape:snackprompt:live": "tsx scripts/scraper/run-agent.ts -- --source snackprompt --live",
     "scrape:gemini": "tsx scripts/scraper/run-agent.ts -- --source gemini-api-prompts",
     "scrape:gemini:live": "tsx scripts/scraper/run-agent.ts -- --source gemini-api-prompts --live",
+    "scrape:prompthero": "tsx scripts/scraper/run-agent.ts -- --source prompthero",
+    "scrape:prompthero:live": "tsx scripts/scraper/run-agent.ts -- --source prompthero --live",
     "scrape:dry": "tsx scripts/scraper/run-agent.ts -- --dry-run",
     "preview": "vite preview",
     "start": "vite preview --host 0.0.0.0 --port 4173"

@@ -17,6 +17,7 @@ import { scrapeAnthropicPromptLibrary, ANTHROPIC_COLLECTION } from './sources/an
 import { scrapeGammaPromptLibrary, GAMMA_COLLECTION } from './sources/gamma-prompt-parser'
 import { scrapeSnackPromptLibrary, SNACKPROMPT_COLLECTION } from './sources/snackprompt-parser'
 import { scrapeGeminiPromptLibrary, GEMINI_COLLECTION } from './sources/gemini-prompt-parser'
+import { scrapePromptHeroLibrary, PROMPTHERO_COLLECTION } from './sources/prompthero-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -264,6 +265,32 @@ async function main() {
       db,
       scraped,
       { name: GEMINI_COLLECTION.name, url: GEMINI_COLLECTION.sourceUrl },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
+
+  if (options.source === 'prompthero' || options.source === 'all') {
+    console.log('📚 Importing PromptHero Library...')
+    console.log(`   Source: ${PROMPTHERO_COLLECTION.sourceUrl}`)
+    if (options.live) console.log('   Mode: live scrape (Firecrawl + fetch, falls back to seed)')
+    else console.log('   Mode: seed/cache (prompthero-page.txt)')
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const { prompts: scraped, method, message } = await scrapePromptHeroLibrary({
+      live: options.live,
+      existingPrompts: db.prompts,
+      limit: options.limit,
+    })
+    console.log(`Extracted ${scraped.length} transformed prompts (${method})`)
+    if (message) console.log(`   ${message}`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      { name: PROMPTHERO_COLLECTION.name, url: PROMPTHERO_COLLECTION.sourceUrl },
       options.dryRun
     )
 

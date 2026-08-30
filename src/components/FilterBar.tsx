@@ -65,6 +65,7 @@ export function FilterBar({
             { value: 'gamma-prompt-library', label: '📊 Gamma Library' },
             { value: 'snackprompt', label: '🍿 Snack Prompt' },
             { value: 'gemini-api-prompts', label: '💎 Gemini API' },
+            { value: 'prompthero', label: '🎨 PromptHero' },
           ]}
         />
 
