@@ -7,6 +7,11 @@
 **Master calendar:** `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md`  
 **Machine index:** `factory/marketing-operations-plan.json`  
 **Monthly template:** `research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md`  
+**Weekly GOO:** `research/WEEKLY-GOO-REVIEW-TEMPLATE.md`  
+**KPI definitions:** `strategy/KPI-DEFINITIONS.md`  
+**Ascension ladder:** `strategy/ASCENSION-LADDER.json`  
+**OPEN months:** `strategy/OPEN-MONTH-PLAYBOOK.md`  
+**Active plans:** `projects/persuasion-mechanics/plans/`  
 **Paired:** `BUSINESS-PLAN-METHODOLOGY.md` · `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` · `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` · `PRODUCTION-FACTORY.md`
 
 ---

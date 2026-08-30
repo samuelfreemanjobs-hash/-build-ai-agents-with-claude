@@ -206,6 +206,7 @@
 | `research/FISHBEIN-REASONED-ACTION-TEMPLATE.md` | Fishbein |
 | `research/EVANGELISM-PITCH-TEMPLATE.md` | Kawasaki |
 | `research/SEO-INTENT-CONTENT-TEMPLATE.md` | Patel |
+| `research/WEEKLY-GOO-REVIEW-TEMPLATE.md` | Kennedy · Powers (Friday diagnosis) |
 
 ---
 

@@ -9,6 +9,12 @@
   "strategic_plan": "strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md",
   "content_plan": "strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md",
   "powers_model": "strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md",
+  "open_month_playbook": "strategy/OPEN-MONTH-PLAYBOOK.md",
+  "ascension_ladder": "strategy/ASCENSION-LADDER.json",
+  "kpi_definitions": "strategy/KPI-DEFINITIONS.md",
+  "weekly_goo_template": "research/WEEKLY-GOO-REVIEW-TEMPLATE.md",
+  "active_plans_dir": "projects/persuasion-mechanics/plans/",
+  "launch_audits_dir": "projects/persuasion-mechanics/launch/",
   "business_plan_sync": "factory/business-plan.json",
   "planning_horizons": {
     "strategic_12_month": "factory/business-plan.json",
@@ -26,7 +32,7 @@
   "content_ratio": {"teach": 70, "proof": 20, "promo": 10},
   "current_month": "2026-09",
   "months": [
-    {"month": "2026-09", "label": "M1", "mode": "LAUNCH", "product_id": "PM-001", "plan_status": "locked", "marketing_focus": "waitlist_webinar_cohort", "ops_focus": "factory_outline_launch_assets", "free_line": "DR_rubric_install"},
+    {"month": "2026-09", "label": "M1", "mode": "LAUNCH", "product_id": "PM-001", "plan_status": "locked", "detail_plan": "projects/persuasion-mechanics/plans/2026-09-marketing-ops-plan.md", "marketing_focus": "waitlist_webinar_cohort", "ops_focus": "factory_outline_launch_assets", "free_line": "DR_rubric_install"},
     {"month": "2026-10", "label": "M2", "mode": "PRODUCE", "product_id": "PM-007", "plan_status": "planned", "marketing_focus": "tripwire_vault_outbound", "ops_focus": "pm007_chapters_vault_delivery"},
     {"month": "2026-11", "label": "M3", "mode": "PRODUCE", "product_id": "PM-010", "plan_status": "planned", "marketing_focus": "bfcm_bundle", "ops_focus": "pm010_chapters_bundle_checkout"},
     {"month": "2026-12", "label": "M4", "mode": "PRODUCE", "product_id": "PM-002", "plan_status": "planned", "marketing_focus": "year_end_intensive", "ops_focus": "pm002_ship_consulting_slots"},

@@ -36,7 +36,7 @@
 2. REVENUE ARCHITECTURE — streams + target mix
 3. 12-MONTH CALENDAR  — month × mode × product × opportunistic
 4. MARKETING & OPS MASTER PLAN — every month: content, email, launches, factory, fulfillment, metrics
-5. OPEN MONTH PLAYBOOK — what to run when no new book
+5. OPEN MONTH PLAYBOOK — what to run when no new book (`strategy/OPEN-MONTH-PLAYBOOK.md`)
 6. QUARTERLY TARGETS  — Q1–Q4 checkpoints (metrics TBD by client)
 7. FACTORY SYNC       — register-book / register-launch commands
 8. ROLLING REFRESH    — extend horizon on 1st of each month

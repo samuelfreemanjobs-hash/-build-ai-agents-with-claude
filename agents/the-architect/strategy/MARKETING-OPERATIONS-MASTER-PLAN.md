@@ -325,7 +325,8 @@
 ## Planning compliance checklist
 
 - [ ] All 12 months have marketing + ops rows above
-- [ ] Each month detail expanded in `projects/persuasion-mechanics/plans/YYYY-MM-marketing-ops-plan.md` before month starts
+- [x] M1 detail plan: `projects/persuasion-mechanics/plans/2026-09-marketing-ops-plan.md` (locked)
+- [ ] Each remaining month detail expanded in `projects/persuasion-mechanics/plans/YYYY-MM-marketing-ops-plan.md` before month starts
 - [ ] `factory/marketing-operations-plan.json` status = `locked` for active month
 - [ ] No factory `daily` without active month plan locked
 - [ ] Opportunistic only from pre-approved playbook

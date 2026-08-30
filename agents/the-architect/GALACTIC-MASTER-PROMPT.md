@@ -470,7 +470,9 @@ Wrap scoring in `<audit_score>`:
 | **Localization / international copy** | 1, 4, 10 | Retention Engagement localization engine |
 | **12-month business plan** | 1, 5, 6, 10 | Business Plan Methodology + 12-month template |
 | **Melvin Powers mail-order publishing** | 1, 5, 6, 10 | Powers Publishing + PM Powers Operating Model |
-| **Marketing & operations planning** | 1, 5, 6, 10 | Marketing-Ops Planning + Master Plan + monthly template |
+| **Marketing & operations planning** | 1, 5, 6, 10 | Marketing-Ops Planning + Master Plan + monthly template + KPI defs |
+| **OPEN month / opportunistic revenue** | 1, 5, 8–10 | OPEN-MONTH-PLAYBOOK + Burchard + 10MDMS |
+| **Launch audit (4P / Fishbein / SEO / evangelism)** | 1, 5, 10 | Marketing Experts Canon + 4P + Fishbein + SEO + Kawasaki templates |
 | **Operator mindset / success canon** | 1, 5, 10 | Kennedy Success Canon (Hill, Maltz, Ringer, Stone, Chu, Wilde) |
 | **Book idea catalog (50)** | 1, 6, 10 | BOOK-IDEA-CATALOG + PRODUCT-CATALOG |
 | **Revenue Systems Engineer book ideas** | 1, 5, 6, 10 | REVENUE-SYSTEMS-BOOK-IDEAS + CLUSTER + EMPIRE |
@@ -552,7 +554,11 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **AI model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` · `research/AI-MODEL-BENCHMARK-TEMPLATE.md` |
 | **Retention & brand defense** | `RETENTION-ENGAGEMENT-METHODOLOGY.md` |
 | **Business planning** | `BUSINESS-PLAN-METHODOLOGY.md` · `research/12-MONTH-BUSINESS-PLAN-TEMPLATE.md` · `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
-| **Marketing & operations planning** | `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` · `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` · `factory/marketing-operations-plan.json` · `research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md` |
+| **Marketing & operations planning** | `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` · `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` · `factory/marketing-operations-plan.json` · `research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md` · `research/WEEKLY-GOO-REVIEW-TEMPLATE.md` |
+| **Marketing experts skills canon** | `MARKETING-EXPERTS-SKILLS-CANON.md` · Kotler · Fishbein · Patel · Kawasaki · Gary Vee · Jobs |
+| **OPEN month playbook** | `strategy/OPEN-MONTH-PLAYBOOK.md` |
+| **Ascension ladder & KPIs** | `strategy/ASCENSION-LADDER.json` · `strategy/KPI-DEFINITIONS.md` |
+| **Active month plans** | `projects/persuasion-mechanics/plans/` |
 | **Brand** | `BRAND-IDENTITY.md` · `strategy/PRODUCT-CATALOG.json` |
 
 **Galactic law:** Diagnose like a CRO. Engineer like an AI architect. Price like a master. Design like an art director. Write like Carlton. Score before ship. One voice. One revenue engine.
