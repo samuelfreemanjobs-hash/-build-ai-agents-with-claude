@@ -88,14 +88,36 @@ python3 -m http.server 8080
 
 Open **http://localhost:8080** — no password locally; auth only applies on Hostinger after deploy.
 
-Note: PHP save (`api/save-*.php`) won't work locally; tasks/metrics use browser localStorage until deployed.
+Note: PHP save won't work locally; tasks/metrics use browser localStorage until deployed.
 
-Hostinger shared hosting includes PHP. The portal saves tasks/metrics via:
+### 5. PHP save (tasks & metrics on Hostinger)
 
-- `api/save-tasks.php`
-- `api/save-metrics.php`
+Hostinger shared hosting includes PHP. After deploy:
 
-Ensure `data/` folder is writable (chmod 755 or 775).
+| Button | Writes to |
+|---|---|
+| **Save tasks** | `data/ops-tasks.json` |
+| **Save metrics** | `data/ops-metrics.json` |
+
+**Verify PHP is working:**
+
+```
+https://freemanintelligence.com/ops/api/health.php
+```
+
+Should return `"ok": true` and `"data_dir_writable": true`.
+
+**If save fails — fix permissions (hPanel File Manager):**
+
+| Path | Permission |
+|---|---|
+| `public_html/ops/data/` | **755** or **775** |
+| `public_html/ops/data/ops-tasks.json` | **644** or **664** |
+| `public_html/ops/data/ops-metrics.json` | **644** or **664** |
+
+The folder must be **writable by PHP**. On save success you'll see: `Saved to server (2026-09-01)`.
+
+Backups: previous version saved as `ops-tasks.json.bak` / `ops-metrics.json.bak`.
 
 ---
 

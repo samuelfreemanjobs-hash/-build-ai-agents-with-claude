@@ -93,16 +93,23 @@ If you have a Hostinger API token: [developers.hostinger.com](https://developers
 HOSTINGER_API_TOKEN=your-token
 ```
 
-### M1 site pages to deploy (Sep 2026)
+### M1 site pages (built — deploy from `website/public/`)
 
 | Page | Path | Purpose |
 |---|---|---|
 | Home / brand | `/` | Freeman Intelligence intro |
-| Waitlist | `/waitlist` | FI-001 launch |
-| DR Rubric | `/rubric` | Free line lead magnet |
-| Cohort | `/cohort` | Founding cohort $497 |
+| Waitlist | `/waitlist/` | FI-001 launch · tag `waitlist` |
+| DR Rubric | `/rubric/` | Free line lead magnet · tag `lead_rubric` |
+| Cohort | `/cohort/` | Founding cohort $497 · tag `cohort_interest` |
 
-See `research/WEBSITE-DESIGN-BUILD-TEMPLATE.md` and `PREMIUM-WEBSITE-DESIGN-METHODOLOGY.md` when ready to build.
+**Guide:** `PUBLIC-SITE.md`
+
+```bash
+python3 scripts/deploy-public-site.py       # upload to public_html/
+python3 scripts/deploy-all.sh               # public + ops portal
+```
+
+Leads save to `public_html/data/leads.json` via `api/subscribe.php`.
 
 ### E. Internal ops portal (backend dashboard)
 
