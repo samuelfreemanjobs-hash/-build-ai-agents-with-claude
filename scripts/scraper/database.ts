@@ -9,8 +9,9 @@ export const DB_PATH = join(__dirname, '../../data/prompts-db.json')
 export function loadDatabase(): PromptsDatabase {
   if (!existsSync(DB_PATH)) {
     return {
-      version: 1,
+      version: 2,
       lastUpdated: new Date().toISOString(),
+      collections: [],
       sources: [],
       prompts: [],
     }
@@ -55,6 +56,24 @@ export function importPrompts(
 
   if (!dryRun && toImport.length > 0) {
     db.prompts.push(...toImport)
+
+    const collectionIds = [...new Set(toImport.map((p) => p.collection).filter(Boolean))]
+    for (const collId of collectionIds) {
+      const count = toImport.filter((p) => p.collection === collId).length
+      const existing = db.collections?.find((c) => c.id === collId)
+      if (existing) {
+        existing.promptCount += count
+      } else if (db.collections) {
+        db.collections.push({
+          id: collId!,
+          name: collId === '1000-prompts' ? '1000+ Prompts Collection' : collId!,
+          sourceUrl: sourceMeta.url,
+          sectionCount: new Set(toImport.filter((p) => p.collection === collId).map((p) => p.collectionSection)).size,
+          promptCount: count,
+        })
+      }
+    }
+    if (!db.collections) db.collections = []
 
     const existingSource = db.sources.find((s) => s.url === sourceMeta.url)
     if (existingSource) {

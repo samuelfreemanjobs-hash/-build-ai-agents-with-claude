@@ -43,6 +43,16 @@ export function PromptCard({ prompt, onClick, onCopy, isCopied }: PromptCardProp
               {model}
             </span>
           ))}
+          {prompt.swipes && prompt.swipes.length > 0 && (
+            <span className="px-2 py-0.5 text-xs rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">
+              {prompt.swipes.length} swipes
+            </span>
+          )}
+          {prompt.fillInBlank && (
+            <span className="px-2 py-0.5 text-xs rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">
+              fill-in-blank
+            </span>
+          )}
           {prompt.models.length > 3 && (
             <span className="px-2 py-0.5 text-xs rounded-md bg-white/5 text-slate-500">
               +{prompt.models.length - 3}

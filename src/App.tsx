@@ -14,10 +14,10 @@ export default function App() {
   const [showCategories, setShowCategories] = useState(false)
 
   const { prompts: filteredPrompts, totalCount } = usePrompts(filters)
-  const { copiedId, copyPrompt } = useCopyPrompt()
+  const { copiedId, copiedText, copyPrompt, copyText } = useCopyPrompt()
 
   const hasActiveFilters =
-    filters.search || filters.category || filters.model || filters.type
+    filters.search || filters.category || filters.model || filters.type || filters.collection
 
   const updateFilters = (updates: Partial<FilterState>) => {
     setFilters((prev) => ({ ...prev, ...updates }))
@@ -92,8 +92,8 @@ export default function App() {
       <PromptModal
         prompt={selectedPrompt}
         onClose={() => setSelectedPrompt(null)}
-        onCopy={() => selectedPrompt && handleCopy(selectedPrompt)}
-        isCopied={selectedPrompt ? copiedId === selectedPrompt.id : false}
+        onCopy={(text) => copyText(text, selectedPrompt?.id)}
+        copiedText={copiedText}
       />
     </div>
   )

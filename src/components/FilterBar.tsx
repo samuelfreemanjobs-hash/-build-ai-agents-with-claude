@@ -53,6 +53,15 @@ export function FilterBar({
         />
 
         <FilterSelect
+          label="Collection"
+          value={filters.collection ?? ''}
+          onChange={(v) => onFilterChange({ collection: v || null })}
+          options={[
+            { value: '1000-prompts', label: '📚 1000+ Prompts' },
+          ]}
+        />
+
+        <FilterSelect
           label="Sort by"
           value={filters.sort}
           onChange={(v) => onFilterChange({ sort: v as SortOption })}

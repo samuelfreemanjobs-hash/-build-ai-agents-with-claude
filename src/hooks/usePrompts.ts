@@ -22,7 +22,8 @@ export function usePrompts(filters: FilterState) {
           p.title.toLowerCase().includes(query) ||
           p.description.toLowerCase().includes(query) ||
           p.tags.some((t) => t.toLowerCase().includes(query)) ||
-          p.content.toLowerCase().includes(query)
+          p.content.toLowerCase().includes(query) ||
+          p.fillInBlank?.toLowerCase().includes(query)
       )
     }
 
@@ -36,6 +37,10 @@ export function usePrompts(filters: FilterState) {
 
     if (filters.type) {
       result = result.filter((p) => p.type === filters.type)
+    }
+
+    if (filters.collection) {
+      result = result.filter((p) => p.collection === filters.collection)
     }
 
     switch (filters.sort) {
@@ -56,30 +61,37 @@ export function usePrompts(filters: FilterState) {
     return result
   }, [filters])
 
-  return { prompts: filteredPrompts, totalCount: prompts.length }
+  const collectionCount = prompts.filter((p) => p.collection === '1000-prompts').length
+
+  return { prompts: filteredPrompts, totalCount: prompts.length, collectionCount }
 }
 
 export function useCopyPrompt() {
   const [copiedId, setCopiedId] = useState<string | null>(null)
+  const [copiedText, setCopiedText] = useState<string | null>(null)
 
-  const copyPrompt = async (prompt: Prompt) => {
+  const copyText = async (text: string, id?: string) => {
     try {
-      await navigator.clipboard.writeText(prompt.content)
-      setCopiedId(prompt.id)
-      setTimeout(() => setCopiedId(null), 2000)
+      await navigator.clipboard.writeText(text)
     } catch {
       const textarea = document.createElement('textarea')
-      textarea.value = prompt.content
+      textarea.value = text
       document.body.appendChild(textarea)
       textarea.select()
       document.execCommand('copy')
       document.body.removeChild(textarea)
-      setCopiedId(prompt.id)
-      setTimeout(() => setCopiedId(null), 2000)
     }
+    setCopiedText(text)
+    if (id) setCopiedId(id)
+    setTimeout(() => {
+      setCopiedText(null)
+      setCopiedId(null)
+    }, 2000)
   }
 
-  return { copiedId, copyPrompt }
+  const copyPrompt = (prompt: Prompt) => copyText(prompt.content, prompt.id)
+
+  return { copiedId, copiedText, copyPrompt, copyText }
 }
 
 export const defaultFilters: FilterState = {
@@ -87,6 +99,7 @@ export const defaultFilters: FilterState = {
   category: null,
   model: null,
   type: null,
+  collection: null,
   sort: 'shuffled',
 }
 

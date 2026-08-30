@@ -1,31 +1,28 @@
 #!/usr/bin/env npx tsx
 /**
  * Prompt Scraper AI Agent Runner
- *
- * Implements the agent defined in agents/prompt-scraper-agent.md
  * Usage:
- *   npm run scrape
- *   npm run scrape -- --source csv --limit 50
- *   npm run scrape -- --dry-run
+ *   npm run scrape -- --source pdfcoffee --limit 120
+ *   npm run scrape -- --source csv --limit 100
+ *   npm run scrape -- --source all
  */
 
 import { scrapeAwesomePromptsCsv } from './sources'
+import { scrape1000PromptsCollection } from './sources/pdfcoffee'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
   const args = process.argv.slice(2)
   const options = {
-    source: 'csv',
-    limit: 100,
+    source: 'pdfcoffee',
+    limit: 120,
     dryRun: false,
-    url: null as string | null,
   }
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--source' && args[i + 1]) options.source = args[++i]
     if (args[i] === '--limit' && args[i + 1]) options.limit = parseInt(args[++i], 10)
     if (args[i] === '--dry-run') options.dryRun = true
-    if (args[i] === '--url' && args[i + 1]) options.url = args[++i]
   }
 
   return options
@@ -37,7 +34,30 @@ async function main() {
 
   const options = parseArgs()
   const db = loadDatabase()
+  if (!db.collections) db.collections = []
   console.log(`Current database: ${db.prompts.length} prompts from ${db.sources.length} sources\n`)
+
+  if (options.source === 'pdfcoffee' || options.source === 'all') {
+    console.log('📚 Scraping 1000+ Prompts Collection (PDFCoffee-style)...')
+    console.log('   Source: https://pdfcoffee.com/1000-prompts-pdf-free.html')
+    console.log('   (Using GitHub mirror + originality transforms + swipes)\n')
+
+    const scraped = await scrape1000PromptsCollection(db.prompts, options.limit)
+    console.log(`Extracted ${scraped.length} transformed prompts with swipes`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      {
+        name: '1000+ Prompts Collection (PDFCoffee-style)',
+        url: 'https://pdfcoffee.com/1000-prompts-pdf-free.html',
+      },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
 
   if (options.source === 'csv' || options.source === 'all') {
     const scraped = await scrapeAwesomePromptsCsv(db.prompts, options.limit)
@@ -53,13 +73,7 @@ async function main() {
       options.dryRun
     )
 
-    if (options.dryRun) {
-      console.log('\n[DRY RUN] No changes saved.')
-      report.imported = scraped.length
-    } else {
-      report.totalInDatabase = db.prompts.length
-    }
-
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
     printReport(report)
   }
 

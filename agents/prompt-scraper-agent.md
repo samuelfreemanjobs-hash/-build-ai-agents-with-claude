@@ -110,11 +110,17 @@ After each run, produce:
 
 ## Commands
 
-Run the scraper agent:
-
 ```bash
-npm run scrape                          # Default sources
-npm run scrape -- --source csv          # CSV source only
-npm run scrape -- --url "https://..."   # Custom URL
-npm run scrape -- --dry-run             # Preview without saving
+npm run scrape                              # Scrape 1000+ Prompts (PDFCoffee-style)
+npm run scrape -- --source pdfcoffee --limit 120
+npm run scrape -- --source csv --limit 100  # Awesome ChatGPT Prompts CSV
+npm run scrape:dry                          # Preview without saving
+npm run build:prompts                       # Sync database → web app
 ```
+
+## Swipes & Fill-in-Blank
+
+Every prompt from the 1000+ collection includes:
+- **Original** — rewritten for originality (not verbatim copies)
+- **Fill-in-Blank** — `{{placeholder}}` version for customization
+- **4 Swipes** — alternative use cases (B2B focus, quick version, beginner-friendly, different format)
