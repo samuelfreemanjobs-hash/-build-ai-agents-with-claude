@@ -313,6 +313,7 @@ Save to: `agents/the-architect/projects/<slug>/`
 | Carlton | Theatre/Salesmanship/Bonding | SWS 17 steps |
 | Haines | Shortcut formulas | Headline → P.S. linear |
 | Abraham | N×V×F · Parthenon | Lever scan template |
+| Hormozi | Value equation · Grand Slam | Grand Slam Offer template |
 | Celebrity | 7-layer authority stack | 90-day sprint template |
 | Business book | Framework as revelation | Thriller chapter beats |
 

@@ -101,7 +101,9 @@ Run in order. Save outputs to `research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md`.
 
 ### Phase 5 — Deliverable Stack
 
-**Job:** Build value equation Kennedy-style — stack until price feels trivial.
+**Job:** Build Grand Slam stack — Hormozi value equation + Kennedy 5 elements. Stack until price feels trivial.
+
+**Deep file:** `HORMOZI-METHODOLOGY.md` · **Template:** `research/GRAND-SLAM-OFFER-TEMPLATE.md`
 
 | Layer | Examples |
 |---|---|
@@ -112,7 +114,7 @@ Run in order. Save outputs to `research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md`.
 | **Bonuses** | Each solves one objection or speeds one rung |
 | **Surprise** | Unannounced bonus at checkout (Halbert sweetening) |
 
-**Value math:** Assign dollar value per item; total stack 5–10× price anchor.
+**Value math:** Assign dollar value per item; total stack **≥ 10×** price anchor (Hormozi). Each bonus kills one objection.
 
 **Haines rule:** Write **blind bullet stack** before finalizing modules — bullets reveal missing deliverables.
 
@@ -159,7 +161,7 @@ Run in order. Save outputs to `research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md`.
 | Mechanism section | Named system (Phase 4) |
 | Bullet block | Module outcomes + bonuses (blind fascinations) |
 | Proof section | Rung-specific testimonials |
-| Offer reveal | Deliverable stack (Phase 5) |
+| Offer reveal | Deliverable stack (Phase 5) — Hormozi Grand Slam walkthrough |
 | Guarantee | Risk reversal (Phase 6) |
 | CTA | Cohort / price / bonus deadline |
 | P.S. | Second ad — urgency + bonus restate (Haines) |
@@ -285,4 +287,4 @@ See `research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md` — full nine-phase workshe
 
 ---
 
-See also: `GALACTIC-MASTER-PROMPT.md`, `SCHWARTZ-METHODOLOGY.md`, `CARLTON-METHODOLOGY.md`, `HALBERT-METHODOLOGY.md`, `HAINES-METHODOLOGY.md`, `KERN-METHODOLOGY.md`, `CRAFT-PLAYBOOKS.md`, `OBJECTIONS.md`
+See also: `GALACTIC-MASTER-PROMPT.md`, `SCHWARTZ-METHODOLOGY.md`, `CARLTON-METHODOLOGY.md`, `HALBERT-METHODOLOGY.md`, `HAINES-METHODOLOGY.md`, `KERN-METHODOLOGY.md`, `HORMOZI-METHODOLOGY.md`, `CRAFT-PLAYBOOKS.md`, `OBJECTIONS.md`

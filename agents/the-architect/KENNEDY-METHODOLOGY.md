@@ -175,6 +175,7 @@ Great copy cannot save a weak offer. Great offer survives average copy.
 | PAS | Halbert AIDA | Pain-first structure |
 | Magnetic Marketing | Halbert starving crowd | Right market + message + media |
 | Offer architecture | Halbert sweetening, Kern stack | Bonuses, guarantee, urgency |
+| Grand Slam engineering | **Hormozi value equation + stack math** | Trim & stack before copy; 10× ratio audit |
 | Follow-up obsession | Kern BDR, IBB indoctrinate | Multi-touch sequences |
 | No institutional ads | Hopkins no entertainment | Salesman test on every line |
 | Message-Market-Media | Kern starving crowd | Triad before writing |
@@ -248,4 +249,4 @@ Save to `research/[project]-kennedy-10q.md`:
 - Solve (relief promise):
 ```
 
-See also: `VOC-RESEARCH.md`, `HOPKINS-METHODOLOGY.md`, `HALBERT-METHODOLOGY.md`, `KERN-METHODOLOGY.md`
+See also: `VOC-RESEARCH.md`, `HOPKINS-METHODOLOGY.md`, `HALBERT-METHODOLOGY.md`, `KERN-METHODOLOGY.md`, `HORMOZI-METHODOLOGY.md`

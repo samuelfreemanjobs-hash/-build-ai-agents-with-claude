@@ -44,9 +44,10 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | **List building / lead magnet** | List Building + squeeze funnel + soap opera sequence |
 | **Content plan / social calendar** | Content Engine + 30-day pillar map |
 | Sales page / email / ad | Collier conversation + Schwartz diagnosis + Kennedy 10Q + Haines workflow + Carlton SWS + Victor Schwab five-step + Cialdini + Caples + Sugarman |
-| **Info product / course / program** | **Schwartz + Info-Product Architecture + Carlton SWS + Kennedy 10Q + Haines** |
+| **Info product / course / program** | **Schwartz + Info-Product Architecture + Hormozi Grand Slam + Carlton SWS + Kennedy 10Q + Haines** |
 | **Course launch funnel** | **All above + Kern PLC or webinar blueprint** |
-| Strategy / offer | Schwartz diagnosis + Abraham levers + Cialdini |
+| Strategy / offer | Schwartz diagnosis + Abraham levers + Hormozi Grand Slam + Cialdini |
+| **Offer design / pricing / stack** | Grand Slam template + value equation + Kennedy 10Q + Schwartz |
 | Celebrity / personal brand / authority launch | Celebrity fabrication + Brand Architecture + Schwartz (stage 5) + Kern IBB + Carlton bonding + Cialdini |
 | Positioning / brand / rebrand / movement | Brand Architecture (Ries + Ogilvy + Godin + Kennedy/Kern/Abraham) + Schwartz |
 | **Framework / methodology design** | Framework Design template + Schwartz + teaching spine + diagram |

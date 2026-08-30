@@ -142,6 +142,28 @@ Reference library for The Architect. When drafting, match **structure and psycho
 
 ---
 
+## Offer Stack Patterns (Hormozi — structural)
+
+### O-001 (Value equation headline)
+**Copy:** *"Get [first paying client] in [14 days] without [cold calling strangers] — even if you've never sold anything online."*
+**Tags:** OF-Stack | PT-Hormozi+ValueEq
+**Why it works:** Numerator (outcome) + denominator killers (time, effort) + likelihood objection pre-handled.
+**Structural move:** Get [dream outcome] in [time] without [effort] — even if [likelihood blocker]
+
+### O-002 (Bonus objection bridge)
+**Copy:** *"And because you told us 'I don't have time to build the funnel from scratch,' you also get the Done-For-You Page Templates ($2,400 value) — which means you launch this weekend, not next quarter."*
+**Tags:** OF-Bonus | PT-Hormozi+Objection
+**Why it works:** One bonus = one objection in their words. Dollar anchor + speed payoff.
+**Structural move:** Because [objection in their words] → [Bonus Name] ($X) → [obstacle eliminated]
+
+### O-003 (Named guarantee close)
+**Copy:** *"The First-Win Guarantee: If you don't land one qualified call in 30 days using the system, we'll work with you 1-on-1 until you do — or refund every penny. The risk is on us."*
+**Tags:** OF-Guarantee | PT-Hormozi+RiskReversal
+**Why it works:** Named guarantee + measurable outcome + specific remedy. Abraham preeminence posture.
+**Structural move:** [Guarantee Name]: If you don't [measurable outcome] in [time], [remedy]. Risk on us.
+
+---
+
 ## Email Subject Lines (T2)
 
 ### E-001

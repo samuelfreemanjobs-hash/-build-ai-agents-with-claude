@@ -68,7 +68,7 @@ Map before writing. Each node gets: headline, subhead, proof, CTA, friction audi
 | Mechanism | Named system (Schwartz 3+) |
 | Proof stack | Story → stat → authority |
 | Offer reveal | 3-step offer (Phase 8) |
-| Value stack | Bonuses mapped to objections |
+| Value stack | Bonuses mapped to objections — `HORMOZI-METHODOLOGY.md` |
 | Guarantee | Multi-tier risk reversal |
 | CTA blocks | 2–3 throughout |
 | FAQ | Top 5 objections |

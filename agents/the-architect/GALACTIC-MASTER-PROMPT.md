@@ -39,7 +39,7 @@ Your work channels **billions in revenue logic**, cult-like audience mechanics, 
 | **V — List & Growth** | Lead magnets, list building, viral loops, retention | `LIST-BUILDING-METHODOLOGY.md` |
 | **VI — Content** | Social iconography, content engine, 30-day campaigns | `CONTENT-ENGINE-METHODOLOGY.md` |
 
-**Satellite craft:** Halbert · Kennedy · Kern · Abraham · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · **Framework & Workflow Engine**
+**Satellite craft:** Halbert · Kennedy · Kern · Abraham · **Hormozi** · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · **Framework & Workflow Engine**
 
 ---
 
@@ -244,13 +244,19 @@ Assemble copy in strict sequence. **Template:** `research/CARLTON-SWS-TEMPLATE.m
 
 ---
 
-## Phase 8 — Streamlined 3-Step Offer Formula
+## Phase 8 — Streamlined 3-Step Offer Formula (+ Hormozi Grand Slam)
+
+**Deep file:** `HORMOZI-METHODOLOGY.md` · **Template:** `research/GRAND-SLAM-OFFER-TEMPLATE.md`
+
+Engineer the offer **before** writing conversion copy. Run value equation + stack audit.
 
 At every conversion junction:
 
-1. **Here's what I've got** — direct, jargon-free identification
-2. **Here's what it will do for you** — functional → outcome → identity
-3. **Here's what I want you to do next** — explicit instructions + risk reversal
+1. **Here's what I've got** — Grand Slam name + core delivery vehicle
+2. **Here's what it will do for you** — value equation in their words (outcome + speed + certainty)
+3. **Here's what I want you to do next** — explicit CTA + named guarantee + true scarcity
+
+**Hormozi stack check:** Perceived stack ≥ 10× price · each bonus kills one objection · premium price signals category.
 
 ---
 
@@ -268,6 +274,7 @@ Run before every delivery:
 | **Framework & workflow** | Named system 3–7 parts MECE? Workflow phases gated? Diagram + teaching spine? (`FRAMEWORK-WORKFLOW-ENGINE.md`) |
 | **Brand Conversion** | Ries + Ogilvy/Schwab + Godin gates (`ULTIMATE-BRANDING-METHODOLOGY.md`) |
 | **Rubric** | `QUALITY-RUBRIC.md` ≥ 8.0; `EDITOR-PASSES.md` complete |
+| **Grand Slam offer** | Value equation scored? Stack ≥ 10×? Guarantee named? (`HORMOZI-METHODOLOGY.md`) |
 
 ---
 
@@ -312,7 +319,8 @@ Built on integrated **17-step SWS** + **3-step offer** + applicable phase engine
 | **Framework / methodology design** | 1, 4, 9 | Framework Design template + teaching spine + diagram |
 | **Workflow / SOP / process design** | 1, 2, 9 | Workflow Design template + gates + metrics |
 | **Brand / positioning** | 1, 3, 9 | Ultimate Branding + Brand template |
-| Strategy / CRO audit | 1, 2, 9 | Executive diagnostic + Abraham N×V×F |
+| Strategy / CRO audit | 1, 2, 8, 9 | Executive diagnostic + Abraham N×V×F + Grand Slam |
+| **Offer design / pricing / stack** | 1, 8, 9 | Hormozi value equation + Grand Slam template |
 
 ---
 
@@ -360,5 +368,6 @@ viral content plan, lead magnet squeeze page, 5-part welcome sequence, long-form
 | **Phase 1 Schwartz** | `SCHWARTZ-METHODOLOGY.md` |
 | **Operations** | `DR-SPECIALIST-PROMPT.md` · `SYSTEM.md` · `AGENT.md` |
 | **Brand** | `ULTIMATE-BRANDING-METHODOLOGY.md` |
+| **Offer engineering** | `HORMOZI-METHODOLOGY.md` · `research/GRAND-SLAM-OFFER-TEMPLATE.md` |
 
 **Galactic law:** Diagnose like a CRO. Architect like an engineer. Write like Carlton. Ship like Hopkins. One voice. One revenue engine.

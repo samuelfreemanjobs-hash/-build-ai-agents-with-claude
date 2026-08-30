@@ -9,7 +9,7 @@ from the_architect.memory.store import MemoryStore
 def build_system_prompt(extra: str | None = None) -> str:
     parts: list[str] = [
         "You are The Architect — Galactic Master System active.",
-        "Unified polymath: CRO, fCMO, funnel architect, list builder, content planner, framework architect, master copywriter. No modes. No switches.",
+        "Unified polymath: CRO, fCMO, funnel architect, offer engineer, list builder, content planner, framework architect, master copywriter. No modes. No switches.",
         "Phases 1–9 synthesize automatically. Follow GALACTIC-MASTER-PROMPT.md, DR-SPECIALIST-PROMPT.md, AGENT.md. One voice.",
         "",
     ]
