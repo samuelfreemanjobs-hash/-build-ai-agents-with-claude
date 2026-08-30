@@ -2,7 +2,8 @@ import { execSync } from 'node:child_process'
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-export const GAMMA_LIBRARY_URL = 'https://gamma.app/prompts'
+export const GAMMA_LIBRARY_URL = 'https://gamma.app/prompts#browse-all'
+export const GAMMA_LIBRARY_BASE = 'https://gamma.app/prompts'
 export const GAMMA_RAW_DIR = 'data/sources/gamma-prompt-library-raw'
 export const GAMMA_CACHE_FILE = 'data/sources/gamma-prompt-library-scraped.json'
 export const GAMMA_SEED_RAW = 'data/sources/gamma-prompt-library-page.txt'
@@ -31,8 +32,10 @@ const SECTION_HEADERS: Array<[string, string]> = [
   ['### General', 'general'],
 ]
 
-const ACTION_RE =
-  /^(Create|Build|Design|Structure|Brief|Plan|Make|Present|Develop|Outline|Draft|Write|Prepare|Generate|Craft|Compose)\b/i
+const PROMPT_VERB =
+  'Create|Build|Design|Structure|Brief|Plan|Make|Present|Develop|Outline|Draft|Write|Prepare|Generate|Craft|Compose|Welcome|Launch|Position|Tell|Convert|Show|Explain|Compare|Analyze|Map|Review|Pitch|Propose|Recap|Summarize|Introduce|Teach|Guide|Walk|Demo|Sell|Close|Negotiate|Onboard|Train|Assess|Evaluate|Research|Forecast|Model|Simulate|Visualize|Illustrate|Document|Report'
+
+const ACTION_RE = new RegExp(`^(${PROMPT_VERB})\\b`, 'i')
 
 function saveRaw(name: string, content: string): string {
   mkdirSync(GAMMA_RAW_DIR, { recursive: true })
@@ -74,10 +77,10 @@ async function fetchText(url: string): Promise<string | null> {
 
 export function titleFromGammaContent(content: string): string {
   const m = content.match(
-    /^(?:Create|Build|Design|Structure|Brief|Plan|Make|Present|Develop|Outline|Draft|Write|Prepare|Generate|Craft|Compose)\s+(?:a|an|your|the)?\s*(.+?)(?::|$)/i
+    new RegExp(`^(${PROMPT_VERB})\\s+(?:a|an|your|the)?\\s*(.+?)(?::|$)`, 'i')
   )
-  if (m?.[1]) {
-    const t = m[1].trim()
+  if (m?.[2]) {
+    const t = m[2].trim()
     return (t.charAt(0).toUpperCase() + t.slice(1)).slice(0, 70)
   }
   return content.slice(0, 60)
@@ -156,7 +159,8 @@ export async function fetchGammaPromptLibraryLive(): Promise<GammaFetchResult> {
   mkdirSync(GAMMA_RAW_DIR, { recursive: true })
 
   const outPath = join(GAMMA_RAW_DIR, 'gamma-prompts.md')
-  const scraped = runFirecrawl(`scrape "${GAMMA_LIBRARY_URL}" --only-main-content -o "${outPath}"`)
+  const scrapeUrl = GAMMA_LIBRARY_BASE
+  const scraped = runFirecrawl(`scrape "${scrapeUrl}" --only-main-content -o "${outPath}"`)
   if (scraped !== null && existsSync(outPath)) {
     const md = readFileSync(outPath, 'utf-8')
     const prompts = parseGammaLibraryPage(md)
@@ -171,7 +175,7 @@ export async function fetchGammaPromptLibraryLive(): Promise<GammaFetchResult> {
     }
   }
 
-  const html = await fetchText(GAMMA_LIBRARY_URL)
+  const html = await fetchText(GAMMA_LIBRARY_BASE)
   if (html && html.length > 500) {
     saveRaw('gamma-prompts.html', html)
     const prompts = parseGammaLibraryPage(html)

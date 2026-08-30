@@ -87679,9 +87679,256 @@ export const prompts: Prompt[] = [
     "copies": 217,
     "collection": "gamma-prompt-library",
     "collectionSection": "general"
+  },
+  {
+    "id": "gamma-educators-college-freshmen-to-algebra-1-by-explaining-",
+    "title": "Pro College freshmen to Algebra 1 by explaining where you're headed (funct",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro college freshmen to algebra 1 by explaining where you're headed (funct expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nWelcome college freshmen to Algebra 1 by explaining where you're headed (functions), why it matters (real-world problems), and how class will work\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro college freshmen to algebra 1 by explaining where you're headed (funct expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nWelcome college freshmen to Algebra 1 by explaining where you're headed (functions), why it matters (real-world problems), and how class will work\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-college-freshmen-to-algebra-1-by-explaining--swipe-1",
+        "title": "Pro College freshmen to Algebra 1 by explaining where you're headed (funct — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro college freshmen to algebra 1 by explaining where you're headed (funct expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nWelcome college freshmen to Algebra 1 by explaining where you're headed (functions), why it matters (real-world problems), and how class will work\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-college-freshmen-to-algebra-1-by-explaining--swipe-2",
+        "title": "Pro College freshmen to Algebra 1 by explaining where you're headed (funct — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro college freshmen to algebra 1 by explaining where you're headed (funct expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nWelcome college freshmen to Algebra 1 by explaining where you're headed (functions), why it matters (real-world problems), and how class will work\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-college-freshmen-to-algebra-1-by-explaining--swipe-3",
+        "title": "Pro College freshmen to Algebra 1 by explaining where you're headed (funct — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro college freshmen to algebra 1 by explaining where you're headed (funct expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nWelcome college freshmen to Algebra 1 by explaining where you're headed (functions), why it matters (real-world problems), and how class will work\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-college-freshmen-to-algebra-1-by-explaining--swipe-format",
+        "title": "Pro College freshmen to Algebra 1 by explaining where you're headed (funct — Different Format",
+        "description": "Same goal, different output format for productivity use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for productivity",
+        "content": "## Role\nYou are a dedicated pro college freshmen to algebra 1 by explaining where you're headed (funct expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nWelcome college freshmen to Algebra 1 by explaining where you're headed (functions), why it matters (real-world problems), and how class will work\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "productivity"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "productivity",
+      "college",
+      "freshmen",
+      "algebra",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 52,
+    "copies": 194,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-marketers-finance-app-on-social",
+    "title": "Smart Finance app on social",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart finance app on social expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nLaunch a finance app on social: target millennials with debt, build financial confidence, use educational content on Instagram + TikTok\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart finance app on social expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nLaunch a finance app on social: target millennials with debt, build financial confidence, use educational content on Instagram + TikTok\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-finance-app-on-social-swipe-1",
+        "title": "Smart Finance app on social — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart finance app on social expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nLaunch a finance app on social: target millennials with debt, build financial confidence, use educational content on Instagram + TikTok\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-finance-app-on-social-swipe-2",
+        "title": "Smart Finance app on social — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart finance app on social expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nLaunch a finance app on social: target millennials with debt, build financial confidence, use educational content on Instagram + TikTok\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-finance-app-on-social-swipe-3",
+        "title": "Smart Finance app on social — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart finance app on social expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nLaunch a finance app on social: target millennials with debt, build financial confidence, use educational content on Instagram + TikTok\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-finance-app-on-social-swipe-format",
+        "title": "Smart Finance app on social — Different Format",
+        "description": "Same goal, different output format for education use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for education",
+        "content": "## Role\nYou are a dedicated smart finance app on social expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nLaunch a finance app on social: target millennials with debt, build financial confidence, use educational content on Instagram + TikTok\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "education"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "education",
+      "finance",
+      "smart",
+      "social",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 44,
+    "copies": 143,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-meal-kit",
+    "title": "Expert Meal kit",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert meal kit expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPosition your meal kit: people compare you to grocery delivery, you offer recipes + pre-portioned ingredients, busy families care most\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert meal kit expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPosition your meal kit: people compare you to grocery delivery, you offer recipes + pre-portioned ingredients, busy families care most\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-meal-kit-swipe-1",
+        "title": "Expert Meal kit — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert meal kit expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nPosition your meal kit: people compare you to grocery delivery, you offer recipes + pre-portioned ingredients, busy families care most\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-meal-kit-swipe-2",
+        "title": "Expert Meal kit — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert meal kit expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPosition your meal kit: people compare you to grocery delivery, you offer recipes + pre-portioned ingredients, busy families care most\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-meal-kit-swipe-3",
+        "title": "Expert Meal kit — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert meal kit expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPosition your meal kit: people compare you to grocery delivery, you offer recipes + pre-portioned ingredients, busy families care most\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-meal-kit-swipe-format",
+        "title": "Expert Meal kit — Different Format",
+        "description": "Same goal, different output format for productivity use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for productivity",
+        "content": "## Role\nYou are a dedicated expert meal kit expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPosition your meal kit: people compare you to grocery delivery, you offer recipes + pre-portioned ingredients, busy families care most\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "productivity"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "productivity",
+      "expert",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 34,
+    "copies": 85,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-sales-how-your-inventory-software-helped-a-retailer-re",
+    "title": "Rapid How your inventory software helped a retailer reduce stock-outs by 35%",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid how your inventory software helped a retailer reduce stock-outs by 35% expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nTell how your inventory software helped a retailer reduce stock-outs by 35% and boost same-day fulfillment from 60% to 89%\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid how your inventory software helped a retailer reduce stock-outs by 35% expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nTell how your inventory software helped a retailer reduce stock-outs by 35% and boost same-day fulfillment from 60% to 89%\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-how-your-inventory-software-helped-a-retailer-re-swipe-1",
+        "title": "Rapid How your inventory software helped a retailer reduce stock-outs by 35% — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid how your inventory software helped a retailer reduce stock-outs by 35% expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nTell how your inventory software helped a retailer reduce stock-outs by 35% and boost same-day fulfillment from 60% to 89%\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-how-your-inventory-software-helped-a-retailer-re-swipe-2",
+        "title": "Rapid How your inventory software helped a retailer reduce stock-outs by 35% — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid how your inventory software helped a retailer reduce stock-outs by 35% expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nTell how your inventory software helped a retailer reduce stock-outs by 35% and boost same-day fulfillment from 60% to 89%\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-how-your-inventory-software-helped-a-retailer-re-swipe-3",
+        "title": "Rapid How your inventory software helped a retailer reduce stock-outs by 35% — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid how your inventory software helped a retailer reduce stock-outs by 35% expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nTell how your inventory software helped a retailer reduce stock-outs by 35% and boost same-day fulfillment from 60% to 89%\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-how-your-inventory-software-helped-a-retailer-re-swipe-format",
+        "title": "Rapid How your inventory software helped a retailer reduce stock-outs by 35% — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid how your inventory software helped a retailer reduce stock-outs by 35% expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nTell how your inventory software helped a retailer reduce stock-outs by 35% and boost same-day fulfillment from 60% to 89%\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "finance",
+      "rapid",
+      "inventory",
+      "software",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 72,
+    "copies": 46,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
   }
 ] as Prompt[]
 
-export const promptCount = 1529
-export const scrapedCount = 1509
+export const promptCount = 1533
+export const scrapedCount = 1513
 export const seedCount = 20
