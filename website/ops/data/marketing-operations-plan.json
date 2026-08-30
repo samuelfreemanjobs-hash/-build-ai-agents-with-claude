@@ -15,8 +15,6 @@
   "weekly_goo_template": "research/WEEKLY-GOO-REVIEW-TEMPLATE.md",
   "active_plans_dir": "projects/persuasion-mechanics/plans/",
   "launch_audits_dir": "projects/persuasion-mechanics/launch/",
-  "internal_ops_portal": "website/ops/",
-  "internal_ops_portal_doc": "INTERNAL-OPS-PORTAL.md",
   "business_plan_sync": "factory/business-plan.json",
   "planning_horizons": {
     "strategic_12_month": "factory/business-plan.json",

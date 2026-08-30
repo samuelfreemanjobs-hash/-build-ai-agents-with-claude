@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "brand": "Persuasion Mechanics",
+  "categories": [
+    {
+      "id": "planning",
+      "name": "Planning & Operations",
+      "icon": "calendar",
+      "systems": [
+        {"name": "Marketing-Ops Planning", "file": "MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md", "law": "NO PLAN → NO SHIP"},
+        {"name": "Business Plan", "file": "BUSINESS-PLAN-METHODOLOGY.md", "law": "12-month horizon + OPEN months"},
+        {"name": "OPEN Month Playbook", "file": "strategy/OPEN-MONTH-PLAYBOOK.md", "law": "M5 challenge · M8 workshop"},
+        {"name": "Powers Operating Model", "file": "strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md", "law": "Books = calling cards"},
+        {"name": "KPI Definitions", "file": "strategy/KPI-DEFINITIONS.md", "law": "Name numbers monthly"},
+        {"name": "Production Factory", "file": "PRODUCTION-FACTORY.md", "law": "1 chapter/day"}
+      ]
+    },
+    {
+      "id": "content",
+      "name": "Content & Guru Blueprint",
+      "icon": "content",
+      "systems": [
+        {"name": "Guru Blueprint (Pagan)", "file": "PAGAN-GURU-BLUEPRINT-METHODOLOGY.md", "law": "70/20/10 teach/proof/promo"},
+        {"name": "Content Engine", "file": "CONTENT-ENGINE-METHODOLOGY.md", "law": "1→10+ repurposing"},
+        {"name": "Content Plan", "file": "strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md", "law": "90-day pillars"},
+        {"name": "List Building", "file": "LIST-BUILDING-METHODOLOGY.md", "law": "Own the list"}
+      ]
+    },
+    {
+      "id": "launch",
+      "name": "Launches & Events",
+      "icon": "rocket",
+      "systems": [
+        {"name": "Event Launch Architecture", "file": "EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md", "law": "PLC + webinar engine"},
+        {"name": "10MDMS (Kern)", "file": "TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md", "law": "Follow-Up Fortress"},
+        {"name": "Burchard Partnerships", "file": "BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md", "law": "7-step partnership"},
+        {"name": "Info Product Architecture", "file": "INFO-PRODUCT-ARCHITECTURE.md", "law": "Point A→B + stack"}
+      ]
+    },
+    {
+      "id": "copy",
+      "name": "Copy & Persuasion",
+      "icon": "pen",
+      "systems": [
+        {"name": "Schwartz Diagnosis", "file": "SCHWARTZ-METHODOLOGY.md", "law": "Awareness × sophistication"},
+        {"name": "Carlton SWS", "file": "CARLTON-METHODOLOGY.md", "law": "Sales detective first"},
+        {"name": "Kennedy 10Q", "file": "KENNEDY-METHODOLOGY.md", "law": "10 questions before copy"},
+        {"name": "Hormozi Offers", "file": "HORMOZI-METHODOLOGY.md", "law": "Grand Slam stack"},
+        {"name": "Marketing Experts Canon", "file": "MARKETING-EXPERTS-SKILLS-CANON.md", "law": "4P + Fishbein gate"}
+      ]
+    },
+    {
+      "id": "funnel",
+      "name": "Funnel & Revenue",
+      "icon": "funnel",
+      "systems": [
+        {"name": "Funnel Architecture", "file": "FUNNEL-ARCHITECTURE-METHODOLOGY.md", "law": "Capture→Ascend"},
+        {"name": "Ascension Ladder", "file": "strategy/ASCENSION-LADDER.json", "law": "Cold→Advocate"},
+        {"name": "Abraham N×V×F", "file": "ABRAHAM-METHODOLOGY.md", "law": "Three levers"},
+        {"name": "Pricing Master", "file": "PRICING-MASTER-METHODOLOGY.md", "law": "Value anchoring"},
+        {"name": "Client Attraction", "file": "CLIENT-ATTRACTION-METHODOLOGY.md", "law": "Everything attracts clients"}
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI & Factory",
+      "icon": "cpu",
+      "systems": [
+        {"name": "Galactic Master Prompt", "file": "GALACTIC-MASTER-PROMPT.md", "law": "10 phases · one voice"},
+        {"name": "AI Prompt Engineering", "file": "AI-PROMPT-CONTEXT-ENGINEERING-METHODOLOGY.md", "law": "Context density"},
+        {"name": "Agent Builder", "file": "AGENT-BUILDER-METHODOLOGY.md", "law": "Scaffold marketing agents"},
+        {"name": "Model Benchmarking", "file": "AI-MODEL-BENCHMARKING-METHODOLOGY.md", "law": "Route by task type"}
+      ]
+    },
+    {
+      "id": "enterprise",
+      "name": "B2B & Enterprise",
+      "icon": "building",
+      "systems": [
+        {"name": "B2B Outbound", "file": "B2B-OUTBOUND-ENTERPRISE-METHODOLOGY.md", "law": "Sequence + proposal"},
+        {"name": "Compliance & Risk", "file": "COMPLIANCE-RISK-METHODOLOGY.md", "law": "FTC/ad policy"},
+        {"name": "Retention & CRO", "file": "RETENTION-ENGAGEMENT-METHODOLOGY.md", "law": "Defense + ascension"}
+      ]
+    }
+  ],
+  "templates": [
+    {"name": "Monthly Ops Plan", "file": "research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md"},
+    {"name": "Weekly GOO Review", "file": "research/WEEKLY-GOO-REVIEW-TEMPLATE.md"},
+    {"name": "4P Launch Audit", "file": "research/4P-LAUNCH-AUDIT-TEMPLATE.md"},
+    {"name": "Fishbein Audit", "file": "research/FISHBEIN-REASONED-ACTION-TEMPLATE.md"},
+    {"name": "Webinar Launch", "file": "research/WEBINAR-LAUNCH-TEMPLATE.md"},
+    {"name": "JV Partner Pack", "file": "research/JV-PARTNER-PACK-TEMPLATE.md"},
+    {"name": "Powers Test Log", "file": "research/POWERS-MAIL-ORDER-TEST-TEMPLATE.md"}
+  ]
+}

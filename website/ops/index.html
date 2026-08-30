@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>PM Ops — Persuasion Mechanics Internal</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">PM</span>
+        <div>
+          <strong>Persuasion Mechanics</strong>
+          <small>Internal Ops</small>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <button class="nav-item active" data-view="dashboard">Dashboard</button>
+        <button class="nav-item" data-view="tasks">Task Board</button>
+        <button class="nav-item" data-view="analytics">Marketing Analytics</button>
+        <button class="nav-item" data-view="calendar">12-Month Calendar</button>
+        <button class="nav-item" data-view="pipeline">Product Pipeline</button>
+        <button class="nav-item" data-view="systems">Business Systems</button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sync-status" id="syncStatus">Loading data…</div>
+        <button class="btn btn-ghost btn-sm" id="btnRefresh">↻ Refresh</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="viewTitle">Command Center</h1>
+          <p class="subtitle" id="viewSubtitle">Samuel Freeman · Revenue Systems Engineer</p>
+        </div>
+        <div class="topbar-meta">
+          <span class="badge" id="currentMonthBadge">M1 · LAUNCH</span>
+          <span class="badge badge-gold" id="activeProductBadge">PM-001</span>
+        </div>
+      </header>
+
+      <!-- DASHBOARD -->
+      <section class="view active" id="view-dashboard">
+        <div class="kpi-grid" id="kpiGrid"></div>
+        <div class="grid-2">
+          <div class="card">
+            <h2>Factory — Active Book</h2>
+            <div id="factoryPanel"></div>
+          </div>
+          <div class="card">
+            <h2>This Month Focus</h2>
+            <div id="monthFocusPanel"></div>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h2>Weekly Rhythm</h2>
+            <div id="weeklyRhythmPanel"></div>
+          </div>
+          <div class="card">
+            <h2>Funnel Health (GOO)</h2>
+            <div id="funnelHealthPanel"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Ascension Ladder</h2>
+          <div class="ladder" id="ascensionLadder"></div>
+        </div>
+      </section>
+
+      <!-- TASKS -->
+      <section class="view" id="view-tasks">
+        <div class="toolbar">
+          <select id="taskFilterDomain">
+            <option value="">All domains</option>
+            <option value="factory">Factory</option>
+            <option value="marketing">Marketing</option>
+            <option value="launch">Launch</option>
+            <option value="content">Content</option>
+            <option value="systems">Systems</option>
+            <option value="metrics">Metrics</option>
+            <option value="partnerships">Partnerships</option>
+          </select>
+          <button class="btn btn-primary btn-sm" id="btnAddTask">+ Add task</button>
+          <button class="btn btn-ghost btn-sm" id="btnSaveTasks">Save tasks</button>
+        </div>
+        <div class="kanban" id="kanban"></div>
+      </section>
+
+      <!-- ANALYTICS -->
+      <section class="view" id="view-analytics">
+        <div class="toolbar">
+          <button class="btn btn-primary btn-sm" id="btnSaveMetrics">Save metrics</button>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h2>Month Targets vs Actuals</h2>
+            <div id="metricsForm"></div>
+          </div>
+          <div class="card chart-card">
+            <h2>Progress Chart</h2>
+            <canvas id="progressChart"></canvas>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card chart-card">
+            <h2>Funnel Stage Scores</h2>
+            <canvas id="funnelChart"></canvas>
+          </div>
+          <div class="card">
+            <h2>Revenue Split</h2>
+            <div id="revenuePanel"></div>
+            <canvas id="revenueChart" style="margin-top:1rem;max-height:200px"></canvas>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Powers Scorecard</h2>
+          <table class="data-table" id="powersTable">
+            <thead><tr><th>Metric</th><th>Target direction</th><th>This month</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CALENDAR -->
+      <section class="view" id="view-calendar">
+        <div class="card">
+          <h2>12-Month Plan</h2>
+          <div class="timeline" id="timeline"></div>
+        </div>
+        <div class="card">
+          <h2>Legend</h2>
+          <div class="legend">
+            <span class="legend-item mode-launch">LAUNCH</span>
+            <span class="legend-item mode-produce">PRODUCE</span>
+            <span class="legend-item mode-open">OPEN</span>
+            <span class="legend-item mode-capstone">CAPSTONE</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PIPELINE -->
+      <section class="view" id="view-pipeline">
+        <div class="grid-2">
+          <div class="card">
+            <h2>Published</h2>
+            <div id="publishedPanel"></div>
+          </div>
+          <div class="card">
+            <h2>Year 1 Pipeline</h2>
+            <div id="pipelinePanel"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Product Paths (Ascension Triggers)</h2>
+          <table class="data-table" id="pathsTable">
+            <thead><tr><th>From</th><th>To</th><th>Trigger</th><th>Angle</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SYSTEMS -->
+      <section class="view" id="view-systems">
+        <div class="card">
+          <h2>Marketing Business Systems</h2>
+          <p class="hint">Methodologies live in the Architect repo. Open files in Cursor from paths shown.</p>
+          <div id="systemsGrid"></div>
+        </div>
+        <div class="card">
+          <h2>Launch & Ops Templates</h2>
+          <div class="template-list" id="templatesList"></div>
+        </div>
+        <div class="card">
+          <h2>Planning Law</h2>
+          <div class="law-box">
+            <code>NO PLAN → NO SHIP</code>
+            <code>NO METRIC → NO CAMPAIGN</code>
+            <code>NO CALENDAR ROW → NO FACTORY RUN</code>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="taskDialog">
+    <form id="taskForm" method="dialog">
+      <h3 id="taskDialogTitle">Add Task</h3>
+      <label>Title<input name="title" required></label>
+      <label>Domain<select name="domain">
+        <option value="factory">Factory</option>
+        <option value="marketing">Marketing</option>
+        <option value="launch">Launch</option>
+        <option value="content">Content</option>
+        <option value="systems">Systems</option>
+        <option value="metrics">Metrics</option>
+        <option value="partnerships">Partnerships</option>
+      </select></label>
+      <label>Priority<select name="priority">
+        <option value="critical">Critical</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select></label>
+      <label>Due<input name="due" type="date"></label>
+      <label>Column<select name="column">
+        <option value="backlog">Backlog</option>
+        <option value="this_week">This Week</option>
+        <option value="in_progress">In Progress</option>
+        <option value="done">Done</option>
+      </select></label>
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-ghost" id="btnCancelTask">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

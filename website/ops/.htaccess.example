@@ -1,0 +1,13 @@
+# Copy to .htaccess after upload to Hostinger
+# Protect internal ops portal with password
+
+AuthType Basic
+AuthName "Persuasion Mechanics Ops"
+AuthUserFile /home/USER/.htpasswd
+Require valid-user
+
+# Block search engines
+Header set X-Robots-Tag "noindex, nofollow"
+
+# Optional: restrict to your IP (uncomment and set IP)
+# Require ip YOUR.IP.ADDRESS.HERE

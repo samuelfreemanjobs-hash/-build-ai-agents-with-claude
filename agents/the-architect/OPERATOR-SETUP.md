@@ -104,6 +104,21 @@ HOSTINGER_API_TOKEN=your-token
 
 See `research/WEBSITE-DESIGN-BUILD-TEMPLATE.md` and `PREMIUM-WEBSITE-DESIGN-METHODOLOGY.md` when ready to build.
 
+### E. Internal ops portal (backend dashboard)
+
+**Path:** `website/ops/` → upload to `public_html/ops/`  
+**Guide:** `INTERNAL-OPS-PORTAL.md`
+
+Includes: command dashboard · task kanban · marketing analytics · 12-month calendar · product pipeline · business systems library.
+
+```bash
+./scripts/sync-ops-portal.sh          # refresh JSON from factory
+# SFTP upload website/ops/ to Hostinger
+# hPanel → Directory Privacy → password-protect /ops/
+```
+
+**URL:** `https://persuasionmechanics.com/ops/` (internal only)
+
 ---
 
 ## 5. GitHub Secrets summary
