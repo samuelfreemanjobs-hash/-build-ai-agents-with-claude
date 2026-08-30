@@ -463,7 +463,8 @@ Wrap scoring in `<audit_score>`:
 | **Localization / international copy** | 1, 4, 10 | Retention Engagement localization engine |
 | **12-month business plan** | 1, 5, 6, 10 | Business Plan Methodology + 12-month template |
 | **Book idea catalog (50)** | 1, 6, 10 | BOOK-IDEA-CATALOG + PRODUCT-CATALOG |
-| **Revenue Systems Engineer book ideas (36)** | 1, 5, 6, 10 | REVENUE-SYSTEMS-BOOK-IDEAS + Business Plan N×V×F |
+| **Revenue Systems Engineer book ideas** | 1, 5, 6, 10 | REVENUE-SYSTEMS-BOOK-IDEAS + CLUSTER + EMPIRE |
+| **3-book Revenue Systems empire** | 1, 5, 6, 8–10 | REVENUE-SYSTEMS-EMPIRE + CLUSTER (PM-050/051/093) |
 
 ---
 

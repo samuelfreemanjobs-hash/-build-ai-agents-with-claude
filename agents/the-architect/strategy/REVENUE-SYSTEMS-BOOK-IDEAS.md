@@ -1,171 +1,152 @@
-# Revenue Systems Engineer — Book Idea Catalog
+# Revenue Systems Engineer — Book Catalog (Samuel Freeman)
 
-**Samuel Freeman · Persuasion Mechanics**  
-**Positioning lens:** Revenue Systems Engineer — logistics × AI × direct-response × systems engineering × growth architecture
+**Brand:** Persuasion Mechanics · **Lens:** Revenue Systems Engineer  
+**Elite · tactical · systems-thinking · market-creating · growth-machine builder**
 
-| Status | Meaning |
+| Doc | Purpose |
 |---|---|
-| **LIVE** | On Kindle today |
-| **SCHEDULED** | In Year 1 `PRODUCT-CATALOG.json` |
-| **BACKLOG** | High-leverage — slot Year 2+ |
-| **FLAGSHIP** | Category-defining title for this lens |
-
-Machine index: `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json`  
-Core 50 catalog: `strategy/BOOK-IDEA-CATALOG.md` (PM-000–PM-049)
+| **This file** | Full curated catalog (your list + extended technical backlog) |
+| `REVENUE-SYSTEMS-CLUSTER.json` | 3-book empire machine index |
+| `REVENUE-SYSTEMS-EMPIRE.md` | Trilogy + funnel + outlines + production schedule |
+| `BOOK-IDEA-CATALOG.md` | Core persuasion/agent catalog (PM-000–PM-049) |
 
 ---
 
-## Why this lens (not duplicate copy books)
+## 3-Book Empire (DECIDED)
 
-Most Kindle shelves split **copy** from **systems**. Samuel's unfair advantage is the **engineering layer**:
-
-| Layer | What it is | Example books |
+| Role | ID | Title |
 |---|---|---|
-| **Persuasion** | Psychology, hooks, mechanisms | PM-001–PM-021 (core catalog) |
-| **Revenue systems** | Architecture, logistics, feedback loops, observability | PM-050–PM-079 (this catalog) |
+| **FLAGSHIP** | PM-050 | **Revenue Systems Engineering™** |
+| **Companion A** | PM-051 | **The Growth Machine Blueprint** |
+| **Companion B** | PM-093 | **Industrial Demand Machine** |
 
-*Prompts don't convert. Neither do funnels without instrumentation. Revenue Systems Engineering is the discipline that wires psychology to pipeline.*
+Full funnel architecture → `REVENUE-SYSTEMS-EMPIRE.md`
 
 ---
 
-## CAT-RSE-01 — Revenue Architecture & Blueprints (6)
+## CATEGORY 1: Revenue Engineering & Business Systems
 
-| ID | Status | Title | Hook |
+| ID | Status | Title | Subtitle |
 |---|---|---|---|
-| PM-050 | **FLAGSHIP** | **The Revenue Systems Engineer** | Your category book — design, build, and operate growth machines like production systems. |
-| PM-051 | BACKLOG | Growth Architecture | Blueprints for autonomous revenue: intake → conversion → ascension → retention. |
-| PM-052 | BACKLOG | The N×V×F Operating System | Turn traffic × conversion × frequency into a dashboard operators actually run. |
-| PM-053 | BACKLOG | Pipeline as Code | Version-controlled funnels, offers, and sequences — deploy without breaking live revenue. |
-| PM-054 | BACKLOG | Funnel Topology | Map every node, edge, and leak; know where agents plug in before you automate. |
-| PM-055 | BACKLOG | The Feedback Loop Economy | Design compounding loops (content → list → offer → proof → content) as first-class systems. |
+| PM-050 | **FLAGSHIP** | **Revenue Systems Engineering™** | How to Engineer Predictable, Self-Sustaining Profit Machines in Any Business |
+| PM-051 | **CLUSTER** | **The Growth Machine Blueprint** | Engineering Customer Acquisition Systems That Scale Themselves |
+| PM-052 | BACKLOG | Sales Assembly Line™ | Turning Sales into a Predictable, Repeatable, Measured Production System |
+| PM-053 | BACKLOG | Revenue Control Systems | Prevent Revenue Loss, Plug Profit Leaks, and Engineer Unbreakable Cashflow |
 
 ---
 
-## CAT-RSE-02 — Growth Logistics & Revenue Operations (5)
+## CATEGORY 2: AI & Automation for Business
 
-| ID | Status | Title | Hook |
+| ID | Status | Title | Subtitle |
 |---|---|---|---|
-| PM-056 | BACKLOG | The Logistics of Launches | Run PLC, webinar, and challenge launches like a supply chain — slots, buffers, rollback. |
-| PM-057 | BACKLOG | Fulfillment Systems for Info Products | Onboarding, delivery, support, and refund paths that protect LTV and reputation. |
-| PM-058 | BACKLOG | Onboarding as a Revenue Node | First 72 hours engineered for activation, ascension, and case-study capture. |
-| PM-059 | BACKLOG | The Handoff Problem | Sales → success → retention without dropped leads, duplicate messaging, or churn spikes. |
-| PM-060 | BACKLOG | Capacity Planning for Teams of One | When to automate, when to outsource, when to say no — before quality collapses. |
+| PM-090 | BACKLOG | AI-Powered Revenue Ops | Deploying Intelligent Systems to Automate Growth, Lead Flow, and Customer Retention |
+| PM-091 | BACKLOG | The AI Marketing Department | Build a Full AI-Powered Agency or In-House System That Replaces 5 Employees |
+| PM-092 | BACKLOG | The AI Factory for Deals | Automate Prospecting, Qualification, and Closing With Machine-Driven Systems |
 
 ---
 
-## CAT-RSE-03 — Measurement, Attribution & Observability (5)
+## CATEGORY 3: Logistics, Industrial & Manufacturing
 
-| ID | Status | Title | Hook |
+*Samuel's unique advantage — very few marketers can write these.*
+
+| ID | Status | Title | Subtitle |
 |---|---|---|---|
-| PM-061 | BACKLOG | Attribution Engineering for Direct-Response | Multi-touch truth for operators who still need to kill losers and scale winners weekly. |
-| PM-062 | BACKLOG | The Metrics Stack | North-star, guardrails, and diagnostic metrics — what to measure before you scale spend. |
-| PM-063 | BACKLOG | Revenue Observability | Logs, traces, and alerts for funnels — know *why* CVR moved, not just that it did. |
-| PM-064 | BACKLOG | Conversion SLOs | Service-level objectives for sales: uptime, latency, and error budgets for your funnel. |
-| PM-065 | BACKLOG | The Experimentation Factory | Hypothesis → test → ship loops at machine speed without invalidating your data. |
+| PM-093 | **CLUSTER** | **Industrial Demand Machine** | Lead Generation and Revenue Architecture for Logistics, Manufacturing & Industrial Firms |
+| PM-094 | BACKLOG | The Lean Revenue System | Applying Lean Manufacturing to Sales, Marketing & Business Growth |
+| PM-095 | BACKLOG | The Industrial Marketing Playbook | How Blue-Collar Companies Win With Smart Systems, AI, and Precision Sales Engines |
 
 ---
 
-## CAT-RSE-04 — Stack Integration & Martech Systems (5)
+## CATEGORY 4: Direct-Response & Buyer Psychology
 
-| ID | Status | Title | Hook |
+| ID | Status | Title | Subtitle |
 |---|---|---|---|
-| PM-066 | BACKLOG | The Martech Integration Layer | CRM, ads, email, analytics, and agents as one coherent system — not a Frankenstack. |
-| PM-067 | BACKLOG | API-First Marketing | Structured outputs and webhooks so copy ships straight into Klaviyo, HubSpot, and Meta. |
-| PM-068 | BACKLOG | Event-Driven Revenue Architecture | Triggers, queues, and idempotent campaigns — marketing that survives real traffic spikes. |
-| PM-069 | BACKLOG | The Data Pipeline for Copy Chiefs | VOC, reviews, calls, and support tickets → RAG → draft — engineered, not ad hoc. |
-| PM-070 | BACKLOG | CRM as Source of Truth | When the database lies, revenue dies — schema, hygiene, and agent read/write contracts. |
+| PM-096 | BACKLOG | Psychology-Driven Revenue Engineering | How to Engineer Buying Behavior Using Data, AI, and Behavioral Science |
+| PM-097 | BACKLOG | The Conversion Factory | Scientific Copy & Offers That Turn Attention into Money |
+| PM-098 | BACKLOG | Demand Mechanics | Build, Activate & Multiply Buyer Demand Using Systems-Thinking Marketing |
 
 ---
 
-## CAT-RSE-05 — Offer Economics & Pricing Systems (4)
+## CATEGORY 5: Proprietary Framework System
 
-| ID | Status | Title | Hook |
-|---|---|---|---|
-| PM-071 | BACKLOG | Offer Stack Mathematics | Value equation, margin floors, and guarantee risk — model before you launch. |
-| PM-072 | BACKLOG | LTV:CAC Engineering | Unit economics for info, SaaS, and services — payback targets that govern ad spend. |
-| PM-073 | BACKLOG | Pricing as Systems Design | Anchors, decoys, terms, and payment plans as configurable modules, not one-off guesses. |
-| PM-074 | BACKLOG | Payback Period Optimization | Cash-flow-aware growth — scale spend only when the machine returns capital on schedule. |
+*Each standalone book candidate.*
 
----
-
-## CAT-RSE-06 — DR Control Theory (Classical × Systems) (4)
-
-| ID | Status | Title | Hook |
-|---|---|---|---|
-| PM-075 | BACKLOG | The Classical DR Control Panel | Schwartz, Hopkins, Caples as **states and transitions** — diagnose before any agent writes. |
-| PM-076 | BACKLOG | Schwartz State Machines | Awareness levels as explicit states; copy and offers transition prospects without skips. |
-| PM-077 | BACKLOG | Mechanism Design Patterns | Reusable mechanism templates (contrast, proof stack, risk reversal) as system components. |
-| PM-078 | BACKLOG | Proof Stack Architecture | Layer authority, data, and social proof like a reliability engineer layers redundancy. |
-
----
-
-## CAT-RSE-07 — Agent Runtime, Reliability & Scale (4)
-
-| ID | Status | Title | Hook |
-|---|---|---|---|
-| PM-079 | BACKLOG | The Agent Runtime for Revenue | Orchestration, timeouts, retries, and fallbacks — agents that fail gracefully, not silently. |
-| PM-080 | BACKLOG | Orchestration vs Choreography | When to centralize (conductor) vs decentralize (swarm) in marketing agent fleets. |
-| PM-081 | BACKLOG | Failure Modes in Autonomous Sales | Postmortems for hallucinated offers, policy violations, and broken handoffs — with fixes. |
-| PM-082 | BACKLOG | Idempotent Campaigns | Safe replays, deduped sends, and rollback — operate campaigns like distributed systems. |
-
----
-
-## CAT-RSE-08 — Delivery, QA & Client Systems (3)
-
-| ID | Status | Title | Hook |
-|---|---|---|---|
-| PM-083 | BACKLOG | The $10K Delivery System | SOPs, wireframes, revision gates, and sign-off — ship premium builds without heroics. |
-| PM-084 | BACKLOG | QA Gates for Revenue Copy | Rubric scoring, compliance checks, and human-in-the-loop before anything goes live. |
-| PM-085 | BACKLOG | SOPs That Scale Persuasion | Document once; agents and contractors execute the same persuasion mechanics every time. |
-
----
-
-## Overlap map (Year 1 scheduled ↔ RSE lens)
-
-| Year 1 ID | Title | RSE angle already inside |
+| ID | Status | Title |
 |---|---|---|
-| PM-002 | The Autonomous Revenue Engine | CAT-RSE-01 architecture |
-| PM-005 | Engineered Persuasion | CAT-RSE-04 data pipeline |
-| PM-006 | The Agentic Funnel | CAT-RSE-01 funnel topology |
-| PM-009 | The Zero-Click Sales Machine | CAT-RSE-07 agent runtime |
+| PM-099 | FRAMEWORK | The Marketing Machine Framework™ |
+| PM-100 | FRAMEWORK | Shadow CMO Playbook |
+| PM-101 | FRAMEWORK | Plug-and-Play Marketing Department™ |
+| PM-102 | FRAMEWORK | Black Ops Revenue Protocol |
+| PM-103 | FRAMEWORK | Purple Ocean Growth Architecture |
+| PM-104 | FRAMEWORK | The Tactical Marketing Hitman Method |
 
-**PM-050 *The Revenue Systems Engineer*** is the **umbrella** — readers graduate here after PM-001/002/010.
+---
+
+## SHORT BOOK / FAST LEADS BOOKLETS (50–120 pages)
+
+| ID | Title | Audience |
+|---|---|---|
+| PM-LM-01 | The Revenue Systems Engineer's Toolkit | All operators — **publish first** |
+| PM-LM-02 | The AI Ops Playbook for SMBs | SMB owners |
+| PM-LM-03 | Fast Revenue Fixes for Manufacturers & 3PLs | Industrial |
+| PM-LM-04 | Industrial Marketing Command Codes | Industrial opt-in |
+| PM-LM-05 | Hidden Revenue Extraction Field Guide | Leak-audit hook |
+
+---
+
+## Themes You OWN
+
+| Theme | Why it wins |
+|---|---|
+| Engineer revenue like a production line | Blue-ocean authority · systems intelligence |
+| AI replacing marketing departments | Future-forward power position |
+| Industrial / blue-collar growth systems | Underserved niche · premium buyers |
+| Black-ops marketing strategy | Differentiated personality & archetype |
+| Direct-response + engineering | Unique authority stack |
+
+---
+
+## Extended technical backlog (slot after curated list)
+
+Deep-cut engineering topics retained from v1 catalog: PM-054 Funnel Topology · PM-055 Feedback Loop Economy · PM-061 Attribution Engineering · PM-063 Revenue Observability · PM-066 Martech Integration Layer · PM-075 Classical DR Control Panel · PM-079 Agent Runtime · PM-083 $10K Delivery System
+
+---
+
+## Overlap with Year 1 Kindle pipeline
+
+| Year 1 | RSE relationship |
+|---|---|
+| PM-002 Autonomous Revenue Engine | Feeds PM-050 flagship — agent layer chapter |
+| PM-004 1-Person Agency Engine | Feeds PM-091 AI Marketing Department |
+| PM-006 Agentic Funnel | Feeds PM-051 Growth Machine Blueprint |
+| PM-007 Building DR AI Agents | Feeds PM-090 AI-Powered Revenue Ops |
+
+**Reader path:** Year 1 persuasion books → RSE trilogy → cohort / Shadow CMO
 
 ---
 
 ## Summary
 
-| | Count |
+| Bucket | Count |
 |---|---|
-| FLAGSHIP (category book) | 1 |
-| BACKLOG (PM-051–PM-085) | 35 |
-| **Total RSE catalog** | **36** |
-| Combined with core 50 | **86 concepts** (PM-000–PM-049 + PM-050–PM-085) |
+| 3-book empire | 3 |
+| Cat 1–4 curated backlog | 10 |
+| Proprietary frameworks | 6 |
+| Lead magnet booklets | 5 |
+| Extended technical | 8 |
+| **Total RSE catalog** | **32** (+ 8 extended) |
+
+Combined library with core catalog: **PM-000–PM-104** + lead magnets
 
 ---
 
-## Top 8 RSE picks for Samuel (Year 2 priority)
+## Factory next steps
 
-1. **PM-050 — The Revenue Systems Engineer** — own the category; backend course + consulting anchor  
-2. **PM-051 — Growth Architecture** — visual blueprint book; pairs with $10K builds  
-3. **PM-061 — Attribution Engineering for Direct-Response** — paid-media buyer magnet  
-4. **PM-066 — The Martech Integration Layer** — agency + fractional CMO audience  
-5. **PM-075 — The Classical DR Control Panel** — bridges copy catalog ↔ systems catalog  
-6. **PM-056 — The Logistics of Launches** — OPEN-month webinar + challenge ops manual  
-7. **PM-083 — The $10K Delivery System** — productizes your website methodology  
-8. **PM-079 — The Agent Runtime for Revenue** — technical depth for PM-007 graduates  
+1. **PM-LM-01** Toolkit — fastest lead magnet (outline in EMPIRE doc)  
+2. **PM-051** Growth Machine Blueprint — companion Kindle  
+3. **PM-093** Industrial Demand Machine — niche authority  
+4. **PM-050** Revenue Systems Engineering™ — flagship launch + cohort  
 
----
-
-## Suggested Year 2 sequencing (after PM-010 box set)
-
-| Quarter | Title | Why |
-|---|---|---|
-| **Q1 Y2** | PM-050 The Revenue Systems Engineer | Flagship; defines lens for everything after |
-| **Q2 Y2** | PM-051 Growth Architecture | Blueprint companion; sells architecture sprints |
-| **Q3 Y2** | PM-061 Attribution Engineering | Captures performance marketers |
-| **Q4 Y2** | PM-083 The $10K Delivery System | Monetizes service layer |
-
----
-
-**Note:** Paste your own RSE topic list to merge — dedupe by *system layer* (architecture vs copy vs ops), keep the stronger hook.
+```bash
+the-architect factory outline --book PM-LM-01
+```

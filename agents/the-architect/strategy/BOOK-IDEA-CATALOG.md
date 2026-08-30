@@ -10,7 +10,7 @@
 | **BACKLOG** | High-demand — slot when ready |
 
 Machine index: `strategy/BOOK-IDEA-CATALOG.json`  
-**Revenue Systems Engineer extension (36):** `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.md` · PM-050–PM-085
+**Revenue Systems Engineer extension:** `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.md` · **3-book empire:** `REVENUE-SYSTEMS-EMPIRE.md` (PM-050/051/093)
 
 ---
 

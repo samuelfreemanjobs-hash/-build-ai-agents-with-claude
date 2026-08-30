@@ -32,9 +32,9 @@ Cross-sell line (use in back matter, email, site):
 
 ## Category claim (Ries)
 
-**Own:** *Persuasion mechanics* — the engineering layer between psychology, product design, and autonomous AI that turns prompts into pipeline.
+**Own:** *Revenue Systems Engineering™* — the engineering method applied to profit: systems, automation, throughput, constraints, flow.
 
-**Bridge from published work:** *AI Product Design Mastery* owns **product**; *Persuasion Mechanics* owns **persuasion + conversion systems**.
+**Bridge from published work:** *AI Product Design Mastery* owns **product**; *Persuasion Mechanics* owns **persuasion + conversion**; *Revenue Systems Engineering™* owns **architecture + logistics + growth machines**.
 
 ---
 
@@ -126,7 +126,8 @@ cp .env.example .env
 | **Published** | `strategy/PUBLISHED-CATALOG.json` |
 | **Pipeline (10 Kindle)** | `strategy/PRODUCT-CATALOG.json` |
 | **Book ideas (50)** | `strategy/BOOK-IDEA-CATALOG.json` |
-| **Revenue Systems Engineer ideas (36)** | `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json` |
+| **Revenue Systems catalog** | `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json` |
+| **3-book empire cluster** | `strategy/REVENUE-SYSTEMS-CLUSTER.json` · `strategy/REVENUE-SYSTEMS-EMPIRE.md` |
 | **12-month plan** | `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
 | **Factory sync** | `factory/business-plan.json` · `factory/state.json` |
 

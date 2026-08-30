@@ -6,6 +6,7 @@
   "published_catalog": "strategy/PUBLISHED-CATALOG.json",
   "book_idea_catalog": "strategy/BOOK-IDEA-CATALOG.json",
   "revenue_systems_book_catalog": "strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json",
+  "revenue_systems_cluster": "strategy/REVENUE-SYSTEMS-CLUSTER.json",
   "default_chapters": 12,
   "products": [
     {
