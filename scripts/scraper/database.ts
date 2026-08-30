@@ -85,7 +85,11 @@ export function importPrompts(
                             ? 'Gemini API Prompt Gallery'
                             : collId === 'prompthero'
                               ? 'PromptHero Library'
-                              : collId!,
+                              : collId === 'moreusefulthings'
+                                ? 'More Useful Things'
+                                : collId === 'godofprompt'
+                                  ? 'God of Prompt Library'
+                                  : collId!,
           sourceUrl: sourceMeta.url,
           sectionCount: new Set(toImport.filter((p) => p.collection === collId).map((p) => p.collectionSection)).size,
           promptCount: count,

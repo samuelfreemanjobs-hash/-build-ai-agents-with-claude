@@ -66,6 +66,8 @@ export function FilterBar({
             { value: 'snackprompt', label: '🍿 Snack Prompt' },
             { value: 'gemini-api-prompts', label: '💎 Gemini API' },
             { value: 'prompthero', label: '🎨 PromptHero' },
+            { value: 'moreusefulthings', label: '📖 More Useful Things' },
+            { value: 'godofprompt', label: '⚡ God of Prompt' },
           ]}
         />
 
