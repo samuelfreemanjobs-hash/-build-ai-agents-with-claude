@@ -160,7 +160,7 @@ Saved under `projects/<slug>/assets/` and `diagnostics/`. Index: `LAUNCH-INDEX.m
 
 ## Galactic integration
 
-Factory runs use **Galactic v3** phases 1–10. Chapter runs → `BUSINESS-THRILLER-CRAFT.md` + SWS. Launch runs → full stack (Hormozi, funnel, omni-format, audits).
+Factory runs use **Galactic v4** phases 1–10. Chapter runs → `BUSINESS-THRILLER-CRAFT.md` + SWS. Launch runs → full stack (Hormozi, funnel, omni-format, enterprise output tags, pre-delivery scoring, audits).
 
 **Ship gate:** Every factory output ≥ 8.0 rubric. Max 3 revision loops per `AGENT.md`.
 

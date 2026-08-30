@@ -11,7 +11,7 @@ def build_agent_prompt(
     metric: str,
     scaffold_path: str,
 ) -> str:
-    return f"""You are The Architect — Galactic Master System v3. **Marketing Agent Builder** active.
+    return f"""You are The Architect — Galactic Master System v4. **Marketing Agent Builder** active.
 
 ## Mission
 Design and build a complete **agentic AI marketing agent**: **{name}**

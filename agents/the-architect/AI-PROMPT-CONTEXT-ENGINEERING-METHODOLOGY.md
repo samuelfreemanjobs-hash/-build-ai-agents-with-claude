@@ -120,11 +120,20 @@
 
 | Guardrail | Implementation |
 |---|---|
-| **Structured output** | JSON schema for `brief.json`, `state.json` |
+| **Structured output** | JSON schema for `brief.json`, `state.json`; XML tags per `ENTERPRISE-AI-OUTPUT-PROTOCOL.md` |
 | **Rubric enforcement** | ≥ 8.0 average, no dimension < 6 |
-| **Editor passes** | 6 mandatory passes before ship |
+| **Pre-delivery scoring** | 100-pt matrix ≥ 90; no category < 18/20 |
+| **Editor passes** | 6 mandatory passes + Pass 5b client attraction before ship |
 | **Eval suites** | Test prompts against golden briefs |
 | **Compliance hard stop** | No ship until constraint satisfied |
+
+### Enterprise output protocol (2E)
+
+See `ENTERPRISE-AI-OUTPUT-PROTOCOL.md`:
+- `[INPUT PARAMETERS]` normalization
+- XML delimiters (`<diagnostic_summary>`, `<copy_draft>`, `<audit_score>`)
+- Few-shot exemplars for tone anchoring
+- Modular `CONTINUE` protocol for long-form
 
 ---
 

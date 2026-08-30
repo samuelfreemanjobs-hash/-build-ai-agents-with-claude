@@ -2,7 +2,7 @@
 
 Phase 2 of the Galactic Master System. End-to-end revenue funnel design, micro-copy wireframing, and email lifecycle architecture. **One voice** — funnel structure informs copy; copy maps to every conversion node.
 
-**Paired:** Phase 1 Executive Diagnostic · Phase 6 SWS · `KERN-METHODOLOGY.md` · `KENNEDY-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md`
+**Paired:** Phase 1 Executive Diagnostic · Phase 6 SWS · `KERN-METHODOLOGY.md` · `KENNEDY-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `SAAS-RETENTION-CRO-METHODOLOGY.md`
 
 ---
 
@@ -41,6 +41,8 @@ TRAFFIC → CAPTURE → BELIEF → CONVERT → ASCEND → RETAIN
 | **Convert** | Core offer close | Weak stack, no urgency |
 | **Ascend** | OTO / upsell / high-ticket | Missing backend |
 | **Retain** | Onboarding, churn fight | No time-to-value |
+
+**SaaS/CRO deep file:** `SAAS-RETENTION-CRO-METHODOLOGY.md` — dunning, activation triggers, cancellation deflection, quantitative drop-off troubleshooting matrix.
 
 ---
 

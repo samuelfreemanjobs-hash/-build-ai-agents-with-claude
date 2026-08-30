@@ -71,6 +71,8 @@ Template: research/CARLTON-SWS-TEMPLATE.md
 
 ## F-AD — Ads & Scripts (Meta, TikTok, YouTube, VSL, Podcast)
 
+**Platform-native deep files:** `OMNICHANNEL-GROWTH-METHODOLOGY.md` — F-AD-META · F-AD-TIKTOK · F-AD-YOUTUBE
+
 **Structure: Visual Cue + Audio VO + Text-on-Screen (TOS)**
 
 | Timestamp | Beat |
@@ -87,6 +89,16 @@ Template: research/CARLTON-SWS-TEMPLATE.md
 | 0–3s | | | |
 | 3–15s | | | |
 | etc. | | | |
+
+### Platform-specific variants
+
+| Platform | Blueprint | Key differentiator |
+|---|---|---|
+| **Meta (FB/IG)** | F-AD-META | UGC visual, problem-agitation lead, comment/DM CTA |
+| **TikTok/Reels** | F-AD-TIKTOK | 1.5–2.5s cuts, TOS timing, native casual script |
+| **YouTube** | F-AD-YOUTUBE | 5s skip interrupt, mechanism education, intent CTA |
+
+See `OMNICHANNEL-GROWTH-METHODOLOGY.md` for full specs.
 
 ---
 

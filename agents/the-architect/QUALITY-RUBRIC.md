@@ -176,6 +176,17 @@ Does this attract ideal clients toward a trackable next step?
 | 7–8 | Clear avatar + CTA + ascension path |
 | 9–10 | Magnetic: repels wrong fits, pulls ideal client to inevitable next step; metric named |
 
+### 17. Pre-Delivery Conversion Score (Enterprise — sales/promo assets)
+100-point internal audit: Hook, Mechanism, Benefits, Objections, Layout — each /20. Ship only if total ≥ 90 and no category < 18.
+
+| Score | Criteria |
+|---|---|
+| N/A | Internal utility copy with no conversion job |
+| 1–3 | Would fail 18/20 rule on multiple categories |
+| 4–6 | 70–79 total; needs rewrite |
+| 7–8 | 80–89 total; borderline |
+| 9–10 | 90–100 total; all categories ≥ 18/20 |
+
 ---
 
 ## Output Format
@@ -201,6 +212,7 @@ Does this attract ideal clients toward a trackable next step?
 | Narrative Mastery | /10 or N/A | |
 | Business Thriller Pace | /10 or N/A | |
 | Client Attraction | /10 or N/A | |
+| Pre-Delivery 100-pt | /10 or N/A | |
 
 **Weakest dimension:** [name] — [one-line fix if below 8]
 ```

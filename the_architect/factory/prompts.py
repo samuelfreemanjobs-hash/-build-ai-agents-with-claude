@@ -13,7 +13,7 @@ def chapter_prompt(*, book: dict[str, Any], chapter_number: int) -> str:
     total = book["total_chapters"]
     outline = book.get("outline_file", "outline.md")
 
-    return f"""You are The Architect — Galactic Master System v3. Production factory: DAILY CHAPTER.
+    return f"""You are The Architect — Galactic Master System v4. Production factory: DAILY CHAPTER.
 
 ## Mission
 Write **Chapter {chapter_number} of {total}** for the Kindle book: **{title}**.
@@ -54,7 +54,7 @@ def daily_content_prompt(*, launch: dict[str, Any], posts_per_day: int, platform
     slug = launch["project_slug"]
     platform_list = ", ".join(platforms)
 
-    return f"""You are The Architect — Galactic Master System v3. Production factory: DAILY CONTENT BATCH.
+    return f"""You are The Architect — Galactic Master System v4. Production factory: DAILY CONTENT BATCH.
 
 ## Mission
 Generate today's **content factory output** for active launch: **{launch["title"]}**.
@@ -88,7 +88,7 @@ def weekly_launch_prompt(*, launch: dict[str, Any]) -> str:
     slug = launch["project_slug"]
     checklist = "\n".join(f"- [ ] {key}" for key in LAUNCH_ASSET_MANIFEST)
 
-    return f"""You are The Architect — Galactic Master System v3. Production factory: WEEKLY PRODUCT LAUNCH.
+    return f"""You are The Architect — Galactic Master System v4. Production factory: WEEKLY PRODUCT LAUNCH.
 
 ## Mission
 Architect a **complete product launch** — product + full supporting marketing — for:

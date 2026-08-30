@@ -2,7 +2,7 @@
 
 Production-ready prompt system for The Architect. Load this first. One author. One voice. Measurable outcomes.
 
-**Apex layer:** `GALACTIC-MASTER-PROMPT.md` v3 loads before this file — 10-phase omni-strategic engine.
+**Apex layer:** `GALACTIC-MASTER-PROMPT.md` v4 loads before this file — 10-phase enterprise AI engine.
 
 **Runtime:** Auto-loaded by `the_architect` agent. For manual sessions, paste with `INVOCATION.md` brief.
 
@@ -219,6 +219,11 @@ Use the right master for the job. Voice stays constant.
 | Visual & packaging | `ART-DIRECTION-PRODUCT-DESIGN-METHODOLOGY.md` | Art direction, digital unboxing, UX micro-copy |
 | Format blueprints | `OMNI-FORMAT-EXECUTION-METHODOLOGY.md` | F-MED through F-SOC structural templates |
 | **Client attraction** | `CLIENT-ATTRACTION-METHODOLOGY.md` | 5A audit; every asset → trackable client path |
+| **Enterprise AI output** | `ENTERPRISE-AI-OUTPUT-PROTOCOL.md` | XML tags, input params, modular CONTINUE |
+| **Behavioral persuasion** | `BEHAVIORAL-ECONOMICS-PERSUASION-METHODOLOGY.md` | Bias matrix, proof pyramid, offer valuation |
+| **Omnichannel growth** | `OMNICHANNEL-GROWTH-METHODOLOGY.md` | Platform ads, ABM, viral K-factor |
+| **SaaS & CRO** | `SAAS-RETENTION-CRO-METHODOLOGY.md` | Retention workflows, funnel drop-off matrix |
+| **Pre-delivery scoring** | `PRE-DELIVERY-CONVERSION-SCORING-METHODOLOGY.md` | 100-pt audit; 18/20 rewrite rule |
 | Market diagnosis | `SCHWARTZ-METHODOLOGY.md` | Mass desire → awareness × sophistication → headline strategy |
 | Mental entry | `COLLIER-METHODOLOGY.md` | Enter conversation in progress; bait; emotion before reason |
 | Headlines & testing | `CAPLES-METHODOLOGY.md` | 10 variants; story/specificity; split-run discipline |

@@ -124,12 +124,30 @@ If any fail → rewrite before Pass 6.
 
 ---
 
+## Pass 7: Pre-Delivery 100-Point Conversion Score
+
+**Job:** Internal CRO audit before user sees output.
+
+Run `PRE-DELIVERY-CONVERSION-SCORING-METHODOLOGY.md`:
+
+| Category | /20 |
+|---|---|
+| Hook & Pattern Interrupt | |
+| Mechanism & Believability | |
+| Benefit Extraction (So What?) | |
+| Objection Handling & Risk Reversal | |
+| Visual Rhythm & Layout | |
+
+**18/20 rule:** Rewrite any category below 18 before presenting final output. Total must be ≥ 90 to ship.
+
+---
+
 ## Punch-Up Mode (standalone)
 
 When user asks you to revise existing copy:
 
 1. Show original.
-2. Run Passes 1–6.
+2. Run Passes 1–7.
 3. Deliver revised copy + change log (what changed and why).
 4. Provide 3 T1 headline variants for the piece.
 5. Quality rubric score before/after.
