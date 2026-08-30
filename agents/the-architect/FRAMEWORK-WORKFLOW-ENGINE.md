@@ -176,9 +176,10 @@ Workflows turn frameworks into **repeatable execution**. Design for humans *and*
 | **Creation** | Research → Plan → Draft → Edit → Ship | Galactic agentic loop |
 | **Audit** | Gather → Score → Prescribe → Prioritize | Phase 9 master audits |
 | **Launch** | Pre-frame → Indoctrinate → Convert → Ascend | Kern IBB / PLC |
-| **Guru Blueprint content** | VOC pillars → Module (3-brain + 4 styles) → 1→10 repurpose | Pagan EBM + Content Engine |
+| **Planning** | Plan → Gate → Execute → Measure → Adjust plan | Marketing-Ops Planning |
 | **Partnership launch** | Attract → Identify → Initiate → Invite → Equip → Execute → Celebrate | Burchard 7-step + JV pack |
-| **10MDMS monetization** | Surge → Event → Offer → Follow-Up Fortress | Ten MDMS + Kern BDR |
+| **Guru Blueprint content** | VOC pillars → Module (3-brain + 4 styles) → 1→10 repurpose | Pagan EBM + Content Engine |
+| **Planning** | Plan → Gate → Execute → Measure → Adjust plan | Marketing-Ops Planning |
 | **Build** | Diagnose → Architect → Wire → Test → Deploy | Funnel architecture |
 | **Daily/weekly** | Collect → Synthesize → Apply → Log | Daily headline learning |
 

@@ -1,0 +1,42 @@
+{
+  "plan_version": 1,
+  "doctrine": "MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md",
+  "law": "NO PLAN → NO SHIP",
+  "brand": "Persuasion Mechanics",
+  "horizon": {"start": "2026-09", "end": "2027-08", "months": 12},
+  "master_plan": "strategy/MARKETING-OPERATIONS-MASTER-PLAN.md",
+  "monthly_template": "research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md",
+  "strategic_plan": "strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md",
+  "content_plan": "strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md",
+  "powers_model": "strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md",
+  "business_plan_sync": "factory/business-plan.json",
+  "planning_horizons": {
+    "strategic_12_month": "factory/business-plan.json",
+    "tactical_90_day": "strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md",
+    "operational_weekly": "research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md"
+  },
+  "marketing_domains": ["content", "email", "launches", "partnerships", "paid_media", "lead_magnets", "brand_authority", "client_attraction"],
+  "operations_domains": ["factory", "launch_ops", "fulfillment", "metrics", "testing", "partnership_ops", "systems", "compliance"],
+  "weekly_rhythm": {
+    "W1": {"marketing": "month_kickoff_calendar_lock", "operations": "factory_sync_metric_targets"},
+    "W2": {"marketing": "content_execute_email_1_2", "operations": "daily_chapters"},
+    "W3": {"marketing": "content_execute_email_3_4", "operations": "daily_chapters_backend_build"},
+    "W4": {"marketing": "promo_test_next_month_prep", "operations": "ship_goo_report"}
+  },
+  "content_ratio": {"teach": 70, "proof": 20, "promo": 10},
+  "current_month": "2026-09",
+  "months": [
+    {"month": "2026-09", "label": "M1", "mode": "LAUNCH", "product_id": "PM-001", "plan_status": "locked", "marketing_focus": "waitlist_webinar_cohort", "ops_focus": "factory_outline_launch_assets", "free_line": "DR_rubric_install"},
+    {"month": "2026-10", "label": "M2", "mode": "PRODUCE", "product_id": "PM-007", "plan_status": "planned", "marketing_focus": "tripwire_vault_outbound", "ops_focus": "pm007_chapters_vault_delivery"},
+    {"month": "2026-11", "label": "M3", "mode": "PRODUCE", "product_id": "PM-010", "plan_status": "planned", "marketing_focus": "bfcm_bundle", "ops_focus": "pm010_chapters_bundle_checkout"},
+    {"month": "2026-12", "label": "M4", "mode": "PRODUCE", "product_id": "PM-002", "plan_status": "planned", "marketing_focus": "year_end_intensive", "ops_focus": "pm002_ship_consulting_slots"},
+    {"month": "2027-01", "label": "M5", "mode": "OPEN", "product_id": null, "plan_status": "planned", "marketing_focus": "new_year_challenge_back_catalog", "ops_focus": "no_manuscript_challenge_workbook"},
+    {"month": "2027-02", "label": "M6", "mode": "PRODUCE", "product_id": "PM-003", "plan_status": "planned", "marketing_focus": "jv_webinar_schwartz", "ops_focus": "pm003_jv_pack"},
+    {"month": "2027-03", "label": "M7", "mode": "PRODUCE", "product_id": "PM-005", "plan_status": "planned", "marketing_focus": "voc_toolkit_podcast", "ops_focus": "pm005_toolkit_delivery"},
+    {"month": "2027-04", "label": "M8", "mode": "OPEN", "product_id": null, "plan_status": "planned", "marketing_focus": "agency_sprint_box_prep", "ops_focus": "workshop_box_metadata"},
+    {"month": "2027-05", "label": "M9", "mode": "PRODUCE", "product_id": "PM-004", "plan_status": "planned", "marketing_focus": "agency_course_colaunch", "ops_focus": "pm004_course_modules"},
+    {"month": "2027-06", "label": "M10", "mode": "PRODUCE", "product_id": "PM-006", "plan_status": "planned", "marketing_focus": "b2b_abm_outbound", "ops_focus": "pm006_proposal_templates"},
+    {"month": "2027-07", "label": "M11", "mode": "PRODUCE", "product_id": "PM-008", "plan_status": "planned", "marketing_focus": "mechanism_summer_bundle", "ops_focus": "pm008_bundle_refresh"},
+    {"month": "2027-08", "label": "M12", "mode": "CAPSTONE", "product_id": "PM-009", "plan_status": "planned", "marketing_focus": "10_book_box_year2", "ops_focus": "pm009_box_set_year2_plan"}
+  ]
+}

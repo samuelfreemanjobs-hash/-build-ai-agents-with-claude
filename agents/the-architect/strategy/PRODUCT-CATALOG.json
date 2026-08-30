@@ -9,6 +9,8 @@
   "revenue_systems_cluster": "strategy/REVENUE-SYSTEMS-CLUSTER.json",
   "content_plan": "strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md",
   "powers_operating_model": "strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md",
+  "marketing_operations_master": "strategy/MARKETING-OPERATIONS-MASTER-PLAN.md",
+  "marketing_operations_plan": "factory/marketing-operations-plan.json",
   "default_chapters": 12,
   "products": [
     {

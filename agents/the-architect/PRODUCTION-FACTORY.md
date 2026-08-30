@@ -19,7 +19,9 @@ One voice. No modes. Runs on schedule via GitHub Actions + `the-architect factor
 
 **North star:** Everything the factory produces must **attract ideal clients** — see `CLIENT-ATTRACTION-METHODOLOGY.md`.
 
-**Business plan sync:** Production follows `factory/business-plan.json` and `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` — 12-month horizon, OPEN months for opportunistic revenue.
+**Business plan sync:** Production follows `factory/business-plan.json`, `factory/marketing-operations-plan.json`, and `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` — **no factory run without active month plan locked.**
+
+**Planning law:** `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` — NO PLAN → NO SHIP.
 
 ---
 
@@ -123,7 +125,7 @@ Produced by `factory launch` in one agentic run:
 9. Headline variants (10)  
 10. Social content batch (14 posts)  
 11. Ad scripts (3)  
-12. 7-day content calendar  
+12. 7-day content calendar (Guru Blueprint modules — `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md`)  
 13. Funnel map  
 
 Saved under `projects/<slug>/assets/` and `diagnostics/`. Index: `LAUNCH-INDEX.md`.

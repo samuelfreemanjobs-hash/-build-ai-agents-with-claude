@@ -386,7 +386,9 @@ User may ask for any of these. **Voice does not change.**
 - `AI-MODEL-BENCHMARKING-METHODOLOGY.md` — LLM eval and routing
 - `RETENTION-ENGAGEMENT-METHODOLOGY.md` — gamification, crisis PR, localization
 - `BRAND-IDENTITY.md` — Samuel Freeman, Persuasion Mechanics, positioning
-- `BUSINESS-PLAN-METHODOLOGY.md` — 12-month horizon, OPEN opportunistic slots
+- `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` — **NO PLAN → NO SHIP**; marketing + ops calendars; 3 horizons
+- `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` — Year 1 month-by-month marketing + operations
+- `factory/marketing-operations-plan.json` — machine index · monthly plan status
 - `strategy/PUBLISHED-CATALOG.json` — live Kindle titles (AI Product Design Mastery)
 - `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` — 10-book roadmap Sep 2026–Aug 2027
 - `strategy/PRODUCT-CATALOG.json` — Kindle product line (10 titles)

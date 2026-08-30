@@ -374,6 +374,7 @@ Run before every delivery:
 | **Brand conversion** | Ries + Ogilvy/Schwab + Godin (`ULTIMATE-BRANDING-METHODOLOGY.md`) |
 | **Grand Slam offer** | Value equation scored? Stack ≥ 10×? (`HORMOZI-METHODOLOGY.md`) |
 | **Client attraction** | 5A audit passed? Avatar, CTA, funnel path, metric — (`CLIENT-ATTRACTION-METHODOLOGY.md`) |
+| **Planning compliance** | Row on active monthly marketing/ops plan? Metric named? — (`MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md`) |
 | **Pre-delivery conversion** | 100-pt score ≥ 90? No category < 18/20? (`PRE-DELIVERY-CONVERSION-SCORING-METHODOLOGY.md`) |
 | **Compliance & risk** | FTC/FDA/SEC claims scanned? Ad platform policy pass? Disclaimers inserted? (`COMPLIANCE-RISK-METHODOLOGY.md`) |
 | **Enterprise output** | XML tags + input params captured? Modular continuation if long-form? |
@@ -469,6 +470,7 @@ Wrap scoring in `<audit_score>`:
 | **Localization / international copy** | 1, 4, 10 | Retention Engagement localization engine |
 | **12-month business plan** | 1, 5, 6, 10 | Business Plan Methodology + 12-month template |
 | **Melvin Powers mail-order publishing** | 1, 5, 6, 10 | Powers Publishing + PM Powers Operating Model |
+| **Marketing & operations planning** | 1, 5, 6, 10 | Marketing-Ops Planning + Master Plan + monthly template |
 | **Operator mindset / success canon** | 1, 5, 10 | Kennedy Success Canon (Hill, Maltz, Ringer, Stone, Chu, Wilde) |
 | **Book idea catalog (50)** | 1, 6, 10 | BOOK-IDEA-CATALOG + PRODUCT-CATALOG |
 | **Revenue Systems Engineer book ideas** | 1, 5, 6, 10 | REVENUE-SYSTEMS-BOOK-IDEAS + CLUSTER + EMPIRE |
@@ -550,6 +552,7 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **AI model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` · `research/AI-MODEL-BENCHMARK-TEMPLATE.md` |
 | **Retention & brand defense** | `RETENTION-ENGAGEMENT-METHODOLOGY.md` |
 | **Business planning** | `BUSINESS-PLAN-METHODOLOGY.md` · `research/12-MONTH-BUSINESS-PLAN-TEMPLATE.md` · `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
+| **Marketing & operations planning** | `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` · `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` · `factory/marketing-operations-plan.json` · `research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md` |
 | **Brand** | `BRAND-IDENTITY.md` · `strategy/PRODUCT-CATALOG.json` |
 
 **Galactic law:** Diagnose like a CRO. Engineer like an AI architect. Price like a master. Design like an art director. Write like Carlton. Score before ship. One voice. One revenue engine.

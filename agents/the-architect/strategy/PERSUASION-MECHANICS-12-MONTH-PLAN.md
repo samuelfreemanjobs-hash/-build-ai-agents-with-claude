@@ -25,6 +25,7 @@
 4. **Factory sync** — active book/launch tracked in `factory/business-plan.json` + `factory/state.json`.
 5. **Content = product samples** — Guru Blueprint EBM calendar (`strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`); factory chapters feed social/newsletter.
 6. **Run like Melvin Powers** — books are calling cards; **own the email list**; backend > royalties; backlist compounds (`strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md`).
+7. **All marketing & operations planned** — nothing ships without a calendar row (`MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` · `MARKETING-OPERATIONS-MASTER-PLAN.md`).
 
 ---
 
@@ -64,6 +65,8 @@
 ---
 
 ## Monthly operating rhythm
+
+**Planning gate:** Month plan must be `locked` in `factory/marketing-operations-plan.json` before W1 execution. Expand detail in `research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md`.
 
 ### Every month (fixed)
 

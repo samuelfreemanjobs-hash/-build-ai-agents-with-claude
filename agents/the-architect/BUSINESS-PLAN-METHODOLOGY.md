@@ -9,7 +9,9 @@
 
 ## Business Planning in One Sentence
 
-> **Plan 12 months of product and revenue on rails — but leave deliberate gaps where events, JVs, and market windows can slip in without wrecking the factory.**
+> **Plan 12 months of product and revenue on rails — but leave deliberate gaps where events, JVs, and market windows can slip in without wrecking the factory — and plan every month of marketing and operations before execution.**
+
+**Master planning law:** `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` — **NO PLAN → NO SHIP**
 
 ---
 
@@ -17,6 +19,7 @@
 
 | Rule | Law |
 |---|---|
+| **All marketing & ops planned** | Every post, email, chapter, test, and spend has a calendar row before execution — `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` |
 | **12-month horizon** | Every business plan covers the next 12 months from current month — refresh monthly |
 | **Opportunistic slots** | Minimum **2 OPEN months/year** (or equivalent 15–20% capacity) — no new primary product; short-term revenue only |
 | **Slip-in overlay** | During PRODUCE months, opportunistic plays ≤ **20% capacity** — never pause active book factory |
@@ -32,10 +35,11 @@
 1. BRAND & AVATAR     — who, positioning, offer ladder
 2. REVENUE ARCHITECTURE — streams + target mix
 3. 12-MONTH CALENDAR  — month × mode × product × opportunistic
-4. OPEN MONTH PLAYBOOK — what to run when no new book
-5. QUARTERLY TARGETS  — Q1–Q4 checkpoints (metrics TBD by client)
-6. FACTORY SYNC       — register-book / register-launch commands
-7. ROLLING REFRESH    — extend horizon on 1st of each month
+4. MARKETING & OPS MASTER PLAN — every month: content, email, launches, factory, fulfillment, metrics
+5. OPEN MONTH PLAYBOOK — what to run when no new book
+6. QUARTERLY TARGETS  — Q1–Q4 checkpoints (metrics TBD by client)
+7. FACTORY SYNC       — register-book / register-launch commands
+8. ROLLING REFRESH    — extend horizon on 1st of each month
 ```
 
 ### Month modes

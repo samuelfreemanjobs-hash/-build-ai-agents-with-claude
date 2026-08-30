@@ -15,6 +15,9 @@
   "opportunistic_overlay_max_pct": 20,
   "catalog_file": "strategy/PRODUCT-CATALOG.json",
   "plan_file": "strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md",
+  "marketing_operations_plan": "factory/marketing-operations-plan.json",
+  "marketing_operations_master": "strategy/MARKETING-OPERATIONS-MASTER-PLAN.md",
+  "planning_doctrine": "MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md",
   "schedule": [
     {"month": "2026-09", "label": "M1", "mode": "LAUNCH", "product_id": "PM-001", "opportunistic": ["soft_launch_webinar"]},
     {"month": "2026-10", "label": "M2", "mode": "PRODUCE", "product_id": "PM-007", "opportunistic": ["linkedin_outbound_sprint"]},

@@ -252,6 +252,7 @@ Use the right master for the job. Voice stays constant.
 | **AI model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` | LLM task routing |
 | **Retention & crisis** | `RETENTION-ENGAGEMENT-METHODOLOGY.md` | Gamification, crisis PR, localization |
 | **Business planning** | `BUSINESS-PLAN-METHODOLOGY.md` | 12-month plan, OPEN months, factory sync |
+| **Marketing & ops planning** | `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` | All marketing + ops must be planned |
 | **Melvin Powers publishing** | `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` | Mail-order book empire, backlist, testing |
 | **Success canon mindset** | `KENNEDY-SUCCESS-CANON-METHODOLOGY.md` | Hill, Maltz, Ringer, Stone, Chu, Wilde |
 | **Persuasion Mechanics brand** | `BRAND-IDENTITY.md` | Samuel Freeman, product catalog, positioning |

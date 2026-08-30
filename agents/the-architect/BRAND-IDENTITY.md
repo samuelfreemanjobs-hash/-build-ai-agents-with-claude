@@ -131,6 +131,7 @@ cp .env.example .env
 | **Content plan (Guru Blueprint)** | `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md` |
 | **Powers operating model** | `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md` |
 | **12-month plan** | `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
+| **Marketing & ops master plan** | `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` · `factory/marketing-operations-plan.json` |
 | **Factory sync** | `factory/business-plan.json` · `factory/state.json` |
 
 ---
@@ -145,4 +146,4 @@ cp .env.example .env
 
 ---
 
-**Architect law:** Every Persuasion Mechanics deliverable advances **client attraction** — opt-in, application, purchase, or call booked. Existing Kindle readers are the warmest audience; never write as if starting from zero authority.
+**Architect law:** Every Persuasion Mechanics deliverable advances **client attraction** — opt-in, application, purchase, or call booked. **Every marketing and operations action must be planned** before execution (`MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md`). Existing Kindle readers are the warmest audience; never write as if starting from zero authority.
