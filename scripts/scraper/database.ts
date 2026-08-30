@@ -77,7 +77,9 @@ export function importPrompts(
                     ? 'Wharton GAIL Prompt Library'
                     : collId === 'anthropic-prompt-library'
                       ? 'Anthropic Prompt Library'
-                      : collId!,
+                      : collId === 'gamma-prompt-library'
+                        ? 'Gamma Prompt Library'
+                        : collId!,
           sourceUrl: sourceMeta.url,
           sectionCount: new Set(toImport.filter((p) => p.collection === collId).map((p) => p.collectionSection)).size,
           promptCount: count,

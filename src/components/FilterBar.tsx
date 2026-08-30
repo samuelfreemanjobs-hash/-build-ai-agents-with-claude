@@ -62,6 +62,7 @@ export function FilterBar({
             { value: 'bonus3-marketing', label: '🎯 BONUS 3 Marketing' },
             { value: 'wharton-gail', label: '🎓 Wharton GAIL' },
             { value: 'anthropic-prompt-library', label: '🤖 Anthropic Library' },
+            { value: 'gamma-prompt-library', label: '📊 Gamma Library' },
           ]}
         />
 

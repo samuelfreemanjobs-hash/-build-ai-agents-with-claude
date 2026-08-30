@@ -14,6 +14,7 @@ import { scrape150PromptsFromFile } from './sources/pdfcoffee-150-parser'
 import { scrapeBonus3MarketingFromFile } from './sources/pdfcoffee-marketing-parser'
 import { scrapeWhartonGail, WHARTON_COLLECTION } from './sources/wharton-gail-parser'
 import { scrapeAnthropicPromptLibrary, ANTHROPIC_COLLECTION } from './sources/anthropic-prompt-parser'
+import { scrapeGammaPromptLibrary, GAMMA_COLLECTION } from './sources/gamma-prompt-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -183,6 +184,32 @@ async function main() {
       db,
       scraped,
       { name: ANTHROPIC_COLLECTION.name, url: ANTHROPIC_COLLECTION.sourceUrl },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
+
+  if (options.source === 'gamma-prompt-library' || options.source === 'all') {
+    console.log('📚 Importing Gamma Prompt Library...')
+    console.log(`   Source: ${GAMMA_COLLECTION.sourceUrl}`)
+    if (options.live) console.log('   Mode: live scrape (Firecrawl + fetch, falls back to seed/cache)')
+    else console.log('   Mode: seed/cache (gamma-prompt-library-page.txt)')
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const { prompts: scraped, method, message } = await scrapeGammaPromptLibrary({
+      live: options.live,
+      existingPrompts: db.prompts,
+      limit: options.limit,
+    })
+    console.log(`Extracted ${scraped.length} transformed prompts (${method})`)
+    if (message) console.log(`   ${message}`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      { name: GAMMA_COLLECTION.name, url: GAMMA_COLLECTION.sourceUrl },
       options.dryRun
     )
 

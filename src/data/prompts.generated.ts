@@ -82503,9 +82503,5185 @@ export const prompts: Prompt[] = [
     "copies": 134,
     "collection": "anthropic-prompt-library",
     "collectionSection": "developer"
+  },
+  {
+    "id": "gamma-sales-proof-of-concept-proposal-for-your-ai-customer-s",
+    "title": "Guided Proof-of-concept proposal for your AI customer service tool",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided proof-of-concept proposal for your ai customer service tool expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proof-of-concept proposal for your AI customer service tool: 30-day pilot with 1,000 tickets, dedicated implementation engineer, success criteria (30% faster resolution), and what full rollout looks like\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided proof-of-concept proposal for your ai customer service tool expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proof-of-concept proposal for your AI customer service tool: 30-day pilot with 1,000 tickets, dedicated implementation engineer, success criteria (30% faster resolution), and what full rollout looks like\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-proof-of-concept-proposal-for-your-ai-customer-s-swipe-1",
+        "title": "Guided Proof-of-concept proposal for your AI customer service tool — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided proof-of-concept proposal for your ai customer service tool expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proof-of-concept proposal for your AI customer service tool: 30-day pilot with 1,000 tickets, dedicated implementation engineer, success criteria (30% faster resolution), and what full rollout looks like\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-proof-of-concept-proposal-for-your-ai-customer-s-swipe-2",
+        "title": "Guided Proof-of-concept proposal for your AI customer service tool — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided proof-of-concept proposal for your ai customer service tool expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proof-of-concept proposal for your AI customer service tool: 30-day pilot with 1,000 tickets, dedicated implementation engineer, success criteria (30% faster resolution), and what full rollout looks like\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-proof-of-concept-proposal-for-your-ai-customer-s-swipe-3",
+        "title": "Guided Proof-of-concept proposal for your AI customer service tool — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided proof-of-concept proposal for your ai customer service tool expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proof-of-concept proposal for your AI customer service tool: 30-day pilot with 1,000 tickets, dedicated implementation engineer, success criteria (30% faster resolution), and what full rollout looks like\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-proof-of-concept-proposal-for-your-ai-customer-s-swipe-format",
+        "title": "Guided Proof-of-concept proposal for your AI customer service tool — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated guided proof-of-concept proposal for your ai customer service tool expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proof-of-concept proposal for your AI customer service tool: 30-day pilot with 1,000 tickets, dedicated implementation engineer, success criteria (30% faster resolution), and what full rollout looks like\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "design",
+      "guided",
+      "proofofconcept",
+      "proposal",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 57,
+    "copies": 68,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-marketers-brand-guidelines-for-your-craft-coffee-roast",
+    "title": "Guided Brand guidelines for your craft coffee roastery",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided brand guidelines for your craft coffee roastery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild brand guidelines for your craft coffee roastery: brand story (third-generation roasters), visual identity (logo usage, earthy color palette with hex codes), voice (warm, knowledgeable), imagery style, do's and don'ts, and partner rules\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided brand guidelines for your craft coffee roastery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild brand guidelines for your craft coffee roastery: brand story (third-generation roasters), visual identity (logo usage, earthy color palette with hex codes), tone: {{brand-tone}}(warm, knowledgeable), imagery style, do's and don'ts, and partner rules\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-brand-guidelines-for-your-craft-coffee-roast-swipe-1",
+        "title": "Guided Brand guidelines for your craft coffee roastery — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided brand guidelines for your craft coffee roastery expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild brand guidelines for your craft coffee roastery: brand story (third-generation roasters), visual identity (logo usage, earthy color palette with hex codes), voice (warm, knowledgeable), imagery style, do's and don'ts, and partner rules\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-brand-guidelines-for-your-craft-coffee-roast-swipe-2",
+        "title": "Guided Brand guidelines for your craft coffee roastery — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided brand guidelines for your craft coffee roastery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild brand guidelines for your craft coffee roastery: brand story (third-generation roasters), visual identity (logo usage, earthy color palette with hex codes), voice (warm, knowledgeable), imagery style, do's and don'ts, and partner rules\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-brand-guidelines-for-your-craft-coffee-roast-swipe-3",
+        "title": "Guided Brand guidelines for your craft coffee roastery — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided brand guidelines for your craft coffee roastery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild brand guidelines for your craft coffee roastery: brand story (third-generation roasters), visual identity (logo usage, earthy color palette with hex codes), voice (warm, knowledgeable), imagery style, do's and don'ts, and partner rules\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-brand-guidelines-for-your-craft-coffee-roast-swipe-format",
+        "title": "Guided Brand guidelines for your craft coffee roastery — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated guided brand guidelines for your craft coffee roastery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild brand guidelines for your craft coffee roastery: brand story (third-generation roasters), visual identity (logo usage, earthy color palette with hex codes), voice (warm, knowledgeable), imagery style, do's and don'ts, and partner rules\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "writing",
+      "guided",
+      "brand",
+      "guidelines",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 56,
+    "copies": 136,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-general-proposal-for-your-company-s-four-day-work-week",
+    "title": "Expert Proposal for your company's four-day work week pilot",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert proposal for your company's four-day work week pilot expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proposal for your company's four-day work week pilot: the case for it (productivity research), 3-month trial plan, success metrics, and concerns addressed\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert proposal for your company's four-day work week pilot expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proposal for your company's four-day work week pilot: the case for it (productivity research), 3-month trial plan, success metrics, and concerns addressed\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-proposal-for-your-company-s-four-day-work-week-swipe-1",
+        "title": "Expert Proposal for your company's four-day work week pilot — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert proposal for your company's four-day work week pilot expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proposal for your company's four-day work week pilot: the case for it (productivity research), 3-month trial plan, success metrics, and concerns addressed\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-proposal-for-your-company-s-four-day-work-week-swipe-2",
+        "title": "Expert Proposal for your company's four-day work week pilot — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert proposal for your company's four-day work week pilot expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proposal for your company's four-day work week pilot: the case for it (productivity research), 3-month trial plan, success metrics, and concerns addressed\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-proposal-for-your-company-s-four-day-work-week-swipe-3",
+        "title": "Expert Proposal for your company's four-day work week pilot — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert proposal for your company's four-day work week pilot expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proposal for your company's four-day work week pilot: the case for it (productivity research), 3-month trial plan, success metrics, and concerns addressed\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-proposal-for-your-company-s-four-day-work-week-swipe-format",
+        "title": "Expert Proposal for your company's four-day work week pilot — Different Format",
+        "description": "Same goal, different output format for design use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for design",
+        "content": "## Role\nYou are a dedicated expert proposal for your company's four-day work week pilot expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a proposal for your company's four-day work week pilot: the case for it (productivity research), 3-month trial plan, success metrics, and concerns addressed\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "design"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "design",
+      "productivity",
+      "expert",
+      "proposal",
+      "companys",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 58,
+    "copies": 121,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-sales-cybersecurity-demo-for-healthcare-cfos",
+    "title": "Guided Cybersecurity demo for healthcare CFOs",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided cybersecurity demo for healthcare cfos expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a cybersecurity demo for healthcare CFOs: show a ransomware scenario, the cost of downtime, and how you prevent it\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided cybersecurity demo for healthcare cfos expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a cybersecurity demo for healthcare CFOs: show a ransomware scenario, the cost of downtime, and how you prevent it\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-cybersecurity-demo-for-healthcare-cfos-swipe-1",
+        "title": "Guided Cybersecurity demo for healthcare CFOs — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided cybersecurity demo for healthcare cfos expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a cybersecurity demo for healthcare CFOs: show a ransomware scenario, the cost of downtime, and how you prevent it\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-cybersecurity-demo-for-healthcare-cfos-swipe-2",
+        "title": "Guided Cybersecurity demo for healthcare CFOs — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided cybersecurity demo for healthcare cfos expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a cybersecurity demo for healthcare CFOs: show a ransomware scenario, the cost of downtime, and how you prevent it\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-cybersecurity-demo-for-healthcare-cfos-swipe-3",
+        "title": "Guided Cybersecurity demo for healthcare CFOs — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided cybersecurity demo for healthcare cfos expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a cybersecurity demo for healthcare CFOs: show a ransomware scenario, the cost of downtime, and how you prevent it\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-cybersecurity-demo-for-healthcare-cfos-swipe-format",
+        "title": "Guided Cybersecurity demo for healthcare CFOs — Different Format",
+        "description": "Same goal, different output format for design use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for design",
+        "content": "## Role\nYou are a dedicated guided cybersecurity demo for healthcare cfos expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a cybersecurity demo for healthcare CFOs: show a ransomware scenario, the cost of downtime, and how you prevent it\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "design"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "design",
+      "guided",
+      "cybersecurity",
+      "healthcare",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 32,
+    "copies": 100,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-discovery-call-for-your-hr-software-targeting-mi",
+    "title": "Pro Discovery call for your HR software targeting mid-market companies",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro discovery call for your hr software targeting mid-market companies expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nStructure a discovery call for your HR software targeting mid-market companies: uncover their hiring process, identify where candidates drop off, explore cost of slow hiring, and paint the picture of filling roles 40% faster\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro discovery call for your hr software targeting mid-market companies expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nStructure a discovery call for your HR software targeting mid-market companies: uncover their hiring process, identify where candidates drop off, explore cost of slow hiring, and paint the picture of filling roles 40% faster\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-discovery-call-for-your-hr-software-targeting-mi-swipe-1",
+        "title": "Pro Discovery call for your HR software targeting mid-market companies — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro discovery call for your hr software targeting mid-market companies expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nStructure a discovery call for your HR software targeting mid-market companies: uncover their hiring process, identify where candidates drop off, explore cost of slow hiring, and paint the picture of filling roles 40% faster\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-discovery-call-for-your-hr-software-targeting-mi-swipe-2",
+        "title": "Pro Discovery call for your HR software targeting mid-market companies — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro discovery call for your hr software targeting mid-market companies expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nStructure a discovery call for your HR software targeting mid-market companies: uncover their hiring process, identify where candidates drop off, explore cost of slow hiring, and paint the picture of filling roles 40% faster\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-discovery-call-for-your-hr-software-targeting-mi-swipe-3",
+        "title": "Pro Discovery call for your HR software targeting mid-market companies — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro discovery call for your hr software targeting mid-market companies expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nStructure a discovery call for your HR software targeting mid-market companies: uncover their hiring process, identify where candidates drop off, explore cost of slow hiring, and paint the picture of filling roles 40% faster\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-discovery-call-for-your-hr-software-targeting-mi-swipe-format",
+        "title": "Pro Discovery call for your HR software targeting mid-market companies — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated pro discovery call for your hr software targeting mid-market companies expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nStructure a discovery call for your HR software targeting mid-market companies: uncover their hiring process, identify where candidates drop off, explore cost of slow hiring, and paint the picture of filling roles 40% faster\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "hr",
+      "discovery",
+      "software",
+      "targeting",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 36,
+    "copies": 81,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-educators-college-level-literary-analysis-deck-for-the",
+    "title": "Pro College-level literary analysis deck for \"The Great Gatsby\"",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro college-level literary analysis deck for \"the great gatsby\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level literary analysis deck for \"The Great Gatsby\": author background and Jazz Age context, thematic predictions, vocabulary preview (obstinate, supercilious, denizen), plot overview, character analysis, narrative structure, symbolism exploration, critical discussion questions, contemporary relevance, and analytical essay prompts\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro college-level literary analysis deck for \"the great gatsby\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level literary analysis deck for \"The Great Gatsby\": author background and Jazz Age context, thematic predictions, vocabulary preview (obstinate, supercilious, denizen), plot overview, character analysis, narrative structure, symbolism exploration, critical discussion questions, contemporary relevance, and analytical essay prompts\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-college-level-literary-analysis-deck-for-the-swipe-1",
+        "title": "Pro College-level literary analysis deck for \"The Great Gatsby\" — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro college-level literary analysis deck for \"the great gatsby\" expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level literary analysis deck for \"The Great Gatsby\": author background and Jazz Age context, thematic predictions, vocabulary preview (obstinate, supercilious, denizen), plot overview, character analysis, narrative structure, symbolism exploration, critical discussion questions, contemporary relevance, and analytical essay prompts\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-college-level-literary-analysis-deck-for-the-swipe-2",
+        "title": "Pro College-level literary analysis deck for \"The Great Gatsby\" — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro college-level literary analysis deck for \"the great gatsby\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level literary analysis deck for \"The Great Gatsby\": author background and Jazz Age context, thematic predictions, vocabulary preview (obstinate, supercilious, denizen), plot overview, character analysis, narrative structure, symbolism exploration, critical discussion questions, contemporary relevance, and analytical essay prompts\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-college-level-literary-analysis-deck-for-the-swipe-3",
+        "title": "Pro College-level literary analysis deck for \"The Great Gatsby\" — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro college-level literary analysis deck for \"the great gatsby\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level literary analysis deck for \"The Great Gatsby\": author background and Jazz Age context, thematic predictions, vocabulary preview (obstinate, supercilious, denizen), plot overview, character analysis, narrative structure, symbolism exploration, critical discussion questions, contemporary relevance, and analytical essay prompts\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-college-level-literary-analysis-deck-for-the-swipe-format",
+        "title": "Pro College-level literary analysis deck for \"The Great Gatsby\" — Different Format",
+        "description": "Same goal, different output format for writing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for writing",
+        "content": "## Role\nYou are a dedicated pro college-level literary analysis deck for \"the great gatsby\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level literary analysis deck for \"The Great Gatsby\": author background and Jazz Age context, thematic predictions, vocabulary preview (obstinate, supercilious, denizen), plot overview, character analysis, narrative structure, symbolism exploration, critical discussion questions, contemporary relevance, and analytical essay prompts\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "writing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "writing",
+      "collegelevel",
+      "literary",
+      "analysis",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 73,
+    "copies": 82,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-marketers-campaign-for-an-eco-friendly-sneaker-launch",
+    "title": "Pro Campaign for an eco-friendly sneaker launch",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro campaign for an eco-friendly sneaker launch expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBrief a campaign for an eco-friendly sneaker launch: Gen Z audience, 10K pre-orders goal, influencer partnerships + paid social\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro campaign for an eco-friendly sneaker launch expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBrief a campaign for an eco-friendly sneaker launch: Gen Z audience, 10K pre-orders goal, influencer partnerships + paid social\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-campaign-for-an-eco-friendly-sneaker-launch-swipe-1",
+        "title": "Pro Campaign for an eco-friendly sneaker launch — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro campaign for an eco-friendly sneaker launch expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBrief a campaign for an eco-friendly sneaker launch: Gen Z audience, 10K pre-orders goal, influencer partnerships + paid social\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-campaign-for-an-eco-friendly-sneaker-launch-swipe-2",
+        "title": "Pro Campaign for an eco-friendly sneaker launch — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro campaign for an eco-friendly sneaker launch expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBrief a campaign for an eco-friendly sneaker launch: Gen Z audience, 10K pre-orders goal, influencer partnerships + paid social\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-campaign-for-an-eco-friendly-sneaker-launch-swipe-3",
+        "title": "Pro Campaign for an eco-friendly sneaker launch — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro campaign for an eco-friendly sneaker launch expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBrief a campaign for an eco-friendly sneaker launch: Gen Z audience, 10K pre-orders goal, influencer partnerships + paid social\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-campaign-for-an-eco-friendly-sneaker-launch-swipe-format",
+        "title": "Pro Campaign for an eco-friendly sneaker launch — Different Format",
+        "description": "Same goal, different output format for marketing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for marketing",
+        "content": "## Role\nYou are a dedicated pro campaign for an eco-friendly sneaker launch expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBrief a campaign for an eco-friendly sneaker launch: Gen Z audience, 10K pre-orders goal, influencer partnerships + paid social\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "marketing",
+      "campaign",
+      "ecofriendly",
+      "sneaker",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 26,
+    "copies": 185,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-educators-phonics-lesson-for-1st-graders-on-the-at-wor",
+    "title": "Guided Phonics lesson for 1st graders on the \"-at\" word family",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided phonics lesson for 1st graders on the \"-at\" word family expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a phonics lesson for 1st graders on the \"-at\" word family: learning objective, sound intro, word examples (cat, hat, mat), picture matching, short story, practice sentences, interactive game, word hunt, spelling practice, and take-home activity\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided phonics lesson for 1st graders on the \"-at\" word family expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a phonics lesson for 1st graders on the \"-at\" word family: learning objective, sound intro, word examples (cat, hat, mat), picture matching, short story, practice sentences, interactive game, word hunt, spelling practice, and take-home activity\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-phonics-lesson-for-1st-graders-on-the-at-wor-swipe-1",
+        "title": "Guided Phonics lesson for 1st graders on the \"-at\" word family — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided phonics lesson for 1st graders on the \"-at\" word family expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a phonics lesson for 1st graders on the \"-at\" word family: learning objective, sound intro, word examples (cat, hat, mat), picture matching, short story, practice sentences, interactive game, word hunt, spelling practice, and take-home activity\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-phonics-lesson-for-1st-graders-on-the-at-wor-swipe-2",
+        "title": "Guided Phonics lesson for 1st graders on the \"-at\" word family — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided phonics lesson for 1st graders on the \"-at\" word family expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a phonics lesson for 1st graders on the \"-at\" word family: learning objective, sound intro, word examples (cat, hat, mat), picture matching, short story, practice sentences, interactive game, word hunt, spelling practice, and take-home activity\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-phonics-lesson-for-1st-graders-on-the-at-wor-swipe-3",
+        "title": "Guided Phonics lesson for 1st graders on the \"-at\" word family — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided phonics lesson for 1st graders on the \"-at\" word family expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a phonics lesson for 1st graders on the \"-at\" word family: learning objective, sound intro, word examples (cat, hat, mat), picture matching, short story, practice sentences, interactive game, word hunt, spelling practice, and take-home activity\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-phonics-lesson-for-1st-graders-on-the-at-wor-swipe-format",
+        "title": "Guided Phonics lesson for 1st graders on the \"-at\" word family — Different Format",
+        "description": "Same goal, different output format for writing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for writing",
+        "content": "## Role\nYou are a dedicated guided phonics lesson for 1st graders on the \"-at\" word family expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a phonics lesson for 1st graders on the \"-at\" word family: learning objective, sound intro, word examples (cat, hat, mat), picture matching, short story, practice sentences, interactive game, word hunt, spelling practice, and take-home activity\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "writing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "writing",
+      "education",
+      "guided",
+      "phonics",
+      "lesson",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 76,
+    "copies": 140,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-consultants-clinical-trial-optimization-plan-for-a-bio",
+    "title": "Expert Clinical trial optimization plan for a biotech's Phase III oncology st",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert clinical trial optimization plan for a biotech's phase iii oncology st expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a clinical trial optimization plan for a biotech's Phase III oncology study: current enrollment challenges (12 sites, 60% of target), site selection criteria, patient recruitment strategy, digital tools to reduce dropouts, timeline acceleration, and projected $2M savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert clinical trial optimization plan for a biotech's phase iii oncology st expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a clinical trial optimization plan for a biotech's Phase III oncology study: current enrollment challenges (12 sites, 60% of target), site selection criteria, patient recruitment strategy, digital tools to reduce dropouts, timeline acceleration, and projected $2M savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-clinical-trial-optimization-plan-for-a-bio-swipe-1",
+        "title": "Expert Clinical trial optimization plan for a biotech's Phase III oncology st — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert clinical trial optimization plan for a biotech's phase iii oncology st expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a clinical trial optimization plan for a biotech's Phase III oncology study: current enrollment challenges (12 sites, 60% of target), site selection criteria, patient recruitment strategy, digital tools to reduce dropouts, timeline acceleration, and projected $2M savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-clinical-trial-optimization-plan-for-a-bio-swipe-2",
+        "title": "Expert Clinical trial optimization plan for a biotech's Phase III oncology st — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert clinical trial optimization plan for a biotech's phase iii oncology st expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a clinical trial optimization plan for a biotech's Phase III oncology study: current enrollment challenges (12 sites, 60% of target), site selection criteria, patient recruitment strategy, digital tools to reduce dropouts, timeline acceleration, and projected $2M savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-clinical-trial-optimization-plan-for-a-bio-swipe-3",
+        "title": "Expert Clinical trial optimization plan for a biotech's Phase III oncology st — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert clinical trial optimization plan for a biotech's phase iii oncology st expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a clinical trial optimization plan for a biotech's Phase III oncology study: current enrollment challenges (12 sites, 60% of target), site selection criteria, patient recruitment strategy, digital tools to reduce dropouts, timeline acceleration, and projected $2M savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-clinical-trial-optimization-plan-for-a-bio-swipe-format",
+        "title": "Expert Clinical trial optimization plan for a biotech's Phase III oncology st — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated expert clinical trial optimization plan for a biotech's phase iii oncology st expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a clinical trial optimization plan for a biotech's Phase III oncology study: current enrollment challenges (12 sites, 60% of target), site selection criteria, patient recruitment strategy, digital tools to reduce dropouts, timeline acceleration, and projected $2M savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "hr",
+      "expert",
+      "clinical",
+      "trial",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 68,
+    "copies": 174,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-risk-analysis-for-a-restaurant-expansion-p",
+    "title": "Guided Risk analysis for a restaurant expansion plotting labor shortages (lik",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided risk analysis for a restaurant expansion plotting labor shortages (lik expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a risk analysis for a restaurant expansion plotting labor shortages (likely/high impact) vs. supplier issues (unlikely/high impact)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided risk analysis for a restaurant expansion plotting labor shortages (lik expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a risk analysis for a restaurant expansion plotting labor shortages (likely/high impact) vs. supplier issues (unlikely/high impact)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-risk-analysis-for-a-restaurant-expansion-p-swipe-1",
+        "title": "Guided Risk analysis for a restaurant expansion plotting labor shortages (lik — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided risk analysis for a restaurant expansion plotting labor shortages (lik expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a risk analysis for a restaurant expansion plotting labor shortages (likely/high impact) vs. supplier issues (unlikely/high impact)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-risk-analysis-for-a-restaurant-expansion-p-swipe-2",
+        "title": "Guided Risk analysis for a restaurant expansion plotting labor shortages (lik — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided risk analysis for a restaurant expansion plotting labor shortages (lik expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a risk analysis for a restaurant expansion plotting labor shortages (likely/high impact) vs. supplier issues (unlikely/high impact)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-risk-analysis-for-a-restaurant-expansion-p-swipe-3",
+        "title": "Guided Risk analysis for a restaurant expansion plotting labor shortages (lik — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided risk analysis for a restaurant expansion plotting labor shortages (lik expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a risk analysis for a restaurant expansion plotting labor shortages (likely/high impact) vs. supplier issues (unlikely/high impact)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-risk-analysis-for-a-restaurant-expansion-p-swipe-format",
+        "title": "Guided Risk analysis for a restaurant expansion plotting labor shortages (lik — Different Format",
+        "description": "Same goal, different output format for design use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for design",
+        "content": "## Role\nYou are a dedicated guided risk analysis for a restaurant expansion plotting labor shortages (lik expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a risk analysis for a restaurant expansion plotting labor shortages (likely/high impact) vs. supplier issues (unlikely/high impact)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "design"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "design",
+      "guided",
+      "analysis",
+      "restaurant",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 56,
+    "copies": 207,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-market-feasibility-study-for-a-200-unit-mi",
+    "title": "Pro Market feasibility study for a 200-unit mixed-use development in downt",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro market feasibility study for a 200-unit mixed-use development in downt expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a market feasibility study for a 200-unit mixed-use development in downtown Austin: demographic analysis, comparable projects, demand projections, absorption rates, construction costs, financing options, timeline, and expected 18% IRR\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro market feasibility study for a 200-unit mixed-use development in downt expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a market feasibility study for a 200-unit mixed-use development in downtown Austin: demographic analysis, comparable projects, demand projections, absorption rates, construction costs, financing options, timeline, and expected 18% IRR\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-market-feasibility-study-for-a-200-unit-mi-swipe-1",
+        "title": "Pro Market feasibility study for a 200-unit mixed-use development in downt — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro market feasibility study for a 200-unit mixed-use development in downt expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a market feasibility study for a 200-unit mixed-use development in downtown Austin: demographic analysis, comparable projects, demand projections, absorption rates, construction costs, financing options, timeline, and expected 18% IRR\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-market-feasibility-study-for-a-200-unit-mi-swipe-2",
+        "title": "Pro Market feasibility study for a 200-unit mixed-use development in downt — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro market feasibility study for a 200-unit mixed-use development in downt expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a market feasibility study for a 200-unit mixed-use development in downtown Austin: demographic analysis, comparable projects, demand projections, absorption rates, construction costs, financing options, timeline, and expected 18% IRR\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-market-feasibility-study-for-a-200-unit-mi-swipe-3",
+        "title": "Pro Market feasibility study for a 200-unit mixed-use development in downt — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro market feasibility study for a 200-unit mixed-use development in downt expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a market feasibility study for a 200-unit mixed-use development in downtown Austin: demographic analysis, comparable projects, demand projections, absorption rates, construction costs, financing options, timeline, and expected 18% IRR\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-market-feasibility-study-for-a-200-unit-mi-swipe-format",
+        "title": "Pro Market feasibility study for a 200-unit mixed-use development in downt — Different Format",
+        "description": "Same goal, different output format for design use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for design",
+        "content": "## Role\nYou are a dedicated pro market feasibility study for a 200-unit mixed-use development in downt expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a market feasibility study for a 200-unit mixed-use development in downtown Austin: demographic analysis, comparable projects, demand projections, absorption rates, construction costs, financing options, timeline, and expected 18% IRR\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "design"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "design",
+      "market",
+      "feasibility",
+      "study",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 34,
+    "copies": 214,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-customer-experience-strategy-for-your-hote",
+    "title": "Expert Customer experience strategy for your hotel chain's CMO",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert customer experience strategy for your hotel chain's cmo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a customer experience strategy for your hotel chain's CMO: journey map with pain points (slow check-in), guest feedback themes, CX maturity (level 2 of 5), improvements, tech needed, and NPS lift from 45 to 65\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert customer experience strategy for your hotel chain's cmo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a customer experience strategy for your hotel chain's CMO: journey map with pain points (slow check-in), guest feedback themes, CX maturity (level 2 of 5), improvements, tech needed, and NPS lift from 45 to 65\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-customer-experience-strategy-for-your-hote-swipe-1",
+        "title": "Expert Customer experience strategy for your hotel chain's CMO — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert customer experience strategy for your hotel chain's cmo expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a customer experience strategy for your hotel chain's CMO: journey map with pain points (slow check-in), guest feedback themes, CX maturity (level 2 of 5), improvements, tech needed, and NPS lift from 45 to 65\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-customer-experience-strategy-for-your-hote-swipe-2",
+        "title": "Expert Customer experience strategy for your hotel chain's CMO — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert customer experience strategy for your hotel chain's cmo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a customer experience strategy for your hotel chain's CMO: journey map with pain points (slow check-in), guest feedback themes, CX maturity (level 2 of 5), improvements, tech needed, and NPS lift from 45 to 65\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-customer-experience-strategy-for-your-hote-swipe-3",
+        "title": "Expert Customer experience strategy for your hotel chain's CMO — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert customer experience strategy for your hotel chain's cmo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a customer experience strategy for your hotel chain's CMO: journey map with pain points (slow check-in), guest feedback themes, CX maturity (level 2 of 5), improvements, tech needed, and NPS lift from 45 to 65\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-customer-experience-strategy-for-your-hote-swipe-format",
+        "title": "Expert Customer experience strategy for your hotel chain's CMO — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated expert customer experience strategy for your hotel chain's cmo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a customer experience strategy for your hotel chain's CMO: journey map with pain points (slow check-in), guest feedback themes, CX maturity (level 2 of 5), improvements, tech needed, and NPS lift from 45 to 65\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "expert",
+      "customer",
+      "experience",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 49,
+    "copies": 88,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-pharmaceutical-launch-strategy-for-a-new-d",
+    "title": "Smart Pharmaceutical launch strategy for a new diabetes medication",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart pharmaceutical launch strategy for a new diabetes medication expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a pharmaceutical launch strategy for a new diabetes medication: market landscape (3 established competitors), target prescriber segments (endocrinologists, PCPs), payer access plan, sales force sizing (120 reps), medical education program, launch timeline, and Year 1 revenue forecast ($85M)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart pharmaceutical launch strategy for a new diabetes medication expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a pharmaceutical launch strategy for a new diabetes medication: market landscape (3 established competitors), target prescriber segments (endocrinologists, PCPs), payer access plan, sales force sizing (120 reps), medical education program, launch timeline, and Year 1 revenue forecast ($85M)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-pharmaceutical-launch-strategy-for-a-new-d-swipe-1",
+        "title": "Smart Pharmaceutical launch strategy for a new diabetes medication — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart pharmaceutical launch strategy for a new diabetes medication expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a pharmaceutical launch strategy for a new diabetes medication: market landscape (3 established competitors), target prescriber segments (endocrinologists, PCPs), payer access plan, sales force sizing (120 reps), medical education program, launch timeline, and Year 1 revenue forecast ($85M)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-pharmaceutical-launch-strategy-for-a-new-d-swipe-2",
+        "title": "Smart Pharmaceutical launch strategy for a new diabetes medication — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart pharmaceutical launch strategy for a new diabetes medication expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a pharmaceutical launch strategy for a new diabetes medication: market landscape (3 established competitors), target prescriber segments (endocrinologists, PCPs), payer access plan, sales force sizing (120 reps), medical education program, launch timeline, and Year 1 revenue forecast ($85M)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-pharmaceutical-launch-strategy-for-a-new-d-swipe-3",
+        "title": "Smart Pharmaceutical launch strategy for a new diabetes medication — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart pharmaceutical launch strategy for a new diabetes medication expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a pharmaceutical launch strategy for a new diabetes medication: market landscape (3 established competitors), target prescriber segments (endocrinologists, PCPs), payer access plan, sales force sizing (120 reps), medical education program, launch timeline, and Year 1 revenue forecast ($85M)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-pharmaceutical-launch-strategy-for-a-new-d-swipe-format",
+        "title": "Smart Pharmaceutical launch strategy for a new diabetes medication — Different Format",
+        "description": "Same goal, different output format for sales use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for sales",
+        "content": "## Role\nYou are a dedicated smart pharmaceutical launch strategy for a new diabetes medication expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a pharmaceutical launch strategy for a new diabetes medication: market landscape (3 established competitors), target prescriber segments (endocrinologists, PCPs), payer access plan, sales force sizing (120 reps), medical education program, launch timeline, and Year 1 revenue forecast ($85M)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "sales"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "sales",
+      "education",
+      "smart",
+      "pharmaceutical",
+      "launch",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 34,
+    "copies": 83,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-hr-consulting-in-three-tiers",
+    "title": "Expert HR consulting in three tiers",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert hr consulting in three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPresent HR consulting in three tiers: Essential (compliance), Growth (talent strategy), Partner (embedded leadership)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert hr consulting in three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPresent HR consulting in three tiers: Essential (compliance), Growth (talent strategy), Partner (embedded leadership)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-hr-consulting-in-three-tiers-swipe-1",
+        "title": "Expert HR consulting in three tiers — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert hr consulting in three tiers expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nPresent HR consulting in three tiers: Essential (compliance), Growth (talent strategy), Partner (embedded leadership)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-hr-consulting-in-three-tiers-swipe-2",
+        "title": "Expert HR consulting in three tiers — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert hr consulting in three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPresent HR consulting in three tiers: Essential (compliance), Growth (talent strategy), Partner (embedded leadership)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-hr-consulting-in-three-tiers-swipe-3",
+        "title": "Expert HR consulting in three tiers — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert hr consulting in three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPresent HR consulting in three tiers: Essential (compliance), Growth (talent strategy), Partner (embedded leadership)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-hr-consulting-in-three-tiers-swipe-format",
+        "title": "Expert HR consulting in three tiers — Different Format",
+        "description": "Same goal, different output format for hr use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for hr",
+        "content": "## Role\nYou are a dedicated expert hr consulting in three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPresent HR consulting in three tiers: Essential (compliance), Growth (talent strategy), Partner (embedded leadership)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "hr"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "hr",
+      "business",
+      "expert",
+      "consulting",
+      "three",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 50,
+    "copies": 100,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-due-diligence-presentation-for-your-invest",
+    "title": "Pro Due diligence presentation for your investment committee evaluating a ",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro due diligence presentation for your investment committee evaluating a  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a due diligence presentation for your investment committee evaluating a fintech acquisition: their business model, market position (#3 in payments), financials, technology stack, management team, synergies, risks, and $50M valuation\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro due diligence presentation for your investment committee evaluating a  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a due diligence presentation for your investment committee evaluating a fintech acquisition: their business model, market position (#3 in payments), financials, technology stack, management team, synergies, risks, and $50M valuation\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-due-diligence-presentation-for-your-invest-swipe-1",
+        "title": "Pro Due diligence presentation for your investment committee evaluating a  — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro due diligence presentation for your investment committee evaluating a  expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a due diligence presentation for your investment committee evaluating a fintech acquisition: their business model, market position (#3 in payments), financials, technology stack, management team, synergies, risks, and $50M valuation\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-due-diligence-presentation-for-your-invest-swipe-2",
+        "title": "Pro Due diligence presentation for your investment committee evaluating a  — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro due diligence presentation for your investment committee evaluating a  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a due diligence presentation for your investment committee evaluating a fintech acquisition: their business model, market position (#3 in payments), financials, technology stack, management team, synergies, risks, and $50M valuation\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-due-diligence-presentation-for-your-invest-swipe-3",
+        "title": "Pro Due diligence presentation for your investment committee evaluating a  — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro due diligence presentation for your investment committee evaluating a  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a due diligence presentation for your investment committee evaluating a fintech acquisition: their business model, market position (#3 in payments), financials, technology stack, management team, synergies, risks, and $50M valuation\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-due-diligence-presentation-for-your-invest-swipe-format",
+        "title": "Pro Due diligence presentation for your investment committee evaluating a  — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated pro due diligence presentation for your investment committee evaluating a  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a due diligence presentation for your investment committee evaluating a fintech acquisition: their business model, market position (#3 in payments), financials, technology stack, management team, synergies, risks, and $50M valuation\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "finance",
+      "diligence",
+      "presentation",
+      "investment",
+      "consultants",
+      "gamma",
+      "swipe-ready"
+    ],
+    "likes": 31,
+    "copies": 170,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-discovery-presentation-for-a-manufacturing",
+    "title": "Rapid Discovery presentation for a manufacturing client sorting whether supp",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid discovery presentation for a manufacturing client sorting whether supp expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a discovery presentation for a manufacturing client sorting whether supply chain delays are process issues or capacity problems\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid discovery presentation for a manufacturing client sorting whether supp expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a discovery presentation for a manufacturing client sorting whether supply chain delays are process issues or capacity problems\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-discovery-presentation-for-a-manufacturing-swipe-1",
+        "title": "Rapid Discovery presentation for a manufacturing client sorting whether supp — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid discovery presentation for a manufacturing client sorting whether supp expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a discovery presentation for a manufacturing client sorting whether supply chain delays are process issues or capacity problems\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-discovery-presentation-for-a-manufacturing-swipe-2",
+        "title": "Rapid Discovery presentation for a manufacturing client sorting whether supp — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid discovery presentation for a manufacturing client sorting whether supp expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a discovery presentation for a manufacturing client sorting whether supply chain delays are process issues or capacity problems\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-discovery-presentation-for-a-manufacturing-swipe-3",
+        "title": "Rapid Discovery presentation for a manufacturing client sorting whether supp — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid discovery presentation for a manufacturing client sorting whether supp expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a discovery presentation for a manufacturing client sorting whether supply chain delays are process issues or capacity problems\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-discovery-presentation-for-a-manufacturing-swipe-format",
+        "title": "Rapid Discovery presentation for a manufacturing client sorting whether supp — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid discovery presentation for a manufacturing client sorting whether supp expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a discovery presentation for a manufacturing client sorting whether supply chain delays are process issues or capacity problems\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "design",
+      "rapid",
+      "discovery",
+      "presentation",
+      "consultants",
+      "gamma",
+      "swipe-ready"
+    ],
+    "likes": 56,
+    "copies": 40,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-market-entry-strategy-for-your-saas-compan",
+    "title": "Expert Market entry strategy for your SaaS company evaluating Latin America e",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert market entry strategy for your saas company evaluating latin america e expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a market entry strategy for your SaaS company evaluating Latin America expansion: market size (5M potential customers), competitive landscape, customer segments, launch approach, operations needed, financial projections, and risks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert market entry strategy for your saas company evaluating latin america e expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a market entry strategy for your SaaS company evaluating Latin America expansion: market size (5M potential customers), competitive landscape, customer segments, launch approach, operations needed, financial projections, and risks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-market-entry-strategy-for-your-saas-compan-swipe-1",
+        "title": "Expert Market entry strategy for your SaaS company evaluating Latin America e — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert market entry strategy for your saas company evaluating latin america e expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a market entry strategy for your SaaS company evaluating Latin America expansion: market size (5M potential customers), competitive landscape, customer segments, launch approach, operations needed, financial projections, and risks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-market-entry-strategy-for-your-saas-compan-swipe-2",
+        "title": "Expert Market entry strategy for your SaaS company evaluating Latin America e — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert market entry strategy for your saas company evaluating latin america e expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a market entry strategy for your SaaS company evaluating Latin America expansion: market size (5M potential customers), competitive landscape, customer segments, launch approach, operations needed, financial projections, and risks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-market-entry-strategy-for-your-saas-compan-swipe-3",
+        "title": "Expert Market entry strategy for your SaaS company evaluating Latin America e — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert market entry strategy for your saas company evaluating latin america e expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a market entry strategy for your SaaS company evaluating Latin America expansion: market size (5M potential customers), competitive landscape, customer segments, launch approach, operations needed, financial projections, and risks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-market-entry-strategy-for-your-saas-compan-swipe-format",
+        "title": "Expert Market entry strategy for your SaaS company evaluating Latin America e — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated expert market entry strategy for your saas company evaluating latin america e expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a market entry strategy for your SaaS company evaluating Latin America expansion: market size (5M potential customers), competitive landscape, customer segments, launch approach, operations needed, financial projections, and risks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "finance",
+      "expert",
+      "market",
+      "entry",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 51,
+    "copies": 182,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-n-ambulatory-care-expansion-plan-for-a-hea",
+    "title": "Smart N ambulatory care expansion plan for a health system evaluating 5 subu",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart n ambulatory care expansion plan for a health system evaluating 5 subu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ambulatory care expansion plan for a health system evaluating 5 suburban locations: demographic heat mapping, service line priorities (urgent care, imaging), site selection scoring, partnership vs. build analysis, capital requirements ($12M), patient volume projections, and breakeven timeline (18 months)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart n ambulatory care expansion plan for a health system evaluating 5 subu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ambulatory care expansion plan for a health system evaluating 5 suburban locations: demographic heat mapping, service line priorities (urgent care, imaging), site selection scoring, partnership vs. build analysis, capital requirements ($12M), patient volume projections, and breakeven timeline (18 months)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-n-ambulatory-care-expansion-plan-for-a-hea-swipe-1",
+        "title": "Smart N ambulatory care expansion plan for a health system evaluating 5 subu — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart n ambulatory care expansion plan for a health system evaluating 5 subu expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ambulatory care expansion plan for a health system evaluating 5 suburban locations: demographic heat mapping, service line priorities (urgent care, imaging), site selection scoring, partnership vs. build analysis, capital requirements ($12M), patient volume projections, and breakeven timeline (18 months)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-n-ambulatory-care-expansion-plan-for-a-hea-swipe-2",
+        "title": "Smart N ambulatory care expansion plan for a health system evaluating 5 subu — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart n ambulatory care expansion plan for a health system evaluating 5 subu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ambulatory care expansion plan for a health system evaluating 5 suburban locations: demographic heat mapping, service line priorities (urgent care, imaging), site selection scoring, partnership vs. build analysis, capital requirements ($12M), patient volume projections, and breakeven timeline (18 months)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-n-ambulatory-care-expansion-plan-for-a-hea-swipe-3",
+        "title": "Smart N ambulatory care expansion plan for a health system evaluating 5 subu — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart n ambulatory care expansion plan for a health system evaluating 5 subu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ambulatory care expansion plan for a health system evaluating 5 suburban locations: demographic heat mapping, service line priorities (urgent care, imaging), site selection scoring, partnership vs. build analysis, capital requirements ($12M), patient volume projections, and breakeven timeline (18 months)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-n-ambulatory-care-expansion-plan-for-a-hea-swipe-format",
+        "title": "Smart N ambulatory care expansion plan for a health system evaluating 5 subu — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated smart n ambulatory care expansion plan for a health system evaluating 5 subu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ambulatory care expansion plan for a health system evaluating 5 suburban locations: demographic heat mapping, service line priorities (urgent care, imaging), site selection scoring, partnership vs. build analysis, capital requirements ($12M), patient volume projections, and breakeven timeline (18 months)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "design",
+      "smart",
+      "ambulatory",
+      "expansion",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 55,
+    "copies": 165,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-technology-implementation-proposal-for-you",
+    "title": "Pro Technology implementation proposal for your healthcare network's leade",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro technology implementation proposal for your healthcare network's leade expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a technology implementation proposal for your healthcare network's leadership: current infrastructure gaps, proposed cloud migration plan, patient care improvements, 18-month rollout, $2M budget, and 3-year ROI projections\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro technology implementation proposal for your healthcare network's leade expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a technology implementation proposal for your healthcare network's leadership: current infrastructure gaps, proposed cloud migration plan, patient care improvements, 18-month rollout, $2M budget, and 3-year ROI projections\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-technology-implementation-proposal-for-you-swipe-1",
+        "title": "Pro Technology implementation proposal for your healthcare network's leade — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro technology implementation proposal for your healthcare network's leade expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a technology implementation proposal for your healthcare network's leadership: current infrastructure gaps, proposed cloud migration plan, patient care improvements, 18-month rollout, $2M budget, and 3-year ROI projections\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-technology-implementation-proposal-for-you-swipe-2",
+        "title": "Pro Technology implementation proposal for your healthcare network's leade — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro technology implementation proposal for your healthcare network's leade expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a technology implementation proposal for your healthcare network's leadership: current infrastructure gaps, proposed cloud migration plan, patient care improvements, 18-month rollout, $2M budget, and 3-year ROI projections\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-technology-implementation-proposal-for-you-swipe-3",
+        "title": "Pro Technology implementation proposal for your healthcare network's leade — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro technology implementation proposal for your healthcare network's leade expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a technology implementation proposal for your healthcare network's leadership: current infrastructure gaps, proposed cloud migration plan, patient care improvements, 18-month rollout, $2M budget, and 3-year ROI projections\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-technology-implementation-proposal-for-you-swipe-format",
+        "title": "Pro Technology implementation proposal for your healthcare network's leade — Different Format",
+        "description": "Same goal, different output format for finance use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for finance",
+        "content": "## Role\nYou are a dedicated pro technology implementation proposal for your healthcare network's leade expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a technology implementation proposal for your healthcare network's leadership: current infrastructure gaps, proposed cloud migration plan, patient care improvements, 18-month rollout, $2M budget, and 3-year ROI projections\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "finance"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "finance",
+      "design",
+      "technology",
+      "implementation",
+      "proposal",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 27,
+    "copies": 186,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-n-operational-efficiency-review-for-a-logi",
+    "title": "Expert N operational efficiency review for a logistics company's COO",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert n operational efficiency review for a logistics company's coo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an operational efficiency review for a logistics company's COO: warehouse process analysis, industry benchmarks (you're 20% slower), automation opportunities, redesigned workflow, implementation plan, and projected $500K savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert n operational efficiency review for a logistics company's coo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an operational efficiency review for a logistics company's COO: warehouse process analysis, {{industry}} benchmarks (you're 20% slower), automation opportunities, redesigned workflow, implementation plan, and projected $500K savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-n-operational-efficiency-review-for-a-logi-swipe-1",
+        "title": "Expert N operational efficiency review for a logistics company's COO — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert n operational efficiency review for a logistics company's coo expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an operational efficiency review for a logistics company's COO: warehouse process analysis, industry benchmarks (you're 20% slower), automation opportunities, redesigned workflow, implementation plan, and projected $500K savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-n-operational-efficiency-review-for-a-logi-swipe-2",
+        "title": "Expert N operational efficiency review for a logistics company's COO — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert n operational efficiency review for a logistics company's coo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an operational efficiency review for a logistics company's COO: warehouse process analysis, industry benchmarks (you're 20% slower), automation opportunities, redesigned workflow, implementation plan, and projected $500K savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-n-operational-efficiency-review-for-a-logi-swipe-3",
+        "title": "Expert N operational efficiency review for a logistics company's COO — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert n operational efficiency review for a logistics company's coo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an operational efficiency review for a logistics company's COO: warehouse process analysis, industry benchmarks (you're 20% slower), automation opportunities, redesigned workflow, implementation plan, and projected $500K savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-n-operational-efficiency-review-for-a-logi-swipe-format",
+        "title": "Expert N operational efficiency review for a logistics company's COO — Different Format",
+        "description": "Same goal, different output format for design use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for design",
+        "content": "## Role\nYou are a dedicated expert n operational efficiency review for a logistics company's coo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an operational efficiency review for a logistics company's COO: warehouse process analysis, industry benchmarks (you're 20% slower), automation opportunities, redesigned workflow, implementation plan, and projected $500K savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "design"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "design",
+      "expert",
+      "operational",
+      "efficiency",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 51,
+    "copies": 46,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-consulting-proposal-for-a-manufacturing-co",
+    "title": "Rapid Consulting proposal for a manufacturing company evaluating supply chai",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid consulting proposal for a manufacturing company evaluating supply chai expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a consulting proposal for a manufacturing company evaluating supply chain optimization\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid consulting proposal for a manufacturing company evaluating supply chai expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a consulting proposal for a manufacturing company evaluating supply chain optimization\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-consulting-proposal-for-a-manufacturing-co-swipe-1",
+        "title": "Rapid Consulting proposal for a manufacturing company evaluating supply chai — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid consulting proposal for a manufacturing company evaluating supply chai expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a consulting proposal for a manufacturing company evaluating supply chain optimization\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-consulting-proposal-for-a-manufacturing-co-swipe-2",
+        "title": "Rapid Consulting proposal for a manufacturing company evaluating supply chai — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid consulting proposal for a manufacturing company evaluating supply chai expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a consulting proposal for a manufacturing company evaluating supply chain optimization\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-consulting-proposal-for-a-manufacturing-co-swipe-3",
+        "title": "Rapid Consulting proposal for a manufacturing company evaluating supply chai — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid consulting proposal for a manufacturing company evaluating supply chai expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a consulting proposal for a manufacturing company evaluating supply chain optimization\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-consulting-proposal-for-a-manufacturing-co-swipe-format",
+        "title": "Rapid Consulting proposal for a manufacturing company evaluating supply chai — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid consulting proposal for a manufacturing company evaluating supply chai expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a consulting proposal for a manufacturing company evaluating supply chain optimization\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "design",
+      "rapid",
+      "consulting",
+      "proposal",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 28,
+    "copies": 201,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-digital-transformation-roadmap-for-your-in",
+    "title": "Rapid Digital transformation roadmap for your insurance company's board",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid digital transformation roadmap for your insurance company's board expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a digital transformation roadmap for your insurance company's board: current maturity (mostly paper-based), industry tech trends, top 5 initiatives, customer portal plans, data modernization, 3-year timeline, and business outcomes\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid digital transformation roadmap for your insurance company's board expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a digital transformation roadmap for your insurance company's board: current maturity (mostly paper-based), {{industry}} tech trends, top 5 initiatives, customer portal plans, data modernization, 3-year timeline, and business outcomes\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-digital-transformation-roadmap-for-your-in-swipe-1",
+        "title": "Rapid Digital transformation roadmap for your insurance company's board — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid digital transformation roadmap for your insurance company's board expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a digital transformation roadmap for your insurance company's board: current maturity (mostly paper-based), industry tech trends, top 5 initiatives, customer portal plans, data modernization, 3-year timeline, and business outcomes\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-digital-transformation-roadmap-for-your-in-swipe-2",
+        "title": "Rapid Digital transformation roadmap for your insurance company's board — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid digital transformation roadmap for your insurance company's board expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a digital transformation roadmap for your insurance company's board: current maturity (mostly paper-based), industry tech trends, top 5 initiatives, customer portal plans, data modernization, 3-year timeline, and business outcomes\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-digital-transformation-roadmap-for-your-in-swipe-3",
+        "title": "Rapid Digital transformation roadmap for your insurance company's board — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid digital transformation roadmap for your insurance company's board expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a digital transformation roadmap for your insurance company's board: current maturity (mostly paper-based), industry tech trends, top 5 initiatives, customer portal plans, data modernization, 3-year timeline, and business outcomes\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-digital-transformation-roadmap-for-your-in-swipe-format",
+        "title": "Rapid Digital transformation roadmap for your insurance company's board — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid digital transformation roadmap for your insurance company's board expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a digital transformation roadmap for your insurance company's board: current maturity (mostly paper-based), industry tech trends, top 5 initiatives, customer portal plans, data modernization, 3-year timeline, and business outcomes\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "business",
+      "rapid",
+      "digital",
+      "transformation",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 35,
+    "copies": 132,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-digital-maturity-assessment-for-a-b2b-dist",
+    "title": "Pro Digital maturity assessment for a B2B distributor at Level 2 (basic we",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro digital maturity assessment for a b2b distributor at level 2 (basic we expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a digital maturity assessment for a B2B distributor at Level 2 (basic website) with a roadmap to Level 4 (e-commerce, CRM)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro digital maturity assessment for a b2b distributor at level 2 (basic we expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a digital maturity assessment for a B2B distributor at Level 2 (basic website) with a roadmap to Level 4 (e-commerce, CRM)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-digital-maturity-assessment-for-a-b2b-dist-swipe-1",
+        "title": "Pro Digital maturity assessment for a B2B distributor at Level 2 (basic we — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro digital maturity assessment for a b2b distributor at level 2 (basic we expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a digital maturity assessment for a B2B distributor at Level 2 (basic website) with a roadmap to Level 4 (e-commerce, CRM)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-digital-maturity-assessment-for-a-b2b-dist-swipe-2",
+        "title": "Pro Digital maturity assessment for a B2B distributor at Level 2 (basic we — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro digital maturity assessment for a b2b distributor at level 2 (basic we expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a digital maturity assessment for a B2B distributor at Level 2 (basic website) with a roadmap to Level 4 (e-commerce, CRM)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-digital-maturity-assessment-for-a-b2b-dist-swipe-3",
+        "title": "Pro Digital maturity assessment for a B2B distributor at Level 2 (basic we — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro digital maturity assessment for a b2b distributor at level 2 (basic we expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a digital maturity assessment for a B2B distributor at Level 2 (basic website) with a roadmap to Level 4 (e-commerce, CRM)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-digital-maturity-assessment-for-a-b2b-dist-swipe-format",
+        "title": "Pro Digital maturity assessment for a B2B distributor at Level 2 (basic we — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated pro digital maturity assessment for a b2b distributor at level 2 (basic we expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a digital maturity assessment for a B2B distributor at Level 2 (basic website) with a roadmap to Level 4 (e-commerce, CRM)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "ecommerce",
+      "digital",
+      "maturity",
+      "assessment",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 64,
+    "copies": 127,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-pricing-strategy-for-your-b2b-software-com",
+    "title": "Smart Pricing strategy for your B2B software company's revenue team",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart pricing strategy for your b2b software company's revenue team expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy for your B2B software company's revenue team: current model analysis, competitor benchmarks, customer research findings, new tiered structure (Starter/Pro/Enterprise), revenue impact (+25%), and rollout plan\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart pricing strategy for your b2b software company's revenue team expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy for your B2B software company's revenue team: current model analysis, competitor benchmarks, customer research findings, new tiered structure (Starter/Pro/Enterprise), revenue impact (+25%), and rollout plan\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-pricing-strategy-for-your-b2b-software-com-swipe-1",
+        "title": "Smart Pricing strategy for your B2B software company's revenue team — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart pricing strategy for your b2b software company's revenue team expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy for your B2B software company's revenue team: current model analysis, competitor benchmarks, customer research findings, new tiered structure (Starter/Pro/Enterprise), revenue impact (+25%), and rollout plan\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-pricing-strategy-for-your-b2b-software-com-swipe-2",
+        "title": "Smart Pricing strategy for your B2B software company's revenue team — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart pricing strategy for your b2b software company's revenue team expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy for your B2B software company's revenue team: current model analysis, competitor benchmarks, customer research findings, new tiered structure (Starter/Pro/Enterprise), revenue impact (+25%), and rollout plan\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-pricing-strategy-for-your-b2b-software-com-swipe-3",
+        "title": "Smart Pricing strategy for your B2B software company's revenue team — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart pricing strategy for your b2b software company's revenue team expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy for your B2B software company's revenue team: current model analysis, competitor benchmarks, customer research findings, new tiered structure (Starter/Pro/Enterprise), revenue impact (+25%), and rollout plan\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-pricing-strategy-for-your-b2b-software-com-swipe-format",
+        "title": "Smart Pricing strategy for your B2B software company's revenue team — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated smart pricing strategy for your b2b software company's revenue team expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy for your B2B software company's revenue team: current model analysis, competitor benchmarks, customer research findings, new tiered structure (Starter/Pro/Enterprise), revenue impact (+25%), and rollout plan\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "business",
+      "smart",
+      "pricing",
+      "strategy",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 55,
+    "copies": 113,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-portfolio-optimization-strategy-for-a-regi",
+    "title": "Pro Portfolio optimization strategy for a regional REIT managing 45 commer",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro portfolio optimization strategy for a regional reit managing 45 commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a portfolio optimization strategy for a regional REIT managing 45 commercial properties: asset performance review, hold vs. sell recommendations, underperforming strip mall disposition plan, capital reallocation to multifamily, and 5-year value creation roadmap\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro portfolio optimization strategy for a regional reit managing 45 commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a portfolio optimization strategy for a regional REIT managing 45 commercial properties: asset performance review, hold vs. sell recommendations, underperforming strip mall disposition plan, capital reallocation to multifamily, and 5-year value creation roadmap\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-portfolio-optimization-strategy-for-a-regi-swipe-1",
+        "title": "Pro Portfolio optimization strategy for a regional REIT managing 45 commer — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro portfolio optimization strategy for a regional reit managing 45 commer expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a portfolio optimization strategy for a regional REIT managing 45 commercial properties: asset performance review, hold vs. sell recommendations, underperforming strip mall disposition plan, capital reallocation to multifamily, and 5-year value creation roadmap\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-portfolio-optimization-strategy-for-a-regi-swipe-2",
+        "title": "Pro Portfolio optimization strategy for a regional REIT managing 45 commer — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro portfolio optimization strategy for a regional reit managing 45 commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a portfolio optimization strategy for a regional REIT managing 45 commercial properties: asset performance review, hold vs. sell recommendations, underperforming strip mall disposition plan, capital reallocation to multifamily, and 5-year value creation roadmap\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-portfolio-optimization-strategy-for-a-regi-swipe-3",
+        "title": "Pro Portfolio optimization strategy for a regional REIT managing 45 commer — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro portfolio optimization strategy for a regional reit managing 45 commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a portfolio optimization strategy for a regional REIT managing 45 commercial properties: asset performance review, hold vs. sell recommendations, underperforming strip mall disposition plan, capital reallocation to multifamily, and 5-year value creation roadmap\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-portfolio-optimization-strategy-for-a-regi-swipe-format",
+        "title": "Pro Portfolio optimization strategy for a regional REIT managing 45 commer — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated pro portfolio optimization strategy for a regional reit managing 45 commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a portfolio optimization strategy for a regional REIT managing 45 commercial properties: asset performance review, hold vs. sell recommendations, underperforming strip mall disposition plan, capital reallocation to multifamily, and 5-year value creation roadmap\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "sales",
+      "portfolio",
+      "optimization",
+      "strategy",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 36,
+    "copies": 164,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-change-plan-for-a-financial-services-firm-",
+    "title": "Rapid Change plan for a financial services firm moving 500 employees to hybr",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid change plan for a financial services firm moving 500 employees to hybr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a change plan for a financial services firm moving 500 employees to hybrid work—covering communication, training, and reinforcement\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid change plan for a financial services firm moving 500 employees to hybr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a change plan for a financial services firm moving 500 employees to hybrid work—covering communication, training, and reinforcement\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-change-plan-for-a-financial-services-firm--swipe-1",
+        "title": "Rapid Change plan for a financial services firm moving 500 employees to hybr — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid change plan for a financial services firm moving 500 employees to hybr expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a change plan for a financial services firm moving 500 employees to hybrid work—covering communication, training, and reinforcement\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-change-plan-for-a-financial-services-firm--swipe-2",
+        "title": "Rapid Change plan for a financial services firm moving 500 employees to hybr — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid change plan for a financial services firm moving 500 employees to hybr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a change plan for a financial services firm moving 500 employees to hybrid work—covering communication, training, and reinforcement\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-change-plan-for-a-financial-services-firm--swipe-3",
+        "title": "Rapid Change plan for a financial services firm moving 500 employees to hybr — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid change plan for a financial services firm moving 500 employees to hybr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a change plan for a financial services firm moving 500 employees to hybrid work—covering communication, training, and reinforcement\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-change-plan-for-a-financial-services-firm--swipe-format",
+        "title": "Rapid Change plan for a financial services firm moving 500 employees to hybr — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid change plan for a financial services firm moving 500 employees to hybr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a change plan for a financial services firm moving 500 employees to hybrid work—covering communication, training, and reinforcement\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "finance",
+      "rapid",
+      "change",
+      "financial",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 43,
+    "copies": 195,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-competitive-analysis-for-your-e-commerce-p",
+    "title": "Smart Competitive analysis for your e-commerce platform's leadership",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart competitive analysis for your e-commerce platform's leadership expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a competitive analysis for your e-commerce platform's leadership: map top 5 competitors by features vs. price, market share breakdown, your differentiation strategy (same-day delivery + sustainability), and win-loss patterns\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart competitive analysis for your e-commerce platform's leadership expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a competitive analysis for your e-commerce platform's leadership: map top 5 competitors by features vs. price, market share breakdown, your differentiation strategy (same-day delivery + sustainability), and win-loss patterns\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-competitive-analysis-for-your-e-commerce-p-swipe-1",
+        "title": "Smart Competitive analysis for your e-commerce platform's leadership — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart competitive analysis for your e-commerce platform's leadership expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a competitive analysis for your e-commerce platform's leadership: map top 5 competitors by features vs. price, market share breakdown, your differentiation strategy (same-day delivery + sustainability), and win-loss patterns\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-competitive-analysis-for-your-e-commerce-p-swipe-2",
+        "title": "Smart Competitive analysis for your e-commerce platform's leadership — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart competitive analysis for your e-commerce platform's leadership expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a competitive analysis for your e-commerce platform's leadership: map top 5 competitors by features vs. price, market share breakdown, your differentiation strategy (same-day delivery + sustainability), and win-loss patterns\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-competitive-analysis-for-your-e-commerce-p-swipe-3",
+        "title": "Smart Competitive analysis for your e-commerce platform's leadership — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart competitive analysis for your e-commerce platform's leadership expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a competitive analysis for your e-commerce platform's leadership: map top 5 competitors by features vs. price, market share breakdown, your differentiation strategy (same-day delivery + sustainability), and win-loss patterns\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-competitive-analysis-for-your-e-commerce-p-swipe-format",
+        "title": "Smart Competitive analysis for your e-commerce platform's leadership — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated smart competitive analysis for your e-commerce platform's leadership expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a competitive analysis for your e-commerce platform's leadership: map top 5 competitors by features vs. price, market share breakdown, your differentiation strategy (same-day delivery + sustainability), and win-loss patterns\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "ecommerce",
+      "smart",
+      "competitive",
+      "analysis",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 38,
+    "copies": 84,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-consultants-n-organizational-transformation-presentati",
+    "title": "Expert N organizational transformation presentation for your retail bank's ex",
+    "emoji": "💼",
+    "description": "Presentation prompt from Gamma's official library — For Consultants. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert n organizational transformation presentation for your retail bank's ex expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an organizational transformation presentation for your retail bank's executives: vision for digital-first banking, current vs. future state, roadmap with quick wins (mobile deposits in Q1), and how success gets measured\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert n organizational transformation presentation for your retail bank's ex expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an organizational transformation presentation for your retail bank's executives: vision for digital-first banking, current vs. future state, roadmap with quick wins (mobile deposits in Q1), and how success gets measured\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-consultants-n-organizational-transformation-presentati-swipe-1",
+        "title": "Expert N organizational transformation presentation for your retail bank's ex — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert n organizational transformation presentation for your retail bank's ex expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an organizational transformation presentation for your retail bank's executives: vision for digital-first banking, current vs. future state, roadmap with quick wins (mobile deposits in Q1), and how success gets measured\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-consultants-n-organizational-transformation-presentati-swipe-2",
+        "title": "Expert N organizational transformation presentation for your retail bank's ex — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert n organizational transformation presentation for your retail bank's ex expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an organizational transformation presentation for your retail bank's executives: vision for digital-first banking, current vs. future state, roadmap with quick wins (mobile deposits in Q1), and how success gets measured\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-consultants-n-organizational-transformation-presentati-swipe-3",
+        "title": "Expert N organizational transformation presentation for your retail bank's ex — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert n organizational transformation presentation for your retail bank's ex expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an organizational transformation presentation for your retail bank's executives: vision for digital-first banking, current vs. future state, roadmap with quick wins (mobile deposits in Q1), and how success gets measured\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-consultants-n-organizational-transformation-presentati-swipe-format",
+        "title": "Expert N organizational transformation presentation for your retail bank's ex — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated expert n organizational transformation presentation for your retail bank's ex expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an organizational transformation presentation for your retail bank's executives: vision for digital-first banking, current vs. future state, roadmap with quick wins (mobile deposits in Q1), and how success gets measured\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "design",
+      "expert",
+      "organizational",
+      "transformation",
+      "consultants",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 30,
+    "copies": 135,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "consultants"
+  },
+  {
+    "id": "gamma-educators-narrative-writing-workshop-for-3rd-graders",
+    "title": "Pro Narrative writing workshop for 3rd graders",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro narrative writing workshop for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a narrative writing workshop for 3rd graders: writing goal (beginning, middle, end), mentor text example, story structure steps, word bank (exciting verbs, descriptive adjectives), guided practice, independent writing time, peer sharing, self-assessment, and publishing options\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro narrative writing workshop for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a narrative writing workshop for 3rd graders: writing goal (beginning, middle, end), mentor text example, story structure steps, word bank (exciting verbs, descriptive adjectives), guided practice, independent writing time, peer sharing, self-assessment, and publishing options\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-narrative-writing-workshop-for-3rd-graders-swipe-1",
+        "title": "Pro Narrative writing workshop for 3rd graders — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro narrative writing workshop for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a narrative writing workshop for 3rd graders: writing goal (beginning, middle, end), mentor text example, story structure steps, word bank (exciting verbs, descriptive adjectives), guided practice, independent writing time, peer sharing, self-assessment, and publishing options\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-narrative-writing-workshop-for-3rd-graders-swipe-2",
+        "title": "Pro Narrative writing workshop for 3rd graders — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro narrative writing workshop for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a narrative writing workshop for 3rd graders: writing goal (beginning, middle, end), mentor text example, story structure steps, word bank (exciting verbs, descriptive adjectives), guided practice, independent writing time, peer sharing, self-assessment, and publishing options\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-narrative-writing-workshop-for-3rd-graders-swipe-3",
+        "title": "Pro Narrative writing workshop for 3rd graders — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro narrative writing workshop for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a narrative writing workshop for 3rd graders: writing goal (beginning, middle, end), mentor text example, story structure steps, word bank (exciting verbs, descriptive adjectives), guided practice, independent writing time, peer sharing, self-assessment, and publishing options\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-narrative-writing-workshop-for-3rd-graders-swipe-format",
+        "title": "Pro Narrative writing workshop for 3rd graders — Different Format",
+        "description": "Same goal, different output format for writing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for writing",
+        "content": "## Role\nYou are a dedicated pro narrative writing workshop for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a narrative writing workshop for 3rd graders: writing goal (beginning, middle, end), mentor text example, story structure steps, word bank (exciting verbs, descriptive adjectives), guided practice, independent writing time, peer sharing, self-assessment, and publishing options\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "writing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "writing",
+      "design",
+      "narrative",
+      "workshop",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 42,
+    "copies": 114,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-classroom-rules-deck-for-kindergarteners-est",
+    "title": "Pro Classroom rules deck for kindergarteners establishing community norms",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro classroom rules deck for kindergarteners establishing community norms expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a classroom rules deck for kindergarteners establishing community norms: our motto (\"Be kind, be safe, be your best\"), 4 rules with icons, positive examples, what not to do, star chart rewards, problem-solving steps, classroom jobs, and super student checklist\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro classroom rules deck for kindergarteners establishing community norms expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a classroom rules deck for kindergarteners establishing community norms: our motto (\"Be kind, be safe, be your best\"), 4 rules with icons, positive examples, what not to do, star chart rewards, problem-solving steps, classroom jobs, and super student checklist\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-classroom-rules-deck-for-kindergarteners-est-swipe-1",
+        "title": "Pro Classroom rules deck for kindergarteners establishing community norms — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro classroom rules deck for kindergarteners establishing community norms expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a classroom rules deck for kindergarteners establishing community norms: our motto (\"Be kind, be safe, be your best\"), 4 rules with icons, positive examples, what not to do, star chart rewards, problem-solving steps, classroom jobs, and super student checklist\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-classroom-rules-deck-for-kindergarteners-est-swipe-2",
+        "title": "Pro Classroom rules deck for kindergarteners establishing community norms — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro classroom rules deck for kindergarteners establishing community norms expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a classroom rules deck for kindergarteners establishing community norms: our motto (\"Be kind, be safe, be your best\"), 4 rules with icons, positive examples, what not to do, star chart rewards, problem-solving steps, classroom jobs, and super student checklist\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-classroom-rules-deck-for-kindergarteners-est-swipe-3",
+        "title": "Pro Classroom rules deck for kindergarteners establishing community norms — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro classroom rules deck for kindergarteners establishing community norms expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a classroom rules deck for kindergarteners establishing community norms: our motto (\"Be kind, be safe, be your best\"), 4 rules with icons, positive examples, what not to do, star chart rewards, problem-solving steps, classroom jobs, and super student checklist\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-classroom-rules-deck-for-kindergarteners-est-swipe-format",
+        "title": "Pro Classroom rules deck for kindergarteners establishing community norms — Different Format",
+        "description": "Same goal, different output format for hr use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for hr",
+        "content": "## Role\nYou are a dedicated pro classroom rules deck for kindergarteners establishing community norms expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a classroom rules deck for kindergarteners establishing community norms: our motto (\"Be kind, be safe, be your best\"), 4 rules with icons, positive examples, what not to do, star chart rewards, problem-solving steps, classroom jobs, and super student checklist\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "hr"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "hr",
+      "education",
+      "classroom",
+      "rules",
+      "kindergarteners",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 50,
+    "copies": 205,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-parent-teacher-conference-presentation-for-m",
+    "title": "Guided Parent-teacher conference presentation for Maya highlighting her poetr",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided parent-teacher conference presentation for maya highlighting her poetr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a parent-teacher conference presentation for Maya highlighting her poetry portfolio, participation growth, and next steps in creative writing\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided parent-teacher conference presentation for maya highlighting her poetr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a parent-teacher conference presentation for Maya highlighting her poetry portfolio, participation growth, and next steps in creative writing\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-parent-teacher-conference-presentation-for-m-swipe-1",
+        "title": "Guided Parent-teacher conference presentation for Maya highlighting her poetr — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided parent-teacher conference presentation for maya highlighting her poetr expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a parent-teacher conference presentation for Maya highlighting her poetry portfolio, participation growth, and next steps in creative writing\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-parent-teacher-conference-presentation-for-m-swipe-2",
+        "title": "Guided Parent-teacher conference presentation for Maya highlighting her poetr — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided parent-teacher conference presentation for maya highlighting her poetr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a parent-teacher conference presentation for Maya highlighting her poetry portfolio, participation growth, and next steps in creative writing\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-parent-teacher-conference-presentation-for-m-swipe-3",
+        "title": "Guided Parent-teacher conference presentation for Maya highlighting her poetr — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided parent-teacher conference presentation for maya highlighting her poetr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a parent-teacher conference presentation for Maya highlighting her poetry portfolio, participation growth, and next steps in creative writing\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-parent-teacher-conference-presentation-for-m-swipe-format",
+        "title": "Guided Parent-teacher conference presentation for Maya highlighting her poetr — Different Format",
+        "description": "Same goal, different output format for education use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for education",
+        "content": "## Role\nYou are a dedicated guided parent-teacher conference presentation for maya highlighting her poetr expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a parent-teacher conference presentation for Maya highlighting her poetry portfolio, participation growth, and next steps in creative writing\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "education",
+      "design",
+      "guided",
+      "parentteacher",
+      "conference",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 79,
+    "copies": 40,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-12-week-college-level-syllabus-for-introduct",
+    "title": "Expert 12-week college-level syllabus for Introduction to Digital Marketing t",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert 12-week college-level syllabus for introduction to digital marketing t expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 12-week college-level syllabus for Introduction to Digital Marketing that leads up to students launching a real campaign.\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert 12-week college-level syllabus for introduction to digital marketing t expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 12-week college-level syllabus for Introduction to Digital Marketing that leads up to students launching a real campaign.\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-12-week-college-level-syllabus-for-introduct-swipe-1",
+        "title": "Expert 12-week college-level syllabus for Introduction to Digital Marketing t — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert 12-week college-level syllabus for introduction to digital marketing t expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 12-week college-level syllabus for Introduction to Digital Marketing that leads up to students launching a real campaign.\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-12-week-college-level-syllabus-for-introduct-swipe-2",
+        "title": "Expert 12-week college-level syllabus for Introduction to Digital Marketing t — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert 12-week college-level syllabus for introduction to digital marketing t expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 12-week college-level syllabus for Introduction to Digital Marketing that leads up to students launching a real campaign.\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-12-week-college-level-syllabus-for-introduct-swipe-3",
+        "title": "Expert 12-week college-level syllabus for Introduction to Digital Marketing t — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert 12-week college-level syllabus for introduction to digital marketing t expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 12-week college-level syllabus for Introduction to Digital Marketing that leads up to students launching a real campaign.\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-12-week-college-level-syllabus-for-introduct-swipe-format",
+        "title": "Expert 12-week college-level syllabus for Introduction to Digital Marketing t — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated expert 12-week college-level syllabus for introduction to digital marketing t expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 12-week college-level syllabus for Introduction to Digital Marketing that leads up to students launching a real campaign.\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "marketing",
+      "expert",
+      "12week",
+      "collegelevel",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 53,
+    "copies": 100,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-fractions-lesson-for-3rd-graders",
+    "title": "Pro Fractions lesson for 3rd graders",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro fractions lesson for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a fractions lesson for 3rd graders: real-world pizza example, concept explanation with visuals, step-by-step problems, guided practice with manipulatives, partner activity, independent work, challenge problem for early finishers, and achievement badge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro fractions lesson for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a fractions lesson for 3rd graders: real-world pizza example, concept explanation with visuals, step-by-step problems, guided practice with manipulatives, partner activity, independent work, challenge problem for early finishers, and achievement badge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-fractions-lesson-for-3rd-graders-swipe-1",
+        "title": "Pro Fractions lesson for 3rd graders — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro fractions lesson for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a fractions lesson for 3rd graders: real-world pizza example, concept explanation with visuals, step-by-step problems, guided practice with manipulatives, partner activity, independent work, challenge problem for early finishers, and achievement badge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-fractions-lesson-for-3rd-graders-swipe-2",
+        "title": "Pro Fractions lesson for 3rd graders — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro fractions lesson for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a fractions lesson for 3rd graders: real-world pizza example, concept explanation with visuals, step-by-step problems, guided practice with manipulatives, partner activity, independent work, challenge problem for early finishers, and achievement badge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-fractions-lesson-for-3rd-graders-swipe-3",
+        "title": "Pro Fractions lesson for 3rd graders — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro fractions lesson for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a fractions lesson for 3rd graders: real-world pizza example, concept explanation with visuals, step-by-step problems, guided practice with manipulatives, partner activity, independent work, challenge problem for early finishers, and achievement badge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-fractions-lesson-for-3rd-graders-swipe-format",
+        "title": "Pro Fractions lesson for 3rd graders — Different Format",
+        "description": "Same goal, different output format for education use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for education",
+        "content": "## Role\nYou are a dedicated pro fractions lesson for 3rd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a fractions lesson for 3rd graders: real-world pizza example, concept explanation with visuals, step-by-step problems, guided practice with manipulatives, partner activity, independent work, challenge problem for early finishers, and achievement badge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "education",
+      "design",
+      "fractions",
+      "lesson",
+      "graders",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 66,
+    "copies": 108,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-social-emotional-lesson-for-4th-graders-on-m",
+    "title": "Smart Social-emotional lesson for 4th graders on managing frustration",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart social-emotional lesson for 4th graders on managing frustration expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a social-emotional lesson for 4th graders on managing frustration: identifying feelings, example scenarios, recognizing body signals, story example, discussion prompts, coping strategies (deep breaths, count to 10), practice scenarios, role-play, reflection, and kindness challenge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart social-emotional lesson for 4th graders on managing frustration expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a social-emotional lesson for 4th graders on managing frustration: identifying feelings, example scenarios, recognizing body signals, story example, discussion prompts, coping strategies (deep breaths, count to 10), practice scenarios, role-play, reflection, and kindness challenge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-social-emotional-lesson-for-4th-graders-on-m-swipe-1",
+        "title": "Smart Social-emotional lesson for 4th graders on managing frustration — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart social-emotional lesson for 4th graders on managing frustration expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a social-emotional lesson for 4th graders on managing frustration: identifying feelings, example scenarios, recognizing body signals, story example, discussion prompts, coping strategies (deep breaths, count to 10), practice scenarios, role-play, reflection, and kindness challenge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-social-emotional-lesson-for-4th-graders-on-m-swipe-2",
+        "title": "Smart Social-emotional lesson for 4th graders on managing frustration — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart social-emotional lesson for 4th graders on managing frustration expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a social-emotional lesson for 4th graders on managing frustration: identifying feelings, example scenarios, recognizing body signals, story example, discussion prompts, coping strategies (deep breaths, count to 10), practice scenarios, role-play, reflection, and kindness challenge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-social-emotional-lesson-for-4th-graders-on-m-swipe-3",
+        "title": "Smart Social-emotional lesson for 4th graders on managing frustration — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart social-emotional lesson for 4th graders on managing frustration expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a social-emotional lesson for 4th graders on managing frustration: identifying feelings, example scenarios, recognizing body signals, story example, discussion prompts, coping strategies (deep breaths, count to 10), practice scenarios, role-play, reflection, and kindness challenge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-social-emotional-lesson-for-4th-graders-on-m-swipe-format",
+        "title": "Smart Social-emotional lesson for 4th graders on managing frustration — Different Format",
+        "description": "Same goal, different output format for writing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for writing",
+        "content": "## Role\nYou are a dedicated smart social-emotional lesson for 4th graders on managing frustration expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a social-emotional lesson for 4th graders on managing frustration: identifying feelings, example scenarios, recognizing body signals, story example, discussion prompts, coping strategies (deep breaths, count to 10), practice scenarios, role-play, reflection, and kindness challenge\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "writing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "writing",
+      "education",
+      "smart",
+      "socialemotional",
+      "lesson",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 77,
+    "copies": 199,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-back-to-school-night-presentation-for-5th-gr",
+    "title": "Expert Back-to-School Night presentation for 5th grade parents",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert back-to-school night presentation for 5th grade parents expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Back-to-School Night presentation for 5th grade parents: welcome, virtual classroom tour, daily schedule, curriculum overview (Common Core standards), expectations, homework policy (20 min/night), communication methods (ClassDojo), volunteer opportunities, important dates, and your contact info\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert back-to-school night presentation for 5th grade parents expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Back-to-School Night presentation for 5th grade parents: welcome, virtual classroom tour, daily schedule, curriculum overview (Common Core standards), expectations, homework policy (20 min/night), communication methods (ClassDojo), volunteer opportunities, important dates, and your contact info\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-back-to-school-night-presentation-for-5th-gr-swipe-1",
+        "title": "Expert Back-to-School Night presentation for 5th grade parents — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert back-to-school night presentation for 5th grade parents expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Back-to-School Night presentation for 5th grade parents: welcome, virtual classroom tour, daily schedule, curriculum overview (Common Core standards), expectations, homework policy (20 min/night), communication methods (ClassDojo), volunteer opportunities, important dates, and your contact info\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-back-to-school-night-presentation-for-5th-gr-swipe-2",
+        "title": "Expert Back-to-School Night presentation for 5th grade parents — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert back-to-school night presentation for 5th grade parents expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Back-to-School Night presentation for 5th grade parents: welcome, virtual classroom tour, daily schedule, curriculum overview (Common Core standards), expectations, homework policy (20 min/night), communication methods (ClassDojo), volunteer opportunities, important dates, and your contact info\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-back-to-school-night-presentation-for-5th-gr-swipe-3",
+        "title": "Expert Back-to-School Night presentation for 5th grade parents — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert back-to-school night presentation for 5th grade parents expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Back-to-School Night presentation for 5th grade parents: welcome, virtual classroom tour, daily schedule, curriculum overview (Common Core standards), expectations, homework policy (20 min/night), communication methods (ClassDojo), volunteer opportunities, important dates, and your contact info\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-back-to-school-night-presentation-for-5th-gr-swipe-format",
+        "title": "Expert Back-to-School Night presentation for 5th grade parents — Different Format",
+        "description": "Same goal, different output format for productivity use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for productivity",
+        "content": "## Role\nYou are a dedicated expert back-to-school night presentation for 5th grade parents expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Back-to-School Night presentation for 5th grade parents: welcome, virtual classroom tour, daily schedule, curriculum overview (Common Core standards), expectations, homework policy (20 min/night), communication methods (ClassDojo), volunteer opportunities, important dates, and your contact info\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "productivity"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "productivity",
+      "expert",
+      "backtoschool",
+      "night",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 77,
+    "copies": 58,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-paris-climate-agreement-lesson-for-undergrad",
+    "title": "Smart Paris Climate Agreement lesson for undergraduate students",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart paris climate agreement lesson for undergraduate students expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Paris Climate Agreement lesson for undergraduate students: learning objectives, historical context, key vocabulary (NDCs, climate finance, common but differentiated responsibilities), treaty structure explanation, case study comparison (US vs. China commitments), debate activity (developed vs. developing country perspectives), collective action problem simulation, and policy memo assignment\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart paris climate agreement lesson for undergraduate students expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Paris Climate Agreement lesson for undergraduate students: learning objectives, historical context, key vocabulary (NDCs, climate finance, common but differentiated responsibilities), treaty structure explanation, case study comparison (US vs. China commitments), debate activity (developed vs. developing country perspectives), collective action problem simulation, and policy memo assignment\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-paris-climate-agreement-lesson-for-undergrad-swipe-1",
+        "title": "Smart Paris Climate Agreement lesson for undergraduate students — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart paris climate agreement lesson for undergraduate students expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Paris Climate Agreement lesson for undergraduate students: learning objectives, historical context, key vocabulary (NDCs, climate finance, common but differentiated responsibilities), treaty structure explanation, case study comparison (US vs. China commitments), debate activity (developed vs. developing country perspectives), collective action problem simulation, and policy memo assignment\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-paris-climate-agreement-lesson-for-undergrad-swipe-2",
+        "title": "Smart Paris Climate Agreement lesson for undergraduate students — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart paris climate agreement lesson for undergraduate students expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Paris Climate Agreement lesson for undergraduate students: learning objectives, historical context, key vocabulary (NDCs, climate finance, common but differentiated responsibilities), treaty structure explanation, case study comparison (US vs. China commitments), debate activity (developed vs. developing country perspectives), collective action problem simulation, and policy memo assignment\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-paris-climate-agreement-lesson-for-undergrad-swipe-3",
+        "title": "Smart Paris Climate Agreement lesson for undergraduate students — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart paris climate agreement lesson for undergraduate students expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Paris Climate Agreement lesson for undergraduate students: learning objectives, historical context, key vocabulary (NDCs, climate finance, common but differentiated responsibilities), treaty structure explanation, case study comparison (US vs. China commitments), debate activity (developed vs. developing country perspectives), collective action problem simulation, and policy memo assignment\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-paris-climate-agreement-lesson-for-undergrad-swipe-format",
+        "title": "Smart Paris Climate Agreement lesson for undergraduate students — Different Format",
+        "description": "Same goal, different output format for education use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for education",
+        "content": "## Role\nYou are a dedicated smart paris climate agreement lesson for undergraduate students expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Paris Climate Agreement lesson for undergraduate students: learning objectives, historical context, key vocabulary (NDCs, climate finance, common but differentiated responsibilities), treaty structure explanation, case study comparison (US vs. China commitments), debate activity (developed vs. developing country perspectives), collective action problem simulation, and policy memo assignment\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "education",
+      "finance",
+      "smart",
+      "paris",
+      "climate",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 59,
+    "copies": 150,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-5th-grade-water-cycle-lesson-where-students-",
+    "title": "Guided 5th grade water cycle lesson where students create terrariums, observe",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided 5th grade water cycle lesson where students create terrariums, observe expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a 5th grade water cycle lesson where students create terrariums, observe condensation, then map the process before learning the official terms\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided 5th grade water cycle lesson where students create terrariums, observe expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a 5th grade water cycle lesson where students create terrariums, observe condensation, then map the process before learning the official terms\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-5th-grade-water-cycle-lesson-where-students--swipe-1",
+        "title": "Guided 5th grade water cycle lesson where students create terrariums, observe — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided 5th grade water cycle lesson where students create terrariums, observe expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a 5th grade water cycle lesson where students create terrariums, observe condensation, then map the process before learning the official terms\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-5th-grade-water-cycle-lesson-where-students--swipe-2",
+        "title": "Guided 5th grade water cycle lesson where students create terrariums, observe — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided 5th grade water cycle lesson where students create terrariums, observe expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a 5th grade water cycle lesson where students create terrariums, observe condensation, then map the process before learning the official terms\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-5th-grade-water-cycle-lesson-where-students--swipe-3",
+        "title": "Guided 5th grade water cycle lesson where students create terrariums, observe — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided 5th grade water cycle lesson where students create terrariums, observe expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a 5th grade water cycle lesson where students create terrariums, observe condensation, then map the process before learning the official terms\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-5th-grade-water-cycle-lesson-where-students--swipe-format",
+        "title": "Guided 5th grade water cycle lesson where students create terrariums, observe — Different Format",
+        "description": "Same goal, different output format for education use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for education",
+        "content": "## Role\nYou are a dedicated guided 5th grade water cycle lesson where students create terrariums, observe expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a 5th grade water cycle lesson where students create terrariums, observe condensation, then map the process before learning the official terms\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "education",
+      "design",
+      "guided",
+      "grade",
+      "water",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 48,
+    "copies": 181,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-thanksgiving-lesson-for-2nd-graders",
+    "title": "Smart Thanksgiving lesson for 2nd graders",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart thanksgiving lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Thanksgiving lesson for 2nd graders: holiday introduction, cultural traditions around gratitude, vocabulary, read-aloud story, comprehension questions, writing prompt (I'm thankful for...), turkey craft steps, math counting activity, harvest song, and gratitude certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart thanksgiving lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Thanksgiving lesson for 2nd graders: holiday introduction, cultural traditions around gratitude, vocabulary, read-aloud story, comprehension questions, writing prompt (I'm thankful for...), turkey craft steps, math counting activity, harvest song, and gratitude certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-thanksgiving-lesson-for-2nd-graders-swipe-1",
+        "title": "Smart Thanksgiving lesson for 2nd graders — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart thanksgiving lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Thanksgiving lesson for 2nd graders: holiday introduction, cultural traditions around gratitude, vocabulary, read-aloud story, comprehension questions, writing prompt (I'm thankful for...), turkey craft steps, math counting activity, harvest song, and gratitude certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-thanksgiving-lesson-for-2nd-graders-swipe-2",
+        "title": "Smart Thanksgiving lesson for 2nd graders — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart thanksgiving lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Thanksgiving lesson for 2nd graders: holiday introduction, cultural traditions around gratitude, vocabulary, read-aloud story, comprehension questions, writing prompt (I'm thankful for...), turkey craft steps, math counting activity, harvest song, and gratitude certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-thanksgiving-lesson-for-2nd-graders-swipe-3",
+        "title": "Smart Thanksgiving lesson for 2nd graders — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart thanksgiving lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Thanksgiving lesson for 2nd graders: holiday introduction, cultural traditions around gratitude, vocabulary, read-aloud story, comprehension questions, writing prompt (I'm thankful for...), turkey craft steps, math counting activity, harvest song, and gratitude certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-thanksgiving-lesson-for-2nd-graders-swipe-format",
+        "title": "Smart Thanksgiving lesson for 2nd graders — Different Format",
+        "description": "Same goal, different output format for writing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for writing",
+        "content": "## Role\nYou are a dedicated smart thanksgiving lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a Thanksgiving lesson for 2nd graders: holiday introduction, cultural traditions around gratitude, vocabulary, read-aloud story, comprehension questions, writing prompt (I'm thankful for...), turkey craft steps, math counting activity, harvest song, and gratitude certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "writing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "writing",
+      "education",
+      "smart",
+      "thanksgiving",
+      "lesson",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 49,
+    "copies": 212,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-college-level-environmental-science-curricul",
+    "title": "Rapid College-level Environmental Science curriculum showing how \"How do hum",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid college-level environmental science curriculum showing how \"how do hum expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level Environmental Science curriculum showing how \"How do humans impact ecosystems?\" connects climate, pollution, and conservation units\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid college-level environmental science curriculum showing how \"how do hum expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level Environmental Science curriculum showing how \"How do humans impact ecosystems?\" connects climate, pollution, and conservation units\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-college-level-environmental-science-curricul-swipe-1",
+        "title": "Rapid College-level Environmental Science curriculum showing how \"How do hum — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid college-level environmental science curriculum showing how \"how do hum expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level Environmental Science curriculum showing how \"How do humans impact ecosystems?\" connects climate, pollution, and conservation units\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-college-level-environmental-science-curricul-swipe-2",
+        "title": "Rapid College-level Environmental Science curriculum showing how \"How do hum — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid college-level environmental science curriculum showing how \"how do hum expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level Environmental Science curriculum showing how \"How do humans impact ecosystems?\" connects climate, pollution, and conservation units\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-college-level-environmental-science-curricul-swipe-3",
+        "title": "Rapid College-level Environmental Science curriculum showing how \"How do hum — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid college-level environmental science curriculum showing how \"how do hum expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level Environmental Science curriculum showing how \"How do humans impact ecosystems?\" connects climate, pollution, and conservation units\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-college-level-environmental-science-curricul-swipe-format",
+        "title": "Rapid College-level Environmental Science curriculum showing how \"How do hum — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid college-level environmental science curriculum showing how \"how do hum expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a college-level Environmental Science curriculum showing how \"How do humans impact ecosystems?\" connects climate, pollution, and conservation units\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "rapid",
+      "collegelevel",
+      "environmental",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 36,
+    "copies": 55,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-plants-science-lesson-for-2nd-graders",
+    "title": "Guided Plants science lesson for 2nd graders",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided plants science lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a plants science lesson for 2nd graders: \"How do plants grow?\" question, discovery plan, vocabulary with pictures, observation activity (planting seeds), predictions journal, exploration steps, findings discussion, real-life connections, and scientist certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided plants science lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a plants science lesson for 2nd graders: \"How do plants grow?\" question, discovery plan, vocabulary with pictures, observation activity (planting seeds), predictions journal, exploration steps, findings discussion, real-life connections, and scientist certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-plants-science-lesson-for-2nd-graders-swipe-1",
+        "title": "Guided Plants science lesson for 2nd graders — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided plants science lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a plants science lesson for 2nd graders: \"How do plants grow?\" question, discovery plan, vocabulary with pictures, observation activity (planting seeds), predictions journal, exploration steps, findings discussion, real-life connections, and scientist certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-plants-science-lesson-for-2nd-graders-swipe-2",
+        "title": "Guided Plants science lesson for 2nd graders — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided plants science lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a plants science lesson for 2nd graders: \"How do plants grow?\" question, discovery plan, vocabulary with pictures, observation activity (planting seeds), predictions journal, exploration steps, findings discussion, real-life connections, and scientist certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-plants-science-lesson-for-2nd-graders-swipe-3",
+        "title": "Guided Plants science lesson for 2nd graders — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided plants science lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a plants science lesson for 2nd graders: \"How do plants grow?\" question, discovery plan, vocabulary with pictures, observation activity (planting seeds), predictions journal, exploration steps, findings discussion, real-life connections, and scientist certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-plants-science-lesson-for-2nd-graders-swipe-format",
+        "title": "Guided Plants science lesson for 2nd graders — Different Format",
+        "description": "Same goal, different output format for education use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for education",
+        "content": "## Role\nYou are a dedicated guided plants science lesson for 2nd graders expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a plants science lesson for 2nd graders: \"How do plants grow?\" question, discovery plan, vocabulary with pictures, observation activity (planting seeds), predictions journal, exploration steps, findings discussion, real-life connections, and scientist certificate\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "education",
+      "design",
+      "guided",
+      "plants",
+      "science",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 34,
+    "copies": 114,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-morning-schedule-for-your-kindergarten-class",
+    "title": "Guided Morning schedule for your kindergarten class",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided morning schedule for your kindergarten class expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a morning schedule for your kindergarten class: welcome with today's date, weather report, calendar activities, question of the day, class news sharing, today's schedule with icons, learning goals, and inspirational quote\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided morning schedule for your kindergarten class expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a morning schedule for your kindergarten class: welcome with today's date, weather report, calendar activities, question of the day, class news sharing, today's schedule with icons, learning goals, and inspirational quote\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-morning-schedule-for-your-kindergarten-class-swipe-1",
+        "title": "Guided Morning schedule for your kindergarten class — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided morning schedule for your kindergarten class expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a morning schedule for your kindergarten class: welcome with today's date, weather report, calendar activities, question of the day, class news sharing, today's schedule with icons, learning goals, and inspirational quote\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-morning-schedule-for-your-kindergarten-class-swipe-2",
+        "title": "Guided Morning schedule for your kindergarten class — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided morning schedule for your kindergarten class expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a morning schedule for your kindergarten class: welcome with today's date, weather report, calendar activities, question of the day, class news sharing, today's schedule with icons, learning goals, and inspirational quote\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-morning-schedule-for-your-kindergarten-class-swipe-3",
+        "title": "Guided Morning schedule for your kindergarten class — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided morning schedule for your kindergarten class expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a morning schedule for your kindergarten class: welcome with today's date, weather report, calendar activities, question of the day, class news sharing, today's schedule with icons, learning goals, and inspirational quote\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-morning-schedule-for-your-kindergarten-class-swipe-format",
+        "title": "Guided Morning schedule for your kindergarten class — Different Format",
+        "description": "Same goal, different output format for education use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for education",
+        "content": "## Role\nYou are a dedicated guided morning schedule for your kindergarten class expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a morning schedule for your kindergarten class: welcome with today's date, weather report, calendar activities, question of the day, class news sharing, today's schedule with icons, learning goals, and inspirational quote\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "education",
+      "design",
+      "guided",
+      "morning",
+      "schedule",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 60,
+    "copies": 49,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-educators-10th-grade-world-history-final-study-guide-f",
+    "title": "Rapid 10th grade World History final study guide for a course that covers th",
+    "emoji": "🎓",
+    "description": "Presentation prompt from Gamma's official library — For Educators. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid 10th grade world history final study guide for a course that covers th expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 10th grade World History final study guide for a course that covers the governments, philosophies, and cultural legacies of Ancient Greece, Rome, India, and China\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid 10th grade world history final study guide for a course that covers th expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 10th grade World History final study guide for a course that covers the governments, philosophies, and cultural legacies of Ancient Greece, Rome, India, and China\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-educators-10th-grade-world-history-final-study-guide-f-swipe-1",
+        "title": "Rapid 10th grade World History final study guide for a course that covers th — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid 10th grade world history final study guide for a course that covers th expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 10th grade World History final study guide for a course that covers the governments, philosophies, and cultural legacies of Ancient Greece, Rome, India, and China\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-educators-10th-grade-world-history-final-study-guide-f-swipe-2",
+        "title": "Rapid 10th grade World History final study guide for a course that covers th — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid 10th grade world history final study guide for a course that covers th expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 10th grade World History final study guide for a course that covers the governments, philosophies, and cultural legacies of Ancient Greece, Rome, India, and China\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-educators-10th-grade-world-history-final-study-guide-f-swipe-3",
+        "title": "Rapid 10th grade World History final study guide for a course that covers th — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid 10th grade world history final study guide for a course that covers th expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 10th grade World History final study guide for a course that covers the governments, philosophies, and cultural legacies of Ancient Greece, Rome, India, and China\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-educators-10th-grade-world-history-final-study-guide-f-swipe-format",
+        "title": "Rapid 10th grade World History final study guide for a course that covers th — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid 10th grade world history final study guide for a course that covers th expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a 10th grade World History final study guide for a course that covers the governments, philosophies, and cultural legacies of Ancient Greece, Rome, India, and China\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "education",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "writing",
+      "rapid",
+      "grade",
+      "world",
+      "educators",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 25,
+    "copies": 176,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "educators"
+  },
+  {
+    "id": "gamma-marketers-n-email-campaign-for-your-fitness-app-s-new-",
+    "title": "Smart N email campaign for your fitness app's new premium tier",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart n email campaign for your fitness app's new premium tier expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild an email campaign for your fitness app's new premium tier: goals (500 upgrades), audience segments (free users with 10+ workouts), 5-email sequence with timing, subject line strategy, design with CTAs, send schedule, A/B tests, and conversion tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart n email campaign for your fitness app's new premium tier expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild an email campaign for your fitness app's new premium tier: goals (500 upgrades), audience segments (free users with 10+ workouts), 5-email sequence with timing, subject line strategy, design with CTAs, send schedule, A/B tests, and conversion tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-n-email-campaign-for-your-fitness-app-s-new--swipe-1",
+        "title": "Smart N email campaign for your fitness app's new premium tier — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart n email campaign for your fitness app's new premium tier expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild an email campaign for your fitness app's new premium tier: goals (500 upgrades), audience segments (free users with 10+ workouts), 5-email sequence with timing, subject line strategy, design with CTAs, send schedule, A/B tests, and conversion tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-n-email-campaign-for-your-fitness-app-s-new--swipe-2",
+        "title": "Smart N email campaign for your fitness app's new premium tier — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart n email campaign for your fitness app's new premium tier expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild an email campaign for your fitness app's new premium tier: goals (500 upgrades), audience segments (free users with 10+ workouts), 5-email sequence with timing, subject line strategy, design with CTAs, send schedule, A/B tests, and conversion tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-n-email-campaign-for-your-fitness-app-s-new--swipe-3",
+        "title": "Smart N email campaign for your fitness app's new premium tier — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart n email campaign for your fitness app's new premium tier expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild an email campaign for your fitness app's new premium tier: goals (500 upgrades), audience segments (free users with 10+ workouts), 5-email sequence with timing, subject line strategy, design with CTAs, send schedule, A/B tests, and conversion tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-n-email-campaign-for-your-fitness-app-s-new--swipe-format",
+        "title": "Smart N email campaign for your fitness app's new premium tier — Different Format",
+        "description": "Same goal, different output format for marketing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for marketing",
+        "content": "## Role\nYou are a dedicated smart n email campaign for your fitness app's new premium tier expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild an email campaign for your fitness app's new premium tier: goals (500 upgrades), audience segments (free users with 10+ workouts), 5-email sequence with timing, subject line strategy, design with CTAs, send schedule, A/B tests, and conversion tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "marketing",
+      "business",
+      "smart",
+      "email",
+      "campaign",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 52,
+    "copies": 102,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-content-strategy-for-your-b2b-cybersecurity-",
+    "title": "Expert Content strategy for your B2B cybersecurity company",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert content strategy for your b2b cybersecurity company expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a content strategy for your B2B cybersecurity company: business goals, audience personas (IT directors, CISOs), content pillars (threat intelligence, compliance), SEO clusters, content formats (whitepapers, webinars), editorial calendar, distribution, and metrics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert content strategy for your b2b cybersecurity company expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a content strategy for your B2B cybersecurity company: business goals, audience personas (IT directors, CISOs), content pillars (threat intelligence, compliance), SEO clusters, content formats (whitepapers, webinars), editorial calendar, distribution, and metrics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-content-strategy-for-your-b2b-cybersecurity--swipe-1",
+        "title": "Expert Content strategy for your B2B cybersecurity company — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert content strategy for your b2b cybersecurity company expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a content strategy for your B2B cybersecurity company: business goals, audience personas (IT directors, CISOs), content pillars (threat intelligence, compliance), SEO clusters, content formats (whitepapers, webinars), editorial calendar, distribution, and metrics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-content-strategy-for-your-b2b-cybersecurity--swipe-2",
+        "title": "Expert Content strategy for your B2B cybersecurity company — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert content strategy for your b2b cybersecurity company expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a content strategy for your B2B cybersecurity company: business goals, audience personas (IT directors, CISOs), content pillars (threat intelligence, compliance), SEO clusters, content formats (whitepapers, webinars), editorial calendar, distribution, and metrics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-content-strategy-for-your-b2b-cybersecurity--swipe-3",
+        "title": "Expert Content strategy for your B2B cybersecurity company — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert content strategy for your b2b cybersecurity company expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a content strategy for your B2B cybersecurity company: business goals, audience personas (IT directors, CISOs), content pillars (threat intelligence, compliance), SEO clusters, content formats (whitepapers, webinars), editorial calendar, distribution, and metrics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-content-strategy-for-your-b2b-cybersecurity--swipe-format",
+        "title": "Expert Content strategy for your B2B cybersecurity company — Different Format",
+        "description": "Same goal, different output format for writing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for writing",
+        "content": "## Role\nYou are a dedicated expert content strategy for your b2b cybersecurity company expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a content strategy for your B2B cybersecurity company: business goals, audience personas (IT directors, CISOs), content pillars (threat intelligence, compliance), SEO clusters, content formats (whitepapers, webinars), editorial calendar, distribution, and metrics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "writing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "writing",
+      "seo",
+      "expert",
+      "content",
+      "strategy",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 53,
+    "copies": 71,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-product-launch-campaign-for-your-new-ai-writ",
+    "title": "Product launch campaign for your new AI writing assistant",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated product launch campaign for your new ai writing assistant expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a product launch campaign for your new AI writing assistant: goals (10K sign-ups), target audience (content creators, marketers), positioning, 6-week timeline, channel mix (Instagram/email/paid), creative concepts, content calendar, KPIs, and sales assets\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated product launch campaign for your new ai writing assistant expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a product launch campaign for your new AI writing assistant: goals (10K sign-ups), target audience (content creators, marketers), positioning, 6-week timeline, channel mix (Instagram/email/paid), creative concepts, content calendar, KPIs, and sales assets\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-product-launch-campaign-for-your-new-ai-writ-swipe-1",
+        "title": "Product launch campaign for your new AI writing assistant — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated product launch campaign for your new ai writing assistant expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a product launch campaign for your new AI writing assistant: goals (10K sign-ups), target audience (content creators, marketers), positioning, 6-week timeline, channel mix (Instagram/email/paid), creative concepts, content calendar, KPIs, and sales assets\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-product-launch-campaign-for-your-new-ai-writ-swipe-2",
+        "title": "Product launch campaign for your new AI writing assistant — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated product launch campaign for your new ai writing assistant expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a product launch campaign for your new AI writing assistant: goals (10K sign-ups), target audience (content creators, marketers), positioning, 6-week timeline, channel mix (Instagram/email/paid), creative concepts, content calendar, KPIs, and sales assets\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-product-launch-campaign-for-your-new-ai-writ-swipe-3",
+        "title": "Product launch campaign for your new AI writing assistant — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated product launch campaign for your new ai writing assistant expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a product launch campaign for your new AI writing assistant: goals (10K sign-ups), target audience (content creators, marketers), positioning, 6-week timeline, channel mix (Instagram/email/paid), creative concepts, content calendar, KPIs, and sales assets\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-product-launch-campaign-for-your-new-ai-writ-swipe-format",
+        "title": "Product launch campaign for your new AI writing assistant — Different Format",
+        "description": "Same goal, different output format for marketing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for marketing",
+        "content": "## Role\nYou are a dedicated product launch campaign for your new ai writing assistant expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a product launch campaign for your new AI writing assistant: goals (10K sign-ups), target audience (content creators, marketers), positioning, 6-week timeline, channel mix (Instagram/email/paid), creative concepts, content calendar, KPIs, and sales assets\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "marketing",
+      "sales",
+      "product",
+      "launch",
+      "campaign",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 29,
+    "copies": 71,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-journey-map-for-a-meditation-app",
+    "title": "Pro Journey map for a meditation app",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro journey map for a meditation app expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a journey map for a meditation app: Instagram ad, 7-day trial, daily reminders, milestones, community challenges\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro journey map for a meditation app expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a journey map for a meditation app: Instagram ad, 7-day trial, daily reminders, milestones, community challenges\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-journey-map-for-a-meditation-app-swipe-1",
+        "title": "Pro Journey map for a meditation app — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro journey map for a meditation app expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a journey map for a meditation app: Instagram ad, 7-day trial, daily reminders, milestones, community challenges\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-journey-map-for-a-meditation-app-swipe-2",
+        "title": "Pro Journey map for a meditation app — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro journey map for a meditation app expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a journey map for a meditation app: Instagram ad, 7-day trial, daily reminders, milestones, community challenges\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-journey-map-for-a-meditation-app-swipe-3",
+        "title": "Pro Journey map for a meditation app — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro journey map for a meditation app expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a journey map for a meditation app: Instagram ad, 7-day trial, daily reminders, milestones, community challenges\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-journey-map-for-a-meditation-app-swipe-format",
+        "title": "Pro Journey map for a meditation app — Different Format",
+        "description": "Same goal, different output format for social media use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for social media",
+        "content": "## Role\nYou are a dedicated pro journey map for a meditation app expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a journey map for a meditation app: Instagram ad, 7-day trial, daily reminders, milestones, community challenges\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "social-media"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "social-media",
+      "journey",
+      "meditation",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 63,
+    "copies": 161,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-marketing-budget-for-your-dtc-furniture-bran",
+    "title": "Expert Marketing budget for your DTC furniture brand's 2026 plan",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert marketing budget for your dtc furniture brand's 2026 plan expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a marketing budget for your DTC furniture brand's 2026 plan: $500K total by quarter, channel split (60% paid, 30% owned, 10% earned), campaign priorities, 3 new hires needed, martech stack costs, expected ROI per initiative, and conservative vs. aggressive scenarios\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert marketing budget for your dtc furniture brand's 2026 plan expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a marketing budget for your DTC furniture brand's 2026 plan: $500K total by quarter, channel split (60% paid, 30% owned, 10% earned), campaign priorities, 3 new hires needed, martech stack costs, expected ROI per initiative, and conservative vs. aggressive scenarios\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-marketing-budget-for-your-dtc-furniture-bran-swipe-1",
+        "title": "Expert Marketing budget for your DTC furniture brand's 2026 plan — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert marketing budget for your dtc furniture brand's 2026 plan expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a marketing budget for your DTC furniture brand's 2026 plan: $500K total by quarter, channel split (60% paid, 30% owned, 10% earned), campaign priorities, 3 new hires needed, martech stack costs, expected ROI per initiative, and conservative vs. aggressive scenarios\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-marketing-budget-for-your-dtc-furniture-bran-swipe-2",
+        "title": "Expert Marketing budget for your DTC furniture brand's 2026 plan — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert marketing budget for your dtc furniture brand's 2026 plan expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a marketing budget for your DTC furniture brand's 2026 plan: $500K total by quarter, channel split (60% paid, 30% owned, 10% earned), campaign priorities, 3 new hires needed, martech stack costs, expected ROI per initiative, and conservative vs. aggressive scenarios\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-marketing-budget-for-your-dtc-furniture-bran-swipe-3",
+        "title": "Expert Marketing budget for your DTC furniture brand's 2026 plan — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert marketing budget for your dtc furniture brand's 2026 plan expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a marketing budget for your DTC furniture brand's 2026 plan: $500K total by quarter, channel split (60% paid, 30% owned, 10% earned), campaign priorities, 3 new hires needed, martech stack costs, expected ROI per initiative, and conservative vs. aggressive scenarios\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-marketing-budget-for-your-dtc-furniture-bran-swipe-format",
+        "title": "Expert Marketing budget for your DTC furniture brand's 2026 plan — Different Format",
+        "description": "Same goal, different output format for marketing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for marketing",
+        "content": "## Role\nYou are a dedicated expert marketing budget for your dtc furniture brand's 2026 plan expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a marketing budget for your DTC furniture brand's 2026 plan: $500K total by quarter, channel split (60% paid, 30% owned, 10% earned), campaign priorities, 3 new hires needed, martech stack costs, expected ROI per initiative, and conservative vs. aggressive scenarios\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "marketing",
+      "hr",
+      "expert",
+      "budget",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 27,
+    "copies": 165,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-n-influencer-strategy-for-your-skincare-line",
+    "title": "Smart N influencer strategy for your skincare line targeting Gen Z",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart n influencer strategy for your skincare line targeting gen z expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an influencer strategy for your skincare line targeting Gen Z: partnership goals (1M impressions, 5% conversion), selection criteria, 20 micro-influencers list, collaboration types (gifting/affiliate/ambassador), content guidelines, rates, 3-month timeline, and ROI tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart n influencer strategy for your skincare line targeting gen z expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an influencer strategy for your skincare line targeting Gen Z: partnership goals (1M impressions, 5% conversion), selection criteria, 20 micro-influencers list, collaboration types (gifting/affiliate/ambassador), content guidelines, rates, 3-month timeline, and ROI tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-n-influencer-strategy-for-your-skincare-line-swipe-1",
+        "title": "Smart N influencer strategy for your skincare line targeting Gen Z — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart n influencer strategy for your skincare line targeting gen z expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an influencer strategy for your skincare line targeting Gen Z: partnership goals (1M impressions, 5% conversion), selection criteria, 20 micro-influencers list, collaboration types (gifting/affiliate/ambassador), content guidelines, rates, 3-month timeline, and ROI tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-n-influencer-strategy-for-your-skincare-line-swipe-2",
+        "title": "Smart N influencer strategy for your skincare line targeting Gen Z — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart n influencer strategy for your skincare line targeting gen z expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an influencer strategy for your skincare line targeting Gen Z: partnership goals (1M impressions, 5% conversion), selection criteria, 20 micro-influencers list, collaboration types (gifting/affiliate/ambassador), content guidelines, rates, 3-month timeline, and ROI tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-n-influencer-strategy-for-your-skincare-line-swipe-3",
+        "title": "Smart N influencer strategy for your skincare line targeting Gen Z — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart n influencer strategy for your skincare line targeting gen z expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an influencer strategy for your skincare line targeting Gen Z: partnership goals (1M impressions, 5% conversion), selection criteria, 20 micro-influencers list, collaboration types (gifting/affiliate/ambassador), content guidelines, rates, 3-month timeline, and ROI tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-n-influencer-strategy-for-your-skincare-line-swipe-format",
+        "title": "Smart N influencer strategy for your skincare line targeting Gen Z — Different Format",
+        "description": "Same goal, different output format for marketing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for marketing",
+        "content": "## Role\nYou are a dedicated smart n influencer strategy for your skincare line targeting gen z expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an influencer strategy for your skincare line targeting Gen Z: partnership goals (1M impressions, 5% conversion), selection criteria, 20 micro-influencers list, collaboration types (gifting/affiliate/ambassador), content guidelines, rates, 3-month timeline, and ROI tracking\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "marketing",
+      "business",
+      "smart",
+      "influencer",
+      "strategy",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 58,
+    "copies": 72,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-n-event-marketing-plan-for-saas-growth-summi",
+    "title": "Pro N event marketing plan for \"SaaS Growth Summit 2026\" targeting startup",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro n event marketing plan for \"saas growth summit 2026\" targeting startup expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an event marketing plan for \"SaaS Growth Summit 2026\" targeting startup founders: 500 registrations goal, event branding, 8-week promo timeline, multi-channel push, speaker lineup, attendee journey, sponsorship tiers, $75K budget, and post-event nurture\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro n event marketing plan for \"saas growth summit 2026\" targeting startup expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an event marketing plan for \"SaaS Growth Summit 2026\" targeting startup founders: 500 registrations goal, event branding, 8-week promo timeline, multi-channel push, speaker lineup, attendee journey, sponsorship tiers, $75K budget, and post-event nurture\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-n-event-marketing-plan-for-saas-growth-summi-swipe-1",
+        "title": "Pro N event marketing plan for \"SaaS Growth Summit 2026\" targeting startup — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro n event marketing plan for \"saas growth summit 2026\" targeting startup expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an event marketing plan for \"SaaS Growth Summit 2026\" targeting startup founders: 500 registrations goal, event branding, 8-week promo timeline, multi-channel push, speaker lineup, attendee journey, sponsorship tiers, $75K budget, and post-event nurture\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-n-event-marketing-plan-for-saas-growth-summi-swipe-2",
+        "title": "Pro N event marketing plan for \"SaaS Growth Summit 2026\" targeting startup — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro n event marketing plan for \"saas growth summit 2026\" targeting startup expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an event marketing plan for \"SaaS Growth Summit 2026\" targeting startup founders: 500 registrations goal, event branding, 8-week promo timeline, multi-channel push, speaker lineup, attendee journey, sponsorship tiers, $75K budget, and post-event nurture\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-n-event-marketing-plan-for-saas-growth-summi-swipe-3",
+        "title": "Pro N event marketing plan for \"SaaS Growth Summit 2026\" targeting startup — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro n event marketing plan for \"saas growth summit 2026\" targeting startup expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an event marketing plan for \"SaaS Growth Summit 2026\" targeting startup founders: 500 registrations goal, event branding, 8-week promo timeline, multi-channel push, speaker lineup, attendee journey, sponsorship tiers, $75K budget, and post-event nurture\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-n-event-marketing-plan-for-saas-growth-summi-swipe-format",
+        "title": "Pro N event marketing plan for \"SaaS Growth Summit 2026\" targeting startup — Different Format",
+        "description": "Same goal, different output format for marketing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for marketing",
+        "content": "## Role\nYou are a dedicated pro n event marketing plan for \"saas growth summit 2026\" targeting startup expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign an event marketing plan for \"SaaS Growth Summit 2026\" targeting startup founders: 500 registrations goal, event branding, 8-week promo timeline, multi-channel push, speaker lineup, attendee journey, sponsorship tiers, $75K budget, and post-event nurture\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "marketing",
+      "business",
+      "event",
+      "saas",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 75,
+    "copies": 147,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-campaign-performance-review-for-your-q3-back",
+    "title": "Rapid Campaign performance review for your Q3 back-to-school promotion",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid campaign performance review for your q3 back-to-school promotion expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a campaign performance review for your Q3 back-to-school promotion: executive summary, key metrics (5M reach, 12% conversion, 3.2x ROI), channel breakdown with spend, top-performing TikTok content, budget analysis, lessons learned, and what to optimize\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid campaign performance review for your q3 back-to-school promotion expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a campaign performance review for your Q3 back-to-school promotion: executive summary, key metrics (5M reach, 12% conversion, 3.2x ROI), channel breakdown with spend, top-performing TikTok content, budget analysis, lessons learned, and what to optimize\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-campaign-performance-review-for-your-q3-back-swipe-1",
+        "title": "Rapid Campaign performance review for your Q3 back-to-school promotion — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid campaign performance review for your q3 back-to-school promotion expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a campaign performance review for your Q3 back-to-school promotion: executive summary, key metrics (5M reach, 12% conversion, 3.2x ROI), channel breakdown with spend, top-performing TikTok content, budget analysis, lessons learned, and what to optimize\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-campaign-performance-review-for-your-q3-back-swipe-2",
+        "title": "Rapid Campaign performance review for your Q3 back-to-school promotion — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid campaign performance review for your q3 back-to-school promotion expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a campaign performance review for your Q3 back-to-school promotion: executive summary, key metrics (5M reach, 12% conversion, 3.2x ROI), channel breakdown with spend, top-performing TikTok content, budget analysis, lessons learned, and what to optimize\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-campaign-performance-review-for-your-q3-back-swipe-3",
+        "title": "Rapid Campaign performance review for your Q3 back-to-school promotion — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid campaign performance review for your q3 back-to-school promotion expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a campaign performance review for your Q3 back-to-school promotion: executive summary, key metrics (5M reach, 12% conversion, 3.2x ROI), channel breakdown with spend, top-performing TikTok content, budget analysis, lessons learned, and what to optimize\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-campaign-performance-review-for-your-q3-back-swipe-format",
+        "title": "Rapid Campaign performance review for your Q3 back-to-school promotion — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid campaign performance review for your q3 back-to-school promotion expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a campaign performance review for your Q3 back-to-school promotion: executive summary, key metrics (5M reach, 12% conversion, 3.2x ROI), channel breakdown with spend, top-performing TikTok content, budget analysis, lessons learned, and what to optimize\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "marketing",
+      "rapid",
+      "campaign",
+      "performance",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 46,
+    "copies": 188,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-wareness-for-a-dtc-mattress",
+    "title": "Rapid Wareness for a DTC mattress",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid wareness for a dtc mattress expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild awareness for a DTC mattress: bold subway ads, influencer unboxings, 100-night trial guarantee\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid wareness for a dtc mattress expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild awareness for a DTC mattress: bold subway ads, influencer unboxings, 100-night trial guarantee\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-wareness-for-a-dtc-mattress-swipe-1",
+        "title": "Rapid Wareness for a DTC mattress — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid wareness for a dtc mattress expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild awareness for a DTC mattress: bold subway ads, influencer unboxings, 100-night trial guarantee\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-wareness-for-a-dtc-mattress-swipe-2",
+        "title": "Rapid Wareness for a DTC mattress — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid wareness for a dtc mattress expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild awareness for a DTC mattress: bold subway ads, influencer unboxings, 100-night trial guarantee\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-wareness-for-a-dtc-mattress-swipe-3",
+        "title": "Rapid Wareness for a DTC mattress — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid wareness for a dtc mattress expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild awareness for a DTC mattress: bold subway ads, influencer unboxings, 100-night trial guarantee\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-wareness-for-a-dtc-mattress-swipe-format",
+        "title": "Rapid Wareness for a DTC mattress — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid wareness for a dtc mattress expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild awareness for a DTC mattress: bold subway ads, influencer unboxings, 100-night trial guarantee\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "marketing",
+      "rapid",
+      "wareness",
+      "mattress",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 43,
+    "copies": 129,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-social-media-campaign-for-your-sustainable-f",
+    "title": "Rapid Social media campaign for your sustainable fashion brand's Earth Month",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid social media campaign for your sustainable fashion brand's earth month expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a social media campaign for your sustainable fashion brand's Earth Month: goals (2M impressions), platform strategy for Instagram/TikTok/LinkedIn, content themes (behind-the-scenes, customer stories), 4-week calendar, engagement tactics, and benchmarks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid social media campaign for your sustainable fashion brand's earth month expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a social media campaign for your sustainable fashion brand's Earth Month: goals (2M impressions), platform strategy for Instagram/TikTok/LinkedIn, content themes (behind-the-scenes, customer stories), 4-week calendar, engagement tactics, and benchmarks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-social-media-campaign-for-your-sustainable-f-swipe-1",
+        "title": "Rapid Social media campaign for your sustainable fashion brand's Earth Month — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid social media campaign for your sustainable fashion brand's earth month expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a social media campaign for your sustainable fashion brand's Earth Month: goals (2M impressions), platform strategy for Instagram/TikTok/LinkedIn, content themes (behind-the-scenes, customer stories), 4-week calendar, engagement tactics, and benchmarks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-social-media-campaign-for-your-sustainable-f-swipe-2",
+        "title": "Rapid Social media campaign for your sustainable fashion brand's Earth Month — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid social media campaign for your sustainable fashion brand's earth month expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a social media campaign for your sustainable fashion brand's Earth Month: goals (2M impressions), platform strategy for Instagram/TikTok/LinkedIn, content themes (behind-the-scenes, customer stories), 4-week calendar, engagement tactics, and benchmarks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-social-media-campaign-for-your-sustainable-f-swipe-3",
+        "title": "Rapid Social media campaign for your sustainable fashion brand's Earth Month — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid social media campaign for your sustainable fashion brand's earth month expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a social media campaign for your sustainable fashion brand's Earth Month: goals (2M impressions), platform strategy for Instagram/TikTok/LinkedIn, content themes (behind-the-scenes, customer stories), 4-week calendar, engagement tactics, and benchmarks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-social-media-campaign-for-your-sustainable-f-swipe-format",
+        "title": "Rapid Social media campaign for your sustainable fashion brand's Earth Month — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid social media campaign for your sustainable fashion brand's earth month expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a social media campaign for your sustainable fashion brand's Earth Month: goals (2M impressions), platform strategy for Instagram/TikTok/LinkedIn, content themes (behind-the-scenes, customer stories), 4-week calendar, engagement tactics, and benchmarks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "marketing",
+      "rapid",
+      "social",
+      "media",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 33,
+    "copies": 187,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-competitive-analysis-for-your-meditation-app",
+    "title": "Smart Competitive analysis for your meditation app in the wellness space",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart competitive analysis for your meditation app in the wellness space expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive analysis for your meditation app in the wellness space: landscape overview, SWOT for Calm/Headspace/Insight Timer, positioning map, messaging comparison, pricing tiers ($10-$15/mo), digital presence audit, your advantages, and differentiation strategy\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart competitive analysis for your meditation app in the wellness space expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive analysis for your meditation app in the wellness space: landscape overview, SWOT for Calm/Headspace/Insight Timer, positioning map, messaging comparison, pricing tiers ($10-$15/mo), digital presence audit, your advantages, and differentiation strategy\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-competitive-analysis-for-your-meditation-app-swipe-1",
+        "title": "Smart Competitive analysis for your meditation app in the wellness space — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart competitive analysis for your meditation app in the wellness space expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive analysis for your meditation app in the wellness space: landscape overview, SWOT for Calm/Headspace/Insight Timer, positioning map, messaging comparison, pricing tiers ($10-$15/mo), digital presence audit, your advantages, and differentiation strategy\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-competitive-analysis-for-your-meditation-app-swipe-2",
+        "title": "Smart Competitive analysis for your meditation app in the wellness space — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart competitive analysis for your meditation app in the wellness space expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive analysis for your meditation app in the wellness space: landscape overview, SWOT for Calm/Headspace/Insight Timer, positioning map, messaging comparison, pricing tiers ($10-$15/mo), digital presence audit, your advantages, and differentiation strategy\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-competitive-analysis-for-your-meditation-app-swipe-3",
+        "title": "Smart Competitive analysis for your meditation app in the wellness space — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart competitive analysis for your meditation app in the wellness space expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive analysis for your meditation app in the wellness space: landscape overview, SWOT for Calm/Headspace/Insight Timer, positioning map, messaging comparison, pricing tiers ($10-$15/mo), digital presence audit, your advantages, and differentiation strategy\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-competitive-analysis-for-your-meditation-app-swipe-format",
+        "title": "Smart Competitive analysis for your meditation app in the wellness space — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated smart competitive analysis for your meditation app in the wellness space expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive analysis for your meditation app in the wellness space: landscape overview, SWOT for Calm/Headspace/Insight Timer, positioning map, messaging comparison, pricing tiers ($10-$15/mo), digital presence audit, your advantages, and differentiation strategy\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "business",
+      "smart",
+      "competitive",
+      "analysis",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 49,
+    "copies": 70,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-marketers-podcast-ad-performance-report",
+    "title": "Rapid Podcast ad performance report",
+    "emoji": "📣",
+    "description": "Presentation prompt from Gamma's official library — For Marketers. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid podcast ad performance report expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a podcast ad performance report: 50K downloads, 2,500 site visits, 180 trials, $18K revenue\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid podcast ad performance report expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a podcast ad performance report: 50K downloads, 2,500 site visits, 180 trials, $18K revenue\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-marketers-podcast-ad-performance-report-swipe-1",
+        "title": "Rapid Podcast ad performance report — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid podcast ad performance report expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a podcast ad performance report: 50K downloads, 2,500 site visits, 180 trials, $18K revenue\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-marketers-podcast-ad-performance-report-swipe-2",
+        "title": "Rapid Podcast ad performance report — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid podcast ad performance report expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a podcast ad performance report: 50K downloads, 2,500 site visits, 180 trials, $18K revenue\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-marketers-podcast-ad-performance-report-swipe-3",
+        "title": "Rapid Podcast ad performance report — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid podcast ad performance report expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a podcast ad performance report: 50K downloads, 2,500 site visits, 180 trials, $18K revenue\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-marketers-podcast-ad-performance-report-swipe-format",
+        "title": "Rapid Podcast ad performance report — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid podcast ad performance report expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a podcast ad performance report: 50K downloads, 2,500 site visits, 180 trials, $18K revenue\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "marketing",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "design",
+      "rapid",
+      "podcast",
+      "performance",
+      "marketers",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 69,
+    "copies": 156,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "marketers"
+  },
+  {
+    "id": "gamma-sales-proposal-for-marketing-automation-with-three-tie",
+    "title": "Rapid Proposal for marketing automation with three tiers",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid proposal for marketing automation with three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a proposal for marketing automation with three tiers: Starter ($500/mo, 5K contacts), Pro ($1,500/mo, 25K contacts), Enterprise ($4K/mo, unlimited)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid proposal for marketing automation with three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a proposal for marketing automation with three tiers: Starter ($500/mo, 5K contacts), Pro ($1,500/mo, 25K contacts), Enterprise ($4K/mo, unlimited)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-proposal-for-marketing-automation-with-three-tie-swipe-1",
+        "title": "Rapid Proposal for marketing automation with three tiers — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid proposal for marketing automation with three tiers expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a proposal for marketing automation with three tiers: Starter ($500/mo, 5K contacts), Pro ($1,500/mo, 25K contacts), Enterprise ($4K/mo, unlimited)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-proposal-for-marketing-automation-with-three-tie-swipe-2",
+        "title": "Rapid Proposal for marketing automation with three tiers — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid proposal for marketing automation with three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a proposal for marketing automation with three tiers: Starter ($500/mo, 5K contacts), Pro ($1,500/mo, 25K contacts), Enterprise ($4K/mo, unlimited)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-proposal-for-marketing-automation-with-three-tie-swipe-3",
+        "title": "Rapid Proposal for marketing automation with three tiers — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid proposal for marketing automation with three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a proposal for marketing automation with three tiers: Starter ($500/mo, 5K contacts), Pro ($1,500/mo, 25K contacts), Enterprise ($4K/mo, unlimited)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-proposal-for-marketing-automation-with-three-tie-swipe-format",
+        "title": "Rapid Proposal for marketing automation with three tiers — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid proposal for marketing automation with three tiers expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a proposal for marketing automation with three tiers: Starter ($500/mo, 5K contacts), Pro ($1,500/mo, 25K contacts), Enterprise ($4K/mo, unlimited)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "marketing",
+      "rapid",
+      "proposal",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 30,
+    "copies": 70,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-q1-territory-plan-prioritizing-15-accounts-by-in",
+    "title": "Expert Q1 territory plan prioritizing 15 accounts by intent signals",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert q1 territory plan prioritizing 15 accounts by intent signals expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Q1 territory plan prioritizing 15 accounts by intent signals: 5 hot leads (active product trials), 7 warm (attended webinar, downloaded content), 3 cold but high-value (right ICP, budget timing)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert q1 territory plan prioritizing 15 accounts by intent signals expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Q1 territory plan prioritizing 15 accounts by intent signals: 5 hot leads (active product trials), 7 warm (attended webinar, downloaded content), 3 cold but high-value (right ICP, budget timing)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-q1-territory-plan-prioritizing-15-accounts-by-in-swipe-1",
+        "title": "Expert Q1 territory plan prioritizing 15 accounts by intent signals — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert q1 territory plan prioritizing 15 accounts by intent signals expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Q1 territory plan prioritizing 15 accounts by intent signals: 5 hot leads (active product trials), 7 warm (attended webinar, downloaded content), 3 cold but high-value (right ICP, budget timing)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-q1-territory-plan-prioritizing-15-accounts-by-in-swipe-2",
+        "title": "Expert Q1 territory plan prioritizing 15 accounts by intent signals — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert q1 territory plan prioritizing 15 accounts by intent signals expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Q1 territory plan prioritizing 15 accounts by intent signals: 5 hot leads (active product trials), 7 warm (attended webinar, downloaded content), 3 cold but high-value (right ICP, budget timing)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-q1-territory-plan-prioritizing-15-accounts-by-in-swipe-3",
+        "title": "Expert Q1 territory plan prioritizing 15 accounts by intent signals — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert q1 territory plan prioritizing 15 accounts by intent signals expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Q1 territory plan prioritizing 15 accounts by intent signals: 5 hot leads (active product trials), 7 warm (attended webinar, downloaded content), 3 cold but high-value (right ICP, budget timing)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-q1-territory-plan-prioritizing-15-accounts-by-in-swipe-format",
+        "title": "Expert Q1 territory plan prioritizing 15 accounts by intent signals — Different Format",
+        "description": "Same goal, different output format for finance use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for finance",
+        "content": "## Role\nYou are a dedicated expert q1 territory plan prioritizing 15 accounts by intent signals expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a Q1 territory plan prioritizing 15 accounts by intent signals: 5 hot leads (active product trials), 7 warm (attended webinar, downloaded content), 3 cold but high-value (right ICP, budget timing)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "finance"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "finance",
+      "content",
+      "expert",
+      "territory",
+      "prioritizing",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 70,
+    "copies": 124,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-multi-stakeholder-pitch-for-your-learning-manage",
+    "title": "Expert Multi-stakeholder pitch for your learning management system",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert multi-stakeholder pitch for your learning management system expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a multi-stakeholder pitch for your learning management system: benefits for HR (compliance tracking), IT (single sign-on, security), managers (team progress), and employees (mobile access, certifications)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert multi-stakeholder pitch for your learning management system expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a multi-stakeholder pitch for your learning management system: benefits for HR (compliance tracking), IT (single sign-on, security), managers (team progress), and employees (mobile access, certifications)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-multi-stakeholder-pitch-for-your-learning-manage-swipe-1",
+        "title": "Expert Multi-stakeholder pitch for your learning management system — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert multi-stakeholder pitch for your learning management system expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a multi-stakeholder pitch for your learning management system: benefits for HR (compliance tracking), IT (single sign-on, security), managers (team progress), and employees (mobile access, certifications)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-multi-stakeholder-pitch-for-your-learning-manage-swipe-2",
+        "title": "Expert Multi-stakeholder pitch for your learning management system — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert multi-stakeholder pitch for your learning management system expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a multi-stakeholder pitch for your learning management system: benefits for HR (compliance tracking), IT (single sign-on, security), managers (team progress), and employees (mobile access, certifications)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-multi-stakeholder-pitch-for-your-learning-manage-swipe-3",
+        "title": "Expert Multi-stakeholder pitch for your learning management system — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert multi-stakeholder pitch for your learning management system expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a multi-stakeholder pitch for your learning management system: benefits for HR (compliance tracking), IT (single sign-on, security), managers (team progress), and employees (mobile access, certifications)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-multi-stakeholder-pitch-for-your-learning-manage-swipe-format",
+        "title": "Expert Multi-stakeholder pitch for your learning management system — Different Format",
+        "description": "Same goal, different output format for sales use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for sales",
+        "content": "## Role\nYou are a dedicated expert multi-stakeholder pitch for your learning management system expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a multi-stakeholder pitch for your learning management system: benefits for HR (compliance tracking), IT (single sign-on, security), managers (team progress), and employees (mobile access, certifications)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "sales"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "sales",
+      "hr",
+      "expert",
+      "multistakeholder",
+      "pitch",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 57,
+    "copies": 129,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-proposal-handling-the-we-need-to-think-about-it-",
+    "title": "Smart Proposal handling the \"we need to think about it\" objection",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart proposal handling the \"we need to think about it\" objection expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a proposal handling the \"we need to think about it\" objection: summarize what they said matters most, show how you solve those specific problems, include a limited-time implementation discount\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart proposal handling the \"we need to think about it\" objection expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a proposal handling the \"we need to think about it\" objection: summarize what they said matters most, show how you solve those specific problems, include a limited-time implementation discount\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-proposal-handling-the-we-need-to-think-about-it--swipe-1",
+        "title": "Smart Proposal handling the \"we need to think about it\" objection — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart proposal handling the \"we need to think about it\" objection expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a proposal handling the \"we need to think about it\" objection: summarize what they said matters most, show how you solve those specific problems, include a limited-time implementation discount\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-proposal-handling-the-we-need-to-think-about-it--swipe-2",
+        "title": "Smart Proposal handling the \"we need to think about it\" objection — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart proposal handling the \"we need to think about it\" objection expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a proposal handling the \"we need to think about it\" objection: summarize what they said matters most, show how you solve those specific problems, include a limited-time implementation discount\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-proposal-handling-the-we-need-to-think-about-it--swipe-3",
+        "title": "Smart Proposal handling the \"we need to think about it\" objection — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart proposal handling the \"we need to think about it\" objection expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a proposal handling the \"we need to think about it\" objection: summarize what they said matters most, show how you solve those specific problems, include a limited-time implementation discount\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-proposal-handling-the-we-need-to-think-about-it--swipe-format",
+        "title": "Smart Proposal handling the \"we need to think about it\" objection — Different Format",
+        "description": "Same goal, different output format for productivity use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for productivity",
+        "content": "## Role\nYou are a dedicated smart proposal handling the \"we need to think about it\" objection expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a proposal handling the \"we need to think about it\" objection: summarize what they said matters most, show how you solve those specific problems, include a limited-time implementation discount\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "productivity"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "productivity",
+      "smart",
+      "proposal",
+      "handling",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 70,
+    "copies": 69,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-competitive-displacement-deck-for-your-crm-again",
+    "title": "Smart Competitive displacement deck for your CRM against Salesforce",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart competitive displacement deck for your crm against salesforce expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive displacement deck for your CRM against Salesforce: acknowledge why they chose it originally, show where it's over-engineered for their 50-person team, highlight your simpler UI and $300/user savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart competitive displacement deck for your crm against salesforce expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive displacement deck for your CRM against Salesforce: acknowledge why they chose it originally, show where it's over-engineered for their 50-person team, highlight your simpler UI and $300/user savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-competitive-displacement-deck-for-your-crm-again-swipe-1",
+        "title": "Smart Competitive displacement deck for your CRM against Salesforce — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart competitive displacement deck for your crm against salesforce expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive displacement deck for your CRM against Salesforce: acknowledge why they chose it originally, show where it's over-engineered for their 50-person team, highlight your simpler UI and $300/user savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-competitive-displacement-deck-for-your-crm-again-swipe-2",
+        "title": "Smart Competitive displacement deck for your CRM against Salesforce — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart competitive displacement deck for your crm against salesforce expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive displacement deck for your CRM against Salesforce: acknowledge why they chose it originally, show where it's over-engineered for their 50-person team, highlight your simpler UI and $300/user savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-competitive-displacement-deck-for-your-crm-again-swipe-3",
+        "title": "Smart Competitive displacement deck for your CRM against Salesforce — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart competitive displacement deck for your crm against salesforce expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive displacement deck for your CRM against Salesforce: acknowledge why they chose it originally, show where it's over-engineered for their 50-person team, highlight your simpler UI and $300/user savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-competitive-displacement-deck-for-your-crm-again-swipe-format",
+        "title": "Smart Competitive displacement deck for your CRM against Salesforce — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated smart competitive displacement deck for your crm against salesforce expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a competitive displacement deck for your CRM against Salesforce: acknowledge why they chose it originally, show where it's over-engineered for their 50-person team, highlight your simpler UI and $300/user savings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "sales",
+      "smart",
+      "competitive",
+      "displacement",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 50,
+    "copies": 196,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-follow-up-for-a-prospect-worried-about-implement",
+    "title": "Smart Follow-up for a prospect worried about implementation",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart follow-up for a prospect worried about implementation expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a follow-up for a prospect worried about implementation: show your 30-day onboarding and dedicated success manager\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart follow-up for a prospect worried about implementation expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a follow-up for a prospect worried about implementation: show your 30-day onboarding and dedicated success manager\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-follow-up-for-a-prospect-worried-about-implement-swipe-1",
+        "title": "Smart Follow-up for a prospect worried about implementation — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart follow-up for a prospect worried about implementation expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a follow-up for a prospect worried about implementation: show your 30-day onboarding and dedicated success manager\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-follow-up-for-a-prospect-worried-about-implement-swipe-2",
+        "title": "Smart Follow-up for a prospect worried about implementation — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart follow-up for a prospect worried about implementation expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a follow-up for a prospect worried about implementation: show your 30-day onboarding and dedicated success manager\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-follow-up-for-a-prospect-worried-about-implement-swipe-3",
+        "title": "Smart Follow-up for a prospect worried about implementation — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart follow-up for a prospect worried about implementation expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a follow-up for a prospect worried about implementation: show your 30-day onboarding and dedicated success manager\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-follow-up-for-a-prospect-worried-about-implement-swipe-format",
+        "title": "Smart Follow-up for a prospect worried about implementation — Different Format",
+        "description": "Same goal, different output format for sales use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for sales",
+        "content": "## Role\nYou are a dedicated smart follow-up for a prospect worried about implementation expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a follow-up for a prospect worried about implementation: show your 30-day onboarding and dedicated success manager\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "sales"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "sales",
+      "hr",
+      "smart",
+      "followup",
+      "prospect",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 75,
+    "copies": 132,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-demo-for-your-accounting-software-tailored-to-fr",
+    "title": "Expert Demo for your accounting software tailored to franchise owners",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert demo for your accounting software tailored to franchise owners expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a demo for your accounting software tailored to franchise owners: show multi-location reporting, automated royalty calculations, and how the CFO of a 12-location franchise saves 15 hours monthly\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert demo for your accounting software tailored to franchise owners expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a demo for your accounting software tailored to franchise owners: show multi-location reporting, automated royalty calculations, and how the CFO of a 12-location franchise saves 15 hours monthly\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-demo-for-your-accounting-software-tailored-to-fr-swipe-1",
+        "title": "Expert Demo for your accounting software tailored to franchise owners — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert demo for your accounting software tailored to franchise owners expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a demo for your accounting software tailored to franchise owners: show multi-location reporting, automated royalty calculations, and how the CFO of a 12-location franchise saves 15 hours monthly\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-demo-for-your-accounting-software-tailored-to-fr-swipe-2",
+        "title": "Expert Demo for your accounting software tailored to franchise owners — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert demo for your accounting software tailored to franchise owners expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a demo for your accounting software tailored to franchise owners: show multi-location reporting, automated royalty calculations, and how the CFO of a 12-location franchise saves 15 hours monthly\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-demo-for-your-accounting-software-tailored-to-fr-swipe-3",
+        "title": "Expert Demo for your accounting software tailored to franchise owners — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert demo for your accounting software tailored to franchise owners expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a demo for your accounting software tailored to franchise owners: show multi-location reporting, automated royalty calculations, and how the CFO of a 12-location franchise saves 15 hours monthly\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-demo-for-your-accounting-software-tailored-to-fr-swipe-format",
+        "title": "Expert Demo for your accounting software tailored to franchise owners — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated expert demo for your accounting software tailored to franchise owners expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a demo for your accounting software tailored to franchise owners: show multi-location reporting, automated royalty calculations, and how the CFO of a 12-location franchise saves 15 hours monthly\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "finance",
+      "expert",
+      "accounting",
+      "software",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 78,
+    "copies": 49,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-renewal-presentation-for-your-analytics-platform",
+    "title": "Expert Renewal presentation for your analytics platform client showing 2.5M d",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert renewal presentation for your analytics platform client showing 2.5m d expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a renewal presentation for your analytics platform client showing 2.5M data points processed, 15 automated reports saving 20 hours/week, and new features launching next quarter they'll want access to\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert renewal presentation for your analytics platform client showing 2.5m d expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a renewal presentation for your analytics platform client showing 2.5M data points processed, 15 automated reports saving 20 hours/week, and new features launching next quarter they'll want access to\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-renewal-presentation-for-your-analytics-platform-swipe-1",
+        "title": "Expert Renewal presentation for your analytics platform client showing 2.5M d — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert renewal presentation for your analytics platform client showing 2.5m d expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a renewal presentation for your analytics platform client showing 2.5M data points processed, 15 automated reports saving 20 hours/week, and new features launching next quarter they'll want access to\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-renewal-presentation-for-your-analytics-platform-swipe-2",
+        "title": "Expert Renewal presentation for your analytics platform client showing 2.5M d — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert renewal presentation for your analytics platform client showing 2.5m d expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a renewal presentation for your analytics platform client showing 2.5M data points processed, 15 automated reports saving 20 hours/week, and new features launching next quarter they'll want access to\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-renewal-presentation-for-your-analytics-platform-swipe-3",
+        "title": "Expert Renewal presentation for your analytics platform client showing 2.5M d — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert renewal presentation for your analytics platform client showing 2.5m d expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a renewal presentation for your analytics platform client showing 2.5M data points processed, 15 automated reports saving 20 hours/week, and new features launching next quarter they'll want access to\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-renewal-presentation-for-your-analytics-platform-swipe-format",
+        "title": "Expert Renewal presentation for your analytics platform client showing 2.5M d — Different Format",
+        "description": "Same goal, different output format for design use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for design",
+        "content": "## Role\nYou are a dedicated expert renewal presentation for your analytics platform client showing 2.5m d expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a renewal presentation for your analytics platform client showing 2.5M data points processed, 15 automated reports saving 20 hours/week, and new features launching next quarter they'll want access to\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "design"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "design",
+      "expert",
+      "renewal",
+      "presentation",
+      "sales",
+      "gamma",
+      "swipe-ready"
+    ],
+    "likes": 68,
+    "copies": 84,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-n-abm-plan-for-three-fortune-500-manufacturers-w",
+    "title": "Pro N ABM plan for three Fortune 500 manufacturers with personalized case ",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro n abm plan for three fortune 500 manufacturers with personalized case  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ABM plan for three Fortune 500 manufacturers with personalized case studies, ROI models, and executive briefings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro n abm plan for three fortune 500 manufacturers with personalized case  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ABM plan for three Fortune 500 manufacturers with personalized case studies, ROI models, and executive briefings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-n-abm-plan-for-three-fortune-500-manufacturers-w-swipe-1",
+        "title": "Pro N ABM plan for three Fortune 500 manufacturers with personalized case  — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro n abm plan for three fortune 500 manufacturers with personalized case  expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ABM plan for three Fortune 500 manufacturers with personalized case studies, ROI models, and executive briefings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-n-abm-plan-for-three-fortune-500-manufacturers-w-swipe-2",
+        "title": "Pro N ABM plan for three Fortune 500 manufacturers with personalized case  — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro n abm plan for three fortune 500 manufacturers with personalized case  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ABM plan for three Fortune 500 manufacturers with personalized case studies, ROI models, and executive briefings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-n-abm-plan-for-three-fortune-500-manufacturers-w-swipe-3",
+        "title": "Pro N ABM plan for three Fortune 500 manufacturers with personalized case  — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro n abm plan for three fortune 500 manufacturers with personalized case  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ABM plan for three Fortune 500 manufacturers with personalized case studies, ROI models, and executive briefings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-n-abm-plan-for-three-fortune-500-manufacturers-w-swipe-format",
+        "title": "Pro N ABM plan for three Fortune 500 manufacturers with personalized case  — Different Format",
+        "description": "Same goal, different output format for hr use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for hr",
+        "content": "## Role\nYou are a dedicated pro n abm plan for three fortune 500 manufacturers with personalized case  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate an ABM plan for three Fortune 500 manufacturers with personalized case studies, ROI models, and executive briefings\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "hr"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "hr",
+      "three",
+      "fortune",
+      "manufacturers",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 56,
+    "copies": 117,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-sales-business-case-for-your-expense-management-platfo",
+    "title": "Smart Business case for your expense management platform",
+    "emoji": "🤝",
+    "description": "Presentation prompt from Gamma's official library — For Sales Professionals. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart business case for your expense management platform expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business case for your expense management platform: current process (manual receipts, reimbursement delays, compliance gaps) vs. your solution (mobile capture, auto-categorization, real-time visibility) saving $50K annually\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart business case for your expense management platform expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business case for your expense management platform: current process (manual receipts, reimbursement delays, compliance gaps) vs. your solution (mobile capture, auto-categorization, real-time visibility) saving $50K annually\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-sales-business-case-for-your-expense-management-platfo-swipe-1",
+        "title": "Smart Business case for your expense management platform — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart business case for your expense management platform expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business case for your expense management platform: current process (manual receipts, reimbursement delays, compliance gaps) vs. your solution (mobile capture, auto-categorization, real-time visibility) saving $50K annually\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-sales-business-case-for-your-expense-management-platfo-swipe-2",
+        "title": "Smart Business case for your expense management platform — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart business case for your expense management platform expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business case for your expense management platform: current process (manual receipts, reimbursement delays, compliance gaps) vs. your solution (mobile capture, auto-categorization, real-time visibility) saving $50K annually\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-sales-business-case-for-your-expense-management-platfo-swipe-3",
+        "title": "Smart Business case for your expense management platform — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart business case for your expense management platform expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business case for your expense management platform: current process (manual receipts, reimbursement delays, compliance gaps) vs. your solution (mobile capture, auto-categorization, real-time visibility) saving $50K annually\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-sales-business-case-for-your-expense-management-platfo-swipe-format",
+        "title": "Smart Business case for your expense management platform — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated smart business case for your expense management platform expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business case for your expense management platform: current process (manual receipts, reimbursement delays, compliance gaps) vs. your solution (mobile capture, auto-categorization, real-time visibility) saving $50K annually\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "legal",
+      "smart",
+      "expense",
+      "sales",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 71,
+    "copies": 150,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "sales"
+  },
+  {
+    "id": "gamma-general-portfolio-case-study-for-your-craft-brewery-re",
+    "title": "Rapid Portfolio case study for your craft brewery rebrand project",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid portfolio case study for your craft brewery rebrand project expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a portfolio case study for your craft brewery rebrand project: the challenge (outdated identity), your process (research, concepts, refinement), and final results\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid portfolio case study for your craft brewery rebrand project expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a portfolio case study for your craft brewery rebrand project: the challenge (outdated identity), your process (research, concepts, refinement), and final results\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-portfolio-case-study-for-your-craft-brewery-re-swipe-1",
+        "title": "Rapid Portfolio case study for your craft brewery rebrand project — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid portfolio case study for your craft brewery rebrand project expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a portfolio case study for your craft brewery rebrand project: the challenge (outdated identity), your process (research, concepts, refinement), and final results\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-portfolio-case-study-for-your-craft-brewery-re-swipe-2",
+        "title": "Rapid Portfolio case study for your craft brewery rebrand project — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid portfolio case study for your craft brewery rebrand project expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a portfolio case study for your craft brewery rebrand project: the challenge (outdated identity), your process (research, concepts, refinement), and final results\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-portfolio-case-study-for-your-craft-brewery-re-swipe-3",
+        "title": "Rapid Portfolio case study for your craft brewery rebrand project — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid portfolio case study for your craft brewery rebrand project expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a portfolio case study for your craft brewery rebrand project: the challenge (outdated identity), your process (research, concepts, refinement), and final results\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-portfolio-case-study-for-your-craft-brewery-re-swipe-format",
+        "title": "Rapid Portfolio case study for your craft brewery rebrand project — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid portfolio case study for your craft brewery rebrand project expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a portfolio case study for your craft brewery rebrand project: the challenge (outdated identity), your process (research, concepts, refinement), and final results\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "marketing",
+      "rapid",
+      "portfolio",
+      "study",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 27,
+    "copies": 132,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-vision-presentation-for-what-your-bookstore-wi",
+    "title": "Smart Vision presentation for what your bookstore will look like in 2030",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart vision presentation for what your bookstore will look like in 2030 expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a vision presentation for what your bookstore will look like in 2030: community event space, hybrid retail model, author residency program, and neighborhood hub\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart vision presentation for what your bookstore will look like in 2030 expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a vision presentation for what your bookstore will look like in 2030: community event space, hybrid retail model, author residency program, and neighborhood hub\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-vision-presentation-for-what-your-bookstore-wi-swipe-1",
+        "title": "Smart Vision presentation for what your bookstore will look like in 2030 — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart vision presentation for what your bookstore will look like in 2030 expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a vision presentation for what your bookstore will look like in 2030: community event space, hybrid retail model, author residency program, and neighborhood hub\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-vision-presentation-for-what-your-bookstore-wi-swipe-2",
+        "title": "Smart Vision presentation for what your bookstore will look like in 2030 — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart vision presentation for what your bookstore will look like in 2030 expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a vision presentation for what your bookstore will look like in 2030: community event space, hybrid retail model, author residency program, and neighborhood hub\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-vision-presentation-for-what-your-bookstore-wi-swipe-3",
+        "title": "Smart Vision presentation for what your bookstore will look like in 2030 — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart vision presentation for what your bookstore will look like in 2030 expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a vision presentation for what your bookstore will look like in 2030: community event space, hybrid retail model, author residency program, and neighborhood hub\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-vision-presentation-for-what-your-bookstore-wi-swipe-format",
+        "title": "Smart Vision presentation for what your bookstore will look like in 2030 — Different Format",
+        "description": "Same goal, different output format for writing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for writing",
+        "content": "## Role\nYou are a dedicated smart vision presentation for what your bookstore will look like in 2030 expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a vision presentation for what your bookstore will look like in 2030: community event space, hybrid retail model, author residency program, and neighborhood hub\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "writing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "writing",
+      "design",
+      "smart",
+      "vision",
+      "presentation",
+      "general",
+      "gamma",
+      "swipe-ready"
+    ],
+    "likes": 35,
+    "copies": 122,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-pitch-deck-for-a-podcast-called-founder-storie",
+    "title": "Smart Pitch deck for a podcast called \"Founder Stories\" covering concept, ta",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart pitch deck for a podcast called \"founder stories\" covering concept, ta expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pitch deck for a podcast called \"Founder Stories\" covering concept, target audience (aspiring entrepreneurs), format (30-min interviews), and sponsor opportunities\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart pitch deck for a podcast called \"founder stories\" covering concept, ta expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pitch deck for a podcast called \"Founder Stories\" covering concept, target audience (aspiring entrepreneurs), format (30-min interviews), and sponsor opportunities\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-pitch-deck-for-a-podcast-called-founder-storie-swipe-1",
+        "title": "Smart Pitch deck for a podcast called \"Founder Stories\" covering concept, ta — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart pitch deck for a podcast called \"founder stories\" covering concept, ta expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pitch deck for a podcast called \"Founder Stories\" covering concept, target audience (aspiring entrepreneurs), format (30-min interviews), and sponsor opportunities\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-pitch-deck-for-a-podcast-called-founder-storie-swipe-2",
+        "title": "Smart Pitch deck for a podcast called \"Founder Stories\" covering concept, ta — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart pitch deck for a podcast called \"founder stories\" covering concept, ta expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pitch deck for a podcast called \"Founder Stories\" covering concept, target audience (aspiring entrepreneurs), format (30-min interviews), and sponsor opportunities\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-pitch-deck-for-a-podcast-called-founder-storie-swipe-3",
+        "title": "Smart Pitch deck for a podcast called \"Founder Stories\" covering concept, ta — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart pitch deck for a podcast called \"founder stories\" covering concept, ta expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pitch deck for a podcast called \"Founder Stories\" covering concept, target audience (aspiring entrepreneurs), format (30-min interviews), and sponsor opportunities\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-pitch-deck-for-a-podcast-called-founder-storie-swipe-format",
+        "title": "Smart Pitch deck for a podcast called \"Founder Stories\" covering concept, ta — Different Format",
+        "description": "Same goal, different output format for sales use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for sales",
+        "content": "## Role\nYou are a dedicated smart pitch deck for a podcast called \"founder stories\" covering concept, ta expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pitch deck for a podcast called \"Founder Stories\" covering concept, target audience (aspiring entrepreneurs), format (30-min interviews), and sponsor opportunities\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "sales"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "sales",
+      "hr",
+      "smart",
+      "pitch",
+      "podcast",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 39,
+    "copies": 170,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-webinar-flow-for-seo-fundamentals",
+    "title": "Pro Webinar flow for \"SEO Fundamentals\"",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro webinar flow for \"seo fundamentals\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a webinar flow for \"SEO Fundamentals\": hook (common mistakes), 3 key tactics with examples, live Q&A, and resource download\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro webinar flow for \"seo fundamentals\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a webinar flow for \"SEO Fundamentals\": hook (common mistakes), 3 key tactics with examples, live Q&A, and resource download\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-webinar-flow-for-seo-fundamentals-swipe-1",
+        "title": "Pro Webinar flow for \"SEO Fundamentals\" — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro webinar flow for \"seo fundamentals\" expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a webinar flow for \"SEO Fundamentals\": hook (common mistakes), 3 key tactics with examples, live Q&A, and resource download\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-webinar-flow-for-seo-fundamentals-swipe-2",
+        "title": "Pro Webinar flow for \"SEO Fundamentals\" — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro webinar flow for \"seo fundamentals\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a webinar flow for \"SEO Fundamentals\": hook (common mistakes), 3 key tactics with examples, live Q&A, and resource download\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-webinar-flow-for-seo-fundamentals-swipe-3",
+        "title": "Pro Webinar flow for \"SEO Fundamentals\" — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro webinar flow for \"seo fundamentals\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a webinar flow for \"SEO Fundamentals\": hook (common mistakes), 3 key tactics with examples, live Q&A, and resource download\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-webinar-flow-for-seo-fundamentals-swipe-format",
+        "title": "Pro Webinar flow for \"SEO Fundamentals\" — Different Format",
+        "description": "Same goal, different output format for seo use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for seo",
+        "content": "## Role\nYou are a dedicated pro webinar flow for \"seo fundamentals\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a webinar flow for \"SEO Fundamentals\": hook (common mistakes), 3 key tactics with examples, live Q&A, and resource download\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "seo"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "seo",
+      "design",
+      "webinar",
+      "fundamentals",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 76,
+    "copies": 87,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-feasibility-study-for-opening-a-second-locatio",
+    "title": "Pro Feasibility study for opening a second location of your bakery",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro feasibility study for opening a second location of your bakery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a feasibility study for opening a second location of your bakery: market analysis (underserved neighborhood), startup costs ($120K), revenue projections, and risks to consider\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro feasibility study for opening a second location of your bakery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a feasibility study for opening a second location of your bakery: market analysis (underserved neighborhood), startup costs ($120K), revenue projections, and risks to consider\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-feasibility-study-for-opening-a-second-locatio-swipe-1",
+        "title": "Pro Feasibility study for opening a second location of your bakery — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro feasibility study for opening a second location of your bakery expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a feasibility study for opening a second location of your bakery: market analysis (underserved neighborhood), startup costs ($120K), revenue projections, and risks to consider\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-feasibility-study-for-opening-a-second-locatio-swipe-2",
+        "title": "Pro Feasibility study for opening a second location of your bakery — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro feasibility study for opening a second location of your bakery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a feasibility study for opening a second location of your bakery: market analysis (underserved neighborhood), startup costs ($120K), revenue projections, and risks to consider\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-feasibility-study-for-opening-a-second-locatio-swipe-3",
+        "title": "Pro Feasibility study for opening a second location of your bakery — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro feasibility study for opening a second location of your bakery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a feasibility study for opening a second location of your bakery: market analysis (underserved neighborhood), startup costs ($120K), revenue projections, and risks to consider\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-feasibility-study-for-opening-a-second-locatio-swipe-format",
+        "title": "Pro Feasibility study for opening a second location of your bakery — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated pro feasibility study for opening a second location of your bakery expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a feasibility study for opening a second location of your bakery: market analysis (underserved neighborhood), startup costs ($120K), revenue projections, and risks to consider\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "design",
+      "feasibility",
+      "study",
+      "opening",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 41,
+    "copies": 109,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-pitch-deck-for-a-farm-to-table-restaurant-rebr",
+    "title": "Rapid Pitch deck for a farm-to-table restaurant rebrand mixing natural textu",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid pitch deck for a farm-to-table restaurant rebrand mixing natural textu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a pitch deck for a farm-to-table restaurant rebrand mixing natural textures, hand-drawn menu typography, seasonal harvest vibes, and Napa Valley-inspired aesthetics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid pitch deck for a farm-to-table restaurant rebrand mixing natural textu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a pitch deck for a farm-to-table restaurant rebrand mixing natural textures, hand-drawn menu typography, seasonal harvest vibes, and Napa Valley-inspired aesthetics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-pitch-deck-for-a-farm-to-table-restaurant-rebr-swipe-1",
+        "title": "Rapid Pitch deck for a farm-to-table restaurant rebrand mixing natural textu — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid pitch deck for a farm-to-table restaurant rebrand mixing natural textu expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a pitch deck for a farm-to-table restaurant rebrand mixing natural textures, hand-drawn menu typography, seasonal harvest vibes, and Napa Valley-inspired aesthetics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-pitch-deck-for-a-farm-to-table-restaurant-rebr-swipe-2",
+        "title": "Rapid Pitch deck for a farm-to-table restaurant rebrand mixing natural textu — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid pitch deck for a farm-to-table restaurant rebrand mixing natural textu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a pitch deck for a farm-to-table restaurant rebrand mixing natural textures, hand-drawn menu typography, seasonal harvest vibes, and Napa Valley-inspired aesthetics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-pitch-deck-for-a-farm-to-table-restaurant-rebr-swipe-3",
+        "title": "Rapid Pitch deck for a farm-to-table restaurant rebrand mixing natural textu — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid pitch deck for a farm-to-table restaurant rebrand mixing natural textu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a pitch deck for a farm-to-table restaurant rebrand mixing natural textures, hand-drawn menu typography, seasonal harvest vibes, and Napa Valley-inspired aesthetics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-pitch-deck-for-a-farm-to-table-restaurant-rebr-swipe-format",
+        "title": "Rapid Pitch deck for a farm-to-table restaurant rebrand mixing natural textu — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid pitch deck for a farm-to-table restaurant rebrand mixing natural textu expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a pitch deck for a farm-to-table restaurant rebrand mixing natural textures, hand-drawn menu typography, seasonal harvest vibes, and Napa Valley-inspired aesthetics\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "marketing",
+      "rapid",
+      "pitch",
+      "farmtotable",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 61,
+    "copies": 188,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-two-day-team-offsite-in-lake-tahoe-with-a-mix-",
+    "title": "Guided Two-day team offsite in Lake Tahoe with a mix of strategy sessions (mo",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided two-day team offsite in lake tahoe with a mix of strategy sessions (mo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPlan a two-day team offsite in Lake Tahoe with a mix of strategy sessions (morning), team building (afternoon hikes), and social time (dinners)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided two-day team offsite in lake tahoe with a mix of strategy sessions (mo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPlan a two-day team offsite in Lake Tahoe with a mix of strategy sessions (morning), team building (afternoon hikes), and social time (dinners)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-two-day-team-offsite-in-lake-tahoe-with-a-mix--swipe-1",
+        "title": "Guided Two-day team offsite in Lake Tahoe with a mix of strategy sessions (mo — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided two-day team offsite in lake tahoe with a mix of strategy sessions (mo expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nPlan a two-day team offsite in Lake Tahoe with a mix of strategy sessions (morning), team building (afternoon hikes), and social time (dinners)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-two-day-team-offsite-in-lake-tahoe-with-a-mix--swipe-2",
+        "title": "Guided Two-day team offsite in Lake Tahoe with a mix of strategy sessions (mo — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided two-day team offsite in lake tahoe with a mix of strategy sessions (mo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPlan a two-day team offsite in Lake Tahoe with a mix of strategy sessions (morning), team building (afternoon hikes), and social time (dinners)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-two-day-team-offsite-in-lake-tahoe-with-a-mix--swipe-3",
+        "title": "Guided Two-day team offsite in Lake Tahoe with a mix of strategy sessions (mo — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided two-day team offsite in lake tahoe with a mix of strategy sessions (mo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPlan a two-day team offsite in Lake Tahoe with a mix of strategy sessions (morning), team building (afternoon hikes), and social time (dinners)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-two-day-team-offsite-in-lake-tahoe-with-a-mix--swipe-format",
+        "title": "Guided Two-day team offsite in Lake Tahoe with a mix of strategy sessions (mo — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated guided two-day team offsite in lake tahoe with a mix of strategy sessions (mo expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nPlan a two-day team offsite in Lake Tahoe with a mix of strategy sessions (morning), team building (afternoon hikes), and social time (dinners)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "design",
+      "guided",
+      "twoday",
+      "offsite",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 67,
+    "copies": 167,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-go-to-market-plan-for-launching-a-newsletter-s",
+    "title": "Guided Go-to-market plan for launching a newsletter subscription",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided go-to-market plan for launching a newsletter subscription expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a go-to-market plan for launching a newsletter subscription: audience (creative freelancers), pricing ($10/mo), launch tactics (Twitter + existing list)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided go-to-market plan for launching a newsletter subscription expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a go-to-market plan for launching a newsletter subscription: audience (creative freelancers), pricing ($10/mo), launch tactics (Twitter + existing list)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-go-to-market-plan-for-launching-a-newsletter-s-swipe-1",
+        "title": "Guided Go-to-market plan for launching a newsletter subscription — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided go-to-market plan for launching a newsletter subscription expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a go-to-market plan for launching a newsletter subscription: audience (creative freelancers), pricing ($10/mo), launch tactics (Twitter + existing list)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-go-to-market-plan-for-launching-a-newsletter-s-swipe-2",
+        "title": "Guided Go-to-market plan for launching a newsletter subscription — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided go-to-market plan for launching a newsletter subscription expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a go-to-market plan for launching a newsletter subscription: audience (creative freelancers), pricing ($10/mo), launch tactics (Twitter + existing list)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-go-to-market-plan-for-launching-a-newsletter-s-swipe-3",
+        "title": "Guided Go-to-market plan for launching a newsletter subscription — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided go-to-market plan for launching a newsletter subscription expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a go-to-market plan for launching a newsletter subscription: audience (creative freelancers), pricing ($10/mo), launch tactics (Twitter + existing list)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-go-to-market-plan-for-launching-a-newsletter-s-swipe-format",
+        "title": "Guided Go-to-market plan for launching a newsletter subscription — Different Format",
+        "description": "Same goal, different output format for writing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for writing",
+        "content": "## Role\nYou are a dedicated guided go-to-market plan for launching a newsletter subscription expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a go-to-market plan for launching a newsletter subscription: audience (creative freelancers), pricing ($10/mo), launch tactics (Twitter + existing list)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "writing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "writing",
+      "design",
+      "guided",
+      "gotomarket",
+      "launching",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 43,
+    "copies": 114,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-funding-proposal-for-your-nonprofit-s-youth-co",
+    "title": "Pro Funding proposal for your nonprofit's youth coding program",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro funding proposal for your nonprofit's youth coding program expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a funding proposal for your nonprofit's youth coding program: the problem (tech skills gap), your solution (free after-school classes), budget ($50K), and impact metrics (100 students trained)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro funding proposal for your nonprofit's youth coding program expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a funding proposal for your nonprofit's youth coding program: the problem (tech skills gap), your solution (free after-school classes), budget ($50K), and impact metrics (100 students trained)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-funding-proposal-for-your-nonprofit-s-youth-co-swipe-1",
+        "title": "Pro Funding proposal for your nonprofit's youth coding program — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro funding proposal for your nonprofit's youth coding program expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a funding proposal for your nonprofit's youth coding program: the problem (tech skills gap), your solution (free after-school classes), budget ($50K), and impact metrics (100 students trained)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-funding-proposal-for-your-nonprofit-s-youth-co-swipe-2",
+        "title": "Pro Funding proposal for your nonprofit's youth coding program — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro funding proposal for your nonprofit's youth coding program expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a funding proposal for your nonprofit's youth coding program: the problem (tech skills gap), your solution (free after-school classes), budget ($50K), and impact metrics (100 students trained)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-funding-proposal-for-your-nonprofit-s-youth-co-swipe-3",
+        "title": "Pro Funding proposal for your nonprofit's youth coding program — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro funding proposal for your nonprofit's youth coding program expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a funding proposal for your nonprofit's youth coding program: the problem (tech skills gap), your solution (free after-school classes), budget ($50K), and impact metrics (100 students trained)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-funding-proposal-for-your-nonprofit-s-youth-co-swipe-format",
+        "title": "Pro Funding proposal for your nonprofit's youth coding program — Different Format",
+        "description": "Same goal, different output format for education use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for education",
+        "content": "## Role\nYou are a dedicated pro funding proposal for your nonprofit's youth coding program expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a funding proposal for your nonprofit's youth coding program: the problem (tech skills gap), your solution (free after-school classes), budget ($50K), and impact metrics (100 students trained)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "education"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "education",
+      "finance",
+      "funding",
+      "proposal",
+      "nonprofits",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 59,
+    "copies": 87,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-resource-plan-for-your-saas-startup-showing-wh",
+    "title": "Expert Resource plan for your SaaS startup showing who's working on what acro",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert resource plan for your saas startup showing who's working on what acro expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a resource plan for your SaaS startup showing who's working on what across Q4 product launches and where you're stretched too thin\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert resource plan for your saas startup showing who's working on what acro expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a resource plan for your SaaS startup showing who's working on what across Q4 product launches and where you're stretched too thin\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-resource-plan-for-your-saas-startup-showing-wh-swipe-1",
+        "title": "Expert Resource plan for your SaaS startup showing who's working on what acro — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert resource plan for your saas startup showing who's working on what acro expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a resource plan for your SaaS startup showing who's working on what across Q4 product launches and where you're stretched too thin\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-resource-plan-for-your-saas-startup-showing-wh-swipe-2",
+        "title": "Expert Resource plan for your SaaS startup showing who's working on what acro — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert resource plan for your saas startup showing who's working on what acro expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a resource plan for your SaaS startup showing who's working on what across Q4 product launches and where you're stretched too thin\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-resource-plan-for-your-saas-startup-showing-wh-swipe-3",
+        "title": "Expert Resource plan for your SaaS startup showing who's working on what acro — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert resource plan for your saas startup showing who's working on what acro expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a resource plan for your SaaS startup showing who's working on what across Q4 product launches and where you're stretched too thin\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-resource-plan-for-your-saas-startup-showing-wh-swipe-format",
+        "title": "Expert Resource plan for your SaaS startup showing who's working on what acro — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated expert resource plan for your saas startup showing who's working on what acro expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a resource plan for your SaaS startup showing who's working on what across Q4 product launches and where you're stretched too thin\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "expert",
+      "resource",
+      "startup",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 60,
+    "copies": 183,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-conference-agenda-for-future-of-work-summit-wi",
+    "title": "Pro Conference agenda for \"Future of Work Summit\" with three tracks",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro conference agenda for \"future of work summit\" with three tracks expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a conference agenda for \"Future of Work Summit\" with three tracks: remote culture, AI tools, and leadership, plus keynotes and networking breaks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro conference agenda for \"future of work summit\" with three tracks expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a conference agenda for \"Future of Work Summit\" with three tracks: remote culture, AI tools, and leadership, plus keynotes and networking breaks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-conference-agenda-for-future-of-work-summit-wi-swipe-1",
+        "title": "Pro Conference agenda for \"Future of Work Summit\" with three tracks — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro conference agenda for \"future of work summit\" with three tracks expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a conference agenda for \"Future of Work Summit\" with three tracks: remote culture, AI tools, and leadership, plus keynotes and networking breaks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-conference-agenda-for-future-of-work-summit-wi-swipe-2",
+        "title": "Pro Conference agenda for \"Future of Work Summit\" with three tracks — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro conference agenda for \"future of work summit\" with three tracks expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a conference agenda for \"Future of Work Summit\" with three tracks: remote culture, AI tools, and leadership, plus keynotes and networking breaks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-conference-agenda-for-future-of-work-summit-wi-swipe-3",
+        "title": "Pro Conference agenda for \"Future of Work Summit\" with three tracks — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro conference agenda for \"future of work summit\" with three tracks expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a conference agenda for \"Future of Work Summit\" with three tracks: remote culture, AI tools, and leadership, plus keynotes and networking breaks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-conference-agenda-for-future-of-work-summit-wi-swipe-format",
+        "title": "Pro Conference agenda for \"Future of Work Summit\" with three tracks — Different Format",
+        "description": "Same goal, different output format for hr use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for hr",
+        "content": "## Role\nYou are a dedicated pro conference agenda for \"future of work summit\" with three tracks expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a conference agenda for \"Future of Work Summit\" with three tracks: remote culture, AI tools, and leadership, plus keynotes and networking breaks\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "hr"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "hr",
+      "design",
+      "conference",
+      "agenda",
+      "future",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 62,
+    "copies": 51,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-workshop-rundown-for-design-thinking-101",
+    "title": "Expert Workshop rundown for \"Design Thinking 101\"",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated expert workshop rundown for \"design thinking 101\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a workshop rundown for \"Design Thinking 101\": intro, empathy mapping exercise, rapid prototyping, feedback\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated expert workshop rundown for \"design thinking 101\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a workshop rundown for \"Design Thinking 101\": intro, empathy mapping exercise, rapid prototyping, feedback\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-workshop-rundown-for-design-thinking-101-swipe-1",
+        "title": "Expert Workshop rundown for \"Design Thinking 101\" — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated expert workshop rundown for \"design thinking 101\" expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a workshop rundown for \"Design Thinking 101\": intro, empathy mapping exercise, rapid prototyping, feedback\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-workshop-rundown-for-design-thinking-101-swipe-2",
+        "title": "Expert Workshop rundown for \"Design Thinking 101\" — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated expert workshop rundown for \"design thinking 101\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a workshop rundown for \"Design Thinking 101\": intro, empathy mapping exercise, rapid prototyping, feedback\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-workshop-rundown-for-design-thinking-101-swipe-3",
+        "title": "Expert Workshop rundown for \"Design Thinking 101\" — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated expert workshop rundown for \"design thinking 101\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a workshop rundown for \"Design Thinking 101\": intro, empathy mapping exercise, rapid prototyping, feedback\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-workshop-rundown-for-design-thinking-101-swipe-format",
+        "title": "Expert Workshop rundown for \"Design Thinking 101\" — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated expert workshop rundown for \"design thinking 101\" expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a workshop rundown for \"Design Thinking 101\": intro, empathy mapping exercise, rapid prototyping, feedback\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "design",
+      "expert",
+      "workshop",
+      "rundown",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 65,
+    "copies": 191,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-project-kickoff-deck-for-redesigning-your-sust",
+    "title": "Guided Project kickoff deck for redesigning your sustainable fashion e-commer",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated guided project kickoff deck for redesigning your sustainable fashion e-commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a project kickoff deck for redesigning your sustainable fashion e-commerce site: goals, timeline, team roles, and what success looks like in 6 months\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated guided project kickoff deck for redesigning your sustainable fashion e-commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a project kickoff deck for redesigning your sustainable fashion e-commerce site: goals, timeline, team roles, and what success looks like in 6 months\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-project-kickoff-deck-for-redesigning-your-sust-swipe-1",
+        "title": "Guided Project kickoff deck for redesigning your sustainable fashion e-commer — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated guided project kickoff deck for redesigning your sustainable fashion e-commer expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a project kickoff deck for redesigning your sustainable fashion e-commerce site: goals, timeline, team roles, and what success looks like in 6 months\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-project-kickoff-deck-for-redesigning-your-sust-swipe-2",
+        "title": "Guided Project kickoff deck for redesigning your sustainable fashion e-commer — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated guided project kickoff deck for redesigning your sustainable fashion e-commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a project kickoff deck for redesigning your sustainable fashion e-commerce site: goals, timeline, team roles, and what success looks like in 6 months\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-project-kickoff-deck-for-redesigning-your-sust-swipe-3",
+        "title": "Guided Project kickoff deck for redesigning your sustainable fashion e-commer — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated guided project kickoff deck for redesigning your sustainable fashion e-commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a project kickoff deck for redesigning your sustainable fashion e-commerce site: goals, timeline, team roles, and what success looks like in 6 months\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-project-kickoff-deck-for-redesigning-your-sust-swipe-format",
+        "title": "Guided Project kickoff deck for redesigning your sustainable fashion e-commer — Different Format",
+        "description": "Same goal, different output format for design use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for design",
+        "content": "## Role\nYou are a dedicated guided project kickoff deck for redesigning your sustainable fashion e-commer expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a project kickoff deck for redesigning your sustainable fashion e-commerce site: goals, timeline, team roles, and what success looks like in 6 months\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "design"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "design",
+      "ecommerce",
+      "guided",
+      "project",
+      "kickoff",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 76,
+    "copies": 91,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-business-plan-for-a-dog-walking-app-exploring-",
+    "title": "Smart Business plan for a dog walking app exploring customer segments, value",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart business plan for a dog walking app exploring customer segments, value expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business plan for a dog walking app exploring customer segments, value props, revenue streams, and key partnerships\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart business plan for a dog walking app exploring customer segments, value expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business plan for a dog walking app exploring customer segments, value props, revenue streams, and key partnerships\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-business-plan-for-a-dog-walking-app-exploring--swipe-1",
+        "title": "Smart Business plan for a dog walking app exploring customer segments, value — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart business plan for a dog walking app exploring customer segments, value expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business plan for a dog walking app exploring customer segments, value props, revenue streams, and key partnerships\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-business-plan-for-a-dog-walking-app-exploring--swipe-2",
+        "title": "Smart Business plan for a dog walking app exploring customer segments, value — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart business plan for a dog walking app exploring customer segments, value expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business plan for a dog walking app exploring customer segments, value props, revenue streams, and key partnerships\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-business-plan-for-a-dog-walking-app-exploring--swipe-3",
+        "title": "Smart Business plan for a dog walking app exploring customer segments, value — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart business plan for a dog walking app exploring customer segments, value expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business plan for a dog walking app exploring customer segments, value props, revenue streams, and key partnerships\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-business-plan-for-a-dog-walking-app-exploring--swipe-format",
+        "title": "Smart Business plan for a dog walking app exploring customer segments, value — Different Format",
+        "description": "Same goal, different output format for business use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for business",
+        "content": "## Role\nYou are a dedicated smart business plan for a dog walking app exploring customer segments, value expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nBuild a business plan for a dog walking app exploring customer segments, value props, revenue streams, and key partnerships\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "business",
+      "design",
+      "smart",
+      "walking",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 67,
+    "copies": 131,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-brand-refresh-proposal-for-your-family-s-40-ye",
+    "title": "Smart Brand refresh proposal for your family's 40-year-old hardware store",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart brand refresh proposal for your family's 40-year-old hardware store expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a brand refresh proposal for your family's 40-year-old hardware store: keep the legacy (expert service, community ties), modernize the experience (updated logo, e-commerce, DIY workshops)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart brand refresh proposal for your family's 40-year-old hardware store expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a brand refresh proposal for your family's 40-year-old hardware store: keep the legacy (expert service, community ties), modernize the experience (updated logo, e-commerce, DIY workshops)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-brand-refresh-proposal-for-your-family-s-40-ye-swipe-1",
+        "title": "Smart Brand refresh proposal for your family's 40-year-old hardware store — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart brand refresh proposal for your family's 40-year-old hardware store expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a brand refresh proposal for your family's 40-year-old hardware store: keep the legacy (expert service, community ties), modernize the experience (updated logo, e-commerce, DIY workshops)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-brand-refresh-proposal-for-your-family-s-40-ye-swipe-2",
+        "title": "Smart Brand refresh proposal for your family's 40-year-old hardware store — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart brand refresh proposal for your family's 40-year-old hardware store expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a brand refresh proposal for your family's 40-year-old hardware store: keep the legacy (expert service, community ties), modernize the experience (updated logo, e-commerce, DIY workshops)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-brand-refresh-proposal-for-your-family-s-40-ye-swipe-3",
+        "title": "Smart Brand refresh proposal for your family's 40-year-old hardware store — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart brand refresh proposal for your family's 40-year-old hardware store expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a brand refresh proposal for your family's 40-year-old hardware store: keep the legacy (expert service, community ties), modernize the experience (updated logo, e-commerce, DIY workshops)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-brand-refresh-proposal-for-your-family-s-40-ye-swipe-format",
+        "title": "Smart Brand refresh proposal for your family's 40-year-old hardware store — Different Format",
+        "description": "Same goal, different output format for marketing use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for marketing",
+        "content": "## Role\nYou are a dedicated smart brand refresh proposal for your family's 40-year-old hardware store expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nMake a brand refresh proposal for your family's 40-year-old hardware store: keep the legacy (expert service, community ties), modernize the experience (updated logo, e-commerce, DIY workshops)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "marketing"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "marketing",
+      "design",
+      "smart",
+      "brand",
+      "refresh",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 25,
+    "copies": 92,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-pricing-strategy-deck-for-your-coworking-space",
+    "title": "Pro Pricing strategy deck for your coworking space exploring three models",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated pro pricing strategy deck for your coworking space exploring three models expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy deck for your coworking space exploring three models: day passes ($35), monthly memberships ($300), and dedicated desks ($500)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated pro pricing strategy deck for your coworking space exploring three models expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy deck for your coworking space exploring three models: day passes ($35), monthly memberships ($300), and dedicated desks ($500)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-pricing-strategy-deck-for-your-coworking-space-swipe-1",
+        "title": "Pro Pricing strategy deck for your coworking space exploring three models — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated pro pricing strategy deck for your coworking space exploring three models expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy deck for your coworking space exploring three models: day passes ($35), monthly memberships ($300), and dedicated desks ($500)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-pricing-strategy-deck-for-your-coworking-space-swipe-2",
+        "title": "Pro Pricing strategy deck for your coworking space exploring three models — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated pro pricing strategy deck for your coworking space exploring three models expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy deck for your coworking space exploring three models: day passes ($35), monthly memberships ($300), and dedicated desks ($500)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-pricing-strategy-deck-for-your-coworking-space-swipe-3",
+        "title": "Pro Pricing strategy deck for your coworking space exploring three models — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated pro pricing strategy deck for your coworking space exploring three models expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy deck for your coworking space exploring three models: day passes ($35), monthly memberships ($300), and dedicated desks ($500)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-pricing-strategy-deck-for-your-coworking-space-swipe-format",
+        "title": "Pro Pricing strategy deck for your coworking space exploring three models — Different Format",
+        "description": "Same goal, different output format for hr use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for hr",
+        "content": "## Role\nYou are a dedicated pro pricing strategy deck for your coworking space exploring three models expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a pricing strategy deck for your coworking space exploring three models: day passes ($35), monthly memberships ($300), and dedicated desks ($500)\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "hr"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "hr",
+      "business",
+      "pricing",
+      "strategy",
+      "coworking",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 68,
+    "copies": 113,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-team-charter-for-a-new-fintech-product-squad-c",
+    "title": "Smart Team charter for a new fintech product squad covering how you'll make ",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart team charter for a new fintech product squad covering how you'll make  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a team charter for a new fintech product squad covering how you'll make decisions, run meetings, handle disagreements, and celebrate wins\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart team charter for a new fintech product squad covering how you'll make  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a team charter for a new fintech product squad covering how you'll make decisions, run meetings, handle disagreements, and celebrate wins\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-team-charter-for-a-new-fintech-product-squad-c-swipe-1",
+        "title": "Smart Team charter for a new fintech product squad covering how you'll make  — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart team charter for a new fintech product squad covering how you'll make  expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a team charter for a new fintech product squad covering how you'll make decisions, run meetings, handle disagreements, and celebrate wins\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-team-charter-for-a-new-fintech-product-squad-c-swipe-2",
+        "title": "Smart Team charter for a new fintech product squad covering how you'll make  — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart team charter for a new fintech product squad covering how you'll make  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a team charter for a new fintech product squad covering how you'll make decisions, run meetings, handle disagreements, and celebrate wins\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-team-charter-for-a-new-fintech-product-squad-c-swipe-3",
+        "title": "Smart Team charter for a new fintech product squad covering how you'll make  — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart team charter for a new fintech product squad covering how you'll make  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a team charter for a new fintech product squad covering how you'll make decisions, run meetings, handle disagreements, and celebrate wins\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-team-charter-for-a-new-fintech-product-squad-c-swipe-format",
+        "title": "Smart Team charter for a new fintech product squad covering how you'll make  — Different Format",
+        "description": "Same goal, different output format for productivity use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for productivity",
+        "content": "## Role\nYou are a dedicated smart team charter for a new fintech product squad covering how you'll make  expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a team charter for a new fintech product squad covering how you'll make decisions, run meetings, handle disagreements, and celebrate wins\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "productivity"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "productivity",
+      "smart",
+      "charter",
+      "fintech",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 48,
+    "copies": 195,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-sprint-retrospective-for-your-mobile-fitness-a",
+    "title": "Smart Sprint retrospective for your mobile fitness app's last two-week cycle",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated smart sprint retrospective for your mobile fitness app's last two-week cycle expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a sprint retrospective for your mobile fitness app's last two-week cycle: what went well (shipped 3 features ahead of schedule), what didn't (too many meetings), what to try next\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated smart sprint retrospective for your mobile fitness app's last two-week cycle expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a sprint retrospective for your mobile fitness app's last two-week cycle: what went well (shipped 3 features ahead of schedule), what didn't (too many meetings), what to try next\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-sprint-retrospective-for-your-mobile-fitness-a-swipe-1",
+        "title": "Smart Sprint retrospective for your mobile fitness app's last two-week cycle — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated smart sprint retrospective for your mobile fitness app's last two-week cycle expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a sprint retrospective for your mobile fitness app's last two-week cycle: what went well (shipped 3 features ahead of schedule), what didn't (too many meetings), what to try next\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-sprint-retrospective-for-your-mobile-fitness-a-swipe-2",
+        "title": "Smart Sprint retrospective for your mobile fitness app's last two-week cycle — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated smart sprint retrospective for your mobile fitness app's last two-week cycle expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a sprint retrospective for your mobile fitness app's last two-week cycle: what went well (shipped 3 features ahead of schedule), what didn't (too many meetings), what to try next\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-sprint-retrospective-for-your-mobile-fitness-a-swipe-3",
+        "title": "Smart Sprint retrospective for your mobile fitness app's last two-week cycle — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated smart sprint retrospective for your mobile fitness app's last two-week cycle expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a sprint retrospective for your mobile fitness app's last two-week cycle: what went well (shipped 3 features ahead of schedule), what didn't (too many meetings), what to try next\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-sprint-retrospective-for-your-mobile-fitness-a-swipe-format",
+        "title": "Smart Sprint retrospective for your mobile fitness app's last two-week cycle — Different Format",
+        "description": "Same goal, different output format for design use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for design",
+        "content": "## Role\nYou are a dedicated smart sprint retrospective for your mobile fitness app's last two-week cycle expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nDesign a sprint retrospective for your mobile fitness app's last two-week cycle: what went well (shipped 3 features ahead of schedule), what didn't (too many meetings), what to try next\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "design"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "design",
+      "smart",
+      "sprint",
+      "retrospective",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 26,
+    "copies": 177,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
+  },
+  {
+    "id": "gamma-general-product-roadmap-for-your-project-management-to",
+    "title": "Rapid Product roadmap for your project management tool showing \"now, next, l",
+    "emoji": "📊",
+    "description": "Presentation prompt from Gamma's official library — General. Optimized for AI-generated decks, docs, and web pages. Includes swipes and fill-in-the-blank template.",
+    "content": "## Role\nYou are a dedicated rapid product roadmap for your project management tool showing \"now, next, l expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a product roadmap for your project management tool showing \"now, next, later\": bug fixes now, AI features next, mobile app later\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "fillInBlank": "## Role\nYou are a dedicated rapid product roadmap for your project management tool showing \"now, next, l expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a product roadmap for your project management tool showing \"now, next, later\": bug fixes now, AI features next, mobile app later\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.",
+    "swipes": [
+      {
+        "id": "gamma-general-product-roadmap-for-your-project-management-to-swipe-1",
+        "title": "Rapid Product roadmap for your project management tool showing \"now, next, l — B2B Focus",
+        "description": "Repurpose for B2B enterprise clients instead of general consumers",
+        "useCase": "Repurpose for B2B enterprise clients instead of general consumers",
+        "content": "## Role\nYou are a dedicated rapid product roadmap for your project management tool showing \"now, next, l expert who delivers precise, actionable results.\n\n## Context\n- Target: B2B enterprise decision-makers\n- Industry: {{industry}}\n- Company size: {{company-size}}\n- Pain point: {{primary-pain-point}}\n- Desired outcome: {{business-outcome}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a product roadmap for your project management tool showing \"now, next, later\": bug fixes now, AI features next, mobile app later\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler."
+      },
+      {
+        "id": "gamma-general-product-roadmap-for-your-project-management-to-swipe-2",
+        "title": "Rapid Product roadmap for your project management tool showing \"now, next, l — Quick Version",
+        "description": "Condensed version for fast results under 5 minutes",
+        "useCase": "Condensed version for fast results under 5 minutes",
+        "content": "## Role\nYou are a dedicated rapid product roadmap for your project management tool showing \"now, next, l expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a product roadmap for your project management tool showing \"now, next, later\": bug fixes now, AI features next, mobile app later\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nStructure your response clearly with headings and bullet points where appropriate. Be specific — avoid generic filler.\n\n## Speed Constraint\nDeliver a concise response in under 300 words. Prioritize the top 3 actionable items only. Skip preamble."
+      },
+      {
+        "id": "gamma-general-product-roadmap-for-your-project-management-to-swipe-3",
+        "title": "Rapid Product roadmap for your project management tool showing \"now, next, l — Beginner Friendly",
+        "description": "Simplified for someone new to this topic with step-by-step guidance",
+        "useCase": "Simplified for someone new to this topic with step-by-step guidance",
+        "content": "## Role\nYou are a dedicated rapid product roadmap for your project management tool showing \"now, next, l expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a product roadmap for your project management tool showing \"now, next, later\": bug fixes now, AI features next, mobile app later\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nExplain concepts simply as if teaching a beginner. Use numbered steps. Define any jargon. Include one concrete example."
+      },
+      {
+        "id": "gamma-general-product-roadmap-for-your-project-management-to-swipe-format",
+        "title": "Rapid Product roadmap for your project management tool showing \"now, next, l — Different Format",
+        "description": "Same goal, different output format for coding use cases",
+        "useCase": "Convert output to a structured format (checklist, table, or script) for coding",
+        "content": "## Role\nYou are a dedicated rapid product roadmap for your project management tool showing \"now, next, l expert who delivers precise, actionable results.\n\n## Context\n- Primary goal: {{primary-goal}}\n- Audience: {{target-audience}}\n- Constraints: {{constraints}}\n\n## Task\n## Gamma Presentation Prompt\n\nCreate a product roadmap for your project management tool showing \"now, next, later\": bug fixes now, AI features next, mobile app later\n\n## Instructions\nUse this prompt in Gamma to generate a presentation, document, or webpage. Customize audience, company, goals, and metrics before generating.\n\n## Output Format\nDeliver the response as a structured {{output-format}} (choose: checklist | comparison table | step-by-step script | FAQ).\nInclude a one-line summary at the top."
+      }
+    ],
+    "categories": [
+      "business",
+      "coding"
+    ],
+    "models": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "type": "text",
+    "tags": [
+      "coding",
+      "rapid",
+      "product",
+      "roadmap",
+      "general",
+      "gamma",
+      "presentation",
+      "swipe-ready"
+    ],
+    "likes": 56,
+    "copies": 217,
+    "collection": "gamma-prompt-library",
+    "collectionSection": "general"
   }
 ] as Prompt[]
 
-export const promptCount = 1446
-export const scrapedCount = 1426
+export const promptCount = 1529
+export const scrapedCount = 1509
 export const seedCount = 20
