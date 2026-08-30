@@ -128,6 +128,7 @@ cp .env.example .env
 | **Book ideas (50)** | `strategy/BOOK-IDEA-CATALOG.json` |
 | **Revenue Systems catalog** | `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json` |
 | **3-book empire cluster** | `strategy/REVENUE-SYSTEMS-CLUSTER.json` · `strategy/REVENUE-SYSTEMS-EMPIRE.md` |
+| **Content plan (Guru Blueprint)** | `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md` |
 | **12-month plan** | `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
 | **Factory sync** | `factory/business-plan.json` · `factory/state.json` |
 

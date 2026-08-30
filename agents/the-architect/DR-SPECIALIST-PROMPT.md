@@ -140,6 +140,8 @@ Use `INVOCATION.md` structure. Init project: `architect_init_project`.
 | **Webinar / PLF / JV launch** | Event Launch + webinar or JV template |
 | **Partnership program / summit / co-host** | Burchard Partnership + JV template |
 | **10MDMS campaign / follow-up fortress** | Ten MDMS + Kern + Event Launch |
+| **Content plan / social calendar / newsletter** | Guru Blueprint + Content Engine + `PERSUASION-MECHANICS-CONTENT-PLAN` |
+| **Course curriculum / 10×7 spine** | Guru Blueprint + Info-Product Architecture |
 | **CRM automation flows** | Marketing Automation Personalization |
 | **Voice AI / SMS bot** | Conversational AI Voice |
 | **Image/video AI prompts** | Multimodal Creative Prompting |
@@ -242,6 +244,8 @@ Use the right master for the job. Voice stays constant.
 | **Event & launch** | `EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md` | Webinar, JV pack, PLF PLC |
 | **Partnership program** | `BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md` | Summit, JV, certification |
 | **10MDMS campaigns** | `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` | Motivation surge, fortress, Cool Marketing |
+| **Guru Blueprint / EBM content** | `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` | Free line, 3-brain, 4 styles, 10×7 |
+| **Content engine** | `CONTENT-ENGINE-METHODOLOGY.md` | 1→10 repurpose, platform native |
 | **CRM personalization** | `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` | Dynamic IF/THEN copy blocks |
 | **Multimodal creative** | `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` | Image/video AI prompts |
 | **Voice / conversational AI** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` | Phone AI, SMS, IVR scripts |

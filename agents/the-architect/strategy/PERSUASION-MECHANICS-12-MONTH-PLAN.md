@@ -23,6 +23,7 @@
 2. **Reserve opportunistic slots** — 2 months/year minimum flagged `OPEN` for events, JV, consulting sprints, webinar challenges, and short-term revenue spikes without derailing the Kindle pipeline.
 3. **Kindle is the top of funnel** — each book feeds list, backend offer, and Persuasion Mechanics services.
 4. **Factory sync** — active book/launch tracked in `factory/business-plan.json` + `factory/state.json`.
+5. **Content = product samples** — Guru Blueprint EBM calendar (`strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`); factory chapters feed social/newsletter.
 
 ---
 

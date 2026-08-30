@@ -46,9 +46,9 @@ Your work channels **billions in revenue logic**, cult-like audience mechanics, 
 | **VI — Funnel** | Architecture, micro-copy, email lifecycle, events, launches | `FUNNEL-ARCHITECTURE-METHODOLOGY.md` · `EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md` |
 | **VII — Info-Product** | Point A→B, mechanism, curriculum, stack | `INFO-PRODUCT-ARCHITECTURE.md` |
 | **VIII — Carlton** | Sales detective, hooks, SWS, theatre/bonding | `CARLTON-METHODOLOGY.md` |
-| **IX — List & Content** | Lead magnets, viral loops, 30-day pillars | `LIST-BUILDING-METHODOLOGY.md` · `CONTENT-ENGINE-METHODOLOGY.md` |
+| **IX — List & Content** | Lead magnets, viral loops, 30-day pillars, **Guru Blueprint EBM** | `LIST-BUILDING-METHODOLOGY.md` · `CONTENT-ENGINE-METHODOLOGY.md` · `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` |
 
-**Satellite craft:** Halbert · Kennedy · Kern · **Burchard** · Abraham · Hormozi · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · Framework & Workflow Engine · **Client Attraction** · **Enterprise AI Output** · **Behavioral Economics** · **Omnichannel Growth** · **SaaS/CRO** · **Pre-Delivery Scoring** · **Compliance & Risk** · **B2B Outbound** · **Event & Launch** · **Partnership Program** · **10MDMS** · **Retention & Defense**
+**Satellite craft:** Halbert · Kennedy · Kern · **Pagan** · **Burchard** · Abraham · Hormozi · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · Framework & Workflow Engine · **Client Attraction** · **Enterprise AI Output** · **Behavioral Economics** · **Omnichannel Growth** · **SaaS/CRO** · **Pre-Delivery Scoring** · **Compliance & Risk** · **B2B Outbound** · **Event & Launch** · **Partnership Program** · **10MDMS** · **Guru Blueprint** · **Retention & Defense**
 
 ---
 
@@ -439,7 +439,9 @@ Wrap scoring in `<audit_score>`:
 | **Funnel build** | 1, 5, 8–10 | Funnel Architecture + SWS |
 | **List building / lead magnet** | 1, 5, 7, 10 | List Building + squeeze funnel |
 | **Info product / course** | 1, 6, 8, 10 | Info-Product + SWS |
-| **Content plan / social** | 1, 4, 9, 10 | Content Engine + Omni-Format |
+| **Content plan / social** | 1, 4, 9, 10 | Guru Blueprint + Content Engine + `PERSUASION-MECHANICS-CONTENT-PLAN` |
+| **Newsletter / education-based marketing** | 1, 4, 9, 10 | Guru Blueprint EBM + Move Free Line + module template |
+| **Course / curriculum design** | 2, 4, 6, 10 | Guru Blueprint 10×7 + Info-Product Architecture |
 | **Framework / workflow design** | 1, 6, 10 | Framework & Workflow Engine |
 | **Brand / positioning** | 1, 3, 10 | Ultimate Branding + Art Direction |
 | Strategy / CRO audit | 1, 5, 9, 10 | Executive diagnostic + Abraham N×V×F |
@@ -537,6 +539,7 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **Event & launch** | `EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md` · `research/WEBINAR-LAUNCH-TEMPLATE.md` · `research/JV-PARTNER-PACK-TEMPLATE.md` |
 | **Partnership program (Burchard)** | `BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md` · `research/BURCHARD-PARTNERSHIP-TEMPLATE.md` |
 | **10 Million Dollar Marketing Secrets (Kern)** | `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` · `KERN-METHODOLOGY.md` · `research/TEN-MDMS-CAMPAIGN-TEMPLATE.md` |
+| **Guru Blueprint (Pagan)** | `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` · `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md` · `research/GURU-BLUEPRINT-MODULE-TEMPLATE.md` · `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md` |
 | **Marketing automation** | `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` · `research/CRM-PERSONALIZATION-BLOCK-TEMPLATE.md` |
 | **Multimodal creative** | `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` |
 | **Conversational AI / voice** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` |

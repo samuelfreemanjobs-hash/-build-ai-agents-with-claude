@@ -2,15 +2,34 @@
 
 Phase 3 of the Galactic Master System — viral growth, social iconography, and content planning. **One voice** — platform-native packaging, same author underneath.
 
+**Guru Blueprint layer:** `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` — education-based marketing, moving the free line, product-is-marketing, three-brain stack, four learning styles, 10×7 pillars.  
+**Applied plan:** `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`  
+**Templates:** `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md` · `research/GURU-BLUEPRINT-MODULE-TEMPLATE.md`
+
 **Paired:** `GODIN-BRAND-METHODOLOGY.md` · `CELEBRITY-BUILDING-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `MICRO-COPY-LAB.md` · `CLIENT-ATTRACTION-METHODOLOGY.md`
 
 ---
 
 ## Content Engine in One Sentence
 
-> **One master asset becomes ten platform-native pieces — authority, proof, story, and promo rotating on a 30-day calendar that feeds the funnel.**
+> **One master asset becomes ten platform-native pieces — authority, proof, story, and promo rotating on a 30-day calendar that feeds the funnel — every piece designed as a Guru Blueprint module (teach first, sample the product, install in 10 minutes).**
 
 ---
+
+## Guru Blueprint content design (default)
+
+Before repurposing, architect the **master module** (`PAGAN-GURU-BLUEPRINT-METHODOLOGY.md`):
+
+| Layer | Job |
+|---|---|
+| **Education-Based Marketing** | Teach → trust → offer (not pitch-first) |
+| **Move the Free Line** | Give best technique free; paid = complete system |
+| **Product = Marketing** | Factory chapter / course module = content source |
+| **Three-Brain Stack** | Reptilian hook → limbic story → neocortex framework |
+| **Four Learning Styles** | Why · What · How · What If in every module |
+| **10×7 Pillars** | Emotional needs → chapter titles → calendar months |
+
+**Weekly rhythm:** W1 WHY · W2 WHAT · W3 HOW · W4 WHAT IF + CTA
 
 ## The 1 → 10+ Content Engine
 
@@ -120,9 +139,12 @@ Adjust frequency per platform. Batch-create from one master asset per week.
 
 ## Content Engine Checklist
 
+- [ ] Guru Blueprint module complete (3-brain + 4 learning styles + 10-min install)
+- [ ] Traces to product spine (book/course/factory chapter)
+- [ ] Free line move — best technique, not scraps
 - [ ] Master asset identified for repurpose
 - [ ] 10+ derivatives planned
-- [ ] Four pillars balanced on calendar
+- [ ] Four pillars balanced on calendar (70% teach / 20% proof / 10% promo)
 - [ ] Platform-native rewrite (not copy-paste)
 - [ ] Funnel CTA on every piece (soft or hard)
 - [ ] Purple cow / screenshot test passed
@@ -130,4 +152,4 @@ Adjust frequency per platform. Batch-create from one master asset per week.
 
 ---
 
-See also: `GALACTIC-MASTER-PROMPT.md`, `ULTIMATE-BRANDING-METHODOLOGY.md`, `CRAFT-PLAYBOOKS.md` (Manifesto), `MEMORY.md` (daily headline learnings)
+See also: `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md`, `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`, `GALACTIC-MASTER-PROMPT.md`, `ULTIMATE-BRANDING-METHODOLOGY.md`, `CRAFT-PLAYBOOKS.md` (Manifesto), `MEMORY.md` (daily headline learnings)

@@ -4,7 +4,7 @@ Dedicated Engine III of the Galactic Master System. Architects **courses, progra
 
 **One voice** — product architecture informs copy; copy maps back to product spine. Not a separate mode.
 
-**Paired engines:** Schwartz (what market will buy) · Carlton (how to sell it) · This file (what to build)
+**Paired engines:** Schwartz (what market will buy) · Carlton (how to sell it) · **Pagan Guru Blueprint** (how to teach and sample it) · This file (what to build)
 
 ---
 
@@ -61,6 +61,8 @@ Run in order. Save outputs to `research/INFO-PRODUCT-ARCHITECTURE-TEMPLATE.md`.
 **Rule:** Every module must advance **exactly one rung**. No module without a rung assignment.
 
 ### Phase 3 — Curriculum Spine
+
+**Guru Blueprint 10×7:** Ten chapters from customer's strongest emotional needs; 7–10 bullets each; highest impact first. See `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md`.
 
 **Job:** Module architecture optimized for **belief + installation**, not content volume.
 
