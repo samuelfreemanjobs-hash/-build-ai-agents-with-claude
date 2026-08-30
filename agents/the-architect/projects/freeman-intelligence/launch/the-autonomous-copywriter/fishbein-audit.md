@@ -1,4 +1,4 @@
-# Fishbein Reasoned Action Audit — PM-001 The Autonomous Copywriter
+# Fishbein Reasoned Action Audit — FI-001 The Autonomous Copywriter
 
 **Methodology:** `MARKETING-EXPERTS-SKILLS-CANON.md`  
 **Status:** Draft — complete before Sep 24 ship
@@ -9,7 +9,7 @@
 
 | Field | Value |
 |---|---|
-| **Name** | The Autonomous Copywriter (PM-001) |
+| **Name** | The Autonomous Copywriter (FI-001) |
 | **Avatar** | Growth operator / marketer building AI agent systems |
 | **Primary CTA** | Join waitlist → buy Kindle + founding cohort |
 
@@ -31,7 +31,7 @@
 |---|---|
 | Psychology-first, not prompt-first | DR rubric install · Schwartz/Carlton lineage |
 | Multi-agent architecture | Chapter frameworks · implementation maps |
-| Operator credibility | PM-000 live · Samuel's Persuasion Mechanics brand |
+| Operator credibility | FI-000 live · Samuel's Freeman Intelligence brand |
 
 ### 3. Emotional readiness (excitement)
 
@@ -46,7 +46,7 @@
 | Belief to install | Evidence |
 |---|---|
 | AI can convert if architected correctly | Case patterns · rubric quick win |
-| Samuel is the architect for this | PM-000 · content spine · webinar |
+| Samuel is the architect for this | FI-000 · content spine · webinar |
 
 ### 5. Subjective norm (social proof)
 
@@ -54,7 +54,7 @@
 |---|---|
 | Early cohort interest | Waitlist count (when live) |
 | Peer operators | LinkedIn engagement · partner endorsements |
-| Published authority | PM-000 on Kindle |
+| Published authority | FI-000 on Kindle |
 
 ### 6. Perceived behavioral control
 

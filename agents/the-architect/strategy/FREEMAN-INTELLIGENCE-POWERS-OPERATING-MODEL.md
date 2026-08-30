@@ -1,13 +1,13 @@
-# Persuasion Mechanics — Melvin Powers Operating Model
+# Freeman Intelligence — Melvin Powers Operating Model
 
-**Run the business like Wilshire Book Company.** Samuel Freeman · Persuasion Mechanics  
+**Run the business like Wilshire Book Company.** Samuel Freeman · Freeman Intelligence  
 **Methodology:** `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` · `KENNEDY-SUCCESS-CANON-METHODOLOGY.md`
 
 ---
 
 ## Definite Chief Aim (Hill — read daily)
 
-> **By August 2027, Persuasion Mechanics owns a 10-title Kindle backlist, a buyer list of __ subscribers, and a backend that generates more revenue than royalties — with Samuel Freeman known as the Revenue Systems Engineer who built it from one live book and a kitchen-table factory.**
+> **By August 2027, Freeman Intelligence owns a 10-title Kindle backlist, a buyer list of __ subscribers, and a backend that generates more revenue than royalties — with Samuel Freeman known as the Revenue Systems Engineer who built it from one live book and a kitchen-table factory.**
 
 *Fill subscriber/revenue targets monthly.*
 
@@ -26,7 +26,7 @@ Kindle / social "classified" → Lead magnet "free details" → Email buyer list
 | **Classified** | LinkedIn · X · short ads · Kindle sample | CTR, opt-in rate |
 | **Free details** | Guru Blueprint installs · Toolkit · chapter PDF | Cost per lead |
 | **List** | Email (owned) | Subscribers · buyer % · open rate |
-| **Calling card** | PM-000 live + PM-001–010 pipeline | Units · **buyers acquired** |
+| **Calling card** | FI-000 live + FI-001–010 pipeline | Units · **buyers acquired** |
 | **Backend** | Cohort $497 · intensives · $10K builds | Attach rate · LTV |
 | **Backlist** | Full catalog + box set Aug 2027 | Cross-sell revenue % |
 
@@ -36,11 +36,11 @@ Kindle / social "classified" → Lead magnet "free details" → Email buyer list
 
 | Book | Calling card job | Backend it feeds |
 |---|---|---|
-| PM-000 *AI Product Design Mastery* | Proof · warm traffic | PM-001 · cohort |
-| PM-001 *Autonomous Copywriter* | Flagship list builder | Founding cohort $497 |
-| PM-002–004 | Systems / agency depth | Consulting · Agency course |
-| PM-005–007 | Implementation authority | VOC toolkit · Agent vault |
-| PM-008–010 | Capstone + flywheel | Box set · Year 2 RSE |
+| FI-000 *AI Product Design Mastery* | Proof · warm traffic | FI-001 · cohort |
+| FI-001 *Autonomous Copywriter* | Flagship list builder | Founding cohort $497 |
+| FI-002–004 | Systems / agency depth | Consulting · Agency course |
+| FI-005–007 | Implementation authority | VOC toolkit · Agent vault |
+| FI-008–010 | Capstone + flywheel | Box set · Year 2 RSE |
 
 **Back matter law (every title):** 2 prior books + 1 backend CTA + list opt-in.
 
@@ -75,9 +75,9 @@ Template: `research/POWERS-MAIL-ORDER-TEST-TEMPLATE.md`
 
 | Offer | Price | Trigger |
 |---|---|---|
-| Agent Prompt Vault | $47 | PM-007 buyers |
-| Founding cohort | $497 | PM-001 launch |
-| VOC Toolkit | $197 | PM-005 launch |
+| Agent Prompt Vault | $47 | FI-007 buyers |
+| Founding cohort | $497 | FI-001 launch |
+| VOC Toolkit | $197 | FI-005 launch |
 | Strategy intensive | $1,500 | M4 Dec |
 | Agency Sprint | $997 | M8 Apr |
 | Architecture sprint | $5K–$10K | Qualify from list |

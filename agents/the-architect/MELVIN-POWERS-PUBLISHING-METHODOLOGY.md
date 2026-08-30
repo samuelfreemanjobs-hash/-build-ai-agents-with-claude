@@ -1,10 +1,10 @@
 # Melvin Powers Publishing Methodology
 
-**Mail-order book empire operating system for The Architect.** Run Persuasion Mechanics like Wilshire Book Company — books as **calling cards**, list as **asset**, backend as **profit center**, backlist as **perpetual income**.
+**Mail-order book empire operating system for The Architect.** Run Freeman Intelligence like Wilshire Book Company — books as **calling cards**, list as **asset**, backend as **profit center**, backlist as **perpetual income**.
 
 **One voice.** Test one variable. Ask for every deal. Work should feel like fun.
 
-**Applied model:** `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md`  
+**Applied model:** `strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md`  
 **Mindset OS:** `KENNEDY-SUCCESS-CANON-METHODOLOGY.md` (Hill · Maltz · Ringer · Stone · Chu · Wilde)  
 **Paired:** `KENNEDY-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` · `BUSINESS-PLAN-METHODOLOGY.md` · `PRODUCTION-FACTORY.md`
 
@@ -16,7 +16,7 @@
 
 ---
 
-## Historical proof (why this fits Persuasion Mechanics)
+## Historical proof (why this fits Freeman Intelligence)
 
 Melvin Powers (Wilshire Book Company, est. 1967):
 
@@ -70,7 +70,7 @@ BACKLIST (catalog compounds · every book sells every other book)
 
 ## Mail-Order Modernization (2026)
 
-| Powers era | Persuasion Mechanics equivalent |
+| Powers era | Freeman Intelligence equivalent |
 |---|---|
 | Classified ad in magazine | Short LinkedIn post · X hook · $5/day Meta test |
 | "Send for free details" circular | Lead magnet · sample chapter · toolkit PDF |
@@ -99,7 +99,7 @@ BACKLIST (catalog compounds · every book sells every other book)
 
 ## Backend Menu (where Powers made "serious money")
 
-| Backend | Persuasion Mechanics offer |
+| Backend | Freeman Intelligence offer |
 |---|---|
 | **Seminars / workshops** | Agency Sprint $997 · OPEN month challenges |
 | **Records / courses** | Founding cohort $497 · VOC Toolkit $197 |
@@ -142,7 +142,7 @@ BACKLIST (catalog compounds · every book sells every other book)
 | Year | Powers move | PM equivalent |
 |---|---|---|
 | **Year 1** | Publish consistently; build catalog depth | 10 Kindle titles (factory) |
-| **Year 2** | Cross-sell entire catalog; box sets | Complete Persuasion Mechanics Box |
+| **Year 2** | Cross-sell entire catalog; box sets | Complete Freeman Intelligence Box |
 | **Ongoing** | Reprint · update · bundle · foreign rights | RSE empire · industrial niche editions |
 | **Acquire** | Rights to winners (Psycho-Cybernetics model) | Partner IP · licensed frameworks |
 
@@ -219,4 +219,4 @@ See `KENNEDY-SUCCESS-CANON-METHODOLOGY.md` for mindset stack.
 
 ---
 
-See also: `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md`, `KENNEDY-SUCCESS-CANON-METHODOLOGY.md`, `KENNEDY-METHODOLOGY.md`, `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md`
+See also: `strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md`, `KENNEDY-SUCCESS-CANON-METHODOLOGY.md`, `KENNEDY-METHODOLOGY.md`, `strategy/FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md`

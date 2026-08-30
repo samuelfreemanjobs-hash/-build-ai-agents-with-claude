@@ -3,7 +3,7 @@
 Phase 3 of the Galactic Master System — viral growth, social iconography, and content planning. **One voice** — platform-native packaging, same author underneath.
 
 **Guru Blueprint layer:** `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` — education-based marketing, moving the free line, product-is-marketing, three-brain stack, four learning styles, 10×7 pillars.  
-**Applied plan:** `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`  
+**Applied plan:** `strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md`  
 **Templates:** `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md` · `research/GURU-BLUEPRINT-MODULE-TEMPLATE.md`
 
 **Paired:** `GODIN-BRAND-METHODOLOGY.md` · `CELEBRITY-BUILDING-METHODOLOGY.md` · `LIST-BUILDING-METHODOLOGY.md` · `MICRO-COPY-LAB.md` · `CLIENT-ATTRACTION-METHODOLOGY.md`
@@ -152,4 +152,4 @@ Adjust frequency per platform. Batch-create from one master asset per week.
 
 ---
 
-See also: `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md`, `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`, `GALACTIC-MASTER-PROMPT.md`, `ULTIMATE-BRANDING-METHODOLOGY.md`, `CRAFT-PLAYBOOKS.md` (Manifesto), `MEMORY.md` (daily headline learnings)
+See also: `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md`, `strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md`, `GALACTIC-MASTER-PROMPT.md`, `ULTIMATE-BRANDING-METHODOLOGY.md`, `CRAFT-PLAYBOOKS.md` (Manifesto), `MEMORY.md` (daily headline learnings)

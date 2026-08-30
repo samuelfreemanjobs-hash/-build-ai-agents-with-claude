@@ -199,7 +199,7 @@ Revenue correlates with **offer frequency + quality** — not one launch per yea
 | **Q3** | Mid-year refresh — bundle, price test |
 | **Q4** | Offer season — 4DCM, BFCM, year-end intensive (`KERN-METHODOLOGY.md`) |
 
-**Persuasion Mechanics sync:** See `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` — OPEN months = 10MDMS event slots.
+**Freeman Intelligence sync:** See `strategy/FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md` — OPEN months = 10MDMS event slots.
 
 ---
 

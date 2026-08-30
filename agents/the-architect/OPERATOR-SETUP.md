@@ -1,4 +1,4 @@
-# Operator Setup — Samuel Freeman / Persuasion Mechanics
+# Operator Setup — Samuel Freeman / Freeman Intelligence
 
 **Do this once on your computer.** Keys live in `.env` locally and in GitHub Secrets for automated factory runs. **Never commit `.env`.**
 
@@ -30,7 +30,7 @@ cp .env.example .env
 
 ```bash
 the-architect factory status
-the-architect factory outline    # PM-001 — run once
+the-architect factory outline    # FI-001 — run once
 the-architect factory chapter --dry-run   # or first real chapter
 ```
 
@@ -50,7 +50,7 @@ Gemini is **not** used by the factory today — Claude runs all production. Gemi
 
 ---
 
-## 4. Hostinger (website) — for persuasionmechanics.com
+## 4. Hostinger (website) — for freemanintelligence.com
 
 **What it powers:** Landing pages · lead magnet capture · waitlist · cohort sales pages · DR rubric download
 
@@ -58,7 +58,7 @@ The Architect does not auto-deploy to Hostinger yet — you store credentials so
 
 ### A. Domain (if not done)
 
-1. Hostinger hPanel → **Domains** → register or connect `persuasionmechanics.com`
+1. Hostinger hPanel → **Domains** → register or connect `freemanintelligence.com`
 2. Point DNS to Hostinger nameservers if domain is elsewhere
 
 ### B. SFTP credentials (recommended)
@@ -69,8 +69,8 @@ The Architect does not auto-deploy to Hostinger yet — you store credentials so
 Add to `.env`:
 
 ```bash
-HOSTINGER_DOMAIN=persuasionmechanics.com
-HOSTINGER_SFTP_HOST=ftp.persuasionmechanics.com
+HOSTINGER_DOMAIN=freemanintelligence.com
+HOSTINGER_SFTP_HOST=ftp.freemanintelligence.com
 HOSTINGER_SFTP_USER=your-ftp-username
 HOSTINGER_SFTP_PASSWORD=your-ftp-password
 HOSTINGER_SFTP_PORT=21
@@ -79,7 +79,7 @@ HOSTINGER_SFTP_PORT=21
 ### C. WordPress (if using WordPress on Hostinger)
 
 ```bash
-HOSTINGER_WP_URL=https://persuasionmechanics.com/wp-admin
+HOSTINGER_WP_URL=https://freemanintelligence.com/wp-admin
 HOSTINGER_WP_USER=your-admin-username
 # Use app password or store in password manager — avoid plain text if possible
 HOSTINGER_WP_APP_PASSWORD=xxxx xxxx xxxx xxxx
@@ -97,8 +97,8 @@ HOSTINGER_API_TOKEN=your-token
 
 | Page | Path | Purpose |
 |---|---|---|
-| Home / brand | `/` | Persuasion Mechanics intro |
-| Waitlist | `/waitlist` | PM-001 launch |
+| Home / brand | `/` | Freeman Intelligence intro |
+| Waitlist | `/waitlist` | FI-001 launch |
 | DR Rubric | `/rubric` | Free line lead magnet |
 | Cohort | `/cohort` | Founding cohort $497 |
 
@@ -117,7 +117,7 @@ Includes: command dashboard · task kanban · marketing analytics · 12-month ca
 # hPanel → Directory Privacy → password-protect /ops/
 ```
 
-**URL:** `https://persuasionmechanics.com/ops/` (internal only)
+**URL:** `https://freemanintelligence.com/ops/` (internal only)
 
 ---
 
@@ -138,7 +138,7 @@ Hostinger credentials stay **local in `.env` only** — do not add FTP passwords
 # Confirm env loads (from repo root)
 python -c "from the_architect.config import get_api_key; print('Claude:', 'OK' if get_api_key() else 'MISSING')"
 
-# Start PM-001 factory
+# Start FI-001 factory
 the-architect factory outline
 the-architect factory chapter
 
@@ -169,4 +169,4 @@ the-architect chat
 
 ---
 
-See also: `BRAND-IDENTITY.md` · `PRODUCTION-FACTORY.md` · `projects/persuasion-mechanics/plans/2026-09-marketing-ops-plan.md`
+See also: `BRAND-IDENTITY.md` · `PRODUCTION-FACTORY.md` · `projects/freeman-intelligence/plans/2026-09-marketing-ops-plan.md`

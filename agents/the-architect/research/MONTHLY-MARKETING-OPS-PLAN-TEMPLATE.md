@@ -11,7 +11,7 @@
 |---|---|
 | **Month** | YYYY-MM (M__) |
 | **Mode** | LAUNCH / PRODUCE / OPEN / CAPSTONE |
-| **Primary product** | PM-___ |
+| **Primary product** | FI-___ |
 | **N×V×F lever** | N / V / F |
 | **Opportunistic (pre-approved)** | |
 
@@ -126,4 +126,4 @@
 
 ---
 
-Save to: `agents/the-architect/projects/persuasion-mechanics/plans/YYYY-MM-marketing-ops-plan.md`
+Save to: `agents/the-architect/projects/freeman-intelligence/plans/YYYY-MM-marketing-ops-plan.md`

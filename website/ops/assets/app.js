@@ -1,4 +1,4 @@
-/* Persuasion Mechanics — Internal Ops Portal */
+/* Freeman Intelligence — Internal Ops Portal */
 const DATA = {};
 let charts = {};
 let editingTaskId = null;

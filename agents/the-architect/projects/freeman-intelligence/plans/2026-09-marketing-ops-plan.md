@@ -12,7 +12,7 @@
 |---|---|
 | **Month** | 2026-09 (M1) |
 | **Mode** | LAUNCH |
-| **Primary product** | PM-001 *The Autonomous Copywriter* |
+| **Primary product** | FI-001 *The Autonomous Copywriter* |
 | **N×V×F lever** | **N** — list + awareness |
 | **Opportunistic (pre-approved)** | Soft launch webinar · 3 warm partner invites (no JV launch yet) |
 
@@ -23,9 +23,9 @@
 | Metric | Target | Actual (month-end) |
 |---|---|---|
 | New subscribers | 500 | |
-| PM-001 waitlist signups | 200 | |
+| FI-001 waitlist signups | 200 | |
 | Webinar registrants | 100 | |
-| Kindle units (PM-001) | 150 | |
+| Kindle units (FI-001) | 150 | |
 | Founding cohort seats ($497) | 20 | |
 | Chapters shipped | 12 | |
 | Tests run | 4 | |
@@ -42,9 +42,9 @@
 | Week | Style | Asset | Platform | CTA | Date |
 |---|---|---|---|---|---|
 | W1 | WHY | "AI slop doesn't convert" — origin story | LinkedIn story + X thread | Waitlist | Sep 1–7 |
-| W1 | WHY | Persuasion Mechanics brand intro carousel | LinkedIn | Follow + waitlist | Sep 3 |
+| W1 | WHY | Freeman Intelligence brand intro carousel | LinkedIn | Follow + waitlist | Sep 3 |
 | W2 | WHAT | Framework map — 4-layer persuasion stack | LinkedIn carousel | Waitlist | Sep 8–14 |
-| W2 | PROOF | PM-000 → PM-001 bridge post | LinkedIn | Kindle + waitlist | Sep 10 |
+| W2 | PROOF | FI-000 → FI-001 bridge post | LinkedIn | Kindle + waitlist | Sep 10 |
 | W3 | HOW | DR rubric 10-min install PDF (**free line**) | Lead magnet landing | Download → waitlist | Sep 15–21 |
 | W3 | HOW | Rubric walkthrough short video | LinkedIn / email | Pre-order tease | Sep 18 |
 | W4 | WHAT IF | Founding cohort vision — "what changes in 30 days" | LinkedIn + email | Webinar reg | Sep 22–28 |
@@ -60,7 +60,7 @@
 | 2 | Indoctrination #1 — WHY AI fails | Waitlist | Sep 8 | Download rubric (W3) |
 | 3 | Indoctrination #2 — Framework map | Waitlist | Sep 12 | Webinar save-the-date |
 | 4 | Indoctrination #3 — Free line delivery | Waitlist + leads | Sep 16 | Install rubric |
-| 5 | Indoctrination #4 — Proof + PM-000 bridge | All | Sep 20 | Pre-order |
+| 5 | Indoctrination #4 — Proof + FI-000 bridge | All | Sep 20 | Pre-order |
 | 6–10 | Launch sequence (5 emails) | Waitlist + buyers | Sep 24–30 | Kindle + cohort $497 |
 
 ### Launches & campaigns
@@ -69,7 +69,7 @@
 |---|---|---|---|
 | Waitlist + soft brand launch | Sep 1 | Sep 30 | Landing page · welcome email |
 | DR rubric free line | Sep 15 | Evergreen | PDF · capture page · tags |
-| PM-001 Kindle pre-order / launch | Sep 22 | Sep 30 | Cover · description · back matter |
+| FI-001 Kindle pre-order / launch | Sep 22 | Sep 30 | Cover · description · back matter |
 | Founding cohort $497 | Sep 25 | Oct 2 (72h) | Sales page · onboarding doc |
 | Soft webinar | Sep 28 | Live | Deck · replay email |
 
@@ -93,7 +93,7 @@
 
 | Asset | Live date | Capture path |
 |---|---|---|
-| DR Rubric 10-Min Install PDF | Sep 15 | persuasionmechanics.com/rubric (TBD) → ESP tag `lead_rubric` |
+| DR Rubric 10-Min Install PDF | Sep 15 | freemanintelligence.com/rubric (TBD) → ESP tag `lead_rubric` |
 
 ---
 
@@ -115,10 +115,10 @@
 | Deliverable | Date | Owner |
 |---|---|---|
 | Outline complete | Sep 7 | Factory |
-| Kindle publish (PM-001) | Sep 28 | Samuel |
+| Kindle publish (FI-001) | Sep 28 | Samuel |
 | Launch assets pack | Sep 24 | Architect |
 | Founding cohort page live | Sep 25 | Samuel |
-| Back matter (PM-000 cross-sell) | Sep 24 | Architect |
+| Back matter (FI-000 cross-sell) | Sep 24 | Architect |
 
 ### Backend / fulfillment
 
@@ -140,7 +140,7 @@
 
 - [ ] CRM/tags updated for month campaigns
 - [ ] Ad disclaimers reviewed (LinkedIn $50 test)
-- [ ] `factory/state.json` synced — active PM-001
+- [ ] `factory/state.json` synced — active FI-001
 - [ ] `ANTHROPIC_API_KEY` in `.env` + GitHub secret
 - [ ] Launch audits complete: 4P + Fishbein (`projects/.../launch/the-autonomous-copywriter/`)
 
@@ -165,4 +165,4 @@
 
 ---
 
-**Next:** `2026-10-marketing-ops-plan.md` (PM-007 + Agent Vault tripwire) — draft by Sep 25.
+**Next:** `2026-10-marketing-ops-plan.md` (FI-007 + Agent Vault tripwire) — draft by Sep 25.

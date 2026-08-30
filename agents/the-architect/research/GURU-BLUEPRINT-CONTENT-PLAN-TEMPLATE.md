@@ -2,7 +2,7 @@
 
 **Methodology:** `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md`  
 **Repurpose:** `CONTENT-ENGINE-METHODOLOGY.md` (1→10 engine)  
-**Applied example:** `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`
+**Applied example:** `strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md`
 
 ---
 

@@ -2,7 +2,7 @@
 # Protect internal ops portal with password
 
 AuthType Basic
-AuthName "Persuasion Mechanics Ops"
+AuthName "Freeman Intelligence Ops"
 AuthUserFile /home/USER/.htpasswd
 Require valid-user
 

@@ -1,4 +1,4 @@
-# OPEN Month Playbook — Persuasion Mechanics
+# OPEN Month Playbook — Freeman Intelligence
 
 **When to use:** Month mode = `OPEN` — no new Kindle manuscript. Opportunistic revenue only.  
 **Scheduled OPEN months:** M5 (Jan 2027) · M8 (Apr 2027)  
@@ -13,7 +13,7 @@
 | **No factory manuscript** | Do not register a new book in `factory/state.json` |
 | **≤100% capacity on opportunistic** | Full month available for challenges, workshops, JV, back-catalog |
 | **Overlay in PRODUCE months** | Opportunistic plays ≤20% capacity — never pause active book |
-| **Plan before ship** | Expand month detail in `projects/persuasion-mechanics/plans/YYYY-MM-marketing-ops-plan.md` |
+| **Plan before ship** | Expand month detail in `projects/freeman-intelligence/plans/YYYY-MM-marketing-ops-plan.md` |
 | **One primary play** | One flagship OPEN campaign per month — no scatter |
 
 ---
@@ -21,7 +21,7 @@
 ## M5 — New Year Challenge (Jan 2027)
 
 **Lever:** N (list) + V (conversion)  
-**Primary play:** 5-day **Persuasion Mechanics Challenge** — "Install Your DR Rubric in 5 Days"  
+**Primary play:** 5-day **Freeman Intelligence Challenge** — "Install Your DR Rubric in 5 Days"  
 **Backend:** Back-catalog bundle + founding cohort re-open (limited seats)
 
 ### Week structure
@@ -42,7 +42,7 @@
 - [ ] Email sequence (6 emails: reg → D1–D5 → close)
 - [ ] Partner swipe pack (`JV-PARTNER-PACK-TEMPLATE.md`)
 - [ ] Burchard co-host outreach (3–5 partners) (`BURCHARD-PARTNERSHIP-TEMPLATE.md`)
-- [ ] Back-catalog bundle checkout (PM-000 + PM-001–004 if live)
+- [ ] Back-catalog bundle checkout (FI-000 + FI-001–004 if live)
 
 ### Metrics (name at month start)
 
@@ -67,7 +67,7 @@
 
 **Lever:** V (high-ticket) + F (frequency via consulting pipeline)  
 **Primary play:** Live **Agency Sprint** — $997 · 2-day virtual workshop  
-**Backend:** PM-004 presell · $5K architecture sprint applications
+**Backend:** FI-004 presell · $5K architecture sprint applications
 
 ### Week structure
 
@@ -76,7 +76,7 @@
 | **W1** | Presell + applications | Workshop sales page · early-bird |
 | **W2** | Proof + curriculum lock | Agenda · workbook draft |
 | **W3** | Live delivery | 2× 3hr sessions + Q&A |
-| **W4** | Replay + PM-004 presell | Limited replay · application CTA |
+| **W4** | Replay + FI-004 presell | Limited replay · application CTA |
 
 ### Assets checklist
 
@@ -95,7 +95,7 @@
 | Show-up rate | |
 | NPS | |
 | $5K applications | |
-| PM-004 waitlist adds | |
+| FI-004 waitlist adds | |
 
 ### Templates
 

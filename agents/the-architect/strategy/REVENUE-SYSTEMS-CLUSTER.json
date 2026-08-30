@@ -2,12 +2,12 @@
   "cluster_version": 1,
   "name": "Revenue Systems Empire",
   "author": "Samuel Freeman",
-  "brand": "Persuasion Mechanics",
-  "flagship_id": "PM-050",
+  "brand": "Freeman Intelligence",
+  "flagship_id": "FI-050",
   "trilogy": [
     {
       "role": "flagship",
-      "id": "PM-050",
+      "id": "FI-050",
       "title": "Revenue Systems Engineering™",
       "subtitle": "How to Engineer Predictable, Self-Sustaining Profit Machines in Any Business",
       "target_pages": "200-280",
@@ -15,7 +15,7 @@
     },
     {
       "role": "companion_acquisition",
-      "id": "PM-051",
+      "id": "FI-051",
       "title": "The Growth Machine Blueprint",
       "subtitle": "Engineering Customer Acquisition Systems That Scale Themselves",
       "aliases": ["The Marketing Machine Blueprint", "The Marketing Machine Framework™"],
@@ -24,7 +24,7 @@
     },
     {
       "role": "companion_industrial",
-      "id": "PM-093",
+      "id": "FI-093",
       "title": "Industrial Demand Machine",
       "subtitle": "Lead Generation and Revenue Architecture for Logistics, Manufacturing & Industrial Firms",
       "aliases": ["Industrial Demand Engine"],
@@ -33,11 +33,11 @@
     }
   ],
   "lead_magnets": [
-    {"id": "PM-LM-01", "title": "The Revenue Systems Engineer's Toolkit", "pages": "50-80", "audience": "all operators"},
-    {"id": "PM-LM-02", "title": "The AI Ops Playbook for SMBs", "pages": "50-80", "audience": "SMB owners"},
-    {"id": "PM-LM-03", "title": "Fast Revenue Fixes for Manufacturers & 3PLs", "pages": "50-100", "audience": "industrial"},
-    {"id": "PM-LM-04", "title": "Industrial Marketing Command Codes", "pages": "50-80", "audience": "industrial"},
-    {"id": "PM-LM-05", "title": "Hidden Revenue Extraction Field Guide", "pages": "50-80", "audience": "leak audit hook"}
+    {"id": "FI-LM-01", "title": "The Revenue Systems Engineer's Toolkit", "pages": "50-80", "audience": "all operators"},
+    {"id": "FI-LM-02", "title": "The AI Ops Playbook for SMBs", "pages": "50-80", "audience": "SMB owners"},
+    {"id": "FI-LM-03", "title": "Fast Revenue Fixes for Manufacturers & 3PLs", "pages": "50-100", "audience": "industrial"},
+    {"id": "FI-LM-04", "title": "Industrial Marketing Command Codes", "pages": "50-80", "audience": "industrial"},
+    {"id": "FI-LM-05", "title": "Hidden Revenue Extraction Field Guide", "pages": "50-80", "audience": "leak audit hook"}
   ],
   "owned_themes": [
     {"theme": "Engineer revenue like a production line", "position": "blue-ocean authority"},
@@ -47,10 +47,10 @@
     {"theme": "Direct-response + engineering", "position": "unique authority stack"}
   ],
   "production_phases": [
-    {"phase": 0, "when": "Y2 week 0 / M12 capstone", "deliverables": ["PM-LM-01", "PM-LM-04"]},
-    {"phase": 1, "when": "Y2 Q1", "deliverables": ["PM-051"]},
-    {"phase": 2, "when": "Y2 Q1-Q2", "deliverables": ["PM-093"]},
-    {"phase": 3, "when": "Y2 Q2", "deliverables": ["PM-050"]},
+    {"phase": 0, "when": "Y2 week 0 / M12 capstone", "deliverables": ["FI-LM-01", "FI-LM-04"]},
+    {"phase": 1, "when": "Y2 Q1", "deliverables": ["FI-051"]},
+    {"phase": 2, "when": "Y2 Q1-Q2", "deliverables": ["FI-093"]},
+    {"phase": 3, "when": "Y2 Q2", "deliverables": ["FI-050"]},
     {"phase": 4, "when": "Y2 Q3", "deliverables": ["revenue_systems_box", "cohort_997"]},
     {"phase": 5, "when": "Y2 Q4", "deliverables": ["shadow_cmo", "industrial_builds"]}
   ],

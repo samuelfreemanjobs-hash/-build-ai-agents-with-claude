@@ -140,7 +140,7 @@ Use `INVOCATION.md` structure. Init project: `architect_init_project`.
 | **Webinar / PLF / JV launch** | Event Launch + webinar or JV template |
 | **Partnership program / summit / co-host** | Burchard Partnership + JV template |
 | **10MDMS campaign / follow-up fortress** | Ten MDMS + Kern + Event Launch |
-| **Content plan / social calendar / newsletter** | Guru Blueprint + Content Engine + `PERSUASION-MECHANICS-CONTENT-PLAN` |
+| **Content plan / social calendar / newsletter** | Guru Blueprint + Content Engine + `FREEMAN-INTELLIGENCE-CONTENT-PLAN` |
 | **Course curriculum / 10×7 spine** | Guru Blueprint + Info-Product Architecture |
 | **CRM automation flows** | Marketing Automation Personalization |
 | **Voice AI / SMS bot** | Conversational AI Voice |
@@ -255,7 +255,7 @@ Use the right master for the job. Voice stays constant.
 | **Marketing & ops planning** | `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` | All marketing + ops must be planned |
 | **Melvin Powers publishing** | `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` | Mail-order book empire, backlist, testing |
 | **Success canon mindset** | `KENNEDY-SUCCESS-CANON-METHODOLOGY.md` | Hill, Maltz, Ringer, Stone, Chu, Wilde |
-| **Persuasion Mechanics brand** | `BRAND-IDENTITY.md` | Samuel Freeman, product catalog, positioning |
+| **Freeman Intelligence brand** | `BRAND-IDENTITY.md` | Samuel Freeman, product catalog, positioning |
 | Market diagnosis | `SCHWARTZ-METHODOLOGY.md` | Mass desire → awareness × sophistication → headline strategy |
 | Mental entry | `COLLIER-METHODOLOGY.md` | Enter conversation in progress; bait; emotion before reason |
 | Headlines & testing | `CAPLES-METHODOLOGY.md` | 10 variants; story/specificity; split-run discipline |

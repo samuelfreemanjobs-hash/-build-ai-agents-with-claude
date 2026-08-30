@@ -1,4 +1,4 @@
-# KPI Definitions — Persuasion Mechanics
+# KPI Definitions — Freeman Intelligence
 
 **Purpose:** Single source of truth for metrics referenced across plans, scorecards, and GOO reviews.  
 **Refresh:** Name numeric targets monthly in the active `projects/.../plans/YYYY-MM-marketing-ops-plan.md`.
@@ -14,7 +14,7 @@
 | **Backend revenue %** | Non-royalty revenue ÷ total revenue | Monthly | >50% |
 | **Buyer attach rate** | Book buyers who purchase backend within 90 days | Backend buyers ÷ book buyers | ↑ |
 | **LTV:CAC** | Lifetime value ÷ customer acquisition cost | Cohort-based | >3:1 |
-| **Catalog depth** | Live Kindle titles (PM-000 + pipeline) | Count | 11 |
+| **Catalog depth** | Live Kindle titles (FI-000 + pipeline) | Count | 11 |
 | **Chapters shipped** | Factory chapters completed | `factory/state.json` history | Per plan |
 | **Tests run** | Powers one-variable tests logged | Weekly GOO | ≥1/week |
 | **Partner asks** | Outbound JV/speak/deal requests sent | Manual log | ≥4/month |
@@ -67,13 +67,13 @@
 | Tests run | |
 | Asks made | |
 
-Source: `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md`
+Source: `strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md`
 
 ---
 
 ## Launch-specific (per product)
 
-| KPI | PM-001 example |
+| KPI | FI-001 example |
 |---|---|
 | Waitlist signups | Pre-launch |
 | Webinar registrants | Soft launch W3–W4 |

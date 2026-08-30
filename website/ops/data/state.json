@@ -3,29 +3,29 @@
   "active_book": {
     "project_slug": "the-autonomous-copywriter",
     "title": "The Autonomous Copywriter",
-    "brief": "How to Engineer Multi-Agent Marketing Systems That Research, Write, and Convert at Scale. Hook: Prompts don't convert—psychology does. Avatar: growth operators and marketers building AI agent systems. Author: Samuel Freeman, Persuasion Mechanics.",
+    "brief": "How to Engineer Multi-Agent Marketing Systems That Research, Write, and Convert at Scale. Hook: Prompts don't convert—psychology does. Avatar: growth operators and marketers building AI agent systems. Author: Samuel Freeman, Freeman Intelligence.",
     "total_chapters": 12,
     "chapters_completed": 0,
     "next_chapter": 1,
     "outline_file": "outline.md",
     "last_chapter_date": null,
     "registered_at": "2026-09-01T00:00:00+00:00",
-    "product_id": "PM-001",
+    "product_id": "FI-001",
     "plan_month": "2026-09"
   },
   "active_launch": null,
   "queue": {
     "books": [
-      {"slug": "the-autonomous-copywriter", "title": "The Autonomous Copywriter", "product_id": "PM-001", "plan_month": "2026-09"},
-      {"slug": "building-direct-response-ai-agents", "title": "Building Direct-Response AI Agents", "product_id": "PM-007", "plan_month": "2026-10"},
-      {"slug": "the-ai-direct-response-playbook", "title": "The AI Direct-Response Playbook", "product_id": "PM-010", "plan_month": "2026-11"},
-      {"slug": "the-autonomous-revenue-engine", "title": "The Autonomous Revenue Engine", "product_id": "PM-002", "plan_month": "2026-12"},
-      {"slug": "breakthrough-ai", "title": "Breakthrough AI", "product_id": "PM-003", "plan_month": "2027-02"},
-      {"slug": "engineered-persuasion", "title": "Engineered Persuasion", "product_id": "PM-005", "plan_month": "2027-03"},
-      {"slug": "the-1-person-agency-engine", "title": "The 1-Person Agency Engine", "product_id": "PM-004", "plan_month": "2027-05"},
-      {"slug": "the-agentic-funnel", "title": "The Agentic Funnel", "product_id": "PM-006", "plan_month": "2027-06"},
-      {"slug": "the-machine-speed-mechanism", "title": "The Machine-Speed Mechanism", "product_id": "PM-008", "plan_month": "2027-07"},
-      {"slug": "the-zero-click-sales-machine", "title": "The Zero-Click Sales Machine", "product_id": "PM-009", "plan_month": "2027-08"}
+      {"slug": "the-autonomous-copywriter", "title": "The Autonomous Copywriter", "product_id": "FI-001", "plan_month": "2026-09"},
+      {"slug": "building-direct-response-ai-agents", "title": "Building Direct-Response AI Agents", "product_id": "FI-007", "plan_month": "2026-10"},
+      {"slug": "the-ai-direct-response-playbook", "title": "The AI Direct-Response Playbook", "product_id": "FI-010", "plan_month": "2026-11"},
+      {"slug": "the-autonomous-revenue-engine", "title": "The Autonomous Revenue Engine", "product_id": "FI-002", "plan_month": "2026-12"},
+      {"slug": "breakthrough-ai", "title": "Breakthrough AI", "product_id": "FI-003", "plan_month": "2027-02"},
+      {"slug": "engineered-persuasion", "title": "Engineered Persuasion", "product_id": "FI-005", "plan_month": "2027-03"},
+      {"slug": "the-1-person-agency-engine", "title": "The 1-Person Agency Engine", "product_id": "FI-004", "plan_month": "2027-05"},
+      {"slug": "the-agentic-funnel", "title": "The Agentic Funnel", "product_id": "FI-006", "plan_month": "2027-06"},
+      {"slug": "the-machine-speed-mechanism", "title": "The Machine-Speed Mechanism", "product_id": "FI-008", "plan_month": "2027-07"},
+      {"slug": "the-zero-click-sales-machine", "title": "The Zero-Click Sales Machine", "product_id": "FI-009", "plan_month": "2027-08"}
     ],
     "launches": []
   },

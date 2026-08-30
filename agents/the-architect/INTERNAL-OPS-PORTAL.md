@@ -1,6 +1,6 @@
-# Internal Ops Portal — Persuasion Mechanics
+# Internal Ops Portal — Freeman Intelligence
 
-**URL (after deploy):** `https://persuasionmechanics.com/ops/`  
+**URL (after deploy):** `https://freemanintelligence.com/ops/`  
 **Access:** Internal only — password-protect with `.htaccess`  
 **Source:** `website/ops/`
 
@@ -37,7 +37,7 @@ Upload entire `website/ops/` folder to:
 public_html/ops/
 ```
 
-Or subdomain: `ops.persuasionmechanics.com`
+Or subdomain: `ops.freemanintelligence.com`
 
 Use credentials from `.env` (`HOSTINGER_SFTP_*`).
 

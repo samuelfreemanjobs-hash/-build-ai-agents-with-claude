@@ -3,7 +3,7 @@
 **Strategic planning layer for The Architect.** Rolling 12-month horizons with reserved opportunistic slots — so long-term product discipline and short-term revenue spikes coexist.
 
 **Template:** `research/12-MONTH-BUSINESS-PLAN-TEMPLATE.md`  
-**Example:** `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` (Samuel Freeman / Persuasion Mechanics)
+**Example:** `strategy/FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md` (Samuel Freeman / Freeman Intelligence)
 
 ---
 

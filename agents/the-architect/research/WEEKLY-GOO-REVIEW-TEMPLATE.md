@@ -2,7 +2,7 @@
 
 **GOO** = Get Out Of the Office — diagnose the **weakest funnel stage** before scaling spend or content.
 
-**Methodology:** `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` · `PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md`  
+**Methodology:** `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` · `FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md`  
 **Cadence:** Every Friday · 30 minutes max
 
 ---
@@ -12,7 +12,7 @@
 | Field | Value |
 |---|---|
 | **Month** | YYYY-MM (M__) |
-| **Active product** | PM-___ |
+| **Active product** | FI-___ |
 | **Primary lever** | N / V / F |
 
 ---
@@ -81,4 +81,4 @@ Definitions: `strategy/KPI-DEFINITIONS.md`
 
 ---
 
-Save to: `projects/persuasion-mechanics/reviews/YYYY-Www-goo.md`
+Save to: `projects/freeman-intelligence/reviews/YYYY-Www-goo.md`

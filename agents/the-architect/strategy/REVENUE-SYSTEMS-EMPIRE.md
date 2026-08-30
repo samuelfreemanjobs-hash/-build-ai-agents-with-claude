@@ -1,6 +1,6 @@
 # Revenue Systems Empire — 3-Book Cluster & Funnel
 
-**Samuel Freeman · Revenue Systems Engineer · Persuasion Mechanics**  
+**Samuel Freeman · Revenue Systems Engineer · Freeman Intelligence**  
 **Decision:** Build the 3-book revenue systems empire (flagship + 2 tactical companions)  
 **Machine index:** `strategy/REVENUE-SYSTEMS-CLUSTER.json`
 
@@ -10,11 +10,11 @@
 
 | Role | ID | Title | Subtitle | Pages | Job |
 |---|---|---|---|---|---|
-| **FLAGSHIP** | PM-050 | **Revenue Systems Engineering™** | How to Engineer Predictable, Self-Sustaining Profit Machines in Any Business | 200–280 | Own the category · backend course · consulting anchor |
-| **COMPANION A** | PM-051 | **The Growth Machine Blueprint** | Engineering Customer Acquisition Systems That Scale Themselves | 120–180 | Acquisition systems · AI agents · funnels · feedback loops |
-| **COMPANION B** | PM-093 | **Industrial Demand Machine** | Lead Generation and Revenue Architecture for Logistics, Manufacturing & Industrial Firms | 120–180 | Underserved niche · premium B2B buyers · logistics credibility |
+| **FLAGSHIP** | FI-050 | **Revenue Systems Engineering™** | How to Engineer Predictable, Self-Sustaining Profit Machines in Any Business | 200–280 | Own the category · backend course · consulting anchor |
+| **COMPANION A** | FI-051 | **The Growth Machine Blueprint** | Engineering Customer Acquisition Systems That Scale Themselves | 120–180 | Acquisition systems · AI agents · funnels · feedback loops |
+| **COMPANION B** | FI-093 | **Industrial Demand Machine** | Lead Generation and Revenue Architecture for Logistics, Manufacturing & Industrial Firms | 120–180 | Underserved niche · premium B2B buyers · logistics credibility |
 
-**Also published as lead magnets (50–120 pp):** PM-LM-01 Toolkit · PM-LM-03 Fast Revenue Fixes · PM-LM-04 Command Codes
+**Also published as lead magnets (50–120 pp):** FI-LM-01 Toolkit · FI-LM-03 Fast Revenue Fixes · FI-LM-04 Command Codes
 
 ---
 
@@ -54,10 +54,10 @@ Industrial: Done-with-you Demand Machine build ($10K–$25K)
 
 | Asset | ID | Format | Audience |
 |---|---|---|---|
-| The Revenue Systems Engineer's Toolkit | PM-LM-01 | PDF / Kindle short | All operators |
-| Industrial Marketing Command Codes | PM-LM-04 | PDF / Kindle short | Logistics · mfg · 3PL |
-| Fast Revenue Fixes for Manufacturers & 3PLs | PM-LM-03 | PDF / Kindle short | Industrial warm traffic |
-| Hidden Revenue Extraction Field Guide | PM-LM-05 | PDF | Leak-audit hook |
+| The Revenue Systems Engineer's Toolkit | FI-LM-01 | PDF / Kindle short | All operators |
+| Industrial Marketing Command Codes | FI-LM-04 | PDF / Kindle short | Logistics · mfg · 3PL |
+| Fast Revenue Fixes for Manufacturers & 3PLs | FI-LM-03 | PDF / Kindle short | Industrial warm traffic |
+| Hidden Revenue Extraction Field Guide | FI-LM-05 | PDF | Leak-audit hook |
 
 ### Core offers
 
@@ -73,7 +73,7 @@ Industrial: Done-with-you Demand Machine build ($10K–$25K)
 | Offer | Price | Delivers |
 |---|---|---|
 | Revenue Systems Cohort | $997 | 6-week implementation · weekly office hours |
-| Marketing Machine Framework™ Toolkit | $297 | Templates from PM-099 framework book |
+| Marketing Machine Framework™ Toolkit | $297 | Templates from FI-099 framework book |
 | Shadow CMO Retainer | $5K/mo | Fractional architecture + agent oversight |
 
 ### High-touch
@@ -138,10 +138,10 @@ See `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` — pre-write all fortress ema
 
 | Phase | When | Deliverable |
 |---|---|---|
-| **Phase 0** | M12 Aug 2027 capstone week | Publish PM-LM-01 Toolkit + PM-LM-04 Command Codes |
-| **Phase 1** | Y2 Q1 | PM-051 Growth Machine Blueprint (Kindle) |
-| **Phase 2** | Y2 Q1–Q2 | PM-093 Industrial Demand Machine (Kindle) |
-| **Phase 3** | Y2 Q2 | PM-050 Revenue Systems Engineering™ (FLAGSHIP) |
+| **Phase 0** | M12 Aug 2027 capstone week | Publish FI-LM-01 Toolkit + FI-LM-04 Command Codes |
+| **Phase 1** | Y2 Q1 | FI-051 Growth Machine Blueprint (Kindle) |
+| **Phase 2** | Y2 Q1–Q2 | FI-093 Industrial Demand Machine (Kindle) |
+| **Phase 3** | Y2 Q2 | FI-050 Revenue Systems Engineering™ (FLAGSHIP) |
 | **Phase 4** | Y2 Q3 | Revenue Systems Box + Cohort launch |
 | **Phase 5** | Y2 Q4 | Shadow CMO + industrial high-touch push |
 
@@ -149,7 +149,7 @@ See `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` — pre-write all fortress ema
 
 ## Chapter outlines (factory-ready stubs)
 
-### PM-050 — Revenue Systems Engineering™ (12 chapters)
+### FI-050 — Revenue Systems Engineering™ (12 chapters)
 
 1. The Revenue Systems Engineer — category definition  
 2. Production-Line Thinking Applied to Profit  
@@ -164,7 +164,7 @@ See `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` — pre-write all fortress ema
 11. Deployment: 90-Day Revenue Systems Rollout  
 12. Case Studies: Info · SaaS · Industrial  
 
-### PM-051 — The Growth Machine Blueprint (10 chapters)
+### FI-051 — The Growth Machine Blueprint (10 chapters)
 
 1. What a Growth Machine Is (and Isn't)  
 2. Customer Acquisition as a System  
@@ -177,7 +177,7 @@ See `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` — pre-write all fortress ema
 9. Scale vs Break: Capacity Planning  
 10. Blueprint: Build Your Machine in 30 Days  
 
-### PM-093 — Industrial Demand Machine (10 chapters)
+### FI-093 — Industrial Demand Machine (10 chapters)
 
 1. Why Industrial Marketing Is Different  
 2. The Lean Revenue System (DMAIC + DR)  
@@ -194,7 +194,7 @@ See `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` — pre-write all fortress ema
 
 ## Cross-sell from existing Kindle readers
 
-*AI Product Design Mastery* readers → PM-LM-01 Toolkit → PM-051 Growth Machine → PM-050 Flagship
+*AI Product Design Mastery* readers → FI-LM-01 Toolkit → FI-051 Growth Machine → FI-050 Flagship
 
 **Back-matter line:**
 
@@ -205,11 +205,11 @@ See `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` — pre-write all fortress ema
 ## Factory commands (when ready)
 
 ```bash
-# Set active book in factory/state.json to PM-050, PM-051, or PM-093
-the-architect factory outline --book PM-050
-the-architect factory chapter --book PM-050 --chapter 1
+# Set active book in factory/state.json to FI-050, FI-051, or FI-093
+the-architect factory outline --book FI-050
+the-architect factory chapter --book FI-050 --chapter 1
 ```
 
 ---
 
-**Next factory action:** Outline PM-LM-01 Toolkit first (fast lead magnet) while Year 1 Kindle pipeline runs.
+**Next factory action:** Outline FI-LM-01 Toolkit first (fast lead magnet) while Year 1 Kindle pipeline runs.

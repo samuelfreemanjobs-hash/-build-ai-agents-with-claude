@@ -1,9 +1,9 @@
-# Brand Identity — Persuasion Mechanics
+# Brand Identity — Freeman Intelligence
 
 **Author:** Samuel Freeman  
 **Title:** Chief Persuasion Architect · **Revenue Systems Engineer**  
-**Business:** Persuasion Mechanics  
-**Niche:** AI · AI agents · copywriting · marketing · direct-response · product design · revenue systems · growth architecture
+**Business:** Freeman Intelligence  
+**Niche:** AI · AI agents · copywriting · marketing · direct-response · product design · revenue systems · growth architecture · intelligence systems
 
 ---
 
@@ -11,20 +11,20 @@
 
 | Title | Channel | Status | Role in ladder |
 |---|---|---|---|
-| **AI Product Design Mastery** | Amazon Kindle (KDP) | **LIVE** | Proof of authority · entry point · bridges product design → persuasion systems |
+| **AI Product Design Mastery** | Amazon Kindle (KDP) | **LIVE** | Proof of authority · entry point · bridges product design → intelligence systems |
 
 **Ascension path for existing readers:**  
-*AI Product Design Mastery* → *The Autonomous Copywriter* (next in factory) → backend cohort / Persuasion Mechanics services.
+*AI Product Design Mastery* → *The Autonomous Copywriter* (next in factory) → backend cohort / Freeman Intelligence services.
 
 Cross-sell line (use in back matter, email, site):
 
-> *You mastered AI product design. Now engineer the persuasion layer — multi-agent systems that research, write, and convert.*
+> *You mastered AI product design. Now engineer the intelligence layer — multi-agent systems that research, write, and convert.*
 
 ---
 
 ## Positioning (one sentence)
 
-> **Samuel Freeman engineers revenue systems — logistics, AI agents, direct-response psychology, and growth architecture wired into one machine — for operators who sell with words.**
+> **Samuel Freeman engineers revenue systems through Freeman Intelligence — AI agents, direct-response psychology, and growth architecture wired into one machine — for operators who sell with words.**
 
 **Dual title logic:** *Chief Persuasion Architect* owns the **psychology layer**; *Revenue Systems Engineer* owns the **architecture layer** (funnels, metrics, martech, agent runtime, launch ops).
 
@@ -34,7 +34,7 @@ Cross-sell line (use in back matter, email, site):
 
 **Own:** *Revenue Systems Engineering™* — the engineering method applied to profit: systems, automation, throughput, constraints, flow.
 
-**Bridge from published work:** *AI Product Design Mastery* owns **product**; *Persuasion Mechanics* owns **persuasion + conversion**; *Revenue Systems Engineering™* owns **architecture + logistics + growth machines**.
+**Bridge from published work:** *AI Product Design Mastery* owns **product**; *Freeman Intelligence* owns **persuasion + conversion + intelligence systems**; *Revenue Systems Engineering™* owns **architecture + logistics + growth machines**.
 
 ---
 
@@ -42,7 +42,7 @@ Cross-sell line (use in back matter, email, site):
 
 ```
 Samuel Freeman
-Chief Persuasion Architect · Revenue Systems Engineer, Persuasion Mechanics
+Chief Persuasion Architect · Revenue Systems Engineer, Freeman Intelligence
 Author of AI Product Design Mastery (Kindle)
 ```
 
@@ -54,25 +54,25 @@ Kindle author page · website footer · email signature · course intros · Link
 
 ### Short (Twitter / ad byline — 160 chars)
 
-Samuel Freeman — Chief Persuasion Architect at Persuasion Mechanics. Author of *AI Product Design Mastery*. Builds autonomous AI systems that sell.
+Samuel Freeman — Chief Persuasion Architect at Freeman Intelligence. Author of *AI Product Design Mastery*. Builds autonomous AI systems that sell.
 
 ### Medium (Amazon Author Page / LinkedIn About)
 
-Samuel Freeman is the Chief Persuasion Architect behind **Persuasion Mechanics** — where classical direct-response psychology meets autonomous AI agents.
+Samuel Freeman is the Chief Persuasion Architect behind **Freeman Intelligence** — where classical direct-response psychology meets autonomous AI agents.
 
 He wrote **AI Product Design Mastery** (Kindle) to help builders ship AI products that users actually want. Now he teaches growth operators, founders, and agency owners how to engineer **multi-agent marketing systems** that research markets, write conversion copy, and drive pipeline — without a 20-person creative department.
 
-Samuel's work sits at the intersection of AI architecture, copywriting, and revenue engineering: prompts don't convert; **persuasion mechanics** do.
+Samuel's work sits at the intersection of AI architecture, copywriting, and revenue engineering: prompts don't convert; **intelligence systems** do.
 
 ### Long (website About / speaker intro)
 
-Samuel Freeman is Chief Persuasion Architect at **Persuasion Mechanics** and author of **AI Product Design Mastery** on Kindle.
+Samuel Freeman is Chief Persuasion Architect at **Freeman Intelligence** and author of **AI Product Design Mastery** on Kindle.
 
-For years, the market flooded with generic AI output — products nobody wanted and copy nobody believed. Samuel's answer isn't more prompts. It's **persuasion mechanics**: named systems that channel mass desire, stack proof, and deploy autonomous agents across research, creative, and conversion.
+For years, the market flooded with generic AI output — products nobody wanted and copy nobody believed. Samuel's answer isn't more prompts. It's **Freeman Intelligence**: named systems that channel mass desire, stack proof, and deploy autonomous agents across research, creative, and conversion.
 
-His published work spans AI product design and direct-response marketing systems. Through Persuasion Mechanics, he helps solopreneurs, agencies, and growth teams build **autonomous revenue engines** — from Kindle authority to $10K funnel builds — in one voice, with measurable client attraction at every node.
+His published work spans AI product design and direct-response marketing systems. Through Freeman Intelligence, he helps solopreneurs, agencies, and growth teams build **autonomous revenue engines** — from Kindle authority to $10K funnel builds — in one voice, with measurable client attraction at every node.
 
-When he's not architecting agent workflows, he's shipping the next book in the Persuasion Mechanics library and stress-testing every framework on real offers before it reaches a client.
+When he's not architecting agent workflows, he's shipping the next book in the Freeman Intelligence library and stress-testing every framework on real offers before it reaches a client.
 
 ---
 
@@ -93,11 +93,11 @@ When he's not architecting agent workflows, he's shipping the next book in the P
 
 | Element | Direction |
 |---|---|
-| **Word** | Mechanics (persuasion *mechanics*, not magic) |
+| **Word** | Intelligence (systems, not magic) |
 | **Tone** | Peer-conversational, precise, cinematic — Architect voice |
 | **Enemy** | Generic ChatGPT slop; awareness-only content; prompts without psychology |
 | **Colors** | TBD — premium authority: navy/black + single accent (gold or electric blue) |
-| **Domain** | persuasionmechanics.com (confirm/register) |
+| **Domain** | freemanintelligence.com (confirm/register) |
 
 ---
 
@@ -131,10 +131,11 @@ cp .env.example .env
 | **Book ideas (50)** | `strategy/BOOK-IDEA-CATALOG.json` |
 | **Revenue Systems catalog** | `strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json` |
 | **3-book empire cluster** | `strategy/REVENUE-SYSTEMS-CLUSTER.json` · `strategy/REVENUE-SYSTEMS-EMPIRE.md` |
-| **Content plan (Guru Blueprint)** | `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md` |
-| **Powers operating model** | `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md` |
-| **12-month plan** | `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
+| **Content plan (Guru Blueprint)** | `strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md` |
+| **Powers operating model** | `strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md` |
+| **12-month plan** | `strategy/FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md` |
 | **Marketing & ops master plan** | `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` · `factory/marketing-operations-plan.json` |
+| **Internal ops portal** | `website/ops/` · `INTERNAL-OPS-PORTAL.md` |
 | **Factory sync** | `factory/business-plan.json` · `factory/state.json` |
 
 ---
@@ -144,9 +145,9 @@ cp .env.example .env
 - [ ] Author bio (medium version above) pasted to Amazon Author Page
 - [ ] Author photo uploaded
 - [ ] *AI Product Design Mastery* linked to Samuel Freeman author profile
-- [ ] Back matter CTA → Persuasion Mechanics list / next book waitlist
+- [ ] Back matter CTA → Freeman Intelligence list / next book waitlist
 - [ ] Author page URL in all new assets
 
 ---
 
-**Architect law:** Every Persuasion Mechanics deliverable advances **client attraction** — opt-in, application, purchase, or call booked. **Every marketing and operations action must be planned** before execution (`MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md`). Existing Kindle readers are the warmest audience; never write as if starting from zero authority.
+**Architect law:** Every Freeman Intelligence deliverable advances **client attraction** — opt-in, application, purchase, or call booked. **Every marketing and operations action must be planned** before execution (`MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md`). Existing Kindle readers are the warmest audience; never write as if starting from zero authority.

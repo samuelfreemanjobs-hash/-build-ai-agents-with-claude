@@ -1,4 +1,4 @@
-# 4P Launch Audit — PM-001 The Autonomous Copywriter
+# 4P Launch Audit — FI-001 The Autonomous Copywriter
 
 **Methodology:** `MARKETING-EXPERTS-SKILLS-CANON.md`  
 **Status:** Draft — complete before Sep 24 ship
@@ -9,9 +9,9 @@
 
 | Field | Value |
 |---|---|
-| **Product / offer name** | The Autonomous Copywriter (PM-001) |
+| **Product / offer name** | The Autonomous Copywriter (FI-001) |
 | **Core transformation** | Engineer multi-agent marketing systems that research, write, and convert at scale — without AI slop |
-| **Mechanism name** | Persuasion Mechanics Framework / DR Rubric |
+| **Mechanism name** | Freeman Intelligence Framework / DR Rubric |
 | **Deliverables** | 12-chapter Kindle · DR rubric install · founding cohort access (backend) |
 | **What makes it unique AND valuable (Kawasaki)** | Only book that fuses classical DR psychology with multi-agent architecture — not prompts, systems |
 

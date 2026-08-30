@@ -1,6 +1,6 @@
 # Marketing Experts Skills Canon
 
-**Modelable skills from pioneer and modern marketing gurus** — mapped to The Architect stack and Persuasion Mechanics. Not name-dropping: **specific behaviors to copy**.
+**Modelable skills from pioneer and modern marketing gurus** — mapped to The Architect stack and Freeman Intelligence. Not name-dropping: **specific behaviors to copy**.
 
 **Article source:** ēndor "9 marketing experts" canon + Kennedy success canon + existing DR masters.  
 **Paired:** `ULTIMATE-BRANDING-METHODOLOGY.md` · `GODIN-BRAND-METHODOLOGY.md` · `MARKETING-INTELLIGENCE-METHODOLOGY.md` · `OMNICHANNEL-GROWTH-METHODOLOGY.md` · `CLIENT-ATTRACTION-METHODOLOGY.md`
@@ -9,7 +9,7 @@
 
 ## Skills Canon in One Sentence
 
-> **Pioneers gave the science (Kotler, Fishbein, Converse); product evangelists gave the experience (Jobs, Kawasaki); permission tribes gave the brand (Godin); digital operators gave the distribution loop (Patel, Gary Vee) — Persuasion Mechanics runs all five on a planned calendar with DR accountability.**
+> **Pioneers gave the science (Kotler, Fishbein, Converse); product evangelists gave the experience (Jobs, Kawasaki); permission tribes gave the brand (Godin); digital operators gave the distribution loop (Patel, Gary Vee) — Freeman Intelligence runs all five on a planned calendar with DR accountability.**
 
 ---
 
@@ -18,7 +18,7 @@
 | Expert | Skill | Architect file |
 |---|---|---|
 | **Seth Godin** | Purple cow · tribes · permission · SVA | `GODIN-BRAND-METHODOLOGY.md` |
-| **Steve Jobs** (partial) | Product experience · simplicity | `ART-DIRECTION-PRODUCT-DESIGN-METHODOLOGY.md` · PM-000 bridge |
+| **Steve Jobs** (partial) | Product experience · simplicity | `ART-DIRECTION-PRODUCT-DESIGN-METHODOLOGY.md` · FI-000 bridge |
 | **Philip Kotler** (partial) | Positioning · customer value | `RIES-POSITIONING-METHODOLOGY.md` · `ULTIMATE-BRANDING-METHODOLOGY.md` |
 | **Martin Fishbein** (partial) | Attitude → behavior | `CIALDINI-METHODOLOGY.md` · `BEHAVIORAL-ECONOMICS-PERSUASION-METHODOLOGY.md` |
 
@@ -50,7 +50,7 @@
 | **User ambassadors** | Customers recruit customers | Kindle readers → affiliate · testimonial · case study pipeline |
 | **Think different positioning** | Enemy = status quo (generic AI) | Enemy: "ChatGPT slop" · commodity agencies |
 
-**PM bridge:** *AI Product Design Mastery* (product) + Persuasion Mechanics (experience layer) = Jobs-style stack.
+**PM bridge:** *AI Product Design Mastery* (product) + Freeman Intelligence (experience layer) = Jobs-style stack.
 
 ---
 
@@ -118,13 +118,13 @@
 
 | Skill | What it means | PM application |
 |---|---|---|
-| **Evangelism ≠ sales** | Teach the cause; product follows | Education-based marketing (Pagan) — teach persuasion mechanics |
+| **Evangelism ≠ sales** | Teach the cause; product follows | Education-based marketing (Pagan) — teach intelligence systems |
 | **Unique AND valuable** | Holy grail — both required | Mechanism must be novel (Schwartz stage 3+) AND deliver outcome |
 | **10/20/30 pitch** | 10 slides · 20 min · 30pt font | Webinar structure cap · no dense slides |
-| **Make mantra** | 3-word internal rally cry | "Persuasion mechanics" · "Engineer revenue" |
+| **Make mantra** | 3-word internal rally cry | "Freeman Intelligence" · "Engineer revenue" |
 | **Ship / iterate** | Art of the Start — launch imperfect | Factory rubric 8+ ship gate |
 
-**PM role:** Samuel = **Chief Evangelist** for Revenue Systems Engineering category (not just author).
+**FI role:** Samuel = **Chief Evangelist** for Revenue Systems Engineering category (not just author).
 
 ---
 
@@ -149,7 +149,7 @@
 | **Free training → premium** | 21K trained free · paid backend | Challenge → cohort model (M5 OPEN) |
 | **Content library depth** | 700+ articles = authority moat | 10-book backlist + RSE trilogy (Powers model) |
 | **Multi-channel teaching** | Blog · email · ads integrated | Guru Blueprint + omnichannel plan |
-| **LATAM market** | Spanish-first operators underserved | Year 2: *Localization at Machine Speed* (PM-045) |
+| **LATAM market** | Spanish-first operators underserved | Year 2: *Localization at Machine Speed* (FI-045) |
 
 **Adopt now:** Academy ladder architecture regardless of language.
 
@@ -161,7 +161,7 @@
 |---|---|---|
 | **Emotion-first creative** | Connect before convince | Three-brain stack: limbic before neocortex (Pagan) |
 | **Instagram-native storytelling** | Visual + caption emotion | Carousel hooks · quote cards from factory |
-| **Agency accelerator model** | Productize agency IP | PM-004 Agency Engine · certification path |
+| **Agency accelerator model** | Productize agency IP | FI-004 Agency Engine · certification path |
 | **Passion → profitable business** | Founder story as brand | Celebrity building · origin myth |
 
 **Aligns with:** Carlton bonding · Cialdini liking · Sugarman emotion.
@@ -181,14 +181,14 @@
 
 ---
 
-## Persuasion Mechanics — priority skills (top 12)
+## Freeman Intelligence — priority skills (top 12)
 
 1. **Godin permission + purple cow** — already core  
 2. **Patel search-intent content** — every book = keyword cluster  
 3. **Kawasaki evangelism** — teach category, not product features  
 4. **Fishbein reasoned action** — motivation + advantage + excitement gate  
 5. **Kotler 4Ps** — planned together every launch  
-6. **Jobs experience sell** — PM-000 → PM pipeline as ecosystem  
+6. **Jobs experience sell** — FI-000 → PM pipeline as ecosystem  
 7. **Gary Vee jab-jab-hook** — 70/20/10 content ratio  
 8. **Powers backlist** (from prior canon) — Patel-style content depth  
 9. **Kennedy accountability** — metric on every expert tactic  

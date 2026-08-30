@@ -5,7 +5,7 @@
 **One voice.** Mentor in the trenches — never professor mode. Install in 10 minutes (Pagan chunking).
 
 **Templates:** `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md` · `research/GURU-BLUEPRINT-MODULE-TEMPLATE.md`  
-**Applied plan:** `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`  
+**Applied plan:** `strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md`  
 **Paired:** `CONTENT-ENGINE-METHODOLOGY.md` · `INFO-PRODUCT-ARCHITECTURE.md` · `LIST-BUILDING-METHODOLOGY.md` · `KERN-METHODOLOGY.md` (IBB) · `CLIENT-ATTRACTION-METHODOLOGY.md`
 
 ---
@@ -43,7 +43,7 @@ Give away the technique that gets **"Wow!"** fastest — not table scraps.
 
 **Pagan rule:** The paid product is the **organized, complete, supported** version of what free content samples.
 
-**Persuasion Mechanics application:** Factory chapter frameworks → LinkedIn carousels → lead magnet installs → Kindle ascension.
+**Freeman Intelligence application:** Factory chapter frameworks → LinkedIn carousels → lead magnet installs → Kindle ascension.
 
 ### 3. Product IS the Marketing
 
@@ -242,4 +242,4 @@ Template fields in `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md`
 
 ---
 
-See also: `PAGAN-CHUNKING` references in `SYSTEM.md`, `CRAFT-PLAYBOOKS.md`, `INFO-PRODUCT-ARCHITECTURE.md`, `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`
+See also: `PAGAN-CHUNKING` references in `SYSTEM.md`, `CRAFT-PLAYBOOKS.md`, `INFO-PRODUCT-ARCHITECTURE.md`, `strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md`

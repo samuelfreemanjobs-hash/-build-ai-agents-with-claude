@@ -440,7 +440,7 @@ Wrap scoring in `<audit_score>`:
 | **Funnel build** | 1, 5, 8–10 | Funnel Architecture + SWS |
 | **List building / lead magnet** | 1, 5, 7, 10 | List Building + squeeze funnel |
 | **Info product / course** | 1, 6, 8, 10 | Info-Product + SWS |
-| **Content plan / social** | 1, 4, 9, 10 | Guru Blueprint + Content Engine + `PERSUASION-MECHANICS-CONTENT-PLAN` |
+| **Content plan / social** | 1, 4, 9, 10 | Guru Blueprint + Content Engine + `FREEMAN-INTELLIGENCE-CONTENT-PLAN` |
 | **Newsletter / education-based marketing** | 1, 4, 9, 10 | Guru Blueprint EBM + Move Free Line + module template |
 | **Course / curriculum design** | 2, 4, 6, 10 | Guru Blueprint 10×7 + Info-Product Architecture |
 | **Framework / workflow design** | 1, 6, 10 | Framework & Workflow Engine |
@@ -469,14 +469,14 @@ Wrap scoring in `<audit_score>`:
 | **Crisis PR / reputation defense** | 1, 10 | Retention Engagement crisis protocol |
 | **Localization / international copy** | 1, 4, 10 | Retention Engagement localization engine |
 | **12-month business plan** | 1, 5, 6, 10 | Business Plan Methodology + 12-month template |
-| **Melvin Powers mail-order publishing** | 1, 5, 6, 10 | Powers Publishing + PM Powers Operating Model |
+| **Melvin Powers mail-order publishing** | 1, 5, 6, 10 | Powers Publishing + FI Powers Operating Model |
 | **Marketing & operations planning** | 1, 5, 6, 10 | Marketing-Ops Planning + Master Plan + monthly template + KPI defs |
 | **OPEN month / opportunistic revenue** | 1, 5, 8–10 | OPEN-MONTH-PLAYBOOK + Burchard + 10MDMS |
 | **Launch audit (4P / Fishbein / SEO / evangelism)** | 1, 5, 10 | Marketing Experts Canon + 4P + Fishbein + SEO + Kawasaki templates |
 | **Operator mindset / success canon** | 1, 5, 10 | Kennedy Success Canon (Hill, Maltz, Ringer, Stone, Chu, Wilde) |
 | **Book idea catalog (50)** | 1, 6, 10 | BOOK-IDEA-CATALOG + PRODUCT-CATALOG |
 | **Revenue Systems Engineer book ideas** | 1, 5, 6, 10 | REVENUE-SYSTEMS-BOOK-IDEAS + CLUSTER + EMPIRE |
-| **3-book Revenue Systems empire** | 1, 5, 6, 8–10 | REVENUE-SYSTEMS-EMPIRE + CLUSTER (PM-050/051/093) |
+| **3-book Revenue Systems empire** | 1, 5, 6, 8–10 | REVENUE-SYSTEMS-EMPIRE + CLUSTER (FI-050/051/093) |
 
 ---
 
@@ -545,20 +545,20 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **Event & launch** | `EVENT-LAUNCH-ARCHITECTURE-METHODOLOGY.md` · `research/WEBINAR-LAUNCH-TEMPLATE.md` · `research/JV-PARTNER-PACK-TEMPLATE.md` |
 | **Partnership program (Burchard)** | `BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md` · `research/BURCHARD-PARTNERSHIP-TEMPLATE.md` |
 | **10 Million Dollar Marketing Secrets (Kern)** | `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` · `KERN-METHODOLOGY.md` · `research/TEN-MDMS-CAMPAIGN-TEMPLATE.md` |
-| **Guru Blueprint (Pagan)** | `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` · `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md` · `research/GURU-BLUEPRINT-MODULE-TEMPLATE.md` · `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md` |
-| **Melvin Powers publishing** | `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` · `research/POWERS-MAIL-ORDER-TEST-TEMPLATE.md` · `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md` |
+| **Guru Blueprint (Pagan)** | `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` · `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md` · `research/GURU-BLUEPRINT-MODULE-TEMPLATE.md` · `strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md` |
+| **Melvin Powers publishing** | `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` · `research/POWERS-MAIL-ORDER-TEST-TEMPLATE.md` · `strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md` |
 | **Kennedy success canon** | `KENNEDY-SUCCESS-CANON-METHODOLOGY.md` · Hill · Maltz · Ringer · Stone · Chu · Wilde |
 | **Marketing automation** | `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` · `research/CRM-PERSONALIZATION-BLOCK-TEMPLATE.md` |
 | **Multimodal creative** | `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` |
 | **Conversational AI / voice** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` |
 | **AI model benchmarking** | `AI-MODEL-BENCHMARKING-METHODOLOGY.md` · `research/AI-MODEL-BENCHMARK-TEMPLATE.md` |
 | **Retention & brand defense** | `RETENTION-ENGAGEMENT-METHODOLOGY.md` |
-| **Business planning** | `BUSINESS-PLAN-METHODOLOGY.md` · `research/12-MONTH-BUSINESS-PLAN-TEMPLATE.md` · `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` |
+| **Business planning** | `BUSINESS-PLAN-METHODOLOGY.md` · `research/12-MONTH-BUSINESS-PLAN-TEMPLATE.md` · `strategy/FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md` |
 | **Marketing & operations planning** | `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` · `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` · `factory/marketing-operations-plan.json` · `research/MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md` · `research/WEEKLY-GOO-REVIEW-TEMPLATE.md` |
 | **Marketing experts skills canon** | `MARKETING-EXPERTS-SKILLS-CANON.md` · Kotler · Fishbein · Patel · Kawasaki · Gary Vee · Jobs |
 | **OPEN month playbook** | `strategy/OPEN-MONTH-PLAYBOOK.md` |
 | **Ascension ladder & KPIs** | `strategy/ASCENSION-LADDER.json` · `strategy/KPI-DEFINITIONS.md` |
-| **Active month plans** | `projects/persuasion-mechanics/plans/` |
+| **Active month plans** | `projects/freeman-intelligence/plans/` |
 | **Brand** | `BRAND-IDENTITY.md` · `strategy/PRODUCT-CATALOG.json` |
 
 **Galactic law:** Diagnose like a CRO. Engineer like an AI architect. Price like a master. Design like an art director. Write like Carlton. Score before ship. One voice. One revenue engine.

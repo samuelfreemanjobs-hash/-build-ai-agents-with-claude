@@ -5,7 +5,7 @@
 **One voice.** Internal discipline fuels external DR execution.
 
 **Paired:** `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` · `KENNEDY-METHODOLOGY.md` · `BUSINESS-PLAN-METHODOLOGY.md`  
-**Applied:** `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md`
+**Applied:** `strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md`
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## The Six Authors — Skills to Model
 
-| Author | Core text | Skill Kennedy builds on | Persuasion Mechanics application |
+| Author | Core text | Skill Kennedy builds on | Freeman Intelligence application |
 |---|---|---|---|
 | **Napoleon Hill** | *Think and Grow Rich* · *Grow Rich! With Peace of Mind* | Definite purpose · faith · organized planning · mastermind | 12-month plan · factory discipline · cohort mastermind |
 | **Maxwell Maltz** | *Psycho-Cybernetics* | Self-image · mental rehearsal · success mechanism | "Revenue Systems Engineer" identity · ship despite imposter noise |
@@ -34,11 +34,11 @@
 
 | Principle | Operator behavior |
 |---|---|
-| **Definite Chief Aim** | One sentence: what Persuasion Mechanics becomes in 12 months — written, read daily |
+| **Definite Chief Aim** | One sentence: what Freeman Intelligence becomes in 12 months — written, read daily |
 | **Burning desire** | Factory runs because the catalog vision is non-negotiable |
 | **Faith / auto-suggestion** | Act as Chief Persuasion Architect before external proof catches up |
 | **Specialized knowledge** | AI agents + DR + systems — stack expertise, don't generalize |
-| **Organized planning** | `PERSUASION-MECHANICS-12-MONTH-PLAN.md` is the organized plan |
+| **Organized planning** | `FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md` is the organized plan |
 | **Mastermind** | Cohort, JV partners, factory agents = synthetic mastermind |
 | **Persistence** | 10 books in 12 months — persistence as system, not mood |
 
@@ -56,7 +56,7 @@
 
 | Principle | Operator behavior |
 |---|---|
-| **Self-image thermostat** | You ship as a **published authority** — because PM-000 is live, act from that identity |
+| **Self-image thermostat** | You ship as a **published authority** — because FI-000 is live, act from that identity |
 | **Success mechanism** | Brain as goal-seeking system — define target (chapter shipped, list size) and let RAS find path |
 | **Failure mechanism** | Cut "I'm not ready" loops — ship at rubric 8+, revise in public if needed |
 | **Mental rehearsal** | Visualize launch day, cohort fill, backend call booked — before writing CTA |
@@ -193,4 +193,4 @@ Then: **Powers mail-order work** — list, test, ship, ask.
 
 ---
 
-See also: `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md`, `KENNEDY-METHODOLOGY.md`, `BRAND-IDENTITY.md`, `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md`
+See also: `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md`, `KENNEDY-METHODOLOGY.md`, `BRAND-IDENTITY.md`, `strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md`

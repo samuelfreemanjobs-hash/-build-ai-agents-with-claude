@@ -1,18 +1,18 @@
 {
   "author": "Samuel Freeman",
-  "brand": "Persuasion Mechanics",
+  "brand": "Freeman Intelligence",
   "published": [
     {
-      "id": "PM-000",
+      "id": "FI-000",
       "title": "AI Product Design Mastery",
       "status": "live_kindle",
       "channel": "amazon_kdp",
       "slug": "ai-product-design-mastery",
       "role": "proof_of_authority_entry_point",
       "niche_angle": "ai_product_design",
-      "ascension_to": "PM-001",
+      "ascension_to": "FI-001",
       "ascension_title": "The Autonomous Copywriter",
-      "back_matter_cta": "You mastered AI product design. Now engineer the persuasion layer — multi-agent systems that research, write, and convert. Join the list at Persuasion Mechanics for the next book.",
+      "back_matter_cta": "You mastered AI product design. Now engineer the persuasion layer — multi-agent systems that research, write, and convert. Join the list at Freeman Intelligence for the next book.",
       "notes": "First and only live title as of plan start. Update with ASIN, subtitle, and KDP link when Samuel provides."
     }
   ]

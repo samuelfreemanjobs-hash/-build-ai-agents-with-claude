@@ -15,11 +15,11 @@
 
 ---
 
-## Why Burchard (and why Persuasion Mechanics)
+## Why Burchard (and why Freeman Intelligence)
 
 Brendan Burchard built multiple 8-figure education brands largely through **expert partnerships** — summits, certifications, affiliate armies, and co-branded events. The method fits Samuel's stack:
 
-| Burchard principle | Persuasion Mechanics application |
+| Burchard principle | Freeman Intelligence application |
 |---|---|
 | Serve audiences at scale through partners | Kindle → cohort → partners mail for backend |
 | Expert positioning before the ask | *AI Product Design Mastery* + RSE trilogy = promotable IP |
@@ -113,12 +113,12 @@ Train practitioners on your framework (Marketing Machine™, Agent systems). The
 | Requirement | Spec |
 |---|---|
 | **Curriculum** | Licensed modules + exams or project |
-| **Brand guidelines** | How they represent Persuasion Mechanics |
+| **Brand guidelines** | How they represent Freeman Intelligence |
 | **Backend** | Ongoing rev share on tools/templates they sell |
 
 ### Model E — Industrial Strategic Alliance
 
-For PM-093 *Industrial Demand Machine* — logistics, 3PL, manufacturing associations, trade media.
+For FI-093 *Industrial Demand Machine* — logistics, 3PL, manufacturing associations, trade media.
 
 | Partner type | Offer |
 |---|---|
@@ -217,7 +217,7 @@ Extend `JV-PARTNER-PACK-TEMPLATE.md` with:
 
 ---
 
-## Integration with Persuasion Mechanics calendar
+## Integration with Freeman Intelligence calendar
 
 | Month | Partnership play |
 |---|---|
@@ -225,9 +225,9 @@ Extend `JV-PARTNER-PACK-TEMPLATE.md` with:
 | **M6 (Feb)** | JV webinar for *Breakthrough AI* |
 | **M8 OPEN (Apr)** | Agency Sprint — consultant network partners |
 | **M12 capstone** | Summit promoting 10-book box set |
-| **Y2 Q3** | RSE trilogy partner launch (PM-050 flagship) |
+| **Y2 Q3** | RSE trilogy partner launch (FI-050 flagship) |
 
-See `strategy/REVENUE-SYSTEMS-EMPIRE.md` · `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md`
+See `strategy/REVENUE-SYSTEMS-EMPIRE.md` · `strategy/FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md`
 
 ---
 

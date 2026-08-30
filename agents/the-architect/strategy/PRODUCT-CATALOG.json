@@ -1,5 +1,5 @@
 {
-  "brand": "Persuasion Mechanics",
+  "brand": "Freeman Intelligence",
   "author": "Samuel Freeman",
   "author_title": "Chief Persuasion Architect",
   "niche": ["ai", "ai_agents", "copywriting", "marketing", "direct_response", "ai_product_design"],
@@ -7,18 +7,18 @@
   "book_idea_catalog": "strategy/BOOK-IDEA-CATALOG.json",
   "revenue_systems_book_catalog": "strategy/REVENUE-SYSTEMS-BOOK-IDEAS.json",
   "revenue_systems_cluster": "strategy/REVENUE-SYSTEMS-CLUSTER.json",
-  "content_plan": "strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md",
-  "powers_operating_model": "strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md",
+  "content_plan": "strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md",
+  "powers_operating_model": "strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md",
   "marketing_operations_master": "strategy/MARKETING-OPERATIONS-MASTER-PLAN.md",
   "marketing_operations_plan": "factory/marketing-operations-plan.json",
   "ascension_ladder": "strategy/ASCENSION-LADDER.json",
   "kpi_definitions": "strategy/KPI-DEFINITIONS.md",
   "open_month_playbook": "strategy/OPEN-MONTH-PLAYBOOK.md",
-  "active_month_plan": "projects/persuasion-mechanics/plans/2026-09-marketing-ops-plan.md",
+  "active_month_plan": "projects/freeman-intelligence/plans/2026-09-marketing-ops-plan.md",
   "default_chapters": 12,
   "products": [
     {
-      "id": "PM-001",
+      "id": "FI-001",
       "angle": "mechanics_psychology",
       "title": "The Autonomous Copywriter",
       "subtitle": "How to Engineer Multi-Agent Marketing Systems That Research, Write, and Convert at Scale",
@@ -28,7 +28,7 @@
       "flagship": true
     },
     {
-      "id": "PM-002",
+      "id": "FI-002",
       "angle": "systems_architecture",
       "title": "The Autonomous Revenue Engine",
       "subtitle": "Building Multi-Agent AI Workflows That Turn Cold Traffic into Predictable Pipeline",
@@ -37,7 +37,7 @@
       "priority": 4
     },
     {
-      "id": "PM-003",
+      "id": "FI-003",
       "angle": "classical_copywriting",
       "title": "Breakthrough AI",
       "subtitle": "Modernizing Classical Direct-Response Psychology for Autonomous Multi-Agent Systems",
@@ -46,7 +46,7 @@
       "priority": 6
     },
     {
-      "id": "PM-004",
+      "id": "FI-004",
       "angle": "solopreneur_agency",
       "title": "The 1-Person Agency Engine",
       "subtitle": "How to Deploy Autonomous AI Agents to Scale Lead Gen, Copywriting, and Client Delivery",
@@ -55,7 +55,7 @@
       "priority": 9
     },
     {
-      "id": "PM-005",
+      "id": "FI-005",
       "angle": "data_conversion",
       "title": "Engineered Persuasion",
       "subtitle": "The System Architect's Guide to Multi-Agent Copywriting, Context Windows, and Algorithmic Sales",
@@ -64,7 +64,7 @@
       "priority": 7
     },
     {
-      "id": "PM-006",
+      "id": "FI-006",
       "angle": "enterprise_b2b",
       "title": "The Agentic Funnel",
       "subtitle": "How to Automate Prospect Research, High-Converting Copy, and B2B Deal Pipeline with AI",
@@ -73,7 +73,7 @@
       "priority": 10
     },
     {
-      "id": "PM-007",
+      "id": "FI-007",
       "angle": "practical_implementation",
       "title": "Building Direct-Response AI Agents",
       "subtitle": "A Tactical Guide to Tool-Calling, Memory Architecture, and Automated Conversion Workflows",
@@ -82,7 +82,7 @@
       "priority": 2
     },
     {
-      "id": "PM-008",
+      "id": "FI-008",
       "angle": "market_saturation",
       "title": "The Machine-Speed Mechanism",
       "subtitle": "Cutting Through Saturated Markets with Classical Copywriting and Autonomous AI",
@@ -91,7 +91,7 @@
       "priority": 11
     },
     {
-      "id": "PM-009",
+      "id": "FI-009",
       "angle": "lead_to_close",
       "title": "The Zero-Click Sales Machine",
       "subtitle": "Orchestrating Autonomous Agents to Generate Ads, Route Traffic, and Close High-Ticket Buyers",
@@ -100,7 +100,7 @@
       "priority": 12
     },
     {
-      "id": "PM-010",
+      "id": "FI-010",
       "angle": "step_by_step_blueprint",
       "title": "The AI Direct-Response Playbook",
       "subtitle": "System Prompts, Agentic Workflows, and Conversion Blueprints for the Modern Marketer",

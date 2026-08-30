@@ -1,9 +1,9 @@
-# Persuasion Mechanics — Guru Blueprint Content Plan
+# Freeman Intelligence — Guru Blueprint Content Plan
 
 **Author:** Samuel Freeman · Revenue Systems Engineer · Chief Persuasion Architect  
 **Methodology:** `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md`  
 **Template:** `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md`  
-**Business sync:** `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` · `factory/state.json`
+**Business sync:** `strategy/FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md` · `factory/state.json`
 
 ---
 
@@ -13,9 +13,9 @@
 
 | Field | Value |
 |---|---|
-| **Active product spine** | PM-001 *The Autonomous Copywriter* (factory) |
+| **Active product spine** | FI-001 *The Autonomous Copywriter* (factory) |
 | **Free line channel** | Newsletter + LinkedIn (education-based) |
-| **Capture** | PM-LM-01 Revenue Systems Toolkit (Y2) / interim: chapter install PDF |
+| **Capture** | FI-LM-01 Revenue Systems Toolkit (Y2) / interim: chapter install PDF |
 | **Monetization ladder** | Kindle → founding cohort $497 → consulting $2.5K–$10K |
 
 ---
@@ -26,16 +26,16 @@
 
 | # | Pillar (their fear/frustration) | VOC language | Product source |
 |---|---|---|---|
-| 1 | **AI slop doesn't convert** | "ChatGPT copy sounds generic" | PM-001 Ch 1–2 |
-| 2 | **Prompts without psychology** | "Prompts don't convert" | PM-001 flagship hook |
-| 3 | **Manual copy grind** | "No time to write everything" | PM-001 agent architecture |
-| 4 | **No system — random posting** | "Marketing feels chaotic" | PM-002 Revenue Engine |
-| 5 | **Funnels leak — no instrumentation** | "Don't know what's broken" | PM-050 RSE / PM-005 |
-| 6 | **Can't scale without headcount** | "Can't hire a creative team" | PM-004 Agency Engine |
-| 7 | **Classical DR forgotten** | "Lost the psychology" | PM-003 Breakthrough AI |
-| 8 | **B2B pipeline manual** | "Outbound eats my week" | PM-006 Agentic Funnel |
-| 9 | **Saturated market noise** | "Everyone sounds the same" | PM-008 Mechanism |
-| 10 | **No flywheel — start over each launch** | "One-off campaigns" | PM-009 Zero-Click |
+| 1 | **AI slop doesn't convert** | "ChatGPT copy sounds generic" | FI-001 Ch 1–2 |
+| 2 | **Prompts without psychology** | "Prompts don't convert" | FI-001 flagship hook |
+| 3 | **Manual copy grind** | "No time to write everything" | FI-001 agent architecture |
+| 4 | **No system — random posting** | "Marketing feels chaotic" | FI-002 Revenue Engine |
+| 5 | **Funnels leak — no instrumentation** | "Don't know what's broken" | FI-050 RSE / FI-005 |
+| 6 | **Can't scale without headcount** | "Can't hire a creative team" | FI-004 Agency Engine |
+| 7 | **Classical DR forgotten** | "Lost the psychology" | FI-003 Breakthrough AI |
+| 8 | **B2B pipeline manual** | "Outbound eats my week" | FI-006 Agentic Funnel |
+| 9 | **Saturated market noise** | "Everyone sounds the same" | FI-008 Mechanism |
+| 10 | **No flywheel — start over each launch** | "One-off campaigns" | FI-009 Zero-Click |
 
 ---
 
@@ -43,14 +43,14 @@
 
 | Month | Best technique to give away | Format | Ascension |
 |---|---|---|---|
-| **M1 Sep** | One agent prompt that scores copy on DR rubric | PDF / email install | PM-001 Kindle + cohort waitlist |
-| **M2 Oct** | Tool-calling workflow diagram + starter JSON | Lead magnet | PM-007 Kindle |
-| **M3 Nov** | "AI DR Playbook" 1-page workflow map | BFCM bundle tease | PM-010 + 3-book stack |
-| **M4 Dec** | Revenue leak audit worksheet (5 nodes) | Workshop handout | PM-002 + strategy intensive |
+| **M1 Sep** | One agent prompt that scores copy on DR rubric | PDF / email install | FI-001 Kindle + cohort waitlist |
+| **M2 Oct** | Tool-calling workflow diagram + starter JSON | Lead magnet | FI-007 Kindle |
+| **M3 Nov** | "AI DR Playbook" 1-page workflow map | BFCM bundle tease | FI-010 + 3-book stack |
+| **M4 Dec** | Revenue leak audit worksheet (5 nodes) | Workshop handout | FI-002 + strategy intensive |
 | **M5 OPEN** | Challenge homework templates (5-day) | Challenge | Back catalog + cohort |
-| **M6 Feb** | Schwartz awareness diagnostic (1 page) | Carousel + PDF | PM-003 |
-| **M7 Mar** | VOC extraction prompt pack | Toolkit drop | PM-005 + VOC toolkit $197 |
-| **M8 OPEN** | Agency sprint workbook | Live workshop | PM-004 presell |
+| **M6 Feb** | Schwartz awareness diagnostic (1 page) | Carousel + PDF | FI-003 |
+| **M7 Mar** | VOC extraction prompt pack | Toolkit drop | FI-005 + VOC toolkit $197 |
+| **M8 OPEN** | Agency sprint workbook | Live workshop | FI-004 presell |
 | **M9–M12** | Industrial + mechanism samples | Mixed | Box set |
 
 **Pagan rule:** Each free line asset is a **complete win** — reader gets a measurable result in 10 minutes.
@@ -61,7 +61,7 @@
 
 | Factory output | Content derivatives (same week) |
 |---|---|
-| PM-001 chapter draft | 1 LinkedIn carousel (WHAT) · 1 email (WHY) · 1 thread (HOW install) |
+| FI-001 chapter draft | 1 LinkedIn carousel (WHAT) · 1 email (WHY) · 1 thread (HOW install) |
 | Chapter outline | 4-week pillar sub-calendar |
 | Book launch | 7-day EBM email sequence (samples from book) |
 
@@ -82,7 +82,7 @@
 | Week | Style | Asset | Platform | CTA |
 |---|---|---|---|---|
 | 1 WHY | "Your AI sounds like everyone else's" | LinkedIn story | Reptilian hook | Newsletter opt-in |
-| 2 WHAT | Persuasion Mechanics vs prompt engineering | Carousel | Framework | PM-001 waitlist |
+| 2 WHAT | Freeman Intelligence vs prompt engineering | Carousel | Framework | FI-001 waitlist |
 | 3 HOW | 10-min: score one email with DR rubric | PDF install | Free line move | Cohort interest |
 | 4 WHAT IF | Reader runs rubric → posts score | Community prompt | Proof | Kindle pre-order |
 
@@ -91,9 +91,9 @@
 | Week | Style | Asset | Platform | CTA |
 |---|---|---|---|---|
 | 1 WHY | Cost of manual copy grind | Email | Pain surge | |
-| 2 WHAT | Multi-agent DR architecture map | Carousel | PM-007 tease | |
+| 2 WHAT | Multi-agent DR architecture map | Carousel | FI-007 tease | |
 | 3 HOW | Wire one tool-calling step | Thread | Install | Agent Vault $47 |
-| 4 WHAT IF | Before/after pipeline screenshot | Case study | PM-007 launch | |
+| 4 WHAT IF | Before/after pipeline screenshot | Case study | FI-007 launch | |
 
 ### Month 3 (Nov) — Pillar 5: Playbook + BFCM
 
@@ -137,7 +137,7 @@ CTA: One trackable action
 |---|---|---|
 | M1 Sep | Soft launch webinar | Cohort pitch + replay |
 | M5 Jan | New Year 5-Day Challenge | Email sequence + backend |
-| M8 Apr | Agency Sprint workshop | PM-004 presell |
+| M8 Apr | Agency Sprint workshop | FI-004 presell |
 | M12 Aug | Capstone box-set webinar | Year 2 RSE waitlist |
 
 ---

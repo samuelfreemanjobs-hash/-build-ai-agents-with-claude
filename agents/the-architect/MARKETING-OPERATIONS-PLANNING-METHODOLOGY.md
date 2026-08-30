@@ -11,7 +11,7 @@
 **KPI definitions:** `strategy/KPI-DEFINITIONS.md`  
 **Ascension ladder:** `strategy/ASCENSION-LADDER.json`  
 **OPEN months:** `strategy/OPEN-MONTH-PLAYBOOK.md`  
-**Active plans:** `projects/persuasion-mechanics/plans/`  
+**Active plans:** `projects/freeman-intelligence/plans/`  
 **Paired:** `BUSINESS-PLAN-METHODOLOGY.md` · `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` · `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` · `PRODUCTION-FACTORY.md`
 
 ---
@@ -40,8 +40,8 @@ NO CALENDAR ROW → NO FACTORY RUN
 
 | Horizon | Scope | Refresh | File |
 |---|---|---|---|
-| **Strategic (12-month)** | Products · revenue · OPEN months · catalog | 1st of month — roll forward | `PERSUASION-MECHANICS-12-MONTH-PLAN.md` · `factory/business-plan.json` |
-| **Tactical (90-day)** | Content pillars · campaigns · backend · tests | Start of each quarter + monthly tune | `PERSUASION-MECHANICS-CONTENT-PLAN.md` · Guru Blueprint template |
+| **Strategic (12-month)** | Products · revenue · OPEN months · catalog | 1st of month — roll forward | `FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md` · `factory/business-plan.json` |
+| **Tactical (90-day)** | Content pillars · campaigns · backend · tests | Start of each quarter + monthly tune | `FREEMAN-INTELLIGENCE-CONTENT-PLAN.md` · Guru Blueprint template |
 | **Operational (weekly)** | Chapters · posts · emails · asks · tests | Every Monday W1 kickoff | `MONTHLY-MARKETING-OPS-PLAN-TEMPLATE.md` (week rows) |
 
 **Cascade:** 12-month assigns the month → 90-day assigns pillars → weekly assigns days.
@@ -162,11 +162,11 @@ OPEN months and ≤20% overlay **are pre-approved categories** — not improvisa
 | File | Role |
 |---|---|
 | `factory/business-plan.json` | Current month pointer · schedule · OPEN months |
-| `strategy/PERSUASION-MECHANICS-12-MONTH-PLAN.md` | Strategic narrative + quarterly targets |
+| `strategy/FREEMAN-INTELLIGENCE-12-MONTH-PLAN.md` | Strategic narrative + quarterly targets |
 | `strategy/MARKETING-OPERATIONS-MASTER-PLAN.md` | **Full Year 1 marketing + ops by month** |
 | `factory/marketing-operations-plan.json` | Machine index · monthly plan status |
-| `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md` | 90-day content · Guru Blueprint |
-| `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md` | Scorecard · backend menu · daily rhythm |
+| `strategy/FREEMAN-INTELLIGENCE-CONTENT-PLAN.md` | 90-day content · Guru Blueprint |
+| `strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md` | Scorecard · backend menu · daily rhythm |
 | `factory/state.json` | Active book/launch execution state |
 
 ---

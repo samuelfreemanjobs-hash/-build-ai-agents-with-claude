@@ -62,7 +62,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | **Pricing architecture** | Pricing Master + Grand Slam + Schwartz |
 | **Funnel architecture** | Executive diagnostic + `FUNNEL-ARCHITECTURE-METHODOLOGY.md` + SWS |
 | **List building / lead magnet** | List Building + squeeze funnel + soap opera sequence |
-| **Content plan / social calendar** | Guru Blueprint + Content Engine + `PERSUASION-MECHANICS-CONTENT-PLAN` |
+| **Content plan / social calendar** | Guru Blueprint + Content Engine + `FREEMAN-INTELLIGENCE-CONTENT-PLAN` |
 | **Newsletter / EBM sequence** | Guru Blueprint module template + List Building |
 | Sales page / email / ad | Collier conversation + Schwartz diagnosis + Kennedy 10Q + Haines workflow + Carlton SWS + Victor Schwab five-step + Cialdini + Caples + Sugarman |
 | **Info product / course / program** | **Schwartz + Info-Product Architecture + Hormozi Grand Slam + Carlton SWS + Kennedy 10Q + Haines** |

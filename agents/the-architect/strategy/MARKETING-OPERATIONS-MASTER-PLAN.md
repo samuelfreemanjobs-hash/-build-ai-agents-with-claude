@@ -1,4 +1,4 @@
-# Persuasion Mechanics — Marketing & Operations Master Plan
+# Freeman Intelligence — Marketing & Operations Master Plan
 
 **Horizon:** September 2026 → August 2027  
 **Doctrine:** `MARKETING-OPERATIONS-PLANNING-METHODOLOGY.md` — **NO PLAN → NO SHIP**  
@@ -11,7 +11,7 @@
 
 | Metric | M12 target |
 |---|---|
-| Kindle titles live | 11 (PM-000 + PM-001–010) |
+| Kindle titles live | 11 (FI-000 + FI-001–010) |
 | Email subscribers | Fill monthly |
 | Backend revenue % of total | >50% |
 | Partner launches completed | ≥3 |
@@ -19,7 +19,7 @@
 
 ---
 
-## M1 — Sep 2026 · LAUNCH · PM-001 The Autonomous Copywriter
+## M1 — Sep 2026 · LAUNCH · FI-001 The Autonomous Copywriter
 
 **Lever:** N (list + awareness)
 
@@ -28,8 +28,8 @@
 | Week | Content | Email | Other |
 |---|---|---|---|
 | W1 | WHY: AI slop doesn't convert · LinkedIn story | Waitlist welcome | Brand soft launch |
-| W2 | WHAT: Persuasion Mechanics framework carousel | Indoctrination #1–2 | Soft webinar reg |
-| W3 | HOW: DR rubric 10-min install PDF (**free line**) | Indoctrination #3–4 | PM-001 pre-order |
+| W2 | WHAT: Freeman Intelligence framework carousel | Indoctrination #1–2 | Soft webinar reg |
+| W3 | HOW: DR rubric 10-min install PDF (**free line**) | Indoctrination #3–4 | FI-001 pre-order |
 | W4 | WHAT IF: Cohort founding offer | Launch sequence 5 emails | Webinar live |
 
 **Paid:** $50 headline test (LinkedIn boost) — variable: hook only  
@@ -40,14 +40,14 @@
 | Ops | Target |
 |---|---|
 | Factory | Outline + ch 1–12 complete schedule (3/wk min) |
-| Ship | PM-001 Kindle + launch asset pack |
+| Ship | FI-001 Kindle + launch asset pack |
 | Backend | Founding cohort $497 page + onboarding |
 | Metrics | Fri GOO: opt-in → waitlist → purchase |
 | Systems | `.env` factory · GitHub secret · state.json active |
 
 ---
 
-## M2 — Oct 2026 · PRODUCE · PM-007 Building DR AI Agents
+## M2 — Oct 2026 · PRODUCE · FI-007 Building DR AI Agents
 
 **Lever:** N + V (tripwire)
 
@@ -55,23 +55,23 @@
 
 | Week | Content | Email | Other |
 |---|---|---|---|
-| W1 | WHY: tool-calling pain | PM-001 buyer nurture | Cross-sell PM-000 readers |
+| W1 | WHY: tool-calling pain | FI-001 buyer nurture | Cross-sell FI-000 readers |
 | W2 | WHAT: agent architecture map | Tripwire tease | LinkedIn outbound sprint |
 | W3 | HOW: starter workflow JSON | Agent Vault $47 open | |
-| W4 | WHAT IF: PM-007 pre-launch | PM-007 waitlist | |
+| W4 | WHAT IF: FI-007 pre-launch | FI-007 waitlist | |
 
 ### Operations
 
 | Ops | Target |
 |---|---|
-| Factory | PM-007 outline + ch 1–8 |
+| Factory | FI-007 outline + ch 1–8 |
 | Ship | Agent Prompt Vault $47 |
 | Backend | Vault delivery automation |
-| Metrics | Attach rate PM-001 → Vault |
+| Metrics | Attach rate FI-001 → Vault |
 
 ---
 
-## M3 — Nov 2026 · PRODUCE · PM-010 AI DR Playbook
+## M3 — Nov 2026 · PRODUCE · FI-010 AI DR Playbook
 
 **Lever:** V (bundle)
 
@@ -88,14 +88,14 @@
 
 | Ops | Target |
 |---|---|
-| Factory | PM-010 ch 1–10 |
+| Factory | FI-010 ch 1–10 |
 | Ship | BFCM bundle pricing live |
 | Backend | Bundle checkout + tags |
 | Metrics | Bundle units · AOV |
 
 ---
 
-## M4 — Dec 2026 · PRODUCE · PM-002 Autonomous Revenue Engine
+## M4 — Dec 2026 · PRODUCE · FI-002 Autonomous Revenue Engine
 
 **Lever:** V (intensive)
 
@@ -112,8 +112,8 @@
 
 | Ops | Target |
 |---|---|
-| Factory | PM-002 ch 1–12 |
-| Ship | PM-002 Kindle |
+| Factory | FI-002 ch 1–12 |
+| Ship | FI-002 Kindle |
 | Backend | 2–4 consulting slots calendar |
 | Metrics | Intensive fill rate |
 
@@ -130,7 +130,7 @@
 | W1 | Challenge registration | Re-permission campaign | **5-Day New Year Challenge** |
 | W2 | Challenge daily homework | Challenge emails 1–3 | |
 | W3 | Challenge proof + offer | Challenge emails 4–5 | |
-| W4 | Back-catalog promo | PM-001–003 bundle push | |
+| W4 | Back-catalog promo | FI-001–003 bundle push | |
 
 ### Operations
 
@@ -143,7 +143,7 @@
 
 ---
 
-## M6 — Feb 2027 · PRODUCE · PM-003 Breakthrough AI
+## M6 — Feb 2027 · PRODUCE · FI-003 Breakthrough AI
 
 **Lever:** N + V
 
@@ -154,20 +154,20 @@
 | W1 | WHY: classical DR forgotten | Schwartz diagnostic PDF | |
 | W2 | WHAT: Schwartz × agents framework | JV partner outreach | |
 | W3 | HOW: awareness state exercise | JV webinar reg | |
-| W4 | WHAT IF: PM-003 launch | **JV partner webinar** | |
+| W4 | WHAT IF: FI-003 launch | **JV partner webinar** | |
 
 ### Operations
 
 | Ops | Target |
 |---|---|
-| Factory | PM-003 full draft |
-| Ship | PM-003 Kindle + JV pack |
+| Factory | FI-003 full draft |
+| Ship | FI-003 Kindle + JV pack |
 | Backend | Schwartz × Agents module upsell |
 | Metrics | JV-driven revenue % |
 
 ---
 
-## M7 — Mar 2027 · PRODUCE · PM-005 Engineered Persuasion
+## M7 — Mar 2027 · PRODUCE · FI-005 Engineered Persuasion
 
 **Lever:** V
 
@@ -178,16 +178,16 @@
 | W1 | WHY: guessing audience | VOC story | Podcast tour outreach |
 | W2 | WHAT: VOC pipeline teach | Toolkit tease | |
 | W3 | HOW: VOC extraction prompt pack | VOC Toolkit $197 launch | |
-| W4 | WHAT IF: PM-005 launch | Speaking/podcast batch | |
+| W4 | WHAT IF: FI-005 launch | Speaking/podcast batch | |
 
 ### Operations
 
 | Ops | Target |
 |---|---|
-| Factory | PM-005 complete |
+| Factory | FI-005 complete |
 | Ship | VOC Agent Toolkit |
 | Backend | Toolkit delivery + tags |
-| Metrics | Toolkit attach from PM-005 buyers |
+| Metrics | Toolkit attach from FI-005 buyers |
 
 ---
 
@@ -199,7 +199,7 @@
 
 | Week | Content | Email | Other |
 |---|---|---|---|
-| W1 | Agency sprint registration | PM-004 presell tease | |
+| W1 | Agency sprint registration | FI-004 presell tease | |
 | W2 | Workshop live sessions | Workshop emails | **Agency Sprint $997** |
 | W3 | Case study content | Replay + scarcity | |
 | W4 | Box set prep content | Catalog refresh email | |
@@ -215,7 +215,7 @@
 
 ---
 
-## M9 — May 2027 · PRODUCE · PM-004 1-Person Agency Engine
+## M9 — May 2027 · PRODUCE · FI-004 1-Person Agency Engine
 
 **Lever:** V
 
@@ -226,20 +226,20 @@
 | W1 | WHY: can't hire headcount | Agency engine tease | Partner co-launch outreach |
 | W2 | WHAT: 1-person stack map | Course waitlist | |
 | W3 | HOW: agency SOP install | Agency Engine course $997 open | |
-| W4 | WHAT IF: PM-004 launch | Partner co-launch mail | |
+| W4 | WHAT IF: FI-004 launch | Partner co-launch mail | |
 
 ### Operations
 
 | Ops | Target |
 |---|---|
-| Factory | PM-004 complete |
+| Factory | FI-004 complete |
 | Ship | Agency Engine course |
 | Backend | Course modules + community |
 | Metrics | Course sales · completion |
 
 ---
 
-## M10 — Jun 2027 · PRODUCE · PM-006 Agentic Funnel
+## M10 — Jun 2027 · PRODUCE · FI-006 Agentic Funnel
 
 **Lever:** N (B2B)
 
@@ -250,20 +250,20 @@
 | W1 | WHY: B2B pipeline manual | ABM tease | Outbound template pack |
 | W2 | WHAT: agentic funnel map | B2B nurture sequence | |
 | W3 | HOW: proposal template install | ABM pilot invite | |
-| W4 | WHAT IF: PM-006 launch | ABM pilot clients (2–3) | |
+| W4 | WHAT IF: FI-006 launch | ABM pilot clients (2–3) | |
 
 ### Operations
 
 | Ops | Target |
 |---|---|
-| Factory | PM-006 complete |
+| Factory | FI-006 complete |
 | Ship | B2B proposal templates |
 | Backend | ABM pilot delivery |
 | Metrics | B2B pipeline $ |
 
 ---
 
-## M11 — Jul 2027 · PRODUCE · PM-008 Machine-Speed Mechanism
+## M11 — Jul 2027 · PRODUCE · FI-008 Machine-Speed Mechanism
 
 **Lever:** N
 
@@ -274,20 +274,20 @@
 | W1 | WHY: saturated market noise | Mechanism tease | |
 | W2 | WHAT: mechanism design patterns | Mid-year bundle refresh | |
 | W3 | HOW: mechanism naming exercise | Summer promo | |
-| W4 | WHAT IF: PM-008 launch | Bundle email sequence | |
+| W4 | WHAT IF: FI-008 launch | Bundle email sequence | |
 
 ### Operations
 
 | Ops | Target |
 |---|---|
-| Factory | PM-008 complete |
+| Factory | FI-008 complete |
 | Ship | Mid-year bundle refresh |
 | Backend | Price test (one variable) |
 | Metrics | Summer promo revenue |
 
 ---
 
-## M12 — Aug 2027 · CAPSTONE · PM-009 Zero-Click Sales Machine
+## M12 — Aug 2027 · CAPSTONE · FI-009 Zero-Click Sales Machine
 
 **Lever:** N × V × F (all)
 
@@ -304,8 +304,8 @@
 
 | Ops | Target |
 |---|---|
-| Factory | PM-009 complete |
-| Ship | 10-book box set · PM-009 Kindle |
+| Factory | FI-009 complete |
+| Ship | 10-book box set · FI-009 Kindle |
 | Backend | Year 2 plan draft · price increase |
 | Metrics | Box units · total catalog revenue · LTV:CAC |
 
@@ -325,8 +325,8 @@
 ## Planning compliance checklist
 
 - [ ] All 12 months have marketing + ops rows above
-- [x] M1 detail plan: `projects/persuasion-mechanics/plans/2026-09-marketing-ops-plan.md` (locked)
-- [ ] Each remaining month detail expanded in `projects/persuasion-mechanics/plans/YYYY-MM-marketing-ops-plan.md` before month starts
+- [x] M1 detail plan: `projects/freeman-intelligence/plans/2026-09-marketing-ops-plan.md` (locked)
+- [ ] Each remaining month detail expanded in `projects/freeman-intelligence/plans/YYYY-MM-marketing-ops-plan.md` before month starts
 - [ ] `factory/marketing-operations-plan.json` status = `locked` for active month
 - [ ] No factory `daily` without active month plan locked
 - [ ] Opportunistic only from pre-approved playbook

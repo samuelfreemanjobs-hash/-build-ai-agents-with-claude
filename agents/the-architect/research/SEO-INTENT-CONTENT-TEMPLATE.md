@@ -10,7 +10,7 @@
 | Field | Value |
 |---|---|
 | **Title / working H1** | |
-| **Product ID** | PM-___ |
+| **Product ID** | FI-___ |
 | **Primary intent** | Informational / Commercial / Transactional |
 | **Target avatar** | |
 
