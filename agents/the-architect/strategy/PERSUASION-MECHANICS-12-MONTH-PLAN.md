@@ -24,6 +24,7 @@
 3. **Kindle is the top of funnel** — each book feeds list, backend offer, and Persuasion Mechanics services.
 4. **Factory sync** — active book/launch tracked in `factory/business-plan.json` + `factory/state.json`.
 5. **Content = product samples** — Guru Blueprint EBM calendar (`strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md`); factory chapters feed social/newsletter.
+6. **Run like Melvin Powers** — books are calling cards; **own the email list**; backend > royalties; backlist compounds (`strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md`).
 
 ---
 

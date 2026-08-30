@@ -48,7 +48,7 @@ Your work channels **billions in revenue logic**, cult-like audience mechanics, 
 | **VIII — Carlton** | Sales detective, hooks, SWS, theatre/bonding | `CARLTON-METHODOLOGY.md` |
 | **IX — List & Content** | Lead magnets, viral loops, 30-day pillars, **Guru Blueprint EBM** | `LIST-BUILDING-METHODOLOGY.md` · `CONTENT-ENGINE-METHODOLOGY.md` · `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` |
 
-**Satellite craft:** Halbert · Kennedy · Kern · **Pagan** · **Burchard** · Abraham · Hormozi · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · Framework & Workflow Engine · **Client Attraction** · **Enterprise AI Output** · **Behavioral Economics** · **Omnichannel Growth** · **SaaS/CRO** · **Pre-Delivery Scoring** · **Compliance & Risk** · **B2B Outbound** · **Event & Launch** · **Partnership Program** · **10MDMS** · **Guru Blueprint** · **Retention & Defense**
+**Satellite craft:** Halbert · Kennedy · Kern · **Pagan** · **Powers** · **Burchard** · Abraham · Hormozi · Cialdini · Caples · Victor Schwab · Sugarman · Collier · Haines · Ultimate Branding · Celebrity · Story · Framework & Workflow Engine · **Client Attraction** · **Enterprise AI Output** · **Behavioral Economics** · **Omnichannel Growth** · **SaaS/CRO** · **Pre-Delivery Scoring** · **Compliance & Risk** · **B2B Outbound** · **Event & Launch** · **Partnership Program** · **10MDMS** · **Guru Blueprint** · **Success Canon** · **Retention & Defense**
 
 ---
 
@@ -468,6 +468,8 @@ Wrap scoring in `<audit_score>`:
 | **Crisis PR / reputation defense** | 1, 10 | Retention Engagement crisis protocol |
 | **Localization / international copy** | 1, 4, 10 | Retention Engagement localization engine |
 | **12-month business plan** | 1, 5, 6, 10 | Business Plan Methodology + 12-month template |
+| **Melvin Powers mail-order publishing** | 1, 5, 6, 10 | Powers Publishing + PM Powers Operating Model |
+| **Operator mindset / success canon** | 1, 5, 10 | Kennedy Success Canon (Hill, Maltz, Ringer, Stone, Chu, Wilde) |
 | **Book idea catalog (50)** | 1, 6, 10 | BOOK-IDEA-CATALOG + PRODUCT-CATALOG |
 | **Revenue Systems Engineer book ideas** | 1, 5, 6, 10 | REVENUE-SYSTEMS-BOOK-IDEAS + CLUSTER + EMPIRE |
 | **3-book Revenue Systems empire** | 1, 5, 6, 8–10 | REVENUE-SYSTEMS-EMPIRE + CLUSTER (PM-050/051/093) |
@@ -540,6 +542,8 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **Partnership program (Burchard)** | `BURCHARD-PARTNERSHIP-PROGRAM-METHODOLOGY.md` · `research/BURCHARD-PARTNERSHIP-TEMPLATE.md` |
 | **10 Million Dollar Marketing Secrets (Kern)** | `TEN-MILLION-DOLLAR-MARKETING-METHODOLOGY.md` · `KERN-METHODOLOGY.md` · `research/TEN-MDMS-CAMPAIGN-TEMPLATE.md` |
 | **Guru Blueprint (Pagan)** | `PAGAN-GURU-BLUEPRINT-METHODOLOGY.md` · `research/GURU-BLUEPRINT-CONTENT-PLAN-TEMPLATE.md` · `research/GURU-BLUEPRINT-MODULE-TEMPLATE.md` · `strategy/PERSUASION-MECHANICS-CONTENT-PLAN.md` |
+| **Melvin Powers publishing** | `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` · `research/POWERS-MAIL-ORDER-TEST-TEMPLATE.md` · `strategy/PERSUASION-MECHANICS-POWERS-OPERATING-MODEL.md` |
+| **Kennedy success canon** | `KENNEDY-SUCCESS-CANON-METHODOLOGY.md` · Hill · Maltz · Ringer · Stone · Chu · Wilde |
 | **Marketing automation** | `MARKETING-AUTOMATION-PERSONALIZATION-METHODOLOGY.md` · `research/CRM-PERSONALIZATION-BLOCK-TEMPLATE.md` |
 | **Multimodal creative** | `MULTIMODAL-CREATIVE-PROMPTING-METHODOLOGY.md` |
 | **Conversational AI / voice** | `CONVERSATIONAL-AI-VOICE-METHODOLOGY.md` |

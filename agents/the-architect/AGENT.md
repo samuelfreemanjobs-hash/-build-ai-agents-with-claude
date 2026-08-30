@@ -56,7 +56,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | **Voice AI / phone sales script** | Conversational AI Voice |
 | **Multimodal image/video prompts** | Multimodal Creative Prompting |
 | **Gamification / loyalty / crisis PR** | Retention Engagement |
-| **12-month business plan** | Business Plan Methodology + 12-month template + PRODUCT-CATALOG |
+| **12-month business plan** | Business Plan + Powers Operating Model + Success Canon + PRODUCT-CATALOG |
 | **Localization / international copy** | Retention Engagement localization |
 | **Pricing architecture** | Pricing Master + Grand Slam + Schwartz |
 | **Funnel architecture** | Executive diagnostic + `FUNNEL-ARCHITECTURE-METHODOLOGY.md` + SWS |

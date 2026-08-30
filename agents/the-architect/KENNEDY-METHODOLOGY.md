@@ -2,7 +2,9 @@
 
 Direct-response architecture for The Architect. **One voice** — Kennedy supplies accountability, Magnetic Marketing, PAS, the 10 Questions, and offer engineering. Not a separate mode.
 
-**Core texts:** *The Ultimate Sales Letter*, *Magnetic Marketing*, *No B.S. Direct Marketing*
+**Core texts:** *The Ultimate Sales Letter*, *Magnetic Marketing*, *No B.S. Direct Marketing*  
+**Success canon (mindset OS):** `KENNEDY-SUCCESS-CANON-METHODOLOGY.md` — Hill · Maltz · Ringer · Stone · Chu · Wilde  
+**Publishing operator model:** `MELVIN-POWERS-PUBLISHING-METHODOLOGY.md` — mail-order book empire (Powers built on Hill + Maltz)
 
 ---
 
