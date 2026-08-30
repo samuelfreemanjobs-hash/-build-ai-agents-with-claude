@@ -1,0 +1,33 @@
+.env
+*.pyc
+__pycache__/
+.venv/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Agent project outputs (user work) — FI ops plans/launches are tracked
+agents/the-architect/projects/*
+!agents/the-architect/projects/.gitkeep
+!agents/the-architect/projects/freeman-intelligence/
+agents/the-architect/projects/freeman-intelligence/*
+!agents/the-architect/projects/freeman-intelligence/plans/
+!agents/the-architect/projects/freeman-intelligence/plans/**
+!agents/the-architect/projects/freeman-intelligence/launch/
+!agents/the-architect/projects/freeman-intelligence/launch/**
+!agents/the-architect/projects/freeman-intelligence/reviews/
+!agents/the-architect/projects/freeman-intelligence/reviews/**
+
+# Gmail OAuth (never commit)
+agents/the-architect/credentials.json
+agents/the-architect/.gmail-token.json
+
+# Ops portal secrets (generate locally, upload to Hostinger)
+website/ops/.htpasswd
+website/ops/.htaccess
+website/ops/api/config.php
+
+# Public site lead data (generated on Hostinger)
+website/public/data/leads.json
+website/public/data/briefings/
+website/public/api/config.php

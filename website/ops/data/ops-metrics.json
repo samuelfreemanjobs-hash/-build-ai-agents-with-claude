@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "updated": "2026-09-01",
+  "month": "2026-09",
+  "month_label": "M1",
+  "targets": {
+    "subscribers": 500,
+    "waitlist": 200,
+    "webinar_reg": 100,
+    "kindle_units": 150,
+    "cohort_seats": 20,
+    "chapters_shipped": 12,
+    "tests_run": 4,
+    "partner_asks": 4,
+    "backend_revenue_pct": 50
+  },
+  "actuals": {
+    "subscribers": null,
+    "waitlist": null,
+    "webinar_reg": null,
+    "kindle_units": null,
+    "cohort_seats": null,
+    "chapters_shipped": 0,
+    "tests_run": 0,
+    "partner_asks": 0,
+    "backend_revenue_pct": null
+  },
+  "weekly_history": [
+    {"week": "2026-W36", "subscribers": null, "waitlist": null, "chapters": 0, "tests": 0, "notes": "M1 kickoff"}
+  ],
+  "funnel_stages": {
+    "awareness": {"score": 3, "notes": ""},
+    "capture": {"score": 2, "notes": "Waitlist not live yet"},
+    "nurture": {"score": 2, "notes": "ESP not chosen"},
+    "convert": {"score": 1, "notes": "FI-001 not published"},
+    "ascend": {"score": 1, "notes": "No backend live"}
+  },
+  "revenue": {
+    "kindle_royalties": 0,
+    "backend_total": 0,
+    "consulting": 0
+  },
+  "auto_synced": {},
+  "integrations_updated": null
+}

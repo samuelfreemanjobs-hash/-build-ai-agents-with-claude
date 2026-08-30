@@ -1,0 +1,692 @@
+{
+  "patterns": {
+    "Cosmo": [
+      {
+        "headline": "33 Things That'll Make You Say 'Wait, That's Genius'",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "We Tried Every Viral TikTok Recipe So You Don't Have To",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "People Are Sharing The One Text That Changed Their Relationship",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "Here's What Happens When You Stop Saying Sorry For 30 Days",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "21 Small Habits That Quietly Ruin Your Mornings",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "What Smart Women Get Wrong About Texting Him Back",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "The One Thing Confident Women Never Apologize For",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "7 Signs He's Emotionally Available (Not Just Saying He Is)",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "Why High-Achieving Women Pick The Wrong Men \u2014 And How To Stop",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "The Text That Makes Him Chase Without Playing Games",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "What Your Attachment Style Says About Your Dating Patterns",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "5 Boundaries That Make You More Attractive, Not Less",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "The Morning Habit That Changes How Men Treat You",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "Are You Dating His Potential Or His Reality?",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "What To Say When He Pulls Away (Without Seeming Desperate)",
+        "structural_move": "[Scene] + [tension] + [open loop]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "The Confidence Trick That Works Better Than Playing Hard To Get",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "Why Being 'Low Maintenance' Is Costing You Respect",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "Insider: The Real Reason They Split \u2014 And It Wasn't What You Think",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Do You Make These Mistakes in English?",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Burn Disease Out of Your Body",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "The Secret of Making People Like You",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Announcing the Only Sales Letter System That Diagnoses Your Market Before You Write Word One",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "How to Cut Your Tax Bill by 30% Without Changing a Thing About Your Business",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "What Will You Do When Your Personal Assets Are Seized?",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Double Your Business in 90 Days \u2014 Or We Work for Free",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "If You Can Write a Simple Letter, You Can Make $10,000 a Month from Home",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Warning: Do Not Read This Unless You Want to Retire 10 Years Early",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      }
+    ],
+    "Buzzhead": [
+      {
+        "headline": "33 Things That'll Make You Say 'Wait, That's Genius'",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "We Tried Every Viral TikTok Recipe So You Don't Have To",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "17 Photos That Prove 2026 Already Won the Internet",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "People Are Sharing The One Text That Changed Their Relationship",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "This $12 Amazon Find Has 40,000 Five-Star Reviews For A Reason",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "57 Costumes That've Already Won Halloween, And It Literally Hasn't Even Happened Yet",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "I Asked 12 Therapists The One Question They Wish Clients Would Ask",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "The Creeeeeeeeepiest Places On The Internet Has To Offer RN",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "Only True '90s Kids Will Get More Than 20 On This Quiz",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "Here's What Happens When You Stop Saying Sorry For 30 Days",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "21 Small Habits That Quietly Ruin Your Mornings",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "We Ranked Every Fast-Food Fry And The Results Started A War",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "7 Signs He's Emotionally Available (Not Just Saying He Is)",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "5 Boundaries That Make You More Attractive, Not Less",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "The $50 Million Secret That Could Topple An Empire",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "At 60 Miles an Hour the Loudest Noise in This New Rolls-Royce Comes from the Electric Clock",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Read 300 Business Magazines in 30 Minutes",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "How to Cut Your Tax Bill by 30% Without Changing a Thing About Your Business",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "The $2.3 Million Marketing Mistake Almost Every Business Owner Makes",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "New Method Lets Small Businesses Generate Enterprise-Level Leads for Under $500/Month",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Free Report Reveals the 4 U's Formula Behind Headlines That Outpull Control by 300%",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Double Your Business in 90 Days \u2014 Or We Work for Free",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "If You Can Write a Simple Letter, You Can Make $10,000 a Month from Home",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Warning: Do Not Read This Unless You Want to Retire 10 Years Early",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      }
+    ],
+    "Listicle": [
+      {
+        "headline": "33 Things That'll Make You Say 'Wait, That's Genius'",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "17 Photos That Prove 2026 Already Won the Internet",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "57 Costumes That've Already Won Halloween, And It Literally Hasn't Even Happened Yet",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "21 Small Habits That Quietly Ruin Your Mornings",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "7 Signs He's Emotionally Available (Not Just Saying He Is)",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "5 Boundaries That Make You More Attractive, Not Less",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      }
+    ],
+    "Proof": [
+      {
+        "headline": "This $12 Amazon Find Has 40,000 Five-Star Reviews For A Reason",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "Here's What Happens When You Stop Saying Sorry For 30 Days",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "The $50 Million Secret That Could Topple An Empire",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Read 300 Business Magazines in 30 Minutes",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "The $2.3 Million Marketing Mistake Almost Every Business Owner Makes",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "New Method Lets Small Businesses Generate Enterprise-Level Leads for Under $500/Month",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Double Your Business in 90 Days \u2014 Or We Work for Free",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "If You Can Write a Simple Letter, You Can Make $10,000 a Month from Home",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      }
+    ],
+    "Hook": [
+      {
+        "headline": "We Ranked Every Fast-Food Fry And The Results Started A War",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "buzzfeed"
+      },
+      {
+        "headline": "The Text That Makes Him Chase Without Playing Games",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "The Confidence Trick That Works Better Than Playing Hard To Get",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "Exclusive: The Night Everything Changed For America's Sweetheart",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "The Hidden Health Crisis No One In The Inner Circle Will Discuss",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "They Tried To Bury This Story \u2014 Here's What Leaked",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Witness Speaks: 'I Saw What They Did That Night'",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "The Marriage That Looked Perfect \u2014 Until The Cameras Stopped",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Inside The Deal That Shocked Even Industry Insiders",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "The Lazy Man's Way to Riches",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "What Everybody Ought to Know About This Stock and Bond Business",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "How a Strange Accident Saved Me from Baldness",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Astonishing Sex Secrets of a Desperate Nerd from Pomona",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "salesletters"
+      }
+    ],
+    "Contrarian": [
+      {
+        "headline": "What Smart Women Get Wrong About Texting Him Back",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "Why High-Achieving Women Pick The Wrong Men \u2014 And How To Stop",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "Sources Say: The Truth About The Feud Nobody Saw Coming",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "national_enquirer"
+      }
+    ],
+    "Story": [
+      {
+        "headline": "7 Signs He's Emotionally Available (Not Just Saying He Is)",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "What To Say When He Pulls Away (Without Seeming Desperate)",
+        "structural_move": "[Scene] + [tension] + [open loop]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "What He Never Told Her \u2014 And Why It Destroyed Everything",
+        "structural_move": "[Scene] + [tension] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "They Laughed When I Sat Down at the Piano \u2014 But When I Started to Play!",
+        "structural_move": "[Social scene] + [but/when] + [payoff tease]",
+        "source": "proven_headlines"
+      }
+    ],
+    "Caples": [
+      {
+        "headline": "Why High-Achieving Women Pick The Wrong Men \u2014 And How To Stop",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "They Laughed When I Sat Down at the Piano \u2014 But When I Started to Play!",
+        "structural_move": "[Social scene] + [but/when] + [payoff tease]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Do You Make These Mistakes in English?",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "How to Win Friends and Influence People",
+        "structural_move": "[Social scene] + [but/when] + [payoff tease]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "At 60 Miles an Hour the Loudest Noise in This New Rolls-Royce Comes from the Electric Clock",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Read 300 Business Magazines in 30 Minutes",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "The Lazy Man's Way to Riches",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Burn Disease Out of Your Body",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "New Miracle Drug Discovered by Bulgarian Scientist",
+        "structural_move": "[News/benefit] + [mechanism] + [risk reversal or urgency]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "What Everybody Ought to Know About This Stock and Bond Business",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "How a Strange Accident Saved Me from Baldness",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "The Secret of Making People Like You",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Who Else Wants a Whiter Wash \u2014 With No Hard Work?",
+        "structural_move": "[Question] + [implied gap in reader knowledge]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "How to Cut Your Tax Bill by 30% Without Changing a Thing About Your Business",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "The $2.3 Million Marketing Mistake Almost Every Business Owner Makes",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      }
+    ],
+    "Question": [
+      {
+        "headline": "Are You Dating His Potential Or His Reality?",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "cosmopolitan"
+      },
+      {
+        "headline": "Do You Make These Mistakes in English?",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Who Else Wants a Whiter Wash \u2014 With No Hard Work?",
+        "structural_move": "[Question] + [implied gap in reader knowledge]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "What Will You Do When Your Personal Assets Are Seized?",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      }
+    ],
+    "Enq": [
+      {
+        "headline": "Insider: The Real Reason They Split \u2014 And It Wasn't What You Think",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Shocking Secret Behind Hollywood's Biggest Comeback",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "What He Never Told Her \u2014 And Why It Destroyed Everything",
+        "structural_move": "[Scene] + [tension] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Sources Say: The Truth About The Feud Nobody Saw Coming",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Exclusive: The Night Everything Changed For America's Sweetheart",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "The Hidden Health Crisis No One In The Inner Circle Will Discuss",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Revealed: What Really Happened Behind Closed Doors",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "They Tried To Bury This Story \u2014 Here's What Leaked",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "The $50 Million Secret That Could Topple An Empire",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Witness Speaks: 'I Saw What They Did That Night'",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "The Marriage That Looked Perfect \u2014 Until The Cameras Stopped",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "Inside The Deal That Shocked Even Industry Insiders",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "national_enquirer"
+      },
+      {
+        "headline": "The Secret of Making People Like You",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "The Shocking Truth About Advertising \u2014 Revealed in Lost Manuscripts from the 1920s",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "The One-Legged Golfer's Secret to Outdriving Pros Half His Age",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "salesletters"
+      }
+    ],
+    "SalesLetter": [
+      {
+        "headline": "At 60 Miles an Hour the Loudest Noise in This New Rolls-Royce Comes from the Electric Clock",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "New Miracle Drug Discovered by Bulgarian Scientist",
+        "structural_move": "[News/benefit] + [mechanism] + [risk reversal or urgency]",
+        "source": "proven_headlines"
+      },
+      {
+        "headline": "Announcing the Only Sales Letter System That Diagnoses Your Market Before You Write Word One",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "How to Cut Your Tax Bill by 30% Without Changing a Thing About Your Business",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "The $2.3 Million Marketing Mistake Almost Every Business Owner Makes",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "New Method Lets Small Businesses Generate Enterprise-Level Leads for Under $500/Month",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Free Report Reveals the 4 U's Formula Behind Headlines That Outpull Control by 300%",
+        "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "What Will You Do When Your Personal Assets Are Seized?",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Astonishing Sex Secrets of a Desperate Nerd from Pomona",
+        "structural_move": "[Specific claim] + [open loop]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Double Your Business in 90 Days \u2014 Or We Work for Free",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "The Shocking Truth About Advertising \u2014 Revealed in Lost Manuscripts from the 1920s",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "If You Can Write a Simple Letter, You Can Make $10,000 a Month from Home",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "Warning: Do Not Read This Unless You Want to Retire 10 Years Early",
+        "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+        "source": "salesletters"
+      },
+      {
+        "headline": "The One-Legged Golfer's Secret to Outdriving Pros Half His Age",
+        "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+        "source": "salesletters"
+      }
+    ]
+  },
+  "updated_at": "2026-08-29T23:14:33.785608+00:00"
+}

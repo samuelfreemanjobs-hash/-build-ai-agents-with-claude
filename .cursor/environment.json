@@ -1,0 +1,5 @@
+{
+  "name": "Build AI Agents with Claude",
+  "install": "pip install -e .",
+  "start": "the-architect learn 2>/dev/null || true; echo 'The Architect ready. Run: the-architect chat'"
+}

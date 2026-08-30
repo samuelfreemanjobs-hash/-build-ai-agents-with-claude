@@ -1,0 +1,23 @@
+# Password protection for Freeman Intelligence ops portal
+#
+# OPTION A — hPanel (easiest)
+#   hPanel → Advanced → Directory Privacy → select public_html/ops → set username/password
+#
+# OPTION B — .htaccess (this file)
+#   1. Run: ./scripts/setup-ops-auth.sh   (creates .htpasswd + .htaccess)
+#   2. Upload .htpasswd to path below (OUTSIDE public_html)
+#   3. Copy this file to .htaccess and fix AuthUserFile path
+#
+# Find your path: hPanel File Manager → note full path to folder containing public_html
+
+AuthType Basic
+AuthName "Freeman Intelligence Ops"
+AuthUserFile /home/u123456789/domains/freemanintelligence.com/.htpasswd
+Require valid-user
+
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+
+# Optional: lock to your IP only (uncomment)
+# Require ip YOUR.IP.ADDRESS.HERE

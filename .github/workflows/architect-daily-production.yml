@@ -1,0 +1,86 @@
+name: Architect Daily Production
+
+on:
+  schedule:
+    # 07:00 UTC daily — chapter + content (after headline learning at 06:00)
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only (no API calls)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install The Architect
+        run: pip install -e .
+
+      - name: Factory status
+        run: the-architect factory status
+
+      - name: Run daily production
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "ANTHROPIC_API_KEY not set — running dry-run preview"
+            the-architect factory daily --dry-run
+            exit 0
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            the-architect factory daily --dry-run
+          else
+            the-architect factory daily
+          fi
+
+      - name: Commit factory and project outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add agents/the-architect/factory/ agents/the-architect/projects/
+          if git diff --staged --quiet; then
+            echo "No factory outputs to commit."
+          else
+            git commit -m "chore(architect): daily production $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Sync ops portal data
+        run: ./scripts/sync-ops-portal.sh
+
+      - name: Sync external metrics (ESP · KDP · Stripe)
+        env:
+          ESP_PROVIDER: ${{ secrets.ESP_PROVIDER }}
+          CONVERTKIT_API_SECRET: ${{ secrets.CONVERTKIT_API_SECRET }}
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUBLICATION_ID: ${{ secrets.BEEHIIV_PUBLICATION_ID }}
+          KDP_CSV_PATH: ${{ secrets.KDP_CSV_PATH }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          python3 scripts/sync-external-metrics.py --triggered-by=github_actions || echo "External metrics skipped or partial (configure GitHub secrets to enable)"
+
+      - name: Commit ops portal sync
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add website/ops/data/
+          if git diff --staged --quiet; then
+            echo "No ops portal data changes."
+          else
+            git commit -m "chore(ops): sync portal data $(date -u +%Y-%m-%d)"
+            git push
+          fi

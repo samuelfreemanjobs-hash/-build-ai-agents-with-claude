@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "brand": "Freeman Intelligence",
+  "author": "Samuel Freeman",
+  "doctrine": "Books are calling cards — backend and list are the business",
+  "powers_model": "strategy/FREEMAN-INTELLIGENCE-POWERS-OPERATING-MODEL.md",
+  "stages": [
+    {
+      "id": "cold",
+      "name": "Cold stranger",
+      "assets": ["LinkedIn post", "Kindle sample", "Podcast guest"],
+      "cta": "Opt-in / follow",
+      "metric": "impressions_to_optin_rate"
+    },
+    {
+      "id": "lead",
+      "name": "Permission lead",
+      "assets": ["DR rubric PDF", "Guru Blueprint install", "Waitlist"],
+      "cta": "Consume free line",
+      "metric": "optin_rate"
+    },
+    {
+      "id": "reader",
+      "name": "Reader (non-buyer)",
+      "assets": ["FI-000 Kindle", "Email nurture"],
+      "cta": "Buy FI-001",
+      "metric": "reader_to_buyer_rate"
+    },
+    {
+      "id": "buyer",
+      "name": "Book buyer",
+      "assets": ["FI-001–010 Kindle titles"],
+      "cta": "Backend offer",
+      "metric": "buyer_attach_rate"
+    },
+    {
+      "id": "tripwire",
+      "name": "Tripwire buyer",
+      "assets": ["Agent Prompt Vault $47"],
+      "cta": "Core offer",
+      "metric": "tripwire_to_core_rate"
+    },
+    {
+      "id": "core",
+      "name": "Core backend",
+      "assets": ["Founding cohort $497", "VOC Toolkit $197"],
+      "cta": "High-ticket",
+      "metric": "core_completion_rate"
+    },
+    {
+      "id": "high_ticket",
+      "name": "High-ticket",
+      "assets": ["Strategy intensive $1,500", "Agency Sprint $997", "Architecture sprint $5K–$10K"],
+      "cta": "Referral / repeat",
+      "metric": "ltv_cac_ratio"
+    },
+    {
+      "id": "advocate",
+      "name": "Advocate",
+      "assets": ["Testimonial", "JV partner", "Case study"],
+      "cta": "Refer new buyers",
+      "metric": "referral_rate"
+    }
+  ],
+  "product_paths": [
+    {
+      "from": "FI-000",
+      "to": "FI-001",
+      "trigger": "back_matter_cta",
+      "copy_angle": "You mastered product design — now engineer the persuasion layer"
+    },
+    {
+      "from": "FI-001",
+      "to": "founding_cohort_497",
+      "trigger": "launch_sequence_day_5",
+      "copy_angle": "Implement the multi-agent system with the founding cohort"
+    },
+    {
+      "from": "FI-001",
+      "to": "FI-007",
+      "trigger": "buyer_nurture_week_2",
+      "copy_angle": "Ready for hands-on agent implementation"
+    },
+    {
+      "from": "FI-007",
+      "to": "agent_vault_47",
+      "trigger": "post_purchase_oto",
+      "copy_angle": "Starter workflow JSON + prompt vault"
+    },
+    {
+      "from": "FI-005",
+      "to": "voc_toolkit_197",
+      "trigger": "book_launch_bundle",
+      "copy_angle": "Extract buyer language at scale"
+    },
+    {
+      "from": "FI-004",
+      "to": "agency_sprint_997",
+      "trigger": "m8_open_month",
+      "copy_angle": "Deploy the 1-person agency in 2 days live"
+    },
+    {
+      "from": "buyer_3plus",
+      "to": "box_set_39",
+      "trigger": "m12_capstone",
+      "copy_angle": "Complete the 10-book Freeman Intelligence library"
+    }
+  ],
+  "email_segments": [
+    {"id": "cold", "tags": ["lead_magnet"], "sequence": "indoctrination"},
+    {"id": "waitlist", "tags": ["pm001_waitlist"], "sequence": "launch_5_email"},
+    {"id": "buyer", "tags": ["kindle_buyer"], "sequence": "buyer_nurture"},
+    {"id": "tripwire", "tags": ["vault_buyer"], "sequence": "ascension_core"},
+    {"id": "cohort", "tags": ["cohort_member"], "sequence": "onboarding_retention"}
+  ],
+  "year_2_bridge": {
+    "cluster": "strategy/REVENUE-SYSTEMS-CLUSTER.json",
+    "flagship": "FI-050",
+    "entry_trigger": "buyer_5plus_or_cohort_graduate",
+    "note": "RSE trilogy begins after 10-book Kindle backlist (Aug 2027)"
+  }
+}

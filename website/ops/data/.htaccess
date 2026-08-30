@@ -1,0 +1,4 @@
+# Deny backup files only — ops JSON is behind /ops/ Directory Privacy
+<Files "*.bak">
+  Require all denied
+</Files>

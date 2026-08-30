@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "the-architect"
+version = "0.1.0"
+description = "Agentic AI copywriter — Claude Agent SDK runtime for The Architect"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "claude-agent-sdk>=0.2.0",
+  "python-dotenv>=1.0.0",
+  "google-api-python-client>=2.100.0",
+  "google-auth-oauthlib>=1.2.0",
+  "google-auth-httplib2>=0.2.0",
+  "beautifulsoup4>=4.12.0",
+]
+
+[project.scripts]
+the-architect = "the_architect.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["the_architect"]

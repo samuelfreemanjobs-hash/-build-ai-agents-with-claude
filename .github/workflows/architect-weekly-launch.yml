@@ -1,0 +1,60 @@
+name: Architect Weekly Launch
+
+on:
+  schedule:
+    # Monday 08:00 UTC — one product + full marketing per week
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only (no API calls)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install The Architect
+        run: pip install -e .
+
+      - name: Factory status
+        run: the-architect factory status
+
+      - name: Run weekly launch pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "ANTHROPIC_API_KEY not set — running dry-run preview"
+            the-architect factory launch --dry-run
+            exit 0
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            the-architect factory launch --dry-run
+          else
+            the-architect factory launch
+          fi
+
+      - name: Commit launch assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add agents/the-architect/factory/ agents/the-architect/projects/
+          if git diff --staged --quiet; then
+            echo "No launch outputs to commit."
+          else
+            git commit -m "chore(architect): weekly launch $(date -u +%Y-%m-%d)"
+            git push
+          fi

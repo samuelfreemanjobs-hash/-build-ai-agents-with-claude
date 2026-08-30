@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "updated": "2026-09-01",
+  "columns": ["backlog", "this_week", "in_progress", "done"],
+  "tasks": [
+    {"id": "t001", "title": "Add API keys to .env + GitHub secret", "column": "in_progress", "domain": "systems", "priority": "critical", "due": "2026-09-01", "month": "M1"},
+    {"id": "t002", "title": "Run FI-001 factory outline", "column": "backlog", "domain": "factory", "priority": "critical", "due": "2026-09-07", "month": "M1", "product_id": "FI-001"},
+    {"id": "t003", "title": "Deploy waitlist page on Hostinger", "column": "backlog", "domain": "marketing", "priority": "high", "due": "2026-09-07", "month": "M1"},
+    {"id": "t004", "title": "Deploy DR rubric lead magnet (/rubric)", "column": "backlog", "domain": "marketing", "priority": "high", "due": "2026-09-15", "month": "M1"},
+    {"id": "t005", "title": "Complete 4P + Fishbein launch audits", "column": "backlog", "domain": "launch", "priority": "high", "due": "2026-09-24", "month": "M1", "product_id": "FI-001"},
+    {"id": "t006", "title": "W1: Brand soft launch + waitlist welcome", "column": "this_week", "domain": "content", "priority": "high", "due": "2026-09-07", "month": "M1"},
+    {"id": "t007", "title": "W1: Chapters 1–3 (factory)", "column": "this_week", "domain": "factory", "priority": "high", "due": "2026-09-07", "month": "M1", "product_id": "FI-001"},
+    {"id": "t008", "title": "Choose ESP (ConvertKit/Beehiiv/MailerLite)", "column": "backlog", "domain": "systems", "priority": "high", "due": "2026-09-10", "month": "M1"},
+    {"id": "t009", "title": "Update FI-000 back matter with FI-001 CTA", "column": "backlog", "domain": "launch", "priority": "medium", "due": "2026-09-24", "month": "M1"},
+    {"id": "t010", "title": "Founding cohort $497 page live", "column": "backlog", "domain": "launch", "priority": "high", "due": "2026-09-25", "month": "M1"},
+    {"id": "t011", "title": "Soft webinar (Sep 28)", "column": "backlog", "domain": "marketing", "priority": "high", "due": "2026-09-28", "month": "M1"},
+    {"id": "t012", "title": "Friday GOO review #1", "column": "backlog", "domain": "metrics", "priority": "medium", "due": "2026-09-05", "month": "M1"},
+    {"id": "t013", "title": "3 warm partner outreach (no JV launch)", "column": "backlog", "domain": "partnerships", "priority": "medium", "due": "2026-09-20", "month": "M1"},
+    {"id": "t014", "title": "LinkedIn $50 headline test", "column": "backlog", "domain": "paid_media", "priority": "low", "due": "2026-09-07", "month": "M1"},
+    {"id": "t015", "title": "Deploy internal ops portal (/ops)", "column": "in_progress", "domain": "systems", "priority": "high", "due": "2026-09-02", "month": "M1"}
+  ]
+}

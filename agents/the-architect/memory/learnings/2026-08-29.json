@@ -1,0 +1,920 @@
+{
+  "date": "2026-08-29",
+  "runs": [
+    {
+      "date": "2026-08-29",
+      "total_added": 60,
+      "sources": [
+        {
+          "source": "buzzfeed",
+          "display_name": "Buzzhead (BuzzFeed-style)",
+          "collected": 12,
+          "added": 12,
+          "fetched_live": false,
+          "error": "Feed unavailable; using curated seed library"
+        },
+        {
+          "source": "cosmopolitan",
+          "display_name": "Cosmopolitan",
+          "collected": 12,
+          "added": 12,
+          "fetched_live": false,
+          "error": "Feed unavailable; using curated seed library"
+        },
+        {
+          "source": "national_enquirer",
+          "display_name": "National Enquirer",
+          "collected": 12,
+          "added": 12,
+          "fetched_live": false,
+          "error": "Feed unavailable; using curated seed library"
+        },
+        {
+          "source": "proven_headlines",
+          "display_name": "Proven Headlines (DR classics)",
+          "collected": 12,
+          "added": 12,
+          "fetched_live": false,
+          "error": "Feed unavailable; using curated seed library"
+        },
+        {
+          "source": "salesletters",
+          "display_name": "Sales Letters (proven DR)",
+          "collected": 12,
+          "added": 12,
+          "fetched_live": false,
+          "error": "Feed unavailable; using curated seed library"
+        }
+      ],
+      "stats": {
+        "total_swipes": 60,
+        "total_runs": 0,
+        "sources": {
+          "buzzfeed": 12,
+          "cosmopolitan": 12,
+          "national_enquirer": 12,
+          "proven_headlines": 12,
+          "salesletters": 12
+        },
+        "last_run": null,
+        "digest_path": "agents/the-architect/memory/digest.md"
+      },
+      "recorded_at": "2026-08-29T23:14:33.786171+00:00"
+    }
+  ],
+  "swipes": [
+    {
+      "headline": "33 Things That'll Make You Say 'Wait, That's Genius'",
+      "patterns": [
+        "Cosmo",
+        "Buzzhead",
+        "Listicle"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "31c16ceb312e746c",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721202+00:00"
+    },
+    {
+      "headline": "We Tried Every Viral TikTok Recipe So You Don't Have To",
+      "patterns": [
+        "Buzzhead",
+        "Cosmo"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "ad63831d53e07a87",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721213+00:00"
+    },
+    {
+      "headline": "17 Photos That Prove 2026 Already Won the Internet",
+      "patterns": [
+        "Buzzhead",
+        "Listicle"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "b540300abc371f15",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721217+00:00"
+    },
+    {
+      "headline": "People Are Sharing The One Text That Changed Their Relationship",
+      "patterns": [
+        "Buzzhead",
+        "Cosmo"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "4dfe608d812209a7",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721220+00:00"
+    },
+    {
+      "headline": "This $12 Amazon Find Has 40,000 Five-Star Reviews For A Reason",
+      "patterns": [
+        "Buzzhead",
+        "Proof"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "68cf9d6ea37ecdba",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721222+00:00"
+    },
+    {
+      "headline": "57 Costumes That've Already Won Halloween, And It Literally Hasn't Even Happened Yet",
+      "patterns": [
+        "Buzzhead",
+        "Listicle"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "78379877d6854c54",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721226+00:00"
+    },
+    {
+      "headline": "I Asked 12 Therapists The One Question They Wish Clients Would Ask",
+      "patterns": [
+        "Buzzhead"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "9c27f9ed3101a828",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721229+00:00"
+    },
+    {
+      "headline": "The Creeeeeeeeepiest Places On The Internet Has To Offer RN",
+      "patterns": [
+        "Buzzhead"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "fb643936070d8691",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721231+00:00"
+    },
+    {
+      "headline": "Only True '90s Kids Will Get More Than 20 On This Quiz",
+      "patterns": [
+        "Buzzhead"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "2586be80702fec06",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721234+00:00"
+    },
+    {
+      "headline": "Here's What Happens When You Stop Saying Sorry For 30 Days",
+      "patterns": [
+        "Cosmo",
+        "Buzzhead",
+        "Proof"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "9b0120d9250cdd30",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721236+00:00"
+    },
+    {
+      "headline": "21 Small Habits That Quietly Ruin Your Mornings",
+      "patterns": [
+        "Cosmo",
+        "Buzzhead",
+        "Listicle"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "07dff40b7d5207be",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721238+00:00"
+    },
+    {
+      "headline": "We Ranked Every Fast-Food Fry And The Results Started A War",
+      "patterns": [
+        "Buzzhead",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "9f1e68da10bb16aa",
+      "source": "buzzfeed",
+      "learned_at": "2026-08-29T23:14:33.721240+00:00"
+    },
+    {
+      "headline": "What Smart Women Get Wrong About Texting Him Back",
+      "patterns": [
+        "Cosmo",
+        "Contrarian"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "44caafabab2ef182",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.729999+00:00"
+    },
+    {
+      "headline": "The One Thing Confident Women Never Apologize For",
+      "patterns": [
+        "Cosmo"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "a50e2689ca18dcff",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730007+00:00"
+    },
+    {
+      "headline": "7 Signs He's Emotionally Available (Not Just Saying He Is)",
+      "patterns": [
+        "Cosmo",
+        "Buzzhead",
+        "Listicle",
+        "Story"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "8364bc620169f3ec",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730010+00:00"
+    },
+    {
+      "headline": "Why High-Achieving Women Pick The Wrong Men \u2014 And How To Stop",
+      "patterns": [
+        "Cosmo",
+        "Caples",
+        "Contrarian"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "S",
+      "genre": "H",
+      "hash": "62fb7a9f210191cb",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730022+00:00"
+    },
+    {
+      "headline": "The Text That Makes Him Chase Without Playing Games",
+      "patterns": [
+        "Cosmo",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "cdfcfc599285821d",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730025+00:00"
+    },
+    {
+      "headline": "What Your Attachment Style Says About Your Dating Patterns",
+      "patterns": [
+        "Cosmo"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "4c0fa2c2c3a1531c",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730028+00:00"
+    },
+    {
+      "headline": "5 Boundaries That Make You More Attractive, Not Less",
+      "patterns": [
+        "Cosmo",
+        "Buzzhead",
+        "Listicle"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "1988700f128af707",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730031+00:00"
+    },
+    {
+      "headline": "The Morning Habit That Changes How Men Treat You",
+      "patterns": [
+        "Cosmo"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "6c66e89cfae1d470",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730033+00:00"
+    },
+    {
+      "headline": "Are You Dating His Potential Or His Reality?",
+      "patterns": [
+        "Cosmo",
+        "Question"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "c3f80997d6a3464f",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730035+00:00"
+    },
+    {
+      "headline": "What To Say When He Pulls Away (Without Seeming Desperate)",
+      "patterns": [
+        "Cosmo",
+        "Story"
+      ],
+      "why_it_works": "Narrative scene pulls reader into moment",
+      "structural_move": "[Scene] + [tension] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "f35c5bb4399259a4",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730038+00:00"
+    },
+    {
+      "headline": "The Confidence Trick That Works Better Than Playing Hard To Get",
+      "patterns": [
+        "Cosmo",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "b26ddec70ea17480",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730040+00:00"
+    },
+    {
+      "headline": "Why Being 'Low Maintenance' Is Costing You Respect",
+      "patterns": [
+        "Cosmo"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "adeba0e5126593c1",
+      "source": "cosmopolitan",
+      "learned_at": "2026-08-29T23:14:33.730043+00:00"
+    },
+    {
+      "headline": "Insider: The Real Reason They Split \u2014 And It Wasn't What You Think",
+      "patterns": [
+        "Cosmo",
+        "Enq"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "U",
+      "genre": "H",
+      "hash": "eadb0de694504483",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732306+00:00"
+    },
+    {
+      "headline": "Shocking Secret Behind Hollywood's Biggest Comeback",
+      "patterns": [
+        "Enq"
+      ],
+      "why_it_works": "Insider authority + hidden truth + open loop",
+      "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+      "awareness": "U",
+      "genre": "H",
+      "hash": "86e9076272b07632",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732315+00:00"
+    },
+    {
+      "headline": "What He Never Told Her \u2014 And Why It Destroyed Everything",
+      "patterns": [
+        "Enq",
+        "Story"
+      ],
+      "why_it_works": "Narrative scene pulls reader into moment",
+      "structural_move": "[Scene] + [tension] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "e42adc8f0073a760",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732319+00:00"
+    },
+    {
+      "headline": "Sources Say: The Truth About The Feud Nobody Saw Coming",
+      "patterns": [
+        "Enq",
+        "Contrarian"
+      ],
+      "why_it_works": "Insider authority + hidden truth + open loop",
+      "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "9b06dbe551085dc7",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732321+00:00"
+    },
+    {
+      "headline": "Exclusive: The Night Everything Changed For America's Sweetheart",
+      "patterns": [
+        "Enq",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "489e95e6baa9244e",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732324+00:00"
+    },
+    {
+      "headline": "The Hidden Health Crisis No One In The Inner Circle Will Discuss",
+      "patterns": [
+        "Enq",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "e1442a35858545ef",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732327+00:00"
+    },
+    {
+      "headline": "Revealed: What Really Happened Behind Closed Doors",
+      "patterns": [
+        "Enq"
+      ],
+      "why_it_works": "Insider authority + hidden truth + open loop",
+      "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "b46a0386bc6b1370",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732329+00:00"
+    },
+    {
+      "headline": "They Tried To Bury This Story \u2014 Here's What Leaked",
+      "patterns": [
+        "Enq",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "c8b54943d3610db9",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732332+00:00"
+    },
+    {
+      "headline": "The $50 Million Secret That Could Topple An Empire",
+      "patterns": [
+        "Enq",
+        "Buzzhead",
+        "Proof"
+      ],
+      "why_it_works": "Insider authority + hidden truth + open loop",
+      "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+      "awareness": "U",
+      "genre": "H",
+      "hash": "cb0f475f7f89e91d",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732334+00:00"
+    },
+    {
+      "headline": "Witness Speaks: 'I Saw What They Did That Night'",
+      "patterns": [
+        "Enq",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "d5a456de29078946",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732336+00:00"
+    },
+    {
+      "headline": "The Marriage That Looked Perfect \u2014 Until The Cameras Stopped",
+      "patterns": [
+        "Enq",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "49deec1e8728a78d",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732339+00:00"
+    },
+    {
+      "headline": "Inside The Deal That Shocked Even Industry Insiders",
+      "patterns": [
+        "Enq",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "a4a62edcaec4f250",
+      "source": "national_enquirer",
+      "learned_at": "2026-08-29T23:14:33.732341+00:00"
+    },
+    {
+      "headline": "They Laughed When I Sat Down at the Piano \u2014 But When I Started to Play!",
+      "patterns": [
+        "Caples",
+        "Story"
+      ],
+      "why_it_works": "Story reversal or direct question implicating reader",
+      "structural_move": "[Social scene] + [but/when] + [payoff tease]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "92f27ef4689fbce6",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749840+00:00"
+    },
+    {
+      "headline": "Do You Make These Mistakes in English?",
+      "patterns": [
+        "Cosmo",
+        "Caples",
+        "Question"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "S",
+      "genre": "H",
+      "hash": "93efccc1bd768ea7",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749849+00:00"
+    },
+    {
+      "headline": "How to Win Friends and Influence People",
+      "patterns": [
+        "Caples"
+      ],
+      "why_it_works": "Story reversal or direct question implicating reader",
+      "structural_move": "[Social scene] + [but/when] + [payoff tease]",
+      "awareness": "S",
+      "genre": "H",
+      "hash": "84d63886b9283cf3",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749852+00:00"
+    },
+    {
+      "headline": "At 60 Miles an Hour the Loudest Noise in This New Rolls-Royce Comes from the Electric Clock",
+      "patterns": [
+        "Caples",
+        "Buzzhead",
+        "SalesLetter"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "ff978fd9fa94734d",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749855+00:00"
+    },
+    {
+      "headline": "Read 300 Business Magazines in 30 Minutes",
+      "patterns": [
+        "Caples",
+        "Buzzhead",
+        "Proof"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "58e12f0d92d3e79f",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749857+00:00"
+    },
+    {
+      "headline": "The Lazy Man's Way to Riches",
+      "patterns": [
+        "Caples",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "d164f2ed1819215b",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749859+00:00"
+    },
+    {
+      "headline": "Burn Disease Out of Your Body",
+      "patterns": [
+        "Caples",
+        "Cosmo"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "11c08a78e008c8d7",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749861+00:00"
+    },
+    {
+      "headline": "New Miracle Drug Discovered by Bulgarian Scientist",
+      "patterns": [
+        "Caples",
+        "SalesLetter"
+      ],
+      "why_it_works": "Direct-response offer architecture",
+      "structural_move": "[News/benefit] + [mechanism] + [risk reversal or urgency]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "018253ebf5a09c48",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749864+00:00"
+    },
+    {
+      "headline": "What Everybody Ought to Know About This Stock and Bond Business",
+      "patterns": [
+        "Caples",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "6e8695c51b749e88",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749866+00:00"
+    },
+    {
+      "headline": "How a Strange Accident Saved Me from Baldness",
+      "patterns": [
+        "Caples",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "5e4125d1f5108f76",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749869+00:00"
+    },
+    {
+      "headline": "The Secret of Making People Like You",
+      "patterns": [
+        "Caples",
+        "Cosmo",
+        "Enq"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "U",
+      "genre": "H",
+      "hash": "7c8f4416a975f7f3",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749871+00:00"
+    },
+    {
+      "headline": "Who Else Wants a Whiter Wash \u2014 With No Hard Work?",
+      "patterns": [
+        "Caples",
+        "Question"
+      ],
+      "why_it_works": "Question engages self-diagnosis",
+      "structural_move": "[Question] + [implied gap in reader knowledge]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "5f1f8aa146d1520c",
+      "source": "proven_headlines",
+      "learned_at": "2026-08-29T23:14:33.749874+00:00"
+    },
+    {
+      "headline": "Announcing the Only Sales Letter System That Diagnoses Your Market Before You Write Word One",
+      "patterns": [
+        "Cosmo",
+        "SalesLetter"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "5057152a792e6ffd",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784935+00:00"
+    },
+    {
+      "headline": "How to Cut Your Tax Bill by 30% Without Changing a Thing About Your Business",
+      "patterns": [
+        "SalesLetter",
+        "Cosmo",
+        "Buzzhead",
+        "Caples"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "S",
+      "genre": "H",
+      "hash": "ecf2119ff65f3859",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784945+00:00"
+    },
+    {
+      "headline": "The $2.3 Million Marketing Mistake Almost Every Business Owner Makes",
+      "patterns": [
+        "SalesLetter",
+        "Buzzhead",
+        "Caples",
+        "Proof"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "846421e6be393d95",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784948+00:00"
+    },
+    {
+      "headline": "New Method Lets Small Businesses Generate Enterprise-Level Leads for Under $500/Month",
+      "patterns": [
+        "Buzzhead",
+        "Proof",
+        "SalesLetter"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "cc6f44434aab84c7",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784951+00:00"
+    },
+    {
+      "headline": "Free Report Reveals the 4 U's Formula Behind Headlines That Outpull Control by 300%",
+      "patterns": [
+        "Buzzhead",
+        "SalesLetter"
+      ],
+      "why_it_works": "Curiosity gap + emotional exaggeration + FOMO",
+      "structural_move": "[Number/list] + [hyperbolic qualifier] + [timely hook]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "a38f7f5fa4bf27a9",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784954+00:00"
+    },
+    {
+      "headline": "What Will You Do When Your Personal Assets Are Seized?",
+      "patterns": [
+        "SalesLetter",
+        "Cosmo",
+        "Question"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "d01ceb1e17013da1",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784956+00:00"
+    },
+    {
+      "headline": "Astonishing Sex Secrets of a Desperate Nerd from Pomona",
+      "patterns": [
+        "SalesLetter",
+        "Hook"
+      ],
+      "why_it_works": "Opens curiosity loop with concrete specificity",
+      "structural_move": "[Specific claim] + [open loop]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "a0e6a1469c728d79",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784959+00:00"
+    },
+    {
+      "headline": "Double Your Business in 90 Days \u2014 Or We Work for Free",
+      "patterns": [
+        "Cosmo",
+        "Buzzhead",
+        "Proof",
+        "SalesLetter"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "3ef89b4bd1b6c3fd",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784964+00:00"
+    },
+    {
+      "headline": "The Shocking Truth About Advertising \u2014 Revealed in Lost Manuscripts from the 1920s",
+      "patterns": [
+        "SalesLetter",
+        "Enq"
+      ],
+      "why_it_works": "Insider authority + hidden truth + open loop",
+      "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+      "awareness": "U",
+      "genre": "H",
+      "hash": "90bc4a4bab400ebe",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784967+00:00"
+    },
+    {
+      "headline": "If You Can Write a Simple Letter, You Can Make $10,000 a Month from Home",
+      "patterns": [
+        "SalesLetter",
+        "Cosmo",
+        "Buzzhead",
+        "Proof"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "6480319ae06c1641",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784970+00:00"
+    },
+    {
+      "headline": "Warning: Do Not Read This Unless You Want to Retire 10 Years Early",
+      "patterns": [
+        "SalesLetter",
+        "Cosmo",
+        "Buzzhead"
+      ],
+      "why_it_works": "Identity + relationship stakes",
+      "structural_move": "[Identity] + [behavior/mistake] + [stakes]",
+      "awareness": "P",
+      "genre": "H",
+      "hash": "179f11e13a02d2d9",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784973+00:00"
+    },
+    {
+      "headline": "The One-Legged Golfer's Secret to Outdriving Pros Half His Age",
+      "patterns": [
+        "SalesLetter",
+        "Enq"
+      ],
+      "why_it_works": "Insider authority + hidden truth + open loop",
+      "structural_move": "[Authority] + [shocking claim] + [negation of obvious]",
+      "awareness": "U",
+      "genre": "H",
+      "hash": "874ba40a2d4d34a2",
+      "source": "salesletters",
+      "learned_at": "2026-08-29T23:14:33.784975+00:00"
+    }
+  ]
+}
