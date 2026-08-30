@@ -17,6 +17,8 @@
     "scrape:anthropic:live": "tsx scripts/scraper/run-agent.ts -- --source anthropic-prompt-library --live",
     "scrape:gamma": "tsx scripts/scraper/run-agent.ts -- --source gamma-prompt-library",
     "scrape:gamma:live": "tsx scripts/scraper/run-agent.ts -- --source gamma-prompt-library --live",
+    "scrape:snackprompt": "tsx scripts/scraper/run-agent.ts -- --source snackprompt",
+    "scrape:snackprompt:live": "tsx scripts/scraper/run-agent.ts -- --source snackprompt --live",
     "scrape:dry": "tsx scripts/scraper/run-agent.ts -- --dry-run",
     "preview": "vite preview",
     "start": "vite preview --host 0.0.0.0 --port 4173"

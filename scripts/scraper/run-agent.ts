@@ -15,6 +15,7 @@ import { scrapeBonus3MarketingFromFile } from './sources/pdfcoffee-marketing-par
 import { scrapeWhartonGail, WHARTON_COLLECTION } from './sources/wharton-gail-parser'
 import { scrapeAnthropicPromptLibrary, ANTHROPIC_COLLECTION } from './sources/anthropic-prompt-parser'
 import { scrapeGammaPromptLibrary, GAMMA_COLLECTION } from './sources/gamma-prompt-parser'
+import { scrapeSnackPromptLibrary, SNACKPROMPT_COLLECTION } from './sources/snackprompt-parser'
 import { loadDatabase, importPrompts, printReport } from './database'
 
 function parseArgs() {
@@ -210,6 +211,32 @@ async function main() {
       db,
       scraped,
       { name: GAMMA_COLLECTION.name, url: GAMMA_COLLECTION.sourceUrl },
+      options.dryRun
+    )
+
+    if (!options.dryRun) report.totalInDatabase = db.prompts.length
+    printReport(report)
+  }
+
+  if (options.source === 'snackprompt' || options.source === 'all') {
+    console.log('📚 Importing Snack Prompt Library...')
+    console.log(`   Source: ${SNACKPROMPT_COLLECTION.sourceUrl}`)
+    if (options.live) console.log('   Mode: live scrape (Firecrawl + fetch, falls back to seed)')
+    else console.log('   Mode: seed/cache (snackprompt-prompts.json)')
+    console.log('   (Originality transforms + swipes + fill-in-blank)\n')
+
+    const { prompts: scraped, method, message } = await scrapeSnackPromptLibrary({
+      live: options.live,
+      existingPrompts: db.prompts,
+      limit: options.limit,
+    })
+    console.log(`Extracted ${scraped.length} transformed prompts (${method})`)
+    if (message) console.log(`   ${message}`)
+
+    const report = importPrompts(
+      db,
+      scraped,
+      { name: SNACKPROMPT_COLLECTION.name, url: SNACKPROMPT_COLLECTION.sourceUrl },
       options.dryRun
     )
 

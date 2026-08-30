@@ -63,6 +63,7 @@ export function FilterBar({
             { value: 'wharton-gail', label: '🎓 Wharton GAIL' },
             { value: 'anthropic-prompt-library', label: '🤖 Anthropic Library' },
             { value: 'gamma-prompt-library', label: '📊 Gamma Library' },
+            { value: 'snackprompt', label: '🍿 Snack Prompt' },
           ]}
         />
 

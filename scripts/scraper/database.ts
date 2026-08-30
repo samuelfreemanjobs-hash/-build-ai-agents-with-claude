@@ -79,7 +79,9 @@ export function importPrompts(
                       ? 'Anthropic Prompt Library'
                       : collId === 'gamma-prompt-library'
                         ? 'Gamma Prompt Library'
-                        : collId!,
+                        : collId === 'snackprompt'
+                          ? 'Snack Prompt Library'
+                          : collId!,
           sourceUrl: sourceMeta.url,
           sectionCount: new Set(toImport.filter((p) => p.collection === collId).map((p) => p.collectionSection)).size,
           promptCount: count,
