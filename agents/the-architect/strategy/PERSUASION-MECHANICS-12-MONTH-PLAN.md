@@ -7,6 +7,16 @@
 
 ---
 
+## Published catalog (live)
+
+| Title | Channel | ID |
+|---|---|---|
+| **AI Product Design Mastery** | Amazon Kindle | PM-000 |
+
+*Samuel Freeman's proof of authority. All new pipeline books ascend from this reader base.*
+
+---
+
 ## Plan doctrine
 
 1. **Always plan 12 months forward** — never quarterly-only thinking.
@@ -34,7 +44,7 @@
 
 | Month | Period | Mode | Primary focus | Kindle title (ID) | Backend / launch | Opportunistic slot |
 |---|---|---|---|---|---|---|
-| **M1** | Sep 2026 | **LAUNCH** | Brand + flagship | **PM-001** The Autonomous Copywriter | Waitlist → Founding cohort ($497) | Soft launch webinar |
+| **M1** | Sep 2026 | **LAUNCH** | Brand + book 2 for existing readers | **PM-001** The Autonomous Copywriter | Waitlist → Founding cohort ($497); **cross-sell to AI Product Design Mastery readers** | Soft launch webinar |
 | **M2** | Oct 2026 | PRODUCE | Implementation depth | **PM-007** Building Direct-Response AI Agents | Tripwire: Agent Prompt Vault ($47) | LinkedIn outbound sprint |
 | **M3** | Nov 2026 | PRODUCE | Roadmap / search capture | **PM-010** The AI Direct-Response Playbook | **BFCM bundle** (3-book stack) | Black Friday / Cyber Monday |
 | **M4** | Dec 2026 | PRODUCE | Systems / pipeline | **PM-002** The Autonomous Revenue Engine | Year-end **strategy intensive** ($1.5K) | Consulting slots (2–4 clients) |

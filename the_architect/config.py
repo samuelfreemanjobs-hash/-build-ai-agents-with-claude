@@ -30,6 +30,10 @@ def get_api_key() -> str | None:
     return os.environ.get("ANTHROPIC_API_KEY")
 
 
+def get_gemini_api_key() -> str | None:
+    return os.environ.get("GEMINI_API_KEY")
+
+
 def ensure_projects_dir() -> Path:
     PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
     return PROJECTS_DIR
