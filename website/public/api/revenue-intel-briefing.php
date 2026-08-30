@@ -1,7 +1,7 @@
 <?php
 /**
- * Revenue Intel Briefing — personalized report emailed from ICP + niche inputs.
- * POST JSON: { name, email, icp, niche, source? }
+ * Revenue Intel Briefing — Revenue Intel Agent (Gemini) + email delivery.
+ * POST JSON: { name, email, icp, niche, region?, date?, constraints?, source? }
  */
 header('Content-Type: application/json');
 header('X-Robots-Tag: noindex');
@@ -28,6 +28,9 @@ $email = filter_var(trim($input['email'] ?? ''), FILTER_VALIDATE_EMAIL);
 $name = trim(strip_tags($input['name'] ?? ''));
 $icp = trim(strip_tags($input['icp'] ?? ''));
 $niche = trim(strip_tags($input['niche'] ?? ''));
+$region = trim(strip_tags($input['region'] ?? 'US'));
+$date = trim(strip_tags($input['date'] ?? gmdate('Y-m-d')));
+$constraints = trim(strip_tags($input['constraints'] ?? ''));
 $source = trim(strip_tags($input['source'] ?? '/'));
 
 if (!$email) {
@@ -48,7 +51,20 @@ if ($niche === '' || mb_strlen($niche) < 2) {
     exit;
 }
 
-$briefing = fi_generate_revenue_intel_briefing($name, $icp, $niche);
+if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $date)) {
+    http_response_code(400);
+    echo json_encode(['error' => 'Invalid date — use YYYY-MM-DD']);
+    exit;
+}
+
+$options = [
+    'date' => $date,
+    'region' => $region !== '' ? $region : 'US',
+    'constraints' => $constraints !== '' ? $constraints : 'Solo operator · manual delivery · act within 90 days',
+    'mode' => 'Scan',
+];
+
+$briefing = fi_generate_revenue_intel_briefing($name, $icp, $niche, $options, $config);
 $mailResult = fi_send_html_mail($email, $briefing['subject'], $briefing['html'], $config);
 
 $leadId = bin2hex(random_bytes(8));
@@ -61,7 +77,11 @@ $lead = [
     'fields' => [
         'icp' => $icp,
         'niche' => $niche,
+        'region' => $options['region'],
+        'date' => $date,
+        'constraints' => $options['constraints'],
         'profile_key' => $briefing['profile_key'],
+        'engine' => $briefing['engine'] ?? 'template',
         'emailed' => $mailResult['ok'],
     ],
     'created_at' => gmdate('c'),
@@ -75,6 +95,8 @@ fi_webhook_notify([
     'name' => $name,
     'icp' => $icp,
     'niche' => $niche,
+    'region' => $options['region'],
+    'engine' => $briefing['engine'] ?? 'template',
     'profile' => $briefing['profile_key'],
 ], $config);
 
@@ -91,6 +113,7 @@ if (!$mailResult['ok']) {
     echo json_encode([
         'error' => 'Briefing generated but email failed — check Hostinger mail settings',
         'id' => $leadId,
+        'engine' => $briefing['engine'] ?? 'template',
         'fix' => 'Set mail_from in api/config.php · create email account in hPanel',
     ]);
     exit;
@@ -100,6 +123,7 @@ echo json_encode([
     'ok' => true,
     'id' => $leadId,
     'tag' => 'revenue_intel_briefing',
-    'message' => 'Revenue Intel Briefing sent — check your inbox',
+    'message' => 'Revenue Intel Briefing sent — check your inbox (allow 1–2 min for agent research)',
     'profile' => $briefing['profile_key'],
+    'engine' => $briefing['engine'] ?? 'template',
 ]);

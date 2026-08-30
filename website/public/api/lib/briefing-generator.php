@@ -154,8 +154,27 @@ function fi_build_briefing_html(
 HTML;
 }
 
-function fi_generate_revenue_intel_briefing(string $name, string $icp, string $niche): array
+function fi_generate_revenue_intel_briefing(string $name, string $icp, string $niche, array $options = [], array $config = []): array
 {
+    require_once __DIR__ . '/gemini-briefing.php';
+
+    $input = array_merge([
+        'name' => $name,
+        'icp' => $icp,
+        'niche' => $niche,
+        'date' => gmdate('Y-m-d'),
+        'region' => 'US',
+        'recency_days' => 180,
+        'constraints' => 'Solo operator · manual delivery · act within 90 days',
+        'mode' => 'Scan',
+    ], $options);
+
+    $agent = fi_gemini_generate_briefing($input, $config);
+    if ($agent !== null) {
+        return $agent;
+    }
+
+    // Template fallback when Gemini unavailable
     $profile = fi_detect_niche_profile($niche);
     $first = fi_escape($name !== '' ? explode(' ', trim($name))[0] : 'Operator');
     $icpClean = fi_escape(trim($icp) !== '' ? trim($icp) : 'your ideal client');
@@ -167,11 +186,15 @@ function fi_generate_revenue_intel_briefing(string $name, string $icp, string $n
         $churnList .= '<li><strong>Signal ' . ($i + 1) . ':</strong> ' . fi_escape($t) . '</li>';
     }
 
-    $subject = 'Your Revenue Intel Briefing — ' . trim($niche);
+    $fallbackNote = '<p style="background:#fff3cd;border-left:4px solid #c9a227;padding:12px;font-size:13px;margin-bottom:16px"><strong>Note:</strong> Template briefing — connect Gemini API for full Revenue Intel Agent analysis with dated evidence and gated opportunities.</p>';
+
+    $html = fi_build_briefing_html($first, $icpClean, $nicheClean, $date, $profile, $churnList);
+    $html = str_replace('<div style="background:#fff;border:1px solid #ddd;padding:24px;margin-top:16px">', '<div style="background:#fff;border:1px solid #ddd;padding:24px;margin-top:16px">' . $fallbackNote, $html);
 
     return [
-        'subject' => $subject,
-        'html' => fi_build_briefing_html($first, $icpClean, $nicheClean, $date, $profile, $churnList),
+        'subject' => 'Your Revenue Intel Briefing — ' . trim($niche),
+        'html' => $html,
         'profile_key' => $profile['key'],
+        'engine' => 'template',
     ];
 }

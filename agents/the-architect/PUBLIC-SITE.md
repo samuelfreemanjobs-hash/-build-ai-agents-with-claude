@@ -72,6 +72,53 @@ python3 -m http.server 8080
 
 Forms need PHP on Hostinger — locally they will show errors unless you use `php -S localhost:8080`.
 
+### Revenue Intel Briefing (email delivery)
+
+**Flow:** Homepage form → `POST /api/revenue-intel-briefing.php` → **Revenue Intel Agent** (Gemini + Google Search) → HTML email → lead saved · archived to `data/briefings/`
+
+**Agent prompt:** `agents/the-architect/prompts/REVENUE-INTEL-AGENT-GEM.md` (deployed copy: `api/lib/REVENUE-INTEL-AGENT-GEM.md`)
+
+**Hostinger setup:**
+
+1. Copy `website/public/api/config.example.php` → `config.php` on server
+2. Create `briefings@freemanintelligence.com` in hPanel → **Emails**
+3. Set in `config.php`:
+
+```php
+'mail_from' => 'briefings@freemanintelligence.com',
+'mail_reply_to' => 'samuel@freemanintelligence.com',
+'gemini_api_key' => '...',  // required for full agent briefings (else template fallback)
+'gemini_model' => 'gemini-2.0-flash',
+'webhook_url' => 'https://hooks.zapier.com/...',  // optional — ConvertKit/Beehiiv
+```
+
+4. Deploy: `python3 scripts/deploy-public-site.py`
+5. Submit homepage form → check inbox + `public_html/data/briefings/` archive
+
+**ESP tag:** `revenue_intel_briefing`
+
+**What's in the emailed briefing** (personalized to ICP + niche):
+
+| Section | Content |
+|---|---|
+| Scope & evidence | Dated sources, tier classification, forcing functions |
+| Opportunities | 0–3 ranked cards (Validated / Hypothesis only) |
+| Operator summary | Churn signals · funnel leak · backend attach · 48h win · checklist |
+
+Without `gemini_api_key`, a niche-profile **template** briefing is sent (yellow notice in email).
+
+**Local test:**
+
+```bash
+# Template fallback (PHP)
+php scripts/test-revenue-intel-briefing.php "Samuel" "B2B SaaS founders at \$1-5M ARR" "content agency"
+# Preview: website/public/data/briefings/test-preview.html
+
+# Full agent via Gemini API (Python — set GEMINI_API_KEY in .env)
+python3 scripts/test-revenue-intel-briefing.py "Samuel" "B2B SaaS founders at \$1-5M ARR" "content agency"
+# Preview: website/public/data/briefings/test-agent-preview.html
+```
+
 ---
 
 See also: `OPERATOR-SETUP.md` · `INTERNAL-OPS-PORTAL.md`

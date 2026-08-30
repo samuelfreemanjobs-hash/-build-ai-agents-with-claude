@@ -23,6 +23,9 @@
         email: (qs('[name="email"]', form)?.value || '').trim(),
         icp: (qs('[name="icp"]', form)?.value || '').trim(),
         niche: (qs('[name="niche"]', form)?.value || '').trim(),
+        region: (qs('[name="region"]', form)?.value || 'US').trim(),
+        date: (qs('[name="date"]', form)?.value || new Date().toISOString().slice(0, 10)).trim(),
+        constraints: (qs('[name="constraints"]', form)?.value || '').trim(),
         source: form.dataset.source || window.location.pathname,
       };
       if (!payload.icp || payload.icp.length < 10) {
@@ -64,7 +67,7 @@
     if (btn) {
       btn.disabled = true;
       btn.dataset.originalText = btn.textContent;
-      btn.textContent = isBriefing ? 'Generating briefing…' : 'Sending…';
+      btn.textContent = isBriefing ? 'Running Revenue Intel Agent…' : 'Sending…';
     }
 
     try {
