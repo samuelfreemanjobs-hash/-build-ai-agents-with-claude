@@ -25,3 +25,7 @@ agents/the-architect/.gmail-token.json
 # Ops portal secrets (generate locally, upload to Hostinger)
 website/ops/.htpasswd
 website/ops/.htaccess
+
+# Public site lead data (generated on Hostinger)
+website/public/data/leads.json
+website/public/api/config.php

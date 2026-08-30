@@ -1,0 +1,257 @@
+/* Freeman Intelligence — public marketing site */
+:root {
+  --bg: #060d18;
+  --surface: #0f1a2e;
+  --surface2: #162236;
+  --border: #1e3050;
+  --text: #e8edf5;
+  --muted: #8b9cb8;
+  --gold: #c9a227;
+  --gold-light: #e4c04a;
+  --gold-dim: #8a7020;
+  --blue: #3b82f6;
+  --green: #22c55e;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --max: 720px;
+  --max-wide: 960px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: var(--gold-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: rgba(15, 26, 46, 0.95);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.logo:hover { text-decoration: none; }
+
+.logo-mark {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dim));
+  color: var(--bg);
+  font-weight: 800;
+  font-size: 0.75rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 8px;
+}
+
+.logo-text strong { display: block; font-size: 0.95rem; }
+.logo-text small { color: var(--muted); font-size: 0.7rem; }
+
+.nav-links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.nav-links a { color: var(--muted); font-size: 0.85rem; font-weight: 500; }
+.nav-links a:hover { color: var(--gold); text-decoration: none; }
+
+.page {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.hero {
+  max-width: var(--max);
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero .lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero .byline { font-size: 0.85rem; color: var(--muted); margin-top: 1.5rem; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  max-width: var(--max-wide);
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.card h2, .card h3 { color: var(--gold); font-size: 1rem; margin-bottom: 0.75rem; }
+
+.bullets { list-style: none; margin: 1rem 0; }
+.bullets li {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.bullets li::before { content: "→"; position: absolute; left: 0; color: var(--gold); }
+.bullets li strong { color: var(--text); }
+
+.form-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  max-width: var(--max);
+  margin: 2rem auto;
+}
+
+.form-box h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.form-box p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.25rem; }
+
+.form-row { margin-bottom: 1rem; }
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+input, textarea {
+  width: 100%;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--gold-dim);
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
+}
+
+textarea { min-height: 80px; resize: vertical; }
+
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dim));
+  color: var(--bg);
+  width: 100%;
+}
+
+.btn-primary:hover { filter: brightness(1.08); }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.form-note { font-size: 0.75rem; color: var(--muted); margin-top: 0.75rem; text-align: center; }
+
+.form-success { display: none; text-align: center; padding: 2rem; }
+.form-success.visible { display: block; }
+.form-success h2 { color: var(--green); margin-bottom: 0.75rem; }
+
+.form-error { color: #ef4444; font-size: 0.85rem; margin-top: 0.5rem; display: none; }
+.form-error.visible { display: block; }
+
+.price-block { text-align: center; margin: 2rem 0; }
+.price { font-size: 3rem; font-weight: 800; color: var(--gold); }
+.price-note { color: var(--muted); font-size: 0.9rem; }
+
+.badge-row { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin: 1rem 0; }
+.badge {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-gold { border-color: var(--gold-dim); color: var(--gold); }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.path-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.path-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); text-decoration: none; }
+.path-card .cta { color: var(--gold); font-weight: 600; font-size: 0.9rem; margin-top: 1rem; }
+
+.rubric-preview {
+  background: var(--surface2);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 1.5rem 0;
+}
+
+.hidden { display: none !important; }
