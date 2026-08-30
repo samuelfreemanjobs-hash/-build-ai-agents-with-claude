@@ -5,6 +5,12 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
+SFTP_FLAG=""
+if [[ "${1:-}" == "--sftp" ]]; then
+  SFTP_FLAG="--sftp"
+  shift
+fi
+
 echo "=== Generate public API config from .env ==="
 python3 scripts/generate-public-api-config.py
 
@@ -14,11 +20,11 @@ echo "=== Sync ops portal data ==="
 
 echo ""
 echo "=== Deploy public site (public_html/) ==="
-python3 scripts/deploy-public-site.py "$@"
+python3 scripts/deploy-public-site.py $SFTP_FLAG "$@"
 
 echo ""
 echo "=== Deploy ops portal (public_html/ops/) ==="
-python3 scripts/deploy-ops-portal.py "$@"
+python3 scripts/deploy-ops-portal.py $SFTP_FLAG "$@"
 
 echo ""
 echo "=== Post-deploy checklist ==="

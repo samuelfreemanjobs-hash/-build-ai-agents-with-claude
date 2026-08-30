@@ -5,12 +5,14 @@ Uploads to public_html/ — home, waitlist, rubric, cohort, api, assets.
 
 Usage:
   python3 scripts/deploy-public-site.py
+  python3 scripts/deploy-public-site.py --sftp
   python3 scripts/deploy-public-site.py --dry-run
 """
 
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -42,7 +44,7 @@ def upload_ftp(host, user, password, port, dry_run):
 
     files = [p for p in LOCAL_ROOT.rglob("*") if p.is_file()]
     print(f"Local:  {LOCAL_ROOT} ({len(files)} files)")
-    print(f"Remote: {REMOTE_BASE}/ on {host}:{port}")
+    print(f"Remote: {REMOTE_BASE}/ on {host}:{port} (FTP)")
     if dry_run:
         for f in sorted(files):
             print(f"  would upload: {f.relative_to(LOCAL_ROOT)}")
@@ -72,24 +74,79 @@ def upload_ftp(host, user, password, port, dry_run):
         print(f"  ✓ {rel.as_posix()}")
 
     ftp.quit()
-    print(f"\nDone. https://{host.replace('ftp.', '') if host.startswith('ftp.') else 'freemanintelligence.com'}/")
+    domain = os.environ.get("HOSTINGER_DOMAIN") or (
+        host.replace("ftp.", "") if host.startswith("ftp.") else "freemanintelligence.com"
+    )
+    print(f"\nDone. https://{domain}/")
+
+
+def upload_sftp(host, user, password, port, dry_run):
+    import paramiko
+
+    files = [p for p in LOCAL_ROOT.rglob("*") if p.is_file()]
+    print(f"Local:  {LOCAL_ROOT} ({len(files)} files)")
+    print(f"Remote: {REMOTE_BASE}/ on {host}:{port} (SFTP)")
+    if dry_run:
+        for f in sorted(files):
+            print(f"  would upload: {f.relative_to(LOCAL_ROOT)}")
+        return
+
+    transport = paramiko.Transport((host, port))
+    transport.connect(username=user, password=password)
+    sftp = paramiko.SFTPClient.from_transport(transport)
+
+    def ensure_remote_dir(remote_dir: str) -> None:
+        parts = remote_dir.strip("/").split("/")
+        path = ""
+        for part in parts:
+            path = f"{path}/{part}" if path else part
+            try:
+                sftp.stat(path)
+            except FileNotFoundError:
+                sftp.mkdir(path)
+
+    for local in sorted(files):
+        rel = local.relative_to(LOCAL_ROOT).as_posix()
+        remote = f"{REMOTE_BASE}/{rel}".replace("\\", "/")
+        ensure_remote_dir(str(Path(remote).parent).replace("\\", "/"))
+        sftp.put(str(local), remote)
+        print(f"  ✓ {rel}")
+
+    sftp.close()
+    transport.close()
+    domain = os.environ.get("HOSTINGER_DOMAIN") or (
+        host.replace("ftp.", "") if host.startswith("ftp.") else "freemanintelligence.com"
+    )
+    print(f"\nDone. https://{domain}/")
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Deploy public site to Hostinger")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--sftp", action="store_true", help="Use SFTP (port 22) instead of FTP")
     args = parser.parse_args()
     if not LOCAL_ROOT.is_dir():
         print(f"Missing {LOCAL_ROOT}")
         sys.exit(1)
     env = load_env()
-    upload_ftp(
-        env["HOSTINGER_SFTP_HOST"],
-        env["HOSTINGER_SFTP_USER"],
-        env["HOSTINGER_SFTP_PASSWORD"],
-        int(env.get("HOSTINGER_SFTP_PORT") or 21),
-        args.dry_run,
-    )
+    host = env["HOSTINGER_SFTP_HOST"]
+    user = env["HOSTINGER_SFTP_USER"]
+    password = env["HOSTINGER_SFTP_PASSWORD"]
+    port = int(env.get("HOSTINGER_SFTP_PORT") or (22 if args.sftp else 21))
+    os.environ.setdefault("HOSTINGER_DOMAIN", env.get("HOSTINGER_DOMAIN", ""))
+
+    try:
+        if args.sftp or port == 22:
+            upload_sftp(host, user, password, port, args.dry_run)
+        else:
+            upload_ftp(host, user, password, port, args.dry_run)
+    except Exception as ex:
+        print(f"\nUpload failed: {ex}")
+        print("\nTroubleshooting:")
+        print("  1. Confirm credentials in hPanel → Files → FTP Accounts")
+        print("  2. Try SFTP: python3 scripts/deploy-public-site.py --sftp")
+        print("  3. Or upload manually via File Manager → public_html/")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
