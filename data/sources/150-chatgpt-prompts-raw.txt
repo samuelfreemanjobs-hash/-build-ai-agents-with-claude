@@ -1,0 +1,123 @@
+CHATGPT PROMPTS FOR MARKETING
+
+Provide me with some ideas for blog posts about [topic of your choice]?
+Write a minute-long script for an advertisement about [product or service or company]
+Write a product description for my [product or service or company]
+Suggest inexpensive ways I can promote my [company] with/without using [Media channel]
+How can I obtain high-quality backlinks to raise the SEO of [Website name]
+Make 5 distinct CTA messages and buttons for [Your product]
+Create a [social media] campaign plan for launching an [your product], aimed at [ Your target audience]
+Analyze these below metrics to improve email open rates for a fashion brand
+Write follow-up emails to people who attended my [webinar topic] webinar
+Structure a weekly [newsletter topic] newsletter
+Make a post showcasing the benefits of using our product [product name] for [specific problem/issue].
+Generate 5 creative ways to use Instagram Reels for [your product or service or company]
+Create a social media post that targets [the specific audience] and explains how our product [product name] can help them.
+Create a personalized email greeting for a VIP customer
+Write a list of 5 YouTube video ideas for [your product or company]
+Create two Google Ads in an RSA format (using multiple headlines and descriptions) for an A/B test for "Your product".
+Write a 100-character meta description for my blog post about .
+
+CHATGPT PROMPTS FOR BUSINESS
+
+Offer a detailed review of a for .
+Offer an in-depth analysis of the current state of small business legislation and regulations and their impact on entrepreneurship.
+Offer a comprehensive guide to small business financing options, including loans, grants, and equity financing.
+Provide a guide on managing finances for a small business, including budgeting, cash flow management, and tax considerations.
+Provide a guide on networking and building partnerships as a small business owner.
+I want to create an agenda for a meeting about with my team. Can you give me some examples of what should be included?
+I need to write an email to a client regarding a change in the project timeline. Can you give me some guidance on how to phrase it?
+To increase the number of Instagram posts, please develop a product roadmap for Instagram's story.
+Write an in-depth analysis of the current state of a specific industry and its potential for small business opportunities.
+I need to prepare a presentation for a potential investor on . Can you give me some guidance on what to include?
+
+CHATGPT PROMPTS FOR CONTENT
+
+Generate a creative social media content calendar for the next month for our [company or product] on [ topic of choice]
+Generate a 2-minute video script for a Facebook ad campaign promoting our new service [ Service description]
+Write a blog post on the [topic of your choice]
+Create two Google Ads in an RSA format (using multiple headlines and descriptions) for an A/B test for "your company" Explain why the ads would make a good test.
+Write a case study detailing
+Develop an appealing and inventive screenplay for a film that can fascinate its audience. Get going by devising compelling characters, the setting of the plot, and dialogues between the characters. Once you're done building your characters - devise a thrilling narrative full of unforeseen events to keep audiences entranced until the very finish
+Write a comprehensive guide to [topic].
+Write an email to [person] with some facts about [Topic of your choice] with a[theme of your choice]
+Generate a list of 5 LinkedIn articles to write for a [profession or topic of your choice]
+What factors should I consider when quoting for a brand deal with a candle company, and what ballpark range should I charge? The scope is to post 3 videos on TikTok, and I have 100,000 followers
+Provide a guide on networking and building partnerships as a small business owner
+Create a content calendar with six blog titles, including the keyword . Pick suitable publishing dates for each guide spread across May 2023.
+
+CHATGPT PROMPTS FOR WEB DEVELOPMENT
+
+1. Develop an architecture and code for a website with JavaScript.
+2. Help me find mistakes in the following code .
+3. I want to implement a sticky header on my website. Can you provide an example of how to do that using CSS and JavaScript?
+4. Please continue writing this code for JavaScript
+5. I need to create a REST API endpoint for my web application. Can you provide an example of how to do that using Node.js and Express?
+6. Find the bug with this code:
+7. I want to implement server-side rendering for my React application. Can you provide an example of how to do that using Next.js?
+8. Provide a UX design tip I can share on LinkedIn.
+9. Assume the table names and generate an SQL code to find out Elon Musk's tweets from 2019.
+10. What exactly does this regex do? rege(x(es)?|xps?).
+11. Write a docstring for the following function .
+12. I'm making a website for a small business [Business description]. I need ideas on how to structure the website using WordPress.
+
+CHATGPT PROMPTS FOR TEACHERS
+
+1. Create a list of 5 types of data that teachers can collect to monitor student learning and progress.
+2. Create a quiz with 5 multiple choice questions that assess students' understanding of [concept being taught].
+3. Construct a model essay on social discrimination that surpasses all the requirements for an 'A' grade.
+4. Design a poster that outlines the regulations of the classroom as well as the penalties for violating them
+5. Generate a list of specific and actionable steps that a student can take to improve their performance in [subject/task]
+6. Create a lesson outline for a lesson on [concept being taught] that includes learning objectives, creative activities, and success criteria.
+7. Create a list of 5 teaching strategies that could be used to engage and challenge students of different ability levels in a lesson on [concept being taught]
+8. Create a list of interactive classroom activities for [concept being taught]
+9. Create a marking scheme for evaluating student writing in line with the [concept being taught]
+10. What difficulties do children have when learning about passive voice?
+11. I need help developing a lesson plan on renewable energy sources for high school students.
+12. Come up with a list of 10 unique qualities to include in a teacher's resume.
+
+CHATGPT PROMPTS FOR MUSIC
+
+1. Write a lyrical verse in the style of [artist] about [topic]
+2. Modify the following chord progression to make it more like :
+3. Write the lyrics to a song titled [Title of the song]
+4. Write a 12-bar blues chord progression in the key of E
+5. Write chord progressions for a country rock song, with a verse, chorus, and bridge
+6. Create a poem or song for that explains . The song should have a distinct character and traits for each participant, as well as punctuation such as.,!?, and so on. Make it last as long as possible.
+7. How would you encode the melody to "" as MusicXML?
+8. Write a song in the pentatonic scale and 4/4 time to the
+9. I want to make a music video, but I'm not sure what concept to use. Can you help me come up with a concept?
+10. I want to write a midi file. Can you provide python3 code that writes a simple tune using a for loop to add each note?
+11. Make a song about a programmer and someone who isn't a programmer.
+
+CHATGPT PROMPTS FOR FUN
+
+1. Tell me a joke about [topic of your choice]
+2. Send a pun-filled happy birthday message to my friend Alex.
+3. Write a sequel/prequel about the 'X' movie
+4. Create a new playlist of new song names from 'X'
+5. write a script for a movie with 'X' and 'X'
+6. Explain [topic of your choice] in a funny way
+7. Give me an example of a proposal message for a girl
+8. Write a short story where an Eraser is the main character.
+9. How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+10. Make Eminem-style jokes about Max Payne.
+11. You are a text video game where you give me options ( A, B, C, D) as my choices. The scene is Narnia. I start out with 100 health.
+12. Come up with a 14-day itinerary for a trip to Germany. The first suggested attraction should be "Take a tour of the Reichstag Building in Berlin.
+13. Write a formal complaint email to United Airlines about my delayed baggage from my flight on Tuesday, January 17th, from New York to Los Angeles.
+14. Translate the following text into Portuguese:
+15. Write hilarious fan fiction about the Twilight saga.
+
+CHATGPT PROMPTS FOR FOOD AND COOKING.
+
+1. Can you help me plan a week's worth of dinner for two adults
+2. Generate a meal plan for two days and give me the shopping list
+3. I have tomato, lettuce, and broccoli. What can I prepare with them for a vegan lunch?
+4. What is an easy way to make a pasta recipe that features white sauce and mushroom?
+5. What would be a good bottle of wine to serve with Chicken roast dinner?
+6. I have only three ingredients - Onion, tomato, and spinach. Can you show me 3 meals that i can cook with these ingredients?
+7. What is a good food suggestion for someone who has had a bad day
+8. I am a vegan and I am looking for healthy dinner ideas.
+9. Can you give a dessert suggestion on a stressful day
+10. Suggest a multi-course dinner party menu with winter ingredients
+11. Write a persuasive message to a potential employer explaining my relocation for a chef role.
