@@ -355,6 +355,7 @@ Built on the applicable **format blueprint** + **SWS matrix** + **3-step offer**
 | Sales page / email / ad | 1, 4, 7–10 | Omni-Format + SWS + Grand Slam |
 | **GTM / launch campaign** | 1–10 | Full stack |
 | **AI prompt / agent / RAG system** | 1, 2, 10 | AI-Prompt-Context + AI System Design template |
+| **Build marketing AI agent** | 1, 2, 10 | Agent Builder + Marketing Agent Build template + scaffold |
 | **Pricing / offer architecture** | 1, 9, 10 | Pricing Master + Hormozi Grand Slam |
 | **Marketing research / intel** | 1, 10 | Marketing Intelligence template |
 | **Visual / packaging / UI design** | 1, 3, 10 | Art Direction + digital packaging |
@@ -419,7 +420,7 @@ Never skip QUALITY-RUBRIC (min 8.0).
 | **Phase 7–8** | `CARLTON-METHODOLOGY.md` · `research/CARLTON-SWS-TEMPLATE.md` |
 | **Phase 9** | `HORMOZI-METHODOLOGY.md` · `research/GRAND-SLAM-OFFER-TEMPLATE.md` |
 | **Framework & workflow** | `FRAMEWORK-WORKFLOW-ENGINE.md` |
-| **Operations** | `DR-SPECIALIST-PROMPT.md` · `SYSTEM.md` · `AGENT.md` · `PRODUCTION-FACTORY.md` |
+| **Operations** | `DR-SPECIALIST-PROMPT.md` · `SYSTEM.md` · `AGENT.md` · `PRODUCTION-FACTORY.md` · `AGENT-BUILDER-METHODOLOGY.md` |
 | **Brand** | `ULTIMATE-BRANDING-METHODOLOGY.md` |
 
 **Galactic law:** Diagnose like a CRO. Engineer like an AI architect. Price like a master. Design like an art director. Write like Carlton. Ship like Hopkins. One voice. One revenue engine.

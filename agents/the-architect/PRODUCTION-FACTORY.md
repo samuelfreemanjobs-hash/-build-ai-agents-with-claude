@@ -174,4 +174,4 @@ Factory runs use **Galactic v3** phases 1–10. Chapter runs → `BUSINESS-THRIL
 
 ---
 
-See also: `AGENT.md`, `GALACTIC-MASTER-PROMPT.md`, `FRAMEWORK-WORKFLOW-ENGINE.md`, `MEMORY.md`
+See also: `AGENT.md`, `GALACTIC-MASTER-PROMPT.md`, `FRAMEWORK-WORKFLOW-ENGINE.md`, `MEMORY.md`, `AGENT-BUILDER-METHODOLOGY.md`

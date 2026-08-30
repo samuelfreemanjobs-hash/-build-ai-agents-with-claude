@@ -68,6 +68,18 @@ the-architect factory status
 
 See [`PRODUCTION-FACTORY.md`](agents/the-architect/PRODUCTION-FACTORY.md).
 
+### Build marketing AI agents
+
+The Architect designs and scaffolds **agentic AI marketing agents** (copy, funnel, email, VOC, launch, content):
+
+```bash
+the-architect build-agent archetypes
+the-architect build-agent scaffold "Email Sequencer" --archetype email_sequencer
+the-architect build-agent run "Funnel Architect" --brief "..." --archetype funnel_architect
+```
+
+See [`AGENT-BUILDER-METHODOLOGY.md`](agents/the-architect/AGENT-BUILDER-METHODOLOGY.md) and [`agents/README.md`](agents/README.md).
+
 ### Kennedy & Kern email swipe (one-time Gmail)
 
 Ingest all Kennedy and Kern emails from your inbox into a massive annotated swipe file:

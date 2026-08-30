@@ -41,6 +41,7 @@ INTAKE → RESEARCH → DIAGNOSE → PLAN → DRAFT → EDIT → SCORE → [REVI
 | Headlines only | Schwartz + Caples + Victor Schwab audit |
 | **GTM / full launch campaign** | Galactic v3 Executive Diagnostic (Phases 1–10) + Funnel + Content + Info-Product + SWS |
 | **AI prompt / agent / RAG system** | AI System Design template + AI-Prompt-Context Engineering |
+| **Build marketing AI agent** | Agent Builder + Marketing Agent Build template + `build-agent scaffold` |
 | **Marketing research / intel** | Marketing Intelligence + VoC + competitive sweep |
 | **Visual / packaging / UI** | Art Direction + Omni-Format blueprint |
 | **Pricing architecture** | Pricing Master + Grand Slam + Schwartz |

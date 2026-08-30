@@ -19,6 +19,8 @@ from the_architect.factory import (
     register_book,
     register_launch,
 )
+from the_architect.agent_builder import list_archetypes, scaffold_agent
+from the_architect.agent_builder.runner import run_build_agent
 from the_architect.factory.runner import (
     run_book_outline,
     run_daily_chapter,
@@ -112,6 +114,32 @@ def main() -> None:
     f_launch = factory_sub.add_parser("launch", help="Full weekly product + marketing pipeline")
     f_launch.add_argument("--dry-run", action="store_true")
     f_launch.add_argument("--max-turns", type=int, default=80)
+
+    build_p = sub.add_parser("build-agent", help="Build agentic AI marketing agents")
+    build_sub = build_p.add_subparsers(dest="build_command", required=True)
+
+    b_list = build_sub.add_parser("archetypes", help="List marketing agent archetypes")
+
+    b_scaffold = build_sub.add_parser("scaffold", help="Scaffold agent file tree (no API)")
+    b_scaffold.add_argument("name", help="Agent display name")
+    b_scaffold.add_argument(
+        "--archetype",
+        "-a",
+        default="copy_chief",
+        help="Agent archetype (see: build-agent archetypes)",
+    )
+    b_scaffold.add_argument("--metric", "-m", default="conversion rate", help="Primary success metric")
+    b_scaffold.add_argument("--job", "-j", default="", help="One-line job description")
+    b_scaffold.add_argument("--python", action="store_true", help="Include Python package stub")
+
+    b_run = build_sub.add_parser("run", help="Scaffold + full agentic build (API required)")
+    b_run.add_argument("name", help="Agent display name")
+    b_run.add_argument("--archetype", "-a", default="copy_chief")
+    b_run.add_argument("--brief", "-b", required=True, help="Agent purpose and scope")
+    b_run.add_argument("--metric", "-m", default="conversion rate")
+    b_run.add_argument("--python", action="store_true")
+    b_run.add_argument("--dry-run", action="store_true")
+    b_run.add_argument("--max-turns", type=int, default=60)
 
     args = parser.parse_args()
 
@@ -230,6 +258,40 @@ def main() -> None:
         elif args.factory_command == "launch":
             result = asyncio.run(run_weekly_launch(dry_run=args.dry_run, max_turns=args.max_turns))
             print(format_factory_summary(result))
+
+    elif args.command == "build-agent":
+        if args.build_command == "archetypes":
+            for key, desc in list_archetypes().items():
+                print(f"  {key:22} {desc}")
+
+        elif args.build_command == "scaffold":
+            try:
+                result = scaffold_agent(
+                    name=args.name,
+                    archetype=args.archetype,
+                    metric=args.metric,
+                    one_line_job=args.job,
+                    include_python=args.python,
+                )
+                print(json.dumps(result, indent=2))
+                print(f"\nScaffolded: agents/{result['agent_slug']}/")
+            except FileExistsError as e:
+                print(str(e), file=sys.stderr)
+                sys.exit(1)
+
+        elif args.build_command == "run":
+            result = asyncio.run(
+                run_build_agent(
+                    name=args.name,
+                    archetype=args.archetype,
+                    brief=args.brief,
+                    metric=args.metric,
+                    include_python=args.python,
+                    dry_run=args.dry_run,
+                    max_turns=args.max_turns,
+                )
+            )
+            print(json.dumps(result, indent=2, default=str))
 
 
 if __name__ == "__main__":

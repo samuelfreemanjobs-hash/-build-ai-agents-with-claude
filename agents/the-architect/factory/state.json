@@ -1,31 +1,14 @@
 {
   "version": 1,
-  "active_book": {
-    "project_slug": "test-kindle-book",
-    "title": "Test Kindle Book",
-    "brief": "Test brief for factory",
-    "total_chapters": 3,
-    "chapters_completed": 0,
-    "next_chapter": 1,
-    "outline_file": "outline.md",
-    "last_chapter_date": null,
-    "registered_at": "2026-08-30T00:06:43.985349+00:00"
-  },
+  "active_book": null,
   "active_launch": null,
   "queue": {
-    "books": [
-      {
-        "slug": "test-kindle-book",
-        "title": "Test Kindle Book",
-        "registered_at": "2026-08-30T00:06:43.985349+00:00"
-      }
-    ],
+    "books": [],
     "launches": []
   },
   "history": {
     "chapters": [],
     "launches": [],
     "content_batches": []
-  },
-  "updated_at": "2026-08-30T00:06:43.985368+00:00"
+  }
 }

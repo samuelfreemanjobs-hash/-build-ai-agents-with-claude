@@ -154,4 +154,4 @@
 
 ---
 
-See also: `FRAMEWORK-WORKFLOW-ENGINE.md`, `AGENT.md`, `GALACTIC-MASTER-PROMPT.md` (Phase 2), `the_architect/config.py`
+See also: `FRAMEWORK-WORKFLOW-ENGINE.md`, `AGENT.md`, `GALACTIC-MASTER-PROMPT.md` (Phase 2), `AGENT-BUILDER-METHODOLOGY.md`, `the_architect/tools.py`
