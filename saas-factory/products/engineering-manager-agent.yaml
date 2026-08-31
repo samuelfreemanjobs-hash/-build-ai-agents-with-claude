@@ -1,0 +1,87 @@
+id: engineering-manager-agent
+name: Engineering Manager Agent™
+tagline: Every commitment traces.
+architecture: single-agent
+icp: Engineering managers, team leads, and delivery managers running sprints, 1:1s, capacity planning, and stakeholder communication for software teams
+wedge: Context-to-action-plan with deterministic capacity validation — sprint plans, status reports, and team health assessments before manager sign-off
+status: scaffold
+path: engineering-manager-agent/
+
+pipeline:
+  - id: S0
+    name: Management context intake
+    mode: agent
+  - id: S1
+    name: Team and workload analysis
+    mode: deterministic
+  - id: S2
+    name: Priority and commitment mapping
+    mode: agent
+  - id: S3
+    name: Capacity planning
+    mode: deterministic
+  - id: S4
+    name: Risk and blocker assessment
+    mode: deterministic
+  - id: S5
+    name: Action plan and communications
+    mode: agent
+  - id: S6
+    name: Delivery governance review
+    mode: export
+
+skills:
+  - context-intake
+  - team-analysis
+  - priority-mapping
+  - capacity-planning
+  - blocker-assessment
+  - communication-drafting
+  - delivery-governance
+
+deterministic_modules:
+  - workload_analyzer
+  - capacity_calculator
+  - velocity_tracker
+  - blocker_detector
+  - commitment_validator
+
+hard_rules:
+  - No sprint commitment exceeds capacity_calculator.py output — overcommit HALTs.
+  - Critical blockers from blocker_detector.py surface before action plan proceeds.
+  - No HR decisions (termination, compensation, PIP) — ever.
+  - Performance ratings require explicit human authorship — agent drafts only.
+  - External stakeholder communications require manager approval before send.
+  - Velocity and capacity figures come from deterministic scripts only.
+  - Every run writes a conformant run log entry.
+  - Schema violation is HALT.
+
+bundles:
+  - id: starter
+    name: Starter
+    menu_items:
+      - sprint-status-report
+      - blocker-triage
+  - id: professional
+    name: Professional
+    menu_items:
+      - sprint-planning
+      - capacity-planning
+      - one-on-one-prep
+  - id: enterprise
+    name: Enterprise
+    menu_items:
+      - quarterly-planning
+      - team-health-assessment
+      - stakeholder-executive-summary
+
+pricing_tiers:
+  - id: starter
+    name: Starter
+    price_monthly_usd: 297
+  - id: professional
+    name: Professional
+    price_monthly_usd: 697
+  - id: enterprise
+    name: Enterprise
+    price_monthly_usd: 1497

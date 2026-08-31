@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "architecture-scope.schema.json",
+  "title": "ArchitectureScope",
+  "type": "object",
+  "required": ["scope_id", "system_name", "boundary", "horizon", "tier"],
+  "properties": {
+    "scope_id": { "type": "string" },
+    "system_name": { "type": "string" },
+    "boundary": { "type": "string" },
+    "horizon": { "type": "string", "enum": ["as-is", "to-be", "both"] },
+    "tier": { "type": "string", "enum": ["T0", "T1", "T2", "T3"] },
+    "repo_path": { "type": "string" },
+    "stakeholders": { "type": "array", "items": { "type": "string" } }
+  }
+}

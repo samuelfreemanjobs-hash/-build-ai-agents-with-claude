@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "architecture-options.schema.json",
+  "title": "ArchitectureOptions",
+  "type": "object",
+  "required": ["problem_id", "options"],
+  "properties": {
+    "problem_id": { "type": "string" },
+    "options": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["option_id", "name", "summary", "trade_offs", "complexity"],
+        "properties": {
+          "option_id": { "type": "string" },
+          "name": { "type": "string" },
+          "summary": { "type": "string" },
+          "components": { "type": "array", "items": { "type": "object" } },
+          "data_flow": { "type": "string" },
+          "diagram": { "type": "string" },
+          "trade_offs": {
+            "type": "object",
+            "required": ["pros", "cons"],
+            "properties": {
+              "pros": { "type": "array", "items": { "type": "string" } },
+              "cons": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "complexity": { "type": "string", "enum": ["low", "medium", "high"] },
+          "maps_to": {
+            "type": "object",
+            "properties": {
+              "requirements": { "type": "array", "items": { "type": "string" } },
+              "constraints": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

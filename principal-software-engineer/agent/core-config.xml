@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version="1.0.0" agent="principal-software-engineer">
+
+  <models>
+    <primary id="claude-opus-4-5" role="framing,design,evaluation,adr"/>
+    <fallback id="claude-sonnet-4-5" role="all" trigger="primary_unavailable"/>
+  </models>
+
+  <limits>
+    <max_tool_output_tokens>30000</max_tool_output_tokens>
+    <max_context_tokens>180000</max_context_tokens>
+    <max_options_per_design>4</max_options_per_design>
+    <min_options_per_design>2</min_options_per_design>
+    <max_review_cycles>2</max_review_cycles>
+    <max_adr_entries>10</max_adr_entries>
+  </limits>
+
+  <paths>
+    <run_log>.ai/data/design-runs.jsonl</run_log>
+    <workspace>./workspace/</workspace>
+    <schemas>./schemas/</schemas>
+    <output>./out/</output>
+    <standards>./standards/</standards>
+    <skills>./skills/</skills>
+  </paths>
+
+  <scoring_weights>
+    <criterion id="simplicity" weight="0.15"/>
+    <criterion id="scalability" weight="0.20"/>
+    <criterion id="reliability" weight="0.20"/>
+    <criterion id="security" weight="0.15"/>
+    <criterion id="operability" weight="0.15"/>
+    <criterion id="cost" weight="0.10"/>
+    <criterion id="time_to_market" weight="0.05"/>
+  </scoring_weights>
+
+  <risk_thresholds>
+    <halt_severities>critical</halt_severities>
+    <surface_severities>high,medium</surface_severities>
+  </risk_thresholds>
+
+  <gates>
+    <gate name="min_options" on_fail="halt"/>
+    <gate name="critical_risk_acknowledged" on_fail="halt"/>
+    <gate name="standards_error" on_fail="halt"/>
+    <gate name="schema_validation" on_fail="halt"/>
+    <gate name="run_log_write" on_fail="halt"/>
+    <gate name="unsourced_claim" on_fail="critical_defect"/>
+  </gates>
+
+  <observability>
+    <log_level>info</log_level>
+    <emit_stage_timings>true</emit_stage_timings>
+    <emit_token_counts>true</emit_token_counts>
+    <emit_skill_loads>true</emit_skill_loads>
+  </observability>
+
+  <retention>
+    <design_snapshot_ttl_days>90</design_snapshot_ttl_days>
+    <run_log_ttl_days>730</run_log_ttl_days>
+    <use_for_model_training>false</use_for_model_training>
+  </retention>
+
+</config>

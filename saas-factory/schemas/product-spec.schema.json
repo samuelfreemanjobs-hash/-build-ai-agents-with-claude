@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "product-spec.schema.json",
+  "title": "SaaS Factory Product Spec",
+  "type": "object",
+  "required": ["id", "name", "architecture", "status"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "tagline": { "type": "string" },
+    "architecture": {
+      "type": "string",
+      "enum": ["single-agent", "multi-agent", "hybrid"]
+    },
+    "icp": { "type": "string" },
+    "wedge": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["concept", "design", "scaffold", "mvp", "production"]
+    },
+    "path": { "type": "string" },
+    "pipeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "mode": {
+            "type": "string",
+            "enum": ["agent", "deterministic", "human", "export"]
+          }
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "deterministic_modules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "hard_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "bundles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "menu_items": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "pricing_tiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "price_monthly_usd"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "price_monthly_usd": { "type": "number" }
+        }
+      }
+    }
+  }
+}
