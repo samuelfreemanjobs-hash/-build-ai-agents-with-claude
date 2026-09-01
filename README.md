@@ -27,7 +27,9 @@ npm run scrape:dry                # Preview without saving
 npm run build:prompts             # Sync database → web app
 ```
 
-Current library: **210 prompts** (20 seed + 190 scraped from [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)).
+Current library: **1,352 prompts** from scraped collections (Awesome ChatGPT Prompts, PDFCoffee 1000+, 150 Best, BONUS 3 Marketing).
+
+> **Note:** This deployment intentionally excludes the **15-department business prompt generator** (~10k template variants on PR #23). That track stays separate until you choose to merge it.
 
 To add Firecrawl-powered scraping (requires `FIRECRAWL_API_KEY`):
 

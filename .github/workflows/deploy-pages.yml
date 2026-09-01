@@ -2,7 +2,7 @@ name: Deploy Prompt Library to GitHub Pages
 
 on:
   push:
-    branches: [main, cursor/prompt-library-3a2e]
+    branches: [cursor/prompt-library-live-46d5, cursor/prompt-library-3a2e]
   workflow_dispatch:
 
 permissions:
