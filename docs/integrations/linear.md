@@ -4,7 +4,17 @@ This repo includes the [Linear Cursor plugin](https://github.com/linear/cursor-p
 
 ## Setup
 
-1. **MCP server** — configured in [`.cursor/mcp.json`](../.cursor/mcp.json) pointing at `https://mcp.linear.app/mcp`
+1. **MCP server** — configured in [`.cursor/mcp.json`](../.cursor/mcp.json) (official Linear plugin format):
+
+```json
+{
+  "linear": {
+    "url": "https://mcp.linear.app/mcp",
+    "transport": "http"
+  }
+}
+```
+
 2. **Authenticate** — in Cursor Desktop: **Settings → Tools & MCP → Linear**, complete OAuth with your Linear workspace
 3. **Verify** — ask the agent to list Linear teams or search issues
 
