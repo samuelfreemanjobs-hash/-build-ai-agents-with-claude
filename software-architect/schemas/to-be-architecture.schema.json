@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "to-be-architecture.schema.json",
+  "title": "ToBeArchitecture",
+  "type": "object",
+  "required": ["model_id", "c4_model", "transition_plan"],
+  "properties": {
+    "model_id": { "type": "string" },
+    "c4_model": { "$ref": "c4-model.schema.json" },
+    "patterns_applied": { "type": "array", "items": { "type": "string" } },
+    "transition_plan": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phase", "description", "changes"],
+        "properties": {
+          "phase": { "type": "integer" },
+          "description": { "type": "string" },
+          "changes": { "type": "array", "items": { "type": "string" } },
+          "risk": { "type": "string", "enum": ["low", "medium", "high"] }
+        }
+      }
+    }
+  }
+}

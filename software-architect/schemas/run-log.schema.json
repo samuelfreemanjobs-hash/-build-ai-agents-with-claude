@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run-log.schema.json",
+  "title": "ArchitectureRunLog",
+  "type": "object",
+  "required": ["run_id", "product_id", "status", "started_at", "scope_id", "tier"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "product_id": { "type": "string", "const": "software-architect" },
+    "scope_id": { "type": "string" },
+    "system_name": { "type": "string" },
+    "tier": { "type": "string" },
+    "status": { "type": "string", "enum": ["running", "completed", "halted", "failed"] },
+    "started_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": "string", "format": "date-time" },
+    "c4_levels": { "type": "array", "items": { "type": "string" } },
+    "governance_score": { "type": "integer" },
+    "stages": { "type": "array" },
+    "halts": { "type": "array" }
+  }
+}

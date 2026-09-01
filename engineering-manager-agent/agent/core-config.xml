@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version="1.0.0" agent="engineering-manager-agent">
+
+  <models>
+    <primary id="claude-sonnet-4-5" role="planning,communication,governance"/>
+    <fallback id="claude-haiku-4-5" role="all" trigger="primary_unavailable"/>
+  </models>
+
+  <limits>
+    <max_tool_output_tokens>25000</max_tool_output_tokens>
+    <max_context_tokens>180000</max_context_tokens>
+    <max_team_size>20</max_team_size>
+    <max_sprint_items>30</max_sprint_items>
+    <default_focus_factor>0.6</default_focus_factor>
+    <max_review_cycles>2</max_review_cycles>
+  </limits>
+
+  <paths>
+    <run_log>.ai/data/management-runs.jsonl</run_log>
+    <schemas>./schemas/</schemas>
+    <output>./out/</output>
+  </paths>
+
+  <capacity_defaults>
+    <hours_per_sprint>80</hours_per_sprint>
+    <meeting_overhead_hours>10</meeting_overhead_hours>
+    <pto_default_days>0</pto_default_days>
+    <points_per_hour>0.5</points_per_hour>
+  </capacity_defaults>
+
+  <gates>
+    <gate name="overcommit" on_fail="halt"/>
+    <gate name="critical_blocker" on_fail="halt"/>
+    <gate name="schema_validation" on_fail="halt"/>
+    <gate name="run_log_write" on_fail="halt"/>
+    <gate name="hr_decision_attempt" on_fail="halt"/>
+  </gates>
+
+  <forbidden_outputs>
+    <output>termination_recommendation</output>
+    <output>compensation_decision</output>
+    <output>performance_rating_final</output>
+    <output>sent_external_communication</output>
+  </forbidden_outputs>
+
+  <observability>
+    <log_level>info</log_level>
+    <emit_stage_timings>true</emit_stage_timings>
+    <emit_skill_loads>true</emit_skill_loads>
+  </observability>
+
+</config>
