@@ -1,0 +1,87 @@
+id: principal-software-engineer
+name: Principal Software Engineer Agent™
+tagline: Every decision traces.
+architecture: single-agent
+icp: Staff engineers, tech leads, and engineering managers making architecture decisions, evaluating designs, and setting technical direction
+wedge: Problem-to-architecture with deterministic risk scoring — design docs, ADRs, and trade-off analysis before human sign-off
+status: scaffold
+path: principal-software-engineer/
+
+pipeline:
+  - id: S0
+    name: Problem framing and intake
+    mode: agent
+  - id: S1
+    name: System analysis
+    mode: deterministic
+  - id: S2
+    name: Constraints and requirements extraction
+    mode: agent
+  - id: S3
+    name: Architecture design
+    mode: agent
+  - id: S4
+    name: Trade-off and risk evaluation
+    mode: deterministic
+  - id: S5
+    name: Design document and ADR authoring
+    mode: agent
+  - id: S6
+    name: Design review and delivery
+    mode: export
+
+skills:
+  - problem-framing
+  - system-context
+  - constraints-extraction
+  - architecture-design
+  - trade-off-analysis
+  - adr-authoring
+  - design-review-evaluator
+
+deterministic_modules:
+  - system_analyzer
+  - dependency_mapper
+  - architecture_scorer
+  - risk_assessor
+  - standards_checker
+
+hard_rules:
+  - No architecture recommendation without evaluated trade-offs for each option.
+  - Critical risks from risk_assessor.py HALT until explicitly acknowledged.
+  - Standards violations from standards_checker.py HALT at error severity.
+  - Every design decision maps to a documented requirement or constraint.
+  - No unvalidated performance, scale, or cost claims — cite sources or flag as assumption.
+  - Every run writes a conformant run log entry.
+  - Schema violation is HALT.
+  - Human sign-off required before implementation begins.
+
+bundles:
+  - id: starter
+    name: Starter
+    menu_items:
+      - design-review
+      - adr-draft
+  - id: professional
+    name: Professional
+    menu_items:
+      - architecture-proposal
+      - trade-off-analysis
+      - production-readiness-review
+  - id: enterprise
+    name: Enterprise
+    menu_items:
+      - system-redesign
+      - multi-team-architecture
+      - technical-strategy
+
+pricing_tiers:
+  - id: starter
+    name: Starter
+    price_monthly_usd: 497
+  - id: professional
+    name: Professional
+    price_monthly_usd: 997
+  - id: enterprise
+    name: Enterprise
+    price_monthly_usd: 2497

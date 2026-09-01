@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "action-plan.schema.json",
+  "title": "ActionPlan",
+  "type": "object",
+  "required": ["context_id", "output_type", "drafts"],
+  "properties": {
+    "context_id": { "type": "string" },
+    "output_type": { "type": "string" },
+    "capacity_summary": {
+      "type": "object",
+      "properties": {
+        "available_points": { "type": "number" },
+        "committed_points": { "type": "number" },
+        "buffer_pct": { "type": "number" },
+        "feasible": { "type": "boolean" }
+      }
+    },
+    "blockers": { "type": "array", "items": { "type": "object" } },
+    "drafts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "content", "status"],
+        "properties": {
+          "type": { "type": "string" },
+          "content": { "type": "string" },
+          "status": { "type": "string", "const": "DRAFT" },
+          "audience": { "type": "string" }
+        }
+      }
+    },
+    "action_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": { "type": "string" },
+          "owner": { "type": "string" },
+          "due": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adr.schema.json",
+  "title": "ArchitectureDecisionRecord",
+  "type": "object",
+  "required": ["adr_id", "title", "status", "context", "decision", "consequences"],
+  "properties": {
+    "adr_id": { "type": "string", "pattern": "^ADR-[0-9]+$" },
+    "title": { "type": "string" },
+    "status": { "type": "string", "enum": ["proposed", "accepted", "deprecated", "superseded"] },
+    "context": { "type": "string" },
+    "decision": { "type": "string" },
+    "consequences": {
+      "type": "object",
+      "properties": {
+        "positive": { "type": "array", "items": { "type": "string" } },
+        "negative": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "alternatives_considered": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "option_id": { "type": "string" },
+          "reason_rejected": { "type": "string" }
+        }
+      }
+    }
+  }
+}
