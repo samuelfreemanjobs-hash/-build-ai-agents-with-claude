@@ -6,8 +6,10 @@ The factory encodes patterns proven in this monorepo:
 
 | Product | Architecture | Status |
 |---------|--------------|--------|
-| [Freeman Intel](../freeman-intel/) | Multi-agent orchestration behind one approval UI | Design |
-| [AI Proposals Agent™](../ai-proposals-agent/) | Single-agent + skills + deterministic core | Scaffold |
+| [Freeman Intel](../agents/b2b/freeman-intel/) | Multi-agent orchestration behind one approval UI | Design |
+| [AI Proposals Agent™](../agents/b2b/ai-proposals-agent/) | Single-agent + skills + deterministic core | Scaffold |
+| [Software Developer Agent™](../agents/engineering/software-developer-agent/) | Single-agent + deterministic verification | Scaffold |
+| [Engineering suite](../agents/engineering/) | Design, architecture, management, QA agents | Scaffold |
 
 ---
 

@@ -5,7 +5,8 @@ architecture: multi-agent
 icp: Manufacturing plant inbound logistics teams (20–500 employees) in Metro Detroit auto/industrial corridor
 wedge: Email-first ASN validation and dock readiness — no TMS API required
 status: design
-path: freeman-intel/
+category: b2b
+path: agents/b2b/freeman-intel/
 
 pipeline:
   - id: S0

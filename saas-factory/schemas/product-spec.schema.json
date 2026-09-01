@@ -23,6 +23,10 @@
       "enum": ["concept", "design", "scaffold", "mvp", "production"]
     },
     "path": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["b2b", "engineering"]
+    },
     "pipeline": {
       "type": "array",
       "items": {

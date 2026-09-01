@@ -86,4 +86,9 @@ All products emit:
 
 ## Monorepo integration
 
-Registered products live at the monorepo root (`freeman-intel/`, `ai-proposals-agent/`). The factory `path` field in each spec points to the live directory. Scaffold output defaults to monorepo root for greenfield products.
+Registered products live under `agents/{category}/{id}/` (see [`docs/structure.md`](../docs/structure.md)). The factory `path` and `category` fields in each spec point to the live directory. Scaffold output resolves from `spec.path`, defaulting to `agents/{category}/{id}/` when category is set.
+
+```bash
+# Verify factory + all scaffolded agents
+bash scripts/verify-all.sh
+```

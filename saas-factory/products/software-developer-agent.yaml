@@ -5,7 +5,8 @@ architecture: single-agent
 icp: Engineering teams shipping features, fixes, and refactors across web, API, and backend codebases
 wedge: Spec-to-shipped code with deterministic verification — tests, lint, and security gates before human review
 status: scaffold
-path: software-developer-agent/
+category: engineering
+path: agents/engineering/software-developer-agent/
 
 pipeline:
   - id: S0

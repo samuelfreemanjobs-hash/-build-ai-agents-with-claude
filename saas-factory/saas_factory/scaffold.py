@@ -27,7 +27,28 @@ def render_template(content: str, context: dict[str, str]) -> str:
     return Template(content).safe_substitute(context)
 
 
-def build_context(spec: ProductSpec, output_dir: Path) -> dict[str, str]:
+def resolve_product_dir(spec: ProductSpec, output_root: Path) -> Path:
+    """Resolve the product directory from spec.path or output_root / spec.id."""
+    if spec.path:
+        path = Path(spec.path.strip("/"))
+        if path.is_absolute():
+            return path
+        return output_root / path
+    if spec.category:
+        return output_root / "agents" / spec.category / spec.id
+    return output_root / spec.id
+
+
+def factory_relative_path(product_dir: Path, output_root: Path) -> str:
+    """Relative path from product dir to saas-factory for README links."""
+    try:
+        depth = len(product_dir.relative_to(output_root).parts)
+        return "/".join([".."] * depth + ["saas-factory"])
+    except ValueError:
+        return "../saas-factory"
+
+
+def build_context(spec: ProductSpec, output_dir: Path, output_root: Path) -> dict[str, str]:
     pkg = package_name(spec.id)
     return {
         "product_id": spec.id,
@@ -39,6 +60,7 @@ def build_context(spec: ProductSpec, output_dir: Path) -> dict[str, str]:
         "wedge": spec.wedge,
         "status": spec.status,
         "output_dir": str(output_dir),
+        "factory_relative_path": factory_relative_path(output_dir, output_root),
         "pipeline_stages": "\n".join(
             f"| {stage['id']} | {stage['name']} | {stage.get('mode', 'agent')} |"
             for stage in spec.pipeline
@@ -65,7 +87,7 @@ def scaffold_product(
     if not TEMPLATE_ROOT.is_dir():
         raise FileNotFoundError(f"Template root missing: {TEMPLATE_ROOT}")
 
-    product_dir = output_root / spec.id
+    product_dir = resolve_product_dir(spec, output_root)
     if product_dir.exists() and not force:
         raise FileExistsError(
             f"Product directory already exists: {product_dir}. Use --force to overwrite."
@@ -73,7 +95,7 @@ def scaffold_product(
     if product_dir.exists():
         shutil.rmtree(product_dir)
 
-    context = build_context(spec, product_dir)
+    context = build_context(spec, product_dir, output_root)
 
     for src in TEMPLATE_ROOT.rglob("*"):
         rel = src.relative_to(TEMPLATE_ROOT)

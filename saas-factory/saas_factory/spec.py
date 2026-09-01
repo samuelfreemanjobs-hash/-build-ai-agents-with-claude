@@ -27,6 +27,7 @@ class ProductSpec:
     wedge: str
     status: str
     path: str | None = None
+    category: str | None = None
     pipeline: list[dict[str, Any]] = field(default_factory=list)
     skills: list[str] = field(default_factory=list)
     deterministic_modules: list[str] = field(default_factory=list)
@@ -46,6 +47,7 @@ class ProductSpec:
             wedge=data.get("wedge", ""),
             status=data.get("status", "concept"),
             path=data.get("path"),
+            category=data.get("category"),
             pipeline=data.get("pipeline", []),
             skills=data.get("skills", []),
             deterministic_modules=data.get("deterministic_modules", []),

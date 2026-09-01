@@ -1,29 +1,48 @@
 # Build AI Agents with Claude
 
-Monorepo for **Claude-powered B2B agent SaaS** products and development agents.
+Monorepo for **Claude-powered B2B agent SaaS** products and a **software delivery agent suite** — all built and governed through the [SaaS Factory](saas-factory/).
+
+## Repository layout
+
+```
+├── saas-factory/          # Factory CLI, product specs (YAML), scaffold templates
+├── agents/
+│   ├── b2b/               # Customer-facing B2B agent SaaS
+│   └── engineering/       # Software delivery agents (build → govern → ship)
+├── scripts/               # Monorepo-wide tooling (verify-all.sh)
+├── docs/                  # Monorepo structure and conventions
+└── .github/workflows/     # CI verification
+```
+
+See [`docs/structure.md`](docs/structure.md) for the full map.
 
 ## SaaS Factory
-
-This repo includes an [**AI agent-based SaaS factory**](saas-factory/) — a repeatable system for defining, scaffolding, and governing agent SaaS products:
 
 ```bash
 cd saas-factory && pip install -e ".[dev]"
 saas-factory list
-saas-factory init "My Agent Product" --scaffold
+saas-factory validate
+saas-factory init "My Agent Product" --category b2b --scaffold
 ```
-
-See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs.
 
 ## Products
 
+### B2B agents (`agents/b2b/`)
+
+| Product | Tagline | Status | Path |
+|---------|---------|--------|------|
+| **Freeman Intel** | Plant inbound readiness before the truck arrives | Design | [`freeman-intel/`](agents/b2b/freeman-intel/) |
+| **AI Proposals Agent™** | Every number traces | Scaffold | [`ai-proposals-agent/`](agents/b2b/ai-proposals-agent/) |
+
+### Engineering agents (`agents/engineering/`)
+
 | Product | Tagline | Path |
 |---------|---------|------|
-| **Freeman Intel** | Plant inbound readiness before the truck arrives | [`freeman-intel/`](freeman-intel/) |
-| **AI Proposals Agent™** | Every number traces | [`ai-proposals-agent/`](ai-proposals-agent/) |
-| **Software Developer Agent™** | Every change traces | [`software-developer-agent/`](software-developer-agent/) |
-| **Principal Software Engineer Agent™** | Every decision traces | [`principal-software-engineer/`](principal-software-engineer/) |
-| **Software Architect Agent™** | Every boundary traces | [`software-architect/`](software-architect/) |
-| **Engineering Manager Agent™** | Every commitment traces | [`engineering-manager-agent/`](engineering-manager-agent/) |
+| **Software Developer Agent™** | Every change traces | [`software-developer-agent/`](agents/engineering/software-developer-agent/) |
+| **Principal Software Engineer Agent™** | Every decision traces | [`principal-software-engineer/`](agents/engineering/principal-software-engineer/) |
+| **Software Architect Agent™** | Every boundary traces | [`software-architect/`](agents/engineering/software-architect/) |
+| **Engineering Manager Agent™** | Every commitment traces | [`engineering-manager-agent/`](agents/engineering/engineering-manager-agent/) |
+| **QA Engineer Agent™** | Every defect traces | [`qa-engineer-agent/`](agents/engineering/qa-engineer-agent/) |
 
 ## Shared principles
 
@@ -33,34 +52,15 @@ See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs
 4. Outcome bundles, not agent marketplaces
 5. Fail closed — schema violation and missing sources are HALT
 
-## Quick verify
+## Verify everything
 
 ```bash
-# AI Proposals Agent
-cd ai-proposals-agent && python3 scripts/run_golden_tests.py
-
-# Software Developer Agent
-cd software-developer-agent && python3 scripts/run_golden_tests.py
-
-# Principal Software Engineer Agent
-cd principal-software-engineer && python3 scripts/run_golden_tests.py
-
-# Software Architect Agent
-cd software-architect && python3 scripts/run_golden_tests.py
-
-# Engineering Manager Agent
-cd engineering-manager-agent && python3 scripts/run_golden_tests.py
+bash scripts/verify-all.sh
 ```
 
-## Structure
+## Quick verify (single agent)
 
-```
-├── saas-factory/              # Product specs, scaffold CLI, templates
-├── freeman-intel/             # Plant inbound logistics (design)
-├── ai-proposals-agent/        # RFP proposal agent (scaffold + deterministic core)
-├── software-developer-agent/        # Implementation agent
-├── principal-software-engineer/     # Architecture decisions agent
-├── software-architect/              # C4 modeling and governance agent
-├── engineering-manager-agent/       # Team leadership and delivery planning agent
-└── README.md
+```bash
+cd agents/b2b/ai-proposals-agent && python3 scripts/run_golden_tests.py
+cd agents/engineering/software-developer-agent && python3 scripts/run_golden_tests.py
 ```

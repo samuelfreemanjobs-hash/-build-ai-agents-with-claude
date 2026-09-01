@@ -1,15 +1,35 @@
 # Product registry — canonical list of agent SaaS products in this monorepo
+#
+# Live implementations live under agents/{category}/{id}/.
+# Factory specs live in saas-factory/products/.
+
+categories:
+  b2b:
+    description: Customer-facing B2B agent SaaS products
+    path: agents/b2b/
+  engineering:
+    description: Software delivery agent suite (build, design, govern, manage, test)
+    path: agents/engineering/
 
 products:
   - id: freeman-intel
     spec: freeman-intel.yaml
+    category: b2b
   - id: ai-proposals-agent
     spec: ai-proposals-agent.yaml
+    category: b2b
   - id: software-developer-agent
     spec: software-developer-agent.yaml
+    category: engineering
   - id: principal-software-engineer
     spec: principal-software-engineer.yaml
+    category: engineering
   - id: software-architect
     spec: software-architect.yaml
+    category: engineering
   - id: engineering-manager-agent
     spec: engineering-manager-agent.yaml
+    category: engineering
+  - id: qa-engineer-agent
+    spec: qa-engineer-agent.yaml
+    category: engineering
