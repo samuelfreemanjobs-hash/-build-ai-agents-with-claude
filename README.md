@@ -33,6 +33,12 @@ See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs
 4. Outcome bundles, not agent marketplaces
 5. Fail closed — schema violation and missing sources are HALT
 
+## Integrations
+
+| Integration | Purpose | Setup |
+|-------------|---------|-------|
+| [Linear](docs/integrations/linear.md) | Issues, projects, docs from agent sessions | OAuth via Cursor **Tools & MCP** |
+
 ## Quick verify
 
 ```bash
