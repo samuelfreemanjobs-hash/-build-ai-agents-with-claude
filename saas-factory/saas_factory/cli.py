@@ -84,6 +84,8 @@ def cmd_init(args: argparse.Namespace) -> int:
         "icp": args.icp or "Define your ideal customer profile.",
         "wedge": args.wedge or "Define your wedge.",
         "status": "concept",
+        "category": args.category,
+        "path": f"agents/{args.category}/{product_id}/",
         "pipeline": [
             {"id": "S0", "name": "Intake", "mode": "agent"},
             {"id": "S1", "name": "Validate", "mode": "deterministic"},
@@ -159,6 +161,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     init.add_argument("--icp", default="")
     init.add_argument("--wedge", default="")
+    init.add_argument(
+        "--category",
+        choices=["b2b", "engineering"],
+        default="b2b",
+        help="Product category — determines default path under agents/",
+    )
     init.add_argument("--scaffold", action="store_true", help="Also scaffold the product tree")
     init.add_argument("-o", "--output", default=str(FACTORY_ROOT.parent))
     init.add_argument("--force", action="store_true")

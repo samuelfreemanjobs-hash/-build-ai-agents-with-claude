@@ -5,7 +5,8 @@ architecture: single-agent
 icp: Staff engineers, tech leads, and engineering managers making architecture decisions, evaluating designs, and setting technical direction
 wedge: Problem-to-architecture with deterministic risk scoring — design docs, ADRs, and trade-off analysis before human sign-off
 status: scaffold
-path: principal-software-engineer/
+category: engineering
+path: agents/engineering/principal-software-engineer/
 
 pipeline:
   - id: S0

@@ -5,7 +5,8 @@ architecture: single-agent
 icp: Software architects, platform engineers, and solution architects documenting, evolving, and governing system architecture across services and teams
 wedge: System-to-blueprint with C4 modeling and deterministic coupling analysis — as-is/to-be architecture views before governance sign-off
 status: scaffold
-path: software-architect/
+category: engineering
+path: agents/engineering/software-architect/
 
 pipeline:
   - id: S0

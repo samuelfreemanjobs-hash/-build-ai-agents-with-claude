@@ -5,7 +5,8 @@ architecture: single-agent
 icp: Logistics BD, sales, and solutions teams responding to RFPs in the Detroit corridor
 wedge: Logistics RFP proposals in ~75 minutes with auditable pricing and compliance
 status: scaffold
-path: ai-proposals-agent/
+category: b2b
+path: agents/b2b/ai-proposals-agent/
 
 pipeline:
   - id: S0

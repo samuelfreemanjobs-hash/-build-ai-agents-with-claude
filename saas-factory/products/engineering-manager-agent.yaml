@@ -5,7 +5,8 @@ architecture: single-agent
 icp: Engineering managers, team leads, and delivery managers running sprints, 1:1s, capacity planning, and stakeholder communication for software teams
 wedge: Context-to-action-plan with deterministic capacity validation — sprint plans, status reports, and team health assessments before manager sign-off
 status: scaffold
-path: engineering-manager-agent/
+category: engineering
+path: agents/engineering/engineering-manager-agent/
 
 pipeline:
   - id: S0

@@ -7,7 +7,7 @@ $product_tagline
 **ICP:** $icp  
 **Wedge:** $wedge
 
-Scaffolded by the [SaaS Factory](../saas-factory/).
+Scaffolded by the [SaaS Factory]($factory_relative_path/).
 
 ---
 
