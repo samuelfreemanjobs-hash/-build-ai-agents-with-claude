@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-stone-50 text-charcoal antialiased;
+  @apply bg-[#0C0B0A] text-[#EDE8E1] antialiased;
 }
