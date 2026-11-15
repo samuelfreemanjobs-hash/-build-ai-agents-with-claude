@@ -5,11 +5,13 @@ from __future__ import annotations
 import json
 import logging
 import re
-import subprocess
-import sys
 from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
+
+from agent_runtime.harness import HarnessRunner
+from agent_runtime.orchestration import FrameworkPipeline
+from agent_runtime.signals import evaluate_stack_signals, format_signals_log
 
 from software_developer_agent.halts import HaltCause, HaltError
 from software_developer_agent.llm import LLMClient
@@ -30,6 +32,8 @@ from software_developer_agent.verification import VerificationRunner
 logger = logging.getLogger(__name__)
 
 SCRIPTS_DIR = Path(__file__).resolve().parent.parent.parent / "scripts"
+CORE_CONFIG = Path(__file__).resolve().parent.parent.parent / "agent" / "core-config.xml"
+_HARNESS = HarnessRunner(SCRIPTS_DIR)
 _RUN_COUNTER = 0
 
 
@@ -48,14 +52,10 @@ def _parse_json_response(response: str) -> dict:
 
 
 def _analyze_codebase(repo_path: str) -> dict:
-    script = SCRIPTS_DIR / "codebase_analyzer.py"
-    result = subprocess.run(
-        [sys.executable, str(script), repo_path],
-        capture_output=True,
-        text=True,
-        timeout=60,
-    )
-    return json.loads(result.stdout)
+    result = _HARNESS.run("codebase_analyzer.py", repo_path, timeout_seconds=60)
+    if result.status == "FAIL":
+        return result.data
+    return result.data
 
 
 class SoftwareDeveloperAgent:
@@ -188,21 +188,35 @@ class SoftwareDeveloperAgent:
         logger.info("STARTING DEVELOPMENT RUN — %s", run_id)
         logger.info("=" * 60)
 
-        task = self.intake_task(task_description, repo_path)
+        signals = evaluate_stack_signals(CORE_CONFIG)
+        for line in format_signals_log(signals).splitlines():
+            logger.info(line)
+
+        pipeline = FrameworkPipeline(agent_id="software-developer-agent", run_id=run_id)
+        task = pipeline.run_stage("S0", lambda: self.intake_task(task_description, repo_path))
         run_log = RunLogBuilder(run_id, task.task_id, task.title, task.tier.value)
 
         try:
-            codebase = self.analyze_codebase(repo_path, task.tier)
+            codebase = pipeline.run_stage(
+                "S1", lambda: self.analyze_codebase(repo_path, task.tier)
+            )
             run_log.add_stage("S1", "Codebase analysis", "completed", 0)
 
-            plan = self.plan_implementation(task, codebase)
+            plan = pipeline.run_stage(
+                "S2", lambda: self.plan_implementation(task, codebase)
+            )
             run_log.add_stage("S2", "Implementation planning", "completed", 0, ["implementation-planning"])
 
-            verification = self.verifier.run(repo_path, task.tier)
+            verification = pipeline.run_stage(
+                "S4", lambda: self.verifier.run(repo_path, task.tier)
+            )
             run_log.add_stage("S4", "Verification", "completed", 0)
             run_log.set_verification(verification.overall_status, len(plan.file_changes))
 
-            review = self.review_code(task, asdict(verification), plan.file_changes)
+            review = pipeline.run_stage(
+                "S5",
+                lambda: self.review_code(task, asdict(verification), plan.file_changes),
+            )
             run_log.add_stage("S5", "Code review", "completed", 0, ["code-review-evaluator"])
             run_log.set_review_score(review.scores.get("overall", 0))
 

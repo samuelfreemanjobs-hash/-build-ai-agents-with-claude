@@ -1,0 +1,39 @@
+# Curated MarkTechPost-aligned watchlist for model/infra signals.
+# Refresh monthly from https://www.marktechpost.com/category/editors-pick/ai-agents/
+
+watchlist:
+  - id: harness-vs-mcp
+    category: mcp
+    title: Agent harness vs framework vs MCP
+    url: https://www.marktechpost.com/2026/09/14/agent-harness-vs-agent-framework-vs-mcp-which-layer-owns-the-loop-state-tools-permissions-and-recovery
+    applies_to: ["*"]
+    signal: Use harness for implementation-heavy steps; MCP for integrations; framework for product loop
+    action: Keep AGENT_TOOL_TRANSPORT=auto; document tools in mcp/registry.yaml
+
+  - id: coding-harness-2026
+    category: harness
+    title: Coding agent harnesses (Codex, Claude Agent SDK, DeepSeek Harness)
+    url: https://www.marktechpost.com/2026/10/31/factory-droid-1-0-frontier-harness
+    applies_to:
+      - software-developer-agent
+      - principal-software-engineer
+    signal: Route S3+ implementation and S4 verification through HarnessRunner, not inline LLM code gen
+    action: Wire long jobs to external harness (Cursor/Codex) via AGENT_IMPLEMENTATION_HARNESS
+
+  - id: vector-db-roundup
+    category: infra
+    title: Vector database tradeoffs 2026
+    url: https://www.marktechpost.com/2026/05/10/best-vector-databases-in-2026-pricing-scale-limits-and-architecture-tradeoffs-across-nine-leading-systems
+    applies_to:
+      - ai-proposals-agent
+    signal: RAG cost scales with embedding + retrieval; audit KB chunk count quarterly
+    action: Run token_economics.py before expanding KB
+
+  - id: terminal-bench-models
+    category: model
+    title: Agentic coding model releases (Terminal-Bench / SWE)
+    url: https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model
+    applies_to:
+      - software-developer-agent
+    signal: VERIFY model ids in core-config.xml against current Anthropic API listing
+    action: Spike new models only against scripts/run_golden_tests.py

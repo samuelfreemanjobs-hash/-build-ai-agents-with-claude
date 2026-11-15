@@ -1,0 +1,24 @@
+# Standard tool surface — harness default, MCP optional via AGENT_TOOL_TRANSPORT
+tools:
+  analyze_codebase:
+    description: Repo structure and entrypoints
+    harness: codebase_analyzer.py
+
+  run_tests:
+    description: Deterministic test harness
+    harness: test_runner.py
+    mcp:
+      namespace: cursor-github
+      tool: list_check_runs_for_ref
+
+  run_lint:
+    description: Lint gate
+    harness: lint_validator.py
+
+  security_scan:
+    description: Secret and severity scan
+    harness: security_scanner.py
+
+  dependency_audit:
+    description: Dependency vulnerability gate (T2+)
+    harness: dependency_checker.py

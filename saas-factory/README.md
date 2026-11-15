@@ -13,6 +13,7 @@ The factory encodes patterns proven in this monorepo:
 
 ## What the factory provides
 
+0. **Agent runtime** — shared framework/harness/MCP/signals package at [`../agent-runtime/`](../agent-runtime/)
 1. **Product specs** — YAML definitions validated against a JSON Schema (`products/`)
 2. **Scaffold CLI** — generate a full agent SaaS tree from a spec (`saas_factory/scaffold.py`)
 3. **Standard layout** — `agent/`, `skills/`, `schemas/`, `scripts/`, `backend/`, `deploy/`

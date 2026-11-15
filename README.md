@@ -25,6 +25,15 @@ See [`saas-factory/README.md`](saas-factory/README.md) for the full factory docs
 | **Software Architect Agent™** | Every boundary traces | [`software-architect/`](software-architect/) |
 | **Engineering Manager Agent™** | Every commitment traces | [`engineering-manager-agent/`](engineering-manager-agent/) |
 
+## Agent runtime
+
+Shared **framework / harness / MCP / signals** layer: [`agent-runtime/`](agent-runtime/) and [`docs/agent-stack.md`](docs/agent-stack.md).
+
+- **Framework:** `FrameworkPipeline` stage runner in product orchestrators
+- **Harness:** `HarnessRunner` for `scripts/*.py` (verification, analysis)
+- **MCP:** `mcp/registry.yaml` per product + `AGENT_TOOL_TRANSPORT`
+- **Signals:** MarkTechPost-aligned [`signals/radar.yaml`](agent-runtime/signals/radar.yaml) vs `core-config.xml`
+
 ## Shared principles
 
 1. Human approval on high-impact actions
@@ -55,6 +64,8 @@ cd engineering-manager-agent && python3 scripts/run_golden_tests.py
 ## Structure
 
 ```
+├── agent-runtime/             # Shared orchestration, harness, MCP, signals
+├── docs/agent-stack.md        # Stack upgrade guide
 ├── saas-factory/              # Product specs, scaffold CLI, templates
 ├── freeman-intel/             # Plant inbound logistics (design)
 ├── ai-proposals-agent/        # RFP proposal agent (scaffold + deterministic core)

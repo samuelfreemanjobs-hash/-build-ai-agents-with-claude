@@ -1,35 +1,24 @@
-"""LLM client wrapper."""
+"""LLM client wrapper — uses agent-runtime + core-config.xml."""
 
 from __future__ import annotations
 
 import json
-import logging
-import os
+from pathlib import Path
 
-logger = logging.getLogger(__name__)
+from agent_runtime.llm import LlmClient as RuntimeLlmClient
+
+_CORE_CONFIG = Path(__file__).resolve().parent.parent.parent / "agent" / "core-config.xml"
 
 
 class LLMClient:
     def __init__(self, api_key: str | None = None, mock: bool = False):
-        self.mock = mock or not (api_key or os.environ.get("ANTHROPIC_API_KEY"))
-        self._client = None
-        if not self.mock:
-            import anthropic
-            self._client = anthropic.Anthropic(api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"))
+        self._inner = RuntimeLlmClient(_CORE_CONFIG, api_key=api_key, mock=mock)
 
     def complete(self, system: str, user: str, max_tokens: int = 4096) -> str:
-        if self.mock:
-            return self._mock_response(user)
-        assert self._client is not None
-        response = self._client.messages.create(
-            model="claude-sonnet-4-5",
-            max_tokens=max_tokens,
-            system=system,
-            messages=[{"role": "user", "content": user}],
-        )
-        return response.content[0].text
+        return self._inner.complete(system, user, max_tokens=max_tokens, mock_fn=self._mock_response)
 
-    def _mock_response(self, user: str) -> str:
+    @staticmethod
+    def _mock_response(user: str) -> str:
         if "task spec" in user.lower() or "acceptance criteria" in user.lower():
             return json.dumps({
                 "task_id": "TASK-001",
